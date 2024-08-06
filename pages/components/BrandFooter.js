@@ -87,8 +87,8 @@ export default function BrandFooter() {
                                     Services
                                 </li> */}
                                 <li className="mt-3">
-                                    <Link href="/bundles" onClick={(e) => { e.preventDefault(); window.location.href = "/bundles"; }}>
-                                    Bundles
+                                    <Link href="/pricing" onClick={(e) => { e.preventDefault(); window.location.href = "/pricing"; }}>
+                                    Pricing
                                     </Link>
                                 </li>
                                 <li className="mt-3">
@@ -195,7 +195,7 @@ export default function BrandFooter() {
                 <div className="copyright-sec">
                     <div className="container text-center mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
                         <p className="text-white w-full md:text-center text-sm sm:text-left">
-                            Copyright © 2024 |
+                        Copyright © 2023 PINE BOOK WRITING | All Rights Reserved.
                             <Link
                                 href="/terms-and-conditions"
                                 rel="noopener noreferrer"
@@ -210,9 +210,9 @@ export default function BrandFooter() {
                                 className="text-white ml-1"
                                 target="_blank"
                             >
-                                Privacy Policy | {" "}
+                                Privacy Policy  {" "}
                             </Link>
-                            Powered by <span className="powered-by-text">Pine Book Writing Inc.</span>
+                           
                         </p>
 
                     </div>

@@ -166,7 +166,7 @@ export default function BrandServices() {
                                 <span className="right-4"></span>
                                 <span className="bottom-4"></span>
                                 <div className="flex justify-between mb-12">
-                                    <Image src={"/brand-img/service-icon3.png"} className="icon" width={50} height={50}></Image>
+                                    <Image src={"/brand-img/service-icon7.png"} className="icon" width={50} height={50}></Image>
                                     <span className="font-poppins text-4xl">07</span>
                                 </div>
                                 <p >Impactful press releases to promote/announce your news & events .</p>
@@ -186,7 +186,7 @@ export default function BrandServices() {
                                 <span className="right-4"></span>
                                 <span className="bottom-4"></span>
                                 <div className="flex justify-between mb-12">
-                                    <Image src={"/brand-img/service-icon4.png"} className="icon" width={50} height={50}></Image>
+                                    <Image src={"/brand-img/service-icon8.png"} className="icon" width={50} height={50}></Image>
                                     <span className="font-poppins text-4xl">08</span>
                                 </div>
                                 <p >Expert script writing for product presentations, audios & videos.</p>
@@ -203,7 +203,7 @@ export default function BrandServices() {
                                 <span className="right-5"></span>
                                 <span className="bottom-5"></span>
                                 <div className="flex justify-between mb-12">
-                                    <Image src={"/brand-img/service-icon5.png"} width={50} className="icon" height={50}></Image>
+                                    <Image src={"/brand-img/service-icon9.png"} width={50} className="icon" height={50}></Image>
                                     <span className="font-poppins text-4xl">09</span>
                                 </div>
                                 <p >Produce social media post copies to engage your audience.</p>
@@ -223,7 +223,7 @@ export default function BrandServices() {
                                 <span className="right-5"></span>
                                 <span className="bottom-5"></span>
                                 <div className="flex justify-between mb-12">
-                                    <Image src={"/brand-img/service-icon6.png"} width={50} className="icon" height={50}></Image>
+                                    <Image src={"/brand-img/service-icon10.png"} width={50} className="icon" height={50}></Image>
                                     <span className="font-poppins text-4xl">10</span>
                                 </div>
                                 <p >Informative & Persuasive product descriptions to uplift sales.</p>

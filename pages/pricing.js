@@ -753,7 +753,7 @@ export default function Bundle({ isOpen, onClose, service }) {
                                 </div>
                             </div>
                         </section>
-
+{/* 
                         <div className="packages-wrapper flex flex-col md:flex-row justify-center gap-12 mt-0">
                             <div className="single-packages relative">
                                 <h4 className="text-2xl font-poppins mb-6 text-center pt-4 pb-4 hover-top-vector relative">Expert Package</h4>
@@ -1291,12 +1291,12 @@ export default function Bundle({ isOpen, onClose, service }) {
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </section>
 
-            <section className="table-sec overflow-x-scroll max-w-screen-xl mx-auto">
+            {/* <section className="table-sec overflow-x-scroll max-w-screen-xl mx-auto">
                 <div className="container mx-auto m1-h mt-10 text-center">
                     <button className="compare-now-btn mb-10 mt-5" onClick={togglePackages}>Comparison
                         <FontAwesomeIcon
@@ -1560,41 +1560,7 @@ export default function Bundle({ isOpen, onClose, service }) {
                                         <td>✔️</td>
                                         <td>✔️</td>
                                     </tr>
-                                    {/* <tr className="m-4">
-                                        <td className="text-2xl md:text-2xl text-start p-3 font-bold"
-                                            colspan="4"
-                                            scope="row">Guarantees</td>
-                                    </tr>
-                                    <tr>
-                                        <td>No Royalties Share</td>
-                                        <td>
-                                            ✔️
-                                        </td>
-                                        <td>
-                                            ✔️
-                                        </td>
-                                        <td>
-                                            ✔️
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>100% Ownership Rights</td>
-                                        <td>
-                                            ✔️
-                                        </td>
-                                        <td>
-                                            ✔️
-                                        </td>
-                                        <td>
-                                            ✔️
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>100% Satisfaction</td>
-                                        <td>✔️</td>
-                                        <td>✔️</td>
-                                        <td>✔️</td>
-                                    </tr> */}
+                                  
                                     <tr className="m-4">
                                         <th className="text-2xl md:text-2xl text-start p-3 font-bold pl-5 lg:pl-14 md:pl-14"
                                             colspan="4"
@@ -1723,7 +1689,7 @@ export default function Bundle({ isOpen, onClose, service }) {
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> */}
 
             <BrandFaqs/>
             <BrandContact />

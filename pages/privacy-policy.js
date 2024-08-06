@@ -9,7 +9,7 @@ export default function Privacy() {
     return (
         <>
             <Head>
-                <title>Privacy Policy | Pine Book Publishing</title>
+                <title>Privacy Policy | Pine Book Writing</title>
                 <link rel="shortcut icon" href="/images/fav.png" />
             </Head>
             <PrimaryHeader

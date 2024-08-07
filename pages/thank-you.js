@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
-import Footer from "./components/Footer";
 import Link from "next/link";
 import Head from "next/head";
 import Script from "next/script";
+import BrandFooter from "./components/BrandFooter";
 
 export default function Home() {
     return (
@@ -41,7 +41,7 @@ export default function Home() {
                 </div>
             </section>
 
-            <Footer />
+            <BrandFooter />
         </>
     );
 }

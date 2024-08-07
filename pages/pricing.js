@@ -106,7 +106,7 @@ export default function Bundle({ isOpen, onClose, service }) {
                             <div className="single-packages relative">
 
                                 <h4 className="text-2xl font-poppins mb-6 text-center pt-4 pb-4 hover-top-vector relative">Silver Package ($2,999)</h4>
-                                <div className="single-packages-content mb-5 px-10">
+                                <div className="single-packages-content px-10">
 
                                     <div className="flex gap-2 mb-5 items-center">
                                         <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
@@ -176,7 +176,7 @@ export default function Bundle({ isOpen, onClose, service }) {
 
                             <div className="single-packages relative">
                                 <h4 className="text-2xl font-poppins mb-6 text-center pt-4 pb-4 hover-top-vector relative">Gold Package ($4,499)</h4>
-                                <div className="single-packages-content mb-5 px-10">
+                                <div className="single-packages-content px-10">
                                     <div className="flex gap-2 mb-5 items-center">
                                         <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
                                        	Dedicated Project Manager
@@ -247,7 +247,7 @@ export default function Bundle({ isOpen, onClose, service }) {
                             <div className="single-packages relative">
                                 <Image src={"/images/badge.png"} className="package-badge" width={80} height={80}></Image>
                                 <h4 className="text-2xl font-poppins mb-6 text-center pt-4 pb-4 hover-top-vector relative">Platinum Package ($6,499)</h4>
-                                <div className="single-packages-content mb-5 px-10">
+                                <div className="single-packages-content px-10">
                            
                                     <div className="flex gap-2 mb-5 items-center">
                                         <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>

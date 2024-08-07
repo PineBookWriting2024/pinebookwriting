@@ -140,7 +140,7 @@
   .single-packages-content{padding:25px;margin-right:25px;}
   .single-packages .package-badge{position:absolute;right:-65px;top:-17px;animation:upAndDown 3s ease-in-out .6s infinite;z-index:1;}
   .single-packages svg{width:15px;}
-  .single-packages-content{height:349px;overflow:scroll;overflow-x:hidden;}
+  .single-packages-content{height:310px;overflow:scroll;overflow-x:hidden;}
   .single-packages-content img{filter:invert(1);}
   .single-packages:hover .single-packages-content img{filter:invert(0);}
   .single-packages-content::-webkit-scrollbar{width:8px;}

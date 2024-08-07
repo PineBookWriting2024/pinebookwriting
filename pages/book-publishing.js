@@ -22,37 +22,37 @@ export default function BookPublishing() {
         { question: "What is an ISBN, and do I need one?", answer: "An ISBN (International Standard Book Number) is a unique identifier for your book that retailers, libraries, and distributors use. If you intend to publish your book with any retailer like Amazon, Barnes & Noble, and others, you must have an ISBN.	" },
         { question: "Will I need to have the copyright of my published book?", answer: "You do not have to register your copyright rights for your book. You own the copyright the moment you put the words on paper. However, registering your copyright has several legal advantages. If you want to register the copyrights of your book, you have to consult with your attorney." },
         { question: "How long does it take to get a book published?", answer: "Whether you choose Amazon Kindle publishing or want to get your book on any other online retailer, the publishing process may take a few weeks to months. It depends on factors like manuscript complexity and the service package chosen." },
-        { question: "Do I relinquish my rights if I publish my book with The Pine Book Publishing?", answer: "No. The terms and conditions that we will provide you in the contract for the publication of your book will state the process and procedures that will be followed, but the rights belong to you fully. Our publishing contract allows us to convert your intellectual property into a printed book or ebook ready for the public domain, but we do not get extra rights on it." },
+        { question: "Do I relinquish my rights if I publish my book with The Pine Book Writing?", answer: "No. The terms and conditions that we will provide you in the contract for the publication of your book will state the process and procedures that will be followed, but the rights belong to you fully. Our publishing contract allows us to convert your intellectual property into a printed book or ebook ready for the public domain, but we do not get extra rights on it." },
         { question: "Can I make changes to my book after it gets published?", answer: "Yes. However, you must pay an additional fee to update the database and publish the revised version of your book. This fee also includes assigning the new ISBN." },
-        { question: "What if there are certain things that I did not like about the publishing process?", answer: "We understand that there are certain things that individuals will not like about the self-publishing process, and here comes Pine Book Publishing. We are here to make your publishing journey easy. Our representative will work with you to assist you in the best possible way." }
+        { question: "What if there are certain things that I did not like about the publishing process?", answer: "We understand that there are certain things that individuals will not like about the self-publishing process, and here comes Pine Book Writing. We are here to make your publishing journey easy. Our representative will work with you to assist you in the best possible way." }
     ];
 
     return (
         <>
             <Head>
-                <title>Book Publishing | Pine Book Publishing</title>
+                <title>Book Writing | Pine Book Writing</title>
                 <meta
                     name="description"
-                    content="Everything about Pine Book Publishing—your partner in crafting, editing, and publishing your story. Experience seamless service from manuscript to bookshelf."
+                    content="Everything about Pine Book Writing—your partner in crafting, editing, and publishing your story. Experience seamless service from manuscript to bookshelf."
                 />
                 <link rel="shortcut icon" href="/images/fav.png" />
             </Head>
             <BrandNavbar />
             <BrandPrimaryHeader
                 title="Publishing With A Personal Touch"
-                desc="Whether you are a beginner or a professional writer, Pine Book Publishing can help you fine-tune your book publishing process and make sure that you have one less thing to worry about. "
+                desc="Whether you are a beginner or a professional writer, Pine Book Writing can help you fine-tune your Book Writing process and make sure that you have one less thing to worry about. "
             />
             <BrandBannerLogo />
             <div className="container mx-auto max-w-screen-xl overflow-hidden py-10 md:py-20">
                 <div className="flex justify-center items-center flex-col md:flex-row lg:flex-row px-10 md:px-0 py-10 md:py-0">
                     <div className="basis-1/2 abt-txt m1-h p1 aos-init aos-animate" data-aos="fade-right" data-aos-duration="1000">
                         <h3 className="font-poppins text-2xl md:text-3xl uppercase">
-                            Our Book Publishing
+                            Our Book Writing
                         </h3>
                         <h2 className="font-poppins text-3xl md:text-4xl uppercase font-bold">Services</h2>
                         <p className="font-poppins text-xl text-justify	pt-3">
-                            Have you ever felt like running in circles about self-publishing your book? Pine Book Publishing is here to guide you through the twists and turns of the book publishing process with professionalism and expertise.<br></br>
-                            Our professional online book publishing services avail your works for self-publishing on various platforms. As professional book publishers, Pine Book Publishing will work closely with you to ensure your book meets the industry standards and will make it easy for you to self-publish a book on Amazon.<br></br>
+                            Have you ever felt like running in circles about self-publishing your book? Pine Book Writing is here to guide you through the twists and turns of the Book Writing process with professionalism and expertise.<br></br>
+                            Our professional online Book Writing services avail your works for self-publishing on various platforms. As professional book publishers, Pine Book Writing will work closely with you to ensure your book meets the industry standards and will make it easy for you to self-publish a book on Amazon.<br></br>
                             But our support doesn’t end there. We will help you with everything that has to do with ISBNs, and indeed the overall publishing. We also provide the distribution and marketing services to get your book noticed by the right audience.
                         </p>
                     </div>
@@ -66,7 +66,7 @@ export default function BookPublishing() {
                     </div>
                 </div>
                 <p className="font-poppins text-xl text-justify	px-10 md:px-0" data-aos="fade-right">
-                    When you have Pine Book Publishing on your corner you can be confident your book will find the right audience and create the stir it deserves in the world of readers. So, are you ready to team up with us and get your book published?
+                    When you have Pine Book Writing on your corner you can be confident your book will find the right audience and create the stir it deserves in the world of readers. So, are you ready to team up with us and get your book published?
                 </p>
             </div>
 
@@ -116,7 +116,7 @@ export default function BookPublishing() {
                     <div className="relative" data-aos="fade-right">
                         <Image src={"/brand-img/process-img6.png"} width={700} height={200} className=" pb-10"></Image>
                         <div className="brand-process-content-right text-right">
-                            <h2 className="font-poppins text-2xl">Book Publishing:</h2>
+                            <h2 className="font-poppins text-2xl">Book Writing:</h2>
                             <p className="para">Last but not least, our publisher will work<br></br> with you to make your book available on<br></br> the leading publishing platforms like Amazon<br></br> Kindle Publishing. </p>
                         </div>
                     </div>

@@ -24,23 +24,23 @@ export default function BookEditing() {
         { question: "How long will the editor take to review my manuscript?", answer: "It may take around 1-2 weeks to get you the editorial report but, it also depends on the length and the genre of your book." },
         { question: "Can I see a before and after sample?", answer: "Yes, you can. You can simply ask out consultant to show you the before and after samples and he/she will be more than happy to provide you with that." },
         { question: "Who will be editing my manuscript? And how qualified are they?", answer: "We have a team of qualified professional who will be editing your manuscript. Some of them are either PhD holder and some of them are retired professors." },
-        { question: "Is my manuscript secure?", answer: "Yes, Pine Book Publishing respects your manuscript by handling it under high confidentiality. We ensure that we have NDAs with each and every client that engage with us. Any information that you provide will only be accessed by your manuscript editor and the specific project manager working on your order." },
+        { question: "Is my manuscript secure?", answer: "Yes, Pine Book Writing respects your manuscript by handling it under high confidentiality. We ensure that we have NDAs with each and every client that engage with us. Any information that you provide will only be accessed by your manuscript editor and the specific project manager working on your order." },
     ];
 
     return (
         <>
             <Head>
-                <title>Book Editing | Pine Book Publishing</title>
+                <title>Book Editing | Pine Book Writing</title>
                 <meta
                     name="description"
-                    content="Everything about Pine Book Publishing—your partner in crafting, editing, and publishing your story. Experience seamless service from manuscript to bookshelf."
+                    content="Everything about Pine Book Writing—your partner in crafting, editing, and publishing your story. Experience seamless service from manuscript to bookshelf."
                 />
                 <link rel="shortcut icon" href="/images/fav.png" />
             </Head>
             <BrandNavbar />
             <BrandPrimaryHeader
                 title="We Fix the Flaws, So You Take Applause!"
-                desc="An error in the book could be really distracting for readers to focus. At Pine Book Publishing we identify and correct those mistakes so your readers can enjoy their reading experience. "
+                desc="An error in the book could be really distracting for readers to focus. At Pine Book Writing we identify and correct those mistakes so your readers can enjoy their reading experience. "
             />
             <BrandBannerLogo />
             <div className="container mx-auto max-w-screen-xl overflow-hidden py-10 md:py-20">
@@ -51,9 +51,9 @@ export default function BookEditing() {
                         </h3>
                         <h2 className="font-poppins text-3xl md:text-4xl uppercase font-bold">Services</h2>
                         <p className="font-poppins text-xl text-justify	pt-3">
-                            At Pine Book Publishing, we understand how valuable professional editing is. Mistakes and style issues can slip through the cracks, and a skilled editor can catch these, making your work more readable and impactful.
+                            At Pine Book Writing, we understand how valuable professional editing is. Mistakes and style issues can slip through the cracks, and a skilled editor can catch these, making your work more readable and impactful.
                         </p>
-                        <p className="font-poppins text-xl text-justify	pt-3">We at Pine Book Publishing believe that a professional editor can significantly boost an author's chance of success. They help you get positive reviews and increase sales by ensuring your story connects with readers and stands out in the market. An editor turns a good manuscript into a great published book.</p>
+                        <p className="font-poppins text-xl text-justify	pt-3">We at Pine Book Writing believe that a professional editor can significantly boost an author's chance of success. They help you get positive reviews and increase sales by ensuring your story connects with readers and stands out in the market. An editor turns a good manuscript into a great published book.</p>
                     </div>
                     <div className="basis-1/2 abt-pic text-center flex justify-center md:justify-center">
                         <Image src={"/brand-img/Editing.png"} width={470} height={300}
@@ -65,7 +65,7 @@ export default function BookEditing() {
                     </div>
                 </div>
                 <p className="font-poppins text-xl text-justify	px-10 md:px-0" data-aos="fade-right">
-                    Working with a professional editor also gives authors the chance to learn and grow, preparing them for future writing projects. At Pine Book Publishing, we support this learning process, helping authors develop their skills and reach their full potential.
+                    Working with a professional editor also gives authors the chance to learn and grow, preparing them for future writing projects. At Pine Book Writing, we support this learning process, helping authors develop their skills and reach their full potential.
                 </p>
             </div>
             {/* <BrandProcess /> */}
@@ -154,7 +154,7 @@ export default function BookEditing() {
                         </div>
                         <div className="basis-1/3 md:ml-20">
                             <h2 className="text-white font-poppins text-3xl md:text-4xl uppercase mt-20 md:mt-0 font-bold" data-aos="zoom-in-left" data-aos-delay="100">Why Choose Us</h2>
-                            <p className="text-white mt-2">Our commitment to the client lies in the quality we deliver. By joining hands with Pine Book Publishing, you will have the following: </p>
+                            <p className="text-white mt-2">Our commitment to the client lies in the quality we deliver. By joining hands with Pine Book Writing, you will have the following: </p>
                             <div className="flex gap-10 mt-6">
                                 <ul>
                                     <li className="font-poppins flex items-center gap-3 text-sm mb-2"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Personalized Approach </li>

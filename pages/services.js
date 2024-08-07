@@ -69,7 +69,7 @@ const books = [
 ];
 
 const tabs = [
-    { name: "Book Publishing", icon: '/images/tab-icon-1.webp' },
+    { name: "Book Writing", icon: '/images/tab-icon-1.webp' },
     { name: "Ghostwriting Service", icon: '/images/tab-icon-2.webp' },
     { name: "Book Marketing", icon: '/images/tab-icon-3.webp' },
     { name: "E-Book", icon: '/images/tab-icon-4.webp' },
@@ -247,10 +247,10 @@ export default function PublishingLpNew() {
     return (
         <>
             <Head>
-                <title>Book Publishing Services | Pine Book Publishing</title>
+                <title>Book Writing Services | Pine Book Writing</title>
                 <meta
                     name="description"
-                    content="Hire Professional Book Publishing company. At Pine Book Publishing, we provide to comprehensive book publishing services. Your Trusted Book Writing Partners In The USA And Canada."
+                    content="Hire Professional Book Writing company. At Pine Book Writing, we provide to comprehensive Book Writing services. Your Trusted Book Writing Partners In The USA And Canada."
                 />
                 <meta name="google-site-verification" content="v2pKJGIZnMWCWw2QC5nuRPYT5gvDQlUtT0lZYFIhHYo" />
                 <link rel="shortcut icon" href="/images/fav.png" />
@@ -305,7 +305,7 @@ export default function PublishingLpNew() {
                             <h1 className="font-poppins text-3xl md:text-4xl font-bold mb-5">
                                 Providing Top Book Publishers to <br></br>Authors to Help Them Succeed
                             </h1>
-                            <h2 className="font-poppins text-md md:text-md mt-3">Put your trust in our team of expert book publishers from the top book publishing<br></br> houses to deliver a flawless publication experience meant to boost the sales of your book.</h2>
+                            <h2 className="font-poppins text-md md:text-md mt-3">Put your trust in our team of expert book publishers from the top Book Writing<br></br> houses to deliver a flawless publication experience meant to boost the sales of your book.</h2>
                             <div>
                                 <ul className="banner-features lp3-banner-list flex flex-col lg:flex-row mt-8 gap-6 justify-center">
                                     <li>publication by professionals
@@ -435,7 +435,7 @@ export default function PublishingLpNew() {
                 <div className="text-center new-lp3-why-choose-us-title">
                     <h2 className=" text-3xl text-black uppercase font-bold">What Takes Place?
                     </h2>
-                    <p className="mt-3 text-gray-600">To assist authors in releasing their books, Book Writing Verse provides an extensive array of book publishing options.With ten years of experience, our self-book publishing specialists are dedicated to exceeding all of your expectations.</p>
+                    <p className="mt-3 text-gray-600">To assist authors in releasing their books, Book Writing Verse provides an extensive array of Book Writing options.With ten years of experience, our self-Book Writing specialists are dedicated to exceeding all of your expectations.</p>
                 </div>
                 <div className=" p-8 tabs">
                     <div className="">
@@ -505,7 +505,7 @@ export default function PublishingLpNew() {
                                     <h2 className="font-poppins text-2xl md:text-3xl font-bold mb-5">
                                         Publish Your Writing and Make Your Dream Come True.
                                     </h2>
-                                    <p className="font-poppins text-md md:text-md mt-3">We have established ourselves as one of the top providers of book publishing services because to our quality. We guarantee that the quality of your book is exceptional. Allow us to assist you in realizing your ambition of releasing your own book on Amazon.
+                                    <p className="font-poppins text-md md:text-md mt-3">We have established ourselves as one of the top providers of Book Writing services because to our quality. We guarantee that the quality of your book is exceptional. Allow us to assist you in realizing your ambition of releasing your own book on Amazon.
                                     </p>
                                     <ul className="banner-features lp3-banner-list flex flex-col lg:flex-row mt-8 gap-6 justify-start">
                                         <li>Book Formatting & Design
@@ -770,7 +770,7 @@ export default function PublishingLpNew() {
                 <div className="text-center mb-6 new-lp3-why-choose-us-title">
                     <h2 className=" text-3xl text-black uppercase font-bold">Why Opt for Us?
                     </h2>
-                    <p className="mt-3 text-gray-600">To assist authors in releasing their books, Book Writing Verse providesan extensive array of book publishing options.<br></br> With ten years of experience, our self-book publishing specialists are dedicated to exceeding all of your expectations.
+                    <p className="mt-3 text-gray-600">To assist authors in releasing their books, Book Writing Verse providesan extensive array of Book Writing options.<br></br> With ten years of experience, our self-Book Writing specialists are dedicated to exceeding all of your expectations.
                     </p>
                 </div>
             </section>
@@ -782,7 +782,7 @@ export default function PublishingLpNew() {
                         </div>
                         <div className="new-lp3-why-choose-us-title">
                             <h4 className="text-2xl">Full Ownership</h4>
-                            <p>You are the sole owner. We exert all of our effort. With our professional assistance with book publishing, you acquire everything.
+                            <p>You are the sole owner. We exert all of our effort. With our professional assistance with Book Writing, you acquire everything.
                             </p>
                         </div>
                     </div>
@@ -793,7 +793,7 @@ export default function PublishingLpNew() {
                         <div className="new-lp3-why-choose-us-title">
                             <h4 className="text-2xl">Cost-effectiveness
                             </h4>
-                            <p>Being perfectionists, we are adamant that your life savings shouldn't be sacrificed for excellence. Our professional book publishing online services are unparalleled, and our pricing are reasonable.
+                            <p>Being perfectionists, we are adamant that your life savings shouldn't be sacrificed for excellence. Our professional Book Writing online services are unparalleled, and our pricing are reasonable.
                             </p>
                         </div>
                     </div>
@@ -804,7 +804,7 @@ export default function PublishingLpNew() {
                         <div className="new-lp3-why-choose-us-title">
                             <h4 className="text-2xl">Fast Delivery
                             </h4>
-                            <p>Our excellent work not only meets your requirements, but we also adhere to all deadlines with professional book publishing assistance because we recognize that time is money.</p>
+                            <p>Our excellent work not only meets your requirements, but we also adhere to all deadlines with professional Book Writing assistance because we recognize that time is money.</p>
                         </div>
                     </div>
                     <div className="flex items-center gap-5 mb-3">

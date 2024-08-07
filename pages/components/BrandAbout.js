@@ -22,7 +22,7 @@ export default function BrandAbout(props) {
                         <h4 className="font-poppins text-3xl md:text-5xl font-bold">
                         {props.headingmain}
                         </h4>
-                        {/* <h2 className="font-poppins text-3xl md:text-5xl uppercase font-bold">Pine Book Publishing</h2> */}
+                        {/* <h2 className="font-poppins text-3xl md:text-5xl uppercase font-bold">Pine Book Writing</h2> */}
                         {/* <FadeIn> */}
                         <p className="font-poppins text-xl pt-4">
                             {props.subdescone}

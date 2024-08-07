@@ -13,10 +13,10 @@ export default function Footer() {
             <Image src={"/images/f-logo.png"} width={250} height={200} className="mb-2"></Image>
           </a>
           <p className="mt-2 text-sm text-white leading-7">
-            Pine Book Publishing is a team of passionate book publishers that
+            Pine Book Writing is a team of passionate book publishers that
             believe in the power of storytelling and the importance of writers'
             ability to tell their tales. Our streamlined process and dedicated
-            support make book publishing service a realistic and rewarding goal
+            support make Book Writing service a realistic and rewarding goal
             for any author.
           </p>
         </div>

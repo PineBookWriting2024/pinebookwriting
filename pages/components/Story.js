@@ -58,7 +58,7 @@ export default function Story() {
                         Our Success Stories
                     </h3>
                     <p className="text-white">
-                        Explore our Success Stories to see how Pine Book Publishing has
+                        Explore our Success Stories to see how Pine Book Writing has
                         empowered authors <br></br> in their self-publishing journey and stands out
                         among self-book publishers.
                     </p>

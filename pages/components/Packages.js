@@ -76,7 +76,7 @@ export default function Packages({ isOpen, onClose, service }) {
                                         Multiple Revisions
                                     </div>
                                     <div className="flex gap-2 mb-5 items-center items-center text-xl">
-                                        Book Publishing
+                                        Book Writing
                                     </div>
                                     <div className="flex gap-2 mb-5 items-center items-center">
                                         <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
@@ -183,7 +183,7 @@ export default function Packages({ isOpen, onClose, service }) {
                                         Front, Back & Spine
                                     </div>
                                     <div className="flex gap-2 mb-5 items-center items-center text-xl">
-                                        Book Publishing
+                                        Book Writing
                                     </div>
                                     <div className="flex gap-2 mb-5 items-center">
                                         <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
@@ -301,7 +301,7 @@ export default function Packages({ isOpen, onClose, service }) {
                                         ISBN + Barcode (2X)
                                     </div>
                                     <div className="flex gap-2 mb-5 items-center items-center text-xl">
-                                        Book Publishing
+                                        Book Writing
                                     </div>
                                     <div className="flex gap-2 mb-5 items-center">
                                         <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
@@ -426,7 +426,7 @@ export default function Packages({ isOpen, onClose, service }) {
                                         ISBN + Barcode (2X)
                                     </div>
                                     <div className="flex gap-2 mb-5 items-center items-center text-xl">
-                                        Book Publishing
+                                        Book Writing
                                     </div>
                                     <div className="flex gap-2 mb-5 items-center">
                                         <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
@@ -589,7 +589,7 @@ export default function Packages({ isOpen, onClose, service }) {
                                         ISBN + Barcode (2X)
                                     </div>
                                     <div className="flex gap-2 mb-5 items-center items-center text-xl">
-                                        Book Publishing
+                                        Book Writing
                                     </div>
                                     <div className="flex gap-2 mb-5 items-center">
                                         <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
@@ -766,7 +766,7 @@ export default function Packages({ isOpen, onClose, service }) {
                                         ISBN + Barcode (2X)
                                     </div>
                                     <div className="flex gap-2 mb-5 items-center items-center text-xl">
-                                        Book Publishing
+                                        Book Writing
                                     </div>
                                     <div className="flex gap-2 mb-5 items-center">
                                         <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>

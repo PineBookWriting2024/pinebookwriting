@@ -169,7 +169,7 @@ export default function BrandFooter() {
                                 </li>
                                 <li className="mt-3">
                                     <Link href="/book-publishing" onClick={(e) => { e.preventDefault(); window.location.href = "/book-publishing"; }}>
-                                        Book Publishing
+                                        Book Writing
                                     </Link>
                                 </li>
                                 <li className="mt-3">

@@ -58,7 +58,7 @@ export default function BrandTestimonial() {
                                     </div>
                                 </div>
                                 <h2 className="font-poppins text-xl font-bold pt-3">This is John Bowman</h2>
-                                <p className="mb-5 pt-2">This is John Bowman. I would just love to give a shout out to Pine book publishing, my experience with them has really been beyond words. From.Lia Sinclair, Damon Peters for taking me on. I am a Christian and it has been an answer to my prayers after 4 1/2 years looking for an honest publisher thank you all so much.</p>
+                                <p className="mb-5 pt-2">This is John Bowman. I would just love to give a shout out to Pine Book Writing, my experience with them has really been beyond words. From.Lia Sinclair, Damon Peters for taking me on. I am a Christian and it has been an answer to my prayers after 4 1/2 years looking for an honest publisher thank you all so much.</p>
                                 <span className="absolute bottom-0 mb-2">John Bowman, May 30, 2024</span>
                             </Link>
                         </div>
@@ -77,7 +77,7 @@ export default function BrandTestimonial() {
                                     </div>
                                 </div>
                                 <h2 className="font-poppins text-xl font-bold pt-3">results for value</h2>
-                                <p className="mb-5 pt-2">I had a great experience because as a first-time author I didn't really know the process. They helped walk me through the process step by step. Whenever I needed to talk with them, they made time for me. We had a big project, and they helped me finish it. My time spent with Pine Book Publishing produced results. They helped me finish my project and for that I am very thankful.
+                                <p className="mb-5 pt-2">I had a great experience because as a first-time author I didn't really know the process. They helped walk me through the process step by step. Whenever I needed to talk with them, they made time for me. We had a big project, and they helped me finish it. My time spent with Pine Book Writing produced results. They helped me finish my project and for that I am very thankful.
 
 </p>
                                 <span className="absolute bottom-0 mb-2">kyle climer, July 21, 2024</span>

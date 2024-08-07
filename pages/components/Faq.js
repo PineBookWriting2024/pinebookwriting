@@ -26,12 +26,12 @@ export default function Faq() {
     };
 
     const faqData = [
-        { question: "How do I self-publish my book?", answer: "Self-publishing your book with Pine Book Publishing is simple. Start by submitting your manuscript, and our team will guide you through the editing, formatting, and cover design process." },
-        { question: "Is publishing a book difficult?", answer: "Publishing a book doesn't have to be difficult, especially with Pine Book Publishing's support." },
+        { question: "How do I self-publish my book?", answer: "Self-publishing your book with Pine Book Writing is simple. Start by submitting your manuscript, and our team will guide you through the editing, formatting, and cover design process." },
+        { question: "Is publishing a book difficult?", answer: "Publishing a book doesn't have to be difficult, especially with Pine Book Writing's support." },
         { question: "What is an ISBN and do I need one?", answer: "An ISBN (International Standard Book Number) is a unique identifier for your book used by retailers, libraries, and distributors." },
         { question: "Will I need to have my book copyrighted?", answer: "While your book is automatically copyrighted upon creation, registering your copyright provides additional legal protection." },
-        { question: "Do you offer design services?", answer: "Yes, Pine Book Publishing offers comprehensive design services, including cover design, typesetting, and layout adjustment." },
-        { question: "How do you handle distribution and marketing of books?", answer: "Pine Book Publishing handles distribution and marketing for your books, ensuring they reach the widest audience possible." }
+        { question: "Do you offer design services?", answer: "Yes, Pine Book Writing offers comprehensive design services, including cover design, typesetting, and layout adjustment." },
+        { question: "How do you handle distribution and marketing of books?", answer: "Pine Book Writing handles distribution and marketing for your books, ensuring they reach the widest audience possible." }
     ];
 
     const badges = [

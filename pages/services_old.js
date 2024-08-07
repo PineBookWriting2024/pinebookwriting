@@ -17,17 +17,17 @@ export default function Services() {
     return (
         <>
             <Head>
-                <title>Service | Pine Book Publishing</title>
+                <title>Service | Pine Book Writing</title>
                 <meta
                     name="description"
-                    content="Everything about Pine Book Publishing—your partner in crafting, editing, and publishing your story. Experience seamless service from manuscript to bookshelf."
+                    content="Everything about Pine Book Writing—your partner in crafting, editing, and publishing your story. Experience seamless service from manuscript to bookshelf."
                 />
                 <link rel="shortcut icon" href="/images/fav.png" />
             </Head>
             <BrandNavbar />
             <BrandPrimaryHeader
                 title="Start Your Publishing Journey Now"
-                desc="Are you searching for a company with a wide range of Book Publishing Services? You are at the right place. At Pine Book Publishing, we offer comprehensive services to cater to your needs. From editing to publishing, we have mastered everything. Explore everything you need to kick-start your publishing journey."
+                desc="Are you searching for a company with a wide range of Book Writing Services? You are at the right place. At Pine Book Writing, we offer comprehensive services to cater to your needs. From editing to publishing, we have mastered everything. Explore everything you need to kick-start your publishing journey."
             />
             <BrandBannerLogo />
             <BrandServices />

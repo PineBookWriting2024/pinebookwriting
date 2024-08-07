@@ -137,8 +137,8 @@ export default function HeroForm() {
           <h1 className="font-poppins text-4xl md:text-4xl mb-7 banner-text-custom">
             Have you finished writing your<br></br> book  and are ready to<br></br> self-publish?
           </h1>
-          <p>Do not overwhelm yourself! Pine Book Publishing offers premium <span>Self-Publishing Services</span> with hands-on support from polishing your manuscript to printing and distributing your book worldwide. Our team can ensure your book will be available on all major online retailers.</p>
-          {/* <button className="get-premium-btn" onClick={handleOpenChat}>Get premium book publishing services</button> */}
+          <p>Do not overwhelm yourself! Pine Book Writing offers premium <span>Self-Publishing Services</span> with hands-on support from polishing your manuscript to printing and distributing your book worldwide. Our team can ensure your book will be available on all major online retailers.</p>
+          {/* <button className="get-premium-btn" onClick={handleOpenChat}>Get premium Book Writing services</button> */}
           {/* <div className="flex justify-start items-center mt-8 gap-2 md:gap-x-8 client-logo-sec">
             {clientLogos.map((logo, index) => (
               <Link key={index} href={logo.href} target="_blank">
@@ -176,7 +176,7 @@ export default function HeroForm() {
             ></Image>
             <div className="text-center">
               <h4 className="font-poppins text-white text-2xl md:text-2xl">Avail Discount</h4>
-              <h5 className="font-poppins text-white text-lg mb-3">Exclusive Offer: Expert Book Publishing at <span className="text-blink">50% Off</span> – <br></br>Your Story Deserves to be Heard!</h5>
+              <h5 className="font-poppins text-white text-lg mb-3">Exclusive Offer: Expert Book Writing at <span className="text-blink">50% Off</span> – <br></br>Your Story Deserves to be Heard!</h5>
             </div>
             <div>
 

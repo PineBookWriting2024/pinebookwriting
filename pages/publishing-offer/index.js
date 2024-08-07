@@ -223,10 +223,10 @@ export default function Lp() {
     return (
         <>
             <Head>
-                <title>Book Publishing Services | Pine Book Publishing</title>
+                <title>Book Writing Services | Pine Book Writing</title>
                 <meta
                     name="description"
-                    content="Hire Professional Book Publishing company. At Pine Book Publishing, we provide to comprehensive book publishing services. Your Trusted Book Writing Partners In The USA And Canada."
+                    content="Hire Professional Book Writing company. At Pine Book Writing, we provide to comprehensive Book Writing services. Your Trusted Book Writing Partners In The USA And Canada."
                 />
                 <meta name="google-site-verification" content="v2pKJGIZnMWCWw2QC5nuRPYT5gvDQlUtT0lZYFIhHYo" />
                 <link rel="shortcut icon" href="/images/fav.png" />
@@ -278,7 +278,7 @@ export default function Lp() {
                             <h1 className="font-poppins text-4xl md:text-5xl font-bold">
                                 PUBLISH YOUR BOOK AND GET NOTICED!
                             </h1>
-                            <h2 className="font-poppins text-xl md:text-2xl font-bold mt-3">Hire Experts from Pine Book Publishing at <span className="powered-by-text">50% Discount.</span></h2>
+                            <h2 className="font-poppins text-xl md:text-2xl font-bold mt-3">Hire Experts from Pine Book Writing at <span className="powered-by-text">50% Discount.</span></h2>
                             <ul className="banner-features flex flex-col lg:flex-row mt-8 gap-6 justify-center">
                                 <li className="first"><i className="fa fa-check" aria-hidden="true"></i>93% Client Retention Rate</li>
                                 <li><i className="fa fa-check" aria-hidden="true"></i>2.5K+ books published</li>
@@ -382,8 +382,8 @@ export default function Lp() {
             <section className="new-lp-about-book flex flex-col lg:flex-row justify-center items-start py-24 max-w-screen-xl mx-auto gap-6 md:gap-32 lg:px-0 px-5">
                 <div className="basis-1/2">
                     <h3 className="font-poppins text-3xl md:text-4xl font-bold mb-4">PEOPLE OF THE WORLD ARE EAGER TO READ YOUR BOOK</h3>
-                    <p className="mb-4">As said, every significant advancement begins with a fascinating work of imagination, at Pine Book Publishing, we will do that for you: we will take that step forward. There is no story that should go unnoticed. Therefore, we offer you a range of services of the most skilled and innovative writers, editors & publishers in the industry, all in a single place.</p>
-                    <p>We have published thousands of successful books – from writing, editing, design, and production. Most of the books we have published for our clients have grabbed a lot of attention in the sphere of literature and are among the best sellers. Through Pine Book Publishing, your ideas will be put on paper by none other than the best. Our team can assist you in writing & publishing your story, be it in the fiction or nonfiction genre.</p>
+                    <p className="mb-4">As said, every significant advancement begins with a fascinating work of imagination, at Pine Book Writing, we will do that for you: we will take that step forward. There is no story that should go unnoticed. Therefore, we offer you a range of services of the most skilled and innovative writers, editors & publishers in the industry, all in a single place.</p>
+                    <p>We have published thousands of successful books – from writing, editing, design, and production. Most of the books we have published for our clients have grabbed a lot of attention in the sphere of literature and are among the best sellers. Through Pine Book Writing, your ideas will be put on paper by none other than the best. Our team can assist you in writing & publishing your story, be it in the fiction or nonfiction genre.</p>
                     <Link href={'javascript:;'} className="btn mt-6 font-poppins" onClick={() => setIsOpen(true)}>LET'S GET STARTED</Link>
                 </div>
                 <div className="basis-1/2 mt-24">
@@ -450,7 +450,7 @@ export default function Lp() {
             <section className="py-12 overflow-hidden">
                 <div className="max-w-screen-xl mx-auto ">
                     <div className="text-center mb-6">
-                        <h2 className=" text-3xl text-black uppercase font-poppins font-bold">Our book publishing services are available at a premium <br></br> to help you meet your publishing needs.</h2>
+                        <h2 className=" text-3xl text-black uppercase font-poppins font-bold">Our Book Writing services are available at a premium <br></br> to help you meet your publishing needs.</h2>
                         <div className="flex justify-center items-center pt-12">
                             <Image alt="LOGO" src={'/images/features-img.jpg'} width={900} height={900} loading="lazy" data-aos="fade-left" />
                         </div>
@@ -634,7 +634,7 @@ export default function Lp() {
                                 <Image src={"/brand-img/logo.png"} width={250} height={200}></Image>
                             </a>
                             <p className="mt-2 text-sm text-white leading-7">
-                                Pine Book Publishing is a team of passionate book publishers that believe in the power of storytelling and the importance of writers' ability to tell their tales. Our streamlined process and dedicated support make book publishing service a realistic and rewarding goal for any author.
+                                Pine Book Writing is a team of passionate book publishers that believe in the power of storytelling and the importance of writers' ability to tell their tales. Our streamlined process and dedicated support make Book Writing service a realistic and rewarding goal for any author.
                             </p>
                         </div>
                         <div className="lg:w-1/3 md:w-1/4 w-full px-4">

@@ -22,16 +22,16 @@ export default function Proofreading() {
         { question: "Do I need a proofreading service if I’ve already signed up for editing?", answer: "Yes! Nevertheless, proofreading is vital even when the document has been edited. It checks for remaining errors and makes the final product as perfect as possible." },
         { question: "Can I proofread my book by myself?", answer: "While self-proofreading is indeed possible, it could sometimes result in missing some errors, given that the person is already familiar with the text. A professional proofreading service can offer detailed feedback and extensive error detection." },
         { question: "How quickly can I get my book to be proofread?", answer: "Our professionals take a few days or weeks to proofread a book. However, the exact time depends on the length and complexity of your manuscript.	" },
-        { question: "Are your proofreading services confidential?", answer: "Yes, Pine Book Publishing respects your manuscript by handling it under high confidentiality. We ensure that we have NDAs with every client who engages with us. Any information you provide will only be accessed by your proofreader and the specific project manager working on your order." }
+        { question: "Are your proofreading services confidential?", answer: "Yes, Pine Book Writing respects your manuscript by handling it under high confidentiality. We ensure that we have NDAs with every client who engages with us. Any information you provide will only be accessed by your proofreader and the specific project manager working on your order." }
     ];
 
     return (
         <>
             <Head>
-                <title>Proofreading | Pine Book Publishing</title>
+                <title>Proofreading | Pine Book Writing</title>
                 <meta
                     name="description"
-                    content="Everything about Pine Book Publishing—your partner in crafting, editing, and publishing your story. Experience seamless service from manuscript to bookshelf."
+                    content="Everything about Pine Book Writing—your partner in crafting, editing, and publishing your story. Experience seamless service from manuscript to bookshelf."
                 />
                 <link rel="shortcut icon" href="/images/fav.png" />
             </Head>
@@ -50,7 +50,7 @@ export default function Proofreading() {
                         <h2 className="font-poppins text-3xl md:text-4xl uppercase font-bold">adjustment</h2>
                         <p className="font-poppins text-xl text-justify	pt-3">
                             Have you ever been reading a book and come across a typo or a clumsy construction that jolted you out of the story? It is important to do everything possible to eliminate even minor errors that can distract the reader from the material.
-                            Writing a book is a big thing, and after spending so much time on your story, you don’t want readers to be distracted by errors. Pine Book Publishing is here to help you avoid these problems. We know you want your book to look its best and be easy to read. Our team of experienced proofreaders will catch the mistakes you might miss. We give your text a careful look to make sure it’s clean and polished.
+                            Writing a book is a big thing, and after spending so much time on your story, you don’t want readers to be distracted by errors. Pine Book Writing is here to help you avoid these problems. We know you want your book to look its best and be easy to read. Our team of experienced proofreaders will catch the mistakes you might miss. We give your text a careful look to make sure it’s clean and polished.
                         </p>
                     </div>
                     <div className="basis-1/2 abt-pic text-center flex justify-center md:justify-center">

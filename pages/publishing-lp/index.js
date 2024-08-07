@@ -238,12 +238,12 @@ export default function Home() {
   };
 
   const faqData = [
-    { question: "How do I self-publish my book?", answer: "Self-publishing your book with Pine Book Publishing is simple. Start by submitting your manuscript, and our team will guide you through the editing, formatting, and cover design process." },
-    { question: "Is publishing a book difficult?", answer: "Publishing a book doesn't have to be difficult, especially with Pine Book Publishing's support." },
+    { question: "How do I self-publish my book?", answer: "Self-publishing your book with Pine Book Writing is simple. Start by submitting your manuscript, and our team will guide you through the editing, formatting, and cover design process." },
+    { question: "Is publishing a book difficult?", answer: "Publishing a book doesn't have to be difficult, especially with Pine Book Writing's support." },
     { question: "What is an ISBN and do I need one?", answer: "An ISBN (International Standard Book Number) is a unique identifier for your book used by retailers, libraries, and distributors." },
     { question: "Will I need to have my book copyrighted?", answer: "While your book is automatically copyrighted upon creation, registering your copyright provides additional legal protection." },
-    { question: "Do you offer design services?", answer: "Yes, Pine Book Publishing offers comprehensive design services, including cover design, typesetting, and layout adjustment." },
-    { question: "How do you handle distribution and marketing of books?", answer: "Pine Book Publishing handles distribution and marketing for your books, ensuring they reach the widest audience possible." }
+    { question: "Do you offer design services?", answer: "Yes, Pine Book Writing offers comprehensive design services, including cover design, typesetting, and layout adjustment." },
+    { question: "How do you handle distribution and marketing of books?", answer: "Pine Book Writing handles distribution and marketing for your books, ensuring they reach the widest audience possible." }
   ];
 
   const settings = {
@@ -300,10 +300,10 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Book Publishing Services | Pine Book Publishing</title>
+        <title>Book Writing Services | Pine Book Writing</title>
         <meta
           name="description"
-          content="Hire Professional Book Publishing company. At Pine Book Publishing, we provide to comprehensive book publishing services. Your Trusted Book Writing Partners In The USA And Canada."
+          content="Hire Professional Book Writing company. At Pine Book Writing, we provide to comprehensive Book Writing services. Your Trusted Book Writing Partners In The USA And Canada."
         />
         <meta name="google-site-verification" content="v2pKJGIZnMWCWw2QC5nuRPYT5gvDQlUtT0lZYFIhHYo" />
         <link rel="shortcut icon" href="/images/fav.png" />
@@ -493,11 +493,11 @@ export default function Home() {
               {/* <AnimateFade type={"top"}> */}
               <div className="abt-txt m1-h p1">
                 <h3 className="font-poppins text-3xl md:text-5xl font-bold">
-                  About<span>Pine Book Publishing</span>
+                  About<span>Pine Book Writing</span>
                 </h3>
                 <p className="pt-3">
-                  Pine Book Publishing was founded on February 22, 2023, with the mission of providing quality editing and publishing services for the authors worldwide.
-                  Our founders understood that many authors need support in editing and publishing their works to make them distinct from the rest in the crowded marketplace. They had a vision of creating a company that would help these authors bring their ideas to life and turn them into successful books. That was when Pine Book Publishing was officially established with a mission of providing authors with the best book publishing experience.<br></br>
+                  Pine Book Writing was founded on February 22, 2023, with the mission of providing quality editing and publishing services for the authors worldwide.
+                  Our founders understood that many authors need support in editing and publishing their works to make them distinct from the rest in the crowded marketplace. They had a vision of creating a company that would help these authors bring their ideas to life and turn them into successful books. That was when Pine Book Writing was officially established with a mission of providing authors with the best Book Writing experience.<br></br>
                   We have a qualified team of professionals who will work hand in hand with you from the moment you decide to publish your book to the moment your book in known to the world.
                 </p>
                 <div className="flex justify-start items-center mt-8 gap-2 md:gap-x-8 client-logo-sec about-logos-sec">
@@ -838,10 +838,10 @@ export default function Home() {
         <section className="process pt-14">
           <div className="container mx-auto text-center m1-h ">
             <h3 className="font-poppins text-3xl md:text-4xl">
-              Our Book Publishing Process
+              Our Book Writing Process
             </h3>
             <p className="pt-2">
-              At Pine Book Publishing, we've streamlined Our Book Publishing
+              At Pine Book Writing, we've streamlined Our Book Writing
               Process to <br></br>ensure authors have a seamless experience from start to
               finish.
             </p>
@@ -919,7 +919,7 @@ export default function Home() {
                     Connect Us Now!
                   </h3>
                   <p className="text-black leading-6  pb-5 text-base pt-2">
-                    Have questions? Reach out to Pine Book Publishing for
+                    Have questions? Reach out to Pine Book Writing for
                     personalized assistance.
                   </p>
 

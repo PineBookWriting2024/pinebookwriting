@@ -11,12 +11,12 @@ export default function About(props) {
                 <AnimateFade type={"top"}>
                     <div className="abt-txt m1-h p1">
                         <h3 className="font-poppins text-3xl md:text-7xl">
-                            About Us<span>Pine Book Publishing</span>
+                            About Us<span>Pine Book Writing</span>
                         </h3>
                         <p>
-                            Celebrate your tales with Pine Book Publishing, a book
+                            Celebrate your tales with Pine Book Writing, a book
                             publishing company that specializes in bringing authors' visions
-                            to life through professional book publishing services. Our team
+                            to life through professional Book Writing services. Our team
                             of skilled professionals is committed to guide you through every
                             step of the publishing process, ensuring your book captivates
                             readers and makes an everlasting impact worldwide.

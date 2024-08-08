@@ -75,7 +75,7 @@ export default function PopupBundle({ isOpen, onClose, service }) {
         );
         if (response) {
             setShowSuccess(true);
-            router.push('/thankyou-page')
+            router.push('/thank-you')
             setTimeout(() => {
                 setShowSuccess(false);
                 setEmail("");

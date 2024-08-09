@@ -251,9 +251,9 @@
     .brand-hero-banner-form button{background:linear-gradient(90deg,rgba(19,124,109,1) 0%,rgba(48,150,135,1) 100%)!important;padding:9px 25px;transition:0.3s ease-in-out!important;}
     .brand-hero-banner-form button:hover{background:transparent!important;transition:0.3s ease-in-out!important;}
     .brand-cta-section{background:linear-gradient(90deg,rgb(156 126 94) 0%,rgb(195 161 126) 100%);background-size:cover;background-position:right;background-repeat:100% 100%;background-image:url(../public/brand-img/cta-bg-b.webp);border-radius:36px;}
-    .brand-cta-book{position:absolute;top:-29px;left:9px;animation:upAndDown 3s ease-in-out .6s infinite}
+    .brand-cta-book{position:absolute;top:-0px;left:9px;animation:upAndDown 3s ease-in-out .6s infinite}
     .brand-choose-us-img{position:absolute;left:-23px;width:376px;bottom:-69px;}
-    .brand-cta-vector::before{content:"";position:absolute;width:398px;height:462px;background-image:url(../public/brand-img/cta-vector.png);background-size:contain;background-repeat:no-repeat;top:-42px;left:-10px;}
+    .brand-cta-vector::before{content:"";position:absolute;width:398px;height:462px;background-image:url(../public/brand-img/cta-vector.png);background-size:contain;background-repeat:no-repeat;top:30px;left:20px;}
     .brand-choose-us-section{  /* background: #1e8677 !important; */
     background-image:url(../public/brand-img/cta-bg.webp);background-size:cover;background-position:right;border-radius:36px;}
     @keyframes upAndDown{

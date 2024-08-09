@@ -97,6 +97,11 @@ export default function BrandFooter() {
                                     </Link>
                                 </li>
                                 <li className="mt-3">
+                                    <Link href="/services" onClick={(e) => { e.preventDefault(); window.location.href = "/services"; }}>
+                                    Services
+                                    </Link>
+                                </li>
+                                <li className="mt-3">
                                     <Link href="/testimonials" onClick={(e) => { e.preventDefault(); window.location.href = "/testimonials"; }}>
                                     Testimonials
                                     </Link>

@@ -7,7 +7,7 @@ export default function BrandServices() {
     return (
         <>
             <section className="brand-service-section overflow-hidden">
-                <div className="max-w-screen-xl mx-auto px-4 my-20 relative">
+                <div className="max-w-screen-lg mx-auto px-4 my-20 relative">
                     <div className="text-center mb-6">
                        
                         <h2 className="font-poppins text-5xl md:text-5xl text-black font-bold">Services We Offer</h2>

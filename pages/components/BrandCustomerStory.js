@@ -47,16 +47,7 @@ export default function BrandCustomerStory() {
             src: "/images/v4.mp4",
             type: "video/mp4"
         },
-        {
-            id: 6,
-            src: "/images/v4.mp4",
-            type: "video/mp4"
-        },
-        {
-            id: 7,
-            src: "/images/v4.mp4",
-            type: "video/mp4"
-        }
+
     ];
 
 

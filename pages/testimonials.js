@@ -42,13 +42,14 @@ export default function Services() {
                 desc="Let Pine Book Writing be the compass for your narrative journey, steering you toward literary success with every stroke of the pen."
             />
             <BrandBannerLogo />
+            <BrandCustomerStory />
             <BrandTestimonial />
             <BrandCTA
                 title="Achieve Your Writing Dreams Now!"
                 desc="Need help getting your book published? Let our team of experts guide you. Contact us today and take the first step towards becoming a published author."
                 btntext="Speak to our Consultant"
             />
-            <BrandCustomerStory />
+           
            
             <BrandFooter />
         </>

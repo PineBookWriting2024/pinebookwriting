@@ -301,7 +301,7 @@
     .brand-process{background-color:#E6DED8;}
     .service-card-img:before{position:absolute;content:"";top:0;bottom:0;left:0;right:0;background-color:rgba(0,168,157,0.4);-webkit-transition:opacity 500ms ease,visibility 500ms ease,-webkit-transform 500ms ease;transition:opacity 500ms ease,visibility 500ms ease,-webkit-transform 500ms ease;transition:opacity 500ms ease,visibility 500ms ease,transform 500ms ease;transition:opacity 500ms ease,visibility 500ms ease,transform 500ms ease,-webkit-transform 500ms ease;visibility:hidden;opacity:0;-webkit-transform:translateY(-70%);transform:translateY(-70%);z-index:1;}
     .brand-service-card:hover .service-card-img:before{visibility:visible;-webkit-transform:translateY(0%);transform:translateY(0%);opacity:1;}
-    .service-card-img{position:relative;display:block;overflow:hidden;}
+    .service-card-img{position:relative;display:block;overflow:hidden;height: 100%;}
     .brand-primary-header-bg{padding:14% 0 7% 0;background-repeat:no-repeat;background-size:cover;}
     /* .contact-banner-brand{background-image:url(../public/brand-img/contact-banner.jpg);}
     .about-banner-brand{background-image:url(../public/brand-img/abt-banner.jpg);}
@@ -363,7 +363,7 @@
     .imageOverlay p{color:#573f3b;font-weight:bold;}
     .navButton{position:absolute;top:50%;transform:translateY(-50%);background-color:rgba(0,0,0,0.5);color:white;padding:10px;border-radius:50%;cursor:pointer;z-index:10;}
     .brand-story-sec .bk-sil2.prev{top:50%!important;left:-36px!important;z-index:99999;}
-    .bk-sil2.next{position:absolute;top:50%!important;right:-34px!important;  /* z-index: 99999; */}
+    .bk-sil2.next{position:absolute;top:50%!important;right:-34px!important;   z-index: 99999;}
     .brand-story-sec::after{content:"";position:absolute;left:0;  /* top: 0; */width:100%;height:57%;background-image:url(../public/brand-img/story-bg.png);background-size:cover;background-repeat:no-repeat;bottom:0;}
     .glightbox-clean .gslide-description{display:none;}
     .brand-custom-dropdown-menu{width:100%;left:0;right:0;top:31px;}

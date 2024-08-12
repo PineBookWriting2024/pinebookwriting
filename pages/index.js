@@ -59,12 +59,14 @@ export default function Home() {
                 subdescthree=""
             />
 
-            <BrandServices />
-            <BrandCTA
+<BrandCTA
                 title="Achieve Your Writing Dreams With Professional Ghostwriting Company!"
-                desc="Don’t have time to write your fascinating story? Let our team of experts guide you. Contact us today and take the first step towards becoming the best author. help getting your book published? Let our team of experts guide you. Contact us today and take the first step towards becoming a published author."
+                desc="Don’t have time to write your fascinating story? Let our team of experts guide you. Contact us today and take the first step towards becoming the best author.."
                 btntext="Speak to our Consultant"
             />
+
+            <BrandServices />
+          
             {/* <BrandProcess /> */}
             <BrandChooseUs />
             <BrandTestimonial />

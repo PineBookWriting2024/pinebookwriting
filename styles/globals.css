@@ -243,6 +243,11 @@
     .brand-about-btn{  /* background: #15184c; */
     background:linear-gradient(90deg,rgba(19,124,109,1) 0%,rgba(48,150,135,1) 100%);background-image:-webkit-linear-gradient(-90deg,#008081 0,#005556 100%);background-image:-ms-linear-gradient(-90deg,#008081 0,#005556 100%);border:1px solid #006162;color:#fff;border-radius:5px;box-shadow:0 3px 5px #777777;padding:9px 30px;border-radius:40px;margin-top:20px;}
     .brand-hero-bg-img{background-image:url(../public/brand-img/banner-img.webp);padding:6% 0;background-repeat:no-repeat;background-size:cover;}
+    button.brand-nav-btn-1 {
+      /* background-color: #2d38b7 !important; */
+      background-image: -webkit-linear-gradient(-90deg, #ffffff 0, #ffffff 100%);
+      color: #000;
+  }
     .brand-nav-btn{  /* background: linear-gradient(90deg, rgba(19, 124, 109, 1) 0%, rgba(48, 150, 135, 1) 100%);
        */
     background-image:-webkit-linear-gradient(-90deg,#008081 0,#005556 100%);background-image:-ms-linear-gradient(-90deg,#008081 0,#005556 100%);border:1px solid #006162;color:#fff;border-radius:30px;padding:8px 28px;box-shadow:0 1px 5px #191b42;}

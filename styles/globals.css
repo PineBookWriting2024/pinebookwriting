@@ -331,14 +331,14 @@
       0%,100%,20%,40%,60%,80%{color:#fff}
       10%,30%,50%,70%,90%{color:#006162}
     }
-    .header-form-off-badge{position:absolute;right:-29px;top:-40px;z-index:1000;width:130px;}
+    .header-form-off-badge{position:absolute;right:-29px;top:-40px;z-index:1000;width:115px;}
     .powered-by-text{font-weight:bold;}
     .brand-testimonials-card:hover{color:#fff;transition:.4s ease-in-out;}
     .brand-testimonials-card{display:block;position:relative;background-color:#e8e4e4;border-radius:4px;margin:12px;text-decoration:none;z-index:0;overflow:hidden;}
     .brand-testimonials-card:before{content:"";position:absolute;z-index:-1;top:-16px;right:-16px;background-image: -webkit-linear-gradient(-90deg, #008081 0, #005556 100%);height:32px;width:32px;border-radius:32px;transform:scale(5.5);transform-origin:50% 50%;transition:transform 0.25s ease-out;}
     .brand-testimonials-card:hover:before{transform:scale(45);color:#fff;}
     .service-dropdown-icon{filter:invert(1);}
-    .fixed-top{position:fixed!important;transition:.3s ease-in;background-color:#91775c;width:100%!important;top:0!important;padding:3px!important;}
+    .fixed-top{position:fixed!important;transition:.3s ease-in;background-color:#127271;width:100%!important;top:0!important;padding:3px!important;}
     .fixed-top .brand-nav-btn{background:#ffffff!important;color:#000;}
     .audioPlayer{background:#fff;padding:10px;border-radius:22px;display:inline-block;}
     .brand-main-contact-wrapper{background:linear-gradient(90deg,rgba(19,124,109,1) 0%,rgba(48,150,135,1) 100%);box-shadow:0 10px 20px -8px rgba(0,0,0,.7);border-radius:40px;width:70%;}
@@ -544,3 +544,32 @@
       bottom: 0;
       top: 0;
   }
+
+
+  /* brand button css color changes */
+  button.brand-nav-btn.shadow-xl.mt-10.cursor-pointer.btn-g {
+    background: linear-gradient(90deg, rgba(19, 124, 109, 1) 0%, rgba(48, 150, 135, 1) 100%);
+    background-image: -webkit-linear-gradient(-90deg, #008081 0, #005556 100%);
+    background-image: -ms-linear-gradient(-90deg, #008081 0, #005556 100%);
+    border: 1px solid #006162;
+    color: #fff;
+    box-shadow: 0 3px 5px #777777;
+    padding: 9px 30px;
+    border-radius: 40px;
+    margin-top: 20px;
+}
+
+button.brand-nav-btn-1.brand-nav-btn.shadow-xl.mt-10.cursor-pointer.btn-f {
+  background-image: -webkit-linear-gradient(-90deg, #B0A698, #5d554b);
+  color: #fff;
+  border-radius: 30px;
+  padding: 8px 40px;
+  box-shadow: 0 1px 5px #191b42;
+}
+
+
+.btn-ff
+{
+  background-image: -webkit-linear-gradient(-90deg, #B0A698, #5d554b);
+
+}

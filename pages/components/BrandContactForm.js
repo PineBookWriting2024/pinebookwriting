@@ -81,7 +81,7 @@ export default function BrandContact() {
                 <div className="contact-form-bg-img"></div>
                 <div className="max-w-screen-xl mx-auto px-8 md:px-10">
                     <div className="form-mid-wrap pt-4 bg-gray-200 connect-form-border mb-12">
-                        <div className="flex flex-col md:flex-row items-end">
+                        <div className="flex flex-col md:flex-row items-center">
                             <div className="basis-1/3 hidden md:block position-relative">
                                 <AnimateFade type={"right"} className="position-relative">
                                     <Image
@@ -165,7 +165,7 @@ export default function BrandContact() {
                                         Form submitted Successfully!
                                     </p>
                                 )}
-                                <button className="p-4 bg-color uppercase text-white rounded brand-submit-btn mb-10" type="submit">
+                                <button className="p-4 bg-color uppercase text-white rounded brand-submit-btn mb-10 btn-ff" type="submit">
                                     Submit
                                 </button>
                             </form>

@@ -158,8 +158,8 @@ export default function BrandHero() {
                             <Image
                                 className="text-center header-form-off-badge"
                                 src={"/images/form-badge.png"}
-                                width={160}
-                                height={200}
+                                width={130}
+                                height={130}
                                 loading="lazy"
                             ></Image>
                             <div className="text-center">

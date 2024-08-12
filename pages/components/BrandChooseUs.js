@@ -34,7 +34,7 @@ export default function BrandChooseUs() {
                                 </ul>
                             </div>
                             {/* <BrandAudioPlayer src="/brand-img/why-choose-us-voice.wav" /> */}
-                            <button className="brand-nav-btn-1 brand-nav-btn shadow-xl mt-10 cursor-pointer"><Link href="tel:+18668417463">Call Now</Link></button>
+                            <button className="brand-nav-btn-1 brand-nav-btn shadow-xl mt-10 cursor-pointer btn-f"><Link href="tel:+18668417463">Call Now</Link></button>
                         </div>
                     </div>
                 </div>

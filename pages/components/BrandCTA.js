@@ -17,7 +17,7 @@ export default function BrandCTA(props) {
                     <div className="basis-1/2 md:ml-20">
                         <h2 className="text-black font-poppins text-3xl md:text-4xl aos-init aos-animate font-bold" data-aos="flip-down">{props.title}</h2>
                         <p className="text-black mt-10">{props.desc}</p>
-                        <button className="brand-nav-btn shadow-xl mt-10 cursor-pointer" onClick={handleOpenChat}><Link href={'javascript:;'}>{props.btntext}</Link></button>
+                        <button className="brand-nav-btn shadow-xl mt-10 cursor-pointer btn-g" onClick={handleOpenChat}><Link href={'javascript:;'}>{props.btntext}</Link></button>
                     </div>
                 </div>
             </section>

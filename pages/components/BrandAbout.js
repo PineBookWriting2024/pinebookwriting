@@ -34,7 +34,7 @@ export default function BrandAbout(props) {
                             {props.subdescthree}
                         </p>
                         {isHomePage && (
-                            <Link href="/about" className="brand-about-btn font-poppins">READ MORE</Link>
+                            <Link href="/about" className="button font-poppins brand-nav-btn-1 brand-nav-btn shadow-xl mt-10 cursor-pointer btn-f ">READ MORE</Link>
                         )}
                         {/* </FadeIn> */}
                     </div>

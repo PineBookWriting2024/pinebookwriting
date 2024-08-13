@@ -94,44 +94,46 @@ export default function BrandCustomerStory() {
 
                 <section className="testimonials pt-8">
                     <div className="container mx-auto relative w-[80%]">
-                    <Swiper
-                        effect={"coverflow"}
-                        grabCursor={true}
-                        centeredSlides={true}
-                        slidesPerView={4}
-                        loop={true}
-                        coverflowEffect={{
-                            rotate: -10,
-                            stretch: 0,
-                            depth: 100,
-                            modifier: 1,
-                            slideShadows: true,
-                        }}
-                        onBeforeInit={(swiper) => {
-                            swiperRef2.current = swiper;
-                        }}
-                        modules={[EffectCoverflow, Pagination, Navigation]}
-                        className="mySwiper"
-                        breakpoints={{
-                            "@0.00": {
-                                slidesPerView: 1,
-                                spaceBetween: 10,
-                                navigation: true,
-                            },
-                            "@1.00": {
-                                slidesPerView: 3,
-                                spaceBetween: 10,
-                            },
-                        }}
-                    >
+                        <Swiper
+                            effect={"coverflow"}
+                            grabCursor={true}
+                            centeredSlides={true}
+                            slidesPerView={4}
+                            loop={true}
+                            coverflowEffect={{
+                                rotate: -10,
+                                stretch: 0,
+                                depth: 100,
+                                modifier: 1,
+                                slideShadows: true,
+                            }}
+                            onBeforeInit={(swiper) => {
+                                swiperRef2.current = swiper;
+                            }}
+                            modules={[EffectCoverflow, Pagination, Navigation]}
+                            className="mySwiper"
+                            breakpoints={{
+                                "@0.00": {
+                                    slidesPerView: 1,
+                                    spaceBetween: 10,
+                                    navigation: true,
+                                },
+                                "@1.00": {
+                                    slidesPerView: 3,
+                                    spaceBetween: 10,
+                                },
+                            }}
+                        >
                             {videoSlides.map((video) => (
-                                <SwiperSlide key={video.id} className="glightbox">
+                                <SwiperSlide key={video.id} className="">
 
                                     {/* <div className="slideContent"> */}
+                                    <Link href={video.src} className="glightbox">
                                         <video loop controls muted loading="lazy" className="brand-story-slider ">
                                             <source src={video.src} type={video.type} />
                                         </video>
-                                        {/* <div className="imageOverlay">
+                                    </Link>
+                                    {/* <div className="imageOverlay">
                                             <p>Hello World</p>
                                         </div>
                                     </div> */}

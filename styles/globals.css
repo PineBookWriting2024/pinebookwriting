@@ -87,8 +87,9 @@
   .bk-sil2.next{margin-top:0px;position:absolute;top:43%;right:-36px;width:45px;height:35px;transform:translateY(-50%);background:#0d0f38;border:none;padding:10px 7px;color:#fff;border-radius:10px;width:3.5%;font-size:24px;line-height:0.5;display:flex;justify-content:center;align-items:center;transition:0.4s ease-in-out;}
   .bk-sil2.prev{position:absolute;top:43%;left:-45px;width:45px;height:35px;transform:translateY(-50%);margin-top:0px;background:#0d0f38;border:none;padding:10px 7px;color:#fff;border-radius:10px;width:3.5%;font-size:24px;line-height:0.5;display:flex;justify-content:center;align-items:center;transition:0.4s ease-in-out;}
   .bnd-slider.swiper-wrapper{text-align:-webkit-center;}
-  .copyright-sec{background-color:#2c9384;}
-  .connect-form-input{background-color:#fff;font-size:16px;border-radius:10px;border:2px solid #fff0;padding:17px;}
+  .copyright-sec {
+    background-color: #127271;
+}  .connect-form-input{background-color:#fff;font-size:16px;border-radius:10px;border:2px solid #fff0;padding:17px;}
   .header-form-input{background-color:#fff;font-size:16px;border-radius:10px;border:2px solid #fff0;}
   .header-form-input select{color:grey;}
   .connect-form-input:focus-visible{border:2px solid #2c9384;}
@@ -250,7 +251,7 @@
   }
     .brand-nav-btn{  /* background: linear-gradient(90deg, rgba(19, 124, 109, 1) 0%, rgba(48, 150, 135, 1) 100%);
        */
-       background-image: -webkit-linear-gradient(-90deg, #B0A698, #5d554b);color:#fff;border-radius:30px;padding:8px 28px;box-shadow:0 1px 5px #191b42;}
+       background-image: -webkit-linear-gradient(-90deg, #B0A698, #5d554b);color:#fff;border-radius:30px;padding:8px 28px;}
     .brand-banner-slider{background:linear-gradient(90deg,rgba(19,124,109,1) 0%,rgba(48,150,135,1) 100%);}
     .brand-hero-banner-form input,.brand-hero-banner-form textarea{text-indent:30px;}
     .brand-hero-banner-form button{background:linear-gradient(90deg,rgba(19,124,109,1) 0%,rgba(48,150,135,1) 100%)!important;padding:9px 25px;transition:0.3s ease-in-out!important;}
@@ -258,8 +259,17 @@
     .brand-cta-section{background:linear-gradient(90deg,rgb(156 126 94) 0%,rgb(195 161 126) 100%);background-size:cover;background-position:right;background-repeat:100% 100%;background-image:url(../public/brand-img/cta-bg-b.webp);border-radius:36px;}
     .brand-cta-book{position:absolute;top:-0px;left:9px;animation:upAndDown 3s ease-in-out .6s infinite}
     .brand-choose-us-img{position:absolute;left:-23px;width:376px;bottom:-69px;}
-    .brand-cta-vector::before{content:"";position:absolute;width:398px;height:462px;background-image:url(../public/brand-img/cta-vector.png);background-size:contain;background-repeat:no-repeat;top:30px;left:20px;}
-    .brand-choose-us-section{  /* background: #1e8677 !important; */
+    .brand-cta-vector::before {
+      content: "";
+      position: absolute;
+      width: 400px;
+      height: 460px;
+      background-image: url(/_next/static/media/cta-vector.8bfc84c5.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      top: 0px;
+      left: 0px;
+  }    .brand-choose-us-section{  /* background: #1e8677 !important; */
     background-image:url(../public/brand-img/cta-bg.webp);background-size:cover;background-position:right;border-radius:36px;}
     @keyframes upAndDown{
       0%,to{transform:translateZ(0)}

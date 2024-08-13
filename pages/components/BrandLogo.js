@@ -66,7 +66,7 @@ export default function BrandLogo() {
                 <div className="px-14 py-14">
                     <div className="flex flex-wrap">
                         {badges.map((badge, index) => (
-                            <div key={index} className="lg:w-1/6 md:w-1/2 p-4 text-center border-dashed border-2">
+                            <div key={index} className="lg:w-1/6 md:w-1/2 p-4 text-center border-dashed border-2 bd-colr">
                                 <a className="block relative rounded overflow-hidden">
                                     <Image alt="ecommerce" className="object-cover object-center mx-auto" src={badge.src} style={{ width: badge.width, height: badge.height }} width={badge.width} height={badge.height} />
                                 </a>

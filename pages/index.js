@@ -13,7 +13,7 @@ import BrandTestimonial from "./components/BrandTestimonial";
 import BrandFaqs from "./components/BrandFaqs";
 import BrandContact from "./components/BrandContactForm";
 import BrandLogo from "./components/BrandLogo";
-import BrandProcess from "./components/BrandProcess";
+import BrandSister from "./components/BrandSister";
 import BrandBannerVideo from "./components/BrandBannerVideo";
 
 export default function Home() {
@@ -70,9 +70,11 @@ export default function Home() {
             {/* <BrandProcess /> */}
             <BrandChooseUs />
             <BrandTestimonial />
+            <BrandLogo />
+
             <BrandFaqs />
             <BrandContact />
-            <BrandLogo />
+            {/* <BrandSister/> */}
             <BrandFooter />
         </>
     );

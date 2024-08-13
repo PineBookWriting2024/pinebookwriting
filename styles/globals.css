@@ -257,19 +257,20 @@
     .brand-hero-banner-form button{background:linear-gradient(90deg,rgba(19,124,109,1) 0%,rgba(48,150,135,1) 100%)!important;padding:9px 25px;transition:0.3s ease-in-out!important;}
     .brand-hero-banner-form button:hover{background:transparent!important;transition:0.3s ease-in-out!important;}
     .brand-cta-section{background:linear-gradient(90deg,rgb(156 126 94) 0%,rgb(195 161 126) 100%);background-size:cover;background-position:right;background-repeat:100% 100%;background-image:url(../public/brand-img/cta-bg-b.webp);border-radius:36px;}
-    .brand-cta-book{position:absolute;top:-0px;left:9px;animation:upAndDown 3s ease-in-out .6s infinite}
+    .brand-cta-book{position:absolute;top:-20px;left:9px;animation:upAndDown 3s ease-in-out .6s infinite}
     .brand-choose-us-img{position:absolute;left:-23px;width:376px;bottom:-69px;}
     .brand-cta-vector::before {
       content: "";
       position: absolute;
       width: 400px;
-      height: 460px;
-      background-image: url(/_next/static/media/cta-vector.8bfc84c5.png);
+      height: 500px;
+      background-image: url(/brand-img/cta-vector.png);
       background-size: contain;
       background-repeat: no-repeat;
-      top: 0px;
+      top: -15px;
       left: 0px;
-  }    .brand-choose-us-section{  /* background: #1e8677 !important; */
+  }
+     .brand-choose-us-section{  /* background: #1e8677 !important; */
     background-image:url(../public/brand-img/cta-bg.webp);background-size:cover;background-position:right;border-radius:36px;}
     @keyframes upAndDown{
       0%,to{transform:translateZ(0)}
@@ -317,8 +318,26 @@
     .service-card-img:before{position:absolute;content:"";top:0;bottom:0;left:0;right:0;background-color:rgba(0,168,157,0.4);-webkit-transition:opacity 500ms ease,visibility 500ms ease,-webkit-transform 500ms ease;transition:opacity 500ms ease,visibility 500ms ease,-webkit-transform 500ms ease;transition:opacity 500ms ease,visibility 500ms ease,transform 500ms ease;transition:opacity 500ms ease,visibility 500ms ease,transform 500ms ease,-webkit-transform 500ms ease;visibility:hidden;opacity:0;-webkit-transform:translateY(-70%);transform:translateY(-70%);z-index:1;}
     .brand-service-card:hover .service-card-img:before{visibility:visible;-webkit-transform:translateY(0%);transform:translateY(0%);opacity:1;}
     .service-card-img{position:relative;display:block;overflow:hidden;height: 100%;}
-    .brand-primary-header-bg{padding:14% 0 7% 0;background-repeat:no-repeat;background-size:cover;}
-    /* .contact-banner-brand{background-image:url(../public/brand-img/contact-banner.jpg);}
+    .brand-primary-header-bg {
+      padding: 14% 0 7% 0;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+      background-position: center;
+      z-index: 5;
+  } 
+  .container.max-w-screen-xl.mx-auto.ban-cls {
+    z-index: 1;
+    position: relative;
+}
+  span.overlay-banner {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #00000094;
+    height: 100%;
+    width: 100%;
+}  /* .contact-banner-brand{background-image:url(../public/brand-img/contact-banner.jpg);}
     .about-banner-brand{background-image:url(../public/brand-img/abt-banner.jpg);}
     .port-banner-brand{background-image:url(../public/brand-img/port-banner.jpg);} */
     /* .testi-banner-brand{background-image:url(../public/brand-img/testi-banner.jpg);} */
@@ -582,4 +601,15 @@ button.brand-nav-btn-1.brand-nav-btn.shadow-xl.mt-10.cursor-pointer.btn-f {
 {
   background-image: -webkit-linear-gradient(-90deg, #B0A698, #5d554b);
 
+}
+.bd-colr {
+  border-color: #00000061;
+}
+
+
+.bnd-slider .swiper-slide {
+  height: 60px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
 }

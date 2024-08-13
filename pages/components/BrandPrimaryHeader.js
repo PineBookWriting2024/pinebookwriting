@@ -7,7 +7,8 @@ export default function BrandPrimaryHeader(props) {
     return (
         <>
             <section class="brand-primary-header-bg py-5" style={{backgroundImage: `url(${props.photo_banner})`}}>
-                <div class="container max-w-screen-xl mx-auto">
+                <span className="overlay-banner"></span>
+                <div class="container max-w-screen-xl mx-auto ban-cls">
                     <div class="row py-5">
                         <div class="col-12 px-5 w-100 md:w-3/5">
                             <h3 class="text-4xl text-white  font-poppins">

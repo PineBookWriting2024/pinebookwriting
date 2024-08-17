@@ -114,11 +114,11 @@ const BrandTesti = () => {
         {videoClient.map((videoClient) => (
             <Link href={videoClient.src} className="glightbox block">
             <div className='' key={videoClient.id}>
-                <h2 className="font-bold text-3xl text-black" >{videoClient.clientname}</h2>
+                <h2 className="font-bold text-xl text-black" >{videoClient.clientname}</h2>
                 {/* <video height={400} width={400} controls loading="lazy" className="brand-story py-4">
                     <source src={videoClient.src} type={videoClient.type} />
                 </video> */}
-                <iframe height={225} width={400} src={videoClient.src} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe className='py-4' height={225} width={400} src={videoClient.src} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
                <h4 className='text-black'> <span className='font-bold leading-normal'>Book Title:</span> {videoClient.BookTitle}</h4>
                <h4 className='text-black'><span className='font-bold leading-normal '>Consultant:</span> {videoClient.Consultant}</h4>

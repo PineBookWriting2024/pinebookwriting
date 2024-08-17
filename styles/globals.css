@@ -142,7 +142,7 @@
   .single-packages:hover{background-color:#147d6e;color:#fff;}
   .single-packages:hover{-webkit-transform:scale(1.3);transform:scale(1.04);transition:.4s ease-in-out;}
   .single-packages-content{padding:25px;margin-right:25px;}
-  .single-packages .package-badge{position:absolute;right:-65px;top:-17px;animation:upAndDown 3s ease-in-out .6s infinite;z-index:1;}
+  .single-packages .package-badge{position:absolute;right:-40px;top:-32px;animation:upAndDown 3s ease-in-out .6s infinite;z-index:1;}
   .single-packages svg{width:15px;}
   .single-packages-content{height:310px;overflow:scroll;overflow-x:hidden;}
   .single-packages-content img{filter:invert(1);}

@@ -276,7 +276,7 @@ export default function Bundle({ isOpen, onClose, service }) {
                                     <div className="flex gap-2 mb-5 items-center">
                                         <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
                                        Writing upto 150 - 300 Pages                                     </div>
-                                    <div className="flex gap-2 mb-5 items-center items-center text-xl">
+                                    <div className="flex gap-2 mb-5 items-center  text-xl">
                                    4 - 7 Months production (divided into Weeks)                                    </div>
                                     <div className="flex gap-2 mb-5 items-center">
                                         <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
@@ -301,7 +301,7 @@ export default function Bundle({ isOpen, onClose, service }) {
 
                                     <div className="flex gap-2 mb-5 items-center">
                                         <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
-                                       Book Synopsis                                    </div>
+                                       Book Synopsis</div>
                                 </div>
                                 <div className="text-center">
                                     <button className="package-get-started-btn text-md mt-7" onClick={() => openModal('Standard')}>
@@ -476,7 +476,7 @@ export default function Bundle({ isOpen, onClose, service }) {
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <td>Production Timeline <b>(Divided into Weeks)</b></td>
+                                                    <td>Production Timeline <br/><b>(Divided into Weeks)</b></td>
                                                     <td>2-4 Months</td>
                                                     <td>3-6 Months</td>
                                                     <td>4-7 Months</td>
@@ -545,7 +545,7 @@ export default function Bundle({ isOpen, onClose, service }) {
                                                 <tr>
                                                     <td>About the Author</td>
                                                     <td>❌</td>
-                                                    <td>✔️</td>
+                                                    <td>❌</td>
                                                     <td>✔️</td>
                                                 </tr>
                                   
@@ -561,10 +561,10 @@ export default function Bundle({ isOpen, onClose, service }) {
                                                     ❌
                                                     </td>
                                                     <td>
-                                                        ✔️
+                                                    ❌
                                                     </td>
                                                     <td>
-                                                        ✔️
+                                                    ✔️
                                                     </td>
                                                 </tr>
                                             </tbody>

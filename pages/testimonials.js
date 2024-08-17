@@ -39,8 +39,8 @@ export default function Services() {
             <BrandNavbar />
             <BrandPrimaryHeader
                 photo_banner={"brand-img/testi-banner.jpg"}
-                title="Ready To Write Your Next Chapter?"
-                desc="Let Pine Book Writing be the compass for your narrative journey, steering you toward literary success with every stroke of the pen."
+                title="See What Our Clients Are Saying"
+                desc="Don't rely only on our words. Explore our clients' valuable reviews about how we helped them succeed."
             />
             <BrandBannerLogo />
             <BrandCustomerStory />

@@ -132,7 +132,7 @@ export default function BrandNavbar() {
                                     </div>
                                 )}
                             </li> */}
-                            <li className='mb-3 md:mb-0'><Link href="/pricing" onClick={(e) => { e.preventDefault(); window.location.href = "pricing"; }} className="text-white hover:text-gray-300">Pricing</Link></li>
+                            <li className='mb-3 md:mb-0'><Link href="/packages" onClick={(e) => { e.preventDefault(); window.location.href = "packages"; }} className="text-white hover:text-gray-300">Packages</Link></li>
                             <li className='mb-3 md:mb-0'><Link href="/portfolio" onClick={(e) => { e.preventDefault(); window.location.href = "portfolio"; }} className="text-white hover:text-gray-300">Portfolio</Link></li>
                             <li className='mb-3 md:mb-0'><Link href="/contact-us" onClick={(e) => { e.preventDefault(); window.location.href = "contact-us"; }} className="text-white hover:text-gray-300">Contact</Link></li>
                             <li><Link href={'javascript:;'} className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 brand-nav-btn font-poppins text-sm" onClick={handleOpenChat}>Talk to an Expert</Link></li>

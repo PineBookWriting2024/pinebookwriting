@@ -114,13 +114,7 @@ export default function BrandTestimonial() {
                                 </div>
                                 <h2 className="font-poppins text-xl font-bold pt-3">
                                 Pine books and their associates are</h2>
-                                <p className="mb-5 pt-2">Pine books and their associates are excellent. Everyone is helpful and care about you, your ideas, and how hard you've worked with your manuscript. Steve, Lia, Ryan, and David go beyond their job. They deserve a raise. I recommend Pine books for all your writing needs.
-
-.
-
-
-
-</p>
+                                <p className="mb-5 pt-2">Pine books and their associates are excellent. Everyone is helpful and care about you, your ideas, and how hard you've worked with your manuscript. Steve, Lia, Ryan, and David go beyond their job. They deserve a raise. I recommend Pine books for all your writing needs.</p>
                                 <span className="absolute bottom-0 mb-2">Katie Loftis, September 20, 2023</span>
                             </Link>
                         </div>

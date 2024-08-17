@@ -10,13 +10,14 @@ import BrandContact from "./components/BrandContactForm";
 import BrandPrimaryHeader from "./components/BrandPrimaryHeader";
 import Popup from "./components/popup";
 import BrandProcess from "./components/BrandProcess";
-import Chart from "./components/Chart";
+import NewServicesBrand from "./components/NewServicesBrand";
 import Packages from "./components/Packages";
 import { faArrowRight, faArrowLeft, faPlusCircle, faCheckCircle, faMinusCircle, faArrowDown, faArrowUp } from "@fortawesome/free-solid-svg-icons";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import PopupBundle from "./components/PopupBundle";
 import BrandFaqs from "./components/BrandFaqs";
+
 
 export default function Bundle({ isOpen, onClose, service }) {
     const [openFAQ, setOpenFAQ] = useState(0);
@@ -105,7 +106,7 @@ export default function Bundle({ isOpen, onClose, service }) {
                         <div className="packages-wrapper flex flex-col md:flex-row justify-center gap-12">
                             <div className="single-packages relative">
 
-                                <h4 className="text-2xl font-poppins mb-6 text-center pt-4 pb-4 hover-top-vector relative">Silver Package ($2,999)</h4>
+                                <h4 className="text-2xl font-poppins mb-6 text-center pt-4 pb-4 hover-top-vector relative">Silver Package <br/>$2,999 USD</h4>
                                 <div className="single-packages-content px-10">
 
                                     <div className="flex gap-2 mb-5 items-center">
@@ -132,7 +133,7 @@ export default function Bundle({ isOpen, onClose, service }) {
                                         25 Minute Interview Session (with Mid-Level Writer)
                                     </div>
                                
-                                    <div className="flex gap-2 mb-5 items-center items-center">
+                                    <div className="flex gap-2 mb-5 items-center ">
                                         <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
                                         Writing upto 50 - 70 Pages 
                                     </div>
@@ -145,7 +146,7 @@ export default function Bundle({ isOpen, onClose, service }) {
                                         Include upto 20 Images
                                     </div>
                                    
-                                    <div className="flex gap-2 mb-5 items-center items-center">
+                                    <div className="flex gap-2 mb-5 items-center ">
                                         <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
                                         Standard Formatting
                                     </div>
@@ -175,7 +176,7 @@ export default function Bundle({ isOpen, onClose, service }) {
                             </div>
 
                             <div className="single-packages relative">
-                                <h4 className="text-2xl font-poppins mb-6 text-center pt-4 pb-4 hover-top-vector relative">Gold Package ($4,499)</h4>
+                                <h4 className="text-2xl font-poppins mb-6 text-center pt-4 pb-4 hover-top-vector relative">Gold Package <br/> $4,499 USD</h4>
                                 <div className="single-packages-content px-10">
                                     <div className="flex gap-2 mb-5 items-center">
                                         <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
@@ -246,7 +247,7 @@ export default function Bundle({ isOpen, onClose, service }) {
 
                             <div className="single-packages relative">
                                 <Image src={"/images/badge.png"} className="package-badge" width={80} height={80}></Image>
-                                <h4 className="text-2xl font-poppins mb-6 text-center pt-4 pb-4 hover-top-vector relative">Platinum Package ($6,499)</h4>
+                                <h4 className="text-2xl font-poppins mb-6 text-center pt-4 pb-4 hover-top-vector relative">Platinum Package <br/> $6,499 USD</h4>
                                 <div className="single-packages-content px-10">
                            
                                     <div className="flex gap-2 mb-5 items-center">
@@ -1115,400 +1116,7 @@ export default function Bundle({ isOpen, onClose, service }) {
                 </div>
             </section>
 
-            {/* <section className="table-sec overflow-x-scroll max-w-screen-xl mx-auto">
-                <div className="container mx-auto m1-h mt-10 text-center">
-                    <button className="compare-now-btn mb-10 mt-5" onClick={togglePackages}>Comparison
-                        <FontAwesomeIcon
-                            className="ml-2"
-                            icon={collapseOpen1 ? faArrowUp : faArrowDown}
-                            color="#0d0f38"
-                        />
-                    </button>
-                </div>
-                <div className="">
-                    <div className={`container container-compare mx-auto transition-height duration-500 ease-in-out ${showPackages ? 'expanded' : 'collapsed'}`} ref={contentRef}>
-                        <div className="md:w-full w-[500px] responsive-width">
-                            <table className="w-full mb-14 table-auto bundle-comparison-chart table-fixed">
-                                <thead className="chart-header-custom">
-                                    <tr>
-                                        <th
-                                            className="mainpage-regular"
-                                        ></th>
-
-                                        <th className="font-poppins">
-                                            <div className="heading">
-                                                Expert Package
-                                            </div>
-                                        </th >
-                                        <th className="font-poppins">
-                                            <div className="heading">
-                                                Premium Package
-                                            </div>
-                                        </th>
-
-                                        <th className="font-poppins">
-                                            <div className="heading">
-                                                Enterprise Package
-                                            </div>
-                                        </th>
-                                    </tr>
-                                </thead>
-                                <tbody className="text-center">
-                                    <tr className="m-4">
-                                        <th className="text-2xl md:text-2xl text-start p-3 font-bold"
-                                            colspan="4"
-                                            scope="row">Preparing Your Manuscript</th>
-                                    </tr>
-                                    <tr>
-                                        <td>Line by Line Editing</td>
-                                        <td>
-                                            ✔️
-                                        </td>
-                                        <td>
-                                            ✔️
-                                        </td>
-                                        <td>
-                                            ✔️
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Developmental Editing</td>
-                                        <td>
-                                            ✔️
-                                        </td>
-                                        <td>
-                                            ✔️
-                                        </td>
-                                        <td>
-                                            ✔️
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Proofreading</td>
-                                        <td>✔️</td>
-                                        <td>✔️</td>
-                                        <td>✔️</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Typesetting</td>
-                                        <td>
-                                            ✔️
-                                        </td>
-                                        <td>✔️</td>
-                                        <td>✔️</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Layout Adjustment</td>
-                                        <td>
-                                            ✔️
-                                        </td>
-                                        <td>✔️</td>
-                                        <td>✔️</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Formatting</td>
-                                        <td>
-                                            50+ Platforms
-                                        </td>
-                                        <td>50+ Platforms</td>
-                                        <td>50+ Platforms</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Revisions Per Draft</td>
-                                        <td>
-                                            5
-                                        </td>
-                                        <td>5</td>
-                                        <td>5</td>
-                                    </tr>
-                                    <tr className="m-4">
-                                        <th className="text-2xl md:text-2xl text-start p-3 font-bold pl-5 lg:pl-16 md:pl-16"
-                                            colspan="4"
-                                            scope="row">Book Writing</th>
-                                    </tr>
-                                    <tr>
-                                        <td>Account Creation</td>
-                                        <td>
-                                            ✔️
-                                        </td>
-                                        <td>
-                                            ✔️
-                                        </td>
-                                        <td>
-                                            ✔️
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Account Verification</td>
-                                        <td>
-                                            ✔️
-                                        </td>
-                                        <td>
-                                            ✔️
-                                        </td>
-                                        <td>
-                                            ✔️
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Kindle</td>
-                                        <td>✔️</td>
-                                        <td>✔️</td>
-                                        <td>✔️</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Barnes and Noble</td>
-                                        <td>
-                                            ✔️
-                                        </td>
-                                        <td>✔️</td>
-                                        <td>✔️</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Google Books</td>
-                                        <td>
-                                            ✔️
-                                        </td>
-                                        <td>✔️</td>
-                                        <td>✔️</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Smashwords</td>
-                                        <td>
-                                            ❌
-                                        </td>
-                                        <td>✔️</td>
-                                        <td>✔️</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Draft2Digital</td>
-                                        <td>
-                                            ❌
-                                        </td>
-                                        <td>❌</td>
-                                        <td>✔️</td>
-                                    </tr>
-                                    <tr>
-                                        <td>ACX</td>
-                                        <td>
-                                            ❌
-                                        </td>
-                                        <td>❌</td>
-                                        <td>✔️</td>
-                                    </tr>
-                                    <tr>
-                                        <td>eBook Format</td>
-                                        <td>
-                                            ✔️
-                                        </td>
-                                        <td>✔️</td>
-                                        <td>✔️</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Paperback Format</td>
-                                        <td>
-                                            ✔️
-                                        </td>
-                                        <td>✔️</td>
-                                        <td>✔️</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Hardcover Format</td>
-                                        <td>
-                                            ✔️
-                                        </td>
-                                        <td>✔️</td>
-                                        <td>✔️</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Audiobook Format</td>
-                                        <td>
-                                            ❌
-                                        </td>
-                                        <td>❌</td>
-                                        <td>✔️</td>
-                                    </tr>
-                                    <tr className="m-4">
-                                        <th className="text-2xl md:text-2xl text-start p-3 font-bold pl-5 lg:pl-8 md:pl-8"
-                                            colspan="4"
-                                            scope="row">Designing your Cover</th>
-                                    </tr>
-                                    <tr>
-                                        <td>Graphic OR Illustrated Design</td>
-                                        <td>
-                                            ✔️
-                                        </td>
-                                        <td>
-                                            ✔️
-                                        </td>
-                                        <td>
-                                            ✔️
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Cover Layout</td>
-                                        <td>
-                                            ✔️
-                                        </td>
-                                        <td>
-                                            ✔️
-                                        </td>
-                                        <td>
-                                            ✔️
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Cover Formatting</td>
-                                        <td>✔️</td>
-                                        <td>✔️</td>
-                                        <td>✔️</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Front, Back & Spine</td>
-                                        <td>
-                                            ✔️
-                                        </td>
-                                        <td>✔️</td>
-                                        <td>✔️</td>
-                                    </tr>
-                                    <tr>
-                                        <td>ISBN + Barcode (2X)</td>
-                                        <td>
-                                            ✔️
-                                        </td>
-                                        <td>✔️</td>
-                                        <td>✔️</td>
-                                    </tr>
-                                  
-                                    <tr className="m-4">
-                                        <th className="text-2xl md:text-2xl text-start p-3 font-bold pl-5 lg:pl-14 md:pl-14"
-                                            colspan="4"
-                                            scope="row">Online Presence</th>
-                                    </tr>
-                                    <tr>
-                                        <td>Authors Website</td>
-                                        <td>
-                                            3-5 Pages
-                                        </td>
-                                        <td>
-                                            3-5 Pages
-                                        </td>
-                                        <td>
-                                            3-5 Pages
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Domain & Hosting</td>
-                                        <td>
-                                            1 Year
-                                        </td>
-                                        <td>
-                                            1 Year
-                                        </td>
-                                        <td>
-                                            2 Year
-                                        </td>
-                                    </tr>
-                                    <tr className="m-4">
-                                        <th className="text-2xl md:text-2xl text-start p-3 font-bold pl-5 lg:pl-8 md:pl-8"
-                                            colspan="4"
-                                            scope="row">Marketing & Branding</th>
-                                    </tr>
-                                    <tr>
-                                        <td>Book Trailer</td>
-                                        <td>
-                                            30-60 Seconds
-                                        </td>
-                                        <td>
-                                            30-60 Seconds
-                                        </td>
-                                        <td>
-                                            60-90 Seconds
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Social Media Marketing</td>
-                                        <td>
-                                            ❌
-                                        </td>
-                                        <td>
-                                            3 Platforms
-                                        </td>
-                                        <td>
-                                            6 Platforms
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Organic Google Marketing</td>
-                                        <td>
-                                            ❌
-                                        </td>
-                                        <td>
-                                            6 Months
-                                        </td>
-                                        <td>
-                                            12 Months
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Blogs & Article Postings</td>
-                                        <td>
-                                            ❌
-                                        </td>
-                                        <td>
-                                            ❌
-                                        </td>
-                                        <td>
-                                            ✔️
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Press Releases</td>
-                                        <td>
-                                            ❌
-                                        </td>
-                                        <td>
-                                            ❌
-                                        </td>
-                                        <td>
-                                            150+ Platforms
-                                        </td>
-                                    </tr>
-                                    <tr className="m-4">
-                                        <th className="text-2xl md:text-2xl text-start p-3 font-bold pl-5 lg:pl-20 md:pl-20"
-                                            colspan="4"
-                                            scope="row">Guarantees</th>
-                                    </tr>
-                                    <tr>
-                                        <td>100% Royalties</td>
-                                        <td>
-                                            ✔️
-                                        </td>
-                                        <td>
-                                            ✔️
-                                        </td>
-                                        <td>
-                                            ✔️
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>100% Ownership Rights</td>
-                                        <td>
-                                            ✔️
-                                        </td>
-                                        <td>
-                                            ✔️
-                                        </td>
-                                        <td>
-                                            ✔️
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-            </section> */}
+            <NewServicesBrand/>
 
             <BrandFaqs/>
             <BrandContact />

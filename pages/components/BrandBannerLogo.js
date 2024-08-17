@@ -19,7 +19,7 @@ export default function BrandBannerLogo() {
     return (
         <>
             <section className="brnd-slider bg-black overflow-hidden">
-                <div className="container max-w-screen-xl grid grid-cols-1 width-container position-relative max-w-screen-xl">
+                <div className="container grid grid-cols-1 width-container position-relative max-w-screen-xl">
                     {/* <div className="book-sell-text ">
                         <h3 className="font-poppins text-xl md:text-xl leading-3 font-bold">Sell Your <br></br> <span>Book With</span></h3>
                     </div> */}

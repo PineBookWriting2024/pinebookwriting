@@ -356,16 +356,16 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Book Writing Services | Pine Book Writing</title>
+        <title>Expert Book Publishing Services | Pine Book Writing</title>
         <meta
           name="description"
-          content="Hire Professional Book Writing company. At Pine Book Writing, we provide to comprehensive Book Writing services. Your Trusted Book Writing Partners In The USA And Canada."
+          content="Discover the art of book publishing with our Expert Book Publishing Services. Our expert team guides you through the process, from editing to distribution."
         />
         <meta name="google-site-verification" content="v2pKJGIZnMWCWw2QC5nuRPYT5gvDQlUtT0lZYFIhHYo" />
         <link rel="shortcut icon" href="/images/fav.webp" />
 
         {/* Google tag Manager Script */}
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-9X52J8V8NK"></script>
+        {/* <script async src="https://www.googletagmanager.com/gtag/js?id=G-9X52J8V8NK"></script>
         <script
           dangerouslySetInnerHTML={{
             __html: `
@@ -376,7 +376,7 @@ export default function Home() {
                     gtag('config', 'G-9X52J8V8NK');
               `,
           }}
-        />
+        /> */}
       </Head>
       <main>
         <Header />

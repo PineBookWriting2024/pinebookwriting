@@ -36,12 +36,21 @@ export default function Packages({ isOpen, onClose, service }) {
                         <div className="text-center mb-6">
                             <h3 className="text-2xl text-black font-poppins uppercase">Publishing</h3>
                             <h2 className="font-poppins text-4xl font-bold text-black uppercase">Bundles</h2>
+                            <h4 class="text-xl font-poppins md:text-xl font-bold mt-4">Limited Time Offer - Save <span class="blink_me fw-bold text-2xl">50%</span> On Book Publishing Services</h4>
                         </div>
 
                         <div className="packages-wrapper flex flex-col md:flex-row justify-center gap-12">
                             <div className="single-packages relative">
 
-                                <h4 className="text-2xl font-poppins mb-6 text-center pt-4 pb-4 hover-top-vector relative">Basic Package</h4>
+                                <h4 className="text-2xl font-poppins mb-6 text-center pt-4 pb-4 hover-top-vector relative">Basic Package
+                                <br></br>
+                                <div className="flex justify-center">
+                                <button className="tag-50-per-off"><del className="text-red italic">$700</del> | <span className="blink_me">$349 USD</span></button>
+                                </div>
+                                </h4>
+                                
+                               
+
                                 <div className="single-packages-content mb-5 px-10">
                                     <div className="flex gap-2 mb-5 items-center text-xl">
                                         Preparing Your Manuscript
@@ -102,6 +111,7 @@ export default function Packages({ isOpen, onClose, service }) {
                                         100% Satisfaction
                                     </div>
                                 </div>
+
                                 <div className="text-center">
                                     <button className="package-get-started-btn text-md mt-7" onClick={() => openModal('Basic')}>
                                         GET A QUOTE
@@ -122,7 +132,12 @@ export default function Packages({ isOpen, onClose, service }) {
                             </div>
 
                             <div className="single-packages relative">
-                                <h4 className="text-2xl font-poppins mb-6 text-center pt-4 pb-4 hover-top-vector relative">Start Up Package</h4>
+                                <h4 className="text-2xl font-poppins mb-6 text-center pt-4 pb-4 hover-top-vector relative">Start Up Package 
+                                <br></br>
+                                <div className="flex justify-center">
+                                <button className="tag-50-per-off"><del className="text-red italic">$2,000</del> | <span className="blink_me">$999 USD</span></button>
+                                </div>
+                                </h4>
                                 <div className="single-packages-content mb-5 px-10">
                                     <div className="flex gap-2 mb-5 items-center text-xl">
                                         Preparing Your Manuscript
@@ -238,7 +253,12 @@ export default function Packages({ isOpen, onClose, service }) {
 
                             <div className="single-packages relative">
                                 <Image src={"/images/badge.png"} className="package-badge" width={80} height={80}></Image>
-                                <h4 className="text-2xl font-poppins mb-6 text-center pt-4 pb-4 hover-top-vector relative">Standard Package</h4>
+                                <h4 className="text-2xl font-poppins mb-6 text-center pt-4 pb-4 hover-top-vector relative">Standard Package
+                                <br></br>
+                                <div className="flex justify-center">
+                                <button className="tag-50-per-off"><del className="text-red italic">$3,000</del> | <span className="blink_me">$1,499 USD</span></button>
+                                </div>
+                                </h4>
                                 <div className="single-packages-content mb-5 px-10">
                                     <div className="flex gap-2 mb-5 items-center text-xl">
                                         Preparing Your Manuscript
@@ -367,7 +387,12 @@ export default function Packages({ isOpen, onClose, service }) {
 
                         <div className="packages-wrapper flex flex-col md:flex-row justify-center gap-12 mt-12">
                             <div className="single-packages relative">
-                                <h4 className="text-2xl font-poppins mb-6 text-center pt-4 pb-4 hover-top-vector relative">Expert Package</h4>
+                                <h4 className="text-2xl font-poppins mb-6 text-center pt-4 pb-4 hover-top-vector relative">Expert Package
+                                <br></br>
+                                <div className="flex justify-center">
+                                <button className="tag-50-per-off"><del className="text-red italic">$3,000</del> | <span className="blink_me">$1,499 USD</span></button>
+                                </div>
+                                </h4>
                                 <div className="single-packages-content mb-5 px-10">
                                     <div className="flex gap-2 mb-5 items-center text-xl">
                                         Preparing Your Manuscript
@@ -528,7 +553,12 @@ export default function Packages({ isOpen, onClose, service }) {
 
                             <div className="single-packages relative">
                                 <Image src={"/images/badge.png"} className="package-badge" width={80} height={80}></Image>
-                                <h4 className="text-2xl font-poppins mb-6 text-center pt-4 pb-4 hover-top-vector relative">Premium Package</h4>
+                                <h4 className="text-2xl font-poppins mb-6 text-center pt-4 pb-4 hover-top-vector relative">Premium Package
+                                <br></br>
+                                <div className="flex justify-center">
+                                <button className="tag-50-per-off"><del className="text-red italic">$15,000</del> | <span className="blink_me">$7,499 USD</span></button>
+                                </div>
+                                </h4>
                                 <div className="single-packages-content mb-5 px-10">
                                     <div className="flex gap-2 mb-5 items-center text-xl">
                                         Preparing Your Manuscript
@@ -708,6 +738,10 @@ export default function Packages({ isOpen, onClose, service }) {
 
                             <div className="single-packages relative">
                                 <h4 className="text-2xl font-poppins mb-6 text-center pt-4 pb-4 hover-top-vector relative">Enterprise Package
+                                <br></br>
+                                <div className="flex justify-center">
+                                <button className="tag-50-per-off"><del className="text-red italic">$25,000</del> | <span className="blink_me">$12,499 USD</span></button>
+                                </div>
                                 </h4>
                                 <div className="single-packages-content mb-5 px-10">
                                     <div className="flex gap-2 mb-5 items-center text-xl">

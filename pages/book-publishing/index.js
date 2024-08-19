@@ -886,7 +886,7 @@ export default function Home() {
             <div className="basis-1/2 md:ml-20">
               <h2 className="text-white font-poppins text-3xl md:text-5xl aos-init aos-animate font-bold" data-aos="flip-down">Let's Tell Your Story to the World!
               </h2>
-              <p className="text-white mt-7">Ready to share your fascinating story with your potential audience? Contact Pine Book Publishing and get a free quote now!
+              <p className="text-white mt-7">Ready to share your fascinating story with your potential audience? Contact Pine Book Writing and get a free quote now!
               </p>
               <div className="flex gap-6">
                 <button className="package-get-started-btn text-md mt-5" onClick={handleOpenChat}><Link href={'javascript:;'}>Talk to an Expert</Link></button>

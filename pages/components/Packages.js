@@ -40,17 +40,13 @@ export default function Packages({ isOpen, onClose, service }) {
 
                         <div className="packages-wrapper flex flex-col md:flex-row justify-center gap-12">
                             <div className="single-packages relative">
-                                {/* <span className="hover-top-vector"></span> */}
 
                                 <h4 className="text-2xl font-poppins mb-6 text-center pt-4 pb-4 hover-top-vector relative">Basic Package</h4>
                                 <div className="single-packages-content mb-5 px-10">
-                                    <div className="flex gap-2 mb-5 items-center items-center text-xl">
+                                    <div className="flex gap-2 mb-5 items-center text-xl">
                                         Preparing Your Manuscript
                                     </div>
-                                    {/* <div className="flex gap-2 mb-5 items-center items-center">
-                                        <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
-                                        Developmental Editing
-                                    </div> */}
+
                                     <div className="flex gap-2 mb-5 items-center">
                                         <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
                                         Line by Line Editing
@@ -75,10 +71,10 @@ export default function Packages({ isOpen, onClose, service }) {
                                         <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
                                         Multiple Revisions
                                     </div>
-                                    <div className="flex gap-2 mb-5 items-center items-center text-xl">
+                                    <div className="flex gap-2 mb-5  items-center text-xl">
                                         Book Writing
                                     </div>
-                                    <div className="flex gap-2 mb-5 items-center items-center">
+                                    <div className="flex gap-2 mb-5  items-center">
                                         <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
                                         Account Creation
                                     </div>
@@ -90,10 +86,10 @@ export default function Packages({ isOpen, onClose, service }) {
                                         <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
                                         Available on Kindle
                                     </div>
-                                    <div className="flex gap-2 mb-5 items-center items-center text-xl">
+                                    <div className="flex gap-2 mb-5  items-center text-xl">
                                         Guarantees
                                     </div>
-                                    <div className="flex gap-2 mb-5 items-center items-center">
+                                    <div className="flex gap-2 mb-5  items-center">
                                         <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
                                         No Royalties Share
                                     </div>
@@ -124,10 +120,11 @@ export default function Packages({ isOpen, onClose, service }) {
                                     </div>
                                 </div>
                             </div>
+
                             <div className="single-packages relative">
                                 <h4 className="text-2xl font-poppins mb-6 text-center pt-4 pb-4 hover-top-vector relative">Start Up Package</h4>
                                 <div className="single-packages-content mb-5 px-10">
-                                    <div className="flex gap-2 mb-5 items-center items-center text-xl">
+                                    <div className="flex gap-2 mb-5 items-center text-xl">
                                         Preparing Your Manuscript
                                     </div>
                                     <div className="flex gap-2 mb-5 items-center">
@@ -163,7 +160,7 @@ export default function Packages({ isOpen, onClose, service }) {
                                         Multiple Revisions
 
                                     </div>
-                                    <div className="flex gap-2 mb-5 items-center items-center text-xl">
+                                    <div className="flex gap-2 mb-5  items-center text-xl">
                                         Designing your Cover
                                     </div>
                                     <div className="flex gap-2 mb-5 items-center">
@@ -182,7 +179,7 @@ export default function Packages({ isOpen, onClose, service }) {
                                         <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
                                         Front, Back & Spine
                                     </div>
-                                    <div className="flex gap-2 mb-5 items-center items-center text-xl">
+                                    <div className="flex gap-2 mb-5 items-center text-xl">
                                         Book Writing
                                     </div>
                                     <div className="flex gap-2 mb-5 items-center">
@@ -205,7 +202,7 @@ export default function Packages({ isOpen, onClose, service }) {
                                         <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
                                         Paperback Format
                                     </div>
-                                    <div className="flex gap-2 mb-5 items-center items-center text-xl">
+                                    <div className="flex gap-2 mb-5 items-center text-xl">
                                         Guarantees
                                     </div>
                                     <div className="flex gap-2 mb-5 items-center">
@@ -238,11 +235,12 @@ export default function Packages({ isOpen, onClose, service }) {
                                     </div>
                                 </div>
                             </div>
+
                             <div className="single-packages relative">
                                 <Image src={"/images/badge.png"} className="package-badge" width={80} height={80}></Image>
                                 <h4 className="text-2xl font-poppins mb-6 text-center pt-4 pb-4 hover-top-vector relative">Standard Package</h4>
                                 <div className="single-packages-content mb-5 px-10">
-                                    <div className="flex gap-2 mb-5 items-center items-center text-xl">
+                                    <div className="flex gap-2 mb-5 items-center text-xl">
                                         Preparing Your Manuscript
                                     </div>
                                     <div className="flex gap-2 mb-5 items-center">
@@ -277,7 +275,7 @@ export default function Packages({ isOpen, onClose, service }) {
                                         <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
                                         Multiple Revisions
                                     </div>
-                                    <div className="flex gap-2 mb-5 items-center items-center text-xl">
+                                    <div className="flex gap-2 mb-5 items-center text-xl">
                                         Designing your Cover
                                     </div>
                                     <div className="flex gap-2 mb-5 items-center">
@@ -300,7 +298,7 @@ export default function Packages({ isOpen, onClose, service }) {
                                         <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
                                         ISBN + Barcode (2X)
                                     </div>
-                                    <div className="flex gap-2 mb-5 items-center items-center text-xl">
+                                    <div className="flex gap-2 mb-5 items-center text-xl">
                                         Book Writing
                                     </div>
                                     <div className="flex gap-2 mb-5 items-center">
@@ -331,7 +329,7 @@ export default function Packages({ isOpen, onClose, service }) {
                                         <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
                                         Hardcover Format
                                     </div>
-                                    <div className="flex gap-2 mb-5 items-center items-center text-xl">
+                                    <div className="flex gap-2 mb-5 items-center text-xl">
                                         Guarantees
                                     </div>
                                     <div className="flex gap-2 mb-5 items-center">
@@ -371,10 +369,10 @@ export default function Packages({ isOpen, onClose, service }) {
                             <div className="single-packages relative">
                                 <h4 className="text-2xl font-poppins mb-6 text-center pt-4 pb-4 hover-top-vector relative">Expert Package</h4>
                                 <div className="single-packages-content mb-5 px-10">
-                                    <div className="flex gap-2 mb-5 items-center items-center text-xl">
+                                    <div className="flex gap-2 mb-5 items-center text-xl">
                                         Preparing Your Manuscript
                                     </div>
-                                    <div className="flex gap-2 mb-5 items-center items-center">
+                                    <div className="flex gap-2 mb-5 items-center">
                                         <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
                                         Developmental Editing
                                     </div>
@@ -402,7 +400,7 @@ export default function Packages({ isOpen, onClose, service }) {
                                         <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
                                         Multiple Revisions
                                     </div>
-                                    <div className="flex gap-2 mb-5 items-center items-center text-xl">
+                                    <div className="flex gap-2 mb-5 items-center text-xl">
                                         Designing your Cover
                                     </div>
                                     <div className="flex gap-2 mb-5 items-center">
@@ -425,7 +423,7 @@ export default function Packages({ isOpen, onClose, service }) {
                                         <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
                                         ISBN + Barcode (2X)
                                     </div>
-                                    <div className="flex gap-2 mb-5 items-center items-center text-xl">
+                                    <div className="flex gap-2 mb-5 items-center text-xl">
                                         Book Writing
                                     </div>
                                     <div className="flex gap-2 mb-5 items-center">
@@ -460,7 +458,7 @@ export default function Packages({ isOpen, onClose, service }) {
                                         <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
                                         Hardcover Format
                                     </div>
-                                    <div className="flex gap-2 mb-5 items-center items-center text-xl">
+                                    <div className="flex gap-2 mb-5 items-center text-xl">
                                         Online Presence
                                     </div>
                                     <div className="flex gap-2 mb-5 items-center">
@@ -475,7 +473,7 @@ export default function Packages({ isOpen, onClose, service }) {
                                         <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
                                         30 - 60 Seconds Book Trailer
                                     </div>
-                                    <div className="flex gap-2 mb-5 items-center items-center text-xl">
+                                    <div className="flex gap-2 mb-5 items-center text-xl">
                                         Guarantees
                                     </div>
                                     <div className="flex gap-2 mb-5 items-center">
@@ -491,6 +489,7 @@ export default function Packages({ isOpen, onClose, service }) {
                                         100% Satisfaction
                                     </div>
                                 </div>
+
                                 <div className="text-center mb-4">
                                     <h5 className="font-poppins text-xl flex justify-center items-center gap-3">
                                         EASY PAYMENT PLAN
@@ -507,6 +506,7 @@ export default function Packages({ isOpen, onClose, service }) {
                                         </div>
                                     </h5>
                                 </div>
+
                                 <div className="text-center">
                                     <button className="package-get-started-btn text-md mt-5" onClick={() => openModal('Expert')}>
                                         GET A QUOTE
@@ -525,11 +525,12 @@ export default function Packages({ isOpen, onClose, service }) {
                                     </div>
                                 </div>
                             </div>
+
                             <div className="single-packages relative">
                                 <Image src={"/images/badge.png"} className="package-badge" width={80} height={80}></Image>
                                 <h4 className="text-2xl font-poppins mb-6 text-center pt-4 pb-4 hover-top-vector relative">Premium Package</h4>
                                 <div className="single-packages-content mb-5 px-10">
-                                    <div className="flex gap-2 mb-5 items-center items-center text-xl">
+                                    <div className="flex gap-2 mb-5 items-center text-xl">
                                         Preparing Your Manuscript
                                     </div>
                                     <div className="flex gap-2 mb-5 items-center">
@@ -565,7 +566,7 @@ export default function Packages({ isOpen, onClose, service }) {
                                         Multiple Revisions
 
                                     </div>
-                                    <div className="flex gap-2 mb-5 items-center items-center text-xl">
+                                    <div className="flex gap-2 mb-5 items-center text-xl">
                                         Designing your Cover
                                     </div>
                                     <div className="flex gap-2 mb-5 items-center">
@@ -588,7 +589,7 @@ export default function Packages({ isOpen, onClose, service }) {
                                         <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
                                         ISBN + Barcode (2X)
                                     </div>
-                                    <div className="flex gap-2 mb-5 items-center items-center text-xl">
+                                    <div className="flex gap-2 mb-5 items-center text-xl">
                                         Book Writing
                                     </div>
                                     <div className="flex gap-2 mb-5 items-center">
@@ -627,7 +628,7 @@ export default function Packages({ isOpen, onClose, service }) {
                                         <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
                                         Hardcover Format
                                     </div>
-                                    <div className="flex gap-2 mb-5 items-center items-center text-xl">
+                                    <div className="flex gap-2 mb-5 items-center text-xl">
                                         12 Months Brand Marketing
                                     </div>
                                     <div className="flex gap-2 mb-5 items-center">
@@ -655,7 +656,7 @@ export default function Packages({ isOpen, onClose, service }) {
                                         Social Media Marketing
                                         (Facebook, Instagram & LinkedIn)
                                     </div>
-                                    <div className="flex gap-2 mb-5 items-center items-center text-xl">
+                                    <div className="flex gap-2 mb-5 items-center text-xl">
                                         Guarantees
                                     </div>
                                     <div className="flex gap-2 mb-5 items-center">
@@ -704,11 +705,12 @@ export default function Packages({ isOpen, onClose, service }) {
                                     </div>
                                 </div>
                             </div>
+
                             <div className="single-packages relative">
                                 <h4 className="text-2xl font-poppins mb-6 text-center pt-4 pb-4 hover-top-vector relative">Enterprise Package
                                 </h4>
                                 <div className="single-packages-content mb-5 px-10">
-                                    <div className="flex gap-2 mb-5 items-center items-center text-xl">
+                                    <div className="flex gap-2 mb-5 items-center text-xl">
                                         Preparing Your Manuscript
                                     </div>
                                     <div className="flex gap-2 mb-5 items-center">
@@ -742,7 +744,7 @@ export default function Packages({ isOpen, onClose, service }) {
                                         <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
                                         Multiple Revisions
                                     </div>
-                                    <div className="flex gap-2 mb-5 items-center items-center text-xl">
+                                    <div className="flex gap-2 mb-5 items-center text-xl">
                                         Designing your Cover
                                     </div>
                                     <div className="flex gap-2 mb-5 items-center">
@@ -765,7 +767,7 @@ export default function Packages({ isOpen, onClose, service }) {
                                         <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
                                         ISBN + Barcode (2X)
                                     </div>
-                                    <div className="flex gap-2 mb-5 items-center items-center text-xl">
+                                    <div className="flex gap-2 mb-5 items-center text-xl">
                                         Book Writing
                                     </div>
                                     <div className="flex gap-2 mb-5 items-center">
@@ -816,7 +818,7 @@ export default function Packages({ isOpen, onClose, service }) {
                                         <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
                                         Audiobook Format
                                     </div>
-                                    <div className="flex gap-2 mb-5 items-center items-center text-xl">
+                                    <div className="flex gap-2 mb-5 items-center text-xl">
                                         24 Months Brand Marketing
                                     </div>
                                     <div className="flex gap-2 mb-5 items-center">
@@ -853,7 +855,7 @@ export default function Packages({ isOpen, onClose, service }) {
                                         (Facebook, Instagram, Twitter)
                                         (Pinterest, Youtube & LinkedIn)
                                     </div>
-                                    <div className="flex gap-2 mb-5 items-center items-center text-xl">
+                                    <div className="flex gap-2 mb-5 items-center text-xl">
                                         Guarantees
                                     </div>
                                     <div className="flex gap-2 mb-5 items-center">
@@ -904,6 +906,7 @@ export default function Packages({ isOpen, onClose, service }) {
                                     </div>
                                 </div>
                             </div>
+
                         </div>
                     </div>
                 </div>

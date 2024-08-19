@@ -34,8 +34,8 @@ export default function Packages({ isOpen, onClose, service }) {
                 <div className="width-container">
                     <div className="container mx-auto">
                         <div className="text-center mb-6">
-                            <h3 className="text-2xl text-black font-poppins uppercase">Publishing</h3>
-                            <h2 className="font-poppins text-4xl font-bold text-black uppercase">Bundles</h2>
+                            {/* <h3 className="text-2xl text-black font-poppins uppercase">Publishing</h3> */}
+                            <h2 className="font-poppins text-4xl font-bold text-black uppercase">Book Publishing Bundles</h2>
                             <h4 class="text-xl font-poppins md:text-xl font-bold mt-4">Limited Time Offer - Save <span class="blink_me fw-bold text-2xl">50%</span> On Book Publishing Services</h4>
                         </div>
 
@@ -114,7 +114,7 @@ export default function Packages({ isOpen, onClose, service }) {
 
                                 <div className="text-center">
                                     <button className="package-get-started-btn text-md mt-7" onClick={() => openModal('Basic')}>
-                                        GET A QUOTE
+                                        START PROJECT
                                     </button>
                                 </div>
 
@@ -235,7 +235,7 @@ export default function Packages({ isOpen, onClose, service }) {
                                 </div>
                                 <div className="text-center">
                                     <button className="package-get-started-btn text-md mt-7" onClick={() => openModal('Start up')}>
-                                        GET A QUOTE
+                                        START PROJECT
                                     </button>
                                 </div>
                                 <div className="single-packages-footer flex  w-100 justify-center">
@@ -367,7 +367,7 @@ export default function Packages({ isOpen, onClose, service }) {
                                 </div>
                                 <div className="text-center">
                                     <button className="package-get-started-btn text-md mt-7" onClick={() => openModal('Standard')}>
-                                        GET A QUOTE
+                                        START PROJECT
                                     </button>
                                 </div>
 
@@ -534,7 +534,7 @@ export default function Packages({ isOpen, onClose, service }) {
 
                                 <div className="text-center">
                                     <button className="package-get-started-btn text-md mt-5" onClick={() => openModal('Expert')}>
-                                        GET A QUOTE
+                                        START PROJECT
                                     </button>
                                 </div>
 
@@ -720,7 +720,7 @@ export default function Packages({ isOpen, onClose, service }) {
                                 </div>
                                 <div className="text-center">
                                     <button className="package-get-started-btn text-md mt-8" onClick={() => openModal('Premium')}>
-                                        GET A QUOTE
+                                        START PROJECT
                                     </button>
                                 </div>
                                 <div className="single-packages-footer flex  w-100 justify-center">
@@ -924,7 +924,7 @@ export default function Packages({ isOpen, onClose, service }) {
                                 </div>
                                 <div className="text-center">
                                     <button className="package-get-started-btn font-poppins text-md mt-8" onClick={() => openModal('Enterprise')}>
-                                        GET A QUOTE
+                                        START PROJECT
                                     </button>
                                 </div>
 

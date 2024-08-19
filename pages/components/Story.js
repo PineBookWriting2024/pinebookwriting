@@ -57,7 +57,7 @@ export default function Story() {
                     <h3 className="mb-4 text-white text-4xl md:text-5xl font-poppins mt-5">
                         Our Success Stories
                     </h3>
-                    <p className="text-white">
+                    <p className="text-black">
                         Explore our Success Stories to see how Pine Book Writing has
                         empowered authors <br></br> in their self-publishing journey and stands out
                         among self-book publishers.

@@ -21,7 +21,7 @@ export default function Header() {
         <header className="container mx-auto py-2 width-container">
             <div className="flex items-center justify-between px-2 flex-wrap md:justify-strat">
                 <div className="head-logo">
-                    <Link className="text-center" href="/publishing-lp">
+                    <Link className="text-center" href="/book-publishing">
                         <Image alt="LOGO" src={'/images/writing-logo.png'} width={200} height={80} loading="lazy" />
                     </Link>
                 </div>

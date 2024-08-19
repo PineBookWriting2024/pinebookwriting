@@ -361,22 +361,9 @@ export default function Home() {
           name="description"
           content="Discover the art of book publishing with our Expert Book Publishing Services. Our expert team guides you through the process, from editing to distribution."
         />
-        <meta name="google-site-verification" content="v2pKJGIZnMWCWw2QC5nuRPYT5gvDQlUtT0lZYFIhHYo" />
+          <meta name="google-site-verification" content="v2pKJGIZnMWCWw2QC5nuRPYT5gvDQlUtT0lZYFIhHYo" />
+        
         <link rel="shortcut icon" href="/images/fav.webp" />
-
-        {/* Google tag Manager Script */}
-        {/* <script async src="https://www.googletagmanager.com/gtag/js?id=G-9X52J8V8NK"></script>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-                    window.dataLayer = window.dataLayer || [];
-                    function gtag(){dataLayer.push(arguments);}
-                    gtag('js', new Date());
-
-                    gtag('config', 'G-9X52J8V8NK');
-              `,
-          }}
-        /> */}
       </Head>
       <main>
         <Header />

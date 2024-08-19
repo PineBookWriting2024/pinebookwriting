@@ -20,11 +20,11 @@ export default function BrandTopBar() {
                         (866) 841-7463
                     </Link>
                     <Link
-                        href="mailto:info@pinebookwriting.com"
+                        href="mailto:support@pinebookwriting.com"
                         className="text-white hover:text-white font-poppins text-sm flex justify-center md:justify-start items-center font-bold"
                     >
                         <FontAwesomeIcon icon={faEnvelope} className="me-3" width={16} />
-                        info@pinebookwriting.com{" "}
+                        support@pinebookwriting.com{" "}
                     </Link>
                 </div>
             </div>

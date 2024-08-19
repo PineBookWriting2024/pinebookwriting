@@ -9,7 +9,40 @@ import Header from "../components/header";
 import Hero from "../components/hero";
 import Popup from "../components/popup";
 import HeroForm from "../components/herform";
+import HeroFormBookOffer from "../components/HerformBookOffer";
+import PopupBundleBookPublish from "../components/PopupBundleBookPublish";
 import Footer from "../components/Footer";
+import BrandContact from "../components/BrandContactForm";
+
+
+const handleOpenChat = () => {
+  window.zE && window.zE('webWidget', 'open');
+};
+
+const steps = [
+  { title: "Editing", imgTop: "/images/p-img-top.webp", imgBottom: "/images/p-img-bottom.webp", img: "/images/p-img.webp", img1: "/images/p-img1.webp", icon: "/images/Editing.png" },
+  { title: "Proofreading", imgTop: "/images/p-img-top.webp", imgBottom: "/images/p-img-bottom.webp", img: "/images/p-img.webp", img1: "/images/p-img1.webp", icon: "/images/Proofreading.png" },
+  { title: "TypeSetting", imgTop: "/images/p-img-top.webp", imgBottom: "/images/p-img-bottom.webp", img: "/images/p-img.webp", img1: "/images/p-img1.webp", icon: "/images/Typesetting & Layout adjustment.png" },
+  { title: "Layout Adjustment", imgTop: "/images/p-img-top.webp", imgBottom: "/images/p-img-bottom.webp", img: "/images/p-img.webp", img1: "/images/p-img1.webp", icon: "/images/Typesetting & Layout adjustment.png" },
+  { title: "Formatting", imgTop: "/images/p-img-top.webp", imgBottom: "/images/p-img-bottom.webp", img: "/images/p-img.webp", img1: "/images/p-img1.webp", icon: "/images/Formatting.png" },
+  { title: "Cover Designing", imgTop: "/images/p-img-top.webp", imgBottom: "/images/p-img-bottom.webp", img: "/images/p-img.webp", img1: "/images/p-img1.webp", icon: "/images/Cover Design.png" },
+  { title: "Adjustment", imgTop: "/images/p-img-top.webp", imgBottom: "/images/p-img-bottom.webp", img: "/images/p-img.webp", img1: "/images/p-img1.webp", icon: "/images/Cover Design.png" },
+  { title: "Publishing", imgTop: "/images/p-img-top.webp", imgBottom: "/images/p-img-bottom.webp", img: "/images/p-img.webp", img1: "/images/p-img1.webp", icon: "/images/Publishing.png" },
+  // ... Add other steps similarly
+];
+
+const processItems = [
+  { icon: '/images/Editing.png', text: 'Editing' },
+  { icon: '/images/Proofreading.png', text: 'Proofreading' },
+  { icon: '/images/Typesetting & Layout adjustment.png', text: 'TypeSetting' },
+  { icon: '/images/Typesetting & Layout adjustment.png', text: 'Layout Adjustment' },
+  { icon: '/images/Formatting.png', text: 'Formatting' },
+  { icon: '/images/Cover Design.png', text: 'Cover Designing' },
+  { icon: '/images/Cover Design.png', text: 'Adjustment' },
+  { icon: '/images/Publishing.png', text: 'Publishing' },
+];
+
+
 import {
   Autoplay,
   Pagination,
@@ -57,7 +90,21 @@ const GLightbox = dynamic(
 );
 
 
+
+
+
 export default function Home() {
+
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  useEffect(() => {
+      const interval = setInterval(() => {
+          setActiveIndex(prevIndex => (prevIndex + 1) % steps.length);
+      }, 3000); // Change step every 3 seconds
+      return () => clearInterval(interval);
+  }, []);
+
+
   const router = useRouter();
   const swiperRef = useRef();
   const swiperRef2 = useRef();
@@ -229,8 +276,17 @@ export default function Home() {
     console.log("response", response);
   };
 
+  const [isModalOpen, setModalOpen] = useState(false);
+  const [selectedService, setSelectedService] = useState('');
 
+  const openModal = (service) => {
+    setSelectedService(service);
+    setModalOpen(true);
+  };
 
+  const closeModal = () => {
+    setModalOpen(false);
+  };
 
   const [openFAQ, setOpenFAQ] = useState(null);
   const toggleFAQ = (index) => {
@@ -306,7 +362,7 @@ export default function Home() {
           content="Hire Professional Book Writing company. At Pine Book Writing, we provide to comprehensive Book Writing services. Your Trusted Book Writing Partners In The USA And Canada."
         />
         <meta name="google-site-verification" content="v2pKJGIZnMWCWw2QC5nuRPYT5gvDQlUtT0lZYFIhHYo" />
-        <link rel="shortcut icon" href="/images/fav.png" />
+        <link rel="shortcut icon" href="/images/fav.webp" />
 
         {/* Google tag Manager Script */}
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-9X52J8V8NK"></script>
@@ -324,12 +380,11 @@ export default function Home() {
       </Head>
       <main>
         <Header />
-        {/* <HomePopup /> */}
-        {/* <Hero  /> */}
-        <HeavyComponent Component={HeroForm} />
+        <HeavyComponent Component={HeroFormBookOffer} />
+        {/* <HeroFormBookOffer /> */}
+        <PopupBundleBookPublish isOpen={isModalOpen} onClose={closeModal} service={selectedService} />
 
         <section className="brnd-slider bg-black overflow-hidden">
-          {/* <AnimateFade type={"right"}> */}
           <div className="container grid grid-cols-1 width-container position-relative">
             <div className="container mx-auto position-relative">
               <div className="book-sell-text ">
@@ -497,7 +552,7 @@ export default function Home() {
                 </h3>
                 <p className="pt-3">
                   Pine Book Writing was founded on February 22, 2023, with the mission of providing quality editing and publishing services for the authors worldwide.
-                  Our founders understood that many authors need support in editing and publishing their works to make them distinct from the rest in the crowded marketplace. They had a vision of creating a company that would help these authors bring their ideas to life and turn them into successful books. That was when Pine Book Writing was officially established with a mission of providing authors with the best Book Writing experience.<br></br>
+                  Our founders understood that many authors need support in editing and publishing their works to make them distinct from the rest in the crowded marketplace. They had a vision of creating a company that would help these authors bring their ideas to life and turn them into successful books. That was when Pine Book Writing was officially established with a mission of providing authors with the best Book Writing & Publishing experience.<br></br>
                   We have a qualified team of professionals who will work hand in hand with you from the moment you decide to publish your book to the moment your book in known to the world.
                 </p>
                 <div className="flex justify-start items-center mt-8 gap-2 md:gap-x-8 client-logo-sec about-logos-sec">
@@ -835,13 +890,35 @@ export default function Home() {
         {/* <Chart /> */}
         <Packages />
 
-        <section className="process pt-14">
+
+        <section className="book-publishing-cta-section mx-auto px-6 py-10 md:py-0 relative">
+          <div className="container flex items-center flex-col md:flex-row max-w-screen-xl mx-auto">
+            <div className="basis-1/2 text-center flex justify-end">
+              <Image src={"/images/book-image-big.webp"} width={400} height={200} className="aos-init aos-animate book-publishing-cta-img" data-aos="fade-right" data-aos-duration="1000"></Image>
+            </div>
+            <div className="basis-1/2 md:ml-20">
+              <h2 className="text-white font-poppins text-3xl md:text-5xl aos-init aos-animate font-bold" data-aos="flip-down">Let's Tell Your Story to the World!
+              </h2>
+              <p className="text-white mt-7">Ready to share your fascinating story with your potential audience? Contact Pine Book Publishing and get a free quote now!
+              </p>
+              <div className="flex gap-6">
+                <button className="package-get-started-btn text-md mt-5" onClick={handleOpenChat}><Link href={'javascript:;'}>Talk to an Expert</Link></button>
+                <button className="package-get-started-btn text-md mt-5"><Link href="tel:(866)-841-7463">(866)-841-7463</Link></button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+        {/* process section start */}
+
+        {/* <section className="process pt-14">
           <div className="container mx-auto text-center m1-h ">
             <h3 className="font-poppins text-3xl md:text-4xl">
-              Our Book Writing Process
+              Our Book Publishing Process
             </h3>
             <p className="pt-2">
-              At Pine Book Writing, we've streamlined Our Book Writing
+              At Pine Book Writing, we've streamlined Our Book Publishing
               Process to <br></br>ensure authors have a seamless experience from start to
               finish.
             </p>
@@ -857,7 +934,6 @@ export default function Home() {
 
           <div className="counter -mb-16">
             <div className="container mx-auto">
-              {/* <div className="grid grid-cols-4 gap-4"></div> */}
               <div className="mt-6 grid grid-cols-1 px-6 gap-y-10 sm:grid-cols-2 mx-5 lg:grid-cols-4 xl:gap-x-8">
                 <div className="conter-box rounded-lg bg-white py-8 px-5 text-center content-center" >
                   <h2 className="text-xl">
@@ -891,18 +967,66 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
+
+        {/* process section end */}
+
+
+
+        {/* new process start */}
+        <section className="my-7 py-20 overflow-hidden">
+                <div className="text-center mb-6 new-lp3-why-choose-us-title">
+                    <h2 className="text-3xl text-black uppercase font-bold">Our Process: From Concept to Perfection</h2>
+                </div>
+                <div className="lg:block md:block hidden">
+                    <div className="new-lp3-process-wrapper max-w-screen-xl mx-auto">
+                        {steps.map((step, index) => (
+                            <div key={index} className={`process-item ${index === activeIndex ? 'active' : ''}`}>
+                                <h3>{step.title}</h3>
+                                <div>
+                                    <Image src={step.icon} width={40} height={40} alt="icon" />
+                                    <Image className="p-img" src={index % 2 === 0 ? step.imgTop : step.imgBottom} width={130} height={130} alt="process" />
+                                    <Image src={step.img} width={130} height={130} alt="process" />
+                                    <Image src={step.img1} width={130} height={130} alt="process" />
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+
+                <div className="lg:hidden md:hidden block">
+                    <div className="new-lp3-process-wrapper max-w-screen-xl mx-auto">
+                        <Swiper
+                            spaceBetween={30}
+                            slidesPerView={1}
+                            pagination={{ clickable: true }}
+                            loop={true}
+                        >
+                            {processItems.map((item, index) => (
+                                <SwiperSlide key={index}>
+                                    <div className='process-item-mob'>
+                                        <img src={item.icon} height={40} width={40} alt="icon" />
+                                        <h3 className="text-black text-2xl mt-3">{item.text}</h3>
+                                    </div>
+                                </SwiperSlide>
+                            ))}
+                        </Swiper>
+                    </div>
+                </div>
+
+            </section>
+
+            {/* new process end  */}
 
         <Story />
 
         <Faq />
 
-        <section className="btm-form overflow-hidden width-container">
+        {/* <section className="btm-form overflow-hidden width-container">
           <div className="container mx-auto px-8 md:px-20">
             <div className="form-mid-wrap pt-4 bg-gray-200 connect-form-border mb-12">
               <div className="flex flex-col md:flex-row items-end">
                 <div className="basis-1/3 hidden md:block position-relative">
-                  {/* <AnimateFade type={"right"} className="position-relative"> */}
                   <Image
                     className="text-center pt-10 contact-form-img"
                     src={"/images/contact-user.webp"}
@@ -911,7 +1035,6 @@ export default function Home() {
                     layout="responsive"
                     loading="lazy"
                   ></Image>
-                  {/* </AnimateFade> */}
                 </div>
 
                 <form className="basis-1/2 px-5 mb-5  md:ml-20" onSubmit={handleSubmit}>
@@ -990,8 +1113,9 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </section>
-
+        </section> */}
+         
+        <BrandContact />          
         <Footer />
 
         {/* <motion.p className="font-acumin text-5xl text-center text-black leading-loose font-bold hover:text-[#EBFA0B]" ref={nodeRef} >{rounded}<Counter from={100} to={1000} val={"10"} />100</motion.p> */}

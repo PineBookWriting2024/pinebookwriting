@@ -74,7 +74,7 @@ export default function Privacy() {
                     By subscribing to text marketing notifications, users agree to receive recurring marketing messages and shopping cart reminder messages. To unsubscribe, users can reply "STOP" at any time. Message and data rates may apply, and message frequency varies.
                 </p>
 
-                <p>For Help: (866) 841-7463 or info@pinebookwriting.com </p>
+                <p>For Help: (866) 841-7463 or support@pinebookwriting.com </p>
                 <p>To unsubscribe from the program, reply "STOP" at any time.</p>
 
                 <p><b>*Message and data rates may apply.</b></p>
@@ -162,7 +162,7 @@ export default function Privacy() {
                     Contact Information
                 </h2>
                 <p>
-                    If you have any questions or require further information about the aforementioned terms and conditions, please do not hesitate to contact us at <Link href="mailto:info@pinebookwriting.com">info@pinebookwriting.com</Link> . We are available to assist you and address any inquiries you may have.
+                    If you have any questions or require further information about the aforementioned terms and conditions, please do not hesitate to contact us at <Link href="mailto:support@pinebookwriting.com">support@pinebookwriting.com</Link> . We are available to assist you and address any inquiries you may have.
                 </p>
 
 

@@ -22,17 +22,17 @@ export default function Header() {
             <div className="flex items-center justify-between px-2 flex-wrap md:justify-strat">
                 <div className="head-logo">
                     <Link className="text-center" href="/publishing-lp">
-                        <Image alt="LOGO" src={'/brand-img/logo.webp'} width={200} height={80} loading="lazy" />
+                        <Image alt="LOGO" src={'/images/writing-logo.png'} width={200} height={80} loading="lazy" />
                     </Link>
                 </div>
 
-                <div className="flex items-center justify-end flex-col md:flex-row gap-3 flex-col-reverse">
+                <div className="flex items-center justify-end md:flex-row gap-3 flex-col-reverse">
                     <button className=" btn-a items-center bg-gray-800 md:py-2 py-4 mr-2 px-3 focus:outline-none hover:bg-gray-700">
-                        <Link className="" href={'tel:8668417463'}>(866)-841-7469</Link>
+                        <Link className="" href={'tel:8668417463'}>(866)-841-7463</Link>
                     </button>
 
                     <button className=" hidden btn-a items-center bg-gray-800 mr-2 md:py-2 py-4 px-3 focus:outline-none hover:bg-gray-700 md:block">
-                        <Link className="" href={'mailto:info@pinebookwriting.com'}>info@pinebookwriting.com</Link>
+                        <Link className="" href={'mailto:support@pinebookwriting.com'}>support@pinebookwriting.com</Link>
                     </button>
 
                     <button className="btn-a items-center bg-gray-800 md:py-2 py-4 px-3 focus:outline-none hover:bg-gray-700" onClick={handleOpenChat}>

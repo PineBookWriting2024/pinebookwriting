@@ -631,3 +631,14 @@ button.brand-nav-btn-1.brand-nav-btn.shadow-xl.mt-10.cursor-pointer.btn-f {
   align-items: center !important;
   justify-content: center !important;
 }
+
+
+/* book publishing lp css start  */
+.book-publishing-cta-section {
+  background: #147d6e;
+}
+
+.book-publishing-cta-img {
+  position: relative;
+  bottom: 54px;
+}

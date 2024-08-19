@@ -95,7 +95,7 @@ export default function BrandMainContact() {
                         <h4 className="text-white leading-20 font-bold text-xl md:text-xl font-poppins text-start uppercase">
                             EMAIL ADDRESS:
                         </h4>
-                        <p className="text-white "><Link href={"mailto:info@pinebookwriting.com"}>info@pinebookwriting.com</Link></p>
+                        <p className="text-white "><Link href={"mailto:support@pinebookwriting.com"}>support@pinebookwriting.com</Link></p>
                     </div>
                     <div className="basis-full brand-main-contact-form">
                         <form className="px-10 md:px-20 py-12" onSubmit={handleSubmit}>

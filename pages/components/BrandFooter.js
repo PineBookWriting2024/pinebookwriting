@@ -58,12 +58,12 @@ export default function BrandFooter() {
                                 </li>
                                 <li className="mt-3">
                                     <Link
-                                        href="mailto:info@pinebookwriting.com"
+                                        href="mailto:support@pinebookwriting.com"
                                         className="text-white hover:text-white font-poppins text-sm flex justify-center md:justify-start"
                                     >
                                         <FontAwesomeIcon icon={faEnvelope} className="me-3" />
                                         {" "}
-                                        info@pinebookwriting.com{" "}
+                                        support@pinebookwriting.com{" "}
                                     </Link>
                                 </li>
                             </nav> */}
@@ -126,12 +126,12 @@ export default function BrandFooter() {
                                 (866) 841-7463
                             </Link>
                             <Link
-                                href="mailto:info@pinebookwriting.com"
+                                href="mailto:support@pinebookwriting.com"
                                 className="text-white hover:text-white font-poppins text-sm flex justify-center md:justify-start mb-5"
                             >
                                 <FontAwesomeIcon icon={faEnvelope} className="me-3" />
                                 {" "}
-                                info@pinebookwriting.com{" "}
+                                support@pinebookwriting.com{" "}
                             </Link>
                             <h4 className="text-white leading-20 font-bold text-xl md:text-md font-poppins text-center lg:text-start uppercase">
                                 Canada Address:

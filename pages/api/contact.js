@@ -16,15 +16,15 @@ import nodemailer from 'nodemailer';
         port: 587,
         secure: true,
         auth: {
-            user: 'info@pinebookwriting.com', 
+            user: 'support@pinebookwriting.com', 
             pass: 'Contact@PBP#1209**' 
         }
     });
 
     try {
         let info = await transporter.sendMail({
-            from: `"Query Form" <info@pinebookwriting.com>`, 
-            to: 'info@pinebookwriting.com', 
+            from: `"Query Form" <support@pinebookwriting.com>`, 
+            to: 'support@pinebookwriting.com', 
             subject: 'New Contact Form Submission',
             text: `Name: ${name}\nEmail: ${email}\nPhone: ${phone}\nMessage: ${message}`,
             html: `<b>Name:</b> ${name}<br><b>Phone:</b> ${phone}<br><b>Email:</b> ${email}<br><b>Message:</b> ${message}`

@@ -10,14 +10,10 @@ export default function Footer() {
       <div className="container px-5 pt-10 pb-10 md:pt-20 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col position-relative">
         <div className="lg:w-1/3 md:w-1/2 w-full flex-shrink-0 md:mx-20  mx-auto text-center md:text-left footer-line relative">
           <a className="flex title-font font-medium items-center md:justify-start justify-center text-white">
-            <Image src={"/images/f-logo.png"} width={250} height={200} className="mb-2"></Image>
+            <Image src={"/images/writing-logo.png"} width={250} height={200} className="mb-2"></Image>
           </a>
           <p className="mt-2 text-sm text-white leading-7">
-            Pine Book Writing is a team of passionate book publishers that
-            believe in the power of storytelling and the importance of writers'
-            ability to tell their tales. Our streamlined process and dedicated
-            support make Book Writing service a realistic and rewarding goal
-            for any author.
+          Pine Book Writing is a team of passionate book writers and publishers capable of helping authors write delightful stories and publish their work on popular online platforms. Our streamlined process and dedicated support make our services a realistic and rewarding experience for any author.
           </p>
         </div>
 
@@ -38,12 +34,12 @@ export default function Footer() {
               </li>
               <li className="mt-3">
                 <Link
-                  href="mailto:info@pinebookwriting.com"
+                  href="mailto:support@pinebookwriting.com"
                   className="text-white hover:text-white text-md flex justify-center md:justify-start"
                 >
                   <FontAwesomeIcon icon={faEnvelope} className="me-3" />
                   {" "}
-                  info@pinebookwriting.com{" "}
+                  support@pinebookwriting.com{" "}
                 </Link>
               </li>
               <li className="flex items-center justify-center md:justify-start mt-3 text-md">

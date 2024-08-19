@@ -256,13 +256,13 @@ export default function Lp() {
 
                     <div className="flex items-center justify-end flex-col md:flex-row gap-3 flex-col-reverse">
                         {/* <button className=" btn-a items-center bg-gray-800 md:py-2 py-4 mr-2 px-3 focus:outline-none hover:bg-gray-700">
-                            <Link className="" href={'tel:8668417463'}>(866)-841-7469</Link>
+                            <Link className="" href={'tel:8668417463'}>(866)-841-7463</Link>
                         </button>
 
                         <button className=" hidden btn-a items-center bg-gray-800 mr-2 md:py-2 py-4 px-3 focus:outline-none hover:bg-gray-700 md:block">
                             <Link className="" href={'mailto:info@pinebookwrting.com'}>info@pinebookwrting.com</Link>
                         </button> */}
-                        <Link className="text-white flex" href={'tel:8668417463'}><FontAwesomeIcon icon={faPhone} className="me-3" color="#fff" width={20} /><span>(866)-841-7469</span></Link>
+                        <Link className="text-white flex" href={'tel:8668417463'}><FontAwesomeIcon icon={faPhone} className="me-3" color="#fff" width={20} /><span>(866)-841-7463</span></Link>
 
                         <button className="items-center md:py-2 py-4 px-3 get-started">
                             <Link className="font-poppins" href={'javascript:;'} onClick={handleOpenChat}>Talk to an Expert</Link>
@@ -472,7 +472,7 @@ export default function Lp() {
                                 <p>
                                     DISCUSS YOUR IDEAS
                                 </p>
-                                <Link href="maito:info@pinebookwriting.com">info@pinebookwriting.com</Link>
+                                <Link href="maito:support@pinebookwriting.com">support@pinebookwriting.com</Link>
                             </div>
                         </div>
                         <Link href={'javascript:;'} className="new-lp-banner-btn new-lp-banner-btn-chat font-poppins" onClick={() => setIsOpen(true)}>ACTIVATE COUPON NOW</Link>
@@ -650,12 +650,12 @@ export default function Lp() {
                                 </li>
                                 <li className="mt-8">
                                     <Link
-                                        href="mailto:info@pinebookwriting.com"
+                                        href="mailto:support@pinebookwriting.com"
                                         className="text-white hover:text-white font-poppins text-sm flex justify-center md:justify-start"
                                     >
                                         <FontAwesomeIcon icon={faEnvelope} className="me-3" color="#1e8677" />
                                         {" "}
-                                        info@pinebookwriting.com{" "}
+                                        support@pinebookwriting.com{" "}
                                     </Link>
                                 </li>
                                 <li className="flex items-center justify-center md:justify-start mt-8 text-md ">

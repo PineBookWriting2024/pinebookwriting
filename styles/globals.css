@@ -350,12 +350,14 @@
     .brand-portfolio-books .in-active{background:linear-gradient(90deg,rgba(19,124,109,1) 0%,rgba(48,150,135,1) 100%);color:#fff;}
     .transparent-connect-form-border{background-color:#87929d6b!important;backdrop-filter:blur(4px);}
     .dark-form-bg{background:#433f3fe6;}
-    .home-popup-modal-wrapper{width:80%;height:522px;}
-    .form-off-badge{position:absolute;right:21px;top:-71px;z-index:1000;}
+    .home-popup-modal-wrapper{width:auto;height:522px;}
+    .form-off-badge{position:absolute;right:21px;top:-50px;z-index:1000;}
     .home-connect-form-input{background-color:#fff;font-size:17px;border-radius:10px;border:2px solid #fff0;padding:3px 17px;  /* padding: 17px; */}
     .home-popup-img-bg{height:450px!important;}
-    .popup-form-wrapper{width:38%;}
-    .home-close-btn-modal{position:absolute;top:-21px;background:#2c9384;right:-76px;border-radius:50%;}
+    .popup-form-wrapper {
+      width: 80%;
+      margin: auto;
+  }    .home-close-btn-modal{position:absolute;top:-21px;background:#2c9384;right:-76px;border-radius:50%;}
     .home-close-btn-modal svg{filter:invert(1);}
     .text-blink,.powered-by-text{animation:4s linear infinite key-second;-webkit-animation:4s ease-in-out infinite key-second;background-color:transparent!important;}
 

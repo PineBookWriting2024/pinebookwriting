@@ -369,7 +369,7 @@ export default function Home() {
         <Header />
         <HeavyComponent Component={HeroFormBookOffer} />
         {/* <HeroFormBookOffer /> */}
-        <PopupBundleBookPublish isOpen={isModalOpen} onClose={closeModal} service={selectedService} />
+        {/* <PopupBundleBookPublish isOpen={isModalOpen} onClose={closeModal} service={selectedService} /> */}
 
         <section className="brnd-slider bg-black overflow-hidden">
           <div className="container grid grid-cols-1 width-container position-relative">

@@ -9,18 +9,18 @@ const GLightbox = dynamic(
     { ssr: false }
 );
 const books = [
-    { id: 1, title: 'Book One', category: 'Fiction', imageUrl: 'brand-img/Fiction/fiction-1.png' },
-    { id: 2, title: 'Book Two', category: 'Fiction', imageUrl: 'brand-img/Fiction/fiction-2.png' },
-    { id: 3, title: 'Book Three', category: 'Fiction', imageUrl: 'brand-img/Fiction/fiction-3.png' },
-    { id: 4, title: 'Book Four', category: 'Fiction', imageUrl: 'brand-img/Fiction/fiction-4.png' },
-    { id: 5, title: 'Book Five', category: 'Fiction', imageUrl: 'brand-img/Fiction/fiction-5.png' },
-    { id: 6, title: 'Book Six', category: 'Fiction', imageUrl: 'brand-img/Fiction/fiction-6.png' },
-    { id: 7, title: 'Book Seven', category: 'Fiction', imageUrl: 'brand-img/Fiction/fiction-7.png' },
-    { id: 8, title: 'Book Eight', category: 'Fiction', imageUrl: 'brand-img/Fiction/fiction-8.png' },
-    { id: 9, title: 'Book Nine', category: 'Fiction', imageUrl: 'brand-img/Fiction/fiction-9.png' },
-    { id: 10, title: 'Book Ten', category: 'Fiction', imageUrl: 'brand-img/Fiction/fiction-10.png' },
-    { id: 11, title: 'Book Eleven', category: 'Fiction', imageUrl: 'brand-img/Fiction/fiction-11.png' },
-    { id: 12, title: 'Book twelve', category: 'Fiction', imageUrl: 'brand-img/Fiction/fiction-12.png' },
+    { id: 1, title: 'Book One', category: 'Fiction', imageUrl: 'brand-img/fiction/fiction-1.png' },
+    { id: 2, title: 'Book Two', category: 'Fiction', imageUrl: 'brand-img/fiction/fiction-2.png' },
+    { id: 3, title: 'Book Three', category: 'Fiction', imageUrl: 'brand-img/fiction/fiction-3.png' },
+    { id: 4, title: 'Book Four', category: 'Fiction', imageUrl: 'brand-img/fiction/fiction-4.png' },
+    { id: 5, title: 'Book Five', category: 'Fiction', imageUrl: 'brand-img/fiction/fiction-5.png' },
+    { id: 6, title: 'Book Six', category: 'Fiction', imageUrl: 'brand-img/fiction/fiction-6.png' },
+    { id: 7, title: 'Book Seven', category: 'Fiction', imageUrl: 'brand-img/fiction/fiction-7.png' },
+    { id: 8, title: 'Book Eight', category: 'Fiction', imageUrl: 'brand-img/fiction/fiction-8.png' },
+    { id: 9, title: 'Book Nine', category: 'Fiction', imageUrl: 'brand-img/fiction/fiction-9.png' },
+    { id: 10, title: 'Book Ten', category: 'Fiction', imageUrl: 'brand-img/fiction/fiction-10.png' },
+    { id: 11, title: 'Book Eleven', category: 'Fiction', imageUrl: 'brand-img/fiction/fiction-11.png' },
+    { id: 12, title: 'Book twelve', category: 'Fiction', imageUrl: 'brand-img/fiction/fiction-12.png' },
 
 
     { id: 13, title: 'Book Thirdteen', category: 'Non-Fiction', imageUrl: '/brand-img/Non-Fiction/non-fiction-1.png' },

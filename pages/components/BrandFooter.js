@@ -87,8 +87,8 @@ export default function BrandFooter() {
                                     Services
                                 </li> */}
                                 <li className="mt-3">
-                                    <Link href="/pricing" onClick={(e) => { e.preventDefault(); window.location.href = "/pricing"; }}>
-                                    Pricing
+                                    <Link href="/packages" onClick={(e) => { e.preventDefault(); window.location.href = "/packages"; }}>
+                                    Packages
                                     </Link>
                                 </li>
                                 <li className="mt-3">

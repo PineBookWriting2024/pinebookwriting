@@ -542,7 +542,7 @@ export default function Home() {
                   Our founders understood that many authors need support in editing and publishing their works to make them distinct from the rest in the crowded marketplace. They had a vision of creating a company that would help these authors bring their ideas to life and turn them into successful books. That was when Pine Book Writing was officially established with a mission of providing authors with the best Book Writing & Publishing experience.<br></br>
                   We have a qualified team of professionals who will work hand in hand with you from the moment you decide to publish your book to the moment your book in known to the world.
                 </p>
-                <div className="flex justify-start items-center mt-8 gap-2 md:gap-x-8 client-logo-sec about-logos-sec">
+                {/* <div className="flex justify-start items-center mt-8 gap-2 md:gap-x-8 client-logo-sec about-logos-sec">
                   {clientLogos.map((logo, index) => (
                     <Link key={index} href={logo.href} target="_blank">
                       <Image
@@ -553,7 +553,7 @@ export default function Home() {
                       />
                     </Link>
                   ))}
-                </div>
+                </div> */}
               </div>
               {/* </AnimateFade> */}
               <div className="abt-pic text-center">

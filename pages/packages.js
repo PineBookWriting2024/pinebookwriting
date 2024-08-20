@@ -341,7 +341,7 @@ export default function Bundle({ isOpen, onClose, service }) {
                             <div className="">
                                 <div className={`container container-compare mx-auto transition-height duration-500 ease-in-out ${showPackages2 ? 'expanded' : 'collapsed'}`} ref={contentRef}>
                                     <div className="md:w-full w-[500px] responsive-width">
-                                        <table className="w-full mb-14 table-auto bundle-comparison-chart table-fixed">
+                                        <table className="w-full mb-14 bundle-comparison-chart table-fixed">
                                             <thead className="chart-header-custom">
                                                 <tr>
 
@@ -376,12 +376,14 @@ export default function Bundle({ isOpen, onClose, service }) {
                                                     </th>
                                                 </tr>
                                             </thead>
+
                                             <tbody className="text-center">
                                                 <tr className="m-4">
                                                     {/* <th className="text-2xl md:text-2xl text-start p-3 font-bold"
                                                         colspan="4"
                                                         scope="row">Preparing Your Manuscript</th> */}
                                                 </tr>
+
                                                 <tr>
                                                     <td>Dedicated Project Manager</td>
                                                     <td>
@@ -394,6 +396,7 @@ export default function Bundle({ isOpen, onClose, service }) {
                                                         ✔️
                                                     </td>
                                                 </tr>
+
                                                 <tr>
                                                     <td>Pre-Planning and Research</td>
                                                     <td>
@@ -406,6 +409,7 @@ export default function Bundle({ isOpen, onClose, service }) {
                                                         ✔️
                                                     </td>
                                                 </tr>
+
                                                 <tr>
                                                     <td>Questionnaire/Brief Forms</td>
                                                     <td>✔️</td>
@@ -436,21 +440,14 @@ export default function Bundle({ isOpen, onClose, service }) {
                                                     <td>35 Minutes</td>
                                                     <td>45 Minutes</td>
                                                 </tr>
+
                                                 <tr>
                                                     <td>Writers Level</td>
-                                                    <td>
-                                                    Mid Level Writer
-                                                    </td>
+                                                    <td>Mid Level Writer</td>
                                                     <td>Senior Writer</td>
                                                     <td>Premium Writer</td>
                                                 </tr>
 
-
-                                                <tr className="m-4">
-                                                    {/* <th className="text-2xl md:text-2xl text-start p-3 font-bold pl-5 lg:pl-16 md:pl-16"
-                                                        colspan="4"
-                                                        scope="row">Book Writing</th> */}
-                                                </tr>
                                                 <tr>
                                                     <td>Writers Experience </td>
                                                     <td>
@@ -513,11 +510,7 @@ export default function Bundle({ isOpen, onClose, service }) {
                                                     <td>3</td>
                                                     <td>5</td>
                                                 </tr>
-                                                <tr className="m-4">
-                                                    {/* <th className="text-2xl md:text-2xl text-start p-3 font-bold pl-5 lg:pl-10 md:pl-10"
-                                                        colspan="4"
-                                                        scope="row">Designing your Cover</th> */}
-                                                </tr>
+                                        
                                                 <tr>
                                                     <td>Editorial Support</td>
                                                     <td>
@@ -550,11 +543,7 @@ export default function Bundle({ isOpen, onClose, service }) {
                                                 </tr>
                                   
                                                
-                                                <tr className="m-4">
-                                                    {/* <th className="text-2xl md:text-2xl text-start p-3 font-bold pl-5 lg:pl-20 md:pl-20"
-                                                        colspan="4"
-                                                        scope="row">Guarantees</th> */}
-                                                </tr>
+                                
                                                 <tr>
                                                     <td>Book Synopsis</td>
                                                     <td>

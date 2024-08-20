@@ -78,7 +78,7 @@ export default function BrandPortfolio() {
                     <h2 className=" text-4xl text-black uppercase">A Collection of Stories We’ve Helped Bring to Life</h2>
                 </div>
                 <div className="flex space-x-4 justify-center mb-12">
-                    {['Fiction', 'Non-Fiction', 'Childer-Book'].map(category => (
+                    {['Fiction', 'Non-Fiction' , 'Childer-Book'].map(category => (
                         <button
                             key={category}
                             className={`px-4 py-2 rounded-lg ${activeCategory === category ? 'active' : 'in-active'}`}
@@ -88,7 +88,7 @@ export default function BrandPortfolio() {
                         </button>
                     ))}
                 </div>
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-4 ">
                     {filteredBooks.map(book => (
                         <div key={book.id} className="border">
                             <Link href={book.imageUrl} className="">

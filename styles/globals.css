@@ -351,7 +351,7 @@
     .transparent-connect-form-border{background-color:#87929d6b!important;backdrop-filter:blur(4px);}
     .dark-form-bg{background:#433f3fe6;}
     .home-popup-modal-wrapper{width:auto;height:522px;}
-    .form-off-badge{position:absolute;right:21px;top:-50px;z-index:1000;}
+    .form-off-badge{position:absolute;left:21px;top:-50px;z-index:1000;}
     .home-connect-form-input{background-color:#fff;font-size:17px;border-radius:10px;border:2px solid #fff0;padding:3px 17px;  /* padding: 17px; */}
     .home-popup-img-bg{height:450px!important;}
     .popup-form-wrapper {

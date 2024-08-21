@@ -53,7 +53,10 @@ export default function BrandPortfolio() {
     const lightboxRef = useRef(null);
 
     useEffect(() => {
-        if (typeof window !== "undefined" && !lightboxRef.current) {
+        if (typeof window !== "undefined") {
+            if (lightboxRef.current) {
+                lightboxRef.current.destroy();
+            }
             import('glightbox').then((GLightboxModule) => {
                 const GLightbox = GLightboxModule.default;
                 lightboxRef.current = GLightbox({
@@ -67,7 +70,7 @@ export default function BrandPortfolio() {
                 lightboxRef.current.destroy();
             }
         };
-    }, []);
+    }, [filteredBooks]);
 
 
     return (

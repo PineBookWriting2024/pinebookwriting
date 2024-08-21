@@ -124,10 +124,10 @@ export default function BrandHero() {
 
 
             {/* <section class=""> */}
-            <div className="container mx-4 pt-20 md:mx-32 tablet-margin-banner max-w-screen-xl brand-hero-section">
+            <div className="container mx-4 md:pt-20 md:mx-32 tablet-margin-banner max-w-screen-xl brand-hero-section">
                 <div className="grid grid-cols-1 sm:gap-8 sm:py-0 md:grid-cols-2 text-left items-center justify-between md:gap-8 md:py-36">
                     <div className="mb-4">
-                        <h3 className="font-poppins text-3xl mb-4 aos-init aos-animate text-white"> <span class="px-2 py-0">#1 Ghostwriting Company</span></h3>
+                        <h3 className="font-poppins md:text-3xl text-2xl mb-4 aos-init aos-animate text-white"> <span class="px-2 py-0">#1 Ghostwriting Company</span></h3>
                         <FadeIn>
                         <h1 className="font-poppins uppercase text-3xl md:text-4xl text-white font-bold">
                         Pine Book Writing Services

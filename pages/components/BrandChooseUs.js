@@ -8,7 +8,7 @@ export default function BrandChooseUs() {
     return (
         <>
             <section className="overflow-hidden" >
-                <div className="brand-choose-us-section ms-auto relative left-0 md:left-52 px-12 md:px-16 mt-20 mb-8 " >
+                <div className="brand-choose-us-section ms-auto relative left-0 md:left-52 px-12 md:px-16 mt-5 mb-8 " >
                     <div className="flex items-center flex-col md:flex-row p-4" data-aos="fade-right" data-aos-delay="0" data-aos-duration="500">
                         <div className="basis-1/3 brand-choose-us-vector">
                             {/* <Image src={"/brand-img/why-choose-us-img.webp"} width={350} height={200} className="brand-choose-us-img"></Image> */}

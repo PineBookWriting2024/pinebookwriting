@@ -60,6 +60,7 @@ export default function Wikipedia() {
 
                         <p className="font-poppins text-xl text-justify	pt-3">At Pine Book Writing, our skilled team of Wikipedia writers is immensely familiar with Wikipedia’s policies and guidelines. They bring years of experience in writing informative, readable, and well-researched articles based on Wikipedia’s standards. We will highlight your achievements, contributions, and knowledge base in order to establish a robust Wikipedia presence. </p>
                     </div>
+                    
                     <div className="basis-1/2 abt-pic text-center flex justify-center md:justify-center">
                         <Image src={"/brand-img/Wikipedia-Writing.png"} width={470} height={300}
                             loading="lazy"
@@ -69,7 +70,8 @@ export default function Wikipedia() {
                         />
                     </div>
                 </div>
-                <p className="font-poppins text-xl text-justify	px-10 md:px-0" data-aos="fade-right">
+
+                <p className="font-poppins text-xl text-justify pt-3 px-10 md:px-0" data-aos="fade-right">
                 Let’s help you create a noteworthy Wikipedia article that portrays your career and life accomplishments. Contact us now to discuss your project with experts!
                 </p>
             </div>

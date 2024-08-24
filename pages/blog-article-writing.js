@@ -68,7 +68,7 @@ export default function BlogWriting () {
                         />
                     </div>
                 </div>
-                <p className="font-poppins text-xl text-justify	px-10 md:px-0" data-aos="fade-right">
+                <p className="font-poppins text-xl text-justify pt-3 px-10 md:px-0" data-aos="fade-right">
                 So why wait? Contact us today to discuss your next writing project and see how we help our clients to thrive in their pursuits.
                 </p>
             </div>

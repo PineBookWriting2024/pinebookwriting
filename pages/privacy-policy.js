@@ -3,6 +3,8 @@ import Footer from "./components/Footer";
 import PrimaryHeader from "./components/PrimaryHeader";
 import Header from "./components/header";
 import Head from "next/head";
+import BrandNavbar from "./components/BrandNavbar";
+    
 
 export default function Privacy() {
 
@@ -10,8 +12,9 @@ export default function Privacy() {
         <>
             <Head>
                 <title>Privacy Policy | Pine Book Writing</title>
-                <link rel="shortcut icon" href="/images/fav.png" />
+                <link rel="shortcut icon" href="/images/fav.webp" />
             </Head>
+            <BrandNavbar />
             <PrimaryHeader
                 title="Privacy Policy"
             />

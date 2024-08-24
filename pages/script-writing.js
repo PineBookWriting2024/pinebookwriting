@@ -33,7 +33,7 @@ export default function ScriptWriting () {
     return (
         <>
             <Head>
-                <title>Book Editing | Pine Book Writing</title>
+                <title>Script Writing | Pine Book Writing</title>
                 <meta
                     name="description"
                     content="Everything about Pine Book Writing—your partner in crafting, editing, and publishing your story. Experience seamless service from manuscript to bookshelf."
@@ -50,9 +50,9 @@ export default function ScriptWriting () {
             <div className="container mx-auto max-w-screen-xl overflow-hidden py-10 md:py-20">
                 <div className="flex justify-center items-center flex-col md:flex-row lg:flex-row px-10 md:px-0 py-10 md:py-0">
                     <div className="basis-1/2 abt-txt m1-h p1 aos-init aos-animate" data-aos="fade-right" data-aos-duration="1000">
-                        {/* <h3 className="font-poppins text-2xl md:text-3xl uppercase">
-                        Stand Out from the Crowd 
-                        </h3> */}
+                        <h3 className="font-poppins text-2xl md:text-3xl uppercase">
+                        Cultivate Your Audio/Video Production
+                        </h3>
                         <h2 className="font-poppins text-3xl md:text-4xl uppercase font-bold">Professional Scriptwriting Services for Every Format</h2>
                        
                         <p className="font-poppins text-xl text-justify	pt-3">The purpose of writing a script is to capture your audience's attention, delight them with the idea you are presenting, or convey anything entertainingly or engagingly. Whether you're creating a film, a TV show, an Ad, or any video, a well-written script is required.</p>

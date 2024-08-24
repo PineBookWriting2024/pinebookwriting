@@ -33,7 +33,7 @@ export default function SocialMediaCopywriting () {
     return (
         <>
             <Head>
-                <title>Book Editing | Pine Book Writing</title>
+                <title>Social Media Copywriting | Pine Book Writing</title>
                 <meta
                     name="description"
                     content="Everything about Pine Book Writing—your partner in crafting, editing, and publishing your story. Experience seamless service from manuscript to bookshelf."

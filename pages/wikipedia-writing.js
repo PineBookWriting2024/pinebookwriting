@@ -42,6 +42,7 @@ export default function Wikipedia() {
                 </Head>
             <BrandNavbar />
             <BrandPrimaryHeader
+                photo_banner={"/brand-img/wikipedia-writing-banner.png"}
                 title="Professional Wikipedia Writing Services"
                 desc="Are you seeking professional Wikipedia writing services to enhance your online or business presence? If yes, then Pine Book Writing is here for you! Our expert Wikipedia writers have helped hundreds of clients, including politicians, actors, and other notable individuals."
             />

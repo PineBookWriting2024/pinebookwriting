@@ -42,6 +42,7 @@ export default function SeoCopywriting () {
                 </Head>
             <BrandNavbar />
             <BrandPrimaryHeader
+                            photo_banner={"/brand-img/seo-content.png"}
                 title="Expert SEO Content Writing Services"
                 desc="If you are a business website owner, an SEO specialist, or even a marketing agency looking for professional SEO-optimized content writing services, you’ve reached the right place. At Pine Book Writing we handle all aspects of SEO content writing, from keyword research and content strategy planning to writing; we’re with you every step of the way. "
             />

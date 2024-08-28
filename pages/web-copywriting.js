@@ -42,6 +42,7 @@ export default function WebCopywriting () {
                 </Head>
             <BrandNavbar />
             <BrandPrimaryHeader
+                photo_banner={"/brand-img/web-copywriting.png"}
                 title="Expert Web Copywriting Services"
                 desc="Don't know how to write a persuasive and compelling web copy that drives conversions? Don't worry! Our team of experienced copywriters brings years of experience in website content writing for various industries. Contact us to learn more about our services now!"
             />

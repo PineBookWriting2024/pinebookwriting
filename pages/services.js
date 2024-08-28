@@ -27,8 +27,8 @@ export default function Services() {
             <BrandNavbar />
             <BrandPrimaryHeader
              photo_banner={"brand-img/services-banner.jpg"}
-                title="Your Writing Journey Starts Here"
-                desc="Are you in search of a professional writing agency? If yes, then you are at the right place. At Pine Book Writing, we proudly offer unique and all-inclusive writing services to cater to all your writing needs, from an informative blog to an engaging fiction book."
+                title="Supercharge Your Writing Passion with Expert Content Writing Services"
+                desc="Are you in search of a professional writing agency? If yes, then you're at the right place. Pine Book Writing offers all-inclusive services, from book writing and creative marketing copies to outstanding resume writing."
             />
             <BrandBannerLogo />
             <BrandServices/>

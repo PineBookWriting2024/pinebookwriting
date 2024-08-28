@@ -42,6 +42,7 @@ export default function BlogWriting () {
                 </Head>
             <BrandNavbar />
             <BrandPrimaryHeader
+            photo_banner={"/brand-img/blog-article-writing.png"}
                 title="Professional Article & Blog Writing Services"
                 desc="Pine Book Writing offers premium article and blog writing services to help website owners, marketers, and bloggers get flawless and engaging pieces of content for their purposes. Contact us to get a free quote now!"
             />

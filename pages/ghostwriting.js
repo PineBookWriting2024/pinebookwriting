@@ -42,6 +42,7 @@ export default function BookEditing() {
                 </Head>
             <BrandNavbar />
             <BrandPrimaryHeader
+                photo_banner={"/brand-img/ghostwriting.png"}
                 title="Let's Breathe Life into Your Idea - Hire Expert Ghostwriting Services"
                 desc="If you are someone who does not have enough time or expertise to pen your delightful ideas, a ghostwriting service is made for you. At Pine Book Writing, we offer impeccable ghostwriting services to help first-time or seasoned authors to help them thrive."
             />

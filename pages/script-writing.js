@@ -42,6 +42,7 @@ export default function ScriptWriting () {
                 </Head>
             <BrandNavbar />
             <BrandPrimaryHeader
+                 photo_banner={"/brand-img/script-writing-banner.png"}
                 title="Media Production, Perfected - Expert Scriptwriting Services"
                 desc="Whether you want to make a film, a podcast, an advert, or any interactive video, you need a perfectly crafted script. Our expert scriptwriters bring your vision to life. Let us turn your imagination into the perfect narrative!"
             />

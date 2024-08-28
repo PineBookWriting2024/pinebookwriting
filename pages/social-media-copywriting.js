@@ -42,6 +42,7 @@ export default function SocialMediaCopywriting () {
                 </Head>
             <BrandNavbar />
             <BrandPrimaryHeader
+                photo_banner={"/brand-img/social-media-copywriting.png"}
                 title="Be Social, Engage People - Professional Social Media Copywriting Service"
                 desc="Struggling to create social media content? Let us help! Our team of skilled copywriter put their expertise into crafting engaging posts that drive organic reach, maximize engagement, and uplift your brand's presence. We offer all-inclusive services, from persuasive copy to attention-grabbing graphics and videos."
             />

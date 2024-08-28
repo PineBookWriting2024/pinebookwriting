@@ -10,10 +10,10 @@ export default function BrandServices() {
                 <div className="max-w-screen-xl mx-auto px-4 my-20 relative">
                     <div className="text-center mb-6">
                        
-                        <h2 className="font-poppins text-5xl md:text-5xl text-black font-bold">Services We Offer</h2>
+                        <h2 className="font-poppins text-5xl md:text-5xl leading-normal pb-4 text-black font-bold"> Writing Services We Offer</h2>
                         <h3 className="text-xl text-black font-poppins">Choose Pine Book Writing Services for Expert and Inspiring Content Across All Genres!
                         </h3>
-                        <p className="text-black pt-3">Experience the power of expertly crafted, engaging, and exciting book content with Pine Book Writing - where our best, unique, and impressive services are designed to turn your book dream into a publishing reality!</p>
+                        <p className="text-black pt-3">Experience the power of expertly crafted, engaging, and exciting content with Pine Book Writing - where our best, unique, and impressive writing services are designed to help you accomplish your writing goals!</p>
                     </div>
 
                     {/* 1 of 2 */}
@@ -32,13 +32,14 @@ export default function BrandServices() {
                             </div>
                             <div className="basis-1/2 brand-service-card-img relative"> 
                                 <span class="square">
-                                    {/* <Link href="#">Read More</Link> */}
+                                    <Link href="/ghostwriting">Read More</Link>
                                 </span>
                                 <div className="service-card-img">
                                     <Image src={"/brand-img/bgw.jpg"} width={250} height={200}></Image>
                                 </div>
                             </div>
                         </div>
+
                         <div className="brand-service-card flex gap-4">
                             <div className="brand-service-card-content basis-1/2 relative">
                                 <span className="right"></span>
@@ -52,7 +53,7 @@ export default function BrandServices() {
                             </div>
                             <div className="basis-1/2 brand-service-card-img relative">
                                 <span class="square">
-                                    {/* <Link href="#">Read More</Link> */}
+                                    <Link href="/resume-writing">Read More</Link>
                                 </span>
                                 <div className="service-card-img">
                                     <Image src={"/brand-img/rw.jpg"} width={250} height={200}></Image>
@@ -62,15 +63,17 @@ export default function BrandServices() {
                     </div>
                     {/* 2 of 4 */}
                     <div className="brand-service-content justify-center flex mt-4 gap-4 flex-col md:flex-row aos-init aos-animate" data-aos="fade-right" data-aos-duration="1000">
-                        <div className="brand-service-card flex gap-4">
+                       
+                    <div className="brand-service-card flex gap-4">
                             <div className="basis-1/2 brand-service-card-img relative">
                                 <span class="square">
-                                    {/* <Link href="#">Read More</Link> */}
+                                    <Link href="/wikipedia-writing">Read More</Link>
                                 </span>
                                 <div className="service-card-img">
                                     <Image src={"/brand-img/ww.jpg"} width={270} height={200}></Image>
                                 </div>
                             </div>
+
                             <div className="brand-service-card-content basis-1/2 relative">
                                 <span className="right-4"></span>
                                 <span className="bottom-4"></span>
@@ -82,10 +85,11 @@ export default function BrandServices() {
                                 <h4 className="mt-4 font-poppins text-2xl">Wikipedia Writing</h4>
                             </div>
                         </div>
+
                         <div className="brand-service-card flex gap-4">
                             <div className="basis-1/2 brand-service-card-img relative">
                                 <span class="square">
-                                    {/* <Link href="#">Read More</Link> */}
+                                    <Link href="/web-copywriting">Read More</Link>
                                 </span>
                                 <div className="service-card-img">
                                     <Image src={"/brand-img/wcw.jpg"} width={250} className="icon" height={200}></Image>
@@ -103,6 +107,7 @@ export default function BrandServices() {
                             </div>
 
                         </div>
+
                     </div>
 
                     {/* 4 of 6 */}
@@ -120,7 +125,7 @@ export default function BrandServices() {
                             </div>
                             <div className="basis-1/2 brand-service-card-img relative">
                                 <span class="square">
-                                    {/* <Link href="#">Read More</Link> */}
+                                    <Link href="/seo-content">Read More</Link>
                                 </span>
                                 <div className="service-card-img">
                                     <Image src={"/brand-img/seocw.jpg"} width={250} height={200}></Image>
@@ -140,7 +145,7 @@ export default function BrandServices() {
                             </div>
                             <div className="basis-1/2 brand-service-card-img relative">
                                 <span class="square">
-                                    {/* <Link href="#">Read More</Link> */}
+                                    <Link href="/blog-article-writing">Read More</Link>
                                 </span>
                                 <div className="service-card-img">
                                     <Image src={"/brand-img/b&a.jpg"} width={250} height={200}></Image>
@@ -156,7 +161,7 @@ export default function BrandServices() {
                         <div className="brand-service-card flex gap-4">
                             <div className="basis-1/2 brand-service-card-img relative">
                                 <span class="square">
-                                    {/* <Link href="#">Read More</Link> */}
+                                    <Link href="/press-release-writing">Read More</Link>
                                 </span>
                                 <div className="service-card-img">
                                     <Image src={"/brand-img/pr.jpg"} width={270} height={200}></Image>
@@ -176,7 +181,7 @@ export default function BrandServices() {
                         <div className="brand-service-card flex gap-4">
                             <div className="basis-1/2 brand-service-card-img relative">
                                 <span class="square">
-                                    {/* <Link href="#">Read More</Link> */}
+                                    <Link href="/script-writing">Read More</Link>
                                 </span>
                                 <div className="service-card-img">
                                     <Image src={"/brand-img/sw.jpg"} width={250} className="icon" height={200}></Image>
@@ -198,7 +203,8 @@ export default function BrandServices() {
 
                     {/* 8 of 10 */}
                     <div className="brand-service-content justify-center flex gap-4 mt-4 flex-col md:flex-row aos-init aos-animate" data-aos="fade-left" data-aos-duration="1000">
-                        <div className="brand-service-card flex gap-4">
+                      
+                    <div className="brand-service-card flex gap-4">
                             <div className="brand-service-card-content basis-1/2 relative">
                                 <span className="right-5"></span>
                                 <span className="bottom-5"></span>
@@ -211,13 +217,14 @@ export default function BrandServices() {
                             </div>
                             <div className="basis-1/2 brand-service-card-img relative">
                                 <span class="square">
-                                    {/* <Link href="#">Read More</Link> */}
+                                    <Link href="/social-media-copywriting">Read More</Link>
                                 </span>
                                 <div className="service-card-img">
                                     <Image src={"/brand-img/smcw.jpg"} width={250} height={200}></Image>
                                 </div>
                             </div>
                         </div>
+
                         <div className="brand-service-card flex gap-4">
                             <div className="brand-service-card-content basis-1/2 relative">
                                 <span className="right-5"></span>
@@ -231,13 +238,14 @@ export default function BrandServices() {
                             </div>
                             <div className="basis-1/2 brand-service-card-img relative">
                                 <span class="square">
-                                    {/* <Link href="#">Read More</Link> */}
+                                    <Link href="/product-description">Read More</Link>
                                 </span>
                                 <div className="service-card-img">
                                     <Image src={"/brand-img/pd.jpg"} width={250} height={200}></Image>
                                 </div>
                             </div>
                         </div>
+
                     </div>
 
 

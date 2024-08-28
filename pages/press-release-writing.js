@@ -42,6 +42,7 @@ export default function PressRelease() {
                 </Head>
             <BrandNavbar />
             <BrandPrimaryHeader
+                photo_banner={"/brand-img/press-release-writing.png"}
                 title="Expert Press Release Writing Services"
                 desc="Bring your brand into the media's spotlight with our professional press release writing services. From product launches and events to partnership and collaboration announcements, your company deserves notability. Contact our customer service team to learn more about our services."
             />

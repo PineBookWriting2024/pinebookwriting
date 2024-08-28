@@ -42,6 +42,7 @@ export default function ProductDescription () {
                 </Head>
             <BrandNavbar />
             <BrandPrimaryHeader
+                 photo_banner={"/brand-img/product-description-banner.png"}
                 title="Write That Sells – Expert Product Description Writing Services"
                 desc="Want to describe your products quickly and persuasively? If so, you've come to the right place. We have a team of industry-leading product description writers who are capable of grabbing your audience's attention and highlighting key features of your product. Let’s showcase your product now!"
             />

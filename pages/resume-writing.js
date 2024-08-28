@@ -42,6 +42,7 @@ export default function ResumeWriting() {
                 </Head>
             <BrandNavbar />
             <BrandPrimaryHeader
+                photo_banner={"/brand-img/resume-writing-banner.png"}
                 title="Professional Resume Writing Services"
                 desc="Is your current resume holding you back? Or are you looking for someone who is an expert in resume writing to portray your true potential to employers? If yes, then you're in the right place. We have a dedicated team of resume writers (mostly from human resource backgrounds) familiar with all the do’s and don’ts while writing a resume. Contact us to learn more!"
             />

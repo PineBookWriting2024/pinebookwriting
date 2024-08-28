@@ -888,7 +888,7 @@ export default function Home() {
               </h2>
               <p className="text-white mt-7">Ready to share your fascinating story with your potential audience? Contact Pine Book Writing and get a free quote now!
               </p>
-              <div className="flex gap-6">
+              <div className="flex gap-6 md:justify-start justify-center">
                 <button className="package-get-started-btn text-md mt-5" onClick={handleOpenChat}><Link href={'javascript:;'}>Talk to an Expert</Link></button>
                 <button className="package-get-started-btn text-md mt-5"><Link href="tel:(866)-841-7463">(866)-841-7463</Link></button>
               </div>
@@ -961,7 +961,7 @@ export default function Home() {
 
 
         {/* new process start */}
-        <section className="my-7 py-20 overflow-hidden">
+        <section className="my-7 md:py-20 overflow-hidden">
                 <div className="text-center mb-6 new-lp3-why-choose-us-title">
                     <h2 className="text-3xl text-black uppercase font-bold">Our Process: From Concept to Perfection</h2>
                 </div>

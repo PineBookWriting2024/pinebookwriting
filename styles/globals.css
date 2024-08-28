@@ -173,6 +173,10 @@
 
     /* Media Query */
     @media (min-width:300px) and (max-width:680px){
+      .book-publishing-cta-img {
+        width: 100%;
+        margin-right: -10%;
+    }
       .package-get-started-btn {
         background-color: #fff;
         color: #0d0f38;
@@ -184,7 +188,7 @@
       .bk-sil.prev{left:-19px;}
       .bk-sil.next{right:-19px;}
       .main-banner-vid{height:370vw;}
-      video#vide{height:352vw;}
+      video#vide{height:370vw;}
       .faqs{margin:20px;}
       .bk-sil2.prev{left:1px;z-index: 9; top: 50%;}
       .bk-sil2.next{right:-36px;}

@@ -173,16 +173,20 @@
 
     /* Media Query */
     @media (min-width:300px) and (max-width:680px){
+      .package-get-started-btn {
+        background-color: #fff;
+        color: #0d0f38;
+        padding: 7px 4px;}
       .banner-text-custom{text-wrap:wrap!important;font-size:1.8rem!important;}
       .fixed-top{padding:3px 10px!important;}
       .popup-modal-wrapper{width:81%;}
       .book-sell-text{display:none;}
       .bk-sil.prev{left:-19px;}
       .bk-sil.next{right:-19px;}
-      .main-banner-vid{height:352vw;}
+      .main-banner-vid{height:370vw;}
       video#vide{height:352vw;}
       .faqs{margin:20px;}
-      .bk-sil2.prev{left:-38px;}
+      .bk-sil2.prev{left:1px;z-index: 9; top: 50%;}
       .bk-sil2.next{right:-36px;}
       .connect-form-border{border-radius:30px;}
       footer .footer-line:before{display:none;}
@@ -191,7 +195,7 @@
       .books-collage{display:none;}
       .client-logo-sec{margin-top:40px;margin-bottom:30px;}
       .bk-sil2.next svg,.bk-sil2.prev svg,.bk-sil.next svg,.bk-sil.prev svg{width:24px;}
-      .bk-sil2.next,.bk-sil2.prev,.bk-sil.next,.bk-sil.prev{width:61px;}
+      .bk-sil2.next,.bk-sil2.prev,.bk-sil.next,.bk-sil.prev{width:61px;display: none;}
       .main-banner-vid p{font-size:19px;}
       .single-packages .package-badge{right:-9px;width:68px;}
       .single-packages{margin:0 auto;}
@@ -242,6 +246,7 @@
 
       /* new brand css for mobile start */
       img.logo {width: 145px;}
+      .container {width: 95%;}
       /* header#navbar {margin-top: 20px;} */
     }
     @media (min-width:768px) and (max-width:900px){
@@ -769,3 +774,15 @@ button.brand-nav-btn-1.brand-nav-btn.shadow-xl.mt-10.cursor-pointer.btn-f {
     opacity: 0;
  }
 }
+
+html {
+  overflow-x: hidden !important;
+}
+
+
+    /* Media Query */
+    @media (min-width:300px) and (max-width:680px){
+      header#navbar {position: relative;top: 0;background: #127271;}
+      iframe.py-4 {width: 95%;margin: auto;}
+      a.glightbox.block {padding: 0 20px;}
+      .bk-sil2.next{position:absolute;top:50%!important;right:0px!important;   z-index: 99999;}}

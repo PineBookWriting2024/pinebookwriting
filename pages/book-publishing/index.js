@@ -878,12 +878,12 @@ export default function Home() {
         <Packages />
 
 
-        <section className="book-publishing-cta-section mx-auto px-6 py-10 md:py-0 relative">
+        <section className="book-publishing-cta-section mx-auto md:px-6 py-10 md:py-0 relative">
           <div className="container flex items-center flex-col md:flex-row max-w-screen-xl mx-auto">
             <div className="basis-1/2 text-center flex justify-end">
               <Image src={"/images/book-image-big.webp"} width={400} height={200} className="aos-init aos-animate book-publishing-cta-img" data-aos="fade-right" data-aos-duration="1000"></Image>
             </div>
-            <div className="basis-1/2 md:ml-20">
+            <div className="basis-1/2 md:ml-20 md:text-left text-center">
               <h2 className="text-white font-poppins text-3xl md:text-5xl aos-init aos-animate font-bold" data-aos="flip-down">Let's Tell Your Story to the World!
               </h2>
               <p className="text-white mt-7">Ready to share your fascinating story with your potential audience? Contact Pine Book Writing and get a free quote now!
@@ -988,6 +988,30 @@ export default function Home() {
                             slidesPerView={1}
                             pagination={{ clickable: true }}
                             loop={true}
+                            autoplay={{
+                              delay: 2500,
+                              disableOnInteraction: false,
+                            }}
+                            onBeforeInit={(swiper) => {
+                              swiperRef.current = swiper;
+                            }}
+                            modules={[Navigation, Autoplay, Pagination]}
+                            breakpoints={{
+                              "@0.00": {
+                                slidesPerView: 1,
+                                spaceBetween: 10,
+          
+                                navigation: {
+                                  enabled: false,
+                                },
+                                pagination: false,
+                                navigation: true,
+                              },
+                              "@1.00": {
+                                slidesPerView: 1,
+                                spaceBetween: 15,
+                              },
+                            }}
                         >
                             {processItems.map((item, index) => (
                                 <SwiperSlide key={index}>

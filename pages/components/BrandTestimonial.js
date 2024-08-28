@@ -11,7 +11,7 @@ export default function BrandTestimonial() {
     return (
         <>
             <section className="brand-testimonials-section overflow-hidden">
-                <div className="max-w-screen-xl mx-auto px-4 my-20 relative py-22">
+                <div className="max-w-screen-xl mx-auto px-4 md:my-20 my-10 relative py-22">
                     <div className="text-center mb-6">
                         <h2 className="font-poppins text-4xl text-black font-bold">TESTIMONIALS</h2>
                     </div>

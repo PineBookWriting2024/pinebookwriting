@@ -48,7 +48,7 @@ export default function BlogWriting () {
             />
             <BrandBannerLogo />
 
-            <div className="container mx-auto max-w-screen-xl overflow-hidden py-10 md:py-20">
+            <div className="container mx-auto max-w-screen-xl overflow-hidden pt-10 md:pt-20">
                 <div className="flex justify-center items-center flex-col md:flex-row lg:flex-row px-10 md:px-0 py-10 md:py-0">
                     <div className="basis-1/2 abt-txt m1-h p1 aos-init aos-animate" data-aos="fade-right" data-aos-duration="1000">
                         <h3 className="font-poppins text-2xl md:text-3xl uppercase">

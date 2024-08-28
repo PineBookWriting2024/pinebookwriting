@@ -4,13 +4,13 @@ import Image from 'next/image'
 const NewServicesBrand = () => {
   return (
     <div>
-      <section className='max-w-screen-xl mx-auto text-center brand-choose-us-section p-20'>
+      <section className='max-w-screen-xl mx-auto text-center brand-choose-us-section md:p-20 p-10'>
         <div className='flex flex-col'>
         <div className='new-ser-text flex flex-col md:px-9'>
             <h4 className='font-bold md:text-2xl leading-loose md:pb-6 text-white'>Need Extra Support to Achieve Your Writing to Publishing Goals?</h4>
-            <h2 className='font-bold md:text-4xl text-2xl md:pb-6 uppercase font-poppins leading-relaxed text-white'>Our Additional Services - Beyond Professional
+            <h2 className='font-bold md:text-4xl text-2xl py-6 uppercase font-poppins leading-relaxed text-white'>Our Additional Services - Beyond Professional
             Writing</h2>
-            <p className='font-medium text-xl  font-poppins leading-relaxed text-white'>Stuck on what to do after writing your story? We're here to help! We offer a range of
+            <p className='font-medium text-xl  font-poppins leading-relaxed text-white py-4 md:py-0'>Stuck on what to do after writing your story? We're here to help! We offer a range of
 additional services to help our clients/authors get their inspiring stories published
 and noticed by a global audience.</p>
         </div>

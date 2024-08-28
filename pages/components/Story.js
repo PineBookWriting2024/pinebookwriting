@@ -24,27 +24,27 @@ export default function Story() {
     const videoSlides = [
         {
             id: 1,
-            src: "/images/v1.mp4",
+            src: "https://www.youtube.com/embed/fX2J8iMy4z4",
             type: "video/mp4"
         },
         {
             id: 2,
-            src: "/images/v6.mp4",
+            src: "https://www.youtube.com/embed/QMirTma0Wf4",
             type: "video/mp4"
         },
         {
             id: 3,
-            src: "/images/v5.mp4",
+            src: "https://www.youtube.com/embed/Tv3_r0EMVH4",
             type: "video/mp4"
         },
         {
             id: 4,
-            src: "/images/v3.mp4",
+            src: "https://www.youtube.com/embed/6T96-bq6_g8",
             type: "video/mp4"
         },
         {
             id: 5,
-            src: "/images/v4.mp4",
+            src: "https://www.youtube.com/embed/gWW43Tfa8gA",
             type: "video/mp4"
         }
     ];
@@ -98,9 +98,10 @@ export default function Story() {
                         >
                             {videoSlides.map((video) => (
                                 <SwiperSlide key={video.id}>
-                                    <video loop controls muted loading="lazy">
+                                    {/* <video loop controls muted loading="lazy">
                                         <source src={video.src} type={video.type} />
-                                    </video>
+                                    </video> */}
+                                     <iframe className='py-4' height={225} width={400} src={video.src} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                                 </SwiperSlide>
                             ))}
                         </Swiper>

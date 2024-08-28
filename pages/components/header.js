@@ -27,11 +27,11 @@ export default function Header() {
                 </div>
 
                 <div className="flex items-center justify-end md:flex-row gap-3 flex-col-reverse">
-                    <button className=" btn-a items-center bg-gray-800 md:py-2 py-4 mr-2 px-3 focus:outline-none hover:bg-gray-700">
+                    <button className=" btn-a items-center bg-gray-800 md:py-2 py-4 md:mr-2 mr-0 px-3 focus:outline-none hover:bg-gray-700">
                         <Link className="" href={'tel:8668417463'}>(866)-841-7463</Link>
                     </button>
 
-                    <button className=" hidden btn-a items-center bg-gray-800 mr-2 md:py-2 py-4 px-3 focus:outline-none hover:bg-gray-700 md:block">
+                    <button className=" hidden btn-a items-center bg-gray-800 md:mr-2 mr-0 md:py-2 py-4 px-3 focus:outline-none hover:bg-gray-700 md:block">
                         <Link className="" href={'mailto:support@pinebookwriting.com'}>support@pinebookwriting.com</Link>
                     </button>
 

@@ -52,7 +52,7 @@ export default function Story() {
 
     return (
         <>
-            <section className="story-sec py-20">
+            <section className="story-sec md:py-20 py-10">
                 <div className="container mx-auto text-center m1-h">
                     <h3 className="mb-4 text-white text-4xl md:text-5xl font-poppins mt-5">
                         Our Success Stories
@@ -87,7 +87,7 @@ export default function Story() {
                             breakpoints={{
                                 "@0.00": {
                                     slidesPerView: 1,
-                                    spaceBetween: 10,
+                                    spaceBetween: 5,
                                     navigation: true,
                                 },
                                 "@1.00": {
@@ -101,7 +101,7 @@ export default function Story() {
                                     {/* <video loop controls muted loading="lazy">
                                         <source src={video.src} type={video.type} />
                                     </video> */}
-                                     <iframe className='py-4' height={225} width={400} src={video.src} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                     <iframe className='py-' height={300} width={500} src={video.src} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                                 </SwiperSlide>
                             ))}
                         </Swiper>

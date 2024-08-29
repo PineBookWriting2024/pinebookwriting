@@ -199,7 +199,7 @@
       .books-collage{display:none;}
       .client-logo-sec{margin-top:40px;margin-bottom:30px;}
       .bk-sil2.next svg,.bk-sil2.prev svg,.bk-sil.next svg,.bk-sil.prev svg{width:24px;}
-      .bk-sil2.next,.bk-sil2.prev,.bk-sil.next,.bk-sil.prev{width:61px;display: none;}
+      .bk-sil2.next,.bk-sil2.prev,.bk-sil.next,.bk-sil.prev{width:61px;}
       .main-banner-vid p{font-size:19px;}
       .single-packages .package-badge{right:-9px;width:68px;}
       .single-packages{margin:0 auto;}
@@ -787,6 +787,11 @@ html {
     /* Media Query */
     @media (min-width:300px) and (max-width:680px){
       header#navbar {position: relative;top: 0;background: #127271;}
-      iframe.py-4 {width: 95%;margin: auto;}
+      iframe.py- {
+        height: 355px;
+        width: 100%;
+        z-index: 5 !important;
+    }
       a.glightbox.block {padding: 0 20px;}
-      .bk-sil2.next{position:absolute;top:50%!important;right:0px!important;   z-index: 99999;}}
+      .bk-sil2.next{position:absolute;top:0; bottom:100%!important;z-index: 99999;right: 0px !important;padding: 0;}
+    }

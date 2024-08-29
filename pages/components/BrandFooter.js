@@ -144,7 +144,7 @@ export default function BrandFooter() {
                             <div>
                                 <Link href="https://www.facebook.com/pinebookwriting0"><FontAwesomeIcon icon={faFacebook} className="me-3" /></Link>
 
-                                <Link href="https://www.linkedin.com/company/pine-book-writing/"><FontAwesomeIcon icon={faLinkedin} className="me-3" /></Link>
+                                {/* <Link href="https://www.linkedin.com/company/pine-book-writing/"><FontAwesomeIcon icon={faLinkedin} className="me-3" /></Link> */}
 
                                 <Link href="https://www.instagram.com/pinebookwriting/"><FontAwesomeIcon icon={faInstagram} className="me-3" /></Link>
 

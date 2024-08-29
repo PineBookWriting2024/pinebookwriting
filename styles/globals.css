@@ -733,6 +733,7 @@ button.brand-nav-btn-1.brand-nav-btn.shadow-xl.mt-10.cursor-pointer.btn-f {
   width: 100%;
   height: 473px;
   overflow-y: auto;
+  border-right: 1px solid #5555;
 }
 .brand-custom-dropdown-menu ul li{
   border-bottom: 1px solid #cdcbcb;

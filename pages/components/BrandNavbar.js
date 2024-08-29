@@ -181,7 +181,7 @@ export default function BrandNavbar() {
                                             {services.map((service, index) => (
                                                 <li
                                                     key={index}
-                                                    className='mb-3 flex items-center py-4'
+                                                    className='mb-0 flex items-center py-4'
                                                     onMouseEnter={() => setHoveredService(index)}
                                                     onMouseLeave={() => setHoveredService(null)}
                                                 >

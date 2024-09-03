@@ -119,7 +119,7 @@ export default function NewBrandFooter() {
                             <nav className="list-none mb-10 mt-5">
                                 <li>
                                     <Link href="/ghostwriting" onClick={(e) => { e.preventDefault(); window.location.href = "/ghostwriting"; }}>
-                                    ghostwriting
+                                    Book Ghostwriting
                                     </Link>
                                 </li>
                                 <li className="mt-3">
@@ -128,56 +128,30 @@ export default function NewBrandFooter() {
                                     </Link>
                                 </li>
                                 <li className="mt-3">
-                                    <Link href="/social-media-copywriting" onClick={(e) => { e.preventDefault(); window.location.href = "/social-media-copywriting"; }}>
-                                    social media copywriting
-                                    </Link>
-                                </li>
-                                {/* <li className="mt-3">
-                                    Services
-                                </li> */}
-                                <li className="mt-3">
                                     <Link href="/web-copywriting" onClick={(e) => { e.preventDefault(); window.location.href = "/web-copywriting"; }}>
-                                    web copywriting
+                                    Web Copywriting
                                     </Link>
                                 </li>
                                 <li className="mt-3">
                                     <Link href="/seo-content" onClick={(e) => { e.preventDefault(); window.location.href = "/seo-content"; }}>
-                                    seo content
+                                    SEO Content Writing
                                     </Link>
                                 </li>
-
-                                {/* <li className="mt-3">
-                                    Testimonials
-                                </li> */}
-                                <li className="mt-3">
-                                    <Link href="/blog-article-writing" onClick={(e) => { e.preventDefault(); window.location.href = "/blog-article-writing"; }}>
-                                    blog article writing
-                                    </Link>
-                                </li>
-
                                 <li className="mt-3">
                                     <Link href="/press-release-writing" onClick={(e) => { e.preventDefault(); window.location.href = "/press-release-writing"; }}>
-                                    press release writing
+                                    Press Release Writing
                                     </Link>
                                 </li>
-                                
                                 <li className="mt-3">
-                                    <Link href="/script-writing" onClick={(e) => { e.preventDefault(); window.location.href = "/script-writing"; }}>
-                                    script writing
+                                    <Link href="/social-media-copywriting" onClick={(e) => { e.preventDefault(); window.location.href = "/social-media-copywriting"; }}>
+                                    Social Media Copywriting
                                     </Link>
                                 </li>
 
-                                <li className="mt-3">
-                                    <Link href="/wikipedia-writing" onClick={(e) => { e.preventDefault(); window.location.href = "/wikipedia-writing"; }}>
-                                    wikipedia writing
-                                    </Link>
-                                </li>
+                               
+                             
 
-                                <li className="mt-3">
-                                    <Link href="/product-description" onClick={(e) => { e.preventDefault(); window.location.href = "/product-description"; }}>
-                                    product description
-                                    </Link>
-                                </li>
+                              
                             </nav>
                         </div>
 

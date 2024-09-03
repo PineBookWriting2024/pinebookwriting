@@ -81,6 +81,7 @@ import PopupBundle from "../components/PopupBundle";
 import HeroFormBookOfferPub from "../components/HerformBookOfferPub";
 import StoryPub from "../components/StoryPub";
 import FaqPub from "../components/FaqPub";
+import NewBrandFooter from "../components/NewBrandFooter";
 
 
 const HeavyComponent = dynamic(() => import('../components/hero'), {
@@ -1335,7 +1336,7 @@ export default function Home() {
         </section>
 
 
-        <section className='max-w-screen-xl mx-auto text-center brand-choose-us-section md:p-20 p-10 md:mb-14'>
+        <section className='max-w-screen-xl mx-auto text-center brand-choose-us-section md:p-20 p-10 mb-14'>
           <div className='flex flex-col'>
             <div className='new-ser-text flex flex-col md:px-9'>
               <h4 className='font-bold md:text-2xl leading-loose md:pb-6 text-white'>Need Extra Support to Achieve Your Writing to Publishing Goals?</h4>
@@ -1642,31 +1643,7 @@ export default function Home() {
 
         <BrandContact />
 
-        <div className="copyright-sec">
-        <div className="container text-center mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
-          <p className="text-white w-full md:text-center text-sm sm:text-left">
-            Copyright © 2024 |
-            <Link
-              href="/terms-and-conditions"
-              rel="noopener noreferrer"
-              className="text-white ml-1"
-              target="_blank"
-            >
-              Terms & Conditions |
-            </Link>
-            <Link
-              href="/privacy-policy"
-              rel="noopener noreferrer"
-              className="text-white ml-1"
-              target="_blank"
-            >
-              Privacy Policy {" "}
-            </Link>
-            {/* Powered by <span className="powered-by-text">Pine Book Writing Inc.</span> */}
-          </p>
-
-        </div>
-      </div>
+        <NewBrandFooter/>
 
         {/* <motion.p className="font-acumin text-5xl text-center text-black leading-loose font-bold hover:text-[#EBFA0B]" ref={nodeRef} >{rounded}<Counter from={100} to={1000} val={"10"} />100</motion.p> */}
 

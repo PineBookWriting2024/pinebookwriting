@@ -177,17 +177,20 @@
         width: 100%;
         margin-right: -10%;
     }
-      .package-get-started-btn {
-        background-color: #fff;
-        color: #0d0f38;
-        padding: 7px 4px;}
+    .package-get-started-btn {
+      background-color: #fff;
+      color: #0d0f38;
+      padding: 9px 15px;
+      font-size: 14px;
+  }
+
       .banner-text-custom{text-wrap:wrap!important;font-size:1.8rem!important;}
       .fixed-top{padding:3px 10px!important;}
       .popup-modal-wrapper{width:81%;}
       .book-sell-text{display:none;}
-      .bk-sil.prev{left:-19px;}
-      .bk-sil.next{right:-19px;}
-      .main-banner-vid{height:370vw;}
+      .bk-sil.prev{left:-19px;z-index: 9;        top: 47%;}
+      .bk-sil.next{right:-19px;z-index: 9;        top: 47%;}
+      .main-banner-vid{height:316vw;}
       video#vide{height:370vw;}
       .faqs{margin:20px;}
       .bk-sil2.prev{left:1px;z-index: 9; top: 50%;}
@@ -206,7 +209,7 @@
       .service-card-img{height:100%;}
       .brand-cta-book{position:relative!important;top:-13px!important;left:12px!important;}
       .brand-cta-vector::before{content:"";position:absolute;width:303px!important;height:536px!important;top:62px!important;left:-2px!important;}
-      .brand-primary-header-bg{padding:41% 0 7% 0!important;}
+      .brand-primary-header-bg{padding:10% 0 7% 0!important;}
       .brand-choose-us-vector::before{width:358px!important;height:467px!important;top:65px!important;left:-41px!important;}
       .brand-choose-us-img{position:relative!important;top:-4px!important;left:-1px!important;}
       .popup-form-wrapper{width:100%!important;}
@@ -218,7 +221,7 @@
       .single-packages-footer{width:342px;}
       .single-packages{width:342px;}
       video#brandVideo{height:333vw!important;}
-      .brand-main-banner-video{height:333vw!important;}
+      .brand-main-banner-video{height:275vw!important;}
       .break-words{line-break:anywhere;}
       .brand-testimonials-card{margin:0!important;}
       .responsive-not-process{display:none;}
@@ -664,7 +667,7 @@ button.brand-nav-btn-1.brand-nav-btn.shadow-xl.mt-10.cursor-pointer.btn-f {
 
 .book-publishing-cta-img {
   position: relative;
-  bottom: 54px;
+  bottom: 0px;
 }
 
 

@@ -16,6 +16,7 @@ import BrandLogo from "./components/BrandLogo";
 import BrandSister from "./components/BrandSister";
 import BrandBannerVideo from "./components/BrandBannerVideo";
 import NewServicesBrand from "./components/NewServicesBrand";
+import NewBrandFooter from "./components/NewBrandFooter";
 
 export default function Home() {
     return (
@@ -77,7 +78,7 @@ export default function Home() {
             <BrandFaqs />
             <BrandContact />
             {/* <BrandSister/> */}
-            <BrandFooter />
+            <NewBrandFooter />
         </>
     );
 }

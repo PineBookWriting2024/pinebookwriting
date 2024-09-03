@@ -632,6 +632,12 @@ button.brand-nav-btn-1.brand-nav-btn.shadow-xl.mt-10.cursor-pointer.btn-f {
   box-shadow: 0 1px 5px #191b42;
 }
 
+.brand-nav-btn-2 {
+  background-image: -webkit-linear-gradient(-90deg,#b0a698,#5d554b);
+  color: #fff;
+  border-radius: 30px;
+  padding: 14px 46px;
+}
 
 .btn-ff
 {

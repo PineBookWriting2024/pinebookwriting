@@ -1384,7 +1384,7 @@ export default function Home() {
             </div>
 
             <div className='pub-btn mt-14'>
-              <a class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 brand-nav-btn font-poppins text-sm inline-block" target="_blank" href="https://pinebookpublishing.com/packages">Learn More</a>
+              <a class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 brand-nav-btn-2 font-poppins text-lg inline-block" target="_blank" href="https://pinebookpublishing.com/packages">Learn More</a>
             </div>
           </div>
         </section>

@@ -169,7 +169,7 @@ export default function HeroFormBookOfferPub() {
           </h2> */}
           <h3 className="font-poppins text-2xl mb-4 aos-init aos-animate text-white"><span className="px-2 py-0">#1</span> Book Writing & Publishing Company</h3>
           <FadeIn>
-            <h1 className="font-poppins text-3xl md:text-5xl text-white font-bold">
+            <h1 className="font-poppins text-3xl md:text-4xl text-white font-bold">
             HAVE ANY IDEA TO WRITE, OR A MANUSCRIPT TO BE PUBLISHED?
             </h1>
           </FadeIn>

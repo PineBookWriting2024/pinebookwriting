@@ -1049,7 +1049,7 @@ export default function PublishingLpNew() {
                                             href="tel:8668417463"
                                             className="text-white text-md hover:text-white flex justify-center md:justify-start"
                                         >
-                                            (866) 841-7469
+                                            (866) 841-7463
                                         </Link>
                                     </p>
                                 </div>
@@ -1064,11 +1064,11 @@ export default function PublishingLpNew() {
                                     <h3>Mail Us</h3>
                                     <p className="mt-2">
                                         <Link
-                                            href="mailto:support@pinebookpublishing.com"
+                                            href="mailto:support@pinebookwriting.com"
                                             className="text-white hover:text-white text-md flex justify-center md:justify-start"
                                         >
                                             {" "}
-                                            support@pinebookpublishing.com{" "}
+                                            support@pinebookwriting.com{" "}
                                         </Link>
                                     </p>
                                 </div>

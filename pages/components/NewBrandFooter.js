@@ -50,21 +50,21 @@ export default function NewBrandFooter() {
                             {/* <nav className="list-none mb-10 mt-5">
                                 <li>
                                     <Link
-                                        href="tel:8668417469"
+                                        href="tel:8668417463"
                                         className="text-white text-sm hover:text-white font-poppins flex justify-center md:justify-start"
                                     >
                                         <FontAwesomeIcon icon={faPhone} className="me-3" />
-                                        (866) 841-7469
+                                        (866) 841-7463
                                     </Link>
                                 </li>
                                 <li className="mt-3">
                                     <Link
-                                        href="mailto:support@pinebookpublishing.com"
+                                        href="mailto:support@pinebookwriting.com"
                                         className="text-white hover:text-white font-poppins text-sm flex justify-center md:justify-start"
                                     >
                                         <FontAwesomeIcon icon={faEnvelope} className="me-3" />
                                         {" "}
-                                        support@pinebookpublishing.com{" "}
+                                        support@pinebookwriting.com{" "}
                                     </Link>
                                 </li>
                             </nav> */}
@@ -161,19 +161,19 @@ export default function NewBrandFooter() {
                                 Contact Info
                             </h2>
                             <Link
-                                href="tel:8668417469"
+                                href="tel:8668417463"
                                 className="text-white text-sm hover:text-white font-poppins flex justify-center md:justify-start mb-5"
                             >
                                 <FontAwesomeIcon icon={faPhone} className="me-3" />
-                                (866) 841-7469
+                                (866) 841-7463
                             </Link>
                             <Link
-                                href="mailto:support@pinebookpublishing.com"
+                                href="mailto:support@pinebookwriting.com"
                                 className="text-white hover:text-white font-poppins text-sm flex justify-center md:justify-start mb-5"
                             >
                                 <FontAwesomeIcon icon={faEnvelope} className="me-3" />
                                 {" "}
-                                support@pinebookpublishing.com{" "}
+                                support@pinebookwriting.com{" "}
                             </Link>
                             <h4 className="text-white leading-20 font-bold text-xl md:text-md font-poppins text-center lg:text-start uppercase">
                                 Canada Address:

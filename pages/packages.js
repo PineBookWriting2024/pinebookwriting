@@ -133,7 +133,7 @@ export default function Bundle({ isOpen, onClose, service }) {
                                     </div>
                                     <div className="flex gap-2 mb-5 items-center">
                                         <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
-                                        25 Minute Interview Session (with Mid-Level Writer)
+                                        Upto 25 Minute of Interview Session (with Mid-Level Writer)
                                     </div>
                                
                                     <div className="flex gap-2 mb-5 items-center ">
@@ -204,7 +204,7 @@ export default function Bundle({ isOpen, onClose, service }) {
                                     </div>
                                     <div className="flex gap-2 mb-5 items-center">
                                         <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
-                                       	35 Minute Interview Session (with Senior-Level Writer)
+                                       	Upto 35 Minute of Interview Session (with Senior-Level Writer)
                                     </div>
                                     <div className="flex gap-2 mb-5 items-center">
                                         <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
@@ -274,7 +274,7 @@ export default function Bundle({ isOpen, onClose, service }) {
                                     </div>
                                     <div className="flex gap-2 mb-5 items-center">
                                         <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
-                                       45 Minute Interview Session (with Premium Writer)
+                                       Upto 45 Minute of Interview Session (with Premium Writer)
                                     </div>
                                     <div className="flex gap-2 mb-5 items-center">
                                         <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
@@ -438,10 +438,10 @@ export default function Bundle({ isOpen, onClose, service }) {
                                                 <tr>
                                                     <td>Interview Session timeline</td>
                                                     <td>
-                                                    upto 25 Minutes
+                                                    Upto 25 Minutes
                                                     </td>
-                                                    <td>upto 35 Minutes</td>
-                                                    <td>upto 45 Minutes</td>
+                                                    <td>Upto 35 Minutes</td>
+                                                    <td>Upto 45 Minutes</td>
                                                 </tr>
 
                                                 <tr>

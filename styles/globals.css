@@ -173,6 +173,17 @@
 
     /* Media Query */
     @media (min-width:300px) and (max-width:680px){
+      .brand-service-card-content p{
+        font-size: 12px !important;
+      }
+      .brand-service-card-content h4{
+        font-size: 15px !important;
+        font-weight: bold;
+        line-height: 18px;
+      }
+      .brand-service-card-content{
+        height: 290px !important;
+      }
       .book-publishing-cta-img {
         width: 100%;
         margin-right: -10%;

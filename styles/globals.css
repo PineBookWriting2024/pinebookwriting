@@ -180,6 +180,7 @@
         font-size: 16px !important;
         font-weight: bold;
         line-height: 20px;
+        text-wrap: balance;
       }
       .brand-service-card-content{
         height: 290px !important;

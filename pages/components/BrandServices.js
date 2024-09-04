@@ -290,7 +290,7 @@ export default function BrandServices() {
                         loop={true}
                         className="mySwiper"
                         autoplay={{
-                            delay: 2000,
+                            delay: 3000,
                             disableOnInteraction: false,
                         }}
                         pagination={false}

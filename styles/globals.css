@@ -14,7 +14,7 @@
   .btn-a{background:#1a8273;border-radius:50px;padding:9px 15px;color:#fff;line-height:1.5;font-weight:500;text-decoration:auto;font-size:14px!important;position:relative;}
   section.main-banner-vid h1,.brand-hero-bg-img h1{color:#ffffff;font-weight:600;  /* font-size: 70px; */  /* line-height: 1.5; */}
   section.main-banner-vid h2{color:#ffffff;font-weight:500;font-size:22px;line-height:1.5;}
-  section.main-banner-vid h2 span,.brand-hero-section h3 span{background-image: -webkit-linear-gradient(-90deg, #B0A698, #5d554b);}
+  section.main-banner-vid h2 span,.brand-hero-section h3 span{background-image: -webkit-linear-gradient(-90deg, #B0A698, #5d554b); text-wrap: nowrap;}
   .main-banner-vid p{color:#ffffff;font-weight:400;font-size:20px;line-height:1.5;}
   .main-banner-vid p span{background:#299081;padding:0px 2px;height:100vh;font-weight:bold;}
   .main-banner-vid{background:#0000009e;height:100vh;}
@@ -173,6 +173,9 @@
 
     /* Media Query */
     @media (min-width:300px) and (max-width:680px){
+      .brand-footer .widget-2:before{
+        display: none;
+      }
       .brand-service-card-content p{
         font-size: 13px !important;
       }
@@ -231,9 +234,9 @@
       .responsive-back-to-top{left:28px!important;}
       .brand-main-contact-wrapper{width:100%!important;}
       .single-packages-footer{width:342px;}
-      .single-packages{width:342px;}
-      video#brandVideo{height:333vw!important;}
-      .brand-main-banner-video{height:275vw!important;}
+      .single-packages{width:320px;}
+      video#brandVideo{height:320vw!important;}
+      .brand-main-banner-video{height:320vw!important;}
       .break-words{line-break:anywhere;}
       .brand-testimonials-card{margin:0!important;}
       .responsive-not-process{display:none;}
@@ -403,7 +406,7 @@
     .brand-testimonials-card:before{content:"";position:absolute;z-index:-1;top:-16px;right:-16px;background-image: -webkit-linear-gradient(-90deg, #008081 0, #005556 100%);height:32px;width:32px;border-radius:32px;transform:scale(5.5);transform-origin:50% 50%;transition:transform 0.25s ease-out;}
     .brand-testimonials-card:hover:before{transform:scale(45);color:#fff;}
     .service-dropdown-icon{filter:invert(1);}
-    .fixed-top{position:fixed!important;transition:.3s ease-in;background-color:#127271;width:100%!important;top:0!important;padding:3px!important;}
+    .fixed-top{position:fixed!important;transition:.3s ease-in;background-color:#127271;width:100%!important;top:0!important;padding:1rem !important;}
     .fixed-top .brand-nav-btn{background:#ffffff!important;color:#000;}
     .audioPlayer{background:#fff;padding:10px;border-radius:22px;display:inline-block;}
     .brand-main-contact-wrapper{background:linear-gradient(90deg,rgba(19,124,109,1) 0%,rgba(48,150,135,1) 100%);box-shadow:0 10px 20px -8px rgba(0,0,0,.7);border-radius:40px;width:70%;}

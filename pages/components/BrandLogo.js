@@ -63,7 +63,7 @@ export default function BrandLogo() {
                 </Swiper>
             </div> */}
             <section className="body-font bg-white max-w-screen-xl mx-auto">
-                <div className="px-14 py-14">
+                <div className="px-6 py-6 md:px-14 md:py-16">
                     <div className="flex flex-wrap">
                         {badges.map((badge, index) => (
                             <div key={index} className="lg:w-1/6 md:w-1/2 p-4 text-center border-dashed border-2 bd-colr">

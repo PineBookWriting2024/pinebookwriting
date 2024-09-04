@@ -119,7 +119,7 @@ import Link from 'next/link';
         type: "video/mp4",
         BookTitle: "Ellas's Songs",
         Consultant: "Damon Peters",
-        ProjectManager: "Amara Johnson",
+        ProjectManager: "Amara Johnson & Lia Sinclair",
         clientname : "David Van Fleet"
     },
 ]

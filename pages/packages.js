@@ -438,10 +438,10 @@ export default function Bundle({ isOpen, onClose, service }) {
                                                 <tr>
                                                     <td>Interview Session timeline</td>
                                                     <td>
-                                                    25 Minutes
+                                                    upto 25 Minutes
                                                     </td>
-                                                    <td>35 Minutes</td>
-                                                    <td>45 Minutes</td>
+                                                    <td>upto 35 Minutes</td>
+                                                    <td>upto 45 Minutes</td>
                                                 </tr>
 
                                                 <tr>

@@ -48,8 +48,8 @@ export default function BookEditing() {
             />
             <BrandBannerLogo />
 
-            <div className="container mx-auto max-w-screen-xl overflow-hidden pt-10 md:pt-20">
-                <div className="flex justify-center items-center flex-col md:flex-row lg:flex-row px-10 md:px-0 py-10 md:py-0">
+            <div className="container mx-auto max-w-screen-xl overflow-hidden pt-0 md:pt-14">
+                <div className="flex justify-center items-center flex-col md:flex-row lg:flex-row px-8 md:px-0 py-10 md:py-0">
                     <div className="basis-1/2 abt-txt m1-h p1 aos-init aos-animate" data-aos="fade-right" data-aos-duration="1000">
                         <h3 className="font-poppins text-2xl md:text-3xl uppercase">
                         Bring Your Literary Vision to Life
@@ -129,7 +129,7 @@ export default function BookEditing() {
             </section> */}
             
             <section className="overflow-hidden" >
-                <div className="brand-choose-us-section ms-auto relative left-0 md:left-52 px-12 md:px-20 mt-20 mb-8 py-10 " >
+                <div className="brand-choose-us-section ms-auto relative left-0 md:left-52 px-12 md:px-20 md:mt-16 mb-8 py-10 " >
                     <div className="flex items-center flex-col md:flex-row" data-aos="fade-right" data-aos-delay="0" data-aos-duration="500">
                         <div className="basis-1/3 brand-choose-us-vector">
                         <Image src={"/brand-img/Why Choose Us 2.png"} width={500} height={500}

@@ -103,13 +103,32 @@ import Link from 'next/link';
         ProjectManager: "Lia Sinclair",
         clientname : "Christopher Allen"
     },
+    {
+        id:12,
+        src: "https://www.youtube.com/embed/Jwr-u5HQ9Fg?si=PEZvbrKNR1Y0xUH4",
+        type: "video/mp4",
+        BookTitle: "There's no middle ground, You will either RUN TO or RUN FROM this book",
+        Consultant: "Damon Peters",
+        ProjectManager: "Lia Sinclair",
+        clientname : "John Bowman"
+       
+    },
+    {
+        id:13,
+        src: "https://www.youtube.com/embed/p3dCJ_KdqHk?si=il3lcE_7bLVJDGmp",
+        type: "video/mp4",
+        BookTitle: "Ellas's Songs",
+        Consultant: "Damon Peters",
+        ProjectManager: "Amara Johnson",
+        clientname : "David Van Fleet"
+    },
 ]
 
 const BrandTesti = () => {
   return (
     <div>
       <section className='sec-test max-w-screen-xl mx-auto py-20'>
-      <div className='testimonials-wrap gap-16 grid md:grid-rows-4 md:grid-flow-col grid-col'>
+      <div className='testimonials-wrap grid grid-cols-1 md:grid-cols-3 gap-10'>
        
         {videoClient.map((videoClient) => (
             <Link href={videoClient.src} className="glightbox block">

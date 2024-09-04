@@ -92,7 +92,7 @@ export default function Bundle({ isOpen, onClose, service }) {
             <BrandBannerLogo />
 
 
-            
+
             <section className="package pb-5 pt-12">
                 <div className="container mx-auto max-w-screen-xl">
                     <div className="grid items-center grid-cols-1 text-center m1-h">
@@ -109,7 +109,7 @@ export default function Bundle({ isOpen, onClose, service }) {
                         <div className="packages-wrapper flex flex-col md:flex-row justify-center gap-12">
                             <div className="single-packages relative">
 
-                                <h4 className="text-2xl font-poppins mb-6 text-center pt-4 pb-4 hover-top-vector relative">Silver Package <br/>$2,999 USD</h4>
+                                <h4 className="text-2xl font-poppins mb-6 text-center pt-4 pb-4 hover-top-vector relative">Silver Package <br />$2,999 USD</h4>
                                 <div className="single-packages-content px-10">
 
                                     <div className="flex gap-2 mb-5 items-center">
@@ -122,7 +122,7 @@ export default function Bundle({ isOpen, onClose, service }) {
                                     </div>
                                     <div className="flex gap-2 mb-5 items-center">
                                         <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
-                                        	Questionnaire/Brief Forms
+                                        Questionnaire/Brief Forms
                                     </div>
                                     <div className="flex gap-2 mb-5 items-center">
                                         <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
@@ -133,12 +133,16 @@ export default function Bundle({ isOpen, onClose, service }) {
                                     </div>
                                     <div className="flex gap-2 mb-5 items-center">
                                         <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
-                                        Upto 25 Minute of Interview Session (with Mid-Level Writer)
+                                        Upto 25 Minute of Interview Session
                                     </div>
-                               
+                                    <div className="flex gap-2 mb-5 items-center">
+                                        <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
+                                        Mid-Level Writer
+                                    </div>
+
                                     <div className="flex gap-2 mb-5 items-center ">
                                         <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
-                                        Writing upto 50 - 70 Pages 
+                                        Writing upto 50 - 70 Pages
                                     </div>
                                     <div className="flex gap-2 mb-5 items-center">
                                         <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
@@ -148,7 +152,7 @@ export default function Bundle({ isOpen, onClose, service }) {
                                         <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
                                         Include upto 20 Images
                                     </div>
-                                   
+
                                     <div className="flex gap-2 mb-5 items-center ">
                                         <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
                                         Standard Formatting
@@ -157,7 +161,7 @@ export default function Bundle({ isOpen, onClose, service }) {
                                         <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
                                         2 Revision Per Draft
                                     </div>
-                                    
+
                                 </div>
                                 <div className="text-center">
                                     <button className="package-get-started-btn text-md mt-7" onClick={() => openModal('Basic')}>
@@ -179,56 +183,60 @@ export default function Bundle({ isOpen, onClose, service }) {
                             </div>
 
                             <div className="single-packages relative">
-                                <h4 className="text-2xl font-poppins mb-6 text-center pt-4 pb-4 hover-top-vector relative">Gold Package <br/> $4,499 USD</h4>
+                                <h4 className="text-2xl font-poppins mb-6 text-center pt-4 pb-4 hover-top-vector relative">Gold Package <br /> $4,499 USD</h4>
                                 <div className="single-packages-content px-10">
                                     <div className="flex gap-2 mb-5 items-center">
                                         <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
-                                       	Dedicated Project Manager
+                                        Dedicated Project Manager
                                     </div>
                                     <div className="flex gap-2 mb-5 items-center">
                                         <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
-                                       	Pre-Planning and Research
+                                        Pre-Planning and Research
 
                                     </div>
                                     <div className="flex gap-2 mb-5 items-center">
                                         <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
-                                       	Questionnaire/Brief Forms
+                                        Questionnaire/Brief Forms
 
                                     </div>
                                     <div className="flex gap-2 mb-5 items-center">
                                         <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
-                                       	Strategy Sessions (with Senior Project Manager)                                    </div>
+                                        Strategy Sessions (with Senior Project Manager)                                    </div>
                                     <div className="flex gap-2 mb-5 items-center">
                                         <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
-                                       	Detailed Outline Creation
+                                        Detailed Outline Creation
                                     </div>
                                     <div className="flex gap-2 mb-5 items-center">
                                         <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
-                                       	Upto 35 Minute of Interview Session (with Senior-Level Writer)
+                                        Upto 35 Minute of Interview Session
                                     </div>
                                     <div className="flex gap-2 mb-5 items-center">
                                         <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
-                                       	Writing upto 70 - 150 Pages 
+                                        Senior-Level Writer
+                                    </div>
+                                    <div className="flex gap-2 mb-5 items-center">
+                                        <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
+                                        Writing upto 70 - 150 Pages
                                     </div>
 
-                                       <div className="flex gap-2 mb-5 items-center">
+                                    <div className="flex gap-2 mb-5 items-center">
                                         <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
                                         3 - 6 Months production (divided into Weeks)                                    </div>
 
                                     <div className="flex gap-2 mb-5 items-center">
                                         <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
-                                       	Include upto 30 Images                                    </div>
+                                        Include upto 30 Images                                    </div>
 
                                     <div className="flex gap-2 mb-5 items-center">
                                         <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
-                                       	Publishing Standard Formatting (for 2 platforms)                                    </div>
+                                        Publishing Standard Formatting (for 2 platforms)                                    </div>
                                     <div className="flex gap-2 mb-5 items-center">
                                         <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
-                                       	3 Revisions Per Draft                                    </div>
+                                        3 Revisions Per Draft                                    </div>
                                     <div className="flex gap-2 mb-5 items-center">
                                         <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
-                                       	Editorial support                                    </div>
-                                    
+                                        Editorial support                                    </div>
+
                                 </div>
                                 <div className="text-center">
                                     <button className="package-get-started-btn text-md mt-7" onClick={() => openModal('Start up')}>
@@ -250,61 +258,65 @@ export default function Bundle({ isOpen, onClose, service }) {
 
                             <div className="single-packages relative">
                                 <Image src={"/images/badge.png"} className="package-badge" width={80} height={80}></Image>
-                                <h4 className="text-2xl font-poppins mb-6 text-center pt-4 pb-4 hover-top-vector relative">Platinum Package <br/> $6,499 USD</h4>
+                                <h4 className="text-2xl font-poppins mb-6 text-center pt-4 pb-4 hover-top-vector relative">Platinum Package <br /> $6,499 USD</h4>
                                 <div className="single-packages-content px-10">
-                           
-                                    <div className="flex gap-2 mb-5 items-center">
-                                        <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
-                                       Dedicated Project Manager
-                                    </div>
-                                    <div className="flex gap-2 mb-5 items-center">
-                                        <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
-                                       Pre-Planning and Research                                    </div>
-                                    <div className="flex gap-2 mb-5 items-center">
-                                        <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
-                                       Questionnaire/Brief Forms
-                                    </div>
-                                    <div className="flex gap-2 mb-5 items-center">
-                                        <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
-                                       Strategy Sessions (with Senior Project Manager)
-                                    </div>
-                                    <div className="flex gap-2 mb-5 items-center">
-                                        <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
-                                       Detailed Outline Creation
-                                    </div>
-                                    <div className="flex gap-2 mb-5 items-center">
-                                        <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
-                                       Upto 45 Minute of Interview Session (with Premium Writer)
-                                    </div>
-                                    <div className="flex gap-2 mb-5 items-center">
-                                        <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
-                                       Writing upto 150 - 300 Pages                                     </div>
-                                    <div className="flex gap-2 mb-5 items-center  text-xl">
-                                   4 - 7 Months production (divided into Weeks)                                    </div>
-                                    <div className="flex gap-2 mb-5 items-center">
-                                        <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
-                                       Include upto 40 Images                                    </div>
-                                    <div className="flex gap-2 mb-5 items-center">
-                                        <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
-                                       Publishing Standard Formatting (for 3 platforms)                                    </div>
-                                    <div className="flex gap-2 mb-5 items-center">
-                                        <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
-                                       5 Revisions Per Draft                                    </div>
-                                    <div className="flex gap-2 mb-5 items-center">
-                                        <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
-                                       Editorial support                                    </div>
-                                    <div className="flex gap-2 mb-5 items-center">
-                                        <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
-                                       Dedication page (If required)                                    </div>
 
-                                   <div className="flex gap-2 mb-5 items-center">
+                                    <div className="flex gap-2 mb-5 items-center">
+                                        <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
+                                        Dedicated Project Manager
+                                    </div>
+                                    <div className="flex gap-2 mb-5 items-center">
+                                        <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
+                                        Pre-Planning and Research                                    </div>
+                                    <div className="flex gap-2 mb-5 items-center">
+                                        <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
+                                        Questionnaire/Brief Forms
+                                    </div>
+                                    <div className="flex gap-2 mb-5 items-center">
+                                        <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
+                                        Strategy Sessions (with Senior Project Manager)
+                                    </div>
+                                    <div className="flex gap-2 mb-5 items-center">
+                                        <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
+                                        Detailed Outline Creation
+                                    </div>
+                                    <div className="flex gap-2 mb-5 items-center">
+                                        <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
+                                        Upto 45 Minute of Interview Session
+                                    </div>
+                                    <div className="flex gap-2 mb-5 items-center">
+                                        <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
+                                        Premium Writer
+                                    </div>
+                                    <div className="flex gap-2 mb-5 items-center">
+                                        <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
+                                        Writing upto 150 - 300 Pages                                     </div>
+                                    <div className="flex gap-2 mb-5 items-center  text-xl">
+                                        4 - 7 Months production (divided into Weeks)                                    </div>
+                                    <div className="flex gap-2 mb-5 items-center">
+                                        <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
+                                        Include upto 40 Images                                    </div>
+                                    <div className="flex gap-2 mb-5 items-center">
+                                        <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
+                                        Publishing Standard Formatting (for 3 platforms)                                    </div>
+                                    <div className="flex gap-2 mb-5 items-center">
+                                        <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
+                                        5 Revisions Per Draft                                    </div>
+                                    <div className="flex gap-2 mb-5 items-center">
+                                        <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
+                                        Editorial support                                    </div>
+                                    <div className="flex gap-2 mb-5 items-center">
+                                        <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
+                                        Dedication page (If required)                                    </div>
+
+                                    <div className="flex gap-2 mb-5 items-center">
                                         <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
                                         About the Author                                   </div>
 
 
                                     <div className="flex gap-2 mb-5 items-center">
                                         <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
-                                       Book Synopsis</div>
+                                        Book Synopsis</div>
                                 </div>
                                 <div className="text-center">
                                     <button className="package-get-started-btn text-md mt-7" onClick={() => openModal('Standard')}>
@@ -340,7 +352,7 @@ export default function Bundle({ isOpen, onClose, service }) {
                                 </button>
                             </div>
 
-                            
+
                             <div className="">
                                 <div className={`container container-compare mx-auto transition-height duration-500 ease-in-out ${showPackages2 ? 'expanded' : 'collapsed'}`} ref={contentRef}>
                                     <div className="md:w-full w-[500px] responsive-width">
@@ -350,31 +362,31 @@ export default function Bundle({ isOpen, onClose, service }) {
 
                                                     <th className="font-poppins heading">
                                                         <div className="heading">
-                                                        List of Services
+                                                            List of Services
                                                         </div>
                                                     </th>
 
 
-                                                    
+
 
                                                     <th className="font-poppins">
                                                         <div className="heading">
-                                                        Silver Package
-                                                        $2,999
+                                                            Silver Package
+                                                            $2,999
                                                         </div>
                                                     </th >
 
                                                     <th className="font-poppins heading">
                                                         <div className="heading">
-                                                        Gold Package
-                                                        $4,499
+                                                            Gold Package
+                                                            $4,499
                                                         </div>
                                                     </th>
 
                                                     <th className="font-poppins heading">
                                                         <div className="heading">
-                                                        Platinum Package
-                                                        $6,499
+                                                            Platinum Package
+                                                            $6,499
                                                         </div>
                                                     </th>
                                                 </tr>
@@ -403,7 +415,7 @@ export default function Bundle({ isOpen, onClose, service }) {
                                                 <tr>
                                                     <td>Pre-Planning and Research</td>
                                                     <td>
-                                                    ✔️
+                                                        ✔️
                                                     </td>
                                                     <td>
                                                         ✔️
@@ -430,7 +442,7 @@ export default function Bundle({ isOpen, onClose, service }) {
                                                 <tr>
                                                     <td>Outline Creation</td>
                                                     <td>
-                                                    Basic
+                                                        Basic
                                                     </td>
                                                     <td>Detailed</td>
                                                     <td>Detailed</td>
@@ -438,7 +450,7 @@ export default function Bundle({ isOpen, onClose, service }) {
                                                 <tr>
                                                     <td>Interview Session timeline</td>
                                                     <td>
-                                                    Upto 25 Minutes
+                                                        Upto 25 Minutes
                                                     </td>
                                                     <td>Upto 35 Minutes</td>
                                                     <td>Upto 45 Minutes</td>
@@ -454,29 +466,29 @@ export default function Bundle({ isOpen, onClose, service }) {
                                                 <tr>
                                                     <td>Writers Experience </td>
                                                     <td>
-                                                    2 - 5 Years
+                                                        2 - 5 Years
                                                     </td>
                                                     <td>
-                                                    10 - 15 Years
+                                                        10 - 15 Years
                                                     </td>
                                                     <td>
-                                                    20 - 25 Years
+                                                        20 - 25 Years
                                                     </td>
                                                 </tr>
                                                 <tr>
                                                     <td>Writing</td>
                                                     <td>
-                                                    50-70 Pages
+                                                        50-70 Pages
                                                     </td>
                                                     <td>
-                                                    70-150 Pages
+                                                        70-150 Pages
                                                     </td>
                                                     <td>
-                                                    150-300 Pages
+                                                        150-300 Pages
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <td>Production Timeline <br/><b>(Divided into Weeks)</b></td>
+                                                    <td>Production Timeline <br /><b>(Divided into Weeks)</b></td>
                                                     <td>2-4 Months</td>
                                                     <td>3-6 Months</td>
                                                     <td>4-7 Months</td>
@@ -484,7 +496,7 @@ export default function Bundle({ isOpen, onClose, service }) {
                                                 <tr>
                                                     <td>Include Images</td>
                                                     <td>
-                                                    20
+                                                        20
                                                     </td>
                                                     <td>30</td>
                                                     <td>40</td>
@@ -492,7 +504,7 @@ export default function Bundle({ isOpen, onClose, service }) {
                                                 <tr>
                                                     <td>Basic Formatting</td>
                                                     <td>
-                                                    ✔️
+                                                        ✔️
                                                     </td>
                                                     <td>✔️</td>
                                                     <td>✔️</td>
@@ -513,7 +525,7 @@ export default function Bundle({ isOpen, onClose, service }) {
                                                     <td>3</td>
                                                     <td>5</td>
                                                 </tr>
-                                        
+
                                                 <tr>
                                                     <td>Editorial Support</td>
                                                     <td>
@@ -532,7 +544,7 @@ export default function Bundle({ isOpen, onClose, service }) {
                                                         ❌
                                                     </td>
                                                     <td>
-                                                    ❌
+                                                        ❌
                                                     </td>
                                                     <td>
                                                         ✔️
@@ -544,19 +556,19 @@ export default function Bundle({ isOpen, onClose, service }) {
                                                     <td>❌</td>
                                                     <td>✔️</td>
                                                 </tr>
-                                  
-                                               
-                                
+
+
+
                                                 <tr>
                                                     <td>Book Synopsis</td>
                                                     <td>
-                                                    ❌
+                                                        ❌
                                                     </td>
                                                     <td>
-                                                    ❌
+                                                        ❌
                                                     </td>
                                                     <td>
-                                                    ✔️
+                                                        ✔️
                                                     </td>
                                                 </tr>
                                             </tbody>
@@ -569,9 +581,9 @@ export default function Bundle({ isOpen, onClose, service }) {
                 </div>
             </section>
 
-            <NewServicesBrand/>
+            <NewServicesBrand />
 
-            <BrandFaqs/>
+            <BrandFaqs />
             <BrandContact />
             <BrandFooter />
         </>

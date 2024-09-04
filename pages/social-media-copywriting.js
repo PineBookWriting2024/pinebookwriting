@@ -9,7 +9,7 @@ import BrandPrimaryHeader from "./components/BrandPrimaryHeader";
 import BrandProcess from "./components/BrandProcess";
 import BrandAudioPlayer from "./components/BrandAudioPlayer";
 
-export default function SocialMediaCopywriting () {
+export default function SocialMediaCopywriting() {
     const [openFAQ, setOpenFAQ] = useState(0);
 
     const toggleFAQ = (index) => {
@@ -18,17 +18,17 @@ export default function SocialMediaCopywriting () {
 
     const faqData = [
         { question: "Why should I hire Pine Book Writing for Social Media Copywriting?", answer: "Every social media platform has a unique algorithm to determine how content is presented. For instance, video content often works well on TikTok, while image content might be effective on Facebook, and both types of content work more well on Instagram. Our team of social media experts is immensely familiar with these algorithms and can strategize your content accordingly." },
-        
+
         { question: "For which Social Media platforms will you provide content?", answer: "We specialize in offering content creation for almost all social media platforms, including Facebook, Instagram, X (ex-Twitter), LinkedIn, and TikTok. We can mirror your writing style according to the specific characteristics of each chosen platform." },
-       
+
         { question: "Do you also offer Social Media Management & Advertising Services?", answer: "Yes, having our partner company named Pine Digital Hub, we can cater to all your social media needs, from creating video and graphical content to strategic social media management. Feel free to contact our customer service representative for further information." },
-       
+
         { question: "How is Social Media Copywriting different from Social Media management?", answer: "Social media copywriting focuses on creating premium-quality content for social media platforms. Conversely, social media management involves supervising overall social media strategy, content creation, and scheduling." },
-        
+
         { question: "What information do you require to get started?", answer: "Upon your signup, you will receive a simple brief form through which you will provide us with all the required information about your brand, your audience, and your desired outcome." },
-       
+
         { question: "How much does Social Media Copywriting Cost?", answer: "The cost of the Social Media Copywriting will be entirely based on the length and the type of content you need for your social media. It also depends on the number of social media platforms for which you need content." },
-            ];
+    ];
 
     return (
         <>
@@ -39,7 +39,7 @@ export default function SocialMediaCopywriting () {
                     content="Everything about Pine Book Writing—your partner in crafting, editing, and publishing your story. Experience seamless service from manuscript to bookshelf."
                 />
                 <link rel="shortcut icon" href="/images/fav.webp" />
-                </Head>
+            </Head>
             <BrandNavbar />
             <BrandPrimaryHeader
                 photo_banner={"/brand-img/social-media-copywriting.png"}
@@ -48,16 +48,16 @@ export default function SocialMediaCopywriting () {
             />
             <BrandBannerLogo />
 
-            <div className="container mx-auto max-w-screen-xl overflow-hidden pt-10 md:pt-20">
-                <div className="flex justify-center items-center flex-col md:flex-row lg:flex-row px-10 md:px-0 py-10 md:py-0">
+            <div className="container mx-auto max-w-screen-xl overflow-hidden pt-0 md:pt-20">
+                <div className="flex justify-center items-center flex-col md:flex-row lg:flex-row px-8 md:px-0 py-10 md:py-0">
                     <div className="basis-1/2 abt-txt m1-h p1 aos-init aos-animate" data-aos="fade-right" data-aos-duration="1000">
                         <h3 className="font-poppins text-2xl md:text-3xl uppercase">
-                        Bespoke Social Media Copy for Every Platform 
+                            Bespoke Social Media Copy for Every Platform
                         </h3>
                         <h2 className="font-poppins text-3xl md:text-4xl uppercase font-bold">Professional Social Media Copywriting Company</h2>
-                       
+
                         <p className="font-poppins text-xl text-justify	pt-3">
-                        Social media is a crucial tool for your business if you want to get and retain your potential audience. To create a post, you need to hire social media copywriting services to help you build an emotional and friendly connection with your audience and accomplish all your marketing objectives. That's where Pine Book Writing comes in.</p>
+                            Social media is a crucial tool for your business if you want to get and retain your potential audience. To create a post, you need to hire social media copywriting services to help you build an emotional and friendly connection with your audience and accomplish all your marketing objectives. That's where Pine Book Writing comes in.</p>
 
                         <p className="font-poppins text-xl text-justify	pt-3">Pine Book Writing offers impeccable social media copywriting with a dedicated team of passionate writers whose expertise lies in writing short and snappy to longer post copies and captions for various social channels such as Facebook, Instagram, LinkedIn, and X (ex-Twitter). We have helped many clients of various industries. Contact us today for a free consultation!</p>
                     </div>
@@ -76,7 +76,7 @@ export default function SocialMediaCopywriting () {
             </div>
 
             {/* inner process section start */}
-             {/* <section className="brand-process  mx-auto relative pt-10 text-center flex justify-center mb-12 overflow-hidden">
+            {/* <section className="brand-process  mx-auto relative pt-10 text-center flex justify-center mb-12 overflow-hidden">
                 <div className="max-w-screen-xl">
                     <div className="text-center mb-6">
                         <h3 className="text-2xl text-black font-poppins">6-Step Process of Our Ghostwriting Services</h3>
@@ -127,12 +127,12 @@ export default function SocialMediaCopywriting () {
                     </div>
                 </div>
             </section> */}
-            
+
             <section className="overflow-hidden" >
-                <div className="brand-choose-us-section ms-auto relative left-0 md:left-52 px-12 md:px-20 mt-20 mb-8 py-10 " >
+                <div className="brand-choose-us-section ms-auto relative left-0 md:left-52 px-12 md:px-20 mt-0 md:mt-14 mb-8 py-10 " >
                     <div className="flex items-center flex-col md:flex-row" data-aos="fade-right" data-aos-delay="0" data-aos-duration="500">
                         <div className="basis-1/3 brand-choose-us-vector">
-                        <Image src={"/brand-img/Why Choose Us 2.png"} width={500} height={500}
+                            <Image src={"/brand-img/Why Choose Us 2.png"} width={500} height={500}
                                 loading="lazy"
                                 alt="about img"
                                 className="brand-about-img"
@@ -202,7 +202,7 @@ export default function SocialMediaCopywriting () {
                     </div>
                 </div>
             </section>
-            
+
             <BrandFooter />
         </>
     );

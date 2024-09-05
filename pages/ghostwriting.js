@@ -56,10 +56,10 @@ export default function BookEditing() {
                         </h3>
                         <h2 className="font-poppins text-3xl md:text-4xl uppercase font-bold">Professional Ghostwriting Services</h2>
                        
-                        <p className="font-poppins text-xl text-justify	pt-3">
+                        <p className="font-poppins text-xl text-left pt-3">
                         At Pine Book Writing, we believe book writing isn't as easy as it seems for everyone. That’s why we are here to offer expert ghostwriting services to help authors write their creative, fascinating stories, autobiographies, fiction or non-fiction novels to enthrall their potential readers. We have a competent team of book writers who bring years of experience in writing for multiple genres. They also help authors create striking characters and a book that mesmerizes their readers till the end. Whether you require professional help in writing an informative memoir, a suspenseful novel, or an appealing children's storybook, our ghostwriting expertise lies in a wide range of book writing genres. </p>
 
-                        <p className="font-poppins text-xl text-justify	pt-3">Moreover, we believe in trust, transparency, and results. That's why we will allocate a dedicated project manager to update you about everything throughout the writing project. Contact us today to learn further about our service and get a project quote!</p>
+                        <p className="font-poppins text-xl text-left pt-3">Moreover, we believe in trust, transparency, and results. That's why we will allocate a dedicated project manager to update you about everything throughout the writing project. Contact us today to learn further about our service and get a project quote!</p>
                     </div>
                     <div className="basis-1/2 abt-pic text-center flex justify-center md:justify-center">
                         <Image src={"/brand-img/ghost-pic.webp"} width={470} height={300}

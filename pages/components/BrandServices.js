@@ -86,7 +86,7 @@ export default function BrandServices() {
                                     <Link href="/wikipedia-writing">Read More</Link>
                                 </span>
                                 <div className="service-card-img">
-                                    <Image src={"/brand-img/ww.jpg"} width={270} height={200}></Image>
+                                    <Image src={"/brand-img/pr.jpg"} width={270} height={200}></Image>
                                 </div>
                             </div>
 
@@ -94,11 +94,11 @@ export default function BrandServices() {
                                 <span className="right-4"></span>
                                 <span className="bottom-4"></span>
                                 <div className="flex justify-between mb-12">
-                                    <Image src={"/brand-img/service-icon3.png"} className="icon" width={50} height={50}></Image>
+                                    <Image src={"/brand-img/service-icon7.png"} className="icon" width={50} height={50}></Image>
                                     <span className="font-poppins text-4xl">03</span>
                                 </div>
-                                <p >Well-researched and well-written Wikipedia articles.</p>
-                                <h4 className="mt-4 font-poppins text-2xl">Wikipedia Writing</h4>
+                                <p >Impactful press releases to promote/announce your news & events .</p>
+                                <h4 className="mt-4 font-poppins text-2xl">Press Release Writing</h4>
                             </div>
                         </div>
 
@@ -170,10 +170,12 @@ export default function BrandServices() {
                         </div>
                     </div>
 
-
+                    <div className="text-center mt-6">
+                        <button className="brand-nav-btn shadow-xl mt-10 cursor-pointer btn-g"><Link href="/services">Read More</Link></button>
+                    </div>
 
                     {/* 6 of 8 */}
-                    <div className="brand-service-content  justify-center flex mt-4 gap-4 flex-col md:flex-row aos-init aos-animate" data-aos="fade-right" data-aos-duration="1000">
+                    {/* <div className="brand-service-content  justify-center flex mt-4 gap-4 flex-col md:flex-row aos-init aos-animate" data-aos="fade-right" data-aos-duration="1000">
                         <div className="brand-service-card flex gap-4 md:flex-row flex-col md:w-full mx-auto text-center">
                             <div className="basis-1/2 brand-service-card-img relative">
                                 <span class="square">
@@ -215,11 +217,10 @@ export default function BrandServices() {
                             </div>
 
                         </div>
-                    </div>
+                    </div> */}
 
                     {/* 8 of 10 */}
-                    <div className="brand-service-content justify-center flex gap-4 mt-4 flex-col md:flex-row aos-init aos-animate" data-aos="fade-left" data-aos-duration="1000">
-
+                    {/* <div className="brand-service-content justify-center flex gap-4 mt-4 flex-col md:flex-row aos-init aos-animate" data-aos="fade-left" data-aos-duration="1000">
                         <div className="brand-service-card flex gap-4 md:flex-row flex-col md:w-full mx-auto text-center">
                             <div className="brand-service-card-content basis-1/2 relative">
                                 <span className="right-5"></span>
@@ -240,7 +241,6 @@ export default function BrandServices() {
                                 </div>
                             </div>
                         </div>
-
                         <div className="brand-service-card flex gap-4 md:flex-row flex-col md:w-full mx-auto text-center">
                             <div className="brand-service-card-content basis-1/2 relative">
                                 <span className="right-5"></span>
@@ -261,8 +261,7 @@ export default function BrandServices() {
                                 </div>
                             </div>
                         </div>
-
-                    </div>
+                    </div> */}
 
 
 
@@ -555,7 +554,7 @@ export default function BrandServices() {
                                 </div>
                             </SwiperSlide>
                         </div>
-                        </Swiper>
+                    </Swiper>
 
 
                 </div>

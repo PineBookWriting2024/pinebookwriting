@@ -56,9 +56,9 @@ export default function ScriptWriting () {
                         </h3>
                         <h2 className="font-poppins text-3xl md:text-4xl uppercase font-bold">Professional Scriptwriting Services for Every Format</h2>
                        
-                        <p className="font-poppins text-xl text-justify	pt-3">The purpose of writing a script is to capture your audience's attention, delight them with the idea you are presenting, or convey anything entertainingly or engagingly. Whether you're creating a film, a TV show, an Ad, or any video, a well-written script is required.</p>
+                        <p className="font-poppins text-xl text-left pt-3">The purpose of writing a script is to capture your audience's attention, delight them with the idea you are presenting, or convey anything entertainingly or engagingly. Whether you're creating a film, a TV show, an Ad, or any video, a well-written script is required.</p>
 
-                        <p className="font-poppins text-xl text-justify	pt-3">As a leading scriptwriting company, we understand the importance of creativity, which should be infused in each line of the script to convey your message or story in the way you desire. We create custom scripts for a variety of materials and ensure that your story is in a creative way. Let Pine Book Writing create a delightful script for your next video or audio that can entertain, inform, and inspire your viewers or listeners!</p>
+                        <p className="font-poppins text-xl text-left pt-3">As a leading scriptwriting company, we understand the importance of creativity, which should be infused in each line of the script to convey your message or story in the way you desire. We create custom scripts for a variety of materials and ensure that your story is in a creative way. Let Pine Book Writing create a delightful script for your next video or audio that can entertain, inform, and inspire your viewers or listeners!</p>
                     </div>
                     <div className="basis-1/2 abt-pic text-center flex justify-center md:justify-center">
                         <Image src={"/brand-img/Script-Writing.png"} width={470} height={300}

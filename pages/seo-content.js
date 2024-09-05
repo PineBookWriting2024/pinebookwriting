@@ -56,10 +56,10 @@ export default function SeoCopywriting () {
                         </h3>
                         <h2 className="font-poppins text-3xl md:text-4xl uppercase font-bold">Professional SEO Writing Services</h2>
                        
-                        <p className="font-poppins text-xl text-justify	pt-3">
+                        <p className="font-poppins text-xl text-left pt-3">
                         Search engine optimization does not mean overly stuffing your content with keywords and waiting for it to be ranked high. It's all about understanding the search intent of internet users. When you follow the search engine's guidelines properly while writing, editing, and formatting the content, your content is likely to get ranked on the search results. </p>
 
-                        <p className="font-poppins text-xl text-justify	pt-3">At Pine Book Writing, our expertise lies in various sectors, including website content, blog posts, articles, product descriptions, book descriptions, and more. Our team of SEO content writers does in-depth research, discover relevant and useful keywords, and write the content while considering being in your audience's shoes. This approach leads your website or content to be ranked higher.</p>
+                        <p className="font-poppins text-xl text-left pt-3">At Pine Book Writing, our expertise lies in various sectors, including website content, blog posts, articles, product descriptions, book descriptions, and more. Our team of SEO content writers does in-depth research, discover relevant and useful keywords, and write the content while considering being in your audience's shoes. This approach leads your website or content to be ranked higher.</p>
                     </div>
                     <div className="basis-1/2 abt-pic text-center flex justify-center md:justify-center">
                         <Image src={"/brand-img/seo-pic.webp"} width={470} height={300}

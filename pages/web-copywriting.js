@@ -56,10 +56,10 @@ export default function WebCopywriting () {
                         </h3>
                         <h2 className="font-poppins text-3xl md:text-4xl uppercase font-bold">Fuel your Website with Expert Website Content Writing Services</h2>
                        
-                        <p className="font-poppins text-xl text-justify	pt-3">
+                        <p className="font-poppins text-xl text-left	pt-3">
                         Your journey to build an online presence doesn’t end with building an appealing website. Your website needs to be fueled with SEO-optimized yet persuasive content that can capture your visitor’s attention, answer their queries regarding your business, and convince them to take action. And that’s where we come in.</p>
 
-                        <p className="font-poppins text-xl text-justify	pt-3">At Pine Book Writing, we have a team of skilled copywriters who are familiar with working in numerous industries. Whether you want to write for a business website, informative website, education website or landing page, our services are there for you. We will help you connect with your audience and portray your brand’s unique voice and values. We’ll highlight your unique selling points and create a persuasive and engaging call to action to encourage your readers/visitors to act!</p>
+                        <p className="font-poppins text-xl text-left	pt-3">At Pine Book Writing, we have a team of skilled copywriters who are familiar with working in numerous industries. Whether you want to write for a business website, informative website, education website or landing page, our services are there for you. We will help you connect with your audience and portray your brand’s unique voice and values. We’ll highlight your unique selling points and create a persuasive and engaging call to action to encourage your readers/visitors to act!</p>
                     </div>
                     <div className="basis-1/2 abt-pic text-center flex justify-center md:justify-center">
                         <Image src={"/brand-img/web-pic.webp"} width={470} height={300}

@@ -56,10 +56,10 @@ export default function ResumeWriting() {
                         </h3>
                         <h2 className="font-poppins text-3xl md:text-4xl uppercase font-bold">Hire Career-Focused Resume Writing Service</h2>
                        
-                        <p className="font-poppins text-xl text-justify	pt-3">
+                        <p className="font-poppins text-xl text-left pt-3">
                         Your resume gives the very first impression to your employer. It’s an influential tool that can open your doors to many career opportunities. Resume writing requires dedicated expertise and attention to detail. That’s where our resume writing service comes in.</p>
 
-                        <p className="font-poppins text-xl text-justify	pt-3">At Pine Book Writing, our team of resume writers always stays updated about the saturated job market and knows what to consider while writing a noteworthy resume. We utilize our immense expertise to highlight your unique competencies and achievements and will help you showcase your experiences in the best possible light by making your resume match any specific job requirements. </p>
+                        <p className="font-poppins text-xl text-left pt-3">At Pine Book Writing, our team of resume writers always stays updated about the saturated job market and knows what to consider while writing a noteworthy resume. We utilize our immense expertise to highlight your unique competencies and achievements and will help you showcase your experiences in the best possible light by making your resume match any specific job requirements. </p>
                     </div>
                     <div className="basis-1/2 abt-pic text-center flex justify-center md:justify-center">
                         <Image src={"/brand-img/Resume-Writing.png"} width={470} height={300}
@@ -70,7 +70,7 @@ export default function ResumeWriting() {
                         />
                     </div>
                 </div>
-                <p className="font-poppins text-xl text-justify	px-10 md:px-0" data-aos="fade-right">
+                <p className="font-poppins text-xl text-left px-10 md:px-0" data-aos="fade-right">
                     Don't let an ordinary resume hold you back. Contact us now to schedule a consultation and step ahead towards your success.
                 </p>
             </div>

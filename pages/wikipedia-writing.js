@@ -56,10 +56,10 @@ export default function Wikipedia() {
                         </h3>
                         <h2 className="font-poppins text-3xl md:text-4xl uppercase font-bold">Hire Expert Wikipedia Article Writing Services</h2>
                        
-                        <p className="font-poppins text-xl text-justify	pt-3">
+                        <p className="font-poppins text-xl text-left pt-3">
                         Unsurprisingly, Wikipedia is the most powerful platform that helps people see legitimate information about many things, personalities, places, and more. It can help enhance your online presence and credibility. A professionally written Wikipedia article can attract audiences, build authority, and improve ranking on search engines. It requires a lot of writing expertise and proficiency to follow Wikipedia’s strict guidelines.</p>
 
-                        <p className="font-poppins text-xl text-justify	pt-3">At Pine Book Writing, our skilled team of Wikipedia writers is immensely familiar with Wikipedia’s policies and guidelines. They bring years of experience in writing informative, readable, and well-researched articles based on Wikipedia’s standards. We will highlight your achievements, contributions, and knowledge base in order to establish a robust Wikipedia presence. </p>
+                        <p className="font-poppins text-xl text-left pt-3">At Pine Book Writing, our skilled team of Wikipedia writers is immensely familiar with Wikipedia’s policies and guidelines. They bring years of experience in writing informative, readable, and well-researched articles based on Wikipedia’s standards. We will highlight your achievements, contributions, and knowledge base in order to establish a robust Wikipedia presence. </p>
                     </div>
                     
                     <div className="basis-1/2 abt-pic text-center flex justify-center md:justify-center">
@@ -72,7 +72,7 @@ export default function Wikipedia() {
                     </div>
                 </div>
 
-                <p className="font-poppins text-xl text-justify pt-3 px-10 md:px-0" data-aos="fade-right">
+                <p className="font-poppins text-xl text-left pt-3 px-10 md:px-0" data-aos="fade-right">
                 Let’s help you create a noteworthy Wikipedia article that portrays your career and life accomplishments. Contact us now to discuss your project with experts!
                 </p>
             </div>
@@ -145,14 +145,14 @@ export default function Wikipedia() {
                             <p className="text-white mt-2">Strengthen your personal or business online presence with our professionally written Wikipedia article.  We have a team of experienced Wikipedia writers who create accurate and engaging articles adhering to Wikipedia’s guidelines.</p>
                             <div className="flex gap-10 mt-6">
                                 <ul>
-                                    <li className="font-poppins flex items-center gap-3 text-sm mb-2"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} /> Dedicated Writer’s Tea </li>
-                                    <li className="font-poppins flex items-center gap-3 text-sm mb-2"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} /> In-depth Research </li>
-                                    <li className="font-poppins flex items-center gap-3 text-sm"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} /> Accurate Content </li>
+                                    <li className="font-poppins flex items-start gap-3 text-sm mb-2"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} /> Dedicated Writer’s Tea </li>
+                                    <li className="font-poppins flex items-start gap-3 text-sm mb-2"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} /> In-depth Research </li>
+                                    <li className="font-poppins flex items-start gap-3 text-sm"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} /> Accurate Content </li>
                                 </ul>
                                 <ul>
-                                    <li className="font-poppins flex items-center gap-3 text-sm mb-2"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} /> Engaging Writing Style</li>
-                                    <li className="font-poppins flex items-center gap-3 text-sm mb-2"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} /> Timely Delivery</li>
-                                    <li className="font-poppins flex items-center gap-3 text-sm"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} /> Ongoing Support</li>
+                                    <li className="font-poppins flex items-start gap-3 text-sm mb-2"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} /> Engaging Writing Style</li>
+                                    <li className="font-poppins flex items-start gap-3 text-sm mb-2"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} /> Timely Delivery</li>
+                                    <li className="font-poppins flex items-start gap-3 text-sm"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} /> Ongoing Support</li>
                                 </ul>
                             </div>
                             {/* <BrandAudioPlayer src="/brand-img/why-choose-us-voice.wav" /> */}

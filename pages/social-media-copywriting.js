@@ -56,10 +56,10 @@ export default function SocialMediaCopywriting() {
                         </h3>
                         <h2 className="font-poppins text-3xl md:text-4xl uppercase font-bold">Professional Social Media Copywriting Company</h2>
 
-                        <p className="font-poppins text-xl text-justify	pt-3">
+                        <p className="font-poppins text-xl text-left pt-3">
                             Social media is a crucial tool for your business if you want to get and retain your potential audience. To create a post, you need to hire social media copywriting services to help you build an emotional and friendly connection with your audience and accomplish all your marketing objectives. That's where Pine Book Writing comes in.</p>
 
-                        <p className="font-poppins text-xl text-justify	pt-3">Pine Book Writing offers impeccable social media copywriting with a dedicated team of passionate writers whose expertise lies in writing short and snappy to longer post copies and captions for various social channels such as Facebook, Instagram, LinkedIn, and X (ex-Twitter). We have helped many clients of various industries. Contact us today for a free consultation!</p>
+                        <p className="font-poppins text-xl text-left pt-3">Pine Book Writing offers impeccable social media copywriting with a dedicated team of passionate writers whose expertise lies in writing short and snappy to longer post copies and captions for various social channels such as Facebook, Instagram, LinkedIn, and X (ex-Twitter). We have helped many clients of various industries. Contact us today for a free consultation!</p>
                     </div>
                     <div className="basis-1/2 abt-pic text-center flex justify-center md:justify-center">
                         <Image src={"/brand-img/Social-Media.png"} width={470} height={300}

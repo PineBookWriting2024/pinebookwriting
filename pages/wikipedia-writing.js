@@ -8,6 +8,7 @@ import BrandChooseUs from "./components/BrandChooseUs";
 import BrandPrimaryHeader from "./components/BrandPrimaryHeader";
 import BrandProcess from "./components/BrandProcess";
 import BrandAudioPlayer from "./components/BrandAudioPlayer";
+import NewBrandFooter from "./components/NewBrandFooter";
 
 export default function Wikipedia() {
     const [openFAQ, setOpenFAQ] = useState(0);
@@ -205,7 +206,8 @@ export default function Wikipedia() {
                 </div>
             </section>
             
-            <BrandFooter />
+            {/* <BrandFooter /> */}
+            <NewBrandFooter />
         </>
     );
 }

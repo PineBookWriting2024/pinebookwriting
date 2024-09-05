@@ -5,6 +5,7 @@ import BrandMainContact from "./components/BrandMainContact";
 import BrandFooter from "./components/BrandFooter";
 import BrandPrimaryHeader from "./components/BrandPrimaryHeader";
 import BrandNavbar from "./components/BrandNavbar";
+import NewBrandFooter from "./components/NewBrandFooter";
 
 export default function Contact() {
 
@@ -28,7 +29,8 @@ export default function Contact() {
               />
 
             <BrandMainContact />
-            <BrandFooter />
+            {/* <BrandFooter /> */}
+            <NewBrandFooter />
         </>
     );
 }

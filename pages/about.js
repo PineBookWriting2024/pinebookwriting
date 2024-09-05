@@ -9,6 +9,7 @@ import BrandChooseUs from "./components/BrandChooseUs";
 import BrandContact from "./components/BrandContactForm";
 import BrandPrimaryHeader from "./components/BrandPrimaryHeader";
 import BrandFaqs from "./components/BrandFaqs";
+import NewBrandFooter from "./components/NewBrandFooter";
 
 // import aboutBanner from "../public/brand-img/abt-banner.jpg";
 
@@ -65,7 +66,8 @@ export default function About() {
          
             <BrandFaqs/>
             <BrandContact />
-            <BrandFooter />
+            {/* <BrandFooter /> */}
+            <NewBrandFooter />
         </>
     );
 }

@@ -12,6 +12,7 @@ import BrandPrimaryHeader from "./components/BrandPrimaryHeader";
 import BrandPortfolio from "./components/BrandPortfolio";
 import BrandCTA from "./components/BrandCTA";
 import BrandProcess from "./components/BrandProcess";
+import NewBrandFooter from "./components/NewBrandFooter";
 
 export default function Portfolio() {
     const [openFAQ, setOpenFAQ] = useState(0);
@@ -61,7 +62,8 @@ export default function Portfolio() {
             />
             <BrandFaqs/>
             <BrandContact />
-            <BrandFooter />
+            {/* <BrandFooter /> */}
+            <NewBrandFooter />
         </>
     );
 }

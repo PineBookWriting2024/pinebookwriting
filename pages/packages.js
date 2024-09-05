@@ -17,6 +17,7 @@ import { library } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import PopupBundle from "./components/PopupBundle";
 import BrandFaqs from "./components/BrandFaqs";
+import NewBrandFooter from "./components/NewBrandFooter";
 
 
 export default function Bundle({ isOpen, onClose, service }) {
@@ -585,7 +586,8 @@ export default function Bundle({ isOpen, onClose, service }) {
 
             <BrandFaqs />
             <BrandContact />
-            <BrandFooter />
+            {/* <BrandFooter /> */}
+            <NewBrandFooter />
         </>
     );
 }

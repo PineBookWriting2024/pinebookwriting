@@ -4,6 +4,7 @@ import PrimaryHeader from "./components/PrimaryHeader";
 import Header from "./components/header";
 import Head from "next/head";
 import BrandNavbar from "./components/BrandNavbar";
+import NewBrandFooter from "./components/NewBrandFooter";
     
 
 export default function Privacy() {
@@ -136,7 +137,8 @@ export default function Privacy() {
 
             </div>
             {/* <Footer /> */}
-            <BrandFooter />
+            {/* <BrandFooter /> */}
+            <NewBrandFooter />
         </>
     );
 }

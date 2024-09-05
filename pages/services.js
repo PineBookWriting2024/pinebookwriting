@@ -11,6 +11,7 @@ import BrandPrimaryHeader from "./components/BrandPrimaryHeader";
 import BrandProcess from "./components/BrandProcess";
 import BrandFaqs from "./components/BrandFaqs";
 import BrandServices from "./components/BrandServices";
+import NewBrandFooter from "./components/NewBrandFooter";
 
 export default function Services() {
 
@@ -278,7 +279,8 @@ export default function Services() {
             <BrandChooseUs />
             <BrandFaqs/>
             <BrandContact />
-            <BrandFooter />
+            {/* <BrandFooter /> */}
+            <NewBrandFooter />
         </>
     );
 }

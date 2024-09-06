@@ -98,7 +98,7 @@ export default function BrandServices() {
                                     <span className="font-poppins text-4xl">03</span>
                                 </div>
                                 <p >Impactful press releases to promote/announce your news & events .</p>
-                                <h4 className="mt-4 font-poppins text-2xl">Press Release Writing</h4>
+                                <h4 className="mt-4 font-poppins text-2xl">PR Writing</h4>
                             </div>
                         </div>
 

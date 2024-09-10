@@ -34,7 +34,7 @@ export default function Services() {
             />
             <BrandBannerLogo />
             {/* <BrandServices/> */}
-            <section className="brand-service-section overflow-hidden lg:block md:block hidden">
+            <section className="brand-service-section overflow-hidden lg:block md:block">
                 <div className="max-w-screen-xl mx-auto px-4 my-20 relative">
                     <div className="text-center mb-6">
 

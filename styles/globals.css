@@ -173,6 +173,9 @@
 
     /* Media Query */
     @media (min-width:300px) and (max-width:680px){
+      .client-testi-video{
+        width: 345px;
+      }
       .brand-footer .widget-2:before{
         display: none;
       }
@@ -234,7 +237,7 @@
       .responsive-back-to-top{left:28px!important;}
       .brand-main-contact-wrapper{width:100%!important;}
       .single-packages-footer{width:342px;}
-      .single-packages{width:320px;}
+      .single-packages{width:342px;}
       video#brandVideo{height:320vw!important;}
       .brand-main-banner-video{height:320vw!important;}
       .break-words{line-break:anywhere;}

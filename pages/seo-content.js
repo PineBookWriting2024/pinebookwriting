@@ -140,9 +140,9 @@ export default function SeoCopywriting () {
                             />
                         </div>
                         <div className="basis-1/3 md:ml-20">
-                            <h2 className="text-white font-poppins text-3xl md:text-4xl uppercase mt-20 md:mt-0 font-bold" data-aos="zoom-in-left" data-aos-delay="100">Why Choose Our SEO Content Writing Services?</h2>
+                            <h2 className="text-white font-poppins text-2xl md:text-4xl uppercase mt-10 md:mt-0 font-bold" data-aos="zoom-in-left" data-aos-delay="100">Why Choose Our SEO Content Writing Services?</h2>
                             <p className="text-white mt-2">Skyrocket your online visibility with our impeccable SEO-optimized content writing services. We have a professional team of SEO content writers and SEO specialists who specialize in strategic content planning writing engaging and optimized content that helps improve rankings.</p>
-                            <div className="flex gap-10 mt-6">
+                            <div className="flex flex-col md:flex-row gap-2 md:gap-10 mt-6">
                                 <ul>
                                     <li className="font-poppins flex items-center gap-3 text-sm mb-2"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Expert SEO Writers </li>
                                     <li className="font-poppins flex items-center gap-3 text-sm mb-2"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />SEO Specialists </li>

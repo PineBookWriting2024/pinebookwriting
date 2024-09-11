@@ -52,9 +52,9 @@ export default function Wikipedia() {
             <div className="container mx-auto max-w-screen-xl overflow-hidden pt-0 md:pt-20">
                 <div className="flex justify-center items-center flex-col md:flex-row lg:flex-row px-8 md:px-0 py-10 md:py-0">
                     <div className="basis-1/2 abt-txt m1-h p1 aos-init aos-animate" data-aos="fade-right" data-aos-duration="1000">
-                        <h3 className="font-poppins text-2xl md:text-3xl uppercase">
+                        <h2 className="font-poppins text-3xl md:text-4xl uppercase font-bold">
                         Your Story On Wikipedia 
-                        </h3>
+                        </h2>
                         <h2 className="font-poppins text-3xl md:text-4xl uppercase font-bold">Hire Expert Wikipedia Article Writing Services</h2>
                        
                         <p className="font-poppins text-xl text-left pt-3">
@@ -142,9 +142,9 @@ export default function Wikipedia() {
                             />
                         </div>
                         <div className="basis-1/3 md:ml-20">
-                            <h2 className="text-white font-poppins text-3xl md:text-4xl uppercase mt-20 md:mt-0 font-bold" data-aos="zoom-in-left" data-aos-delay="100">Why Choose Our Wikipedia Writing Services?</h2>
+                            <h2 className="text-white font-poppins text-2xl md:text-4xl uppercase mt-10 md:mt-0 font-bold" data-aos="zoom-in-left" data-aos-delay="100">Why Choose Our Wikipedia Writing Services?</h2>
                             <p className="text-white mt-2">Strengthen your personal or business online presence with our professionally written Wikipedia article.  We have a team of experienced Wikipedia writers who create accurate and engaging articles adhering to Wikipedia’s guidelines.</p>
-                            <div className="flex gap-10 mt-6">
+                            <div className="flex flex-col md:flex-row gap-2 md:gap-10 mt-6">
                                 <ul>
                                     <li className="font-poppins flex items-start gap-3 text-sm mb-2"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} /> Dedicated Writer’s Tea </li>
                                     <li className="font-poppins flex items-start gap-3 text-sm mb-2"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} /> In-depth Research </li>

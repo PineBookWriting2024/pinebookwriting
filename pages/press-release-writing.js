@@ -140,9 +140,9 @@ export default function PressRelease() {
                             />
                         </div>
                         <div className="basis-1/3 md:ml-20">
-                            <h2 className="text-white font-poppins text-3xl md:text-4xl uppercase mt-20 md:mt-0 font-bold" data-aos="zoom-in-left" data-aos-delay="100">Why Choose Our Press Release Writing Services</h2>
+                            <h2 className="text-white font-poppins text-2xl md:text-4xl uppercase mt-10 md:mt-0 font-bold" data-aos="zoom-in-left" data-aos-delay="100">Why Choose Our Press Release Writing Services</h2>
                             <p className="text-white mt-2">Get your news to the right audience with our expert press release writing services. We have a steadfast team of press release writers who can help capture your audience’s attention using their immaculate expertise to drive media coverage and boost your brand reputation.</p>
-                            <div className="flex gap-10 mt-6">
+                            <div className="flex flex-col md:flex-row gap-2 md:gap-10 mt-6">
                                 <ul>
                                     <li className="font-poppins flex items-center gap-3 text-sm mb-2"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Strategic Outreach </li>
                                     <li className="font-poppins flex items-center gap-3 text-sm mb-2"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Strategic Outreach </li>

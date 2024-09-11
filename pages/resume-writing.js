@@ -52,14 +52,12 @@ export default function ResumeWriting() {
             <div className="container mx-auto max-w-screen-xl overflow-hidden pt-0 md:pt-20">
                 <div className="flex justify-center items-center flex-col md:flex-row lg:flex-row px-8 md:px-0 py-10 md:py-0">
                     <div className="basis-1/2 abt-txt m1-h p1 aos-init aos-animate" data-aos="fade-right" data-aos-duration="1000">
-                        <h3 className="font-poppins text-2xl md:text-3xl uppercase">
+                        <h2 className="font-poppins text-3xl md:text-4xl uppercase font-bold">
                         Stand Out from the Crowd 
-                        </h3>
+                        </h2>
                         <h2 className="font-poppins text-3xl md:text-4xl uppercase font-bold">Hire Career-Focused Resume Writing Service</h2>
-                       
                         <p className="font-poppins text-xl text-left pt-3">
                         Your resume gives the very first impression to your employer. It’s an influential tool that can open your doors to many career opportunities. Resume writing requires dedicated expertise and attention to detail. That’s where our resume writing service comes in.</p>
-
                         <p className="font-poppins text-xl text-left pt-3">At Pine Book Writing, our team of resume writers always stays updated about the saturated job market and knows what to consider while writing a noteworthy resume. We utilize our immense expertise to highlight your unique competencies and achievements and will help you showcase your experiences in the best possible light by making your resume match any specific job requirements. </p>
                     </div>
                     <div className="basis-1/2 abt-pic text-center flex justify-center md:justify-center">
@@ -140,18 +138,18 @@ export default function ResumeWriting() {
                             />
                         </div>
                         <div className="basis-1/3 md:ml-20">
-                            <h2 className="text-white font-poppins text-3xl md:text-4xl uppercase mt-20 md:mt-0 font-bold" data-aos="zoom-in-left" data-aos-delay="100">Why Choose Our Resume Writing Services?</h2>
+                            <h2 className="text-white font-poppins text-2xl md:text-4xl uppercase mt-10 md:mt-0 font-bold" data-aos="zoom-in-left" data-aos-delay="100">Why Choose Our Resume Writing Services?</h2>
                             <p className="text-white mt-2">Stand out in the competitive job market with our expert resume writing services. With a dedicated team of resume writers familiar with various industries’ different trends and preferences, we offer impeccable resume writing services for several formats.</p>
-                            <div className="flex gap-10 mt-6">
+                            <div className="flex flex-col md:flex-row gap-2 md:gap-10 mt-6">
                                 <ul>
-                                    <li className="font-poppins flex items-center gap-3 text-sm mb-2"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />•	Writers – Ex Recruiters </li>
-                                    <li className="font-poppins flex items-center gap-3 text-sm mb-2"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />•	Personalized Approach </li>
-                                    <li className="font-poppins flex items-center gap-3 text-sm"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />•	Multiple Resume Formats </li>
+                                    <li className="font-poppins flex items-center gap-3 text-sm mb-2"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Writers – Ex Recruiters </li>
+                                    <li className="font-poppins flex items-center gap-3 text-sm mb-2"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Personalized Approach </li>
+                                    <li className="font-poppins flex items-center gap-3 text-sm"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Multiple Resume Formats </li>
                                 </ul>
                                 <ul>
-                                    <li className="font-poppins flex items-center gap-3 text-sm mb-2"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />•	Timely Delivery</li>
-                                    <li className="font-poppins flex items-center gap-3 text-sm mb-2"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />•	Competitive Pricing</li>
-                                    <li className="font-poppins flex items-center gap-3 text-sm"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />•	Multiple Revisions</li>
+                                    <li className="font-poppins flex items-center gap-3 text-sm mb-2"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Timely Delivery</li>
+                                    <li className="font-poppins flex items-center gap-3 text-sm mb-2"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Competitive Pricing</li>
+                                    <li className="font-poppins flex items-center gap-3 text-sm"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Multiple Revisions</li>
                                 </ul>
                             </div>
                             {/* <BrandAudioPlayer src="/brand-img/why-choose-us-voice.wav" /> */}

@@ -19,9 +19,9 @@ export default function BrandChooseUs() {
                             />
                         </div>
                         <div className="basis-1/3 md:ml-20 py-8">
-                            <h2 className="text-white font-poppins text-3xl md:text-4xl uppercase md:mt-20 mt-0 font-bold" data-aos="zoom-in-left" data-aos-delay="100">Why Choose Pine Book Writing?</h2>
+                            <h2 className="text-white font-poppins text-2xl md:text-4xl uppercase md:mt-20 mt-0 font-bold" data-aos="zoom-in-left" data-aos-delay="100">Why Choose Pine Book Writing?</h2>
                             <p className="text-white mt-2">At Pine Book Writing, we have a talented team of writers who are closely familiar with all aspects of writing for various genres. They have helped hundreds of clients make their books best-selling with our impeccable writing expertise. </p>
-                            <div className="flex gap-10 mt-6">
+                            <div className="flex flex-col md:flex-row gap-2 md:gap-10 mt-6">
                                 <ul>
                                     <li className="font-poppins flex items-center gap-3 text-sm mb-2"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />100% Author Credit</li>
                                     <li className="font-poppins flex items-center gap-3 text-sm mb-2"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Proofreading & Editing</li>

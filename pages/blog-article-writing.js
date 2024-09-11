@@ -10,7 +10,7 @@ import BrandProcess from "./components/BrandProcess";
 import BrandAudioPlayer from "./components/BrandAudioPlayer";
 import NewBrandFooter from "./components/NewBrandFooter";
 
-export default function BlogWriting () {
+export default function BlogWriting() {
     const [openFAQ, setOpenFAQ] = useState(0);
 
     const toggleFAQ = (index) => {
@@ -19,17 +19,17 @@ export default function BlogWriting () {
 
     const faqData = [
         { question: "What kind of articles and blogs do you write?", answer: "Having a diverse team of article writers and bloggers on board, we produce a variety of articles and blogs, from informative, promotional (persuasive), and product reviews to entertaining content. Whether you require a blog or an in-depth article, they are familiar with various topics and styles to meet your needs." },
-        
+
         { question: "How do I provide topic ideas for my articles and blogs?", answer: "You are always open to sharing your unique and creative ideas, keywords, or target audience with us. However, we also help select the right niche and suggest different engaging and trending topic ideas to thrive in your industry." },
-       
+
         { question: "Can I request revisions to the article or blog?", answer: "Absolutely! Unlike many others, Pine Book Writing offers multiple revisions to achieve 100% client satisfaction. We embrace our clients’ valuable feedback and work together with you to make the necessary changes to make your post entirely according to your requirements." },
-       
+
         { question: "How much does your article and blog writing service cost?", answer: "The exact pricing for your article and blog project is entirely based on your project’s scope, tenure, and complexity. However, you will get transparent and affordable pricing from our customer service team." },
-        
+
         { question: "How long does it take to write an article or blog?", answer: "The time required to write an article or a blog depends on your specific niche, requirements, and word count, whether you need a 500-word-long article or a 2000-word-long blog post, a general blog post, or a keyword-rich article. We provide an estimated time of delivery during a project discussion." },
-       
+
         { question: "Do you offer SEO optimization for articles and blogs?", answer: "Yes, along with all kinds of writing services, here’s a dedicated service named “SEO Content Writing Services,” which is listed among other services. Our SEO writing experts conduct keyword research, optimize content structure, infuse relevant keywords, and adhere to SEO best practices to rank your content in search engine results." },
-            ];
+    ];
 
     return (
         <>
@@ -40,10 +40,10 @@ export default function BlogWriting () {
                     content="Everything about Pine Book Writing—your partner in crafting, editing, and publishing your story. Experience seamless service from manuscript to bookshelf."
                 />
                 <link rel="shortcut icon" href="/images/fav.webp" />
-                </Head>
+            </Head>
             <BrandNavbar />
             <BrandPrimaryHeader
-            photo_banner={"/brand-img/blog-article-writing.png"}
+                photo_banner={"/brand-img/blog-article-writing.png"}
                 title="Professional Article & Blog Writing Services"
                 desc="Pine Book Writing offers premium article and blog writing services to help website owners, marketers, and bloggers get flawless and engaging pieces of content for their purposes. Contact us to get a free quote now!"
             />
@@ -52,11 +52,11 @@ export default function BlogWriting () {
             <div className="container mx-auto max-w-screen-xl overflow-hidden pt-0 md:pt-20">
                 <div className="flex justify-center items-center flex-col md:flex-row lg:flex-row px-8 md:px-0 py-10 md:py-0">
                     <div className="basis-1/2 abt-txt m1-h p1 aos-init aos-animate" data-aos="fade-right" data-aos-duration="1000">
-                        <h3 className="font-poppins text-2xl md:text-3xl uppercase">
-                        Drive More Traffic & Engagement with  
-                        </h3>
+                        <h2 className="font-poppins text-3xl md:text-4xl uppercase font-bold">
+                            Drive More Traffic & Engagement with
+                        </h2>
                         <h2 className="font-poppins text-3xl md:text-4xl uppercase font-bold">Professional Article and Blog Writing Services</h2>
-                       
+
                         <p className="font-poppins text-xl text-left pt-3">Are you a blogger willing to share your experiences or stories with others? Or are you a website owner or marketer searching for professional article and blog writing services to rank your website in search engine results? Pine Book Writing has you covered!</p>
 
                         <p className="font-poppins text-xl text-left pt-3">Whether you are going to start a personal blog or have to write any type of article to drive more traffic to your business website, such as a product review, a news article, an informative guide, and more, all you need to have is well-researched and quality content. At Pine Book Writing, our experienced article and blog writers start their work with in-depth research and adhere to the SEO best practices that help your website rank high on search engine result pages (SERPs). They are also familiar with multiple writing styles and tones to meet your specific writing needs.</p>
@@ -70,13 +70,13 @@ export default function BlogWriting () {
                         />
                     </div>
                 </div>
-                <p className="font-poppins text-xl text-justify pt-3 px-10 md:px-0" data-aos="fade-right">
-                So why wait? Contact us today to discuss your next writing project and see how we help our clients to thrive in their pursuits.
+                <p className="font-poppins text-xl text-left pt-3 px-10 md:px-0" data-aos="fade-right">
+                    So why wait? Contact us today to discuss your next writing project and see how we help our clients to thrive in their pursuits.
                 </p>
             </div>
 
             {/* inner process section start */}
-             {/* <section className="brand-process  mx-auto relative pt-10 text-center flex justify-center mb-12 overflow-hidden">
+            {/* <section className="brand-process  mx-auto relative pt-10 text-center flex justify-center mb-12 overflow-hidden">
                 <div className="max-w-screen-xl">
                     <div className="text-center mb-6">
                         <h3 className="text-2xl text-black font-poppins">6-Step Process of Our Ghostwriting Services</h3>
@@ -127,21 +127,21 @@ export default function BlogWriting () {
                     </div>
                 </div>
             </section> */}
-            
+
             <section className="overflow-hidden" >
                 <div className="brand-choose-us-section ms-auto relative left-0 md:left-52 px-12 md:px-20 mt-6 md:mt-14 mb-8 py-10 " >
                     <div className="flex items-center flex-col md:flex-row" data-aos="fade-right" data-aos-delay="0" data-aos-duration="500">
                         <div className="basis-1/3 brand-choose-us-vector">
-                        <Image src={"/brand-img/Why Choose Us 2.png"} width={500} height={500}
+                            <Image src={"/brand-img/Why Choose Us 2.png"} width={500} height={500}
                                 loading="lazy"
                                 alt="about img"
                                 className="brand-about-img"
                             />
                         </div>
                         <div className="basis-1/3 md:ml-20">
-                            <h2 className="text-white font-poppins text-3xl md:text-4xl uppercase mt-20 md:mt-0 font-bold" data-aos="zoom-in-left" data-aos-delay="100">Why Choose Our Article & Blog Writing Service?</h2>
+                            <h2 className="text-white font-poppins text-2xl md:text-4xl uppercase mt-10 md:mt-0 font-bold" data-aos="zoom-in-left" data-aos-delay="100">Why Choose Our Article & Blog Writing Service?</h2>
                             <p className="text-white mt-2">Start your own blog or write SEO-optimized articles for various purposes. We offer affordable article & blog writing services leveraging the immense expertise of experienced article writers and bloggers.</p>
-                            <div className="flex gap-10 mt-6">
+                            <div className="flex flex-col md:flex-row gap-2 md:gap-10 mt-6">
                                 <ul>
                                     <li className="font-poppins flex items-center gap-3 text-sm mb-2"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} /> Niche-Selection </li>
                                     <li className="font-poppins flex items-center gap-3 text-sm mb-2"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} /> High-Quality Writing </li>
@@ -202,7 +202,7 @@ export default function BlogWriting () {
                     </div>
                 </div>
             </section>
-            
+
             {/* <BrandFooter /> */}
             <NewBrandFooter />
         </>

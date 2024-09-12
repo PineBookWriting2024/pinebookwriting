@@ -231,9 +231,9 @@
       .brand-choose-us-vector::before{width:358px!important;height:467px!important;top:65px!important;left:-41px!important;}
       .brand-choose-us-img{position:relative!important;top:-4px!important;left:-1px!important;}
       .popup-form-wrapper{width:100%!important;}
-      .form-off-badge{position:absolute;right:5px;top:-128px;z-index:1000;}
+      .form-off-badge{position:absolute;right:5px;top:-128px;z-index:1000;width: 88px;}
       .home-popup-img-bg{display:none;}
-      .home-close-btn-modal{right:-30px!important;}
+      .home-close-btn-modal{right:-2px!important;}
       .responsive-back-to-top{left:28px!important;}
       .brand-main-contact-wrapper{width:100%!important;}
       .single-packages-footer{width:342px;}

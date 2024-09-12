@@ -40,7 +40,7 @@ export default function Home() {
               `,
                     }}
                 />
-                <a id="href2" target="_blank" href="http://www.2findlocal.com/b/15207934"><img class="anchorImage" alt="pine book writing" src="http://www.2findlocal.com/Set/Icons/2.png" /></a><a target="_blank" href="http://taxihowmuch.com"><img alt="taxi fare calculator" src="http://www.2findlocal.com/Set/Icons/u.png" /></a><a id="href3" target="_blank" href="https://pikadil.com"><img alt="pikadil" src="http://www.2findlocal.com/Set/Icons/f.png" /></a>
+                {/* <a id="href2" target="_blank" href="http://www.2findlocal.com/b/15207934"><img class="anchorImage" alt="pine book writing" src="http://www.2findlocal.com/Set/Icons/2.png" /></a><a target="_blank" href="http://taxihowmuch.com"><img alt="taxi fare calculator" src="http://www.2findlocal.com/Set/Icons/u.png" /></a><a id="href3" target="_blank" href="https://pikadil.com"><img alt="pikadil" src="http://www.2findlocal.com/Set/Icons/f.png" /></a> */}
             </Head>
 
             <BrandTopBar />
@@ -62,14 +62,14 @@ export default function Home() {
                 subdescthree=""
             />
 
-<BrandCTA
+            <BrandCTA
                 title="Achieve Your Writing Dreams With Professional Ghostwriting Company!"
                 desc="Don’t have time to write your fascinating story? Let our team of experts guide you. Contact us today and take the first step towards becoming the best author.."
                 btntext="Speak to our Consultant"
             />
 
             <BrandServices />
-          
+
             {/* <BrandProcess /> */}
             <BrandChooseUs />
             <BrandTestimonial />

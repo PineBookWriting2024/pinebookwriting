@@ -30,13 +30,13 @@ export default function App({ Component, pageProps }) {
 
   useEffect(() => {
     AOS.init({
-      offset: 0, 
-      delay: 0, 
-      duration: 400, 
-      easing: 'ease', 
-      mirror: false, 
-      anchorPlacement: 'top-bottom', 
-  });
+      offset: 0,
+      delay: 0,
+      duration: 400,
+      easing: 'ease',
+      mirror: false,
+      anchorPlacement: 'top-bottom',
+    });
   }, []);
 
 
@@ -49,10 +49,10 @@ export default function App({ Component, pageProps }) {
       />
       <Script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=6ad75b0f-d085-4cae-9a7a-48abeb69b973"> </Script>
 
-    
+
       <script
-          dangerouslySetInnerHTML={{
-            __html: `
+        dangerouslySetInnerHTML={{
+          __html: `
              !function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
 n.callMethod.apply(n,arguments):n.queue.push(arguments)};
@@ -64,13 +64,13 @@ s.parentNode.insertBefore(t,s)}(window, document,'script',
 fbq('init', '685229296766479');
 fbq('track', 'PageView');
             `,
-          }}
-        />
+        }}
+      />
 
-<noscript>
-  <img height="1" width="1" style={{display:"none"}}
-src="https://www.facebook.com/tr?id=685229296766479&ev=PageView&noscript=1"
-/></noscript>
+      <noscript>
+        <img height="1" width="1" style={{ display: "none" }}
+          src="https://www.facebook.com/tr?id=685229296766479&ev=PageView&noscript=1"
+        /></noscript>
 
     </main>
   );

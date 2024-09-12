@@ -8,6 +8,7 @@ import BrandPrimaryHeader from "./components/BrandPrimaryHeader";
 import BrandTestimonial from "./components/BrandTestimonial";
 import BrandCTA from "./components/BrandCTA";
 import BrandCustomerStory from "./components/BrandCustomerStory";
+import NewBrandFooter from "./components/NewBrandFooter";
 
 
 export default function Services() {
@@ -52,7 +53,8 @@ export default function Services() {
             />
            
            
-            <BrandFooter />
+            {/* <BrandFooter /> */}
+            <NewBrandFooter />
         </>
     );
 }

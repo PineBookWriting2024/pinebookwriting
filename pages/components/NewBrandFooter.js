@@ -45,7 +45,7 @@ export default function NewBrandFooter() {
                                 <Image src={"/brand-img/logo.png"} width={250} height={200}></Image>
                             </a>
                             <p className="mt-2 text-sm text-white leading-7 px-0 md:px-4 mb-5">
-                            Pine Book Writing offers expert ghostwriting services to help new and seasoned authors tell their stories to their audiences worldwide. Our exceptional team of writers, editors, and designers brings years of experience in crafting engaging books that become the best-selling ones.
+                                Pine Book Writing offers expert ghostwriting services to help new and seasoned authors tell their stories to their audiences worldwide. Our exceptional team of writers, editors, and designers brings years of experience in crafting engaging books that become the best-selling ones.
                             </p>
                             {/* <nav className="list-none mb-10 mt-5">
                                 <li>
@@ -119,39 +119,39 @@ export default function NewBrandFooter() {
                             <nav className="list-none mb-10 mt-5">
                                 <li>
                                     <Link href="/ghostwriting" onClick={(e) => { e.preventDefault(); window.location.href = "/ghostwriting"; }}>
-                                    Book Ghostwriting
+                                        Book Ghostwriting
                                     </Link>
                                 </li>
                                 <li className="mt-3">
                                     <Link href="/resume-writing" onClick={(e) => { e.preventDefault(); window.location.href = "/resume-writing"; }}>
-                                    Resume Writing
+                                        Resume Writing
                                     </Link>
                                 </li>
                                 <li className="mt-3">
                                     <Link href="/web-copywriting" onClick={(e) => { e.preventDefault(); window.location.href = "/web-copywriting"; }}>
-                                    Web Copywriting
+                                        Web Copywriting
                                     </Link>
                                 </li>
                                 <li className="mt-3">
                                     <Link href="/seo-content" onClick={(e) => { e.preventDefault(); window.location.href = "/seo-content"; }}>
-                                    SEO Content Writing
+                                        SEO Content Writing
                                     </Link>
                                 </li>
                                 <li className="mt-3">
                                     <Link href="/press-release-writing" onClick={(e) => { e.preventDefault(); window.location.href = "/press-release-writing"; }}>
-                                    Press Release Writing
+                                        Press Release Writing
                                     </Link>
                                 </li>
                                 <li className="mt-3">
                                     <Link href="/social-media-copywriting" onClick={(e) => { e.preventDefault(); window.location.href = "/social-media-copywriting"; }}>
-                                    Social Media Copywriting
+                                        Social Media Copywriting
                                     </Link>
                                 </li>
 
-                               
-                             
 
-                              
+
+
+
                             </nav>
                         </div>
 
@@ -249,7 +249,7 @@ export default function NewBrandFooter() {
                 <div className="copyright-sec">
                     <div className="container text-center mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
                         <p className="text-white w-full md:text-center text-sm sm:text-left">
-                            Copyright © 2024 |
+                            Copyright © 2023 <Link href="https://www.pinebookwriting.com/" >Pine Book Writing Inc.</Link> |
                             <Link
                                 href="/terms-and-conditions"
                                 rel="noopener noreferrer"
@@ -264,9 +264,9 @@ export default function NewBrandFooter() {
                                 className="text-white ml-1"
                                 target="_blank"
                             >
-                                Privacy Policy | {" "}
+                                Privacy Policy 
                             </Link>
-                            Powered by <span className="powered-by-text"><Link href="https://www.pinebookwriting.com/" target="_blank">Pine Book Writing Inc.</Link></span>
+                            {/* Powered by <span className="powered-by-text"><Link href="https://www.pinebookwriting.com/" target="_blank">Pine Book Writing Inc.</Link></span> */}
                         </p>
                     </div>
                 </div>

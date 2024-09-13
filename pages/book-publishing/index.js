@@ -98,10 +98,10 @@ export default function Home() {
   const [activeIndex, setActiveIndex] = useState(0);
 
   useEffect(() => {
-      const interval = setInterval(() => {
-          setActiveIndex(prevIndex => (prevIndex + 1) % steps.length);
-      }, 3000); // Change step every 3 seconds
-      return () => clearInterval(interval);
+    const interval = setInterval(() => {
+      setActiveIndex(prevIndex => (prevIndex + 1) % steps.length);
+    }, 3000); // Change step every 3 seconds
+    return () => clearInterval(interval);
   }, []);
 
 
@@ -361,8 +361,8 @@ export default function Home() {
           name="description"
           content="Discover the art of book publishing with our Expert Book Publishing Services. Our expert team guides you through the process, from editing to distribution."
         />
-          <meta name="google-site-verification" content="v2pKJGIZnMWCWw2QC5nuRPYT5gvDQlUtT0lZYFIhHYo" />
-        
+        <meta name="google-site-verification" content="v2pKJGIZnMWCWw2QC5nuRPYT5gvDQlUtT0lZYFIhHYo" />
+
         <link rel="shortcut icon" href="/images/fav.webp" />
       </Head>
       <main>
@@ -962,72 +962,72 @@ export default function Home() {
 
         {/* new process start */}
         <section className="my-7 md:py-20 overflow-hidden">
-                <div className="text-center mb-6 new-lp3-why-choose-us-title">
-                    <h2 className="text-3xl text-black uppercase font-bold">Our Process: From Concept to Perfection</h2>
+          <div className="text-center mb-6 new-lp3-why-choose-us-title">
+            <h2 className="text-3xl text-black uppercase font-bold">Our Process: From Concept to Perfection</h2>
+          </div>
+          <div className="lg:block md:block hidden">
+            <div className="new-lp3-process-wrapper max-w-screen-xl mx-auto">
+              {steps.map((step, index) => (
+                <div key={index} className={`process-item ${index === activeIndex ? 'active' : ''}`}>
+                  <h3>{step.title}</h3>
+                  <div>
+                    <Image src={step.icon} width={40} height={40} alt="icon" />
+                    <Image className="p-img" src={index % 2 === 0 ? step.imgTop : step.imgBottom} width={130} height={130} alt="process" />
+                    <Image src={step.img} width={130} height={130} alt="process" />
+                    <Image src={step.img1} width={130} height={130} alt="process" />
+                  </div>
                 </div>
-                <div className="lg:block md:block hidden">
-                    <div className="new-lp3-process-wrapper max-w-screen-xl mx-auto">
-                        {steps.map((step, index) => (
-                            <div key={index} className={`process-item ${index === activeIndex ? 'active' : ''}`}>
-                                <h3>{step.title}</h3>
-                                <div>
-                                    <Image src={step.icon} width={40} height={40} alt="icon" />
-                                    <Image className="p-img" src={index % 2 === 0 ? step.imgTop : step.imgBottom} width={130} height={130} alt="process" />
-                                    <Image src={step.img} width={130} height={130} alt="process" />
-                                    <Image src={step.img1} width={130} height={130} alt="process" />
-                                </div>
-                            </div>
-                        ))}
+              ))}
+            </div>
+          </div>
+
+          <div className="lg:hidden md:hidden block">
+            <div className="new-lp3-process-wrapper max-w-screen-xl mx-auto">
+              <Swiper
+                spaceBetween={30}
+                slidesPerView={1}
+                pagination={{ clickable: true }}
+                loop={true}
+                autoplay={{
+                  delay: 2500,
+                  disableOnInteraction: false,
+                }}
+                onBeforeInit={(swiper) => {
+                  swiperRef.current = swiper;
+                }}
+                modules={[Navigation, Autoplay, Pagination]}
+                breakpoints={{
+                  "@0.00": {
+                    slidesPerView: 1,
+                    spaceBetween: 10,
+
+                    navigation: {
+                      enabled: false,
+                    },
+                    pagination: false,
+                    navigation: true,
+                  },
+                  "@1.00": {
+                    slidesPerView: 1,
+                    spaceBetween: 15,
+                  },
+                }}
+              >
+                {processItems.map((item, index) => (
+                  <SwiperSlide key={index}>
+                    <div className='process-item-mob'>
+                      <img src={item.icon} height={40} width={40} alt="icon" />
+                      <h3 className="text-black text-2xl mt-3">{item.text}</h3>
                     </div>
-                </div>
+                  </SwiperSlide>
+                ))}
+              </Swiper>
+            </div>
+          </div>
 
-                <div className="lg:hidden md:hidden block">
-                    <div className="new-lp3-process-wrapper max-w-screen-xl mx-auto">
-                        <Swiper
-                            spaceBetween={30}
-                            slidesPerView={1}
-                            pagination={{ clickable: true }}
-                            loop={true}
-                            autoplay={{
-                              delay: 2500,
-                              disableOnInteraction: false,
-                            }}
-                            onBeforeInit={(swiper) => {
-                              swiperRef.current = swiper;
-                            }}
-                            modules={[Navigation, Autoplay, Pagination]}
-                            breakpoints={{
-                              "@0.00": {
-                                slidesPerView: 1,
-                                spaceBetween: 10,
-          
-                                navigation: {
-                                  enabled: false,
-                                },
-                                pagination: false,
-                                navigation: true,
-                              },
-                              "@1.00": {
-                                slidesPerView: 1,
-                                spaceBetween: 15,
-                              },
-                            }}
-                        >
-                            {processItems.map((item, index) => (
-                                <SwiperSlide key={index}>
-                                    <div className='process-item-mob'>
-                                        <img src={item.icon} height={40} width={40} alt="icon" />
-                                        <h3 className="text-black text-2xl mt-3">{item.text}</h3>
-                                    </div>
-                                </SwiperSlide>
-                            ))}
-                        </Swiper>
-                    </div>
-                </div>
+        </section>
 
-            </section>
-
-            {/* new process end  */}
+        {/* new process end  */}
 
         <Story />
 
@@ -1125,8 +1125,8 @@ export default function Home() {
             </div>
           </div>
         </section> */}
-         
-        <BrandContact />          
+
+        <BrandContact />
         <Footer />
 
         {/* <motion.p className="font-acumin text-5xl text-center text-black leading-loose font-bold hover:text-[#EBFA0B]" ref={nodeRef} >{rounded}<Counter from={100} to={1000} val={"10"} />100</motion.p> */}

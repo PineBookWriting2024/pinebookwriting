@@ -174,7 +174,7 @@
     /* Media Query */
     @media (min-width:300px) and (max-width:680px){
       .client-testi-video{
-        width: 345px;
+        width: 325px;
       }
       .brand-footer .widget-2:before{
         display: none;

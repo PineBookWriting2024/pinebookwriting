@@ -67,12 +67,17 @@ export default function FaqPub() {
                                         return (
                                             <button
                                                 key={actualIndex}
-                                                className="w-full border-b-2 border-gray-300 p-6 text-left mt-0 focus:outline-none bg-slate-200 mb-4"
+                                                className="svg-faq-btn w-full border-b-2 border-gray-300 p-6 text-left mt-0 focus:outline-none bg-slate-200 mb-4"
                                                 onClick={() => toggleFAQ(actualIndex)}
                                             >
                                                 <div className="text-lg font-semibold flex justify-between">
-                                                    {faq.question}
-                                                    <FontAwesomeIcon icon={openFAQ === actualIndex ? faMinusCircle : faPlusCircle} color="#2c9384" />
+                                                    <div>
+                                                        {faq.question}
+                                                    </div>
+                                                    <div>
+                                                        <FontAwesomeIcon icon={openFAQ === actualIndex ? faMinusCircle : faPlusCircle} fontSize="30px" width={30} color="#2c9384" />
+                                                    </div>
+
                                                 </div>
                                                 <div className={`mt-3 text-gray-700 ${openFAQ === actualIndex ? 'faq-content-open' : 'faq-content-close'}`}>
                                                     {faq.answer}

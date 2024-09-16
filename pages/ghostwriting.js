@@ -52,10 +52,11 @@ export default function BookEditing() {
             <div className="container mx-auto max-w-screen-xl overflow-hidden pt-0 md:pt-14">
                 <div className="flex justify-center items-center flex-col md:flex-row lg:flex-row px-8 md:px-0 py-10 md:py-0">
                     <div className="basis-1/2 abt-txt m1-h p1 aos-init aos-animate" data-aos="fade-right" data-aos-duration="1000">
-                        <h2 className="font-poppins text-3xl md:text-4xl uppercase font-bold">
+                    <h2 className="font-poppins text-3xl md:text-4xl uppercase font-bold">Professional Ghostwriting Services</h2>
+
+                        <h2 className="font-poppins text-2xl md:text-3xl uppercase">
                         Bring Your Literary Vision to Life
                         </h2>
-                        <h2 className="font-poppins text-3xl md:text-4xl uppercase font-bold">Professional Ghostwriting Services</h2>
                        
                         <p className="font-poppins text-xl text-left pt-3">
                         At Pine Book Writing, we believe book writing isn't as easy as it seems for everyone. That’s why we are here to offer expert ghostwriting services to help authors write their creative, fascinating stories, autobiographies, fiction or non-fiction novels to enthrall their potential readers. We have a competent team of book writers who bring years of experience in writing for multiple genres. They also help authors create striking characters and a book that mesmerizes their readers till the end. Whether you require professional help in writing an informative memoir, a suspenseful novel, or an appealing children's storybook, our ghostwriting expertise lies in a wide range of book writing genres. </p>

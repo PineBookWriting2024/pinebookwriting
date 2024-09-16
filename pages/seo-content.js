@@ -52,11 +52,11 @@ export default function SeoCopywriting () {
             <div className="container mx-auto max-w-screen-xl overflow-hidden pt-0 md:pt-20">
                 <div className="flex justify-center items-center flex-col md:flex-row lg:flex-row px-8 md:px-0 py-10 md:py-0">
                     <div className="basis-1/2 abt-txt m1-h p1 aos-init aos-animate" data-aos="fade-right" data-aos-duration="1000">
-                        <h3 className="font-poppins text-2xl md:text-3xl uppercase">
-                        Uplift Your Search Engine Ranking 
-                        </h3>
-                        <h2 className="font-poppins text-3xl md:text-4xl uppercase font-bold">Professional SEO Writing Services</h2>
                        
+                        <h2 className="font-poppins text-3xl md:text-4xl uppercase font-bold">Professional SEO Writing Services</h2>
+                        <h2 className="font-poppins text-2xl md:text-3xl uppercase">
+                        Uplift Your Search Engine Ranking 
+                        </h2>
                         <p className="font-poppins text-xl text-left pt-3">
                         Search engine optimization does not mean overly stuffing your content with keywords and waiting for it to be ranked high. It's all about understanding the search intent of internet users. When you follow the search engine's guidelines properly while writing, editing, and formatting the content, your content is likely to get ranked on the search results. </p>
 

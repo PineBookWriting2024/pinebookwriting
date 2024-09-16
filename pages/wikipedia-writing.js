@@ -19,17 +19,17 @@ export default function Wikipedia() {
 
     const faqData = [
         { question: "Can you also help me publish my Wikipedia article/page?", answer: "No, we do not offer a Wikipedia publishing service. However, you can hire any company or freelancer to get your Wikipedia page published." },
-        
+
         { question: "Is there anything that can not be published on Wikipedia?", answer: "Yes. Wikipedia has its own set of guidelines about what gets published, and the content that you want to publish on Wikipedia should be written in such a way that it clarifies all the rules and regulations." },
-       
+
         { question: "What if I'm not satisfied with the final draft?", answer: "We offer multiple revisions, so there’s no need to worry about the satisfaction. Our expert Wikipedia writers are very well experienced in writing Wikipedia articles/pages." },
-       
+
         { question: "Do you guarantee acceptance of the article/page to Wikipedia?", answer: "We do guarantee you the content that meets the Wikipedia Guidelines, but we do not guarantee its acceptance by Wikipedia. Wikipedia does not only consider the content, but it also considers the notability of the topic or the person the article is about." },
-        
+
         { question: "How long does the Wikipedia article/page writing take?", answer: "Well, it usually takes around 5-10 days to write a publish-worthy Wikipedia article/page, but it also depends on the various factors. The length of the article, the complexity of the content, and the time required for the research." },
-       
+
         { question: "How much will it cost me to get my Wikipedia article/page written?", answer: "The cost of writing the content for a Wikipedia article/page is a very complex task. A single error in the content or the citations can lead to the rejection of your article/page. You can contact our representative to brief the requirements of your Wikipedia article/page and get a proper quote." },
-            ];
+    ];
 
     return (
         <>
@@ -40,7 +40,7 @@ export default function Wikipedia() {
                     content="Everything about Pine Book Writing—your partner in crafting, editing, and publishing your story. Experience seamless service from manuscript to bookshelf."
                 />
                 <link rel="shortcut icon" href="/images/fav.webp" />
-                </Head>
+            </Head>
             <BrandNavbar />
             <BrandPrimaryHeader
                 photo_banner={"/brand-img/wikipedia-writing-banner.png"}
@@ -52,17 +52,17 @@ export default function Wikipedia() {
             <div className="container mx-auto max-w-screen-xl overflow-hidden pt-0 md:pt-20">
                 <div className="flex justify-center items-center flex-col md:flex-row lg:flex-row px-8 md:px-0 py-10 md:py-0">
                     <div className="basis-1/2 abt-txt m1-h p1 aos-init aos-animate" data-aos="fade-right" data-aos-duration="1000">
-                        <h2 className="font-poppins text-3xl md:text-4xl uppercase font-bold">
-                        Your Story On Wikipedia 
-                        </h2>
+                        
                         <h2 className="font-poppins text-3xl md:text-4xl uppercase font-bold">Hire Expert Wikipedia Article Writing Services</h2>
-                       
+                        <h2 className="font-poppins text-2xl md:text-3xl uppercase">
+                            Your Story On Wikipedia
+                        </h2>
                         <p className="font-poppins text-xl text-left pt-3">
-                        Unsurprisingly, Wikipedia is the most powerful platform that helps people see legitimate information about many things, personalities, places, and more. It can help enhance your online presence and credibility. A professionally written Wikipedia article can attract audiences, build authority, and improve ranking on search engines. It requires a lot of writing expertise and proficiency to follow Wikipedia’s strict guidelines.</p>
+                            Unsurprisingly, Wikipedia is the most powerful platform that helps people see legitimate information about many things, personalities, places, and more. It can help enhance your online presence and credibility. A professionally written Wikipedia article can attract audiences, build authority, and improve ranking on search engines. It requires a lot of writing expertise and proficiency to follow Wikipedia’s strict guidelines.</p>
 
                         <p className="font-poppins text-xl text-left pt-3">At Pine Book Writing, our skilled team of Wikipedia writers is immensely familiar with Wikipedia’s policies and guidelines. They bring years of experience in writing informative, readable, and well-researched articles based on Wikipedia’s standards. We will highlight your achievements, contributions, and knowledge base in order to establish a robust Wikipedia presence. </p>
                     </div>
-                    
+
                     <div className="basis-1/2 abt-pic text-center flex justify-center md:justify-center">
                         <Image src={"/brand-img/Wikipedia-Writing.png"} width={470} height={300}
                             loading="lazy"
@@ -74,12 +74,12 @@ export default function Wikipedia() {
                 </div>
 
                 <p className="font-poppins text-xl text-left pt-3 px-10 md:px-0" data-aos="fade-right">
-                Let’s help you create a noteworthy Wikipedia article that portrays your career and life accomplishments. Contact us now to discuss your project with experts!
+                    Let’s help you create a noteworthy Wikipedia article that portrays your career and life accomplishments. Contact us now to discuss your project with experts!
                 </p>
             </div>
 
             {/* inner process section start */}
-             {/* <section className="brand-process  mx-auto relative pt-10 text-center flex justify-center mb-12 overflow-hidden">
+            {/* <section className="brand-process  mx-auto relative pt-10 text-center flex justify-center mb-12 overflow-hidden">
                 <div className="max-w-screen-xl">
                     <div className="text-center mb-6">
                         <h3 className="text-2xl text-black font-poppins">6-Step Process of Our Ghostwriting Services</h3>
@@ -130,12 +130,12 @@ export default function Wikipedia() {
                     </div>
                 </div>
             </section> */}
-            
+
             <section className="overflow-hidden" >
                 <div className="brand-choose-us-section ms-auto relative left-0 md:left-52 px-12 md:px-20 mt-6 md:mt-14 mb-8 py-10 " >
                     <div className="flex items-center flex-col md:flex-row" data-aos="fade-right" data-aos-delay="0" data-aos-duration="500">
                         <div className="basis-1/3 brand-choose-us-vector">
-                        <Image src={"/brand-img/Why Choose Us 2.png"} width={500} height={500}
+                            <Image src={"/brand-img/Why Choose Us 2.png"} width={500} height={500}
                                 loading="lazy"
                                 alt="about img"
                                 className="brand-about-img"
@@ -205,7 +205,7 @@ export default function Wikipedia() {
                     </div>
                 </div>
             </section>
-            
+
             {/* <BrandFooter /> */}
             <NewBrandFooter />
         </>

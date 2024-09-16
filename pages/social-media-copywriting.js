@@ -52,11 +52,11 @@ export default function SocialMediaCopywriting() {
             <div className="container mx-auto max-w-screen-xl overflow-hidden pt-0 md:pt-20">
                 <div className="flex justify-center items-center flex-col md:flex-row lg:flex-row px-8 md:px-0 py-10 md:py-0">
                     <div className="basis-1/2 abt-txt m1-h p1 aos-init aos-animate" data-aos="fade-right" data-aos-duration="1000">
-                        <h2 className="font-poppins text-3xl md:text-4xl uppercase font-bold">
+                      
+                        <h2 className="font-poppins text-3xl md:text-4xl uppercase font-bold">Professional Social Media Copywriting Company</h2>
+                        <h2 className="font-poppins text-2xl md:text-3xl uppercase">
                             Bespoke Social Media Copy for Every Platform
                         </h2>
-                        <h2 className="font-poppins text-3xl md:text-4xl uppercase font-bold">Professional Social Media Copywriting Company</h2>
-
                         <p className="font-poppins text-xl text-left pt-3">
                             Social media is a crucial tool for your business if you want to get and retain your potential audience. To create a post, you need to hire social media copywriting services to help you build an emotional and friendly connection with your audience and accomplish all your marketing objectives. That's where Pine Book Writing comes in.</p>
 

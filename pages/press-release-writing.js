@@ -52,11 +52,11 @@ export default function PressRelease() {
             <div className="container mx-auto max-w-screen-xl overflow-hidden pt-10 md:pt-20">
                 <div className="flex justify-center items-center flex-col md:flex-row lg:flex-row px-10 md:px-0 py-10 md:py-0">
                     <div className="basis-1/2 abt-txt m1-h p1 aos-init aos-animate" data-aos="fade-right" data-aos-duration="1000">
-                        <h3 className="font-poppins text-2xl md:text-3xl uppercase">
-                        Get Strategic Media Outreach 
-                        </h3>
+                        
                         <h2 className="font-poppins text-3xl md:text-4xl uppercase font-bold">Hire a Professional Press Release Writing Agency</h2>
-                       
+                        <h2 className="font-poppins text-2xl md:text-3xl uppercase">
+                        Get Strategic Media Outreach 
+                        </h2>
                         <p className="font-poppins text-xl text-left pt-3">
                         Hiring a professional press release writing service can help generate media coverage, promote your brand to a broader audience, and keep your audience informed about your company’s events, such as product launches, policy changes, partnerships with other brands, future improvements, etc. This practice also helps drive more traffic to your website now and again.</p>
                         <p className="font-poppins text-xl text-left pt-3">Our expert press release writers at Pine Book Writing understand the worth of creating newsworthy content by maintaining a journalistic writing style. They work together with you to improvise your key messages and outline your news according to your audience. Our press release writing services are not limited to writing, but we also help distribute your news/announcements through various media outlets. Contact us to learn how we can help you write an impactful press release.</p>

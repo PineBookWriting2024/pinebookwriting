@@ -52,10 +52,12 @@ export default function ResumeWriting() {
             <div className="container mx-auto max-w-screen-xl overflow-hidden pt-0 md:pt-20">
                 <div className="flex justify-center items-center flex-col md:flex-row lg:flex-row px-8 md:px-0 py-10 md:py-0">
                     <div className="basis-1/2 abt-txt m1-h p1 aos-init aos-animate" data-aos="fade-right" data-aos-duration="1000">
-                        <h2 className="font-poppins text-3xl md:text-4xl uppercase font-bold">
+                        
+                        <h2 className="font-poppins text-3xl md:text-4xl uppercase font-bold">Hire Career-Focused Resume Writing Service</h2>
+                       
+                        <h2 className="font-poppins text-2xl md:text-3xl uppercase">
                         Stand Out from the Crowd 
                         </h2>
-                        <h2 className="font-poppins text-3xl md:text-4xl uppercase font-bold">Hire Career-Focused Resume Writing Service</h2>
                         <p className="font-poppins text-xl text-left pt-3">
                         Your resume gives the very first impression to your employer. It’s an influential tool that can open your doors to many career opportunities. Resume writing requires dedicated expertise and attention to detail. That’s where our resume writing service comes in.</p>
                         <p className="font-poppins text-xl text-left pt-3">At Pine Book Writing, our team of resume writers always stays updated about the saturated job market and knows what to consider while writing a noteworthy resume. We utilize our immense expertise to highlight your unique competencies and achievements and will help you showcase your experiences in the best possible light by making your resume match any specific job requirements. </p>

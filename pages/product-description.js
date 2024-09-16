@@ -52,11 +52,11 @@ export default function ProductDescription () {
             <div className="container mx-auto max-w-screen-xl overflow-hidden pt-0 md:pt-14">
                 <div className="flex justify-center items-center flex-col md:flex-row lg:flex-row px-8 md:px-0 py-10 md:py-0">
                     <div className="basis-1/2 abt-txt m1-h p1 aos-init aos-animate" data-aos="fade-right" data-aos-duration="1000">
-                        <h3 className="font-poppins text-2xl md:text-3xl uppercase">
-                        Stand Out from Other Sellers
-                        </h3>
+                        
                         <h2 className="font-poppins text-3xl md:text-4xl uppercase font-bold">Hire Multi-Niche Product Description Writing Services</h2>
-                       
+                        <h2 className="font-poppins text-2xl md:text-3xl uppercase">
+                        Stand Out from Other Sellers
+                        </h2>
                         <p className="font-poppins text-xl text-left pt-3">You cannot persuade your audience to buy your product without describing what features and values your product offers. You must have a quick and comprehensive product description separately presented on each product page. By having a professionally written product description, you can engage, inform, and help your customers make purchasing decisions swiftly and confidently.</p>
 
                         <p className="font-poppins text-xl text-left pt-3">At Pine Book Writing, our expert product description writers create on-point, precise, and engaging descriptions for any niche. Whether you are selling clothing, electronic appliances, health & well-being products, home groceries, or any other product, our writers have proved their exceptional expertise by working with numerous business niches. We write product copies considering the particular ecommerce platform’s format and guidelines, including the famous ones, Amazon, eBay, Walmart, Shopify, WooCommerce, and more to help your product stand out in the crowded market. So, don’t copy-paste a generic product description like others, write a very unique one, that sells!</p>

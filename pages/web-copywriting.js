@@ -52,11 +52,11 @@ export default function WebCopywriting () {
             <div className="container mx-auto max-w-screen-xl overflow-hidden pt-0 md:pt-20">
                 <div className="flex justify-center items-center flex-col md:flex-row lg:flex-row px-8 md:px-0 py-10 md:py-0">
                     <div className="basis-1/2 abt-txt m1-h p1 aos-init aos-animate" data-aos="fade-right" data-aos-duration="1000">
-                        <h2 className="font-poppins text-3xl md:text-4xl uppercase font-bold">
+                       
+                        <h2 className="font-poppins text-3xl md:text-4xl uppercase font-bold">Fuel your Website with Expert Website Content Writing Services</h2>
+                        <h2 className="font-poppins text-2xl md:text-3xl uppercase">
                         Persuasive Words, Profitable Impact
                         </h2>
-                        <h2 className="font-poppins text-3xl md:text-4xl uppercase font-bold">Fuel your Website with Expert Website Content Writing Services</h2>
-                       
                         <p className="font-poppins text-xl text-left	pt-3">
                         Your journey to build an online presence doesn’t end with building an appealing website. Your website needs to be fueled with SEO-optimized yet persuasive content that can capture your visitor’s attention, answer their queries regarding your business, and convince them to take action. And that’s where we come in.</p>
 

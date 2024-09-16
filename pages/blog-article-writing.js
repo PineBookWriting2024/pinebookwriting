@@ -52,11 +52,11 @@ export default function BlogWriting() {
             <div className="container mx-auto max-w-screen-xl overflow-hidden pt-0 md:pt-20">
                 <div className="flex justify-center items-center flex-col md:flex-row lg:flex-row px-8 md:px-0 py-10 md:py-0">
                     <div className="basis-1/2 abt-txt m1-h p1 aos-init aos-animate" data-aos="fade-right" data-aos-duration="1000">
-                        <h2 className="font-poppins text-3xl md:text-4xl uppercase font-bold">
+                        
+                        <h2 className="font-poppins text-3xl md:text-4xl uppercase font-bold">Professional Article and Blog Writing Services</h2>
+                        <h2 className="font-poppins text-2xl md:text-3xl uppercase">
                             Drive More Traffic & Engagement with
                         </h2>
-                        <h2 className="font-poppins text-3xl md:text-4xl uppercase font-bold">Professional Article and Blog Writing Services</h2>
-
                         <p className="font-poppins text-xl text-left pt-3">Are you a blogger willing to share your experiences or stories with others? Or are you a website owner or marketer searching for professional article and blog writing services to rank your website in search engine results? Pine Book Writing has you covered!</p>
 
                         <p className="font-poppins text-xl text-left pt-3">Whether you are going to start a personal blog or have to write any type of article to drive more traffic to your business website, such as a product review, a news article, an informative guide, and more, all you need to have is well-researched and quality content. At Pine Book Writing, our experienced article and blog writers start their work with in-depth research and adhere to the SEO best practices that help your website rank high on search engine result pages (SERPs). They are also familiar with multiple writing styles and tones to meet your specific writing needs.</p>

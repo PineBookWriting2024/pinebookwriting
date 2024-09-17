@@ -876,7 +876,7 @@ export default function Home() {
                 <div className="single-packages relative">
 
                   <h4 className="text-2xl font-poppins mb-6 text-center pt-4 pb-4 hover-top-vector relative">Silver Package <br />
-                  <button class="tag-50-per-off"><del class="text-red italic">$2,999 USD</del> | <span class="blink_me">$1,499 USD</span></button></h4>
+                  <button class="tag-50-per-off"><del class="text-red italic">$3,000 USD</del> | <span class="blink_me">$1,499 USD</span></button></h4>
                   
                   
                   <div className="single-packages-content px-10">
@@ -949,7 +949,7 @@ export default function Home() {
 
                 <div className="single-packages relative">
                   <h4 className="text-2xl font-poppins mb-6 text-center pt-4 pb-4 hover-top-vector relative">Gold Package <br /> 
-                  <button class="tag-50-per-off"><del class="text-red italic">$4,499 USD</del> | <span class="blink_me">$2,249 USD</span></button>
+                  <button class="tag-50-per-off"><del class="text-red italic">$4,500 USD</del> | <span class="blink_me">$2,249 USD</span></button>
                   </h4>
                   
                   <div className="single-packages-content px-10">
@@ -1023,7 +1023,7 @@ export default function Home() {
                 <div className="single-packages relative">
                   <Image src={"/images/badge.png"} className="package-badge" width={80} height={80}></Image>
                   <h4 className="text-2xl font-poppins mb-6 text-center pt-4 pb-4 hover-top-vector relative">Platinum Package <br />
-                  <button class="tag-50-per-off"><del class="text-red italic">$6,499 USD</del> | <span class="blink_me">$3,249 USD</span></button>
+                  <button class="tag-50-per-off"><del class="text-red italic">$6,500 USD</del> | <span class="blink_me">$3,249 USD</span></button>
                   </h4>
                   <div className="single-packages-content px-10">
 

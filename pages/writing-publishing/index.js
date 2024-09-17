@@ -19,26 +19,26 @@ const handleOpenChat = () => {
 };
 
 const steps = [
-  { title: "Writing/Re-Writing", imgTop: "/images/p-img-top.webp", imgBottom: "/images/p-img-bottom.webp", img: "/images/p-img.webp", img1: "/images/p-img1.webp", icon: "/images/Editing.png" },
-  { title: "Editing", imgTop: "/images/p-img-top.webp", imgBottom: "/images/p-img-bottom.webp", img: "/images/p-img.webp", img1: "/images/p-img1.webp", icon: "/images/Proofreading.png" },
-  { title: "Proofreading", imgTop: "/images/p-img-top.webp", imgBottom: "/images/p-img-bottom.webp", img: "/images/p-img.webp", img1: "/images/p-img1.webp", icon: "/images/Typesetting & Layout adjustment.png" },
-  { title: "Typesetting", imgTop: "/images/p-img-top.webp", imgBottom: "/images/p-img-bottom.webp", img: "/images/p-img.webp", img1: "/images/p-img1.webp", icon: "/images/Typesetting & Layout adjustment.png" },
-  { title: "Layout Adjustment", imgTop: "/images/p-img-top.webp", imgBottom: "/images/p-img-bottom.webp", img: "/images/p-img.webp", img1: "/images/p-img1.webp", icon: "/images/Formatting.png" },
-  { title: "Formatting", imgTop: "/images/p-img-top.webp", imgBottom: "/images/p-img-bottom.webp", img: "/images/p-img.webp", img1: "/images/p-img1.webp", icon: "/images/Cover Design.png" },
-  { title: "Cover Designing", imgTop: "/images/p-img-top.webp", imgBottom: "/images/p-img-bottom.webp", img: "/images/p-img.webp", img1: "/images/p-img1.webp", icon: "/images/Cover Design.png" },
-  { title: "Publishing", imgTop: "/images/p-img-top.webp", imgBottom: "/images/p-img-bottom.webp", img: "/images/p-img.webp", img1: "/images/p-img1.webp", icon: "/images/Publishing.png" },
+  { title: "Sign Up", imgTop: "/images/p-img-top.webp", imgBottom: "/images/p-img-bottom.webp", img: "/images/p-img.webp", img1: "/images/p-img1.webp", icon: "/images/Sign-Up.png" },
+  { title: "Fill Questionnaires", imgTop: "/images/p-img-top.webp", imgBottom: "/images/p-img-bottom.webp", img: "/images/p-img.webp", img1: "/images/p-img1.webp", icon: "/images/Fill-Questionnaire.png" },
+  { title: "Editorial Sessions", imgTop: "/images/p-img-top.webp", imgBottom: "/images/p-img-bottom.webp", img: "/images/p-img.webp", img1: "/images/p-img1.webp", icon: "/images/Editorial-Session.png" },
+  { title: "Outline Creation", imgTop: "/images/p-img-top.webp", imgBottom: "/images/p-img-bottom.webp", img: "/images/p-img.webp", img1: "/images/p-img1.webp", icon: "/images/Book-Outline.png" },
+  { title: "Weekly Drafts", imgTop: "/images/p-img-top.webp", imgBottom: "/images/p-img-bottom.webp", img: "/images/p-img.webp", img1: "/images/p-img1.webp", icon: "/images/Weekly-Draft.png" },
+  { title: "Book Compilation", imgTop: "/images/p-img-top.webp", imgBottom: "/images/p-img-bottom.webp", img: "/images/p-img.webp", img1: "/images/p-img1.webp", icon: "/images/Book-Compilation.png" },
+  { title: "Book Formatting", imgTop: "/images/p-img-top.webp", imgBottom: "/images/p-img-bottom.webp", img: "/images/p-img.webp", img1: "/images/p-img1.webp", icon: "/images/Book-Formatting.png" },
+  { title: "Book Review", imgTop: "/images/p-img-top.webp", imgBottom: "/images/p-img-bottom.webp", img: "/images/p-img.webp", img1: "/images/p-img1.webp", icon: "/images/Book-Review.png" },
   // ... Add other steps similarly
 ];
 
 const processItems = [
-  { icon: '/images/Editing.png', text: 'Writing/Re-Writing' },
-  { icon: '/images/Proofreading.png', text: 'Editing' },
-  { icon: '/images/Typesetting & Layout adjustment.png', text: 'Proofreading' },
-  { icon: '/images/Typesetting & Layout adjustment.png', text: 'Typesetting' },
-  { icon: '/images/Formatting.png', text: 'Layout Adjustment' },
-  { icon: '/images/Cover Design.png', text: 'Formatting' },
-  { icon: '/images/Cover Design.png', text: 'Cover Designing' },
-  { icon: '/images/Publishing.png', text: 'Publishing' },
+  { icon: '/images/Editing.png', text: 'Sign Up' },
+  { icon: '/images/Proofreading.png', text: 'Fill Questionnaires' },
+  { icon: '/images/Typesetting & Layout adjustment.png', text: 'Editorial Sessions' },
+  { icon: '/images/Typesetting & Layout adjustment.png', text: 'Outline Creation' },
+  { icon: '/images/Formatting.png', text: 'Weekly Drafts' },
+  { icon: '/images/Cover Design.png', text: 'Book Compilation' },
+  { icon: '/images/Cover Design.png', text: 'Book Formatting' },
+  { icon: '/images/Publishing.png', text: 'Book Review' },
 ];
 
 
@@ -555,12 +555,12 @@ export default function Home() {
               {/* <AnimateFade type={"top"}> */}
               <div className="abt-txt m1-h p1">
                 <h3 className="font-poppins text-3xl md:text-5xl font-bold">
-                  About<span>Pine Book Writing & Publishing</span>
+                About<span>Pine Book Writing</span>
                 </h3>
                 <p className="pt-3">
-                Pine Book Writing & Publishing was founded on February 22, 2023, with the mission of providing quality writing, editing and publishing services for the authors worldwide. Our founders understood that many authors need support in writing, editing, and publishing their works to make them distinct from the rest in the crowded marketplace. They had a vision of creating a company that would help these authors bring their ideas to life and turn them into successful books. That was when Pine Book Writing was officially established with a mission of providing authors with the best Book Writing & Publishing experience.<br/><br/>
+                Pine Book Writing was founded on February 22, 2023, with the mission of providing quality writing services to the authors worldwide. Our founders noticed that many authors need help to write a book that can stand out in the crowded marketplace. They had a vision of creating a company that would help these authors bring their ideas to life and turn them into successful books. That was when Pine Book Writing was officially established with a mission of providing authors with the best Book Writing experience.<br/><br/>
 
-                We have a qualified team of professionals who will work hand in hand with you from the moment you decide to publish your book to the moment your book in known to the world.
+                We have a qualified team of professionals who will work hand in hand with you from the moment you decide to write your book to the moment your book in known to the world.
                 </p>
 
               </div>
@@ -862,9 +862,9 @@ export default function Home() {
           <div className="container mx-auto max-w-screen-xl">
             <div className="grid items-center grid-cols-1 text-center m1-h">
               <h3 className="text-3xl font-poppins md:text-4xl font-bold">
-              Affordable Book Writing & Publishing Packages
+              Affordable Book Writing Packages
               </h3>
-              <h4 class="text-xl font-poppins md:text-xl font-bold mt-4">Limited Time Offers – Save  <span class="blink_me fw-bold text-2xl">50%</span> on Book writing & Publishing Services</h4>
+              <h4 class="text-xl font-poppins md:text-xl font-bold mt-4">Limited Time Offers – Save  <span class="blink_me fw-bold text-2xl">50%</span> on Book writing Services</h4>
             </div>
           </div>
         </section>
@@ -875,7 +875,10 @@ export default function Home() {
               <div className="packages-wrapper flex flex-col md:flex-row justify-center gap-12">
                 <div className="single-packages relative">
 
-                  <h4 className="text-2xl font-poppins mb-6 text-center pt-4 pb-4 hover-top-vector relative">Silver Package <br />$2,999 USD</h4>
+                  <h4 className="text-2xl font-poppins mb-6 text-center pt-4 pb-4 hover-top-vector relative">Silver Package <br />
+                  <button class="tag-50-per-off"><del class="text-red italic">$2,999 USD</del> | <span class="blink_me">$1,499 USD</span></button></h4>
+                  
+                  
                   <div className="single-packages-content px-10">
 
                     <div className="flex gap-2 mb-5 items-center">
@@ -945,7 +948,10 @@ export default function Home() {
                 </div>
 
                 <div className="single-packages relative">
-                  <h4 className="text-2xl font-poppins mb-6 text-center pt-4 pb-4 hover-top-vector relative">Gold Package <br /> $4,499 USD</h4>
+                  <h4 className="text-2xl font-poppins mb-6 text-center pt-4 pb-4 hover-top-vector relative">Gold Package <br /> 
+                  <button class="tag-50-per-off"><del class="text-red italic">$4,499 USD</del> | <span class="blink_me">$2,249 USD</span></button>
+                  </h4>
+                  
                   <div className="single-packages-content px-10">
                     <div className="flex gap-2 mb-5 items-center">
                       <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
@@ -1016,7 +1022,9 @@ export default function Home() {
 
                 <div className="single-packages relative">
                   <Image src={"/images/badge.png"} className="package-badge" width={80} height={80}></Image>
-                  <h4 className="text-2xl font-poppins mb-6 text-center pt-4 pb-4 hover-top-vector relative">Platinum Package <br /> $6,499 USD</h4>
+                  <h4 className="text-2xl font-poppins mb-6 text-center pt-4 pb-4 hover-top-vector relative">Platinum Package <br />
+                  <button class="tag-50-per-off"><del class="text-red italic">$6,499 USD</del> | <span class="blink_me">$3,249 USD</span></button>
+                  </h4>
                   <div className="single-packages-content px-10">
 
                     <div className="flex gap-2 mb-5 items-center">
@@ -1126,21 +1134,21 @@ export default function Home() {
                             <th className="font-poppins">
                               <div className="heading">
                                 Silver Package
-                                $2,999
+                                
                               </div>
                             </th >
 
                             <th className="font-poppins heading">
                               <div className="heading">
                                 Gold Package
-                                $4,499
+                               
                               </div>
                             </th>
 
                             <th className="font-poppins heading">
                               <div className="heading">
                                 Platinum Package
-                                $6,499
+                              
                               </div>
                             </th>
                           </tr>
@@ -1401,7 +1409,7 @@ export default function Home() {
             <div className="basis-1/2 md:ml-20 md:text-left text-center">
               <h2 className="text-white font-poppins text-3xl md:text-5xl aos-init aos-animate font-bold" data-aos="flip-down">Ready to tell your story to the world?
               </h2>
-              <p className="text-white mt-7">We take pride in having a professional team of industry-expert book writers and publishers onboard. Get in touch & discuss your book project now!
+              <p className="text-white mt-7">We take pride in having a professional team of industry-expert book writers onboard. Get in touch & discuss your book project now!
               </p>
               <div className="flex gap-6 md:justify-start justify-center">
                 <button className="package-get-started-btn text-md mt-5" onClick={handleOpenChat}><Link href={'javascript:;'}>Talk to an Expert</Link></button>

@@ -31,12 +31,12 @@ export default function FaqPub() {
         { question: "Is your ghostwriting ethical and authentic?", answer: "Absolutely, it is both ethical and authentic. Ghostwriting is extremely common, especially in the world of book writing. This service is considered the same as having any professional hired to perform a specific task. At Pine Book Writing, we serve our expertise in writing to put your creative ideas into a manuscript." },
         { question: "How long will it take to write a book?", answer: "The completion time of the ghostwriting services entirely depends on the complexity, genre, and your book's length. However, we usually take 3 to 6 months on average. Moreover, the time also depends on how much material you provide and the research required on the particular topic." },
 
-        { question: "How do I self-publish my book?", answer: "Self-publishing your book with Pine Book Writing is simple. Start by submitting your manuscript, and our team will guide you through the editing, formatting, and cover design process." },
-        { question: "Is publishing a book difficult?", answer: "Publishing a book doesn't have to be difficult, especially with Pine Book Writing's support." },
-        { question: "What is an ISBN and do I need one?", answer: "An ISBN (International Standard Book Number) is a unique identifier for your book used by retailers, libraries, and distributors." },
+        // { question: "How do I self-publish my book?", answer: "Self-publishing your book with Pine Book Writing is simple. Start by submitting your manuscript, and our team will guide you through the editing, formatting, and cover design process." },
+        // { question: "Is publishing a book difficult?", answer: "Publishing a book doesn't have to be difficult, especially with Pine Book Writing's support." },
+        // { question: "What is an ISBN and do I need one?", answer: "An ISBN (International Standard Book Number) is a unique identifier for your book used by retailers, libraries, and distributors." },
         { question: "Will I need to have my book copyrighted?", answer: "While your book is automatically copyrighted upon creation, registering your copyright provides additional legal protection." },
         { question: "Do you offer design services?", answer: "Yes, Pine Book Writing offers comprehensive design services, including cover design, typesetting, and layout adjustment." },
-        { question: "How do you handle distribution and marketing of books?", answer: "Pine Book Writing handles distribution and marketing for your books, ensuring they reach the widest audience possible." }
+        // { question: "How do you handle distribution and marketing of books?", answer: "Pine Book Writing handles distribution and marketing for your books, ensuring they reach the widest audience possible." }
     ];
 
     const badges = [
@@ -62,12 +62,12 @@ export default function FaqPub() {
                         <div className="flex flex-col md:flex-row justify-center gap-4">
                             {Array.from({ length: 2 }).map((_, colIndex) => (
                                 <div key={colIndex} className="w-full max-w-screen-sm">
-                                    {faqData.slice(colIndex * 5, (colIndex + 1) * 5).map((faq, index) => {
-                                        const actualIndex = index + colIndex * 5;
+                                    {faqData.slice(colIndex * 3, (colIndex + 1) * 3).map((faq, index) => {
+                                        const actualIndex = index + colIndex * 7;
                                         return (
                                             <button
                                                 key={actualIndex}
-                                                className="svg-faq-btn w-full border-b-2 border-gray-300 p-6 text-left mt-0 focus:outline-none bg-slate-200 mb-4"
+                                                className="svg-faq-btn w-full border-b-2 border-gray-300 md:p-6 p-2 text-left mt-0 focus:outline-none bg-slate-200 mb-4"
                                                 onClick={() => toggleFAQ(actualIndex)}
                                             >
                                                 <div className="text-lg font-semibold flex justify-between">

@@ -167,16 +167,16 @@ export default function HeroFormBookOfferPub() {
           {/* <h2 className="text-sm md:base scroll-animation">
             <span> #1 SELF </span> PUBLISHING COMPANY
           </h2> */}
-          <h3 className="font-poppins text-2xl mb-4 aos-init aos-animate text-white"><span className="px-2 py-0">#1</span> Book Writing & Publishing Company</h3>
+          <h3 className="font-poppins text-2xl mb-4 aos-init aos-animate text-white"><span className="px-2 py-0">#1</span> Book Writing Company</h3>
           <FadeIn>
             <h1 className="font-poppins text-3xl md:text-4xl text-white font-bold">
-            HAVE ANY IDEA TO WRITE, OR A MANUSCRIPT TO BE PUBLISHED?
+            WANT TO PEN YOUR IDEAS? HIRE EXPERT GHOSTWRITING COMPANY!
             </h1>
           </FadeIn>
           {/* <WavyText text="DO YOU HAVE A MANUSCRIPT READY TO BE PUBLISHED?" replay={true} style={{ color: 'white' }} className="font-poppins text-3xl md:text-5xl text-white font-bold" /> */}
           {/* <FadeIn> */}
           <p className="text-xl text-white pt-4">
-          Are you a first-time author? or a seasoned author looking for an all-inclusive book writing & publishing services that can help streamline your author journey? You've come to the right place. Pine Book Writing is here to assist you in writing a delightful story and publishing it on the most popular global platforms.
+          Are you a first-time author? or a seasoned author looking for an all-inclusive book writing service that can help streamline your author journey? You've come to the right place. At Pine Book Writing, we can turn your idea in a book with our expert ghostwriting service.
           </p>
           <h4 className="font-poppins text-2xl mt-8 text-white uppercase font-bold">Our Credibility</h4>
           {/* <button className="get-premium-btn" onClick={handleOpenChat}>Get premium book publishing services</button> */}

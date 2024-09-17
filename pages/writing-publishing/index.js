@@ -560,7 +560,7 @@ export default function Home() {
                 <p className="pt-3">
                 Pine Book Writing was founded on February 22, 2023, with the mission of providing quality writing services to the authors worldwide. Our founders noticed that many authors need help to write a book that can stand out in the crowded marketplace. They had a vision of creating a company that would help these authors bring their ideas to life and turn them into successful books. That was when Pine Book Writing was officially established with a mission of providing authors with the best Book Writing experience.<br/><br/>
 
-                We have a qualified team of professionals who will work hand in hand with you from the moment you decide to write your book to the moment your book in known to the world.
+                We have a qualified team of professionals who will work hand-in-hand with you from the moment you decide to write your book until the moment it is known to the world.
                 </p>
 
               </div>
@@ -862,7 +862,7 @@ export default function Home() {
           <div className="container mx-auto max-w-screen-xl">
             <div className="grid items-center grid-cols-1 text-center m1-h">
               <h3 className="text-3xl font-poppins md:text-4xl font-bold">
-              Affordable Book Writing Packages
+              Affordable Book Writing Service Packages
               </h3>
               <h4 class="text-xl font-poppins md:text-xl font-bold mt-4">Limited Time Offers – Save  <span class="blink_me fw-bold text-2xl">50%</span> on Book writing Services</h4>
             </div>
@@ -1407,9 +1407,9 @@ export default function Home() {
               <Image src={"/images/book-image-big.webp"} width={400} height={200} className="aos-init aos-animate book-publishing-cta-img" data-aos="fade-right" data-aos-duration="1000"></Image>
             </div>
             <div className="basis-1/2 md:ml-20 md:text-left text-center">
-              <h2 className="text-white font-poppins text-3xl md:text-5xl aos-init aos-animate font-bold" data-aos="flip-down">Ready to tell your story to the world?
+              <h2 className="text-white font-poppins text-3xl md:text-5xl aos-init aos-animate font-bold" data-aos="flip-down">Ready to Delight Your Readers? Get in Touch!
               </h2>
-              <p className="text-white mt-7">We take pride in having a professional team of industry-expert book writers onboard. Get in touch & discuss your book project now!
+              <p className="text-white mt-7">At Pine Book Writing, we take pride in having an industry-leading team of ghostwriters who have immense expertise in various genres. Contact us to book a consultation call!
               </p>
               <div className="flex gap-6 md:justify-start justify-center">
                 <button className="package-get-started-btn text-md mt-5" onClick={handleOpenChat}><Link href={'javascript:;'}>Talk to an Expert</Link></button>

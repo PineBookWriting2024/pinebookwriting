@@ -176,7 +176,7 @@ export default function HeroFormBookOfferPub() {
           {/* <WavyText text="DO YOU HAVE A MANUSCRIPT READY TO BE PUBLISHED?" replay={true} style={{ color: 'white' }} className="font-poppins text-3xl md:text-5xl text-white font-bold" /> */}
           {/* <FadeIn> */}
           <p className="text-xl text-white pt-4">
-          Are you a first-time author? or a seasoned author looking for an all-inclusive book writing service that can help streamline your author journey? You've come to the right place. At Pine Book Writing, we can turn your idea in a book with our expert ghostwriting service.
+          Are you a first-time author? or a veteran author looking for an all-embracing book writing services that can help simplify your author journey? This is the right place! Pine Book Writing is available to help you turn your idea into the best-selling book with its expert ghostwriting services.
           </p>
           <h4 className="font-poppins text-2xl mt-8 text-white uppercase font-bold">Our Credibility</h4>
           {/* <button className="get-premium-btn" onClick={handleOpenChat}>Get premium book publishing services</button> */}

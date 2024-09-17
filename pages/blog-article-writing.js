@@ -55,7 +55,7 @@ export default function BlogWriting() {
                         
                         <h2 className="font-poppins text-3xl md:text-4xl uppercase font-bold">Professional Article and Blog Writing Services</h2>
                         <h2 className="font-poppins text-2xl md:text-3xl uppercase">
-                            Drive More Traffic & Engagement with
+                            Drive More Traffic & Engagement
                         </h2>
                         <p className="font-poppins text-xl text-left pt-3">Are you a blogger willing to share your experiences or stories with others? Or are you a website owner or marketer searching for professional article and blog writing services to rank your website in search engine results? Pine Book Writing has you covered!</p>
 

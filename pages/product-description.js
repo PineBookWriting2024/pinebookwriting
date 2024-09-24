@@ -79,58 +79,72 @@ export default function ProductDescription () {
                 </p> */}
             </div>
 
-            {/* inner process section start */}
-             {/* <section className="brand-process  mx-auto relative pt-10 text-center flex justify-center mb-12 overflow-hidden">
+              {/* inner process section start */}
+  <section className="brand-process my-10  mx-auto relative pt-10 text-center flex justify-center mb-12 overflow-hidden">
                 <div className="max-w-screen-xl">
                     <div className="text-center mb-6">
-                        <h3 className="text-2xl text-black font-poppins">6-Step Process of Our Ghostwriting Services</h3>
-                        <h2 className="font-poppins text-3xl md:text-4xl text-black font-bold" data-aos="zoom-out-down">6-Step Process of Our Ghostwriting Services</h2>
-                    </div>
-                    <div className="relative" data-aos="fade-left">
-                        <Image src={"/brand-img/process-img1.png"} width={700} height={200} className=" pb-10" ></Image>
-                        <div className="brand-process-content text-left">
-                            <h2 className="font-poppins text-2xl">Project Manager Assigning & Questionnaire</h2>
-                            <p className="">Elevate your manuscript with our editing  <br></br>service that ensures every word tells <br></br>your story the way you intended.</p>
-                        </div>
-                    </div>
-                    <div className="relative" data-aos="fade-right">
-                        <Image src={"/brand-img/process-img2.png"} width={700} height={200} className=" pb-10" ></Image>
-                        <div className="brand-process-content-right text-right">
-                            <h2 className="font-poppins text-2xl">Research & Outlining:</h2>
-                            <p className="">Then, our team of professionals will<br/> conduct in-depth research, create a content outline, and send it to you for your approval.</p>
-                        </div>
-                    </div>
-                    <div className="relative" data-aos="fade-left">
-                        <Image src={"/brand-img/process-img3.png"} width={700} height={200} className=" pb-10"></Image>
-                        <div className="brand-process-content text-left">
-                            <h2 className="font-poppins text-2xl">Proofreading:</h2>
-                            <p className="">Our proofreading team is your safety net, <br></br> catching every slip-up to make your<br></br> writing flawless.</p>
-                        </div>
-                    </div>
-                    <div className="relative" data-aos="fade-right">
-                        <Image src={"/brand-img/process-img4.png"} width={700} height={200} className=" pb-10" ></Image>
-                        <div className="brand-process-content-right text-right">
-                            <h2 className="font-poppins text-2xl">Typesetting & Layout:</h2>
-                            <p className="">Expert typesetting that makes your <br></br>book as easy on the eyes as it is <br></br>engaging for the mind.</p>
-                        </div>
+                        <h3 className="text-2xl text-black font-poppins">Our Service Workflow</h3>
+                        <h2 className="font-poppins text-3xl md:text-4xl text-black font-bold" data-aos="zoom-out-down">6-Step Process of Our Product Copywriting Services</h2>
                     </div>
 
-                    <div className="relative" data-aos="fade-left">
-                        <Image src={"/brand-img/process-img5.png"} width={700} height={200} className=" pb-10"></Image>
-                        <div className="brand-process-content text-left">
-                            <h2 className="font-poppins text-2xl">Cover Design:</h2>
-                            <p className="">We create covers that speak to readers,<br></br> inviting them into the world <br></br>you've created.</p>
+                    <div className="grid grid-cols-3 gap-6 mb-6">
+
+                        <div className="flex flex-row " data-aos="fade-left">
+                            <div className="brand-process-content text-left flex-col px-6 py-10">
+                                <span className="num-span"><b>01</b></span>
+                                <h2 className="font-poppins text-2xl text-white pro-h">Project Consultation</h2>
+                                <p className="">We begin our process by having a detailed discussion with you about your product(s), its key features, and your target audience.</p>
+                            </div>
                         </div>
-                    </div>
-                    <div className="relative" data-aos="fade-right">
-                        <Image src={"/brand-img/process-img6.png"} width={700} height={200} className=" pb-10"></Image>
-                        <div className="brand-process-content-right text-right">
-                            <h2 className="font-poppins text-2xl">Publishing:</h2>
-                            <p className="">Your literary journey culminates with our<br></br> publishing service, placing your book<br></br> in the spotlight it deserves.</p>
+
+                        <div className="flex flex-row" data-aos="fade-left">
+                        <div className="brand-process-content text-left flex-col px-6 py-10">
+                        <span className="num-span"><b>02</b></span>
+                                <h2 className="font-poppins text-2xl text-white pro-h">Product Research</h2>
+                                <p className="">Next, we start in-depth research about your product, its benefits, and features and analyze your competitors to plan an effective strategy.</p>
+                            </div>
                         </div>
+
+                        <div className="flex flex-row" data-aos="fade-left">
+                        <div className="brand-process-content text-left flex-col px-6 py-10">
+                        <span className="num-span"><b>03</b></span>
+                                <h2 className="font-poppins text-2xl text-white pro-h">Keyword Research</h2>
+                                <p className="">Our expert SEO executive will do keyword research to determine which keywords should be used to rank your product in customers' search results.</p>
+                            </div>
+                        </div>
+                        
                     </div>
+
+                    <div className="grid grid-cols-3 gap-6 mb-6" >
+
+                        <div className="flex flex-row " data-aos="fade-left">
+                        <div className="brand-process-content text-left flex-col px-6 py-10">
+                        <span className="num-span"><b>04</b></span>
+                                <h2 className="font-poppins text-2xl text-white pro-h">Writing & Revision</h2>
+                                <p className="">Then, our writers craft informative yet persuasive copies to spotlight your product's features. We also offer multiple-revisions to ensure absolute satisfaction.</p>
+                            </div>
+                        </div>
+
+                        <div className="flex flex-row" data-aos="fade-left">
+                        <div className="brand-process-content text-left flex-col px-6 py-10">
+                        <span className="num-span"><b>05</b></span>
+                                <h2 className="font-poppins text-2xl text-white pro-h">Proofreading and Editing</h2>
+                                <p className="">We take each copy through our editing and proofreading process to ensure it's errorless, on-point and meets the required length.</p>
+                            </div>
+                        </div>
+
+                        <div className="flex flex-row" data-aos="fade-left">
+                        <div className="brand-process-content text-left flex-col px-6 py-10">
+                        <span className="num-span"><b>06</b></span>
+                                <h2 className="font-poppins text-2xl text-white pro-h">Final Delivery</h2>
+                                <p className="">Finally, we compile each product description copy in a well-formatted document and deliver it to you within the promised delivery time.</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+
                 </div>
-            </section> */}
+            </section>
             
             <section className="overflow-hidden" >
                 <div className="brand-choose-us-section ms-auto relative left-0 md:left-52 px-12 md:px-20 mb-8 py-10 md:mt-16" >

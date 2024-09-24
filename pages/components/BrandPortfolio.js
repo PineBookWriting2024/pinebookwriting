@@ -21,8 +21,6 @@ const books = [
     { id: 10, title: 'Book Ten', category: 'Fiction', imageUrl: 'brand-img/fiction/fiction-10.png' },
     { id: 11, title: 'Book Eleven', category: 'Fiction', imageUrl: 'brand-img/fiction/fiction-11.png' },
     { id: 12, title: 'Book twelve', category: 'Fiction', imageUrl: 'brand-img/fiction/fiction-12.png' },
-
-
     { id: 13, title: 'Book Thirdteen', category: 'Non-Fiction', imageUrl: '/brand-img/Non-Fiction/non-fiction-1.png' },
     { id: 14, title: 'Book Fourteen', category: 'Non-Fiction', imageUrl: '/brand-img/Non-Fiction/non-fiction-2.png' },
     { id: 15, title: 'Book Fifteen', category: 'Non-Fiction', imageUrl: '/brand-img/Non-Fiction/non-fiction-3.png' },
@@ -35,7 +33,6 @@ const books = [
     { id: 22, title: 'Book TwentyTwo', category: 'Non-Fiction', imageUrl: '/brand-img/Non-Fiction/non-fiction-10.png' },
     { id: 23, title: 'Book TwentyThree', category: 'Non-Fiction', imageUrl: '/brand-img/Non-Fiction/non-fiction-11.png' },
     { id: 24, title: 'Book TwentyFour', category: 'Non-Fiction', imageUrl: '/brand-img/Non-Fiction/non-fiction-12.png' },
-
     { id: 25, title: 'Book TwentyFive', category: 'Childer-Book', imageUrl: '/brand-img/Children-Book/children-book-1.png' },
     { id: 26, title: 'Book TwentySix', category: 'Childer-Book', imageUrl: '/brand-img/Children-Book/children-book-2.png' },
     { id: 27, title: 'Book TwentySeven', category: 'Childer-Book', imageUrl: '/brand-img/Children-Book/children-book-3.png' },

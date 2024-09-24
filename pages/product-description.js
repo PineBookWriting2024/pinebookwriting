@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Head from "next/head";
 import Image from "next/image";
+import Link from "next/link";
 import BrandFooter from "./components/BrandFooter";
 import BrandNavbar from "./components/BrandNavbar";
 import BrandBannerLogo from "./components/BrandBannerLogo";
@@ -15,6 +16,9 @@ export default function ProductDescription () {
 
     const toggleFAQ = (index) => {
         setOpenFAQ(openFAQ === index ? null : index);
+    };
+    const handleOpenChat = () => {
+        window.zE && window.zE('webWidget', 'open');
     };
 
     const faqData = [
@@ -154,6 +158,10 @@ export default function ProductDescription () {
                                 </ul>
                             </div>
                             {/* <BrandAudioPlayer src="/brand-img/why-choose-us-voice.wav" /> */}
+                            <div>
+                                <button className="brand-nav-btn-1 brand-nav-btn shadow-xl mt-10 cursor-pointer btn-f" onClick={handleOpenChat}><Link href={'javascript:;'}>Speak to our Consultant</Link></button>
+                                <button className="brand-nav-btn-1 brand-nav-btn shadow-xl mt-10 cursor-pointer btn-f md:ml-3 ml-0"><Link href="tel:+18668417463">Call Now</Link></button>
+                            </div>
                         </div>
                     </div>
                 </div>

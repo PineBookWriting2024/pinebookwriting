@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Head from "next/head";
 import Image from "next/image";
+import Link from "next/link";
 import BrandFooter from "./components/BrandFooter";
 import BrandNavbar from "./components/BrandNavbar";
 import BrandBannerLogo from "./components/BrandBannerLogo";
@@ -11,6 +12,10 @@ import BrandAudioPlayer from "./components/BrandAudioPlayer";
 import NewBrandFooter from "./components/NewBrandFooter";
 
 export default function WebCopywriting () {
+    const handleOpenChat = () => {
+        window.zE && window.zE('webWidget', 'open');
+    };
+    
     const [openFAQ, setOpenFAQ] = useState(0);
 
     const toggleFAQ = (index) => {
@@ -76,58 +81,72 @@ export default function WebCopywriting () {
                 </p> */}
             </div>
 
-            {/* inner process section start */}
-             {/* <section className="brand-process  mx-auto relative pt-10 text-center flex justify-center mb-12 overflow-hidden">
+             {/* inner process section start */}
+             <section className="brand-process my-10  mx-auto relative pt-10 text-center flex justify-center mb-12 overflow-hidden">
                 <div className="max-w-screen-xl">
                     <div className="text-center mb-6">
-                        <h3 className="text-2xl text-black font-poppins">6-Step Process of Our Ghostwriting Services</h3>
-                        <h2 className="font-poppins text-3xl md:text-4xl text-black font-bold" data-aos="zoom-out-down">6-Step Process of Our Ghostwriting Services</h2>
-                    </div>
-                    <div className="relative" data-aos="fade-left">
-                        <Image src={"/brand-img/process-img1.png"} width={700} height={200} className=" pb-10" ></Image>
-                        <div className="brand-process-content text-left">
-                            <h2 className="font-poppins text-2xl">Project Manager Assigning & Questionnaire</h2>
-                            <p className="">Elevate your manuscript with our editing  <br></br>service that ensures every word tells <br></br>your story the way you intended.</p>
-                        </div>
-                    </div>
-                    <div className="relative" data-aos="fade-right">
-                        <Image src={"/brand-img/process-img2.png"} width={700} height={200} className=" pb-10" ></Image>
-                        <div className="brand-process-content-right text-right">
-                            <h2 className="font-poppins text-2xl">Research & Outlining:</h2>
-                            <p className="">Then, our team of professionals will<br/> conduct in-depth research, create a content outline, and send it to you for your approval.</p>
-                        </div>
-                    </div>
-                    <div className="relative" data-aos="fade-left">
-                        <Image src={"/brand-img/process-img3.png"} width={700} height={200} className=" pb-10"></Image>
-                        <div className="brand-process-content text-left">
-                            <h2 className="font-poppins text-2xl">Proofreading:</h2>
-                            <p className="">Our proofreading team is your safety net, <br></br> catching every slip-up to make your<br></br> writing flawless.</p>
-                        </div>
-                    </div>
-                    <div className="relative" data-aos="fade-right">
-                        <Image src={"/brand-img/process-img4.png"} width={700} height={200} className=" pb-10" ></Image>
-                        <div className="brand-process-content-right text-right">
-                            <h2 className="font-poppins text-2xl">Typesetting & Layout:</h2>
-                            <p className="">Expert typesetting that makes your <br></br>book as easy on the eyes as it is <br></br>engaging for the mind.</p>
-                        </div>
+                        <h3 className="text-2xl text-black font-poppins">Our Service Workflow</h3>
+                        <h2 className="font-poppins text-3xl md:text-4xl text-black font-bold" data-aos="zoom-out-down">6-Step Process of Our Web Content Writing Services</h2>
                     </div>
 
-                    <div className="relative" data-aos="fade-left">
-                        <Image src={"/brand-img/process-img5.png"} width={700} height={200} className=" pb-10"></Image>
-                        <div className="brand-process-content text-left">
-                            <h2 className="font-poppins text-2xl">Cover Design:</h2>
-                            <p className="">We create covers that speak to readers,<br></br> inviting them into the world <br></br>you've created.</p>
+                    <div className="grid grid-cols-3 gap-6 mb-6">
+
+                        <div className="flex flex-row " data-aos="fade-left">
+                            <div className="brand-process-content text-left flex-col px-6 py-10">
+                                <span className="num-span"><b>01</b></span>
+                                <h2 className="font-poppins text-2xl text-white pro-h">Project Brief</h2>
+                                <p className="">Our service process begins with sending you a web content writing questionnaire to understand your business, audience, and other preferences.</p>
+                            </div>
                         </div>
-                    </div>
-                    <div className="relative" data-aos="fade-right">
-                        <Image src={"/brand-img/process-img6.png"} width={700} height={200} className=" pb-10"></Image>
-                        <div className="brand-process-content-right text-right">
-                            <h2 className="font-poppins text-2xl">Publishing:</h2>
-                            <p className="">Your literary journey culminates with our<br></br> publishing service, placing your book<br></br> in the spotlight it deserves.</p>
+
+                        <div className="flex flex-row" data-aos="fade-left">
+                        <div className="brand-process-content text-left flex-col px-6 py-10">
+                        <span className="num-span"><b>02</b></span>
+                                <h2 className="font-poppins text-2xl text-white pro-h">Thorough Research</h2>
+                                <p className="">Once we get all the details, our writers will conduct deep research about your industry to understand your brand, audience and unique voice fully.</p>
+                            </div>
                         </div>
+
+                        <div className="flex flex-row" data-aos="fade-left">
+                        <div className="brand-process-content text-left flex-col px-6 py-10">
+                        <span className="num-span"><b>03</b></span>
+                                <h2 className="font-poppins text-2xl text-white pro-h">Content Planning</h2>
+                                <p className="">After research, we create a robust content strategy that fully aligns with your unique business goals and objectives.</p>
+                            </div>
+                        </div>
+                        
                     </div>
+
+                    <div className="grid grid-cols-3 gap-6 mb-6" >
+
+                        <div className="flex flex-row " data-aos="fade-left">
+                        <div className="brand-process-content text-left flex-col px-6 py-10">
+                        <span className="num-span"><b>04</b></span>
+                                <h2 className="font-poppins text-2xl text-white pro-h">Copywriting</h2>
+                                <p className="">Then, we assign your web content writing task to our best-fit writer, who has prior writing experience for your particular business niche.</p>
+                            </div>
+                        </div>
+
+                        <div className="flex flex-row" data-aos="fade-left">
+                        <div className="brand-process-content text-left flex-col px-6 py-10">
+                        <span className="num-span"><b>05</b></span>
+                                <h2 className="font-poppins text-2xl text-white pro-h">Refining & Revision</h2>
+                                <p className="">After completing the write-up, we take our content through our proficient editing process to ensure it is error-free and plagiarism-free.</p>
+                            </div>
+                        </div>
+
+                        <div className="flex flex-row" data-aos="fade-left">
+                        <div className="brand-process-content text-left flex-col px-6 py-10">
+                        <span className="num-span"><b>06</b></span>
+                                <h2 className="font-poppins text-2xl text-white pro-h">Final Delivery</h2>
+                                <p className="">Lastly, we deliver your website copy in your preferred format with a PDF report of readability score and plagiarism to ensure your satisfaction.</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+
                 </div>
-            </section> */}
+            </section>
             
             <section className="overflow-hidden" >
                 <div className="brand-choose-us-section ms-auto relative left-0 md:left-52 px-12 md:px-20 mt-0 md:mt-14 mb-8 py-10 " >
@@ -155,6 +174,10 @@ export default function WebCopywriting () {
                                 </ul>
                             </div>
                             {/* <BrandAudioPlayer src="/brand-img/why-choose-us-voice.wav" /> */}
+                            <div>
+                                <button className="brand-nav-btn-1 brand-nav-btn shadow-xl mt-10 cursor-pointer btn-f" onClick={handleOpenChat}><Link href={'javascript:;'}>Speak to our Consultant</Link></button>
+                                <button className="brand-nav-btn-1 brand-nav-btn shadow-xl mt-10 cursor-pointer btn-f md:ml-3 ml-0"><Link href="tel:+18668417463">Call Now</Link></button>
+                            </div>
                         </div>
                     </div>
                 </div>

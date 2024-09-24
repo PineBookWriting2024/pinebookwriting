@@ -171,7 +171,7 @@ export default function BrandServices() {
                     </div>
 
                     <div className="text-center mt-6">
-                        <button className="brand-nav-btn shadow-xl mt-10 cursor-pointer btn-g"><Link href="/services">Read More</Link></button>
+                        <button className="brand-nav-btn shadow-xl mt-10 cursor-pointer btn-g"><Link href="/services">More Services</Link></button>
                     </div>
 
                     {/* 6 of 8 */}

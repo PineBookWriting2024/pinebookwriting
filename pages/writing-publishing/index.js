@@ -82,6 +82,7 @@ import HeroFormBookOfferPub from "../components/HerformBookOfferPub";
 import StoryPub from "../components/StoryPub";
 import FaqPub from "../components/FaqPub";
 import NewBrandFooter from "../components/NewBrandFooter";
+import BookGenres from "../components/BookGenres";
 
 
 const HeavyComponent = dynamic(() => import('../components/hero'), {
@@ -549,7 +550,7 @@ export default function Home() {
 
         <PopupBundle isOpen={isModalOpen} onClose={closeModal} service={selectedService} />
 
-        <section className="about pt-14 overflow-hidden">
+        <section className="about pt-14 pb-14 overflow-hidden">
           <div className="container mx-auto px-5 md:px-0 w-100 lg:w-5/6">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 items-center">
               {/* <AnimateFade type={"top"}> */}
@@ -576,7 +577,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="book-joun relative p-5 rounded-lg md:p-10 mb-9">
+            {/* <div className="book-joun relative p-5 rounded-lg md:p-10 mb-9">
               <div className="text-center">
                 <Swiper
                   className="px-20"
@@ -746,18 +747,22 @@ export default function Home() {
                 <div className="bk-sil prev cursor-pointer" onClick={() => swiperRef3.current?.slidePrev()}><FontAwesomeIcon icon={faArrowLeft} /></div>
                 <div className="bk-sil next cursor-pointer" onClick={() => swiperRef3.current?.slideNext()}><FontAwesomeIcon icon={faArrowRight} /></div>
               </div>
-            </div>
+            </div> */}
           </div>
         </section>
+
+      
+
+        <BookGenres/>
 
         <section className="portfolio overflow-hidden	 py-14">
           <div className="grid grid-cols-1 ">
             <div className="container mx-auto text-center">
               <div className="portfolio-h m1-h">
-                <h3 className="font-poppins text-3xl md:text-4xl">
-                  Unveiling Our Authors’ Creations:
+                <h3 className="font-poppins text-3xl md:text-4xl leading-10">
+                  Unveiling Our Authors’ Creations
                   <br />
-                  <span>Book Showcase</span>
+                  <span className="leading font-semibold">Book Showcase</span>
                 </h3>
               </div>
 
@@ -862,7 +867,7 @@ export default function Home() {
           <div className="container mx-auto max-w-screen-xl">
             <div className="grid items-center grid-cols-1 text-center m1-h">
               <h3 className="text-3xl font-poppins md:text-4xl font-bold">
-              Affordable Book Writing Service Packages
+              Affordable Book Writing Packages
               </h3>
               <h4 class="text-xl font-poppins md:text-xl font-bold mt-4">Limited Time Offers – Save  <span class="blink_me fw-bold text-2xl">50%</span> on Book writing Services</h4>
             </div>

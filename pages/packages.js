@@ -18,6 +18,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import PopupBundle from "./components/PopupBundle";
 import BrandFaqs from "./components/BrandFaqs";
 import NewBrandFooter from "./components/NewBrandFooter";
+import BrandTopBar from "./components/BrandTopBar";
 
 
 export default function Bundle({ isOpen, onClose, service }) {
@@ -84,6 +85,7 @@ export default function Bundle({ isOpen, onClose, service }) {
             </Head>
             {/* <Popup isOpen={isModalOpen} onClose={closeModal} service={selectedService} /> */}
             <PopupBundle isOpen={isModalOpen} onClose={closeModal} service={selectedService} />
+            <BrandTopBar />
             <BrandNavbar />
             <BrandPrimaryHeader
                 photo_banner={"brand-img/bundles-banner.jpg"}
@@ -584,7 +586,7 @@ export default function Bundle({ isOpen, onClose, service }) {
 
             <NewServicesBrand />
 
-            <BrandFaqs />
+            {/* <BrandFaqs /> */}
             <BrandContact />
             {/* <BrandFooter /> */}
             <NewBrandFooter />

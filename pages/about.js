@@ -10,6 +10,7 @@ import BrandContact from "./components/BrandContactForm";
 import BrandPrimaryHeader from "./components/BrandPrimaryHeader";
 import BrandFaqs from "./components/BrandFaqs";
 import NewBrandFooter from "./components/NewBrandFooter";
+import BrandTopBar from "./components/BrandTopBar";
 
 // import aboutBanner from "../public/brand-img/abt-banner.jpg";
 
@@ -49,6 +50,7 @@ export default function About() {
                 />
                 <link rel="shortcut icon" href="/images/fav.webp" />
             </Head>
+            <BrandTopBar/>
             <BrandNavbar />
             <BrandPrimaryHeader
                 photo_banner={"brand-img/abt-banner.jpg"}

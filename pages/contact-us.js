@@ -6,6 +6,7 @@ import BrandFooter from "./components/BrandFooter";
 import BrandPrimaryHeader from "./components/BrandPrimaryHeader";
 import BrandNavbar from "./components/BrandNavbar";
 import NewBrandFooter from "./components/NewBrandFooter";
+import BrandTopBar from "./components/BrandTopBar";
 
 export default function Contact() {
 
@@ -21,6 +22,7 @@ export default function Contact() {
                 />
                 <link rel="shortcut icon" href="/images/fav.webp" />
             </Head>
+            <BrandTopBar />
             <BrandNavbar />
             <BrandPrimaryHeader 
               photo_banner={"brand-img/contact-banner.jpg"}

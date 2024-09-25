@@ -10,6 +10,7 @@ import BrandPrimaryHeader from "./components/BrandPrimaryHeader";
 import BrandProcess from "./components/BrandProcess";
 import BrandAudioPlayer from "./components/BrandAudioPlayer";
 import NewBrandFooter from "./components/NewBrandFooter";
+import BrandTopBar from "./components/BrandTopBar";
 
 export default function BookEditing() {
     const handleOpenChat = () => {
@@ -46,6 +47,7 @@ export default function BookEditing() {
                 />
                 <link rel="shortcut icon" href="/images/fav.webp" />
                 </Head>
+            <BrandTopBar />
             <BrandNavbar />
             <BrandPrimaryHeader
                 photo_banner={"/brand-img/ghostwriting.png"}

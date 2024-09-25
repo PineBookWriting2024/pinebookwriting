@@ -13,6 +13,7 @@ import BrandPortfolio from "./components/BrandPortfolio";
 import BrandCTA from "./components/BrandCTA";
 import BrandProcess from "./components/BrandProcess";
 import NewBrandFooter from "./components/NewBrandFooter";
+import BrandTopBar from "./components/BrandTopBar";
 
 export default function Portfolio() {
     const [openFAQ, setOpenFAQ] = useState(0);
@@ -47,6 +48,7 @@ export default function Portfolio() {
                 />
                 <link rel="shortcut icon" href="/images/fav.webp" />
             </Head>
+            <BrandTopBar />
             <BrandNavbar />
             <BrandPrimaryHeader
                 photo_banner={"brand-img/port-banner.jpg"}
@@ -55,12 +57,12 @@ export default function Portfolio() {
             />
             <BrandBannerLogo />
             <BrandPortfolio />
-            <BrandCTA
+            {/* <BrandCTA
                 title="Ready to Tell Your Story to the World?"
                 desc="Don’t wait anymore. Just give us a call and let our expert writers blow breathe life into your idea."
                 btntext="Speak to our Consultant"
-            />
-            <BrandFaqs/>
+            /> */}
+            {/* <BrandFaqs/> */}
             <BrandContact />
             {/* <BrandFooter /> */}
             <NewBrandFooter />

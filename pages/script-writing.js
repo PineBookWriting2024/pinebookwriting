@@ -10,6 +10,7 @@ import BrandProcess from "./components/BrandProcess";
 import BrandAudioPlayer from "./components/BrandAudioPlayer";
 import NewBrandFooter from "./components/NewBrandFooter";
 import Link from "next/link";
+import BrandTopBar from "./components/BrandTopBar";
 
 export default function ScriptWriting () {
 
@@ -47,6 +48,7 @@ export default function ScriptWriting () {
                 />
                 <link rel="shortcut icon" href="/images/fav.webp" />
                 </Head>
+                <BrandTopBar/>
             <BrandNavbar />
             <BrandPrimaryHeader
                  photo_banner={"/brand-img/script-writing-banner.png"}

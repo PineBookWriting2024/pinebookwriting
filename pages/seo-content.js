@@ -10,6 +10,7 @@ import BrandProcess from "./components/BrandProcess";
 import BrandAudioPlayer from "./components/BrandAudioPlayer";
 import NewBrandFooter from "./components/NewBrandFooter";
 import Link from "next/link";
+import BrandTopBar from "./components/BrandTopBar";
 
 export default function SeoCopywriting () {
     const handleOpenChat = () => {
@@ -46,6 +47,7 @@ export default function SeoCopywriting () {
                 />
                 <link rel="shortcut icon" href="/images/fav.webp" />
                 </Head>
+                <BrandTopBar/>
             <BrandNavbar />
             <BrandPrimaryHeader
                             photo_banner={"/brand-img/seo-content.png"}

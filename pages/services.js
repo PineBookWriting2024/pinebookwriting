@@ -12,6 +12,7 @@ import BrandProcess from "./components/BrandProcess";
 import BrandFaqs from "./components/BrandFaqs";
 import BrandServices from "./components/BrandServices";
 import NewBrandFooter from "./components/NewBrandFooter";
+import BrandTopBar from "./components/BrandTopBar";
 
 export default function Services() {
 
@@ -26,6 +27,7 @@ export default function Services() {
                 />
                 <link rel="shortcut icon" href="/images/fav.webp" />
             </Head>
+            <BrandTopBar />
             <BrandNavbar />
             <BrandPrimaryHeader
                 photo_banner={"brand-img/services-banner.jpg"}

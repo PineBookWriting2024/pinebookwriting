@@ -10,6 +10,7 @@ import BrandPrimaryHeader from "./components/BrandPrimaryHeader";
 import BrandProcess from "./components/BrandProcess";
 import BrandAudioPlayer from "./components/BrandAudioPlayer";
 import NewBrandFooter from "./components/NewBrandFooter";
+import BrandTopBar from "./components/BrandTopBar";
 
 export default function SocialMediaCopywriting() {
     
@@ -47,6 +48,7 @@ const handleOpenChat = () => {
                 />
                 <link rel="shortcut icon" href="/images/fav.webp" />
             </Head>
+            <BrandTopBar/>
             <BrandNavbar />
             <BrandPrimaryHeader
                 photo_banner={"/brand-img/social-media-copywriting.png"}

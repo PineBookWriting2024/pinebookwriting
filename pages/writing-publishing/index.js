@@ -3,7 +3,6 @@ import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import Head from "next/head";
-
 import "swiper/css/effect-coverflow";
 import Header from "../components/header";
 import Hero from "../components/hero";

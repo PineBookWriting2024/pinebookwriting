@@ -913,13 +913,18 @@ span.num-span {
   margin-bottom: 12px;
 }
 
-
 .genres-icon.border.genres-icon-ho:hover {
-  background: #147d6e;
-  transition: 0.5s;
+  background: #000000;
+  transition: 1s;
   transform: scale(0.9);
 }
-/* 
+
 .genres-icon-ho:hover img {
-  filter: brightness(100%) !important;
-} */
+  filter: invert(1) !important;
+  transition: 1s;
+}
+
+.genres-icon-ho:hover h4 span {
+  color: #fff;
+  transition: 1s;
+}

@@ -97,7 +97,7 @@ export default function BookGenres () {
 
             <div className="grid md:grid-cols-5 grid-cols-2 md:gap-6 gap-3">
                   {filteredBooks.map(book => (
-                    <div className='genres-icon border' key={book.id} >
+                    <div className='genres-icon border genres-icon-ho' key={book.id} >
 
                      
                           <Image src={book.imageUrl} className="genres-pic text-center mx-auto" height={"90"} width={"90"}></Image>

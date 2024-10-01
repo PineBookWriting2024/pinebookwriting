@@ -88,7 +88,7 @@ export default function BookEditing() {
              <section className="brand-process my-10  mx-auto relative pt-10 text-center flex justify-center mb-12 overflow-hidden">
                 <div className="max-w-screen-xl">
                     <div className="text-center mb-6">
-                        <h3 className="text-2xl text-black font-poppins">6-Step Process of Our Ghostwriting Services</h3>
+                        <h3 className="text-2xl text-black font-poppins">Our Service Workflow</h3>
                         <h2 className="font-poppins text-3xl md:text-4xl text-black font-bold" data-aos="zoom-out-down">6-Step Process of Our Ghostwriting Services</h2>
                     </div>
 

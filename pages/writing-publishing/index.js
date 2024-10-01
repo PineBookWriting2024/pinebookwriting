@@ -1403,9 +1403,6 @@ export default function Home() {
           </div>
         </section>
 
-
-
-
         <section className="book-publishing-cta-section mx-auto md:px-6 py-10 md:py-0 relative">
           <div className="container flex items-center flex-col md:flex-row max-w-screen-xl mx-auto">
             <div className="basis-1/2 text-center flex justify-end">
@@ -1423,70 +1420,6 @@ export default function Home() {
             </div>
           </div>
         </section>
-
-
-        {/* process section start */}
-
-        {/* <section className="process pt-14">
-          <div className="container mx-auto text-center m1-h ">
-            <h3 className="font-poppins text-3xl md:text-4xl">
-              Our Book Publishing Process
-            </h3>
-            <p className="pt-2">
-              At Pine Book Writing, we've streamlined Our Book Publishing
-              Process to <br></br>ensure authors have a seamless experience from start to
-              finish.
-            </p>
-            <Image
-              className="py-10 book-publishing-infograph-img"
-              src={"/images/processs.gif"}
-              width={1280}
-              height={400}
-              loading="lazy"
-              alt="process"
-            ></Image>
-          </div>
-
-          <div className="counter -mb-16">
-            <div className="container mx-auto">
-              <div className="mt-6 grid grid-cols-1 px-6 gap-y-10 sm:grid-cols-2 mx-5 lg:grid-cols-4 xl:gap-x-8">
-                <div className="conter-box rounded-lg bg-white py-8 px-5 text-center content-center" >
-                  <h2 className="text-xl">
-                    <Counter from={0} to={15} val={"+"} />
-                  </h2>
-                  <span className="text-sm">
-                    Years of industry experience
-                  </span>
-                </div>
-
-                <div className="conter-box rounded-lg bg-white py-8 px-5 text-center content-center" >
-                  <h2>
-                    <Counter from={0} to={500} val={"+"} />
-                  </h2>
-                  <span className="text-sm">Published Books</span>
-                </div>
-
-                <div className="conter-box rounded-lg bg-white py-8 px-5 text-center content-center" >
-                  <h2>
-                    <Counter from={0} to={100} val={"+"} />
-                  </h2>
-                  <span className="text-sm">Ongoing Clients</span>
-                </div>
-
-                <div className="conter-box rounded-lg bg-white py-8 px-5 text-center content-center" >
-                  <h2>
-                    <Counter from={0} to={99} val={"+"} />
-                  </h2>
-                  <span className="text-sm">Client Satisfaction Rate</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section> */}
-
-        {/* process section end */}
-
-
 
         {/* new process start */}
         <section className="my-7 md:py-20 overflow-hidden">
@@ -1561,105 +1494,10 @@ export default function Home() {
 
         <FaqPub/>
 
-        {/* <section className="btm-form overflow-hidden width-container">
-          <div className="container mx-auto px-8 md:px-20">
-            <div className="form-mid-wrap pt-4 bg-gray-200 connect-form-border mb-12">
-              <div className="flex flex-col md:flex-row items-end">
-                <div className="basis-1/3 hidden md:block position-relative">
-                  <Image
-                    className="text-center pt-10 contact-form-img"
-                    src={"/images/contact-user.webp"}
-                    width={550}
-                    height={250}
-                    layout="responsive"
-                    loading="lazy"
-                  ></Image>
-                </div>
-
-                <form className="basis-1/2 px-5 mb-5  md:ml-20" onSubmit={handleSubmit}>
-                  <h3 className="text-black leading-20 font-bold text-4xl md:text-4xl font-poppins text-start">
-                    Connect Us Now!
-                  </h3>
-                  <p className="text-black leading-6  pb-5 text-base pt-2">
-                    Have questions? Reach out to Pine Book Writing for
-                    personalized assistance.
-                  </p>
-
-                  <div className="relative mb-3">
-                    <input
-                      type="text"
-                      name="fullName"
-                      onChange={handleChange}
-                      value={fullName}
-                      required
-                      className="pl-4 pr-4 py-2 border rounded-lg w-full connect-form-input"
-                      placeholder="Enter your Name"
-                    />
-                  </div>
-
-                  <div className="relative mb-3">
-                    <input
-                      type="text"
-                      name="phoneNumber"
-                      onChange={handleChange}
-                      value={phoneNumber}
-                      required
-                      className="pl-4 pr-4 py-2 border rounded-lg w-full connect-form-input"
-                      placeholder="Enter your Number"
-                    />
-                    {phoneError && (
-                      <span className="text-red-500 text-md mt-1">{phoneError}</span>
-                    )}
-                  </div>
-
-                  <div className="relative mb-3">
-                    <input
-                      type="text" 
-                      name="email"
-                      onChange={handleChange}
-                      value={email}
-                      required
-                      className="pl-4 pr-4 py-2 border rounded-lg w-full connect-form-input"
-                      placeholder="Enter your Email"
-                    />
-                  </div>
-
-                  <div className="relative mb-3">
-                    <textarea
-                      onChange={handleChange}
-                      value={message}
-                      required
-                      placeholder="Enter your Message"
-                      name="message"
-                      className="resize-none pl-4 pr-4 py-2 border rounded-lg w-full connect-form-input"
-                      rows={3}
-                    ></textarea>
-                    <div
-                      className="absolute inset-y-0 left-0 pl-3 pt-3 
-                              flex items-start  
-                              pointer-events-none"
-                    ></div>
-                  </div>
-                  {showSuccess && (
-                    <p className="px-1 py-2 text-green-700">
-                      Form submitted Successfully!
-                    </p>
-                  )}
-                  <button className="p-4 w-full bg-green-500 uppercase text-white rounded submit-btn mb-10" type="submit">
-                    Submit
-                  </button>
-                </form>
-              </div>
-            </div>
-          </div>
-        </section> */}
-
+       
         <BrandContact />
 
         <NewBrandFooter/>
-
-        {/* <motion.p className="font-acumin text-5xl text-center text-black leading-loose font-bold hover:text-[#EBFA0B]" ref={nodeRef} >{rounded}<Counter from={100} to={1000} val={"10"} />100</motion.p> */}
-
       </main>
     </>
   );

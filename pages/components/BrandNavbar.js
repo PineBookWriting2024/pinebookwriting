@@ -140,6 +140,7 @@ export default function BrandNavbar() {
                             <Image className='logo' src={'/brand-img/logo.png'} width={200} height={80} alt="brand logo" loading="lazy" />
                         </Link>
                     </div>
+                    
                     <div className="md:hidden">
                         <button
                             onClick={() => setIsOpen(!isOpen)}

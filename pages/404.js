@@ -25,19 +25,22 @@ const notFound = () => {
               <div className='container mx-auto'>
               <div className='grid grid-cols-1 xl:grid-cols-2 gap-5 items-center'>
                             
-              <div class="box1 ">
-              <h1 className='font-poppins text-3xl md:text-4xl uppercase font-bold'>Pages not found</h1>
-              <p className='font-poppins text-xl text-left pt-3'>Pine Book Writing, a professional book writing agency founded on February 22, 2023, has been on a mission to provide expert ghostwriting services to new and seasoned authors to help them thrive in the world of literacy. </p>
-              <div>
-                    <button className="brand-nav-btn shadow-xl mt-10 cursor-pointer btn-g"><Link href="/">Back To Home</Link></button>
-                </div>
-              </div>
+             
 
               <div class="box">
-              <Image src={"/images/About-us-img.png"} width={100} height={200}
+              <Image src={"/images/404-img.png"} width={600} height={600}
                 layout="responsive"
                 loading="lazy"
                 alt="about img"/>
+              </div>
+
+
+              <div class="box1 ">
+              <h1 className='font-poppins text-3xl md:text-6xl uppercase font-bold'>Lost in the plot?</h1>
+              <p className='font-poppins text-xl text-left pt-3 w-8/12'>This page is not a part of our story. Let’s go back to writing yours!</p>
+              <div>
+                    <button className="brand-nav-btn shadow-xl mt-10 cursor-pointer btn-g"><Link href="/">Back To Home</Link></button>
+                </div>
               </div>
 
               

@@ -21,7 +21,7 @@ const notFound = () => {
                 </div>
             </header>
 
-            <section class="overflow-hidden my-10">
+            <section class="sec404 overflow-hidden">
               <div className='container mx-auto'>
               <div className='grid grid-cols-1 xl:grid-cols-2 gap-5 items-center'>
                             

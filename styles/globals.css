@@ -934,7 +934,7 @@ span.num-span {
 /* 404 header css*/ 
 .header-404 {
   background: #127271;
-  position: relative;
+  position: absolute;
 }
 
 .copyright-sec-404 {
@@ -945,4 +945,10 @@ span.num-span {
 
 .box img {
   width: 90% !important;
+}
+
+section.sec404 {
+  height: 100vh;
+  display: flex;
+  align-items: center;
 }

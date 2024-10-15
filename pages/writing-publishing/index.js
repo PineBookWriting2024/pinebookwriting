@@ -80,7 +80,7 @@ import PopupBundle from "../components/PopupBundle";
 import HeroFormBookOfferPub from "../components/HerformBookOfferPub";
 import StoryPub from "../components/StoryPub";
 import FaqPub from "../components/FaqPub";
-import NewBrandFooter from "../components/NewBrandFooter";
+import NewBrandFooterPub from "../components/NewBrandFooterPub";
 import BookGenres from "../components/BookGenres";
 
 
@@ -941,7 +941,7 @@ export default function Home() {
                   <div className="single-packages-footer flex  w-100 justify-center">
                     <div >
                       <h5 className="text-xl">Share your idea!</h5>
-                      <p className="text-md text-black"><Link href="tel:(866)-841-7463">(866)-841-7463</Link></p>
+                      <p className="text-md text-black"><Link href="tel:(888) 786-7135">(888) 786-7135</Link></p>
                     </div>
                     <span className="border-line mx-8"></span>
                     <div>
@@ -1014,7 +1014,7 @@ export default function Home() {
                   <div className="single-packages-footer flex  w-100 justify-center">
                     <div >
                       <h5 className="text-xl">Share your idea!</h5>
-                      <p className="text-md text-black"><Link href="tel:(866)-841-7463">(866)-841-7463</Link></p>
+                      <p className="text-md text-black"><Link href="tel:(888) 786-7135">(888) 786-7135</Link></p>
                     </div>
                     <span className="border-line mx-8"></span>
                     <div>
@@ -1093,7 +1093,7 @@ export default function Home() {
                   <div className="single-packages-footer flex  w-100 justify-center">
                     <div >
                       <h5 className="text-xl">Share your idea!</h5>
-                      <p className="text-md text-black"><Link href="tel:(866)-841-7463">(866)-841-7463</Link></p>
+                      <p className="text-md text-black"><Link href="tel:(888) 786-7135">(888) 786-7135</Link></p>
                     </div>
                     <span className="border-line mx-8"></span>
                     <div>
@@ -1414,7 +1414,7 @@ export default function Home() {
               </p>
               <div className="flex gap-6 md:justify-start justify-center">
                 <button className="package-get-started-btn text-md mt-5" onClick={handleOpenChat}><Link href={'javascript:;'}>Talk to an Expert</Link></button>
-                <button className="package-get-started-btn text-md mt-5"><Link href="tel:(866)-841-7463">(866)-841-7463</Link></button>
+                <button className="package-get-started-btn text-md mt-5"><Link href="tel:(888) 786-7135">(888) 786-7135</Link></button>
               </div>
             </div>
           </div>
@@ -1496,7 +1496,7 @@ export default function Home() {
        
         <BrandContact />
 
-        <NewBrandFooter/>
+        <NewBrandFooterPub/>
       </main>
     </>
   );

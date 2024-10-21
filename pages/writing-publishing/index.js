@@ -555,13 +555,20 @@ export default function Home() {
               {/* <AnimateFade type={"top"}> */}
               <div className="abt-txt m1-h p1">
                 <h3 className="font-poppins text-3xl md:text-5xl font-bold">
-                About<span>Pine Book Writing</span>
+                  About<span>Pine Book Writing</span>
                 </h3>
                 <p className="pt-3">
-                Pine Book Writing was founded on February 22, 2023, with the mission of providing quality writing services to the authors worldwide. Our founders noticed that many authors need help to write a book that can stand out in the crowded marketplace. They had a vision of creating a company that would help these authors bring their ideas to life and turn them into successful books. That was when Pine Book Writing was officially established with a mission of providing authors with the best Book Writing experience.<br/><br/>
+                  Pine Book Writing was founded on February 22, 2023, with the mission of providing quality writing services to the authors worldwide. Our founders noticed that many authors need help to write a book that can stand out in the crowded marketplace. They had a vision of creating a company that would help these authors bring their ideas to life and turn them into successful books. That was when Pine Book Writing was officially established with a mission of providing authors with the best Book Writing experience.<br /><br />
 
-                We have a qualified team of professionals who will work hand-in-hand with you from the moment you decide to write your book until the moment it is known to the world.
+                  We have a qualified team of professionals who will work hand-in-hand with you from the moment you decide to write your book until the moment it is known to the world.
                 </p>
+
+                <div class="flex gap-6" bis_skin_checked="1">
+                  <button class="book-publishing-cta-btn-3 shadow-xl mt-10 cursor-pointer bg-white">
+                    <a href="javascript:;">Talk to an Expert</a></button>
+                  <button class="book-publishing-cta-btn-2 shadow-xl mt-10 cursor-pointer bg-white">
+                    <a href="tel:8887867135">(888)786-7135</a></button>
+                </div>
 
               </div>
               {/* </AnimateFade> */}
@@ -750,9 +757,9 @@ export default function Home() {
           </div>
         </section>
 
-      
 
-        <BookGenres/>
+
+        <BookGenres />
 
         <section className="portfolio overflow-hidden	 py-14">
           <div className="grid grid-cols-1 ">
@@ -866,7 +873,7 @@ export default function Home() {
           <div className="container mx-auto max-w-screen-xl">
             <div className="grid items-center grid-cols-1 text-center m1-h">
               <h3 className="text-3xl font-poppins md:text-4xl font-bold">
-              Affordable Book Writing Packages
+                Affordable Book Writing Packages
               </h3>
               <h4 class="text-xl font-poppins md:text-xl font-bold mt-4">Limited Time Offers – Save  <span class="blink_me fw-bold text-2xl">50%</span> on Book writing Services</h4>
             </div>
@@ -880,9 +887,9 @@ export default function Home() {
                 <div className="single-packages relative">
 
                   <h4 className="text-2xl font-poppins mb-6 text-center pt-4 pb-4 hover-top-vector relative">Silver Package <br />
-                  <button class="tag-50-per-off"><del class="text-red italic">$3,000 USD</del> | <span class="blink_me">$1,499 USD</span></button></h4>
-                  
-                  
+                    <button class="tag-50-per-off"><del class="text-red italic">$3,000 USD</del> | <span class="blink_me">$1,499 USD</span></button></h4>
+
+
                   <div className="single-packages-content px-10">
 
                     <div className="flex gap-2 mb-5 items-center">
@@ -952,10 +959,10 @@ export default function Home() {
                 </div>
 
                 <div className="single-packages relative">
-                  <h4 className="text-2xl font-poppins mb-6 text-center pt-4 pb-4 hover-top-vector relative">Gold Package <br /> 
-                  <button class="tag-50-per-off"><del class="text-red italic">$4,500 USD</del> | <span class="blink_me">$2,249 USD</span></button>
+                  <h4 className="text-2xl font-poppins mb-6 text-center pt-4 pb-4 hover-top-vector relative">Gold Package <br />
+                    <button class="tag-50-per-off"><del class="text-red italic">$4,500 USD</del> | <span class="blink_me">$2,249 USD</span></button>
                   </h4>
-                  
+
                   <div className="single-packages-content px-10">
                     <div className="flex gap-2 mb-5 items-center">
                       <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
@@ -1027,7 +1034,7 @@ export default function Home() {
                 <div className="single-packages relative">
                   <Image src={"/images/badge.png"} className="package-badge" width={80} height={80}></Image>
                   <h4 className="text-2xl font-poppins mb-6 text-center pt-4 pb-4 hover-top-vector relative">Platinum Package <br />
-                  <button class="tag-50-per-off"><del class="text-red italic">$6,500 USD</del> | <span class="blink_me">$3,249 USD</span></button>
+                    <button class="tag-50-per-off"><del class="text-red italic">$6,500 USD</del> | <span class="blink_me">$3,249 USD</span></button>
                   </h4>
                   <div className="single-packages-content px-10">
 
@@ -1138,21 +1145,21 @@ export default function Home() {
                             <th className="font-poppins">
                               <div className="heading">
                                 Silver Package
-                                
+
                               </div>
                             </th >
 
                             <th className="font-poppins heading">
                               <div className="heading">
                                 Gold Package
-                               
+
                               </div>
                             </th>
 
                             <th className="font-poppins heading">
                               <div className="heading">
                                 Platinum Package
-                              
+
                               </div>
                             </th>
                           </tr>
@@ -1489,14 +1496,14 @@ export default function Home() {
 
         {/* new process end  */}
 
-        <StoryPub/>
+        <StoryPub />
 
-        <FaqPub/>
+        <FaqPub />
 
-       
+
         <BrandContact />
 
-        <NewBrandFooterPub/>
+        <NewBrandFooterPub />
       </main>
     </>
   );

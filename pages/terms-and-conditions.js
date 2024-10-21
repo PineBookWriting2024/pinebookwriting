@@ -1,5 +1,5 @@
 import Footer from "./components/Footer";
-import PrimaryHeader from "./components/PrimaryHeader";
+import BrandPrimaryHeader from "./components/BrandPrimaryHeader";
 import Header from "./components/header";
 import Link from "next/link";
 import Head from "next/head";
@@ -17,10 +17,14 @@ export default function Privacy() {
                 <link rel="shortcut icon" href="/images/fav.webp" />
             </Head>
             <BrandNavbar />
-            <PrimaryHeader
-                title="Terms and Conditions"
-            />
-            <div className="container privacy-policy mx-auto w-full px-10 md:px-32 pt-64 md:pt-96 mb-20 width-container">
+        
+
+            <BrandPrimaryHeader
+            photo_banner={"brand-img/port-banner.jpg"}
+            title="Terms and Conditions "/>
+
+                
+            <div className="container privacy-policy mx-auto w-full px-10 md:px-32 pt-14 mb-20 width-container">
                 {/* <h1 className="font-poppins">Terms and Conditions</h1> */}
                 <h2 className="font-poppins">Acceptance of Terms</h2>
                 <p>

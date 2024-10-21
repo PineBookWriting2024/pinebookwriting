@@ -1,6 +1,6 @@
 import BrandFooter from "./components/BrandFooter";
 import Footer from "./components/Footer";
-import PrimaryHeader from "./components/PrimaryHeader";
+import BrandPrimaryHeader from "./components/BrandPrimaryHeader";
 import Header from "./components/header";
 import Head from "next/head";
 import BrandNavbar from "./components/BrandNavbar";
@@ -16,10 +16,15 @@ export default function Privacy() {
                 <link rel="shortcut icon" href="/images/fav.webp" />
             </Head>
             <BrandNavbar />
-            <PrimaryHeader
+            {/* <PrimaryHeader
                 title="Privacy Policy"
-            />
-            <div className="container privacy-policy mx-auto w-full px-10 md:px-32 pt-64 md:pt-96 mb-20 width-container">
+            /> */}
+
+            <BrandPrimaryHeader
+                photo_banner={"brand-img/port-banner.jpg"}
+                title="Privacy Policy"/>
+
+            <div className="container privacy-policy mx-auto w-full px-10 md:px-32 pt-14 mb-20 width-container">
                 <p>
                     The categories of personal information we gather, how we use it, and who we might share it with are described in this privacy statement. It also explains your options for how your data will be used, the security measures in place to safeguard your information, how to fix informational errors, the confidentiality of the services, and the validity of the content.
                 </p>
@@ -136,8 +141,6 @@ export default function Privacy() {
                 </p>
 
             </div>
-            {/* <Footer /> */}
-            {/* <BrandFooter /> */}
             <NewBrandFooter />
         </>
     );

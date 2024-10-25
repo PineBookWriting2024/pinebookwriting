@@ -966,3 +966,24 @@ section.sec404 {
   padding: 8px 28px;
   box-shadow: 0 1px 5px #191b42;
 }
+
+
+.form-line a {
+  color: #005f60;
+  line-height: 1.5;
+  font-weight: 600;
+}
+
+
+.banner.form-line a
+{
+  color: #000;
+  line-height: 1.5;
+  font-weight: 600;
+}
+
+
+.banner.form-line p
+{
+  color: #fff;
+}

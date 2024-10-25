@@ -232,11 +232,16 @@ export default function BrandHero() {
                                     </p>
                                 )}
                                 <button
-                                    className="w-full p-4 py-2 text-white uppercase header-submit-btn rounded rounded-xl shadow-xl text-xl"
+                                    className="w-full p-4 py-2 text-white uppercase header-submit-btn rounded-xl shadow-xl text-xl"
                                     type="submit"
                                 >
                                     Submit
                                 </button>
+
+                                <div class="form-line banner" >
+                                <p>Message and data rates may apply. Message frequency may vary. Reply HELP for help. Reply STOP to unsubscribe. 
+                                    View <Link href="/privacy-policy">Privacy Policy</Link> & <Link href="/terms-and-conditions" >Terms and Conditions.</Link></p>
+                                </div>
                             </form>
                         </div>
                     </div>

@@ -1,9 +1,13 @@
 /** @type {import('next').NextConfig} */
+
+
 const nextConfig = {
   reactStrictMode: true,
   // images: {
   //   domains: ['imperiumdesigners.com', 'https://videos.ctfassets.net/0g2c0d4v74kt/7JddRckDmiDTFoj2zkuibz/19a06bc6173d8b205ead99ba8b0a0307/'],
   // },
+ compiler: {    styledComponents: true,  },
+
   async redirects() { return [ 
     { source: '/publishing-bundles', destination: '/book-publishing', permanent: true, },
     { source: '/pricing', destination: '/packages', permanent: true, },
@@ -21,7 +25,7 @@ const nextConfig = {
     { source: '/book-cover', destination: '/services', permanent: true, },
     { source: '/audio-book', destination: '/services', permanent: true, },
     { source: '/term-and-condition', destination: '/terms-and-conditions', permanent: true, },
-    { source: '/blog', destination: '/', permanent: false, },
+    // { source: '/blog', destination: '/', permanent: false, },
    ] }, 
 };
 

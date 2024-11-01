@@ -238,10 +238,10 @@ export default function BrandHero() {
                                     Submit
                                 </button>
 
-                                <div class="form-line banner" >
+                                {/* <div class="form-line banner" >
                                 <p>Message and data rates may apply. Message frequency may vary. Reply HELP for help. Reply STOP to unsubscribe. 
                                     View <Link href="/privacy-policy">Privacy Policy</Link> & <Link href="/terms-and-conditions" >Terms and Conditions.</Link></p>
-                                </div>
+                                </div> */}
                             </form>
                         </div>
                     </div>

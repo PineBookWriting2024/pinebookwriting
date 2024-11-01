@@ -1,17 +1,10 @@
 import React, { useEffect, useState } from "react";
 import Head from "next/head";
-import Image from "next/image";
-import BrandFooter from "./components/BrandFooter";
-import BrandAbout from "./components/BrandAbout";
 import BrandNavbar from "./components/BrandNavbar";
 import BrandBannerLogo from "./components/BrandBannerLogo";
-import BrandChooseUs from "./components/BrandChooseUs";
-import BrandFaqs from "./components/BrandFaqs";
 import BrandContact from "./components/BrandContactForm";
 import BrandPrimaryHeader from "./components/BrandPrimaryHeader";
 import BrandPortfolio from "./components/BrandPortfolio";
-import BrandCTA from "./components/BrandCTA";
-import BrandProcess from "./components/BrandProcess";
 import NewBrandFooter from "./components/NewBrandFooter";
 import BrandTopBar from "./components/BrandTopBar";
 

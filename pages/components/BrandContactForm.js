@@ -169,10 +169,10 @@ export default function BrandContact() {
                                     Submit
                                 </button>
 
-                                <div class="form-line" >
+                                {/* <div class="form-line" >
                                 <p>Message and data rates may apply. Message frequency may vary. Reply HELP for help. Reply STOP to unsubscribe. 
                                     View <Link href="/privacy-policy">Privacy Policy</Link> & <Link href="/terms-and-conditions" >Terms and Conditions.</Link></p>
-                                </div>
+                                </div> */}
 
                             </form>
                         </div>

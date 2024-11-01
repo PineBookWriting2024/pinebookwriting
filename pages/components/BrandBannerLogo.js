@@ -25,6 +25,7 @@ export default function BrandBannerLogo() {
                     </div> */}
                     <div className="container mx-auto">
                         <div className="bnd-slider flex py-7 justify-center">
+
                             <Swiper
                                 className="px-20 gap-x-32"
                                 spaceBetween={15}
@@ -169,6 +170,7 @@ export default function BrandBannerLogo() {
                                     </div>
                                 </SwiperSlide>
                             </Swiper>
+                            
                         </div>
                     </div>
                 </div>

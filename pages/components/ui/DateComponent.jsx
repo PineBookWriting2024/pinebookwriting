@@ -1,15 +1,15 @@
-import { formatDate } from '../../../lib/utils'
+// import { formatDate } from '../../../lib/utils'
 
-const DateComponent = ({ dateString, options, ...rest }) => {
-  const formattedDate = formatDate(dateString, options);
+// const DateComponent = ({ dateString, options, ...rest }) => {
+//   const formattedDate = formatDate(dateString, options);
 
-  console.log('Formatted Date:', formattedDate);
+//   console.log('Formatted Date:', formattedDate);
 
-  return (
-    <time dateTime={dateString} {...rest}>
-      {formatDate(dateString, options)}
-    </time>
-  )
-}
+//   return (
+//     <time dateTime={dateString} {...rest}>
+//       {formatDate(dateString, options)}
+//     </time>
+//   )
+// }
 
-export default DateComponent
+// export default DateComponent

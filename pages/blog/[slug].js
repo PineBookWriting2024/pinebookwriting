@@ -82,13 +82,13 @@ export const getStaticProps = async ({ params }) => {
 
   // Fetch current post
   const postResponse = await client.getEntries({
-    content_type: 'post',
+    content_type: 'blog',
     'fields.slug': slug
   })
 
   // Fetch recent posts
   const recentPostsResponse = await client.getEntries({
-    content_type: 'post',
+    content_type: 'blog',
     select: 'fields.title,fields.slug,fields.coverImage,fields.excerpt',
     limit: 5,
     order: '-sys.createdAt'
@@ -113,7 +113,7 @@ export const getStaticProps = async ({ params }) => {
 }
 
 export const getStaticPaths = async () => {
-  const response = await client.getEntries({ content_type: 'post' })
+  const response = await client.getEntries({ content_type: 'blog' })
   const paths = response.items.map(item => ({
     params: { slug: item.fields.slug }
   }))

@@ -12,7 +12,7 @@ const PostBody = ({ post }) => {
 }
 
 export const getStaticProps = async () => {
-  const response = await client.getEntries({ content_type: 'post' })
+  const response = await client.getEntries({ content_type: 'blog' })
 
   return {
     props: {

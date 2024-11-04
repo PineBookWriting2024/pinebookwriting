@@ -1,4 +1,5 @@
 import Link from 'next/link'
+// import Avatar from '../ui/Avatar'
 import ContentfulImage from '../ui/ContentfulImage'
 import DateComponent from '../ui/DateComponent'
 import { client } from '../../../lib/contentful/client'
@@ -24,6 +25,7 @@ export default function PostCard ({ post }) {
           </div>
           <h3 className='text-xl mb-1 leading-snug font-bold'>{title}</h3>
           <p className='text-base mb-4'>{excerpt}</p>
+          {/* <Avatar name={author.fields.name} picture={author.fields.picture} /> */}
         </div>
       </Link>
     </li>
@@ -31,7 +33,7 @@ export default function PostCard ({ post }) {
 }
 
 export const getStaticProps = async () => {
-  const response = await client.getEntries({ content_type: 'blog' })
+  const response = await client.getEntries({ content_type: 'post' })
 
   return {
     props: {

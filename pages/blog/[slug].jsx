@@ -16,7 +16,7 @@ const Post = ({ post, recentPosts }) => {
   return (
     <>
       <Head>
-        <link rel="shortcut icon" href="/images/fav.webp" />
+        <link rel="shortcut icon" href="/images/fav.png" />
         <meta name="robots" content="noindex, nofollow" />
       </Head>
       <BrandNavbar />
@@ -82,13 +82,13 @@ export const getStaticProps = async ({ params }) => {
 
   // Fetch current post
   const postResponse = await client.getEntries({
-    content_type: 'blog',
+    content_type: 'post',
     'fields.slug': slug
   })
 
   // Fetch recent posts
   const recentPostsResponse = await client.getEntries({
-    content_type: 'blog',
+    content_type: 'post',
     select: 'fields.title,fields.slug,fields.coverImage,fields.excerpt',
     limit: 5,
     order: '-sys.createdAt'
@@ -113,7 +113,7 @@ export const getStaticProps = async ({ params }) => {
 }
 
 export const getStaticPaths = async () => {
-  const response = await client.getEntries({ content_type: 'blog' })
+  const response = await client.getEntries({ content_type: 'post' })
   const paths = response.items.map(item => ({
     params: { slug: item.fields.slug }
   }))

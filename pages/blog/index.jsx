@@ -13,7 +13,7 @@ const Posts = ({ posts }) => {
           name="description"
           content="Everything about Pine Book Publishing—your partner in crafting, editing, and publishing your story. Experience seamless service from manuscript to bookshelf."
         />
-        <link rel="shortcut icon" href="/images/fav.webp" />
+        <link rel="shortcut icon" href="/images/fav.png" />
         <meta name="robots" content="noindex, nofollow" />
       </Head>
       <BrandNavbar />
@@ -37,7 +37,7 @@ const Posts = ({ posts }) => {
 }
 
 export const getStaticProps = async () => {
-  const response = await client.getEntries({ content_type: 'blog' })
+  const response = await client.getEntries({ content_type: 'post' })
 
   return {
     props: {

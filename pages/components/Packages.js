@@ -36,7 +36,7 @@ export default function Packages({ isOpen, onClose, service }) {
                         <div className="text-center mb-6">
                             {/* <h3 className="text-2xl text-black font-poppins uppercase">Publishing</h3> */}
                             <h2 className="font-poppins text-4xl font-bold text-black uppercase">Book Publishing Bundles</h2>
-                            <h4 class="text-xl font-poppins md:text-xl font-bold mt-4">Limited Time Offer - Save <span class="blink_me fw-bold text-2xl">50%</span> On Book Publishing Services</h4>
+                            <h4 className="text-xl font-poppins md:text-xl font-bold mt-4">Limited Time Offer - Save <span className="blink_me fw-bold text-2xl">50%</span> On Book Publishing Services</h4>
                         </div>
 
                         <div className="packages-wrapper flex flex-col md:flex-row justify-center gap-12">

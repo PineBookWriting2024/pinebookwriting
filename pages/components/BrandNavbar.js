@@ -162,7 +162,7 @@ export default function BrandNavbar() {
                             <li className='mb-3 md:mb-0'><Link href="/about" onClick={(e) => { e.preventDefault(); window.location.href = "about"; }} className="text-white hover:text-gray-300">About Us</Link></li>
                             {/* <li className='mb-3 md:mb-0'><Link href="/services" onClick={(e) => { e.preventDefault(); window.location.href = "services"; }} className="text-white hover:text-gray-300">Services</Link></li> */}
                             <li
-                            class="mb-3 md:mb-0"
+                            className="mb-3 md:mb-0"
                                 // onMouseEnter={openServiceDropdown}
                                 // onMouseLeave={closeServiceDropdown}
                                 onClick={toggleServiceDropdown}

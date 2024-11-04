@@ -73,7 +73,7 @@ export default function BookGenres () {
           <div className="container mx-auto text-center">
             <div className="genres-h mx-auto w-[80%] pb-8">
               <h3 className="font-poppins text-3xl md:text-4xl leading-10">From a Memoir & Romance to Sci-Fi Novel<br/> 
-              <span class="leading font-semibold">We Write It All</span></h3>
+              <span className="leading font-semibold">We Write It All</span></h3>
 
               
               <p className="pt-3">At Pine Book Writing, we take pride in having a large team of skilled ghostwriters whose expertise lies in working for numerous book genres. Have a look at the array of genres we're competent enough to work for:

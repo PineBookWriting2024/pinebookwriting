@@ -61,7 +61,7 @@ export default function Services() {
 
                             </div>
                             <div className="basis-1/2 brand-service-card-img relative">
-                                <span class="square">
+                                <span className="square">
                                     <Link href="/ghostwriting">Read More</Link>
                                 </span>
                                 <div className="service-card-img">
@@ -82,7 +82,7 @@ export default function Services() {
                                 <h4 className="mt-4 font-poppins text-2xl break-words">Resume Writing</h4>
                             </div>
                             <div className="basis-1/2 brand-service-card-img relative">
-                                <span class="square">
+                                <span className="square">
                                     <Link href="/resume-writing">Read More</Link>
                                 </span>
                                 <div className="service-card-img">
@@ -96,7 +96,7 @@ export default function Services() {
 
                         <div className="brand-service-card flex gap-4 md:flex-row flex-col md:w-full mx-auto text-center">
                             <div className="basis-1/2 brand-service-card-img relative">
-                                <span class="square">
+                                <span className="square">
                                     <Link href="/press-release-writing">Read More</Link>
                                 </span>
                                 <div className="service-card-img">
@@ -117,7 +117,7 @@ export default function Services() {
 
                         <div className="brand-service-card flex gap-4 md:flex-row flex-col md:w-full mx-auto text-center">
                             <div className="basis-1/2 brand-service-card-img relative">
-                                <span class="square">
+                                <span className="square">
                                     <Link href="/web-copywriting">Read More</Link>
                                 </span>
                                 <div className="service-card-img">
@@ -153,7 +153,7 @@ export default function Services() {
                                 <h4 className="mt-4 font-poppins text-2xl">SEO Content Writing</h4>
                             </div>
                             <div className="basis-1/2 brand-service-card-img relative">
-                                <span class="square">
+                                <span className="square">
                                     <Link href="/seo-content">Read More</Link>
                                 </span>
                                 <div className="service-card-img">
@@ -173,7 +173,7 @@ export default function Services() {
                                 <h4 className="mt-4 font-poppins text-2xl">Blogs & Article Writing</h4>
                             </div>
                             <div className="basis-1/2 brand-service-card-img relative">
-                                <span class="square">
+                                <span className="square">
                                     <Link href="/blog-article-writing">Read More</Link>
                                 </span>
                                 <div className="service-card-img">
@@ -192,7 +192,7 @@ export default function Services() {
 
                         <div className="brand-service-card flex gap-4 md:flex-row flex-col md:w-full mx-auto text-center">
                             <div className="basis-1/2 brand-service-card-img relative">
-                                <span class="square">
+                                <span className="square">
                                     <Link href="/wikipedia-writing">Read More</Link>
                                 </span>
                                 <div className="service-card-img">
@@ -213,7 +213,7 @@ export default function Services() {
                         </div>
                         <div className="brand-service-card flex gap-4 md:flex-row flex-col md:w-full mx-auto text-center">
                             <div className="basis-1/2 brand-service-card-img relative">
-                                <span class="square">
+                                <span className="square">
                                     <Link href="/script-writing">Read More</Link>
                                 </span>
                                 <div className="service-card-img">
@@ -248,7 +248,7 @@ export default function Services() {
                                 <h4 className="mt-4 font-poppins text-2xl">Social Media Copywriting</h4>
                             </div>
                             <div className="basis-1/2 brand-service-card-img relative">
-                                <span class="square">
+                                <span className="square">
                                     <Link href="/social-media-copywriting">Read More</Link>
                                 </span>
                                 <div className="service-card-img">
@@ -268,7 +268,7 @@ export default function Services() {
                                 <h4 className="mt-4 font-poppins text-2xl">Product Description Writing</h4>
                             </div>
                             <div className="basis-1/2 brand-service-card-img relative">
-                                <span class="square">
+                                <span className="square">
                                     <Link href="/product-description">Read More</Link>
                                 </span>
                                 <div className="service-card-img">
@@ -282,7 +282,7 @@ export default function Services() {
                         <div className="brand-service-card flex gap-4">
 
                             <div className="basis-1/2 brand-service-card-img relative">
-                                <span class="square">
+                                <span className="square">
                                     <Link href="https://pinebookpublishing.com/book-editing" target="_blank">Read More</Link>
                                 </span>
                                 <div className="service-card-img">
@@ -303,7 +303,7 @@ export default function Services() {
                         <div className="brand-service-card flex gap-4">
 
                             <div className="basis-1/2 brand-service-card-img relative">
-                                <span class="square">
+                                <span className="square">
                                     <Link href="https://pinebookpublishing.com/proofreading" target="_blank">Read More</Link>
                                 </span>
                                 <div className="service-card-img">
@@ -336,7 +336,7 @@ export default function Services() {
                                 <h4 className="mt-4 font-poppins text-2xl">BOOK FORMATTING</h4>
                             </div>
                             <div className="basis-1/2 brand-service-card-img relative">
-                                <span class="square">
+                                <span className="square">
                                     <Link href="https://pinebookpublishing.com/book-formatting" target="_blank">Read More</Link>
                                 </span>
                                 <div className="service-card-img">
@@ -358,7 +358,7 @@ export default function Services() {
                                 <h4 className="mt-4 font-poppins text-2xl uppercase">Typesetting & Layout adjustment</h4>
                             </div>
                             <div className="basis-1/2 brand-service-card-img relative">
-                                <span class="square">
+                                <span className="square">
                                     <Link href="https://pinebookpublishing.com/typesetting-layout-adjustment" target="_blank">Read More</Link>
                                 </span>
                                 <div className="service-card-img">
@@ -372,7 +372,7 @@ export default function Services() {
                     <div className="brand-service-content flex gap-4 mt-4 flex-col md:flex-row aos-init aos-animate" data-aos="fade-left" data-aos-duration="1000">
                         <div className="brand-service-card flex gap-4">
                             <div className="basis-1/2 brand-service-card-img relative">
-                                <span class="square">
+                                <span className="square">
                                     <Link href="https://pinebookpublishing.com/book-publishing" target="_blank">Read More</Link>
                                 </span>
                                 <div className="service-card-img">
@@ -392,7 +392,7 @@ export default function Services() {
                         </div>
                         <div className="brand-service-card flex gap-4">
                             <div className="basis-1/2 brand-service-card-img relative">
-                                <span class="square">
+                                <span className="square">
                                     <Link href="https://pinebookpublishing.com/print-on-demand" target="_blank">Read More</Link>
                                 </span>
                                 <div className="service-card-img">

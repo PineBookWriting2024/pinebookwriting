@@ -13,7 +13,7 @@ const Posts = ({ posts }) => {
           name="description"
           content="Everything about Pine Book Publishing—your partner in crafting, editing, and publishing your story. Experience seamless service from manuscript to bookshelf."
         />
-        <link rel="shortcut icon" href="/images/fav.png" />
+        <link rel="shortcut icon" href="/images/fav.webp" />
         <meta name="robots" content="noindex, nofollow" />
       </Head>
       <BrandNavbar />

@@ -127,7 +127,7 @@ export default function ContactCopy() {
                         <FontAwesomeIcon icon={faArrowRight} />
                     </div>
 
-                    <hr class="h-[2px] bg-gray-100 dark:bg-gray-600 my-10 border-none" />
+                    <hr className="h-[2px] bg-gray-100 dark:bg-gray-600 my-10 border-none" />
 
                 </div>
 
@@ -178,7 +178,7 @@ export default function ContactCopy() {
                         <div className="bk-sil3 next" onClick={() => swiperRefThree.current?.slideNext()}>
                             <FontAwesomeIcon icon={faArrowRight} />
                         </div>
-                        <hr class="h-[2px] bg-gray-100 dark:bg-gray-600 my-10 border-none" />
+                        <hr className="h-[2px] bg-gray-100 dark:bg-gray-600 my-10 border-none" />
 
                     </div>
             </section>

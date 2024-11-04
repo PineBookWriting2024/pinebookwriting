@@ -563,10 +563,10 @@ export default function Home() {
                   We have a qualified team of professionals who will work hand-in-hand with you from the moment you decide to write your book until the moment it is known to the world.
                 </p>
 
-                <div class="flex gap-6" bis_skin_checked="1">
-                  <button class="book-publishing-cta-btn-3 shadow-xl mt-10 cursor-pointer bg-white">
+                <div className="flex gap-6" bis_skin_checked="1">
+                  <button className="book-publishing-cta-btn-3 shadow-xl mt-10 cursor-pointer bg-white">
                     <a href="javascript:;">Talk to an Expert</a></button>
-                  <button class="book-publishing-cta-btn-2 shadow-xl mt-10 cursor-pointer bg-white">
+                  <button className="book-publishing-cta-btn-2 shadow-xl mt-10 cursor-pointer bg-white">
                     <a href="tel:8887867135">(888)786-7135</a></button>
                 </div>
 
@@ -875,7 +875,7 @@ export default function Home() {
               <h3 className="text-3xl font-poppins md:text-4xl font-bold">
                 Affordable Book Writing Packages
               </h3>
-              <h4 class="text-xl font-poppins md:text-xl font-bold mt-4">Limited Time Offers – Save  <span class="blink_me fw-bold text-2xl">50%</span> on Book writing Services</h4>
+              <h4 className="text-xl font-poppins md:text-xl font-bold mt-4">Limited Time Offers – Save  <span className="blink_me fw-bold text-2xl">50%</span> on Book writing Services</h4>
             </div>
           </div>
         </section>
@@ -887,7 +887,7 @@ export default function Home() {
                 <div className="single-packages relative">
 
                   <h4 className="text-2xl font-poppins mb-6 text-center pt-4 pb-4 hover-top-vector relative">Silver Package <br />
-                    <button class="tag-50-per-off"><del class="text-red italic">$3,000 USD</del> | <span class="blink_me">$1,499 USD</span></button></h4>
+                    <button className="tag-50-per-off"><del className="text-red italic">$3,000 USD</del> | <span className="blink_me">$1,499 USD</span></button></h4>
 
 
                   <div className="single-packages-content px-10">
@@ -960,7 +960,7 @@ export default function Home() {
 
                 <div className="single-packages relative">
                   <h4 className="text-2xl font-poppins mb-6 text-center pt-4 pb-4 hover-top-vector relative">Gold Package <br />
-                    <button class="tag-50-per-off"><del class="text-red italic">$4,500 USD</del> | <span class="blink_me">$2,249 USD</span></button>
+                    <button className="tag-50-per-off"><del className="text-red italic">$4,500 USD</del> | <span className="blink_me">$2,249 USD</span></button>
                   </h4>
 
                   <div className="single-packages-content px-10">
@@ -1034,7 +1034,7 @@ export default function Home() {
                 <div className="single-packages relative">
                   <Image src={"/images/badge.png"} className="package-badge" width={80} height={80}></Image>
                   <h4 className="text-2xl font-poppins mb-6 text-center pt-4 pb-4 hover-top-vector relative">Platinum Package <br />
-                    <button class="tag-50-per-off"><del class="text-red italic">$6,500 USD</del> | <span class="blink_me">$3,249 USD</span></button>
+                    <button className="tag-50-per-off"><del className="text-red italic">$6,500 USD</del> | <span className="blink_me">$3,249 USD</span></button>
                   </h4>
                   <div className="single-packages-content px-10">
 
@@ -1404,7 +1404,7 @@ export default function Home() {
             </div>
 
             <div className='pub-btn mt-14'>
-              <a class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 brand-nav-btn-2 font-poppins text-lg inline-block" target="_blank" href="https://pinebookpublishing.com/packages">Learn More</a>
+              <a className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 brand-nav-btn-2 font-poppins text-lg inline-block" target="_blank" href="https://pinebookpublishing.com/packages">Learn More</a>
             </div>
           </div>
         </section>

@@ -21,13 +21,13 @@ const notFound = () => {
                 </div>
             </header>
 
-            <section class="sec404 overflow-hidden">
+            <section className="sec404 overflow-hidden">
               <div className='container mx-auto'>
               <div className='grid grid-cols-1 xl:grid-cols-2 gap-5 items-center'>
                             
              
 
-              <div class="box">
+              <div className="box">
               <Image src={"/images/404-img.png"} width={600} height={600}
                 layout="responsive"
                 loading="lazy"
@@ -35,7 +35,7 @@ const notFound = () => {
               </div>
 
 
-              <div class="box1 ">
+              <div className="box1 ">
               <h1 className='font-poppins text-3xl md:text-6xl uppercase font-bold'>Lost in the plot?</h1>
               <p className='font-poppins text-xl text-left pt-3 w-8/12'>This page is not a part of our story. Let’s go back to writing yours!</p>
               <div>

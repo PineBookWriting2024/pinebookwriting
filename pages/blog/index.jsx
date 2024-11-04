@@ -3,6 +3,8 @@ import Head from "next/head";
 import PostCard from '../components/posts/PostCard'
 import BrandPrimaryHeader from '../components/BrandPrimaryHeader'
 import BrandNavbar from '../components/BrandNavbar'
+import NewBrandFooter from "../components/NewBrandFooter";
+
 
 const Posts = ({ posts }) => {
   return (
@@ -13,11 +15,12 @@ const Posts = ({ posts }) => {
           name="description"
           content="Everything about Pine Book Publishing—your partner in crafting, editing, and publishing your story. Experience seamless service from manuscript to bookshelf."
         />
-        <link rel="shortcut icon" href="/images/fav.png" />
+        <link rel="shortcut icon" href="/images/fav.webp" />
         <meta name="robots" content="noindex, nofollow" />
       </Head>
       <BrandNavbar />
       <BrandPrimaryHeader
+       photo_banner={"brand-img/services-banner.jpg"}
         subtitle="Enhance Your Book's Readability With"
         title="Blogs"
         desc="Are you in search of expert book formatting services to get your manuscript formatted well? If so, then we're here to help. At Pine Book Publishing, we offer professional book formatting services to blow life into your book. Our expert team of book formatters will work together with you to give your book a professional and polished look. Get a free quote now!"
@@ -31,6 +34,8 @@ const Posts = ({ posts }) => {
           </ul>
         </div>
       </section>
+
+      <NewBrandFooter />
     </>
 
   )

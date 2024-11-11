@@ -8,7 +8,7 @@ import Skeleton from '../components/ui/Skeleton'
 import ContentfulImage from '../components/ui/ContentfulImage'
 import { client } from '../../lib/contentful/client'
 import { useRouter } from 'next/router'
-import NewBrandFooter from "../components/NewBrandFooter";
+import BrandFooter from '../components/BrandFooter';
 
 const Post = ({ post, recentPosts }) => {
   const router = useRouter()
@@ -16,15 +16,15 @@ const Post = ({ post, recentPosts }) => {
   return (
     <>
       <Head>
-        <link rel="shortcut icon" href="/images/fav.webp" />
+        <link rel="shortcut icon" href="/images/fav.png" />
         <meta name="robots" content="noindex, nofollow" />
       </Head>
       <BrandNavbar />
       <BrandPrimaryHeader
-                photo_banner={"../brand-img/services-banner.jpg"}
-                title="Supercharge Your Writing Passion with Expert Content Writing Services"
-                desc="Are you in search of a professional writing agency? If yes, then you're at the right place. Pine Book Writing offers all-inclusive services, from book writing and creative marketing copies to outstanding resume writing."
-            />
+        subtitle="Enhance Your Book's Readability With"
+        title="Blogs"
+        desc="Are you in search of expert book formatting services to get your manuscript formatted well? If so, then we're here to help. At Pine Book Publishing, we offer professional book formatting services to blow life into your book. Our expert team of book formatters will work together with you to give your book a professional and polished look. Get a free quote now!"
+      />
       <section className='overflow-hidden'>
         <div className='max-w-screen-xl mx-auto px-4 my-20 relative py-22 flex flex-col lg:flex-row'>
           {/* Main Post Column */}
@@ -72,7 +72,7 @@ const Post = ({ post, recentPosts }) => {
 
         </div>
       </section>
-      <NewBrandFooter />
+      <BrandFooter />
     </>
   )
 }

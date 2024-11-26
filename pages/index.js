@@ -5,6 +5,7 @@ import BrandFooter from "./components/BrandFooter";
 import BrandAbout from "./components/BrandAbout";
 import BrandNavbar from "./components/BrandNavbar";
 import BrandHero from "./components/BrandHero";
+import BrandHeroFriday from "./components/BrandHeroFriday";
 import BrandBannerLogo from "./components/BrandBannerLogo";
 import BrandCTA from "./components/BrandCTA";
 import BrandServices from "./components/BrandServices";
@@ -48,7 +49,9 @@ export default function Home() {
             <BrandNavbar />
 
             {/* <BrandHero /> */}
-            <BrandBannerVideo Component={BrandHero} />
+            {/* <BrandBannerVideo Component={BrandHero} /> */}
+            <BrandBannerVideo Component={BrandHeroFriday} />
+
 
             <BrandBannerLogo />
 

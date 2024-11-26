@@ -41,17 +41,13 @@ export default function Home() {
               `,
                     }}
                 />
-                {/* <a id="href2" target="_blank" href="http://www.2findlocal.com/b/15207934"><img className="anchorImage" alt="pine book writing" src="http://www.2findlocal.com/Set/Icons/2.png" /></a><a target="_blank" href="http://taxihowmuch.com"><img alt="taxi fare calculator" src="http://www.2findlocal.com/Set/Icons/u.png" /></a><a id="href3" target="_blank" href="https://pikadil.com"><img alt="pikadil" src="http://www.2findlocal.com/Set/Icons/f.png" /></a> */}
             </Head>
 
             <BrandTopBar />
 
             <BrandNavbar />
 
-            {/* <BrandHero /> */}
-            {/* <BrandBannerVideo Component={BrandHero} /> */}
-            <BrandBannerVideo Component={BrandHeroFriday} />
-
+            <BrandBannerVideo Component={BrandHero} />
 
             <BrandBannerLogo />
 

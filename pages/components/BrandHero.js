@@ -152,7 +152,10 @@ export default function BrandHero() {
                             ))}
                         </div>
                     </div>
-                    <div>
+
+
+                    
+                    {/* <div>
 
                         <div className="w-full rounded-2xl px-8 py-8 bg-gray-400 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-50 border-gray-100 relative">
                             <Image
@@ -180,7 +183,6 @@ export default function BrandHero() {
                                         className="pl-4 pr-4 py-2 border rounded-xl w-full text-sm shadow-xl"
                                         placeholder="Enter your Name"
                                     />
-                                    {/* <Image src={"/brand-img/user-icon.png"} width={14} height={14} className="absolute left-0 top-3 ml-4" /> */}
                                 </div>
                                 <div className="relative">
                                     <input
@@ -195,7 +197,6 @@ export default function BrandHero() {
                                     {phoneError && (
                                         <p className="text-red-500 text-sm mt-1">{phoneError}</p>
                                     )}
-                                    {/* <Image src={"/brand-img/phone-icon.png"} width={14} height={14} className="absolute left-0 top-3 ml-4" /> */}
                                 </div>
                                 <div className="relative">
                                     <input
@@ -207,7 +208,6 @@ export default function BrandHero() {
                                         className="pl-4 pr-4 py-2 border rounded-xl w-full text-sm shadow-xl"
                                         placeholder="Enter your Email"
                                     />
-                                    {/* <Image src={"/brand-img/email-icon.png"} width={16} height={16} className="absolute left-0 top-3 ml-4" /> */}
                                 </div>
                                 <div className="relative">
                                     <textarea
@@ -219,7 +219,6 @@ export default function BrandHero() {
                                         placeholder="Enter your Message"
                                         name="message"
                                     ></textarea>
-                                    {/* <FontAwesomeIcon icon={faPen} color="#747474" className="absolute left-0 top-3 ml-4" width={16} /> */}
                                     <div
                                         className="absolute inset-y-0 left-0 pl-3 pt-3 
                                             flex items-start  
@@ -237,14 +236,117 @@ export default function BrandHero() {
                                 >
                                     Submit
                                 </button>
-
-                                {/* <div className="form-line banner" >
-                                <p>Message and data rates may apply. Message frequency may vary. Reply HELP for help. Reply STOP to unsubscribe. 
-                                    View <Link href="/privacy-policy">Privacy Policy</Link> & <Link href="/terms-and-conditions" >Terms and Conditions.</Link></p>
-                                </div> */}
                             </form>
                         </div>
+                    </div> */}
+
+
+<div>
+                        <div className="md:px-7 md:py-7 w-full rounded-2xl px-8 py-8 bg-gray-400 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-50 border-gray-100 relative">
+                            <Image
+                                className="text-center header-form-off-badge"
+                                src={"/brand-img/christmas-tag.png"}
+                                width={140}
+                                height={180}
+                                loading="lazy"
+                            ></Image>
+                            <Image
+                                className="text-center christmas-cap-form"
+                                src={"/brand-img/christmas-cap.png"}
+                                width={300}
+                                height={300}
+                                loading="lazy"
+                            ></Image>
+                            <div className="text-start">
+                                <h4 className="font-poppins text-white text-2xl md:text-4xl font-bold christmas-banner-title">
+                                    Avail Discount
+                                </h4>
+                                <h5 className="font-poppins text-white text-lg mb-3 christmas-banner-desc">
+                                    Holiday Season Sale: Expert Book Writing at{" "}
+                                    <span className="text-blink">50% Off</span> – <br />
+                                    Your Story Deserves to be Heard!
+                                </h5>
+                            </div>
+                            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                                <div className="col-span-2 w-full relative">
+                                    <form className="flex flex-col gap-4 justify-start items-start" onSubmit={handleSubmit}>
+                                        <div className="relative w-full">
+                                            <input
+                                                type="text"
+                                                name="fullName"
+                                                onChange={handleChange}
+                                                value={fullName}
+                                                required
+                                                className="pl-4 pr-4 py-2 border rounded-xl w-full text-sm shadow-xl"
+                                                placeholder="Enter your Name"
+                                            />
+                                        </div>
+                                        <div className="relative w-full">
+                                            <input
+                                                type="text"
+                                                onChange={handleChange}
+                                                value={phoneNumber}
+                                                name="phoneNumber"
+                                                required
+                                                className="pl-4 pr-4 py-2 border rounded-xl w-full text-sm shadow-xl"
+                                                placeholder="Enter your Phone"
+                                            />
+                                            {phoneError && (
+                                                <p className="text-red-500 text-sm mt-1">{phoneError}</p>
+                                            )}
+                                        </div>
+                                        <div className="relative w-full">
+                                            <input
+                                                type="text"
+                                                name="email"
+                                                onChange={handleChange}
+                                                value={email}
+                                                required
+                                                className="pl-4 pr-4 py-2 border rounded-xl w-full text-sm shadow-xl"
+                                                placeholder="Enter your Email"
+                                            />
+                                        </div>
+                                        <div className="relative w-full">
+                                            <textarea
+                                                className="pl-4 pr-4 py-2 border rounded-xl w-full text-sm shadow-xl"
+                                                rows={3}
+                                                onChange={handleChange}
+                                                value={message}
+                                                required
+                                                placeholder="Enter your Message"
+                                                name="message"
+                                            ></textarea>
+                                        </div>
+                                        {showSuccess && (
+                                            <p className="px-1 py-1 text-green-700">
+                                                Form submitted Successfully!
+                                            </p>
+                                        )}
+                                        <div className="w-full">
+                                            <button
+                                                className="w-full p-4 py-2 text-white uppercase header-submit-btn rounded rounded-xl shadow-xl text-xl"
+                                                type="submit"
+                                            >
+                                                Submit
+                                            </button>
+                                        </div>
+
+                                    </form>
+                                </div>
+                                <div className="col-span-1 flex justify-center items-center">
+                                    <Image
+                                        className="text-center christmas-banner-img"
+                                        src={"/brand-img/crishtmis-img.png"}
+                                        width={250}
+                                        height={500}
+                                        loading="lazy"
+                                    ></Image>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+
+
                 </div>
             </div>
             {/* </section> */}

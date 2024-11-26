@@ -164,7 +164,7 @@ export default function BrandHero() {
                             ></Image>
                             <div className="text-center">
                                 <h4 className="font-poppins text-white text-2xl md:text-2xl">Avail Discount</h4>
-                                <h5 className="font-poppins text-white text-lg mb-3">Exclusive Offer: Expert Book Writing at <span className="text-blink">50% Off</span> – <br></br>Your Story Deserves to be Heard!</h5>
+                                <h5 className="font-poppins text-white text-lg mb-3">Exclusive Offer: Expert Book Writing at  <span className="text-blink">50% Off</span> – <br></br>Your Story Deserves to be Heard!</h5>
                             </div>
                             <div>
 

@@ -1,5 +1,13 @@
+import SnowFall from "./SnowFall";
+
 export default function BrandBannerVideo({ Component = null }) {
     return (
+      <>
+      {/* Snowfall Background */}
+      
+      <div className="relative overflow-hidden w-full" style={{ zIndex: 1 }}>
+      <SnowFall />
+
       <section className="brand-main-banner-video flex items-center justify-center gap-4 py-14 h-full">
         <video
           className="brand-video"
@@ -15,5 +23,7 @@ export default function BrandBannerVideo({ Component = null }) {
         </video>
         {Component ? <Component /> : ''}
       </section>
+      </div>
+      </>
     );
   }

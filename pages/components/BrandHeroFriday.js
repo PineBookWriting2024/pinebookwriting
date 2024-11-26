@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import FadeIn from "./FadeIn";
-import SnowFall from "./SnowFall";
+
 
 export default function BrandHeroFriday() {
     const router = useRouter();
@@ -112,9 +112,7 @@ export default function BrandHeroFriday() {
 
     return (
         <>
-            {/* Snowfall Background */}
-            <div className="relative overflow-hidden w-full" style={{ zIndex: 1 }}>
-            <SnowFall />
+            
                 <div className="container px-4 pt-20 md:mx-auto tablet-margin-banner max-w-screen-xl brand-hero-section relative z-10">
                     <div className="grid grid-cols-1 sm:gap-8 sm:py-0 md:grid-cols-2 text-left items-center justify-between md:gap-8 md:py-36">
                     <div className="mb-4">
@@ -251,7 +249,7 @@ export default function BrandHeroFriday() {
                         
                     </div>
                 </div>
-            </div>
+           
         </>
     );
 }

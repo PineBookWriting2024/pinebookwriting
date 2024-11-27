@@ -1033,7 +1033,8 @@ video#brandVideo{position:absolute;z-index:-1;height:135vh;width:100%;object-fit
   line-height: 22px;
 }
 
-.snowbanner.overflow-hidden {
+.snowbanner{
   overflow: hidden;
   position: absolute;
+  height: 100vh;
 }

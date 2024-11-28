@@ -6,6 +6,7 @@ import { useRouter } from "next/navigation";
 import FadeIn from "./FadeIn";
 
 
+
 export default function BrandHeroFriday() {
     const router = useRouter();
     const { submitMainContactForm } = useHubspotForm();

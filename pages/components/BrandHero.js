@@ -11,7 +11,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import WavyText from "./WavyText";
 import FadeIn from "./FadeIn";
-import SnowFall from "./SnowFall";
+// import SnowFall from "./SnowFall";
 
 
 export default function BrandHero() {
@@ -128,7 +128,7 @@ export default function BrandHero() {
             {/* <section className=""> */}
               {/* Snowfall Background */}
               <div className="relative overflow-hidden w-full snowbanner" style={{ zIndex: 1 }}>
-                <SnowFall />
+                {/* <SnowFall /> */}
                 <div className="container mx-4 md:pt-20 md:mx-auto tablet-margin-banner max-w-screen-xl brand-hero-section">
                     <div className="grid grid-cols-1 sm:gap-8 sm:py-0 md:grid-cols-2 text-left items-center justify-between md:gap-8 md:py-36">
                         <div className="mb-4">

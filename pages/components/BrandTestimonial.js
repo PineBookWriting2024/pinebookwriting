@@ -119,6 +119,8 @@ export default function BrandTestimonial() {
                             </Link>
                         </div>
 
+                        
+
                     </div>
 
                     {/* <p className="font-poppins mb-2 text-center mt-8 text-3xl">Rated 4.2 / 5 Based on 9 Reviews. Showing our latest reviews.</p> */}

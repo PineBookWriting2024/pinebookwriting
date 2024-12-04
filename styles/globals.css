@@ -1038,3 +1038,9 @@ video#brandVideo{position:absolute;z-index:-1;height:135vh;width:100%;object-fit
   position: absolute;
   height: 100vh;
 }
+
+
+.brand-hero-section {
+  height: 100vh;
+  display: flex;
+}

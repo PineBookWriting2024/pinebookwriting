@@ -69,6 +69,77 @@ const brandToneObj = [
         name: "Emotional",
     },
 ]
+const expectationsObj = [
+    {
+        id: "1",
+        name: "Higher brand awareness",
+    },
+    {
+        id: "2",
+        name: "Increased Video Views",
+    },
+    {
+        id: "3",
+        name: "Higher site traffic",
+    },
+    {
+        id: "4",
+        name: "Increase Page Likes",
+    },
+    {
+        id: "5",
+        name: "Increase Page Engagement",
+    },
+    {
+        id: "6",
+        name: "Increased customer calls",
+    },
+    {
+        id: "7",
+        name: "Increased customer messages",
+    },
+    {
+        id: "8",
+        name: "App installs",
+    },
+    {
+        id: "9",
+        name: "Conversion/Product Sales",
+    },
+
+]
+
+const activitiesObj = [
+    {
+        id: "1",
+        name: "Re-branding",
+    },
+    {
+        id: "2",
+        name: "Search Engine Optimization",
+    },
+    {
+        id: "3",
+        name: "PPC",
+    },
+    {
+        id: "4",
+        name: "Paid Ads",
+    },
+    {
+        id: "5",
+        name: "Influencer Marketing",
+    },
+    {
+        id: "6",
+        name: "Website Design & Development",
+    },
+    {
+        id: "7",
+        name: "Other",
+    },
+
+]
 
 export default function Smm() {
 
@@ -101,8 +172,14 @@ export default function Smm() {
         const checkedId = event.target.value;
         if (event.target.checked) {
             setSocialMedia([...socialMedia, checkedId])
+            setExpectations([...expectations, checkedId])
+            setBrandTone([...brandTone, checkedId])
+            setActivities([...activities, checkedId])
         } else {
             setSocialMedia(socialMedia.filter(id => id !== checkedId))
+            setExpectations(socialMedia.filter(id => id !== checkedId))
+            setBrandTone(socialMedia.filter(id => id !== checkedId))
+            setActivities(socialMedia.filter(id => id !== checkedId))
         }
     }
 
@@ -350,7 +427,7 @@ export default function Smm() {
 
                     <div class="relative w-full pb-4">
 
-                    <p className="ml-2 font-semibold uppercase text-black">Your Preferred Brand Tone for Book</p><br />
+                        <p className="ml-2 font-semibold uppercase text-black">Your Preferred Brand Tone for Book</p><br />
 
 
                         {/* <input type="checkbox" id="inspiring" name="brandTone" value="inspiring" />
@@ -392,6 +469,18 @@ export default function Smm() {
                         <p className="ml-2 font-semibold uppercase text-black">What are your goals/expectations/purpose from social media in the next 3 months?
                         </p><br />
 
+                        {
+                            expectationsObj.map((media, index) => (
+                                <div>
+                                    <label key={media.id}>
+                                        <input type="checkbox" value={media.id} className="mr-3 mb-2" checked={expectations.includes(media.id)}
+                                            onChange={(event) => { handleSocialMediaChange(event) }} />
+                                        {media.name}
+                                    </label>
+                                </div>
+                            ))
+                        }
+                        {/* 
                         <input type="checkbox" id="awareness" name="expectations" value="Higher brand awareness" />
                         <label for="Higher brand awareness"> Higher brand awareness</label><br />
 
@@ -417,7 +506,7 @@ export default function Smm() {
                         <label for="App installs"> App installs</label><br />
 
                         <input type="checkbox" id="Conversion/Product-Sales" name="expectations" value="Conversion/Product Sales" />
-                        <label for="Conversion/Product Sales"> Conversion/Product Sales</label><br />
+                        <label for="Conversion/Product Sales"> Conversion/Product Sales</label><br /> */}
 
 
                     </div>
@@ -426,7 +515,20 @@ export default function Smm() {
                         <p className="ml-2 font-semibold uppercase text-black">What activities are you considering for your book in future?
                         </p><br />
 
-                        <input type="checkbox" id="Re-branding" name="activities" value="Re-branding" />
+
+                        {
+                            activitiesObj.map((media, index) => (
+                                <div>
+                                    <label key={media.id}>
+                                        <input type="checkbox" value={media.id} className="mr-3 mb-2" checked={activities.includes(media.id)}
+                                            onChange={(event) => { handleSocialMediaChange(event) }} />
+                                        {media.name}
+                                    </label>
+                                </div>
+                            ))
+                        }
+
+                        {/* <input type="checkbox" id="Re-branding" name="activities" value="Re-branding" />
                         <label for="Re-branding"> Re-branding</label><br />
 
                         <input type="checkbox" id="Search Engine Optimization" name="activities" value="Search Engine Optimization" />
@@ -446,7 +548,7 @@ export default function Smm() {
                         <label for="Website Design & Development"> Website Design & Development</label><br />
 
                         <input type="checkbox" id="Other" name="activities" value="Other" />
-                        <label for="Other"> Other</label><br />
+                        <label for="Other"> Other</label><br /> */}
                     </div>
 
                     <div className="columns-2">

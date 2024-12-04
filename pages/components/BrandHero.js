@@ -130,7 +130,7 @@ export default function BrandHero() {
               <div className="relative overflow-hidden w-full snowbanner" style={{ zIndex: 1 }}>
                 {/* <SnowFall /> */}
                 <div className="container mx-4 md:pt-20 md:mx-auto tablet-margin-banner max-w-screen-xl brand-hero-section">
-                    <div className="grid grid-cols-1 sm:gap-8 sm:py-0 md:grid-cols-2 text-left items-center justify-between md:gap-8 md:py-36">
+                    <div className="grid grid-cols-1 sm:gap-8 sm:py-0 md:grid-cols-2 text-left items-center justify-between md:gap-8 py-36">
                         <div className="mb-4">
                             <h3 className="font-poppins md:text-3xl text-2xl mb-4 aos-init aos-animate text-white"> <span className="px-2 py-0">#1 Ghostwriting Company</span></h3>
                             <FadeIn>

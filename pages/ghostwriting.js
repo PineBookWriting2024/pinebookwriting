@@ -161,7 +161,7 @@ export default function BookEditing() {
                                 className="brand-about-img"
                             />
                         </div>
-                        <div className="basis-1/3 md:ml-20">
+                        <div className="basis-1/2 md:ml-20">
                             <h2 className="text-white font-poppins text-2xl md:text-4xl uppercase mt-10 md:mt-0 font-bold" data-aos="zoom-in-left" data-aos-delay="100">Why Choose Our Ghostwriting Services?</h2>
                             <p className="text-white mt-2">Delight your potential readers with Pine Book Writing. We have a highly skilled team of ghostwriters with a proven record of working for globally-recognized authors. Experience quality, transparency & confidentiality.</p>
                             <div className="flex flex-col md:flex-row gap-2 md:gap-10 mt-6">

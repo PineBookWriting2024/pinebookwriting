@@ -5,6 +5,7 @@ import Head from "next/head";
 import Image from "next/image";
 import BrandPrimaryHeader from "./components/BrandPrimaryHeader";
 import { Checkbox } from "flowbite-react";
+import { useRouter } from 'next/navigation';
 
 // Checkbox Object
 
@@ -143,8 +144,8 @@ const activitiesObj = [
 
 export default function Smm() {
 
-
-    const { submitMainContactForm } = useHubspotForm();
+    const router = useRouter();
+    const { smmForm } = useHubspotForm();
     const [authorName, setAuthorName] = useState("");
     const [bookName, setBookName] = useState("");
     const [email, setEmail] = useState("");
@@ -167,6 +168,9 @@ export default function Smm() {
     const [mediaAccounts, setMediaAccounts] = useState("");
     const [information, setInformation] = useState("");
     const [message, setMessage] = useState("");
+    const [phoneError, setPhoneError] = useState("");
+    const [showSuccess, setShowSuccess] = useState(false);
+
 
     const handleSocialMediaChange = (event) => {
         const checkedId = event.target.value;
@@ -215,7 +219,7 @@ export default function Smm() {
 
         const setter = setters[name];
         if (setter) {
-            if (name === 'phoneNumber') {
+            if (name === 'number') {
                 const phoneRegex = /^\d{0,10}$/;
                 if (phoneRegex.test(value)) {
                     setter(value);
@@ -231,11 +235,11 @@ export default function Smm() {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        if (phoneNumber.length !== 10) {
+        if (number.length !== 10) {
             setPhoneError("Phone number must be exactly 10 digits");
             return;
         }
-        const response = await submitMainContactForm(
+        const response = await smmForm(
             authorName,
             bookName,
             email,
@@ -603,7 +607,11 @@ export default function Smm() {
                         <label className="ml-2 font-semibold uppercase text-black ">IS THERE ANYTHING ELSE YOU'D WANT TO ADD?</label>
                         <textarea class="pl-4 pr-4 py-2 mt-2 border rounded-xl w-full text-sm shadow-xl" rows="3" required="" placeholder="Please use this section for any additional comments you would like to make on the design of your new logo." name="message" onChange={handleChange} value={message} />
                     </div>
-
+                    {showSuccess && (
+                        <p className="px-1 py-2 text-green-700">
+                            Form submitted Successfully!
+                        </p>
+                    )}
                     <div class="w-full pb-4">
                         <button class="p-4 py-2 text-white uppercase header-submit-btn rounded-xl shadow-xl text-xl" type="submit">Submit</button>
                     </div>

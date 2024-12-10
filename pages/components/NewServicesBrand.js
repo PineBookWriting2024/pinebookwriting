@@ -4,7 +4,7 @@ import Image from 'next/image'
 const NewServicesBrand = () => {
   return (
     <div>
-      <section className='max-w-screen-xl mx-auto text-center brand-choose-us-section md:p-20 p-10'>
+      <section className='max-w-screen-xl mx-auto text-center brand-choose-us-section md:p-20 p-10 mb-10'>
         <div className='flex flex-col'>
         <div className='new-ser-text flex flex-col md:px-9'>
             <h4 className='font-bold md:text-2xl leading-loose md:pb-6 text-white'>Need Extra Support to Achieve Your Writing to Publishing Goals?</h4>

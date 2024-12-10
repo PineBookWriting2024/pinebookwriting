@@ -29,7 +29,7 @@
   text-transform:uppercase;display:block;}
 
   .max-w-screen-xl {
-    max-width: 1280px;
+    max-width: 1170px;
 }
 
   /* .portfolio {
@@ -1044,3 +1044,81 @@ video#brandVideo{position:absolute;z-index:-1;height:135vh;width:100%;object-fit
   height: 100vh;
   display: flex;
 }
+
+
+/* footer social media css start  */
+#fixed-social {
+  position: fixed;
+  top: 30%;
+  right: 0;
+  z-index: 9999999999;
+}
+#fixed-social a {
+  color: #000;
+  display: block;
+  height: 34px;
+  position: relative;
+  text-align: center;
+  line-height: 35px;
+  width: 36px;
+  margin-bottom: 1px;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #0D0F38;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+#fixed-social a span {
+  line-height: 34px;
+  right: 30px;
+  position: absolute;
+  text-align: center;
+  width: 120px;
+  visibility: hidden;
+  transition-duration: 0.5s;
+  z-index: 1;
+  opacity: 0;
+  border: 1px solid #0D0F38;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+.fixed-facebook {
+  background-color: #fff;
+}
+.fixed-facebook span {
+  background-color: #fff;
+}
+.fixed-twitter {
+  background-color: #fff;
+}
+.fixed-twitter span {
+  background-color: #fff;
+}
+.fixed-gplus {
+  background-color: #fff;
+}
+.fixed-gplus span {
+  background-color: #fff;
+}
+.fixed-linkedin {
+  background-color: #fff;
+}
+.fixed-linkedin span {
+  background-color: #fff;
+}
+.fixed-instagrem {
+  background-color: #fff;
+}
+.fixed-instagrem span {
+  background-color: #fff;
+}
+.fixed-tumblr {
+  background-color: #fff;
+}
+.fixed-tumblr span {
+  background-color: #fff;
+}
+
+/* social media css end  */

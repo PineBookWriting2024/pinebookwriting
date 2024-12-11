@@ -1049,9 +1049,13 @@ video#brandVideo{position:absolute;z-index:-1;height:135vh;width:100%;object-fit
 /* footer social media css start  */
 #fixed-social {
   position: fixed;
-  top: 30%;
+  top: 0;
   right: 0;
   z-index: 9999999999;
+  display: flex;
+  flex-direction: column-reverse;
+  height: 100vh;
+  justify-content: center;
 }
 #fixed-social a {
   color: #000;

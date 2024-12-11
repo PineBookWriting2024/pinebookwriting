@@ -27,7 +27,8 @@ export default function Home() {
                 <meta name="description" content="Get top-notch book writing services from experienced writers. We offer affordable and high-quality writing solutions for all genres. Contact us today!"
                 />
                 <link rel="shortcut icon" href="/images/fav.webp" />
-                <meta name="google-site-verification" content="v2pKJGIZnMWCWw2QC5nuRPYT5gvDQlUtT0lZYFIhHYo" />
+                <meta name="google-site-verification" content="ze4i-BWHkh7f9iANJUJfoWbXrFcmFC9r2fCsoz1KZA8" />
+                {/* <meta name="google-site-verification" content="ze4i-BWHkh7f9iANJUJfoWbXrFcmFC9r2fCsoz1KZA8" /> */}
                 {/* Google tag Manager Script */}
                 <script async src="https://www.googletagmanager.com/gtag/js?id=G-9X52J8V8NK"></script>
                 <script

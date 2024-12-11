@@ -14,7 +14,7 @@ export default function Home() {
                     name="description"
                     content=""
                 />
-                <meta name="google-site-verification" content="v2pKJGIZnMWCWw2QC5nuRPYT5gvDQlUtT0lZYFIhHYo" />
+                <meta name="google-site-verification" content="ze4i-BWHkh7f9iANJUJfoWbXrFcmFC9r2fCsoz1KZA8" />
                 <link rel="shortcut icon" href="/images/fav.png" />
             </Head>
             <section>

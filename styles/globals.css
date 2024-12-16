@@ -446,7 +446,7 @@
     audio::-webkit-media-controls-mute-button{border-radius:50%;}
     audio::-webkit-media-controls-panel{background-color:#167e6e64;}
     audio::-webkit-media-controls-play-button:hover{background-color:rgba(177,212,224,.7);}
-    .brand-main-banner-video{height:100vh;}
+    .brand-main-banner-video{height:88vh;}
     .brand-video{height:100vh;}
     video#brandVideo{position:absolute;z-index:-1;height:100vh;width:100%;object-fit:cover;}
     .brand-portfolio-books img{height:100%;}

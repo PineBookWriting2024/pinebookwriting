@@ -187,21 +187,21 @@ export default function BrandMainContact() {
                         <Image src={"/brand-img/team-1.webp"} width={210} height={200} className="mb-5" />
                         <h3 className="text-black leading-20 text-3xl md:text-3xl font-poppins uppercase">Damon Peters</h3>
                         <h4 className="text-black text-xl font-poppins">Head of Operations</h4>
-                        <p className="text-black font-bold text-xl">damon@pinebookwrting.com</p>
+                        <p className="text-black font-bold text-xl">damon@pinebookwriting.com</p>
                         <p className="text-black leading-20 font-bold text-xl md:text-4xl uppercase">289-809-7465</p>
                     </div>
                     <div className="brand-meet-team-container text-center flex justify-center flex-col items-center">
                         <Image src={"/brand-img/team-4.webp"} width={210} height={200} className="mb-5" />
                         <h3 className="text-black leading-20 text-3xl md:text-3xl font-poppins uppercase">AMARA JOHNSON</h3>
                         <h4 className="text-black text-xl font-poppins">Senior Project Manager</h4>
-                        <p className="text-black font-bold text-xl">amara@pinebookwrting.com</p>
+                        <p className="text-black font-bold text-xl">amara@pinebookwriting.com</p>
                         <p className="text-black leading-20 font-bold text-xl md:text-4xl uppercase">289-809-7044</p>
                     </div>
                     <div className="brand-meet-team-container text-center flex justify-center flex-col items-center">
                         <Image src={"/brand-img/team-3.webp"} width={210} height={200} className="mb-5" />
                         <h3 className="text-black leading-20 text-3xl md:text-3xl font-poppins uppercase">Steve Hayes</h3>
                         <h4 className="text-black text-xl font-poppins">Senior Project Consultant</h4>
-                        <p className="text-black font-bold text-xl">steve@pinebookwrting.com</p>
+                        <p className="text-black font-bold text-xl">steve@pinebookwriting.com</p>
                         <p className="text-black leading-20 font-bold text-xl md:text-4xl uppercase">289-809-6209</p>
                     </div>
                 </div>
@@ -210,14 +210,14 @@ export default function BrandMainContact() {
                         <Image src={"/brand-img/team-2.webp"} width={210} height={200} className="mb-5" />
                         <h3 className="text-black leading-20 text-3xl md:text-3xl font-poppins uppercase">Ryan Peters</h3>
                         <h4 className="text-black text-xl font-poppins">Publishing Manager</h4>
-                        <p className="text-black font-bold text-xl">ryan@pinebookwrting.com</p>
+                        <p className="text-black font-bold text-xl">ryan@pinebookwriting.com</p>
                         <p className="text-black leading-20 font-bold text-xl md:text-4xl uppercase">289-809-5612</p>
                     </div>
                     <div className="brand-meet-team-container text-center flex justify-center flex-col items-center">
                         <Image src={"/brand-img/team-5.webp"} width={210} height={200} className="mb-5" />
                         <h3 className="text-black leading-20 text-3xl md:text-3xl font-poppins uppercase">Lia Sinclair</h3>
                         <h4 className="text-black text-xl font-poppins">Publishing Consultant</h4>
-                        <p className="text-black font-bold text-xl">lia@pinebookwrting.com</p>
+                        <p className="text-black font-bold text-xl">lia@pinebookwriting.com</p>
                         <p className="text-black leading-20 font-bold text-xl md:text-4xl uppercase">289-379-7913</p>
                     </div>
                 </div>

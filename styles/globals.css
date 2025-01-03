@@ -29,7 +29,7 @@
   text-transform:uppercase;display:block;}
 
   .max-w-screen-xl {
-    max-width: 1170px;
+    max-width: 1280px;
 }
 
   /* .portfolio {
@@ -196,6 +196,9 @@
 
     /* Media Query */
     @media (min-width:300px) and (max-width:680px){
+      .christmas-banner-img {
+        display: none;
+    }
       .client-testi-video{
         width: 370px;
       }
@@ -1034,7 +1037,7 @@ video#brandVideo{position:absolute;z-index:-1;height:135vh;width:100%;object-fit
 }
 
 .snowbanner{
-  overflow: hidden;
+  /* overflow: hidden; */
   position: absolute;
   height: 100vh;
 }

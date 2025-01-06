@@ -24,7 +24,7 @@ export default function BrandBannerLogo() {
                         <h3 className="font-poppins text-xl md:text-xl leading-3 font-bold">Sell Your <br></br> <span>Book With</span></h3>
                     </div> */}
                     <div className="container mx-auto">
-                        <div className="bnd-slider flex py-7 justify-center">
+                        <div className="bnd-slider flex py-5 justify-center">
 
                             <Swiper
                                 className="px-20 gap-x-32"

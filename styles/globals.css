@@ -846,7 +846,7 @@ html {
 
     /* Media Query */
     @media (min-width:300px) and (max-width:680px){
-      header#navbar {position: relative;top: 0;background: #127271;}
+      header#navbar {position: relative;top: 0;background: #127271;z-index: 99;}
       iframe.py- {
         height: 355px;
         width: 100%;
@@ -1001,6 +1001,10 @@ section.sec404 {
 }
 video#brandVideo{position:absolute;z-index:-1;height:135vh;width:100%;object-fit:cover;}
 
+.max-w-screen-xl {
+  max-width: 90%;
+}
+
 
 
 }
@@ -1010,10 +1014,10 @@ video#brandVideo{position:absolute;z-index:-1;height:135vh;width:100%;object-fit
 
 .christmas-cap-form {
   position: absolute;
-  left: -80px;
-  top: -69px;
+  left: -65px;
+  top: -45px;
   z-index: 1000;
-  width: 150px;
+  width: 120px;
 }
 
 .christmas-banner-img {
@@ -1025,9 +1029,9 @@ video#brandVideo{position:absolute;z-index:-1;height:135vh;width:100%;object-fit
 .header-form-off-badge {
   position: absolute;
   right: -29px;
-  top: -40px;
+  top: -28px;
   z-index: 1000;
-  width: 110px;
+  width: 90px;
 }
 
 .christmas-banner-desc {
@@ -1054,7 +1058,7 @@ video#brandVideo{position:absolute;z-index:-1;height:135vh;width:100%;object-fit
   position: fixed;
   top: 0;
   right: 0;
-  z-index: 9999999999;
+  z-index: 10;
   display: flex;
   flex-direction: column-reverse;
   height: 100vh;

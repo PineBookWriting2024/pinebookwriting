@@ -130,11 +130,11 @@ export default function BrandHero() {
               <div className="relative w-full snowbanner" style={{ zIndex: 1 }}>
                 {/* <SnowFall /> */}
                 <div className="container mx-4 md:pt-20 md:mx-auto tablet-margin-banner max-w-screen-xl brand-hero-section">
-                    <div className="grid grid-cols-1 sm:gap-8 py-20 md:grid-cols-2 text-left md:items-center justify-between md:gap-8 md:py-36 ">
+                    <div className="grid grid-cols-1 sm:gap-8 py-20 md:grid-cols-2 text-left md:items-center justify-between md:gap-8 md:py-30">
                         <div className="mb-4">
-                            <h3 className="font-poppins md:text-3xl text-2xl mb-4 aos-init aos-animate text-white"> <span className="px-2 py-0">#1 Ghostwriting Company</span></h3>
+                            <h3 className="font-poppins md:text-3xl text-2xl mb-4 aos-init aos-animate text-white"> <span className="px-2 py-0 text-2xl">#1 Ghostwriting Company</span></h3>
                             <FadeIn>
-                                <h1 className="font-poppins uppercase text-3xl md:text-4xl text-white font-bold">
+                                <h1 className="font-poppins uppercase text-3xl md:text-3xl text-white font-bold">
                                     Pine Book Writing Services
                                 </h1>
                             </FadeIn>
@@ -263,7 +263,7 @@ export default function BrandHero() {
                                     loading="lazy"
                                 ></Image>
                                 <div className="text-start">
-                                    <h4 className="font-poppins text-white text-2xl md:text-4xl font-bold christmas-banner-title">
+                                    <h4 className="font-poppins text-white text-2xl md:text-3xl font-bold christmas-banner-title">
                                         Avail Discount
                                     </h4>
                                     <h5 className="font-poppins text-white text-lg mb-3 christmas-banner-desc">
@@ -274,7 +274,7 @@ export default function BrandHero() {
                                 </div>
                                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                                     <div className="col-span-2 w-full relative">
-                                        <form className="flex flex-col gap-4 justify-start items-start" onSubmit={handleSubmit}>
+                                        <form className="flex flex-col gap-3 justify-start items-start" onSubmit={handleSubmit}>
                                             <div className="relative w-full">
                                                 <input
                                                     type="text"
@@ -329,7 +329,7 @@ export default function BrandHero() {
                                             )}
                                             <div className="w-full">
                                                 <button
-                                                    className="w-full p-4 py-2 text-white uppercase header-submit-btn rounded rounded-xl shadow-xl text-xl"
+                                                    className="w-full p-4 py-1 text-white uppercase header-submit-btn rounded-xl shadow-xl text-xl"
                                                     type="submit"
                                                 >
                                                     Submit

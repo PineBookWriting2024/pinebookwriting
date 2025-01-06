@@ -133,7 +133,7 @@ export default function BrandNavbar() {
 
     return (
         <>
-            <header id="navbar" className="bg-transparent absolute top-10 left-0 flex justify-between items-center p-4 z-10">
+            <header id="navbar" className="bg-transparent absolute top-10 left-0 flex justify-between items-center p-4 md:pb-4 z-10">
                 <div className='max-w-screen-xl flex justify-between items-center mx-auto w-full'>
                     <div>
                         <Link href="/" className="text-xl font-bold text-white">
@@ -144,7 +144,7 @@ export default function BrandNavbar() {
                     <div className="md:hidden">
                         <button
                             onClick={() => setIsOpen(!isOpen)}
-                            className="text-white hover:text-gray-300 focus:outline-none focus:text-gray-300"
+                            className="text-white hover:text-gray-300 focus:outline-none focus:text-gray-300 z-20"
                             aria-label="Toggle navigation"
                         >
                             <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">

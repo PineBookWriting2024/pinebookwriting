@@ -4,11 +4,12 @@ import { faArrowRight, faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Link from "next/link";
 import dynamic from 'next/dynamic';
+import 'glightbox/dist/css/glightbox.min.css';
+import {Autoplay,Pagination,Navigation,} from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/autoplay";
-import 'glightbox/dist/css/glightbox.min.css';
 
 const GLightbox = dynamic(
     () => import('glightbox').then((glightboxModule) => glightboxModule.default),
@@ -227,6 +228,12 @@ export default function HomeBookSlider() {
                     spaceBetween={30}
                     slidesPerView={4}
                     loop={true}
+                    autoplay={{
+                        delay: 2500,
+                        disableOnInteraction: false,
+                    }}
+                    pagination={false}
+                    modules={[Navigation, Autoplay, Pagination]}
                     onSwiper={(swiper) => (swiperRef2.current = swiper)}
                     className="mySwiper"
                     breakpoints={{

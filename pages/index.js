@@ -18,6 +18,7 @@ import BrandSister from "./components/BrandSister";
 import BrandBannerVideo from "./components/BrandBannerVideo";
 import NewServicesBrand from "./components/NewServicesBrand";
 import NewBrandFooter from "./components/NewBrandFooter";
+import HomeBookSlider from "./components/HomeBookSlider";
 
 export default function Home() {
     return (
@@ -61,6 +62,8 @@ export default function Home() {
 "
                 subdescthree=""
             />
+
+            <HomeBookSlider />  
 
             <BrandCTA
                 title="Achieve Your Writing Dreams With Professional Ghostwriting Company!"

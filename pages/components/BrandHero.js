@@ -248,20 +248,20 @@ export default function BrandHero() {
 
                         <div>
                             <div className="md:px-7 md:py-7 w-full rounded-2xl px-8 py-8 bg-gray-400 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-50 border-gray-100 relative">
-                                <Image
+                                {/* <Image
                                     className="text-center header-form-off-badge"
                                     src={"/brand-img/christmas-tag.png"}
                                     width={140}
                                     height={180}
                                     loading="lazy"
-                                ></Image>
-                                <Image
+                                ></Image> */}
+                                {/* <Image
                                     className="text-center christmas-cap-form"
                                     src={"/brand-img/christmas-cap.png"}
                                     width={300}
                                     height={300}
                                     loading="lazy"
-                                ></Image>
+                                ></Image> */}
                                 <div className="text-start">
                                     <h4 className="font-poppins text-white text-2xl md:text-3xl font-bold christmas-banner-title">
                                         Avail Discount
@@ -272,7 +272,7 @@ export default function BrandHero() {
                                         Your Story Deserves to be Heard!
                                     </h5>
                                 </div>
-                                <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                                <div className="">
                                     <div className="col-span-2 w-full relative">
                                         <form className="flex flex-col gap-3 justify-start items-start" onSubmit={handleSubmit}>
                                             <div className="relative w-full">
@@ -338,7 +338,7 @@ export default function BrandHero() {
 
                                         </form>
                                     </div>
-                                    <div className="col-span-1 flex justify-center items-center">
+                                    {/* <div className="col-span-1 flex justify-center items-center">
                                         <Image
                                             className="text-center christmas-banner-img"
                                             src={"/brand-img/crishtmis-img.png"}
@@ -346,7 +346,7 @@ export default function BrandHero() {
                                             height={500}
                                             loading="lazy"
                                         ></Image>
-                                    </div>
+                                    </div> */}
                                 </div>
                             </div>
                         </div>

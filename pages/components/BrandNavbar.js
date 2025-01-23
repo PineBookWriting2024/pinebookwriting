@@ -137,7 +137,7 @@ export default function BrandNavbar() {
                 <div className='max-w-screen-xl flex justify-between items-center mx-auto w-full'>
                     <div>
                         <Link href="/" className="text-xl font-bold text-white">
-                            <Image className='logo' src={'/brand-img/PBWChristmas.gif'} width={200} height={80} alt="brand logo" loading="lazy" />
+                            <Image className='logo' src={'/brand-img/PineBookWriters.gif'} width={200} height={80} alt="brand logo" loading="lazy" />
                         </Link>
                     </div>
                     

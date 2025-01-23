@@ -1133,3 +1133,45 @@ video#brandVideo{position:absolute;z-index:-1;height:135vh;width:100%;object-fit
 }
 
 /* social media css end  */
+
+
+.home-book-cover .active {
+  background-color: #127271;
+  border: 1px solid #127271;
+  color: #fff;
+  border-radius: 50px;
+}
+
+.home-book-cover .in-active{
+  background-image: -webkit-linear-gradient(-90deg, #B0A698, #5d554b); 
+    border: 1px solid #005f60;
+  color: #fff;
+  border-radius: 50px;
+}
+
+
+
+.portfoilio-slider5-icon.next {
+  top: 50% !important;
+  right: -53px !important;
+  z-index: 99999;
+}
+.portfoilio-slider5-icon.next, .portfoilio-slider5-icon.prev {
+  position: absolute;
+  border-radius: 51px !important;
+  background-color: #fff !important;
+  box-shadow: -1px -1px 5px 0 rgba(0, 0, 0, .75);
+  height: auto !important;
+  cursor: pointer;
+}
+
+.portfoilio-slider5-icon.prev {
+  top: 50% !important;
+  left: -5% !important;
+  z-index: 9999;
+}
+
+.text-size-custom {
+  font-size: 18px;
+  font-weight: 700;
+}

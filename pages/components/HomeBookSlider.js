@@ -4,12 +4,17 @@ import { faArrowRight, faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Link from "next/link";
 import dynamic from 'next/dynamic';
-import 'glightbox/dist/css/glightbox.min.css';
-import {Autoplay,Pagination,Navigation,} from "swiper/modules";
+import {
+    Autoplay,
+    Pagination,
+    Navigation,
+    EffectCoverflow,
+} from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/autoplay";
+import 'glightbox/dist/css/glightbox.min.css';
 
 const GLightbox = dynamic(
     () => import('glightbox').then((glightboxModule) => glightboxModule.default),
@@ -172,7 +177,7 @@ export default function HomeBookSlider() {
             title: 'I Am a Boy',
             author: 'by: Pamela Avis Harry',
             url: 'https://a.co/d/dCOUypn',
-            category: 'Publish'
+            category: 'Published Books'
         },
         {
             id: 17,
@@ -187,16 +192,16 @@ export default function HomeBookSlider() {
             src: "/brand-img/09.png",
             title: 'Gathering: A Collection of Poetry',
             author: 'by: Louis Crump Smithwick',
-            url: '#',
-            category: 'Coming Soon'
+            url: 'https://a.co/d/3w5Jxy7',
+            category: 'Published Books'
         },
         {
             id: 19,
             src: "/brand-img/17.png",
             title: 'Steven The Railroad Teen',
             author: 'by: Evan M. Franzen',
-            url: '#',
-            category: 'Coming Soon'
+            url: 'https://a.co/d/hLhYHea',
+            category: 'Published Books'
         },
     ];
 
@@ -213,7 +218,7 @@ export default function HomeBookSlider() {
                     <FontAwesomeIcon icon={faArrowLeft} color="#000" width={18} />
                 </div>
                 <div className="flex space-x-4 justify-center mb-12">
-                    {['Published Books', 'Coming Soon'].map(category => (
+                    {/* {['Published Books', 'Coming Soon'].map(category => (
                         <button
                             key={category}
                             className={`px-4 py-2 font-poppins ${activeCategory === category ? 'active' : 'in-active'}`}
@@ -221,21 +226,28 @@ export default function HomeBookSlider() {
                         >
                             {category}
                         </button>
-                    ))}
+                    ))} */}
+                       
+                        <button
+                            className='brand-nav-btn shadow-xl mt-10 cursor-pointer mb-10'
+                            
+                        >
+                          Published Book
+                        </button>
+              
                 </div>
                 {/* Swiper Slider */}
                 <Swiper
                     spaceBetween={30}
                     slidesPerView={4}
-                    loop={true}
                     autoplay={{
                         delay: 2500,
                         disableOnInteraction: false,
                     }}
-                    pagination={false}
-                    modules={[Navigation, Autoplay, Pagination]}
+                    loop={true}
                     onSwiper={(swiper) => (swiperRef2.current = swiper)}
                     className="mySwiper"
+                    modules={[Navigation, Autoplay, Pagination]}
                     breakpoints={{
                         "@0.00": {
                             slidesPerView: 1,

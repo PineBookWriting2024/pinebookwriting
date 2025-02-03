@@ -14,6 +14,11 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/autoplay";
+
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/autoplay";
 import 'glightbox/dist/css/glightbox.min.css';
 
 const GLightbox = dynamic(
@@ -23,6 +28,7 @@ const GLightbox = dynamic(
 
 export default function HomeBookSlider() {
     const swiperRef2 = useRef(null);
+    const swiperRef3 = useRef(null);
     const lightboxRef = useRef(null);
     const [activeCategory, setActiveCategory] = useState('Published Books');
 
@@ -184,8 +190,8 @@ export default function HomeBookSlider() {
             src: "/brand-img/04.png",
             title: 'Behind Closed Doors: Male Experience of Domestic Violence in the Age of Denial',
             author: 'by: Che A. Abongwa',
-            url: '#',
-            category: 'Coming Soon',
+            url: 'https://a.co/d/3ag7Sgb',
+            category: 'Published Books',
         },
         {
             id: 18,
@@ -203,13 +209,71 @@ export default function HomeBookSlider() {
             url: 'https://a.co/d/hLhYHea',
             category: 'Published Books'
         },
+        // {
+        //     id: 20,
+        //     src: "/brand-img/coming-soon-book1.png",
+        //     title: 'Steven The Railroad Teen',
+        //     author: 'by: Evan M. Franzen',
+        //     url: '#',
+        //     category: 'Coming Soon'
+        // },
+        {
+            id: 21,
+            src: "/brand-img/coming-soon-book3.png",
+            title: 'The Quest for the Templar Reliquary: Rowen’s Secret Part One',
+            author: 'by: Scott Andrews',
+            category: 'Coming Soon'
+        },
+        {
+            id: 22,
+            src: "/brand-img/coming-soon-book2.png",
+            title: 'Rowen’s Secret: The Quest for the Templar Reliquary Part Two',
+            author: 'by: Scott Andrews',
+            category: 'Coming Soon'
+        },
+
+        {
+            id: 23,
+            src: "/brand-img/coming-soon-book4.png",
+            title: 'Global Terrorism: Quest for Social and Economic Justice',
+            author: 'by: Edward Agbai',
+            category: 'Coming Soon'
+        },
+        {
+            id: 24,
+            src: "/brand-img/coming-soon-book5.png",
+            title: 'The Truth About Giving in the Church',
+            author: 'by: Eric Mills',
+            category: 'Coming Soon'
+        },
+        {
+            id: 25,
+            src: "/brand-img/coming-soon-book6.png",
+            title: 'Mystforgotten Chronicles - Hopeful Purpose',
+            author: 'by: Hayden M Rusk',
+            category: 'Coming Soon'
+        },
+        {
+            id: 26,
+            src: "/brand-img/coming-soon-book7.png",
+            title: 'JujuBean Adventures Book one: OooBoys Burgers.',
+            author: 'by: Shiela Orsot',
+            category: 'Coming Soon'
+        },
+        {
+            id: 27,
+            src: "/brand-img/coming-soon-book8.png",
+            title: 'Unravelling the World: Adventures Across Continents ',
+            author: 'by: Neil Dutta',
+            category: 'Coming Soon'
+        },
     ];
 
     const filteredBooks = books.filter(book => book.category === activeCategory);
 
     return (
         <>
-            <div className="w-full max-w-6xl mx-auto py-10 relative home-book-cover">
+            <div className="w-full max-w-6xl mx-auto py-8 relative home-book-cover">
                 {/* Custom Previous Button */}
                 <div
                     className="absolute top-1/2 -left-10 transform -translate-y-1/2 bk-sil2 portfoilio-slider5-icon prev cursor-pointer"
@@ -218,7 +282,7 @@ export default function HomeBookSlider() {
                     <FontAwesomeIcon icon={faArrowLeft} color="#000" width={18} />
                 </div>
                 <div className="flex space-x-4 justify-center mb-12">
-                    {/* {['Published Books', 'Coming Soon'].map(category => (
+                    {['Published Books', 'Coming Soon'].map(category => (
                         <button
                             key={category}
                             className={`px-4 py-2 font-poppins ${activeCategory === category ? 'active' : 'in-active'}`}
@@ -226,15 +290,7 @@ export default function HomeBookSlider() {
                         >
                             {category}
                         </button>
-                    ))} */}
-                       
-                        <button
-                            className='brand-nav-btn shadow-xl mt-10 cursor-pointer mb-10'
-                            
-                        >
-                          Published Book
-                        </button>
-              
+                    ))}
                 </div>
                 {/* Swiper Slider */}
                 <Swiper
@@ -245,7 +301,7 @@ export default function HomeBookSlider() {
                         disableOnInteraction: false,
                     }}
                     loop={true}
-                    onSwiper={(swiper) => (swiperRef2.current = swiper)}
+                    onSwiper={(swiper) => (swiperRef3.current = swiper)}
                     className="mySwiper"
                     modules={[Navigation, Autoplay, Pagination]}
                     breakpoints={{
@@ -287,40 +343,6 @@ export default function HomeBookSlider() {
                             </SwiperSlide>
                         ))}
                     </div>
-                    {/* {ImageSlides.map((slide) => (
-                        <SwiperSlide key={slide.id}>
-                            {slide.url ? (
-                                <Link href={slide.url} className="relative h-full flex flex-col gap-6" target="_blank">
-                                    <div>
-                                        <img
-                                            src={slide.src}
-                                            alt={`Slide ${slide.id}`}
-                                            className="h-70 w-auto object-contain w-100"
-                                        />
-                                    </div>
-                                    <div>
-                                        <h4 className="text-size-custom">{slide.title}</h4>
-                                        <h4>{slide.author}</h4>
-                                    </div>
-                                </Link>
-                            ) : (
-                                <div className="relative h-full flex flex-col gap-6">
-                                    <div>
-                                        <img
-                                            src={slide.src}
-                                            alt={`Slide ${slide.id}`}
-                                            className="h-70 w-auto object-contain w-100"
-                                        />
-                                    </div>
-                                    <div>
-                                        <h4 className="text-size-custom">{slide.title}</h4>
-                                        <h4>{slide.author}</h4>
-                                    </div>
-                                </div>
-                            )}
-                        </SwiperSlide>
-                    ))} */}
-
                 </Swiper>
 
                 {/* Custom Next Button */}

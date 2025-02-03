@@ -1,16 +1,20 @@
 import useHubspotForm from "/hooks/hubspot";
-import React, { useState, useEffect } from "react";
+import React, { useState, useRef } from "react";
+
 import Image from "next/image";
 import Link from "next/link";
-import { faArrowRight, faArrowLeft, faPlusCircle, faCheckCircle, faMinusCircle, faUser, faPhone, faEnvelope, faPen } from "@fortawesome/free-solid-svg-icons";
-import { library } from "@fortawesome/fontawesome-svg-core";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useRouter } from 'next/navigation';
-import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import WavyText from "./WavyText";
 import FadeIn from "./FadeIn";
+import { Swiper, SwiperSlide } from "swiper/react";
+import {
+    Autoplay,
+    Pagination,
+    Navigation,
+    EffectCoverflow,
+} from "swiper/modules";
+
 // import SnowFall from "./SnowFall";
 
 
@@ -25,6 +29,7 @@ export default function BrandHero() {
     const [message, setMessage] = useState("");
     const [showSuccess, setShowSuccess] = useState(false);
     const [phoneError, setPhoneError] = useState("");
+    const swiperRef2 = useRef(null);
 
     // Object
     const clientLogos = [
@@ -32,29 +37,29 @@ export default function BrandHero() {
             href: "https://goo.gl/maps/D6kJBoXBJYwcZWkP7",
             src: "/images/Google-Partner.webp",
             alt: "LOGO",
-            width: 180,
-            height: 120
+            width: 125,
+            height: 125
         },
         {
             href: "https://www.bbb.org/ca/on/richmond-hill/profile/publishers-book/pine-book-writing-inc-0107-1406919",
             src: "/images/s2.png",
             alt: "LOGO",
-            width: 130,
-            height: 60
+            width: 125,
+            height: 125
         },
         {
             href: "https://www.trustpilot.com/review/pinebookwriting.com",
             src: "/images/s3.png",
             alt: "LOGO",
-            width: 130,
-            height: 60
+            width: 125,
+            height: 125
         },
         {
             href: "https://www.yelp.com/biz/pine-book-writing-richmond-hill",
             src: "/images/s4.png",
             alt: "LOGO",
-            width: 130,
-            height: 60
+            width: 125,
+            height: 125
         },
         {
             href: "https://clutch.co/profile/pine-book-writing",
@@ -145,16 +150,41 @@ export default function BrandHero() {
                             <h4 className="font-poppins text-2xl mt-8 text-white uppercase font-bold">Our Credibility</h4>
                             {/* </FadeIn> */}
                             <div className="flex justify-start items-center mt-8 gap-2 md:gap-x-8 client-logo-sec">
-                                {clientLogos.map((logo, index) => (
-                                    <Link key={index} href={logo.href} target="_blank">
-                                        <Image
-                                            alt={logo.alt}
-                                            src={logo.src}
-                                            width={logo.width}
-                                            height={logo.height}
-                                        />
-                                    </Link>
-                                ))}
+                            <Swiper
+                                    spaceBetween={30}
+                                    slidesPerView={4}
+                                    autoplay={{
+                                        delay: 2500,
+                                        disableOnInteraction: false,
+                                    }}
+                                    loop={true}
+                                    onSwiper={(swiper) => (swiperRef2.current = swiper)}
+                                    className="mySwiper"
+                                    modules={[Navigation, Autoplay, Pagination]}
+                                    breakpoints={{
+                                        "@0.00": {
+                                            slidesPerView: 3,
+                                            spaceBetween: 10,
+                                        },
+                                        "@1.00": {
+                                            slidesPerView: 4,
+                                            spaceBetween: 10,
+                                        },
+                                    }}
+                                >
+                                    {clientLogos.map((logo, index) => (
+                                        <SwiperSlide>
+                                            <Link key={index} href={logo.href} target="_blank">
+                                                <Image
+                                                    alt={logo.alt}
+                                                    src={logo.src}
+                                                    width={logo.width}
+                                                    height={logo.height}
+                                                />
+                                            </Link>
+                                        </SwiperSlide>
+                                    ))}
+                                </Swiper>
                             </div>
                         </div>
 

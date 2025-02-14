@@ -45,13 +45,13 @@ export default function Footer() {
               <li className="flex items-center justify-center md:justify-start mt-3 text-md">
                 <FontAwesomeIcon icon={faMapLocation} className="me-3" />
                 <div>
-                  <p className="text-white text-md"><b>CANADA ADDRESS: </b> R-10225 Yonge St, Suite #250, Richmond Hill, ON L4C 3B2</p>
+                  <p className="text-white text-md"><b className="text-white">CANADA ADDRESS: </b> R-10225 Yonge St, Suite #250, Richmond Hill, ON L4C 3B2</p>
                 </div>
               </li>
               <li className="flex items-center justify-center md:justify-start mt-3 text-md">
                 <FontAwesomeIcon icon={faMapLocation} className="me-3" />
                 <div>
-                  <p className="text-white text-md"><b>USA ADDRESS: </b>211 E 43rd St, 7th Floor, Suite #424, New York City, NY 10017</p>
+                  <p className="text-white text-md"><b className="text-white">USA ADDRESS: </b>211 E 43rd St, 7th Floor, Suite #424, New York City, NY 10017</p>
                 </div>
               </li>
             </nav>

@@ -162,14 +162,14 @@ export default function HeroFormBookOffer() {
 
   return (
     <div className="container mx-4 pt-20 md:mx-32 tablet-margin-banner brand-hero-section ">
-      <div className="grid grid-cols-1 sm:gap-8 sm:py-0 md:grid-cols-2 text-left items-center justify-between md:gap-8 md:py-36">
+      <div className="grid grid-cols-1 sm:gap-8 sm:py-0 md:grid-cols-2 text-left items-center justify-between md:gap-8 md:py-30">
         <div className="mb-4">
           {/* <h2 className="text-sm md:base scroll-animation">
             <span> #1 SELF </span> PUBLISHING COMPANY
           </h2> */}
           <h3 className="font-poppins text-2xl mb-4 aos-init aos-animate text-white"><span className="px-2 py-0">#1 Self</span> Publishing Company</h3>
           <FadeIn>
-            <h1 className="font-poppins text-3xl md:text-5xl text-white font-bold">
+            <h1 className="font-poppins text-3xl text-white font-bold">
               DO YOU HAVE A MANUSCRIPT READY TO BE PUBLISHED?
             </h1>
           </FadeIn>

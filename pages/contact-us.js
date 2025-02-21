@@ -7,7 +7,6 @@ import BrandPrimaryHeader from "./components/BrandPrimaryHeader";
 import BrandNavbar from "./components/BrandNavbar";
 import NewBrandFooter from "./components/NewBrandFooter";
 import BrandTopBar from "./components/BrandTopBar";
-// import HomePopup from "./components/HomePopup";
 export default function Contact() {
 
 
@@ -34,7 +33,6 @@ export default function Contact() {
             {/* <BrandFooter /> */}
             <NewBrandFooter />
 
-            {/* <HomePopup/> */}
         </>
     );
 }

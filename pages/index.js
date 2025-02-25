@@ -82,7 +82,7 @@ export default function Home() {
             <BrandFaqs />
             <BrandContact />
             {/* <BrandSister/> */}
-                        <HomePopup/>
+                        {/* <HomePopup/> */}
 
             <NewBrandFooter />
         </>

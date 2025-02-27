@@ -87,7 +87,7 @@ export default function Privacy() {
 
                 <p><b>*Message and data rates may apply.</b></p>
                 <p><b>*Message frequency varies.</b></p> */}
-<h2 class="font-poppins">SMS Terms and Conditions</h2>
+                <h2 class="font-poppins">SMS Terms and Conditions</h2>
                 <ol className="terms-condition-bullets">
                     <li className="font-poppins text-2xl font-bold">SMS Consent Communication:</li>
 
@@ -110,9 +110,6 @@ export default function Privacy() {
                         </svg> Publishing </p>
                         <p className="flex items-center"> <svg width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M12 9.5C13.3807 9.5 14.5 10.6193 14.5 12C14.5 13.3807 13.3807 14.5 12 14.5C10.6193 14.5 9.5 13.3807 9.5 12C9.5 10.6193 10.6193 9.5 12 9.5Z" fill="#000000" />
-                        </svg> Marketing </p>
-                        <p className="flex items-center"> <svg width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M12 9.5C13.3807 9.5 14.5 10.6193 14.5 12C14.5 13.3807 13.3807 14.5 12 14.5C10.6193 14.5 9.5 13.3807 9.5 12C9.5 10.6193 10.6193 9.5 12 9.5Z" fill="#000000" />
                         </svg> Advertising </p>
                     </div>
                     <p>Example: "Hello, I wanted to inform you that we are having a promotion offer for our services at a 50% OFF, let me know when you are available to discuss further. Reply STOP to opt out of SMS messaging at any time."</p>
@@ -127,10 +124,6 @@ export default function Privacy() {
                     <p className="pt-2">You may opt-in to receive SMS messages from Pine Book Writing Inc in the following ways: </p>
 
                     <div className="terms-condition-bullets-subs pb-2">
-                        <p className="flex items-center">
-                            <svg width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12 9.5C13.3807 9.5 14.5 10.6193 14.5 12C14.5 13.3807 13.3807 14.5 12 14.5C10.6193 14.5 9.5 13.3807 9.5 12C9.5 10.6193 10.6193 9.5 12 9.5Z" fill="#000000" />
-                            </svg>Verbally, during a conversation</p>
                         <p className="flex items-center"><svg width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M12 9.5C13.3807 9.5 14.5 10.6193 14.5 12C14.5 13.3807 13.3807 14.5 12 14.5C10.6193 14.5 9.5 13.3807 9.5 12C9.5 10.6193 10.6193 9.5 12 9.5Z" fill="#000000" />
                         </svg> By submitting an online form</p>
@@ -157,7 +150,7 @@ export default function Privacy() {
                 </ol>
 
 
-                <h2 className="font-poppins">Endorsement</h2>
+                <h2 className="font-poppins">Endorsement</h2> 
                 <p>
                     By using this website, users agree to defend Pine Book Writing and its directors, officers, managers, employees, and representatives against any loss, damage, or expense arising from third-party claims related to their name or its use. Pine Book Writing does not claim ownership of user-provided content.
                 </p>

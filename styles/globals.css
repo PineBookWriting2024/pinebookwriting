@@ -1190,3 +1190,16 @@ video#brandVideo{position:absolute;z-index:-1;height:135vh;width:100%;object-fit
   font-size: 18px;
   font-weight: 700;
 }
+
+.terms-condition-bullets,
+.terms-condition-bullets-subs{
+  list-style: auto;
+}
+
+.terms-condition-bullets-subs p{
+  padding-bottom: 0px !important;
+}
+
+.terms-condition-bullets-subs {
+  margin-top: -9px;
+}

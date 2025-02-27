@@ -100,39 +100,42 @@ export default function BrandMainContact() {
                     <div className="basis-full brand-main-contact-form">
                         <form className="px-10 md:px-20 py-12" onSubmit={handleSubmit}>
                             <h3 className="text-black leading-20 font-bold text-4xl  font-poppins text-start uppercase aos-init aos-animate" data-aos="zoom-out">
-                            Get in touch With Us
+                                Get in touch With Us
                             </h3>
                             <p className="text-black leading-6  pb-5 text-base">
-                            Fill out our simple and quick form to get a free quote. One of our customer service representatives will get back to you shortly.</p>
+                                Fill out our simple and quick form to get a free quote. One of our customer service representatives will get back to you shortly.</p>
 
-                            <div className="relative mb-3">
-                                <input
-                                    type="text"
-                                    name="fullName"
-                                    onChange={handleChange}
-                                    value={fullName}
-                                    required
-                                    className="pl-4 pr-4 py-2 border rounded-lg w-full brand-connect-form-input font-poppins shadow-xl"
-                                    placeholder="Enter your Name"
-                                />
-                                <Image src={"/brand-img/user-icon.png"} width={16} height={16} className="absolute left-0 top-4 ml-4" />
+                            <div class="grid gap-3 md:grid-cols-2">
+                                <div className="relative mb-3">
+                                    <input
+                                        type="text"
+                                        name="fullName"
+                                        onChange={handleChange}
+                                        value={fullName}
+                                        required
+                                        className="pl-4 pr-4 py-2 border rounded-lg w-full brand-connect-form-input font-poppins shadow-xl"
+                                        placeholder="Enter your Name"
+                                    />
+                                    <Image src={"/brand-img/user-icon.png"} width={16} height={16} className="absolute left-0 top-4 ml-4" />
+                                </div>
+
+                                <div className="relative mb-3">
+                                    <input
+                                        type="text"
+                                        name="phoneNumber"
+                                        onChange={handleChange}
+                                        value={phoneNumber}
+                                        required
+                                        className="pl-4 pr-4 py-2 border rounded-lg w-full brand-connect-form-input font-poppins shadow-xl"
+                                        placeholder="Enter your Number"
+                                    />
+                                    <Image src={"/brand-img/phone-icon.png"} width={16} height={16} className="absolute left-0 top-4 ml-4" />
+                                    {phoneError && (
+                                        <p className="text-red-500 text-sm mt-1">{phoneError}</p>
+                                    )}
+                                </div>
                             </div>
 
-                            <div className="relative mb-3">
-                                <input
-                                    type="text"
-                                    name="phoneNumber"
-                                    onChange={handleChange}
-                                    value={phoneNumber}
-                                    required
-                                    className="pl-4 pr-4 py-2 border rounded-lg w-full brand-connect-form-input font-poppins shadow-xl"
-                                    placeholder="Enter your Number"
-                                />
-                                <Image src={"/brand-img/phone-icon.png"} width={16} height={16} className="absolute left-0 top-4 ml-4" />
-                                {phoneError && (
-                                    <p className="text-red-500 text-sm mt-1">{phoneError}</p>
-                                )}
-                            </div>
                             <div className="relative mb-3">
                                 <input
                                     type="text"
@@ -162,6 +165,12 @@ export default function BrandMainContact() {
                               flex items-start  
                               pointer-events-none"
                                 ></div>
+                            </div>
+                            <div class="flex items-start mb-5">
+                                <div class="flex items-center h-5">
+                                    <input id="remember" type="checkbox" value="" class="w-4 h-4 border border-gray-300 rounded-sm bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800" required />
+                                </div>
+                                <label for="remember" class="ms-2 text-sm font-medium text-gray-600 dark:text-gray-300">By checking this box, I consent to received text messages related to listing updates from Pine Book Writing and Publishing. you can reply "STOP" at any time to opt-out. Message and data rates may apply. Message Frequency may vary, text Help to <a href="tel:(866) 841-7463">(866) 841-7463</a>  for assistance. For more information, please refer to our  <Link href="privacy-policy" target="_blank">PRIVACY POLICY</Link> and SMS <Link href="terms-and-conditions" target="_blank"> TERMS and CONDITIONS </Link> on our website</label>
                             </div>
                             {showSuccess && (
                                 <p className="px-1 py-2 text-green-700">

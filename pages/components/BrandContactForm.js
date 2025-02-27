@@ -96,38 +96,39 @@ export default function BrandContact() {
 
                             <form className="basis-1/2 px-5 mb-5  md:ml-20" onSubmit={handleSubmit}>
                                 <h3 className="text-black leading-20 font-bold text-3xl md:text-4xl font-poppins text-start uppercase">
-                                Let’s Get in Touch
+                                    Let’s Get in Touch
                                 </h3>
                                 <p className="text-black leading-6  pb-5 text-base pt-4">
-                                Fill out our simple and quick form to get a free quote. One of our customer service representatives will get back to you shortly.</p>
+                                    Fill out our simple and quick form to get a free quote. One of our customer service representatives will get back to you shortly.</p>
+                                <div class="grid gap-3 md:grid-cols-2">
+                                    <div className="relative mb-3">
+                                        <input
+                                            type="text"
+                                            name="fullName"
+                                            onChange={handleChange}
+                                            value={fullName}
+                                            required
+                                            className="pl-4 pr-4 py-2 border rounded-md w-full brand-connect-form-input shadow-xl"
+                                            placeholder="Enter your Name"
+                                        />
+                                        <Image src={"/brand-img/user-icon.png"} width={16} height={16} className="absolute left-0 top-4 ml-4" />
+                                    </div>
 
-                                <div className="relative mb-3">
-                                    <input
-                                        type="text"
-                                        name="fullName"
-                                        onChange={handleChange}
-                                        value={fullName}
-                                        required
-                                        className="pl-4 pr-4 py-2 border rounded-lg w-full brand-connect-form-input shadow-xl"
-                                        placeholder="Enter your Name"
-                                    />
-                                    <Image src={"/brand-img/user-icon.png"} width={16} height={16} className="absolute left-0 top-4 ml-4" />
-                                </div>
-
-                                <div className="relative mb-3">
-                                    <input
-                                        type="text"
-                                        name="phoneNumber"
-                                        onChange={handleChange}
-                                        value={phoneNumber}
-                                        required
-                                        className="pl-4 pr-4 py-2 border rounded-lg w-full brand-connect-form-input shadow-xl"
-                                        placeholder="Enter your Number"
-                                    />
-                                    <Image src={"/brand-img/phone-icon.png"} width={16} height={16} className="absolute left-0 top-4 ml-4" />
-                                    {phoneError && (
-                                        <p className="text-red-500 text-sm mt-1">{phoneError}</p>
-                                    )}
+                                    <div className="relative mb-3">
+                                        <input
+                                            type="text"
+                                            name="phoneNumber"
+                                            onChange={handleChange}
+                                            value={phoneNumber}
+                                            required
+                                            className="pl-4 pr-4 py-2 border rounded-md w-full brand-connect-form-input shadow-xl"
+                                            placeholder="Enter your Number"
+                                        />
+                                        <Image src={"/brand-img/phone-icon.png"} width={16} height={16} className="absolute left-0 top-4 ml-4" />
+                                        {phoneError && (
+                                            <p className="text-red-500 text-sm mt-1">{phoneError}</p>
+                                        )}
+                                    </div>
                                 </div>
 
                                 <div className="relative mb-3">
@@ -137,7 +138,7 @@ export default function BrandContact() {
                                         onChange={handleChange}
                                         value={email}
                                         required
-                                        className="pl-4 pr-4 py-2 border rounded-lg w-full brand-connect-form-input shadow-xl"
+                                        className="pl-4 pr-4 py-2 border rounded-md w-full brand-connect-form-input shadow-xl"
                                         placeholder="Enter your Email"
                                     />
                                     <Image src={"/brand-img/email-icon.png"} width={16} height={16} className="absolute left-0 top-5 ml-4" />
@@ -150,7 +151,7 @@ export default function BrandContact() {
                                         required
                                         placeholder="Enter your Message"
                                         name="message"
-                                        className="resize-none pl-4 pr-4 py-2 border rounded-lg w-full brand-connect-form-input shadow-xl"
+                                        className="resize-none pl-4 pr-4 py-2 border rounded-md w-full brand-connect-form-input shadow-xl"
                                         rows={4}
                                     ></textarea>
                                     <FontAwesomeIcon icon={faPen} color="#000" className="absolute left-0 top-3 ml-4" width={14} />
@@ -159,6 +160,12 @@ export default function BrandContact() {
                               flex items-start  
                               pointer-events-none"
                                     ></div>
+                                </div>
+                                <div class="flex items-start mb-5">
+                                    <div class="flex items-center h-5">
+                                        <input id="remember" type="checkbox" value="" class="w-4 h-4 border border-gray-300 rounded-sm bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800" required />
+                                    </div>
+                                    <label for="remember" class="ms-2 text-sm font-medium text-gray-600 dark:text-gray-300">By checking this box, I consent to received text messages related to listing updates from Pine Book Writing and Publishing. you can reply "STOP" at any time to opt-out. Message and data rates may apply. Message Frequency may vary, text Help to <Link href="tel:(866) 841-7463">(866) 841-7463</Link>  for assistance. For more information, please refer to our  <Link href="privacy-policy" target="_blank">PRIVACY POLICY</Link> and SMS <Link href="terms-and-conditions" target="_blank"> TERMS and CONDITIONS </Link> on our website</label>
                                 </div>
                                 {showSuccess && (
                                     <p className="px-1 py-2 text-green-700">

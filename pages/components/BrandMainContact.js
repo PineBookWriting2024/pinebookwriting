@@ -170,17 +170,18 @@ export default function BrandMainContact() {
                                 <div class="flex items-center h-5">
                                     <input id="remember" type="checkbox" value="" class="w-4 h-4 border border-gray-300 rounded-sm bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800" required />
                                 </div>
-                                <label for="remember" class="ms-2 text-sm font-medium text-gray-600 dark:text-gray-300">By checking this box, I consent to received text messages related to listing updates from Pine Book Writing and Publishing. you can reply "STOP" at any time to opt-out. Message and data rates may apply. Message Frequency may vary, text Help to <a href="tel:(866) 841-7463">(866) 841-7463</a>  for assistance. For more information, please refer to our  <Link href="privacy-policy" target="_blank">PRIVACY POLICY</Link> and SMS <Link href="terms-and-conditions" target="_blank"> TERMS and CONDITIONS </Link> on our website</label>
+                                <label for="remember" class="ms-2 text-sm font-medium text-gray-600 dark:text-gray-300">By checking this box, I consent to received text messages related to listing updates from Pine Book Writing and Publishing. you can reply "STOP" at any time to opt-out. Message and data rates may apply. Message Frequency may vary, text Help to <a href="tel:(866) 841-7463" className="text-blue-500">(866) 841-7463</a>  for assistance. For more information, please refer to our  <Link href="privacy-policy" className="text-blue-500" target="_blank">PRIVACY POLICY</Link> and SMS <Link href="terms-and-conditions" target="_blank" className="text-blue-500"> TERMS and CONDITIONS </Link> on our website</label>
                             </div>
                             {showSuccess && (
                                 <p className="px-1 py-2 text-green-700">
                                     Form submitted Successfully!
                                 </p>
                             )}
-                            <button className="p-4 bg-green-500 uppercase text-white rounded font-poppins brand-submit-btn mb-10" type="submit">
-                                Submit
-                            </button>
-
+                            <div className="flex justify-center">
+                                <button className="p-4 bg-green-500 uppercase text-white rounded font-poppins brand-submit-btn mb-10" type="submit">
+                                    Submit
+                                </button>
+                            </div>
                             {/* <div className="form-line" >
                                 <p>Message and data rates may apply. Message frequency may vary. Reply HELP for help. Reply STOP to unsubscribe. 
                                     View <Link href="/privacy-policy">Privacy Policy</Link> & <Link href="/terms-and-conditions" >Terms and Conditions.</Link></p>

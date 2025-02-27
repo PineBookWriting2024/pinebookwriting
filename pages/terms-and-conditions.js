@@ -87,7 +87,7 @@ export default function Privacy() {
 
                 <p><b>*Message and data rates may apply.</b></p>
                 <p><b>*Message frequency varies.</b></p> */}
-
+<h2 class="font-poppins">SMS Terms and Conditions</h2>
                 <ol className="terms-condition-bullets">
                     <li className="font-poppins text-2xl font-bold">SMS Consent Communication:</li>
 

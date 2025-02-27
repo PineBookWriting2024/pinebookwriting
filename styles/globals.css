@@ -1203,3 +1203,7 @@ video#brandVideo{position:absolute;z-index:-1;height:135vh;width:100%;object-fit
 .terms-condition-bullets-subs {
   margin-top: -9px;
 }
+.terms-condition-bullets{
+  margin-left: 25px;
+  margin-top: 19px;
+}

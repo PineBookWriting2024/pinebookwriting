@@ -423,9 +423,9 @@
     .transparent-connect-form-border{background-color:#87929d6b!important;backdrop-filter:blur(4px);background-image: url("../public/images/pop-bg.jpg");}
     .dark-form-bg{background:#433f3fe6;}
 .home-popup-modal-wrapper {
-    width: 70%;
+    width: 80%;
     height: 520px;
-}    .form-off-badge{position:absolute;left:-70px;top:-50px;z-index:1000;}
+}    .form-off-badge{position:absolute;left:-50px;top:-30px;z-index:1000;}
     .home-connect-form-input{background-color:#fff;font-size:17px;border-radius:10px;border:2px solid #fff0;padding:3px 17px;  /* padding: 17px; */}
     .home-popup-img-bg{height:480px!important;}
     .popup-form-wrapper {
@@ -858,7 +858,9 @@ html {
     .transparent-connect-form-border {
       background-color: #2e2f316b !important;
       backdrop-filter: blur(4px);
-      background-image: url(/_next/static/media/pop-bg.82d49186.jp);
+      background-image: url(/_next/static/media/pop-bg.82d49186.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
   }
 
       header#navbar {position: relative;top: 0;background: #127271;z-index: 99;}

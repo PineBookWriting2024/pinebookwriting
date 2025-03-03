@@ -136,7 +136,7 @@ export default function BrandNavbar() {
             <header id="navbar" className="bg-transparent absolute top-10 left-0 flex justify-between items-center p-4 md:pb-4 z-10">
                 <div className='max-w-screen-xl flex justify-between items-center mx-auto w-full'>
                     <div>
-                        <Link href="/" className="text-xl font-bold text-white">
+                        <Link href="/" onClick={(e) => { e.preventDefault(); window.location.href = "/"; }} className="text-xl font-bold text-white">
                             <Image className='logo' src={'/brand-img/PineBookWriters.gif'} width={200} height={80} alt="brand logo" loading="lazy" />
                         </Link>
                     </div>

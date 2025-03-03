@@ -165,7 +165,7 @@ export default function BrandHeroFriday() {
                                     </h4>
                                     <h5 className="font-poppins text-white text-lg mb-3 christmas-banner-desc">
                                         Holiday Season Sale: Expert Book Writing at{" "}
-                                        <span className="text-blink">50% Off</span> – <br />
+                                        <span className="text-blink">50% Off</span> –
                                         Your Story Deserves to be Heard!
                                     </h5>
                                 </div>

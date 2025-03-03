@@ -16,7 +16,6 @@ import BrandContact from "./components/BrandContactForm";
 import BrandLogo from "./components/BrandLogo";
 import BrandSister from "./components/BrandSister";
 import BrandBannerVideo from "./components/BrandBannerVideo";
-import HomePopup from "./components/HomePopup";
 import NewBrandFooter from "./components/NewBrandFooter";
 import HomeBookSlider from "./components/HomeBookSlider";
 
@@ -82,7 +81,7 @@ export default function Home() {
             <BrandFaqs />
             <BrandContact />
             {/* <BrandSister/> */}
-                        {/* <HomePopup/> */}
+                       
 
             <NewBrandFooter />
         </>

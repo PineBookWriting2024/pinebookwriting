@@ -1,11 +1,12 @@
 import "../styles/globals.css";
-import React, { useEffect } from 'react';
+import React, { useEffect ,useState} from 'react';
 import localFont from 'next/font/local';
 import { Poppins } from 'next/font/google';
 import Script from 'next/script';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-
+import HomePopupNew from "./components/HomePopupNew";
+import PopupBundle from "./components/PopupBundle";
 // Font files can be colocated inside of `pages`
 // const majallab = localFont({
 //   src: './majallab-webfont.woff2',
@@ -21,6 +22,19 @@ const poppins = Poppins({
 
 
 export default function App({ Component, pageProps }) {
+
+   const [isModalOpen, setModalOpen] = useState(true);
+   const closeModal = () => {
+    setModalOpen(false);
+};
+    const [selectedService, setSelectedService] = useState('');
+
+
+    const openModal = (service) => {
+        setSelectedService(service);
+        setModalOpen(true);
+    };
+  
   useEffect(() => {
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
@@ -42,6 +56,8 @@ export default function App({ Component, pageProps }) {
 
   return (
     <main className={`${poppins.variable}`}>
+        <HomePopupNew/>
+        <PopupBundle isOpen={isModalOpen} onClose={closeModal} service={selectedService} />
       <Component {...pageProps} />
       <Script
         src="https://www.googletagmanager.com/gtag/js?id=G-9X52J8V8NK"
@@ -75,6 +91,8 @@ export default function App({ Component, pageProps }) {
         <img height="1" width="1" style={{ display: "none" }}
           src="https://www.facebook.com/tr?id=685229296766479&ev=PageView&noscript=1"
         /></noscript>
+
+       
 
     </main>
   );

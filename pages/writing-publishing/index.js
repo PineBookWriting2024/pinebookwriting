@@ -74,7 +74,7 @@ import Story from "../components/Story";
 import Chart from "../components/Chart";
 import Faq from "../components/Faq";
 import dynamic from 'next/dynamic';
-import HomePopup from "../components/HomePopup";
+// import HomePopup from "../components/HomePopup";
 import 'glightbox/dist/css/glightbox.min.css';
 import PopupBundle from "../components/PopupBundle";
 import HeroFormBookOfferPub from "../components/HerformBookOfferPub";

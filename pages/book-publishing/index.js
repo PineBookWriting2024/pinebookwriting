@@ -77,7 +77,7 @@ import Chart from "../components/Chart";
 import Faq from "../components/Faq";
 import dynamic from 'next/dynamic';
 import Packages from "../components/Packages";
-import HomePopup from "../components/HomePopup";
+// import HomePopup from "../components/HomePopup";
 import 'glightbox/dist/css/glightbox.min.css';
 
 const HeavyComponent = dynamic(() => import('../components/hero'), {

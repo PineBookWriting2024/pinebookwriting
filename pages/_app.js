@@ -57,7 +57,7 @@ export default function App({ Component, pageProps }) {
   return (
     <main className={`${poppins.variable}`}>
         <HomePopupNew/>
-        <PopupBundle isOpen={isModalOpen} onClose={closeModal} service={selectedService} />
+        {/* <PopupBundle isOpen={isModalOpen} onClose={closeModal} service={selectedService} /> */}
       <Component {...pageProps} />
       <Script
         src="https://www.googletagmanager.com/gtag/js?id=G-9X52J8V8NK"

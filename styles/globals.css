@@ -1209,3 +1209,105 @@ video#brandVideo{position:absolute;z-index:-1;height:135vh;width:100%;object-fit
   margin-left: 25px;
   margin-top: 19px;
 }
+
+
+.portfolio-book-publishing-offer-bg {
+  background: #147d6e;
+}
+
+.portfoilio-slider3-icon.next, .portfoilio-slider3-icon.prev {
+  position: absolute;
+  top: 55% !important;
+  border-radius: 51px !important;
+  background-color: #fff !important;
+  box-shadow: -4px 2px 43px 0 rgba(0, 0, 0, .75);
+  height: auto !important;
+  cursor: pointer;
+}
+
+.portfoilio-slider-icon.next, .portfoilio-slider-icon.prev {
+  position: absolute;
+  top: 50% !important;
+  border-radius: 51px !important;
+  background-color: #fff !important;
+  box-shadow: -4px 2px 43px 0 rgba(0, 0, 0, .75);
+  height: auto !important;
+  cursor: pointer;
+}
+
+.tel-box {
+  display: flex;
+  margin-top: 0;
+  align-items: center;
+}
+/* .select-box{
+  width: 60px;
+  height: 40px;
+} */
+
+
+
+
+.select-box {
+  width: 50px;
+  height: 39px;
+  position: absolute;
+  z-index: 9;
+  top: 5px;
+  left: 0px;
+  background: transparent;
+}
+.flag-img {
+  width: 43px;
+  height: 30px;
+  position: absolute;
+  border: 2px solid #2C9283;
+  border-radius: 5px;
+}
+.select-box select {
+  font-family: 'Lato', sans-serif;
+  width: 60px;
+  height: 30px;
+  background: none;
+  position: absolute;
+  border: none;
+  font-size: 1rem;
+  padding-left: 4rem;
+  outline: none;
+  /* -webkit-appearance: none; */
+}
+.tel {
+  width: 100%;
+  height: 40px;
+  border: 2px solid #fff;
+  padding-left: 1.5rem;
+  color: #000;
+  text-indent: 95px;
+  background-color: #fff !important;
+}
+
+.select-box select, .tel {
+  background: none;
+  outline: none;
+}
+
+.country-input-wrapper span {
+  position: absolute;
+  top: 14px;
+  left: 80px;
+  color: #706e6e;
+  font-size: .875rem;
+}
+
+@media (min-width: 300px) and (max-width: 680px) {
+.brand-hero-section {
+  height: auto;
+  display: flex;}
+
+
+  .portfoilio-slider-icon.prev ,.portfoilio-slider3-icon.prev,.next.cursor-pointer{
+    display: none;
+}
+.bk-sil.prev {display: none;}
+
+}

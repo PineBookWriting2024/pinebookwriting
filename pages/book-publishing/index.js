@@ -13,6 +13,9 @@ import HeroFormBookOffer from "../components/HerformBookOffer";
 import PopupBundleBookPublish from "../components/PopupBundleBookPublish";
 import Footer from "../components/Footer";
 import BrandContact from "../components/BrandContactForm";
+import PortfolioSlider1LP from "../components/PortfolioSlider1LP";
+import PortfolioSlider2LP from "../components/PortfolioSlider2LP";
+import PortfolioSlider3LP from "../components/PortfolioSlider3LP";
 
 
 const handleOpenChat = () => {
@@ -741,111 +744,11 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="portfolio overflow-hidden	 py-14">
-          <div className="grid grid-cols-1 ">
-            <div className="container mx-auto text-center">
-              <div className="portfolio-h m1-h">
-                <h3 className="font-poppins text-3xl md:text-4xl">
-                  Unveiling Our Authors’ Creations:
-                  <br />
-                  <span>Book Showcase</span>
-                </h3>
-              </div>
+        <section className="portfolio-book-publishing-offer-bg">
+          <PortfolioSlider3LP />
+          <PortfolioSlider1LP />
+          <PortfolioSlider2LP />
 
-              <div className="block md:hidden lg:hidden">
-                <Swiper
-                  className="px-20 gap-x-32 "
-                  spaceBetween={15}
-                  slidesPerView={1}
-                  loop={true}
-                  autoplay={{
-                    delay: 2500,
-                    disableOnInteraction: false,
-                  }}
-                  pagination={false}
-                  onBeforeInit={(swiper) => {
-                    swiperRef.current = swiper;
-                  }}
-                  modules={[Navigation, Autoplay, Pagination]}
-                  breakpoints={{
-                    "@0.00": {
-                      slidesPerView: 1,
-                      spaceBetween: 10,
-
-                      navigation: {
-                        enabled: false,
-                      },
-                      pagination: false,
-                      navigation: true,
-                    },
-                    "@1.00": {
-                      slidesPerView: 1,
-                      spaceBetween: 15,
-                    },
-                  }}
-                >
-                  <SwiperSlide className="mx-auto text-center">
-                    <div className="flex justify-center">
-                      <Image src={"/images/bb1-min.webp"} width={260} height={289} loading="lazy" className="glightbox" layout="responsive" alt="book img ten" />
-                    </div>
-                  </SwiperSlide>
-
-                  <SwiperSlide>
-                    <div className="flex justify-center">
-                      <Image src={"/images/bb5-min.webp"} width={260} height={289} loading="lazy" className="glightbox" layout="responsive" alt="book img eleven" />
-                    </div>
-                  </SwiperSlide>
-
-                  <SwiperSlide>
-                    <div className="flex justify-center">
-                      <Image src={"/images/bb8-min.webp"} width={260} height={289} loading="lazy" className="glightbox" layout="responsive" alt="book img twoelve" />
-                    </div>
-                  </SwiperSlide>
-
-                  <SwiperSlide>
-                    <div className="flex justify-center">
-                      <Image src={"/images/bb4-min.webp"} width={260} height={289} loading="lazy" className="glightbox" layout="responsive" alt="book img thirteen" />
-                    </div>
-                  </SwiperSlide>
-
-                  <SwiperSlide>
-                    <div className="flex justify-center">
-                      <Image src={"/images/bb3-min.webp"} width={260} height={289} loading="lazy" className="glightbox" layout="responsive" alt="book img fifteen" />
-                    </div>
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <div className="flex justify-center">
-                      <Image src={"/images/bb6-min.webp"} width={260} height={289} loading="lazy" className="glightbox" layout="responsive" alt="book img sixteen" />
-                    </div>
-                  </SwiperSlide>
-
-                  <SwiperSlide>
-                    <div className="flex justify-center">
-                      <Image src={"/images/bb7-min.webp"} width={260} height={289} loading="lazy" className="glightbox" layout="responsive" alt="book img seventeen" />
-                    </div>
-                  </SwiperSlide>
-
-                  <SwiperSlide>
-                    <div className="flex justify-center">
-                      <Image src={"/images/bb2-min.webp"} width={260} height={289} loading="lazy" className="glightbox" layout="responsive" alt="book img eighteen" />
-                    </div>
-                  </SwiperSlide>
-                </Swiper>
-
-              </div>
-
-
-              <div className="grid grid-cols-4 gap-4 width-container books-collage">
-                {books.map((book, index) => (
-                  <div key={index}>
-                    {/* <AnimateFade type={book.type}> */}
-                    <Image src={book.src} width={book.width} height={book.height} loading="lazy" alt={book.alt} className="book-zoom-effect glightbox" />
-                    {/* </AnimateFade> */}
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
         </section>
 
         {/* <section className="package py-14 overflow-hidden">
@@ -878,23 +781,6 @@ export default function Home() {
         <Packages />
 
 
-        <section className="book-publishing-cta-section mx-auto md:px-6 py-10 md:py-0 relative">
-          <div className="container flex items-center flex-col md:flex-row max-w-screen-xl mx-auto">
-            <div className="basis-1/2 text-center flex justify-end">
-              <Image src={"/images/book-image-big.webp"} width={400} height={200} className="aos-init aos-animate book-publishing-cta-img" data-aos="fade-right" data-aos-duration="1000"></Image>
-            </div>
-            <div className="basis-1/2 md:ml-20 md:text-left text-center">
-              <h2 className="text-white font-poppins text-3xl md:text-5xl aos-init aos-animate font-bold" data-aos="flip-down">Let's Tell Your Story to the World!
-              </h2>
-              <p className="text-white mt-7">Ready to share your fascinating story with your potential audience? Contact Pine Book Writing and get a free quote now!
-              </p>
-              <div className="flex gap-6 md:justify-start justify-center">
-                <button className="package-get-started-btn text-md mt-5" onClick={handleOpenChat}><Link href={'javascript:;'}>Talk to an Expert</Link></button>
-                <button className="package-get-started-btn text-md mt-5"><Link href="tel:(866)-841-7463">(866)-841-7463</Link></button>
-              </div>
-            </div>
-          </div>
-        </section>
 
 
         {/* process section start */}
@@ -1030,6 +916,25 @@ export default function Home() {
         {/* new process end  */}
 
         <Story />
+
+        
+        <section className="book-publishing-cta-section mx-auto md:px-6 py-10 md:py-0 relative">
+          <div className="container flex items-center flex-col md:flex-row max-w-screen-xl mx-auto">
+            <div className="basis-1/2 text-center flex justify-end">
+              <Image src={"/images/book-image-big.webp"} width={400} height={200} className="aos-init aos-animate book-publishing-cta-img" data-aos="fade-right" data-aos-duration="1000"></Image>
+            </div>
+            <div className="basis-1/2 md:ml-20 md:text-left text-center">
+              <h2 className="text-white font-poppins text-3xl md:text-5xl aos-init aos-animate font-bold" data-aos="flip-down">Let's Tell Your Story to the World!
+              </h2>
+              <p className="text-white mt-7">Ready to share your fascinating story with your potential audience? Contact Pine Book Writing and get a free quote now!
+              </p>
+              <div className="flex gap-6 md:justify-start justify-center">
+                <button className="package-get-started-btn text-md mt-5" onClick={handleOpenChat}><Link href={'javascript:;'}>Talk to an Expert</Link></button>
+                <button className="package-get-started-btn text-md mt-5"><Link href="tel:(866)-841-7463">(866)-841-7463</Link></button>
+              </div>
+            </div>
+          </div>
+        </section>
 
         <Faq />
 

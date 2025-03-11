@@ -390,7 +390,7 @@ export default function Packages({ isOpen, onClose, service }) {
                                 <h4 className="text-2xl font-poppins mb-6 text-center pt-4 pb-4 hover-top-vector relative">Expert Package
                                 <br></br>
                                 <div className="flex justify-center">
-                                <button className="tag-50-per-off"><del className="text-red italic">$3,000</del> | <span className="blink_me">$1,499 USD</span></button>
+                                <button className="tag-50-per-off"><del className="text-red italic">$7,000</del> | <span className="blink_me">$3,499 USD</span></button>
                                 </div>
                                 </h4>
                                 <div className="single-packages-content mb-5 px-10">

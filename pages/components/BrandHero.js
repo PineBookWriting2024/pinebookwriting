@@ -134,8 +134,8 @@ export default function BrandHero() {
             {/* Snowfall Background */}
             <div className="relative w-full snowbanner" style={{ zIndex: 1 }}>
                 {/* <SnowFall /> */}
-                <div className="container mx-4 md:pt-20 md:mx-auto tablet-margin-banner max-w-screen-xl brand-hero-section">
-                    <div className="grid grid-cols-1 sm:gap-8 py-20 md:grid-cols-2 text-left md:items-center justify-between md:gap-8 md:py-30">
+                <div className="container mx-4 pt-14 md:mx-auto tablet-margin-banner max-w-screen-xl brand-hero-section">
+                    <div className="grid grid-cols-1 sm:gap-8 md:grid-cols-2 text-left md:items-center justify-between md:gap-8 md:py-30">
                         <div className="mb-4">
                             <h3 className="font-poppins md:text-3xl text-2xl mb-4 aos-init aos-animate text-white"> <span className="px-2 py-0 text-2xl">#1 Ghostwriting Company</span></h3>
                             <FadeIn>

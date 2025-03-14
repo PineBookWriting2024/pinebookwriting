@@ -196,6 +196,13 @@
 
     /* Media Query */
     @media (min-width:300px) and (max-width:680px){
+      .swiper-slide.swiper-slide-active {
+        text-align: center;
+    }
+    .swiper-slide.swiper-slide-active img {
+      display: inline;
+  }
+  
       .form-off-badge {
         display: none;
     }
@@ -253,6 +260,7 @@
       .client-logo-sec{margin-top:40px;margin-bottom:30px;}
       .bk-sil2.next svg,.bk-sil2.prev svg,.bk-sil.next svg,.bk-sil.prev svg{width:24px;}
       .bk-sil2.next,.bk-sil2.prev,.bk-sil.next,.bk-sil.prev{width:61px;}
+      .bk-sil2.prev{display: none;}
 
       .bk-sil3.next svg,.bk-sil3.prev svg,.bk-sil.next svg,.bk-sil.prev svg{width:24px;}
       .bk-sil3.next,.bk-sil3.prev,.bk-sil.next,.bk-sil.prev{width:61px;}
@@ -273,8 +281,8 @@
       .brand-main-contact-wrapper{width:100%!important;}
       .single-packages-footer{width:342px;}
       .single-packages{width:342px;}
-      video#brandVideo{height:320vw!important;}
-      .brand-main-banner-video{height:320vw!important;}
+      video#brandVideo{height:350vw!important;}
+      .brand-main-banner-video{height:350vw!important;}
       .break-words{line-break:anywhere;}
       .brand-testimonials-card{margin:0!important;}
       .responsive-not-process{display:none;}
@@ -310,6 +318,9 @@
       /* header#navbar {margin-top: 20px;} */
     }
     @media (min-width:768px) and (max-width:900px){
+      section.brand.pad-tb {
+        padding-top: 0;
+    }
       .tablet-margin-banner{margin:0px!important;}
     }
 
@@ -850,6 +861,18 @@ html {
 
 
     /* Media Query */
+
+    @media (max-width: 1536px) 
+    {
+      video#brandVideo {height: 110vh;}
+      .brand-main-banner-video {
+        height: 100vh;
+    }
+    .brand-hero-section {
+      height: 94vh;}
+    }
+
+
     @media (min-width:300px) and (max-width:680px){
       .home-popup-modal-wrapper {
         width: 85%;

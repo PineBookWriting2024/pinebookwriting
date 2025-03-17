@@ -11,6 +11,12 @@ import Image from 'next/image';
 const notFound = () => {
   return (
     <div>
+         <Head>
+                <title>Hire Professional Book Writers | 404</title>
+                <meta name="description" content="404"
+                />
+                <link rel="shortcut icon" href="/images/fav.webp" />
+            </Head>
       <header id="navbar" className="header-404 bg-transparent left-0 flex justify-between items-center p-4 z-10">
                 <div className='max-w-screen-xl flex justify-between items-center mx-auto w-full'>
                     <div>

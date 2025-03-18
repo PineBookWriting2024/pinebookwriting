@@ -133,7 +133,7 @@ const handleOpenChat = () => {
                         <div className="flex flex-row" data-aos="fade-left">
                         <div className="brand-process-content text-left flex-col px-6 py-10">
                         <span className="num-span"><b>05</b></span>
-                                <h2 className="font-poppins text-2xl text-white pro-h">Revision & Feedback</h2>
+                                <h2 className="font-poppins text-2xl text-white pro-h">Revision &  Feedback</h2>
                                 <p className="">We will share an online content calendar with you so you can view each copy and give valuable feedback.</p>
                             </div>
                         </div>

@@ -60,7 +60,7 @@ export default function SeoCopywriting () {
                 <div className="flex justify-center items-center flex-col md:flex-row lg:flex-row px-8 md:px-0 py-10 md:py-0">
                     <div className="basis-1/2 abt-txt m1-h p1 aos-init aos-animate" data-aos="fade-right" data-aos-duration="1000">
                        
-                        <h2 className="font-poppins text-3xl md:text-4xl uppercase font-bold">Professional SEO Writing Services</h2>
+                        <h2 className="font-poppins text-3xl md:text-4xl uppercase font-bold">Professional SEO Writing Services </h2>
                         <h2 className="font-poppins text-2xl md:text-3xl uppercase">
                         Boost Your Search Engine Ranking 
                         </h2>

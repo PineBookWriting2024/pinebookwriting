@@ -448,7 +448,7 @@ export default function HomeBookSlider() {
         },
         {
             id: 51,
-            src: "/brand-img/Published-Books-Section/Angel Mercado.png",
+            src: "/brand-img/Published-Books-Section/angel_mercado_360.png",
             title: "The Well of Hope: Bloodlines",
             author: 'by: Angel Mercado',
             category: 'Published Books',

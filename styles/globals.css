@@ -864,6 +864,9 @@ html {
 
     @media (max-width: 1536px) 
     {
+      .box img {
+        width: 75% !important;
+    }
       video#brandVideo {height: 110vh;}
       .brand-main-banner-video {
         height: 100vh;

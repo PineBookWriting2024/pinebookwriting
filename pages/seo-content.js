@@ -62,7 +62,7 @@ export default function SeoCopywriting () {
                        
                         <h2 className="font-poppins text-3xl md:text-4xl uppercase font-bold">Professional SEO Writing Services</h2>
                         <h2 className="font-poppins text-2xl md:text-3xl uppercase">
-                        Uplift Your Search Engine Ranking 
+                        Boost Your Search Engine Ranking 
                         </h2>
                         <p className="font-poppins text-xl text-left pt-3">
                         Search engine optimization does not mean overly stuffing your content with keywords and waiting for it to be ranked high. It's all about understanding the search intent of internet users. When you follow the search engine's guidelines properly while writing, editing, and formatting the content, your content is likely to get ranked on the search results. </p>

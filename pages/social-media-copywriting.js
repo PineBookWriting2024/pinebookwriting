@@ -88,8 +88,8 @@ const handleOpenChat = () => {
             <section className="brand-process my-10  mx-auto relative pt-10 text-center flex justify-center mb-12 overflow-hidden">
                 <div className="max-w-screen-xl">
                     <div className="text-center mb-6">
-                        <h3 className="text-2xl text-black font-poppins">Our Services Workflow</h3>
-                        <h2 className="font-poppins text-3xl md:text-4xl text-black font-bold" data-aos="zoom-out-down">6-Step Process of Our SEO Writing Services</h2>
+                        <h3 className="text-2xl text-black font-poppins">Our Service Workflow</h3>
+                        <h2 className="font-poppins text-3xl md:text-4xl text-black font-bold" data-aos="zoom-out-down">6-Step Process of Our Social Media Copywriting Services</h2>
                     </div>
 
                     <div className="grid grid-cols-3 gap-6 mb-6">
@@ -97,24 +97,24 @@ const handleOpenChat = () => {
                         <div className="flex flex-row " data-aos="fade-left">
                             <div className="brand-process-content text-left flex-col px-6 py-10">
                                 <span className="num-span"><b>01</b></span>
-                                <h2 className="font-poppins text-2xl text-white pro-h">Understand Your Business</h2>
-                                <p className="">Our process begins with understanding your business goals, and your target audience in order to write reader and SEO-friendly content. </p>
+                                <h2 className="font-poppins text-2xl text-white pro-h">Project Discovery</h2>
+                                <p className="">Our process begins with a detailed discussion about your social media goals, your audience, and your brand voice to understand your desired outcome. </p>
                             </div>
                         </div>
 
                         <div className="flex flex-row" data-aos="fade-left">
                         <div className="brand-process-content text-left flex-col px-6 py-10">
                         <span className="num-span"><b>02</b></span>
-                                <h2 className="font-poppins text-2xl text-white pro-h">Keyword Research</h2>
-                                <p className="">Our competent SEO team conducts thorough keyword research leveraging the most advanced tools to identify high-volume and low-competitive keywords.</p>
+                                <h2 className="font-poppins text-2xl text-white pro-h">Account Signup or Assessment</h2>
+                                <p className="">We help you sign up for your new social media account or assess your existing presence to address areas for improvement.</p>
                             </div>
                         </div>
 
                         <div className="flex flex-row" data-aos="fade-left">
                         <div className="brand-process-content text-left flex-col px-6 py-10">
                         <span className="num-span"><b>03</b></span>
-                                <h2 className="font-poppins text-2xl text-white pro-h">Create Content</h2>
-                                <p className="">Once the research is done, our SEO writers get to work and write content that is engaging, informative, and adhering to the Search Engine Guidelines.</p>
+                                <h2 className="font-poppins text-2xl text-white pro-h">Content Strategy</h2>
+                                <p className="">Then, our social media copywriting team works together to create a tailored content strategy that perfectly matches your desired goals.</p>
                             </div>
                         </div>
                         
@@ -125,24 +125,24 @@ const handleOpenChat = () => {
                         <div className="flex flex-row " data-aos="fade-left">
                         <div className="brand-process-content text-left flex-col px-6 py-10">
                         <span className="num-span"><b>04</b></span>
-                                <h2 className="font-poppins text-2xl text-white pro-h">Optimization</h2>
-                                <p className="">Then, we optimize your content with meta titles & descriptions, tags, images, and other SEO trends to ensure it ranks higher in search engine results pages.</p>
+                                <h2 className="font-poppins text-2xl text-white pro-h">Content Creation</h2>
+                                <p className="">The main phase. Our team of skilled copywriters gets to work and craft persuasive, informative, or interactive posts that convey your message effectively.</p>
                             </div>
                         </div>
 
                         <div className="flex flex-row" data-aos="fade-left">
                         <div className="brand-process-content text-left flex-col px-6 py-10">
                         <span className="num-span"><b>05</b></span>
-                                <h2 className="font-poppins text-2xl text-white pro-h">Editing & Revision</h2>
-                                <p className="">In this phase, our team of editors will proofread the content to ensure there are no grammatical, punctual, or structural errors. We will also revise the content upon your request.</p>
+                                <h2 className="font-poppins text-2xl text-white pro-h">Revision & Feedback</h2>
+                                <p className="">We will share an online content calendar with you so you can view each copy and give valuable feedback.</p>
                             </div>
                         </div>
 
                         <div className="flex flex-row" data-aos="fade-left">
                         <div className="brand-process-content text-left flex-col px-6 py-10">
                         <span className="num-span"><b>06</b></span>
-                                <h2 className="font-poppins text-2xl text-white pro-h">Final Delivery</h2>
-                                <p className="">In the last step, we deliver the SEO-optimized content in your desired format and within the promised delivery time to ensure your utmost satisfaction with the work.</p>
+                                <h2 className="font-poppins text-2xl text-white pro-h">Ongoing Support</h2>
+                                <p className="">We also provide ongoing support to guide you on implementing social media strategy and optimizing content performance.</p>
                             </div>
                         </div>
                         

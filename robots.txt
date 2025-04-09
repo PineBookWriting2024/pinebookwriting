@@ -1,0 +1,64 @@
+User-Agent: *
+Allow: /
+Disallow:
+Sitemap:https://www.pinebookwriting.com/sitemap.xml
+
+User-agent: Googlebot
+Allow: /
+Disallow:
+
+User-agent: googlebot-image
+Allow: /
+Disallow:
+
+User-agent: googlebot-mobile
+Allow: /
+Disallow:
+
+User-agent: Slurp
+Allow: /
+Disallow:
+
+User-agent: bingbot
+Allow: /
+Disallow:
+
+User-agent: bing
+Allow: /
+Disallow:
+
+User-agent: AhrefsBot
+Allow: /
+Disallow:
+
+User-agent: SiteAuditBot
+Allow: /
+Disallow:
+
+User-agent: SemrushBot-BA
+Allow: /
+Disallow:
+
+User-agent: SemrushBot-SI
+Allow: /
+Disallow:
+
+User-agent: SemrushBot-CT
+Allow: /
+Disallow:
+
+User-agent: SemrushBot-COUB
+Allow: /
+Disallow:
+
+User-agent: SemrushBot-BM
+Allow: /
+Disallow:
+
+User-agent: SemrushBot-SWA
+Allow: /
+Disallow:
+
+User-agent: *
+Disallow:
+Disallow: /cgi-bin/

@@ -131,6 +131,15 @@ import Link from 'next/link';
         ProjectManager: "Lia Sinclair",
         clientname : "Sabrina Biamby"
     },
+    {
+        id:15,
+        src: "https://www.youtube.com/embed/_a6emmDhe7c",
+        type: "video/mp4",
+        BookTitle: "The Other Side (Part 1 & Part 2)",
+        Consultant: "Steve Hayes",
+        ProjectManager: "Lia Sinclair",
+        clientname : "Unique Moore"
+    },
 ]
 
 const BrandTesti = () => {

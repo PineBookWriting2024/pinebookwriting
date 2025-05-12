@@ -100,7 +100,7 @@ export default function BrandBannerLogo() {
                                     </div>
                                 </SwiperSlide>
 
-                                <SwiperSlide>
+                                {/* <SwiperSlide>
                                 <div className="flex justify-center ">
                                 <a href="#">
                                             <Image
@@ -113,7 +113,7 @@ export default function BrandBannerLogo() {
                                             />
                                         </a>
                                     </div>
-                                </SwiperSlide>
+                                </SwiperSlide> */}
 
                                 <SwiperSlide>
                                 <div className="flex justify-center ">

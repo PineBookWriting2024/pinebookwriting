@@ -106,69 +106,46 @@ export default function Bundle({ isOpen, onClose, service }) {
                 </div>
             </section>
 
-            <section className="bg-white pt-5 pb-5">
+            <section className="bg-white pt-5 pb-5 mb-20">
                 <div className="width-container">
                     <div className="container mx-auto">
                         <div className="packages-wrapper flex flex-col md:flex-row justify-center gap-12">
                             <div className="single-packages relative">
 
-                                <h4 className="text-2xl font-poppins mb-6 text-center pt-4 pb-4 hover-top-vector relative">Silver Package <br />$2,999 USD</h4>
+                                <h4 className="text-2xl font-poppins mb-6 text-center pt-4 pb-4 hover-top-vector relative">Basic Bundle</h4>
                                 <div className="single-packages-content px-10">
-
                                     <div className="flex gap-2 mb-5 items-center">
                                         <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
-                                        Dedicated Project Manager
-                                    </div>
-                                    <div className="flex gap-2 mb-5 items-center">
-                                        <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
-                                        Pre-Planning and Research
+                                        Creating The Outline
                                     </div>
                                     <div className="flex gap-2 mb-5 items-center">
                                         <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
-                                        Questionnaire/Brief Forms
+                                        Writing (Upto 100 pages)
                                     </div>
                                     <div className="flex gap-2 mb-5 items-center">
                                         <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
-                                        Strategy Sessions (with Senior Project Manager)                                    </div>
-                                    <div className="flex gap-2 mb-5 items-center">
-                                        <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
-                                        Outline Creation
+                                        Editing & Proofreading
                                     </div>
                                     <div className="flex gap-2 mb-5 items-center">
                                         <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
-                                        Upto 25 Minute of Interview Session
+                                        Typesetting & Layout Adjustment
                                     </div>
                                     <div className="flex gap-2 mb-5 items-center">
                                         <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
-                                        Mid-Level Writer
-                                    </div>
-
-                                    <div className="flex gap-2 mb-5 items-center ">
-                                        <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
-                                        Writing upto 50 - 70 Pages
+                                        Formatting (for 50+ Platforms)
                                     </div>
                                     <div className="flex gap-2 mb-5 items-center">
                                         <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
-                                        2 - 4 Months production (divided into Weeks)
+                                        Multiple Revisions
                                     </div>
                                     <div className="flex gap-2 mb-5 items-center">
                                         <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
-                                        Include upto 20 Images
+                                        100% Royalties & Ownership Rights
                                     </div>
-
-                                    <div className="flex gap-2 mb-5 items-center ">
-                                        <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
-                                        Standard Formatting
-                                    </div>
-                                    <div className="flex gap-2 mb-5 items-center">
-                                        <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
-                                        2 Revision Per Draft
-                                    </div>
-
                                 </div>
                                 <div className="text-center">
                                     <button className="package-get-started-btn text-md mt-7" onClick={() => openModal('Basic')}>
-                                        START PROJECT
+                                        GET A QUOTE
                                     </button>
                                 </div>
 
@@ -186,64 +163,59 @@ export default function Bundle({ isOpen, onClose, service }) {
                             </div>
 
                             <div className="single-packages relative">
-                                <h4 className="text-2xl font-poppins mb-6 text-center pt-4 pb-4 hover-top-vector relative">Gold Package <br /> $4,499 USD</h4>
+                                <h4 className="text-2xl font-poppins mb-6 text-center pt-4 pb-4 hover-top-vector relative">Start Up Package</h4>
                                 <div className="single-packages-content px-10">
                                     <div className="flex gap-2 mb-5 items-center">
                                         <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
-                                        Dedicated Project Manager
+                                        Creating The Outline
                                     </div>
                                     <div className="flex gap-2 mb-5 items-center">
                                         <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
-                                        Pre-Planning and Research
-
+                                        Writing (Upto 150 pages)
                                     </div>
                                     <div className="flex gap-2 mb-5 items-center">
                                         <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
-                                        Questionnaire/Brief Forms
-
+                                        Editing & Proofreading
                                     </div>
                                     <div className="flex gap-2 mb-5 items-center">
                                         <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
-                                        Strategy Sessions (with Senior Project Manager)                                    </div>
-                                    <div className="flex gap-2 mb-5 items-center">
-                                        <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
-                                        Detailed Outline Creation
+                                        Typesetting & Layout Adjustment
                                     </div>
                                     <div className="flex gap-2 mb-5 items-center">
                                         <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
-                                        Upto 35 Minute of Interview Session
+                                        Formatting (for 50+ Platforms)
                                     </div>
                                     <div className="flex gap-2 mb-5 items-center">
                                         <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
-                                        Senior-Level Writer
+                                        Multiple Revisions
                                     </div>
                                     <div className="flex gap-2 mb-5 items-center">
                                         <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
-                                        Writing upto 70 - 150 Pages
+                                        100% Royalties & Ownership Rights
                                     </div>
-
                                     <div className="flex gap-2 mb-5 items-center">
                                         <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
-                                        3 - 6 Months production (divided into Weeks)                                    </div>
+                                        Creative Cover Art
+                                    </div>
 
                                     <div className="flex gap-2 mb-5 items-center">
                                         <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
-                                        Include upto 30 Images                                    </div>
+                                        Price Encrypted Barcode
+                                    </div>
 
                                     <div className="flex gap-2 mb-5 items-center">
                                         <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
-                                        Publishing Standard Formatting (for 2 platforms)                                    </div>
-                                    <div className="flex gap-2 mb-5 items-center">
-                                        <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
-                                        3 Revisions Per Draft                                    </div>
-                                    <div className="flex gap-2 mb-5 items-center">
-                                        <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
-                                        Editorial support                                    </div>
+                                        Publishing on Kindle
+                                    </div>
 
+                                    <div className="flex gap-2 mb-5 items-center">
+                                        <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
+                                        eBook Format
+                                    </div>
                                 </div>
                                 <div className="text-center">
                                     <button className="package-get-started-btn text-md mt-7" onClick={() => openModal('Start up')}>
-                                        START PROJECT
+                                        GET A QUOTE
                                     </button>
                                 </div>
                                 <div className="single-packages-footer flex  w-100 justify-center">
@@ -261,69 +233,61 @@ export default function Bundle({ isOpen, onClose, service }) {
 
                             <div className="single-packages relative">
                                 <Image src={"/images/badge.png"} className="package-badge" width={80} height={80}></Image>
-                                <h4 className="text-2xl font-poppins mb-6 text-center pt-4 pb-4 hover-top-vector relative">Platinum Package <br /> $6,499 USD</h4>
+                                <h4 className="text-2xl font-poppins mb-6 text-center pt-4 pb-4 hover-top-vector relative">Standard Package</h4>
                                 <div className="single-packages-content px-10">
 
                                     <div className="flex gap-2 mb-5 items-center">
                                         <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
-                                        Dedicated Project Manager
+                                        Creating The Outline
                                     </div>
                                     <div className="flex gap-2 mb-5 items-center">
                                         <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
-                                        Pre-Planning and Research                                    </div>
-                                    <div className="flex gap-2 mb-5 items-center">
-                                        <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
-                                        Questionnaire/Brief Forms
+                                        Writing (Upto 250 pages)
                                     </div>
                                     <div className="flex gap-2 mb-5 items-center">
                                         <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
-                                        Strategy Sessions (with Senior Project Manager)
+                                        Editing & Proofreading
                                     </div>
                                     <div className="flex gap-2 mb-5 items-center">
                                         <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
-                                        Detailed Outline Creation
+                                        Typesetting & Layout Adjustment
                                     </div>
                                     <div className="flex gap-2 mb-5 items-center">
                                         <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
-                                        Upto 45 Minute of Interview Session
+                                        Formatting (for 50+ Platforms)
                                     </div>
                                     <div className="flex gap-2 mb-5 items-center">
                                         <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
-                                        Premium Writer
+                                        Multiple Revisions
                                     </div>
                                     <div className="flex gap-2 mb-5 items-center">
                                         <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
-                                        Writing upto 150 - 300 Pages                                     </div>
-                                    <div className="flex gap-2 mb-5 items-center  text-xl">
-                                        4 - 7 Months production (divided into Weeks)                                    </div>
+                                        100% Royalties & Ownership Rights
+                                    </div>
                                     <div className="flex gap-2 mb-5 items-center">
                                         <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
-                                        Include upto 40 Images                                    </div>
+                                        Creative Cover Art
+                                    </div>
                                     <div className="flex gap-2 mb-5 items-center">
                                         <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
-                                        Publishing Standard Formatting (for 3 platforms)                                    </div>
+                                        ISBN (International Standard Book Number)
+                                    </div>
                                     <div className="flex gap-2 mb-5 items-center">
                                         <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
-                                        5 Revisions Per Draft                                    </div>
+                                        Publishing on Amazon and Kindle (with Optimization)
+                                    </div>
                                     <div className="flex gap-2 mb-5 items-center">
                                         <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
-                                        Editorial support                                    </div>
+                                        eBook and Paperback Format
+                                    </div>
                                     <div className="flex gap-2 mb-5 items-center">
                                         <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
-                                        Dedication page (If required)                                    </div>
-
-                                    <div className="flex gap-2 mb-5 items-center">
-                                        <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
-                                        About the Author                                   </div>
-
-
-                                    <div className="flex gap-2 mb-5 items-center">
-                                        <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
-                                        Book Synopsis</div>
+                                        2 Paperback Copies
+                                    </div>
                                 </div>
                                 <div className="text-center">
                                     <button className="package-get-started-btn text-md mt-7" onClick={() => openModal('Standard')}>
-                                        START PROJECT
+                                        GET A QUOTE
                                     </button>
                                 </div>
 
@@ -341,245 +305,313 @@ export default function Bundle({ isOpen, onClose, service }) {
                             </div>
                         </div>
 
-                        <section className="table-sec overflow-x-scroll max-w-screen-xl mx-auto">
-                            <div className="container mx-auto m1-h mt-10 text-center">
-                                {/* <h3 className="mb-8 text-center font-poppins text-3xl md:text-4xl font-bold">
-                        
-                                </h3> */}
-                                <button className="compare-now-btn mb-10 mt-5" onClick={togglePackages2}>Comparison
-                                    <FontAwesomeIcon
-                                        className="ml-2"
-                                        icon={collapseOpen2 ? faArrowUp : faArrowDown}
-                                        color="#0d0f38"
-                                    />
-                                </button>
-                            </div>
+                        <div className="packages-wrapper flex flex-col md:flex-row justify-center gap-12 mt-20">
+                            <div className="single-packages relative">
+                                <h4 className="text-2xl font-poppins mb-6 text-center pt-4 pb-4 hover-top-vector relative">Professional Package</h4>
+                                <div className="single-packages-content px-10">
 
+                                    <div className="flex gap-2 mb-5 items-center">
+                                        <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
+                                        Creating The Outline
+                                    </div>
+                                    <div className="flex gap-2 mb-5 items-center">
+                                        <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
+                                        Writing (Upto 350 pages)
+                                    </div>
+                                    <div className="flex gap-2 mb-5 items-center">
+                                        <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
+                                        Editing & Proofreading
+                                    </div>
+                                    <div className="flex gap-2 mb-5 items-center">
+                                        <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
+                                        Typesetting & Layout Adjustment
+                                    </div>
+                                    <div className="flex gap-2 mb-5 items-center">
+                                        <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
+                                        Formatting (for 50+ Platforms)
+                                    </div>
+                                    <div className="flex gap-2 mb-5 items-center">
+                                        <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
+                                        Multiple Revisions
+                                    </div>
+                                    <div className="flex gap-2 mb-5 items-center">
+                                        <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
+                                        100% Royalties & Ownership Rights
+                                    </div>
 
-                            <div className="">
-                                <div className={`container container-compare mx-auto transition-height duration-500 ease-in-out ${showPackages2 ? 'expanded' : 'collapsed'}`} ref={contentRef}>
-                                    <div className="md:w-full w-[500px] responsive-width">
-                                        <table className="w-full mb-14 bundle-comparison-chart table-fixed">
-                                            <thead className="chart-header-custom">
-                                                <tr>
+                                    <div className="flex gap-2 mb-5 items-center ">
+                                        <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
+                                        Creative Cover Art
+                                    </div>
+                                    <div className="flex gap-2 mb-5 items-center">
+                                        <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
+                                        Price Encrypted Barcode
+                                    </div>
+                                    <div className="flex gap-2 mb-5 items-center">
+                                        <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
+                                        ISBN (International Standard Book Number)
+                                    </div>
 
-                                                    <th className="font-poppins heading">
-                                                        <div className="heading">
-                                                            List of Services
-                                                        </div>
-                                                    </th>
+                                    <div className="flex gap-2 mb-5 items-center ">
+                                        <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
+                                        Publishing on Amazon, Kindle and Barnes & Noble (with Optimization)
+                                    </div>
+                                    <div className="flex gap-2 mb-5 items-center">
+                                        <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
+                                        4 pages Authors Dynamic Website
+                                    </div>
+                                    <div className="flex gap-2 mb-5 items-center">
+                                        <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
+                                        1 Year Domain & Hosting
+                                    </div>
+                                    <div className="flex gap-2 mb-5 items-center">
+                                        <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
+                                        30 - 60 Seconds Video Trailer
+                                    </div>
+                                    <div className="flex gap-2 mb-5 items-center">
+                                        <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
+                                        3 Months Organic SEO Marketing
+                                    </div>
+                                    <div className="flex gap-2 mb-5 items-center">
+                                        <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
+                                        eBook, Paperback & Hardcover Format
+                                    </div>
+                                    <div className="flex gap-2 mb-5 items-center">
+                                        <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
+                                        5 Paperback Copies
+                                    </div>
+                                    <div className="flex gap-2 mb-5 items-center">
+                                        <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
+                                        1 Hardcover Copies
+                                    </div>
 
+                                </div>
+                                <div className="text-center">
+                                    <button className="package-get-started-btn text-md mt-7" onClick={() => openModal('Basic')}>
+                                        GET A QUOTE
+                                    </button>
+                                </div>
 
-
-
-                                                    <th className="font-poppins">
-                                                        <div className="heading">
-                                                            Silver Package
-                                                            $2,999
-                                                        </div>
-                                                    </th >
-
-                                                    <th className="font-poppins heading">
-                                                        <div className="heading">
-                                                            Gold Package
-                                                            $4,499
-                                                        </div>
-                                                    </th>
-
-                                                    <th className="font-poppins heading">
-                                                        <div className="heading">
-                                                            Platinum Package
-                                                            $6,499
-                                                        </div>
-                                                    </th>
-                                                </tr>
-                                            </thead>
-
-                                            <tbody className="text-center">
-                                                <tr className="m-4">
-                                                    {/* <th className="text-2xl md:text-2xl text-start p-3 font-bold"
-                                                        colspan="4"
-                                                        scope="row">Preparing Your Manuscript</th> */}
-                                                </tr>
-
-                                                <tr>
-                                                    <td>Dedicated Project Manager</td>
-                                                    <td>
-                                                        ✔️
-                                                    </td>
-                                                    <td>
-                                                        ✔️
-                                                    </td>
-                                                    <td>
-                                                        ✔️
-                                                    </td>
-                                                </tr>
-
-                                                <tr>
-                                                    <td>Pre-Planning and Research</td>
-                                                    <td>
-                                                        ✔️
-                                                    </td>
-                                                    <td>
-                                                        ✔️
-                                                    </td>
-                                                    <td>
-                                                        ✔️
-                                                    </td>
-                                                </tr>
-
-                                                <tr>
-                                                    <td>Questionnaire/Brief Forms</td>
-                                                    <td>✔️</td>
-                                                    <td>✔️</td>
-                                                    <td>✔️</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Strategy Sessions with Senior Project Manager</td>
-                                                    <td>
-                                                        ✔️
-                                                    </td>
-                                                    <td>✔️</td>
-                                                    <td>✔️</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Outline Creation</td>
-                                                    <td>
-                                                        Basic
-                                                    </td>
-                                                    <td>Detailed</td>
-                                                    <td>Detailed</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Interview Session timeline</td>
-                                                    <td>
-                                                        Upto 25 Minutes
-                                                    </td>
-                                                    <td>Upto 35 Minutes</td>
-                                                    <td>Upto 45 Minutes</td>
-                                                </tr>
-
-                                                <tr>
-                                                    <td>Writers Level</td>
-                                                    <td>Mid Level Writer</td>
-                                                    <td>Senior Writer</td>
-                                                    <td>Premium Writer</td>
-                                                </tr>
-
-                                                <tr>
-                                                    <td>Writers Experience </td>
-                                                    <td>
-                                                        2 - 5 Years
-                                                    </td>
-                                                    <td>
-                                                        10 - 15 Years
-                                                    </td>
-                                                    <td>
-                                                        20 - 25 Years
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Writing</td>
-                                                    <td>
-                                                        50-70 Pages
-                                                    </td>
-                                                    <td>
-                                                        70-150 Pages
-                                                    </td>
-                                                    <td>
-                                                        150-300 Pages
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Production Timeline <br /><b>(Divided into Weeks)</b></td>
-                                                    <td>2-4 Months</td>
-                                                    <td>3-6 Months</td>
-                                                    <td>4-7 Months</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Include Images</td>
-                                                    <td>
-                                                        20
-                                                    </td>
-                                                    <td>30</td>
-                                                    <td>40</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Basic Formatting</td>
-                                                    <td>
-                                                        ✔️
-                                                    </td>
-                                                    <td>✔️</td>
-                                                    <td>✔️</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Publishing Standard Formatting</td>
-                                                    <td>
-                                                        ❌
-                                                    </td>
-                                                    <td>✔️</td>
-                                                    <td>✔️</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Revisions Per Draft</td>
-                                                    <td>
-                                                        2
-                                                    </td>
-                                                    <td>3</td>
-                                                    <td>5</td>
-                                                </tr>
-
-                                                <tr>
-                                                    <td>Editorial Support</td>
-                                                    <td>
-                                                        ❌
-                                                    </td>
-                                                    <td>
-                                                        ✔️
-                                                    </td>
-                                                    <td>
-                                                        ✔️
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Dedication page (If required)</td>
-                                                    <td>
-                                                        ❌
-                                                    </td>
-                                                    <td>
-                                                        ❌
-                                                    </td>
-                                                    <td>
-                                                        ✔️
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>About the Author</td>
-                                                    <td>❌</td>
-                                                    <td>❌</td>
-                                                    <td>✔️</td>
-                                                </tr>
-
-
-
-                                                <tr>
-                                                    <td>Book Synopsis</td>
-                                                    <td>
-                                                        ❌
-                                                    </td>
-                                                    <td>
-                                                        ❌
-                                                    </td>
-                                                    <td>
-                                                        ✔️
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
+                                <div className="single-packages-footer flex  w-100 justify-center">
+                                    <div >
+                                        <h5 className="text-xl">Share your idea!</h5>
+                                        <p className="text-md text-black"><Link href="tel:(866)-841-7463">(866)-841-7463</Link></p>
+                                    </div>
+                                    <span className="border-line mx-8"></span>
+                                    <div>
+                                        <h5 className="text-xl">Want to discuss?</h5>
+                                        <button className="text-md text-black blink_me pl-2" onClick={handleOpenChat}>Live Chat Now</button>
                                     </div>
                                 </div>
                             </div>
-                        </section>
+
+                            <div className="single-packages relative">
+                                <h4 className="text-2xl font-poppins mb-6 text-center pt-4 pb-4 hover-top-vector relative">Premium Package</h4>
+                                <div className="single-packages-content px-10">
+                                    <div className="flex gap-2 mb-5 items-center">
+                                        <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
+                                        Creating The Outline
+                                    </div>
+                                    <div className="flex gap-2 mb-5 items-center">
+                                        <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
+                                       Writing (Upto 500 pages)
+                                    </div>
+                                    <div className="flex gap-2 mb-5 items-center">
+                                        <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
+                                        Editing & Proofreading
+                                    </div>
+                                    <div className="flex gap-2 mb-5 items-center">
+                                        <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
+                                        Typesetting & Layout Adjustment
+                                    </div>
+                                    <div className="flex gap-2 mb-5 items-center">
+                                        <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
+                                        Formatting (for 50+ Platforms)
+                                    </div>
+                                    <div className="flex gap-2 mb-5 items-center">
+                                        <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
+                                        Multiple Revisions
+                                    </div>
+                                    <div className="flex gap-2 mb-5 items-center">
+                                        <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
+                                        100% Royalties & Ownership Rights
+                                    </div>
+                                    <div className="flex gap-2 mb-5 items-center">
+                                        <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
+                                        Creative Cover Art
+                                    </div>
+
+                                    <div className="flex gap-2 mb-5 items-center">
+                                        <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
+                                        Price Encrypted Barcode
+                                    </div>
+
+                                    <div className="flex gap-2 mb-5 items-center">
+                                        <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
+                                        ISBN (International Standard Book Number)
+                                    </div>
+
+                                    <div className="flex gap-2 mb-5 items-center">
+                                        <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
+                                        Publishing on Amazon, Kindle, Barnes & Noble and Google Books (with Optimization)
+                                    </div>
+                                    <div className="flex gap-2 mb-5 items-center">
+                                        <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
+                                        4 pages Authors Dynamic Website
+                                    </div>
+                                    <div className="flex gap-2 mb-5 items-center">
+                                        <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
+                                        1 Year Domain & Hosting
+                                    </div>
+                                    <div className="flex gap-2 mb-5 items-center">
+                                        <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
+                                        60 - 90 Seconds Video Trailer
+                                    </div>
+                                    <div className="flex gap-2 mb-5 items-center">
+                                        <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
+                                        6 Months Organic SEO Marketing
+                                    </div>
+                                    <div className="flex gap-2 mb-5 items-center">
+                                        <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
+                                        6 Months Social Media Advertising
+                                    </div>
+                                    <div className="flex gap-2 mb-5 items-center">
+                                        <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
+                                        eBook, Paperback & Hardcover Format
+                                    </div>
+                                    <div className="flex gap-2 mb-5 items-center">
+                                        <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
+                                        10 Paperback Copies
+                                    </div>
+                                    <div className="flex gap-2 mb-5 items-center">
+                                        <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
+                                        5 Hardcover Copies
+                                    </div>
+
+                                </div>
+                                <div className="text-center">
+                                    <button className="package-get-started-btn text-md mt-7" onClick={() => openModal('Start up')}>
+                                        GET A QUOTE
+                                    </button>
+                                </div>
+                                <div className="single-packages-footer flex  w-100 justify-center">
+                                    <div >
+                                        <h5 className="text-xl">Share your idea!</h5>
+                                        <p className="text-md text-black"><Link href="tel:(866)-841-7463">(866)-841-7463</Link></p>
+                                    </div>
+                                    <span className="border-line mx-8"></span>
+                                    <div>
+                                        <h5 className="text-xl">Want to discuss?</h5>
+                                        <button className="text-md text-black blink_me pl-2" onClick={handleOpenChat}>Live Chat Now</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="single-packages relative">
+                                <Image src={"/images/badge.png"} className="package-badge" width={80} height={80}></Image>
+                                <h4 className="text-2xl font-poppins mb-6 text-center pt-4 pb-4 hover-top-vector relative">Enterprise Package</h4>
+                                <div className="single-packages-content px-10">
+
+                                    <div className="flex gap-2 mb-5 items-center">
+                                        <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
+                                        Creating The Outline
+                                    </div>
+                                    <div className="flex gap-2 mb-5 items-center">
+                                        <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
+                                        Writing (Unlimited pages)
+                                    </div>
+                                    <div className="flex gap-2 mb-5 items-center">
+                                        <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
+                                        Editing & Proofreading
+                                    </div>
+                                    <div className="flex gap-2 mb-5 items-center">
+                                        <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
+                                        Typesetting & Layout Adjustment
+                                    </div>
+                                    <div className="flex gap-2 mb-5 items-center">
+                                        <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
+                                        Formatting (for 50+ Platforms)
+                                    </div>
+                                    <div className="flex gap-2 mb-5 items-center">
+                                        <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
+                                        Multiple Revisions
+                                    </div>
+                                    <div className="flex gap-2 mb-5 items-center">
+                                        <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
+                                        100% Royalties & Ownership Rights
+                                    </div>
+                                    <div className="flex gap-2 mb-5 items-center">
+                                        <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
+                                        Creative Cover Art
+                                    </div>
+                                    <div className="flex gap-2 mb-5 items-center">
+                                        <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
+                                        Price Encrypted Barcode                                    </div>
+                                    <div className="flex gap-2 mb-5 items-center">
+                                        <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
+                                        ISBN (International Standard Book Number)
+                                    </div>
+                                    <div className="flex gap-2 mb-5 items-center">
+                                        <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
+                                        Publishing on Amazon, Kindle, Barnes & Noble, Google Books and Smashwords (with Optimization)
+                                    </div>
+                                    <div className="flex gap-2 mb-5 items-center">
+                                        <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
+                                        4 Pages Authors Dynamic Website
+                                    </div>
+                                    <div className="flex gap-2 mb-5 items-center">
+                                        <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
+                                        2 Years Free Domain and Hosting
+                                    </div>
+
+                                    <div className="flex gap-2 mb-5 items-center">
+                                        <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
+                                       12 Months Organic SEO Marketing
+                                    </div>
+                                    <div className="flex gap-2 mb-5 items-center">
+                                        <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
+                                        12 Months Social Media Advertising
+                                    </div>
+                                    <div className="flex gap-2 mb-5 items-center">
+                                        <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
+                                        Blogs & Article Postings
+                                    </div>
+                                    <div className="flex gap-2 mb-5 items-center">
+                                        <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
+                                        Press Releases (100+ Platforms)
+                                    </div>
+                                    <div className="flex gap-2 mb-5 items-center">
+                                        <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
+                                        eBook, Paperback & Hardcover Format
+                                    </div>
+                                     <div className="flex gap-2 mb-5 items-center">
+                                        <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
+                                        15 Paperback Copies
+                                    </div>
+                                     <div className="flex gap-2 mb-5 items-center">
+                                        <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
+                                        10 Hardcover Copies
+                                    </div>
+                                </div>
+                                <div className="text-center">
+                                    <button className="package-get-started-btn text-md mt-7" onClick={() => openModal('Standard')}>
+                                        GET A QUOTE
+                                    </button>
+                                </div>
+
+                                <div className="single-packages-footer flex  w-100 justify-center">
+                                    <div >
+                                        <h5 className="text-xl">Share your idea!</h5>
+                                        <p className="text-md text-black"><Link href="tel:(866)-841-7463">(866)-841-7463</Link></p>
+                                    </div>
+                                    <span className="border-line mx-8"></span>
+                                    <div>
+                                        <h5 className="text-xl">Want to discuss?</h5>
+                                        <button className="text-md text-black blink_me pl-2" onClick={handleOpenChat}>Live Chat Now</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>

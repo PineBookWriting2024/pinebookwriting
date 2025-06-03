@@ -133,7 +133,7 @@ export default function BrandNavbar() {
 
     return (
         <>
-            <header id="navbar" className="bg-transparent absolute top-10 left-0 flex justify-between items-center md:pb-4 z-10">
+            <header id="navbar" className="bg-transparent absolute top-10 left-0 flex justify-between items-center md:pb-4 z-20">
                 <div className='max-w-screen-xl flex justify-between items-center mx-auto w-full'>
                     <div>
                         <Link href="/" onClick={(e) => { e.preventDefault(); window.location.href = "/"; }} className="text-xl font-bold text-white">

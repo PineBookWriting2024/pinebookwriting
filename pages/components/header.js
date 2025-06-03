@@ -18,7 +18,7 @@ export default function Header() {
         window.zE && window.zE('webWidget', 'open');
     };
     return (
-        <header className="container mx-auto py-2 width-container">
+        <header className="container mx-auto py-2 width-container z-20">
             <div className="flex items-center justify-between px-2 flex-wrap md:justify-strat">
                 <div className="head-logo">
                     <Link className="text-center" href="/book-publishing">

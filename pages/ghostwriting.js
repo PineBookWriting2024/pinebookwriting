@@ -13,6 +13,8 @@ import NewBrandFooter from "./components/NewBrandFooter";
 import BrandTopBar from "./components/BrandTopBar";
 import { MdKeyboardDoubleArrowRight } from "react-icons/md";
 import { FaPhoneVolume } from "react-icons/fa";
+import CTAButton from './components/CTAButton';        
+
 
 export default function BookEditing() {
     const handleOpenChat = () => {
@@ -111,13 +113,8 @@ export default function BookEditing() {
                         </p>
 
                         <div className="cta-btns flex flex-col sm:flex-row items-center gap-4 justify-center">
-                            <a
-                                href="#"
-                                className=" bg-transparent text-[#fff] px-5 py-2 border border-white
- rounded-full flex items-center gap-2 hover:bg-gray-200 hover:text-black transition"
-                            >
-                                Get Started <MdKeyboardDoubleArrowRight className="inline" />
-                            </a>
+                                     <CTAButton />
+
 
                             <a
                                 href="tel:(866) 841-7463"
@@ -127,9 +124,9 @@ export default function BookEditing() {
                             </a>
 
                             <a
-                                href="#"
+                                href={'javascript:;'}
                                 className="bg-transparent text-[#fff] px-5 py-2 border border-white
- rounded-full flex items-center gap-2 hover:bg-gray-200 hover:text-black cta-btn-1 transition">
+ rounded-full flex items-center gap-2 hover:bg-gray-200 hover:text-black cta-btn-1 transition" onClick={handleOpenChat}>
                                 Live Chat
                             </a>
                         </div>
@@ -148,7 +145,7 @@ export default function BookEditing() {
             </section>
 
             {/* inner process section start */}
-             <section className="brand-process mx-auto relative pt-20 text-center flex justify-center mb-12 overflow-hidden">
+            <section className="brand-process mx-auto relative pt-20 text-center flex justify-center mb-12 overflow-hidden">
                 <div className="max-w-screen-xl">
                     <div className="text-center mb-6">
                         <h3 className="text-2xl text-black font-poppins">Our Service Workflow</h3>

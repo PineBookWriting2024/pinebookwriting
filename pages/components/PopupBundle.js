@@ -172,14 +172,6 @@ export default function PopupBundle({ isOpen, onClose, service }) {
                                                 placeholder="Enter your Email"
                                             />
                                         </div>
-                                        {/* <div className="relative mb-3">
-                                            <select name="budget" value={budget} onChange={handleChange} className="text-grey-400 pl-4 pr-4 py-2 border rounded-lg w-full home-connect-form-input">
-                                                <option value="">Select Budget Range</option>
-                                                {budgetOptions.map(option => (
-                                                    <option key={option} value={option}>{option}</option>
-                                                ))}
-                                            </select>
-                                        </div> */}
 
                                         <div className="relative mb-3">
                                             <textarea
@@ -192,9 +184,7 @@ export default function PopupBundle({ isOpen, onClose, service }) {
                                                 rows={2}
                                             ></textarea>
                                             <div
-                                                className="absolute inset-y-0 left-0 pl-3 pt-3 
-                                flex items-start  
-                                pointer-events-none"
+                                                className="absolute inset-y-0 left-0 pl-3 pt-3 flex items-start pointer-events-none"
                                             ></div>
                                         </div>
                                         {showSuccess && (

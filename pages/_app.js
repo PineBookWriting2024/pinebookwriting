@@ -7,6 +7,10 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import HomePopupNew from "./components/HomePopupNew";
 import PopupBundle from "./components/PopupBundle";
+
+import { PopupProvider } from './context/PopupContext';
+import PopupModal from './components/PopupModal';
+
 // Font files can be colocated inside of `pages`
 // const majallab = localFont({
 //   src: './majallab-webfont.woff2',
@@ -58,7 +62,11 @@ export default function App({ Component, pageProps }) {
     <main className={`${poppins.variable}`}>
         <HomePopupNew/>
         {/* <PopupBundle isOpen={isModalOpen} onClose={closeModal} service={selectedService} /> */}
-      <Component {...pageProps} />
+          <PopupProvider>
+          <PopupModal />
+          <Component {...pageProps} />
+        </PopupProvider>
+
       <Script
         src="https://www.googletagmanager.com/gtag/js?id=G-9X52J8V8NK"
         strategy="afterInteractive"

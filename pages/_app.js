@@ -9,7 +9,7 @@ import HomePopupNew from "./components/HomePopupNew";
 import PopupBundle from "./components/PopupBundle";
 
 import PopupModal from './components/PopupModal';
-// import { PopupProvider } from '../context/PopupContext';
+import { PopupProvider } from '../context/PopupContext';
 
 
 

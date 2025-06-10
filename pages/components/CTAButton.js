@@ -1,8 +1,9 @@
 import { MdKeyboardDoubleArrowRight } from 'react-icons/md';
-import { usePopup } from '../context/PopupContext';
+import { usePopupcta } from '../../context/PopupContext';
+
 
 const CTAButton = () => {
-  const { openModal } = usePopup();
+  const { openModal } = usePopupcta();
 
   return (
     <a
@@ -10,7 +11,7 @@ const CTAButton = () => {
       className="bg-transparent text-white px-5 py-2 border border-white rounded-full flex items-center gap-2 hover:bg-gray-200 hover:text-black transition"
       onClick={(e) => {
         e.preventDefault();
-        openModal();
+        openModal("cta");
       }}
     >
       Get Started <MdKeyboardDoubleArrowRight className="inline" />

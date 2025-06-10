@@ -1,4 +1,6 @@
 import React, { createContext, useContext, useState } from 'react';
+// import { usePopupcta } from '../../context/PopupContext';
+
 
 const PopupContext = createContext();
 
@@ -23,4 +25,4 @@ export const PopupProvider = ({ children }) => {
   );
 };
 
-export const usePopup = () => useContext(PopupContext);
+export const usePopupcta = () => useContext(PopupContext);

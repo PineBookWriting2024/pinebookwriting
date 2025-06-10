@@ -1,9 +1,9 @@
 import Image from 'next/image';
-import { usePopup } from '../context/PopupContext';
+import { usePopupcta } from '../../context/PopupContext';
 import { useState } from 'react';
 
 const PopupModal = () => {
-  const { isPopupOpen, closeModal, popupService } = usePopup();
+  const { isPopupOpen, closeModal, popupService } = usePopupcta();
   const [form, setForm] = useState({
     fulName: '',
     phoneNumber: '',

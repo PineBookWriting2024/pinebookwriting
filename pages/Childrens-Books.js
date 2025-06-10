@@ -86,8 +86,7 @@ export default function BookEditing() {
                 </p> */}
             </div>
 
-            <section
-                            className="ser-cta-banner bg-no-repeat bg-cover bg-center text-white relative overflow-visible py-14 md:py-0"
+            <section className="ser-cta-banner bg-no-repeat bg-cover bg-center text-white relative overflow-visible py-14 md:py-0"
                             style={{ backgroundImage: `url(/brand-img/bg-banner.png)` }}>
                             <div className="grid grid-cols-1 md:grid-cols-12 items-center gap-4 max-w-7xl mx-auto relative ">
             

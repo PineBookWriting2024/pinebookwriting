@@ -12,73 +12,126 @@ export default function BrandNavbar() {
     const dropdownRef = useRef(null); // Create a ref for the dropdown
 
 
+        const servicesRig = [
+        { name: 'Memoir Writing',
+          href: '/Memoir-Writing',
+        },
+          
+        { name: 'Non Fiction Writing',
+          href: '/Non-Fiction-Writing',
+        },
+
+        { name: 'Rhymes Writing',
+          href: '/Rhymes-Writing',
+        },
+
+        { name: 'Song Writing',
+          href: '/Song-Writing',
+        },
+
+        { name: 'Story Writing',
+          href: '/Story-Writing',
+        },
+        
+        { name: 'Autobiography Writing',
+          href: '/Autobiography-Writing',
+        },
+        
+        { name: 'Hip Hop Writing',
+          href: '/Hip-Hop-Writing',
+        },
+        
+        { name: 'Narrative Writing',
+          href: '/Narrative-Writing',
+        },
+
+        { name: 'Novel Writing',
+          href: '/Novel-Writing',
+        },
+
+        { name: 'Speech Writing',
+          href: '/Speech-Writing',
+        },
+
+        { name: 'Comedy Writing',
+          href: '/Comedy-Writing',
+        },
+
+         { name: 'Comic Book Writing',
+          href: '/Comic-Book-Writing',
+        },
+
+         { name: 'Military Fiction Writing',
+          href: '/Military-Fiction-Writing',
+        },
+
+         { name: 'Movie Writing',
+          href: '/Movie-Writing',
+        },
+
+        
+    ]
+
+
     const services = [
         { name: 'Book Ghostwriting',
-          href: '/ghostwriting',
-          icon: '/brand-img/service-icon1.png',
-          image: '/brand-img/service-icon1.png',
-          desc: 'Craft engaging books aligned with your voice and vision.' },
+          href: '/ghostwriting',},
 
         { name: 'Resume Writing',
-        href: '/resume-writing',
-        icon: '/brand-img/service-icon2.png',
-        image: '/brand-img/service-icon2.png',
-        desc: 'Create noteworthy resumes that spotlight your strengths.' },
+        href: '/resume-writing',},
 
         { name: 'Social Media Copywriting',
-            href: '/social-media-copywriting',
-            icon: '/brand-img/service-icon9.png',
-            image: '/brand-img/service-icon9.png',
-            desc: 'Produce social media post copies to engage your audience.' },
+            href: '/social-media-copywriting',},
             
                 
         { name: 'Web Copywriting',
-            href: '/web-copywriting',
-            icon: '/brand-img/service-icon4.png',
-            image: '/brand-img/service-icon4.png',
-            desc: 'Informative yet promotional web copies that help drive conversion.' },
+            href: '/web-copywriting',},
             
         { name: 'SEO Content Writing',
-            href: '/seo-content',
-            icon: '/brand-img/service-icon5.png',
-            image: '/brand-img/service-icon5.png',
-            desc: 'SEO-optimized copywriting to rank your website on SERP.' },
+            href: '/seo-content',},
 
 
         { name: 'Blogs & Article Writing',
-            href: '/blog-article-writing',
-            icon: '/brand-img/service-icon6.png',
-            image: '/brand-img/service-icon6.png',
-            desc: 'Write informative & engaging blog posts and articles.' },
+            href: '/blog-article-writing',},
 
 
         { name: 'PR Writing',
-            href: '/press-release-writing',
-            icon: '/brand-img/service-icon7.png',
-            image: '/brand-img/service-icon7.png',
-            desc: 'Impactful press releases to promote/announce your news & events .' },
+            href: '/press-release-writing',},
 
         
         { name: 'Script Writing',
-            href: '/script-writing',
-            icon: '/brand-img/service-icon8.png',
-            image: '/brand-img/service-icon8.png',
-            desc: 'Expert script writing for product presentations, audios & videos.' },
+            href: '/script-writing',},
     
 
         { name: 'Wikipedia Writing',
-            href: '/wikipedia-writing',
-            icon: '/brand-img/service-icon3.png',
-            image: '/brand-img/service-icon3.png',
-            desc: 'Well-researched and well-written Wikipedia articles.' },
+            href: '/wikipedia-writing',},
 
 
         { name: 'Product Description Writing',
-            href: '/product-description',
-            icon: '/brand-img/service-icon10.png',
-            image: '/brand-img/service-icon10.png',
-            desc: 'Informative & Persuasive product descriptions to uplift sales.' },
-            ];
+            href: '/product-description',},
+
+        { name: 'Screen Writing',
+            href: '/Screen-Writing',},
+            
+        { name: 'Action Adventure Writing',
+            href: '/Action-Adventure',},
+
+        { name: 'Childrens Books',
+            href: '/Childrens-Books',},
+
+        { name: 'Fantasy Writing',
+            href: '/Fantasy-Writing-Services',},
+
+        { name: 'Horror Writing',
+           href: '/Horror-Writing',},
+
+        { name: 'Sci-Fi Writing',
+           href: '/Sci-Fi-writing',},
+
+        { name: 'Biography Writing',
+           href: '/Biography-Writing',},
+        
+        ];
 
     // Function to handle the service dropdown toggle
     const toggleServiceDropdown = () => {
@@ -182,11 +235,11 @@ export default function BrandNavbar() {
                                             {services.map((service, index) => (
                                                 <li
                                                     key={index}
-                                                    className='mb-0 flex items-center py-4'
+                                                    className='mb-0 flex items-center '
                                                     onMouseEnter={() => setHoveredService(index)}
                                                     onMouseLeave={() => setHoveredService(null)}
                                                 >
-                                                    <Link href={service.href} onClick={(e) => { e.preventDefault(); window.location.href =  service.href; }}  className='flex items-center w-full'>
+                                                    <Link href={service.href} onClick={(e) => { e.preventDefault(); window.location.href =  service.href; }}  className='flex py-4 items-center w-full'>
                                                         {typeof service.icon === 'string' ? (
                                                             <Image src={service.icon} className="me-3" width={16} height={16} alt={service.name} />
                                                         ) : (
@@ -200,7 +253,31 @@ export default function BrandNavbar() {
                                                 </li>
                                             ))}
                                         </ul>
-                                        <div className='p-5 hidden md:block lg:block'>
+
+                                         <ul className="text-start px-4 py-4">
+                                            {servicesRig.map((service, index) => (
+                                                <li
+                                                    key={index}
+                                                    className='mb-0 flex items-center '
+                                                    onMouseEnter={() => setHoveredService(index)}
+                                                    onMouseLeave={() => setHoveredService(null)}
+                                                >
+                                                    <Link href={service.href} onClick={(e) => { e.preventDefault(); window.location.href =  service.href; }}  className='flex py-4 items-center w-full'>
+                                                        {typeof service.icon === 'string' ? (
+                                                            <Image src={service.icon} className="me-3" width={16} height={16} alt={service.name} />
+                                                        ) : (
+                                                            <FontAwesomeIcon icon={service.icon} className="me-3" width={12} />
+                                                        )}
+                                                        <div>
+                                                            <h3>{service.name}</h3>
+                                                            <p>{service.desc}</p>
+                                                        </div>
+                                                    </Link>
+                                                </li>
+                                            ))}
+                                        </ul>
+                                        {/* <div className='p-5 hidden md:block lg:block'>
+                                           
                                             <h2 className='my-4 text-start'>OUR EXPERTS</h2>
                                             <div className='flex gap-4 mt-4 justify-center'>
                                                 <div className="brand-meet-team-container text-center flex justify-center flex-col items-center">
@@ -235,7 +312,7 @@ export default function BrandNavbar() {
                                                 <p className='mb-4 text-start pt-4'>Ready to bring your book to life? Schedule a call with one of our experts now to unlock your book's potential. Your customized solution awaits—don't miss out!</p>
                                                 <Link href={'javascript:;'} className="main-button font-poppins mb-5 uppercase" onClick={handleOpenChat}>schedule a call</Link>
                                             </div>
-                                        </div>
+                                        </div> */}
                                         {/* <div className="flex-shrink-0">
                                             {hoveredService !== null && (
                                                 <Image

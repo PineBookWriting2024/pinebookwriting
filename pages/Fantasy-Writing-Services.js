@@ -11,6 +11,9 @@ import BrandProcess from "./components/BrandProcess";
 import BrandAudioPlayer from "./components/BrandAudioPlayer";
 import NewBrandFooter from "./components/NewBrandFooter";
 import BrandTopBar from "./components/BrandTopBar";
+import { FaPhoneVolume } from "react-icons/fa";
+import CTAButton from './components/CTAButton';
+
 
 export default function BookEditing() {
     const handleOpenChat = () => {
@@ -40,35 +43,35 @@ export default function BookEditing() {
     return (
         <>
             <Head>
-                <title>Ghostwriting | Pine Book Writing</title>
+                <title>Fantasy Writing | Pine Book Writing</title>
                 <meta
                     name="description"
-                    content="Everything about Pine Book Writing—your partner in crafting, editing, and publishing your story. Experience seamless service from manuscript to bookshelf."
+                    content="Create magical worlds with our fantasy writing service that is rich in tradition, characters, and immersive storytelling from start to finish."
                 />
                 <link rel="shortcut icon" href="/images/fav.webp" />
                 </Head>
             <BrandTopBar />
             <BrandNavbar />
             <BrandPrimaryHeader
-                photo_banner={"/brand-img/Fantasy Writing services.png"}
-                title="Let's Breathe Life into Your Idea - Hire Expert Ghostwriting Services"
-                desc="If you are someone who does not have enough time or expertise to pen your delightful ideas, a ghostwriting service is made for you. At Pine Book Writing, we offer impeccable ghostwriting services to help first-time or seasoned authors to help them thrive."
+                photo_banner={"/brand-img/Fantasy-Writing-services.png"}
+                title="Fantasy Writing Services – Helping Authors Build a Magical World"
+                desc="If you’re looking for expert assistance while working on the fantasy book genre, you’re at the right place. Pine Book Writing offers professional fantasy writing services for experienced or aspiring authors to let their imaginations soar. Contact us today!"
             />
             <BrandBannerLogo />
 
-            <div className="container mx-auto max-w-screen-xl overflow-hidden pt-0 md:pt-14">
+            <div className="container mx-auto max-w-screen-xl overflow-hidden pt-0 md:py-20">
                 <div className="flex justify-center items-center flex-col md:flex-row lg:flex-row px-8 md:px-0 py-10 md:py-0">
                     <div className="basis-1/2 abt-txt m1-h p1 aos-init aos-animate" data-aos="fade-right" data-aos-duration="1000">
-                    <h2 className="font-poppins text-3xl md:text-4xl uppercase font-bold">Professional Ghostwriting Services</h2>
+                    <h2 className="font-poppins text-3xl md:text-4xl uppercase font-bold">Pine Book Writing – Your Go-to Fantasy Writing Service</h2>
 
                         <h2 className="font-poppins text-2xl md:text-3xl uppercase">
-                        Bring Your Literary Vision to Life
+                        Create Wonder with Every Word
                         </h2>
                        
                         <p className="font-poppins text-xl text-left pt-3">
-                        At Pine Book Writing, we believe book writing isn't as easy as it seems for everyone. That’s why we are here to offer expert ghostwriting services to help authors write their creative, fascinating stories, autobiographies, fiction or non-fiction novels to enthrall their potential readers. We have a competent team of book writers who bring years of experience in writing for multiple genres. They also help authors create striking characters and a book that mesmerizes their readers till the end. Whether you require professional help in writing an informative memoir, a suspenseful novel, or an appealing children's storybook, our ghostwriting expertise lies in a wide range of book writing genres. </p>
+                        The fantasy genre requires more than imagination. It requires consistent experience to create fascinating characters and a well-crafted magical world. In this journey, Pine Book Writing offers dedicated fantasy writing services for those who want to express their dreams and creative ideas and create their own imaginative worlds. </p>
 
-                        <p className="font-poppins text-xl text-left pt-3">Moreover, we believe in trust, transparency, and results. That's why we will allocate a dedicated project manager to update you about everything throughout the writing project. Contact us today to learn further about our service and get a project quote!</p>
+                        <p className="font-poppins text-xl text-left pt-3">Our experienced fantasy writers can help your magical worlds filled with danger, wonder, and meaningful context throughout the story. You’re invited to hire our expert professionals, whether you are working on high fantasy, dark fantasy, or modern magic stories. No matter whether you’re a fresh writer or an experienced one, we’re here to serve our decade-long expertise with you to help you create something that makes your people remember you and your work!</p>
                     </div>
                     <div className="basis-1/2 abt-pic text-center flex justify-center md:justify-center">
                         <Image src={"/brand-img/ghost-pic.webp"} width={470} height={300}
@@ -84,15 +87,67 @@ export default function BookEditing() {
                 </p> */}
             </div>
 
+            <section className="ser-cta-banner bg-no-repeat bg-cover bg-center text-white relative overflow-visible py-14 md:py-0"
+                            style={{ backgroundImage: `url(/brand-img/bg-banner.png)` }}>
+                            <div className="grid grid-cols-1 md:grid-cols-12 items-center gap-4 max-w-8xl mx-auto relative ">
+            
+                                <div className="md:col-span-3 hidden md:flex justify-center md:justify-start relative z-10">
+                                    <Image
+                                        src="/brand-img/cta-book-12.png"
+                                        alt="Book 1"
+                                        className="l-book absolute -top-20 md:-top-48 left-36"
+                                        height={300}
+                                        width={400}
+                                    />
+                                </div>
+            
+                                <div className="md:col-span-6 text-center px-4">
+                                    <h2 className="font-poppins text-2xl text-[#98caa9] font-semibold md:text-3xl uppercase">
+                                        Breathe Your Imaginations - Acquire Expert Fantasy Writing Service 
+                                    </h2>
+                                    <p className="text-base md:text-lg py-4">If yes, then why wait? At Pine Book Writing, we’re curious to know your fantasy book idea and help you craft your next best-selling!
+                                    </p>
+            
+                                    <div className="cta-btns flex flex-col sm:flex-row items-center gap-4 justify-center">
+                                        <CTAButton />
+            
+            
+                                        <a
+                                            href="tel:(866) 841-7463"
+                                            className="text-white flex items-center gap-2">
+                                            <FaPhoneVolume className="inline" /> (866) 841-7463
+                                        </a>
+            
+                                        <a
+                                            href={'javascript:;'}
+                                            className="bg-transparent text-[#fff] px-5 py-2 border border-white
+                                                                                                                                    rounded-full flex items-center gap-2 hover:bg-gray-200 hover:text-black cta-btn-1 transition" onClick={handleOpenChat}>
+                                            Live Chat
+                                        </a>
+                                    </div>
+                                </div>
+            
+                                <div className="md:col-span-3 hidden md:flex justify-center md:justify-end">
+                                    <Image
+                                        src="/brand-img/type.png"
+                                        alt="Typewriter"
+                                        className="max-h-[300px] w-auto"
+                                        height={400}
+                                        width={400}
+                                    />
+                                </div>
+                            </div>
+                        </section>
+
             {/* inner process section start */}
-             <section className="brand-process my-10  mx-auto relative pt-10 text-center flex justify-center mb-12 overflow-hidden">
+             <section className="brand-process mx-auto relative pt-20 text-center flex justify-center mb-12 overflow-hidden">
                 <div className="max-w-screen-xl">
                     <div className="text-center mb-6">
                         <h3 className="text-2xl text-black font-poppins">Our Service Workflow</h3>
                         <h2 className="font-poppins text-3xl md:text-4xl text-black font-bold" data-aos="zoom-out-down">6-Step Process of Our Ghostwriting Services</h2>
                     </div>
 
-                    <div className="grid grid-cols-3 gap-6 mb-6">
+                    <div className="grid md:grid-cols-3 gap-6 mb-6">
 
                         <div className="flex flex-row " data-aos="fade-left">
                             <div className="brand-process-content text-left flex-col px-6 py-10">
@@ -120,7 +175,7 @@ export default function BookEditing() {
                         
                     </div>
 
-                    <div className="grid grid-cols-3 gap-6 mb-6" >
+                    <div className="grid md:grid-cols-3 gap-6 mb-6" >
 
                         <div className="flex flex-row " data-aos="fade-left">
                         <div className="brand-process-content text-left flex-col px-6 py-10">

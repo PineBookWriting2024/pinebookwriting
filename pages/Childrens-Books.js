@@ -45,7 +45,7 @@ export default function BookEditing() {
                 <title>Children's Books | Pine Book Writing</title>
                 <meta
                     name="description"
-                    content="Everything about Pine Book Writing—your partner in crafting, editing, and publishing your story. Experience seamless service from manuscript to bookshelf."
+                    content="Delight young readers with our children’s books writing service. We create fun, educational, and imaginative stories for all ages."
                 />
                 <link rel="shortcut icon" href="/images/fav.webp" />
                 </Head>
@@ -149,7 +149,7 @@ export default function BookEditing() {
                         <h2 className="font-poppins text-3xl md:text-4xl text-black font-bold" data-aos="zoom-out-down">6-Step Process of Our Ghostwriting Services</h2>
                     </div>
 
-                    <div className="grid grid-cols-3 gap-6 mb-6">
+                    <div className="grid md:grid-cols-3 gap-6 mb-6">
 
                         <div className="flex flex-row " data-aos="fade-left">
                             <div className="brand-process-content text-left flex-col px-6 py-10">
@@ -177,7 +177,7 @@ export default function BookEditing() {
                         
                     </div>
 
-                    <div className="grid grid-cols-3 gap-6 mb-6" >
+                    <div className="grid md:grid-cols-3 gap-6 mb-6" >
 
                         <div className="flex flex-row " data-aos="fade-left">
                         <div className="brand-process-content text-left flex-col px-6 py-10">

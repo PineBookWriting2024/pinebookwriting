@@ -91,7 +91,7 @@ export default function SeoCopywriting () {
                         <h2 className="font-poppins text-3xl md:text-4xl text-black font-bold" data-aos="zoom-out-down">6-Step Process of Our SEO Writing Services</h2>
                     </div>
 
-                    <div className="grid grid-cols-3 gap-6 mb-6">
+                    <div className="grid md:grid-cols-3 gap-6 mb-6">
 
                         <div className="flex flex-row " data-aos="fade-left">
                             <div className="brand-process-content text-left flex-col px-6 py-10">
@@ -119,7 +119,7 @@ export default function SeoCopywriting () {
                         
                     </div>
 
-                    <div className="grid grid-cols-3 gap-6 mb-6" >
+                    <div className="grid md:grid-cols-3 gap-6 mb-6" >
 
                         <div className="flex flex-row " data-aos="fade-left">
                         <div className="brand-process-content text-left flex-col px-6 py-10">

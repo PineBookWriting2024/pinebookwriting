@@ -24,27 +24,35 @@ export default function Story() {
     const videoSlides = [
         {
             id: 1,
-            src: "https://www.youtube.com/embed/fX2J8iMy4z4",
-            type: "video/mp4"
+            // src: "https://www.youtube.com/embed/fX2J8iMy4z4",
+            type: "video/mp4",
+            src: "/images/v1.mp4",
+
         },
         {
             id: 2,
-            src: "https://www.youtube.com/embed/QMirTma0Wf4",
-            type: "video/mp4"
+            // src: "https://www.youtube.com/embed/QMirTma0Wf4",
+            type: "video/mp4",
+            src: "/images/v6.mp4",
+
         },
         {
             id: 3,
             src: "https://www.youtube.com/embed/Tv3_r0EMVH4",
-            type: "video/mp4"
+            type: "video/mp4",          
+            src: "/images/v3.mp4",
+
         },
         {
             id: 4,
-            src: "https://www.youtube.com/embed/6T96-bq6_g8",
+            // src: "https://www.youtube.com/embed/6T96-bq6_g8",
+            src: "/images/v4.mp4",
             type: "video/mp4"
         },
         {
             id: 5,
-            src: "https://www.youtube.com/embed/gWW43Tfa8gA",
+            // src: "https://www.youtube.com/embed/gWW43Tfa8gA",
+               src: "/images/v5.mp4",
             type: "video/mp4"
         }
     ];
@@ -101,7 +109,7 @@ export default function Story() {
                                     {/* <video loop controls muted loading="lazy">
                                         <source src={video.src} type={video.type} />
                                     </video> */}
-                                     <iframe className='py-' height={300} width={500} src={video.src} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                     <iframe className='py-' height={300} width={500} src={video.src} title="YouTube video player" frameborder="0" allow=" clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                                 </SwiperSlide>
                             ))}
                         </Swiper>

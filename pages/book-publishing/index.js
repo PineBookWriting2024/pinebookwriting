@@ -808,7 +808,7 @@ export default function Home() {
 
         {/* new process end  */}
 
-        {/* <Story /> */}
+        <Story />
 
         
         <section className="book-publishing-cta-section mx-auto md:px-6 py-10 md:py-0 relative">

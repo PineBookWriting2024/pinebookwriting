@@ -35,12 +35,12 @@ export default function Faq() {
     ];
 
     const badges = [
-        { src: "/images/bage2.png", width: 100, height: 100 },
-        { src: "/images/bage13.png", width: 100, height: 100 },
-        { src: "/images/bage3.png", width: 100, height: 100 },
-        { src: "/images/bage14.png", width: 100, height: 100 },
-        { src: "/images/bage4.png", width: 100, height: 100 },
-        { src: "/images/bage12.png", width: 100, height: 100 }
+        { src: "/images/bage2.webp", width: 100, height: 100 },
+        { src: "/images/bage13.webp", width: 100, height: 100 },
+        { src: "/images/bage3.webp", width: 100, height: 100 },
+        { src: "/images/bage14.webp", width: 100, height: 100 },
+        { src: "/images/bage4.webp", width: 100, height: 100 },
+        { src: "/images/bage12.webp", width: 100, height: 100 }
     ];
 
 

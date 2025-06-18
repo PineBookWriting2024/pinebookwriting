@@ -475,72 +475,7 @@ export default function HeroFormBookOffer() {
             <div>
 
             </div>
-            {/* <form className="flex flex-col gap-4" onSubmit={handleSubmit}>
-              <div className="relative">
-                <input
-                  type="text"
-                  name="firstName"
-                  onChange={handleChange}
-                  value={firstName}
-                  required
-                  className="pl-4 pr-4 py-2 border rounded-lg w-full text-md"
-                  placeholder="Enter your Name"
-                />
-              </div>
-              <div className="relative">
-                <input
-                  type="text"
-                  onChange={handleChange}
-                  value={phone}
-                  name="phone"
-                  required
-                  className="pl-4 pr-4 py-2 border rounded-lg w-full text-md"
-                  placeholder="Enter your Phone"
-                />
-                {phoneError && (
-                  <span className="text-red-500 text-md mt-1">{phoneError}</span>
-                )}
-              </div>
-              <div className="relative">
-                <input
-                  type="text"
-                  name="email"
-                  onChange={handleChange}
-                  value={email}
-                  required
-                  className="pl-4 pr-4 py-2 border rounded-lg w-full text-md"
-                  placeholder="Enter your Email"
-                />
-              </div>
 
-              <div className="relative">
-                <textarea
-                  className="pl-4 pr-4 py-2 border rounded-lg w-full text-md"
-                  rows={3}
-                  onChange={handleChange}
-                  value={message}
-                  required
-                  placeholder="Enter your Message"
-                  name="message"
-                ></textarea>
-                <div
-                  className="absolute inset-y-0 left-0 pl-3 pt-3 
-                  flex items-start  
-                  pointer-events-none"
-                ></div>
-              </div>
-              {showSuccess && (
-                <p className="px-1 py-2 text-green-700">
-                  Form submitted Successfully!
-                </p>
-              )}
-              <button
-                className="w-full p-4 py-2 text-white uppercase header-submit-btn rounded font-poppins"
-                type="submit"
-              >
-                Submit
-              </button>
-            </form> */}
 
 <form className="flex flex-col gap-4 justify-start items-start" onSubmit={handleSubmit}>
                     <div className="relative w-full">
@@ -554,12 +489,13 @@ export default function HeroFormBookOffer() {
                         placeholder="Enter your Name"
                       />
                     </div>
+
                     <div className="relative w-full">
                     
                       <div className='tel-box'>
 
                         {/* new code */}
-                        <div className="country-input-wrapper w-full">
+                        {/* <div className="country-input-wrapper w-full">
                           <div className="select-box">
                             {loading ? (
                               <p>Loading...</p>
@@ -567,8 +503,6 @@ export default function HeroFormBookOffer() {
                               <div className="select-box flex items-center">
                                 <select
                                   className="country-select pl-2 pr-2 py-2 cursor-pointer"
-                                  // onChange={handleCountryChange}
-                                  // value={selectedCountry ? selectedCountry.code : ""}
                                   onChange={handleCountryChange}
                                   value={selectedCountry ? selectedCountry.countryCode : ""}
                                 >
@@ -604,11 +538,13 @@ export default function HeroFormBookOffer() {
                               required
                             />
                           </div>
-                        </div>
+                        </div> */}
 
 
                       </div>
                     </div>
+
+
                     <div className="relative w-full">
                       <input
                         type="text"

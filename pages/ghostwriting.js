@@ -106,10 +106,10 @@ export default function BookEditing() {
 
                     <div className="md:col-span-6 text-center px-4">
                         <h2 className="font-poppins text-2xl text-[#98caa9] font-semibold md:text-3xl uppercase">
-                            Bring Your Literary Vision to Life
+                            Ready to Share Your Story? Hire Book Ghostwriting
                         </h2>
                         <p className="text-base md:text-lg py-4">
-                            Professional Ghostwriting ServicesProfessional Ghostwriting ServicesProfessional Ghostwriting Services
+                            Let our professional ghostwriters turn your ideas into a book that flawlessly matches your voice and vision.
                         </p>
 
                         <div className="cta-btns flex flex-col sm:flex-row items-center gap-4 justify-center">

@@ -322,34 +322,6 @@ export default function HeroFormBookOffer() {
     "$8001 - $9000", "$9001 - $10000"
   ];
 
-  // Object
-  // const clientLogos = [
-  //   {
-  //     src: "/images/logo-img1.png",
-  //     alt: "LOGO",
-  //     width: 150,
-  //     height: 60
-  //   },
-  //   {
-  //     src: "/images/logo-img2.png",
-  //     alt: "LOGO",
-  //     width: 150,
-  //     height: 60
-  //   },
-  //   {
-  //     src: "/images/logo-img3.png",
-  //     alt: "LOGO",
-  //     width: 150,
-  //     height: 60
-  //   },
-  //   {
-  //     src: "/images/logo-img4.png",
-  //     alt: "LOGO",
-  //     width: 150,
-  //     height: 60
-  //   },
-  // ];
-
 
   const clientLogos = [
     {
@@ -390,11 +362,7 @@ export default function HeroFormBookOffer() {
   ];
 
 
-  // useEffect(() => {
-  //   setTimeout(() => {
-  //     router.push('/publishing-lp');
-  //   }, 3000);
-  // }, [router]);
+
 
 
   const handleChange = (e) => {
@@ -464,34 +432,19 @@ export default function HeroFormBookOffer() {
     <div className="container mx-4 pt-20 md:mx-32 tablet-margin-banner brand-hero-section ">
       <div className="grid grid-cols-1 sm:gap-8 sm:py-0 md:grid-cols-2 text-left items-center justify-between md:gap-8 md:py-30">
         <div className="mb-4">
-          {/* <h2 className="text-sm md:base scroll-animation">
-            <span> #1 SELF </span> PUBLISHING COMPANY
-          </h2> */}
+
           <h3 className="font-poppins text-2xl mb-4 aos-init aos-animate text-white"><span className="px-2 py-0">#1 Self</span> Publishing Company</h3>
           <FadeIn>
             <h1 className="font-poppins text-3xl text-white font-bold">
               DO YOU HAVE A MANUSCRIPT READY TO BE PUBLISHED?
             </h1>
           </FadeIn>
-          {/* <WavyText text="DO YOU HAVE A MANUSCRIPT READY TO BE PUBLISHED?" replay={true} style={{ color: 'white' }} className="font-poppins text-3xl md:text-5xl text-white font-bold" /> */}
-          {/* <FadeIn> */}
+
           <p className="text-xl text-white pt-4">
             Pine Book Writing has made it much more easier to self-publish a book, with hands-on support from the first word to the final cover. Our process involves Proofreading, Editing, Formatting, Book Cover Design and print-on-demand through a vast network of global outlets.
           </p>
           <h4 className="font-poppins text-2xl mt-8 text-white uppercase font-bold">Our Credibility</h4>
-          {/* <button className="get-premium-btn" onClick={handleOpenChat}>Get premium book publishing services</button> */}
-          {/* <div className="flex justify-start items-center mt-8 gap-2 md:gap-x-8 client-logo-sec">
-            {clientLogos.map((logo, index) => (
-              <Link key={index} href={logo.href} target="_blank">
-                <Image
-                  alt={logo.alt}
-                  src={logo.src}
-                  width={logo.width}
-                  height={logo.height}
-                />
-              </Link>
-            ))}
-          </div> */}
+
           <div className="flex justify-start items-center mt-8 gap-2 md:gap-x-8 client-logo-sec about-logos-sec">
             {clientLogos.map((logo, index) => (
               <Link key={index} href={logo.href} target="_blank">
@@ -602,31 +555,9 @@ export default function HeroFormBookOffer() {
                       />
                     </div>
                     <div className="relative w-full">
-                      {/* <input
-                        type="text"
-                        onChange={handleChange}
-                        value={phone}
-                        name="phone"
-                        required
-                        className="pl-4 pr-4 py-2 border rounded-xl w-full text-sm shadow-xl"
-                        placeholder="Enter your Phone"
-                      /> */}
+                    
                       <div className='tel-box'>
-                        {/* <div className='select-box'>
-                          <img src={flagImg} alt="country-flag" className='flag-img' />
-                          <select
-                            id="country"
-                            onChange={(e) => {
-                              const selectedOption = e.target.selectedOptions[0];
-                              setCountryCodeValue(e.target.value); // Update country code
-                              setFlagImg(
-                                `https://flagpedia.net/data/flags/h80/${selectedOption.dataset.countrycode.toLowerCase()}.webp` // Update flag
-                              );
-                            }}
-                            defaultValue="1"
-                          >
-                          </select>
-                        </div> */}
+
                         {/* new code */}
                         <div className="country-input-wrapper w-full">
                           <div className="select-box">

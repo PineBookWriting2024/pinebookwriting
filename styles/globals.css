@@ -1344,3 +1344,7 @@ a.inline.cta-btn-1 {
   border-radius: 30px;
   padding: 10px 15px;
 }
+
+section.brand-main-banner-video {
+    background: #00000082;
+}

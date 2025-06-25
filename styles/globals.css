@@ -671,10 +671,10 @@
   .brand-footer .widget-2:before {
       content: '';
       background-color: #ffffff82;
-      height: 300px;
+      height: 100%;
       width: 1px;
       position: absolute;
-      right: 4%;
+      right: 0%;
       bottom: 0;
       top: 0;
   }

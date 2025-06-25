@@ -35,102 +35,196 @@ export default function NewBrandFooter() {
     }, []);
 
 
+     const services = [
+        { name: 'Book Ghostwriting',
+          href: '/ghostwriting',},
+
+        { name: 'Resume Writing',
+        href: '/resume-writing',},
+
+        { name: 'Social Media Copywriting',
+            href: '/social-media-copywriting',},
+            
+                
+        { name: 'Web Copywriting',
+            href: '/web-copywriting',},
+            
+        { name: 'SEO Content Writing',
+            href: '/seo-content',},
+
+
+        { name: 'Blogs & Article Writing',
+            href: '/blog-article-writing',},
+
+
+        { name: 'PR Writing',
+            href: '/press-release-writing',},
+
+          { name: 'Military Fiction Writing',
+          href: '/Military-Fiction-Writing',
+        },
+
+         { name: 'Movie Writing',
+          href: '/Movie-Writing',
+        },
+
+           { name: 'Script Writing',
+            href: '/script-writing',},
+
+        
+        
+
+        ];
+
+  const servicessecond = [
+         { name: 'Product Description Writing',
+            href: '/product-description',},
+
+        { name: 'Screen Writing',
+            href: '/Screen-Writing',},
+            
+        { name: 'Action Adventure Writing',
+            href: '/Action-Adventure',},
+
+        { name: 'Childrens Books',
+            href: '/Childrens-Books',},
+
+        { name: 'Fantasy Writing',
+            href: '/Fantasy-Writing-Services',},
+
+        { name: 'Horror Writing',
+           href: '/Horror-Writing',},
+
+        { name: 'Sci-Fi Writing',
+           href: '/Sci-Fi-writing',},
+
+        { name: 'Biography Writing',
+           href: '/Biography-Writing',},
+
+           { name: 'Comedy Writing',
+          href: '/Comedy-Writing',
+        },
+
+         { name: 'Comic Book Writing',
+          href: '/Comic-Book-Writing',
+        },
+
+            { name: 'Wikipedia Writing',
+            href: '/wikipedia-writing',},
+
+     
+ ];
+
+ const servicesthird = [
+      { name: 'Memoir Writing',
+          href: '/Memoir-Writing',
+        },
+          
+        { name: 'Non Fiction Writing',
+          href: '/Non-Fiction-Writing',
+        },
+
+        { name: 'Rhymes Writing',
+          href: '/Rhymes-Writing',
+        },
+
+        { name: 'Song Writing',
+          href: '/Song-Writing',
+        },
+
+        { name: 'Story Writing',
+          href: '/Story-Writing',
+        },
+        
+        { name: 'Autobiography Writing',
+          href: '/Autobiography-Writing',
+        },
+        
+        { name: 'Hip Hop Writing',
+          href: '/Hip-Hop-Writing',
+        },
+        
+        { name: 'Narrative Writing',
+          href: '/Narrative-Writing',
+        },
+           { name: 'Novel Writing',
+          href: '/Novel-Writing',
+        },
+
+        { name: 'Speech Writing',
+          href: '/Speech-Writing',
+        },
+
+ ]
+
+ const servicesfourth = [
+  
+
+     
+
+       
+
+    
+    ]
+
     return (
         <>
             <footer className="text-white body-font brand-footer">
-                <div className="container px-5 pt-0 pb-10 md:pt-12 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col position-relative">
-                    <div className="flex-grow flex flex-wrap -mb-10 md:mt-0 mt-0 md:text-left text-center justify-evenly py-10">
-                        <div className="lg:w-1/3 md:w-1/4 w-full px-4 widget-2 relative">
-                            <a className="flex title-font font-medium items-center md:justify-start justify-center text-white">
-                                <Image src={"/brand-img/PineBookWriters.gif"} width={250} height={200}></Image>
-                            </a>
-                            <p className="mt-2 text-sm text-white leading-7 px-0 md:px-4 mb-5">
-                                Pine Book Writing offers expert ghostwriting services to help new and seasoned authors tell their stories to their audiences worldwide. Our exceptional team of writers, editors, and designers brings years of experience in crafting engaging books that become the best-selling ones.
-                            </p>
-                        </div>
-                        <div className="lg:w-1/5 md:w-1/5 w-full px-4 widget-2 relative">
-                            <h2 className="title-font text-white tracking-widest text-2xl md:text-2xl mb-3 font-poppins font-bold	">
-                                Quick Links
-                            </h2>
-                            <nav className="list-none mb-10 mt-5">
-                                <li>
-                                    <Link href="/">
-                                        Home
-                                    </Link>
-                                </li>
-                                <li className="mt-3">
-                                    <Link href="/about" onClick={(e) => { e.preventDefault(); window.location.href = "/about"; }}>
-                                        About Us
-                                    </Link>
-                                </li>
-                                {/* <li className="mt-3">
-                                    Services
-                                </li> */}
-                                <li className="mt-3">
-                                    <Link href="/testimonials" onClick={(e) => { e.preventDefault(); window.location.href = "/testimonials"; }}>
-                                        Testimonials
-                                    </Link>
-                                </li>
-                                <li className="mt-3">
-                                    <Link href="/packages" onClick={(e) => { e.preventDefault(); window.location.href = "/packages"; }}>
-                                        Packages
-                                    </Link>
-                                </li>
-                                <li className="mt-3">
-                                    <Link href="/portfolio" onClick={(e) => { e.preventDefault(); window.location.href = "/portfolio"; }}>
-                                        Portfolio
-                                    </Link>
-                                </li>
-                                {/* <li className="mt-3">
-                                    Testimonials
-                                </li> */}
-                                <li className="mt-3">
-                                    <Link href="/contact-us" onClick={(e) => { e.preventDefault(); window.location.href = "/contact-us"; }}>
-                                        Contact Us
-                                    </Link>
-                                </li>
-                            </nav>
-                        </div>
-                        <div className="lg:w-1/5 md:w-1/5 w-full px-4 widget-2 relative">
-                            <h2 className="title-font text-white tracking-widest text-2xl md:text-2xl mb-3 font-poppins font-bold	">
-                                Services
-                            </h2>
-                            <nav className="list-none mb-10 mt-5">
-                                <li>
-                                    <Link href="/ghostwriting" onClick={(e) => { e.preventDefault(); window.location.href = "/ghostwriting"; }}>
-                                        Book Ghostwriting
-                                    </Link>
-                                </li>
-                                <li className="mt-3">
-                                    <Link href="/resume-writing" onClick={(e) => { e.preventDefault(); window.location.href = "/resume-writing"; }}>
-                                        Resume Writing
-                                    </Link>
-                                </li>
-                                <li className="mt-3">
-                                    <Link href="/web-copywriting" onClick={(e) => { e.preventDefault(); window.location.href = "/web-copywriting"; }}>
-                                        Web Copywriting
-                                    </Link>
-                                </li>
-                                <li className="mt-3">
-                                    <Link href="/seo-content" onClick={(e) => { e.preventDefault(); window.location.href = "/seo-content"; }}>
-                                        SEO Content Writing
-                                    </Link>
-                                </li>
-                                <li className="mt-3">
-                                    <Link href="/press-release-writing" onClick={(e) => { e.preventDefault(); window.location.href = "/press-release-writing"; }}>
-                                        Press Release Writing
-                                    </Link>
-                                </li>
-                                <li className="mt-3">
-                                    <Link href="/social-media-copywriting" onClick={(e) => { e.preventDefault(); window.location.href = "/social-media-copywriting"; }}>
-                                        Social Media Copywriting
-                                    </Link>
-                                </li>
-                            </nav>
-                        </div>
+                <div className="container px-5 pt-0 md:pb-10 md:pt-12 mx-auto flex justify-evenly md:gap-9">
+                    <div className="px-4 widget-2 relative md:flex-row flex-col items-center md:items-start lg:w-1/3 w-full">
+                        <a className="flex title-font font-medium items-center md:justify-start justify-center text-white">
+                            <Image src={"/brand-img/PineBookWriters.gif"} width={250} height={200}></Image>
+                        </a>
+                        <p className="mt-2 text-sm text-white leading-7 px-0 md:px-4 md:mb-5 ">
+                            Pine Book Writing offers expert ghostwriting services to help new and seasoned authors tell their stories to their audiences worldwide. Our exceptional team of writers, editors, and designers brings years of experience in crafting engaging books that become the best-selling ones.
+                        </p>
 
+                    </div>
 
-                        <div className="lg:w-1/4 md:w-1/4 w-full px-4 widget-3 relative">
+                    <div className="widget-2 relative lg:w-1/4">
+                        <h2 className="title-font text-white tracking-widest text-2xl md:text-2xl mb-3 font-poppins font-bold	">
+                            Services
+                        </h2>
+                        <nav className="list-none md:mb-10 mb-6 md:mt-5">
+                            {services.map((service, index) => (
+                                <li key={index} className="mt-3">
+                                    <Link href={service.href} onClick={(e) => { e.preventDefault(); window.location.href = service.href; }}>
+                                        {service.name}
+                                    </Link>
+                                </li>
+                            ))}
+                        </nav>
+                    </div>
+
+                    <div className="widget-2 relative lg:w-1/4">
+                        <nav className="list-none md:mb-10 mb-6 md:mt-5">
+                            {servicessecond.map((service, index) => (
+                                <li key={index} className="mt-3">
+                                    <Link href={service.href} onClick={(e) => { e.preventDefault(); window.location.href = service.href; }}>
+                                        {service.name}
+                                    </Link>
+                                </li>
+                            ))}
+
+                        </nav>
+                    </div>
+
+                    <div className="widget-2 relative lg:w-1/4">
+                        {/* <h2 className="title-font text-white tracking-widest text-2xl md:text-2xl mb-3 font-poppins font-bold	">
+                            Services
+                        </h2> */}
+                        <nav className="list-none md:mb-10 mb-6 md:mt-5">
+                          {servicesthird.map((service, index) => (
+                                <li key={index} className="mt-3">
+                                    <Link href={service.href} onClick={(e) => { e.preventDefault(); window.location.href = service.href; }}>
+                                        {service.name}
+                                    </Link>
+                                </li>
+                            ))}
+                        </nav>
+                    </div>
+
+                    <div className="widget-3 relative lg:w-1/4">
                             <h2 className="title-font text-white tracking-widest text-2xl md:text-2xl mb-3 font-poppins font-bold	">
                                 Contact Info
                             </h2>
@@ -161,9 +255,9 @@ export default function NewBrandFooter() {
                                 <Link href="https://www.facebook.com/pinebookwriting0" target="_blank">
                                     <FontAwesomeIcon icon={faFacebook} className="me-3" />
                                 </Link>
-                                {/* <Link href="">
+                                <Link href="">
                                     <FontAwesomeIcon icon={faLinkedin} className="me-3" />
-                                </Link> */}
+                                </Link>
                                 <Link href="https://www.instagram.com/pinebookwriting/" target="_blank">
                                     <FontAwesomeIcon icon={faInstagram} className="me-3" />
                                 </Link>
@@ -175,10 +269,13 @@ export default function NewBrandFooter() {
                                 </Link>
                             </div>
                          
-                        </div>
                     </div>
+                   
 
+
+                    
                 </div>
+
                 <div className="copyright-sec">
                     <div className="container text-center mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
                         <p className="text-white w-full md:text-center text-sm sm:text-left">
@@ -197,7 +294,7 @@ export default function NewBrandFooter() {
                                 className="text-white ml-1"
                                 target="_blank"
                             >
-                                Privacy Policy 
+                                Privacy Policy
                             </Link>
                             {/* Powered by <span className="powered-by-text"><Link href="https://www.pinebookwriting.com/" target="_blank">Pine Book Writing Inc.</Link></span> */}
                         </p>

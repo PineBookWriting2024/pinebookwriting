@@ -71,6 +71,8 @@ export default function NewBrandFooter() {
            { name: 'Script Writing',
             href: '/script-writing',},
 
+            
+
         
         
 
@@ -109,8 +111,7 @@ export default function NewBrandFooter() {
           href: '/Comic-Book-Writing',
         },
 
-            { name: 'Wikipedia Writing',
-            href: '/wikipedia-writing',},
+           
 
      
  ];
@@ -155,6 +156,9 @@ export default function NewBrandFooter() {
           href: '/Speech-Writing',
         },
 
+         { name: 'Wikipedia Writing',
+            href: '/wikipedia-writing',},
+
  ]
 
  const servicesfourth = [
@@ -170,12 +174,13 @@ export default function NewBrandFooter() {
     return (
         <>
             <footer className="text-white body-font brand-footer">
-                <div className="container px-5 pt-0 md:pb-10 md:pt-12 mx-auto flex justify-evenly md:gap-9">
-                    <div className="px-4 widget-2 relative md:flex-row flex-col items-center md:items-start lg:w-1/3 w-full">
-                        <a className="flex title-font font-medium items-center md:justify-start justify-center text-white">
+                <div className="container px-5 py-10 md:pb-10 md:pt-12 mx-auto flex md:flex-row flex-col md:justify-evenly md:gap-9">
+                   
+                    <div className="md:px-4 widget-2 relative md:flex-row flex-col items-center md:items-start lg:w-1/3 w-full">
+                        <a className="flex title-font font-medium items-center justify-start md:justify-center text-white">
                             <Image src={"/brand-img/PineBookWriters.gif"} width={250} height={200}></Image>
                         </a>
-                        <p className="mt-2 text-sm text-white leading-7 px-0 md:px-4 md:mb-5 ">
+                        <p className="text-sm text-white leading-7 py-5 md:px-4 mt-2 md:mb-5 ">
                             Pine Book Writing offers expert ghostwriting services to help new and seasoned authors tell their stories to their audiences worldwide. Our exceptional team of writers, editors, and designers brings years of experience in crafting engaging books that become the best-selling ones.
                         </p>
 
@@ -228,29 +233,29 @@ export default function NewBrandFooter() {
                     </div>
 
                     <div className="widget-3 relative lg:w-1/4">
-                            <h2 className="title-font text-white tracking-widest text-2xl md:text-2xl mb-3 font-poppins font-bold	">
+                            <h2 className="title-font text-white tracking-widest text-2xl md:text-2xl mb-5 font-poppins font-bold	">
                                 Contact Info
                             </h2>
                             <Link
                                 href="tel:8668417463"
-                                className="text-white text-sm hover:text-white font-poppins flex justify-center md:justify-start mb-5"
+                                className="text-white text-sm hover:text-white font-poppins flex items-center md:items-start mb-5"
                             >
                                 <FontAwesomeIcon icon={faPhone} className="me-3" />
                                 (866) 841-7463
                             </Link>
                             <Link
                                 href="mailto:support@pinebookwriting.com"
-                                className="text-white hover:text-white font-poppins text-sm flex justify-center md:justify-start mb-5"
+                                className="text-white hover:text-white font-poppins text-sm flex items-center md:items-start mb-5"
                             >
                                 <FontAwesomeIcon icon={faEnvelope} className="me-3" />
                                 {" "}
                                 support@pinebookwriting.com{" "}
                             </Link>
-                            <h4 className="text-white leading-20 font-bold text-xl md:text-md font-poppins text-center lg:text-start uppercase">
+                            <h4 className="text-white leading-20 font-bold text-xl  md:text-md font-poppins md:ext-center lg:text-start uppercase">
                                 Canada Address:
                             </h4>
                             <p className="text-white mb-5"> R-10225 Yonge St, Suite #250, Richmond Hill, ON L4C 3B2</p>
-                            <h4 className="text-white leading-20 font-bold text-xl md:text-md font-poppins text-center lg:text-start uppercase">
+                            <h4 className="text-white leading-20 font-bold text-xl md:text-md font-poppins md:text-center lg:text-start uppercase">
                                 USA Address:
                             </h4>
                             <p className="text-white mb-5">211 E 43rd St, 7th Floor, Suite #424, New York City, NY 10017</p>
@@ -274,9 +279,6 @@ export default function NewBrandFooter() {
                          
                     </div>
                    
-
-
-                    
                 </div>
 
                 <div className="copyright-sec">

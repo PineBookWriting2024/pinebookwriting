@@ -16,6 +16,11 @@ export default function Home() {
                 />
                 <meta name="google-site-verification" content="ze4i-BWHkh7f9iANJUJfoWbXrFcmFC9r2fCsoz1KZA8" />
                 <link rel="shortcut icon" href="/images/fav.png" />
+                 <script
+        dangerouslySetInnerHTML={{
+          __html: `window.lintrk('track', { conversion_id: 22803625 });`,
+        }}
+      />
             </Head>
             <section>
                 <div className="flex items-center justify-center py-28">

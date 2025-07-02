@@ -263,7 +263,7 @@ export default function NewBrandFooter() {
                                 <Link href="https://www.facebook.com/pinebookwriting0" target="_blank">
                                     <FontAwesomeIcon icon={faFacebook} className="me-3" />
                                 </Link>
-                                <Link href="">
+                                <Link href="https://www.linkedin.com/company/pine-book-writing-inc">
                                     <FontAwesomeIcon icon={faLinkedin} className="me-3" />
                                 </Link>
                                 <Link href="https://www.instagram.com/pinebookwriting/" target="_blank">
@@ -345,6 +345,9 @@ export default function NewBrandFooter() {
                 </div>
                 <div>
                     <a href="https://www.youtube.com/@Pinebookwriting" class="fixed-tumblr" target="_blank"><FontAwesomeIcon icon={faYoutube} color="#FF0000" width={20} /><span>Youtube</span></a>
+                </div>
+                <div>
+                    <a href="https://www.linkedin.com/company/pine-book-writing-inc" class="fixed-tumblr" target="_blank"><FontAwesomeIcon icon={faLinkedin} color="#0A66C2" width={20} /><span>linkedin</span></a>
                 </div>
             </div>
             {/* <WhatsAppChat /> */}

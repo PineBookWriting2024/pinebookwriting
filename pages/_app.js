@@ -133,7 +133,7 @@ window._linkedin_data_partner_ids.push(_linkedin_partner_id);`,
       />
 
 
- <script
+ {/* <script
         dangerouslySetInnerHTML={{
           __html: `(function(l) {
 if (!l){window.lintrk = function(a,b){window.lintrk.q.push([a,b])};
@@ -151,7 +151,7 @@ s.parentNode.insertBefore(b, s);})(window.lintrk);`,
         alt=""
         className="linkedin-pixel"
       src="https://px.ads.linkedin.com/collect/?pid=8533857&fmt=gif" />
-      </noscript>
+      </noscript> */}
 
 
 

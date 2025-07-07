@@ -275,7 +275,7 @@ const openModal = () => {
                         </Link>
                     </div>
 
-                    <div className="flex items-center justify-end md:flex-row gap-3 flex-col-reverse">
+                    <div className="flex items-center  justify-end md:flex-row gap-3 flex-col-reverse">
                         <button className=" btn-a items-center bg-gray-800 md:py-2 py-4 md:mr-2 mr-0 px-3 focus:outline-none hover:bg-gray-700">
                             <Link className="" href={'tel:(866)-841-7463'}>(866)-841-7463</Link>
                         </button>

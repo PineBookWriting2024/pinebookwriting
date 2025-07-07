@@ -6,6 +6,7 @@ const PopupContext = createContext();
 
 export const PopupProvider = ({ children }) => {
   const [isPopupOpen, setIsPopupOpen] = useState(false);
+
   const [popupService, setPopupService] = useState("");
 
   const openModal = (service) => {
@@ -15,8 +16,11 @@ export const PopupProvider = ({ children }) => {
 
   const closeModal = () => {
     setIsPopupOpen(false);
+
     setPopupService("");
   };
+
+
 
   return (
     <PopupContext.Provider value={{ isPopupOpen, openModal, closeModal, popupService }}>

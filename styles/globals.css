@@ -1,6 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import 'preline/variants.css';
+
+
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
 @font-face{font-family:'Cinzel Decorative';
   src:url('../pages/Lucida\ Bright\ Regular.ttf') format('ttf');}
@@ -210,7 +214,7 @@
         display: none;
     }
       .client-testi-video{
-        width: 370px;
+        width: 350px;
       }
       .brand-footer .widget-2:before{
         display: none;
@@ -432,6 +436,9 @@
     .brand-portfolio-books .active{background-color:#05092a;border:1px solid #157d6e;color:#fff;}
     .brand-portfolio-books .in-active{background:linear-gradient(90deg,rgba(19,124,109,1) 0%,rgba(48,150,135,1) 100%);color:#fff;}
     .transparent-connect-form-border{background-color:#87929d6b!important;backdrop-filter:blur(4px);background-image: url("../public/images/pop-bg.jpg");}
+
+        .transparent-connect-form-border-serv{background-color:#87929d6b!important;backdrop-filter:blur(4px);background-image: url("../public/images/service-pop-back.webp");}
+
     .dark-form-bg{background:#433f3fe6;}
 .home-popup-modal-wrapper {
     width: 80%;
@@ -443,6 +450,25 @@
       width: 35%;
       margin-left: auto;
   }    .home-close-btn-modal{position:absolute;top:-21px;background:#2c9384;right:-76px;border-radius:50%;}
+.home-close-btn-modal-new {
+    position: absolute;
+    top: -50px;
+    right: -50px;
+    border-radius: 50%;
+    color: #fff;
+    width: 50px;
+    height: 50px;
+}
+
+button.home-close-btn-modal-new svg {
+    filter: brightness(100);
+    scale: 2;
+    display: flex;
+    align-items: center;
+
+}
+
+  
     .home-close-btn-modal svg{filter:invert(1);}
     .text-blink,.powered-by-text{animation:4s linear infinite key-second;-webkit-animation:4s ease-in-out infinite key-second;background-color:transparent!important;}
 
@@ -877,6 +903,7 @@ html {
 
 
     @media (min-width:300px) and (max-width:680px){
+      .home-close-btn-modal-new {right: 0px;top: -73px;}
       .home-popup-modal-wrapper {
         width: 85%;
         height: 450px;
@@ -895,7 +922,7 @@ html {
         width: 100%;
         z-index: 5 !important;
     }
-      a.glightbox.block {padding: 0 20px;}
+      /* a.glightbox.block {padding: 0 20px;} */
       .bk-sil2.next{position:absolute;top:0; bottom:100%!important;z-index: 99999;right: 0px !important;padding: 0;}
     }
 

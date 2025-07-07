@@ -78,6 +78,10 @@ export default function Story() {
                             effect={"coverflow"}
                             grabCursor={true}
                             centeredSlides={true}
+                            autoplay={{
+                                delay: 2500,
+                                disableOnInteraction: false,
+                            }}
                             slidesPerView={3}
                             loop={true}
                             coverflowEffect={{

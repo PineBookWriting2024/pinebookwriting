@@ -8,8 +8,12 @@ import 'aos/dist/aos.css';
 import HomePopupNew from "./components/HomePopupNew";
 import PopupBundle from "./components/PopupBundle";
 
+
 import PopupModal from './components/PopupModal';
 import { PopupProvider } from '../context/PopupContext';
+
+/* Preline Variants */
+import 'preline/variants.css';
 
 
 
@@ -36,6 +40,7 @@ export default function App({ Component, pageProps }) {
   };
   const [selectedService, setSelectedService] = useState('');
 
+  
 
   const openModal = (service) => {
     setSelectedService(service);
@@ -59,6 +64,9 @@ export default function App({ Component, pageProps }) {
       anchorPlacement: 'top-bottom',
     });
   }, []);
+
+
+  
 
 
   return (

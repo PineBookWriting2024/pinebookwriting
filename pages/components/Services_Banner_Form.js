@@ -426,50 +426,13 @@ export default function HeroFormBookOffer() {
   return (
     <div className="container md:pt-20 pt-10">
       <div className="max-w-xl sm:gap-8 sm:py-0 md:grid-cols-2 text-left items-center md:gap-8 md:py-30">
-        {/* <div className="mb-4">
-
-          <h3 className="font-poppins text-2xl mb-4 aos-init aos-animate text-white"><span className="px-2 py-0">#1 Self</span> Publishing Company</h3>
-          <FadeIn>
-            <h1 className="font-poppins text-3xl text-white font-bold">
-              DO YOU HAVE A MANUSCRIPT READY TO BE PUBLISHED?
-            </h1>
-          </FadeIn>
-
-          <p className="text-xl text-white pt-4">
-            Pine Book Writing has made it much more easier to self-publish a book, with hands-on support from the first word to the final cover. Our process involves Proofreading, Editing, Formatting, Book Cover Design and print-on-demand through a vast network of global outlets.
-          </p>
-          <h4 className="font-poppins text-2xl mt-8 text-white uppercase font-bold">Our Credibility</h4>
-
-          <div className="flex justify-start items-center mt-8 gap-2 md:gap-x-8 client-logo-sec about-logos-sec">
-            {clientLogos.map((logo, index) => (
-              <Link key={index} href={logo.href} target="_blank">
-                <Image
-                  alt={logo.alt}
-                  src={logo.src}
-                  width={logo.width}
-                  height={logo.height}
-                />
-              </Link>
-            ))}
-          </div>
-        </div> */}
-
         <div>
 
           <div className="w-full rounded-2xl px-8 py-8 bg-gray-400 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-50 border-gray-100 relative">
-            <Image
-              className="text-center header-form-off-badge"
-              src={"/images/form-badge.png"}
-              width={160}
-              height={200}
-              loading="lazy"
-            ></Image>
+       
             <div className="text-center">
               <h4 className="font-poppins text-white text-2xl md:text-2xl">Ready to Start? Let’s Talk About Your Writing Project!</h4>
               <h5 className="font-poppins text-white text-lg mb-3">We’re excited to hear about your book or writing idea. Share your thoughts, and let's help fulfill your literary dream!</h5>
-
-
-              {/* <span className="text-blink">50% Off</span> – <br></br> */}
             </div>
             <div>
 

@@ -13,6 +13,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Services_Banner_Form from "../components/Services_Banner_Form";
 import { MdKeyboardDoubleArrowRight } from 'react-icons/md';
 import ServicesBook_Popup from "../components/ServicesBook_Popup";
+import LazyYouTube from "../components/LazyYouTube"; 
 
 
 
@@ -51,10 +52,10 @@ const handleOpenChat = () => {
 };
 
 
-export default function LandingPage({isOpen, onClose}) {
+export default function LandingPage({ isOpen, onClose }) {
 
     const [isModalOpen, setModalOpen] = useState(false);
-const openModal = () => {
+    const openModal = () => {
         setModalOpen(true);
     };
     const closeModal = () => {
@@ -304,7 +305,7 @@ const openModal = () => {
                             </div>
                         </div>
                         <div className="">
-                            <Services_Banner_Form/>
+                            <Services_Banner_Form />
                         </div>
 
 
@@ -495,7 +496,7 @@ const openModal = () => {
                                 <div className="flex button mt-5">
                                     <Link href="javascript:void(0)" className="border-2 rounded-full bg-[#1a8273] hover:bg-gray-200 hover:text-[#1a8273] text-white px-3 mr-4 py-3 font-poppins  transition duration-300" onClick={() => openModal()}>Get a Quote</Link>
 
-                                    <Link href="javascript:void(0)"  className="border-2 border-[#1a8273]  rounded-full bg-gray-200 hover:text-[#1a8273] text-gray-700 px-3 mr-4 py-3 font-poppins  transition duration-300" onClick={() => openModal()}>Free Consulation</Link>
+                                    <Link href="javascript:void(0)" className="border-2 border-[#1a8273]  rounded-full bg-gray-200 hover:text-[#1a8273] text-gray-700 px-3 mr-4 py-3 font-poppins  transition duration-300" onClick={() => openModal()}>Free Consulation</Link>
 
                                 </div>
                             </div>
@@ -697,34 +698,47 @@ const openModal = () => {
                 </div>
             </section>
 
-            {/* <section className='sec-test max-w-screen-xl mx-auto md:py-20 py-10 px-4 md:px-0'>
-                   <div className="text-center max-w-3xl mx-auto md:mb-10 mb-5">
+
+            <section className='sec-test max-w-screen-xl mx-auto md:py-20 py-10 px-4 md:px-0'>
+                <div className="text-center max-w-3xl mx-auto md:mb-10 mb-5">
                     <h2 className="font-poppins text-3xl text-[#1a8273] font-semibold md:text-3xl uppercase">
                         Our Success Stories
                     </h2>
                     <p className="text-base md:text-lg py-4">
-                        Explore our Success Stories to see how Pine Book Writing has empowered authors in their 
+                        Explore our Success Stories to see how Pine Book Writing has empowered authors in their
                         self-publishing journey and stands out among self-book publishers.
-
-
                     </p>
                 </div>
                 <div className='testimonials-wrap grid grid-cols-1 md:grid-cols-3 gap-10'>
 
-                    {videoClient.map((videoClient) => (
-                        <Link href={videoClient.src} className="glightbox block">
-                            <div className='' key={videoClient.id}>
-                                <h2 className="font-bold text-xl text-black" >{videoClient.clientname}</h2>
-                                <iframe className='py-4 client-testi-video' height={225} width={400} src={videoClient.src} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    {videoClient.map((videoClient) => {
+                        // Extract YouTube video ID from the URL
+                        const videoUrl = new URL(videoClient.src);
+                        const videoId = videoUrl.pathname.split('/embed/')[1].split('?')[0];
 
-                                <h4 className='text-black'> <span className='font-bold leading-normal'>Book Title:</span> {videoClient.BookTitle}</h4>
-                                <h4 className='text-black'><span className='font-bold leading-normal '>Consultant:</span> {videoClient.Consultant}</h4>
-                                <h4 className='text-black'><span className='font-bold leading-normal '>Project Manager: </span>{videoClient.ProjectManager}</h4>
+                        return (
+                            <div key={videoClient.id} className="mb-8 max-w-xl mx-auto border p-4 rounded">
+                                <h2 className="font-bold text-xl text-black mb-2">{videoClient.clientname}</h2>
+
+                                <div className="py-4">
+                                      <LazyYouTube videoId={videoId} />
+                                </div>
+
+
+                                <h4 className="text-black">
+                                    <span className="font-bold leading-normal">Book Title:</span> {videoClient.BookTitle}
+                                </h4>
+                                <h4 className="text-black">
+                                    <span className="font-bold leading-normal">Consultant:</span> {videoClient.Consultant}
+                                </h4>
+                                <h4 className="text-black">
+                                    <span className="font-bold leading-normal">Project Manager:</span> {videoClient.ProjectManager}
+                                </h4>
                             </div>
-                        </Link>
-                    ))}
+                        );
+                    })}
                 </div>
-            </section> */}
+            </section>
 
             <section className="bg-gray-100 md:py-16 py-10 faq">
                 <div className="text-center">
@@ -787,11 +801,11 @@ const openModal = () => {
                         <div className="cta-btns flex flex-col sm:flex-row items-center gap-4 justify-center">
                             {/* <CTAButton /> */}
 
-                             <a
-                                  href="javascript:void(0)"
-                                  className="bg-transparent text-white px-3 py-2 border border-white rounded-full flex items-center gap-2 hover:bg-gray-200 hover:text-black transition" onClick={() => openModal()}>
-                                  Get a Quote <MdKeyboardDoubleArrowRight className="inline" />
-                                </a>
+                            <a
+                                href="javascript:void(0)"
+                                className="bg-transparent text-white px-3 py-2 border border-white rounded-full flex items-center gap-2 hover:bg-gray-200 hover:text-black transition" onClick={() => openModal()}>
+                                Get a Quote <MdKeyboardDoubleArrowRight className="inline" />
+                            </a>
 
 
                             <a
@@ -804,12 +818,12 @@ const openModal = () => {
                             <a
                                 href={'javascript:void(0)'}
                                 className="bg-transparent text-[#fff] px-3 py-2 border border-white rounded-full flex items-center gap-2 hover:bg-gray-200 hover:text-black cta-btn-1 transition" onClick={() => openModal()}>
-                                Free Consulation 
+                                Free Consulation
                             </a>
                         </div>
                     </div>
 
-                   
+
                 </div>
             </section>
 

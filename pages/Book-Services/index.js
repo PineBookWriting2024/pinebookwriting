@@ -650,15 +650,17 @@ export default function LandingPage({ isOpen, onClose }) {
                     </h2>
 
                     <Swiper
-                        slidesPerView={1}
+                        slidesPerView={4}
                         spaceBetween={20}
                         breakpoints={{
+                            320: { slidesPerView: 2 },
+                            480: { slidesPerView: 2 }, 
                             640: { slidesPerView: 2 },
                             768: { slidesPerView: 3 },
                             1024: { slidesPerView: 4 },
                         }}
                         autoplay={{
-                            delay: 2500,
+                            delay: 3000,
                             disableOnInteraction: false,
                         }}
                         loop={true}

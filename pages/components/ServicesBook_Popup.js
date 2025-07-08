@@ -44,13 +44,13 @@ const ServicesBook_Popup = ({isOpen, onClose}) => {
 {      isOpen && (
            <section className="btm-form dark-form-bg flex-col md:flex-row fixed inset-0  bg-opacity-50 z-50 flex justify-center items-center w-auto">
                         <div className="relative my-20">
-                            <Image
+                            {/* <Image
                                 className="text-center form-off-badge"
                                 src={"/images/form-badge.png"}
                                 width={100}
                                 height={100}
                                 loading="lazy"
-                            ></Image>
+                            ></Image> */}
                             <div className="form-mid-wrap bg-gray-200 connect-form-border relative transparent-connect-form-border-serv w-full mx-auto py-10 max-w-xl rounded-lg shadow-lg">
                                 <div className="flex flex-col md:flex-row items-center justify-start gap-10 relative mx-0 md:mx-10 px-3">
                                     <button type="button" onClick={onClose} className="home-close-btn-modal-new ml-4 bg-[#157d6e] py-2 px-4 rounded">

@@ -547,40 +547,40 @@ export default function LandingPage({ isOpen, onClose }) {
                     <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
                         <div class="grid sm:grid-cols-2 lg:grid-cols-4 items-center gap-2">
 
-                            <div class="group flex flex-col justify-center hover:bg-gray-50 focus:outline-hidden focus:bg-gray-50 rounded-xl p-4 md:p-7 dark:hover:bg-neutral-800 dark:focus:bg-neutral-800" href="#">
+                            <div class="group flex flex-col justify-center hover:bg-gray-50 focus:outline-hidden focus:bg-gray-50 rounded-xl p-4 md:p-7" href="#">
                                 <Image src="/images/placement.webp" alt="Ghost Writing" width={60} height={60} />
                                 <div class="mt-5">
-                                    <h3 class="group-hover:text-gray-600 text-2xl font-semibold text-gray-800 dark:text-white dark:group-hover:text-gray-400 uppercase">Order Placement</h3>
-                                    <p class="mt-1 text-gray-600 dark:text-neutral-400">Start by telling us about the concept of your book and what you need. Before we move forward, our team meticulously checks everything and approves your order to make sure we're all on the same page.</p>
+                                    <h3 class="group-hover:text-gray-600 text-2xl font-semibold text-gray-800 uppercase">Order Placement</h3>
+                                    <p class="mt-1 text-gray-600">Start by telling us about the concept of your book and what you need. Before we move forward, our team meticulously checks everything and approves your order to make sure we're all on the same page.</p>
 
                                 </div>
                             </div>
 
-                            <div class="group flex flex-col justify-center hover:bg-gray-50 focus:outline-hidden focus:bg-gray-50 rounded-xl p-4 md:p-7 dark:hover:bg-neutral-800 dark:focus:bg-neutral-800" href="#">
+                            <div class="group flex flex-col justify-center hover:bg-gray-50 focus:outline-hidden focus:bg-gray-50 rounded-xl p-4 md:p-7" href="#">
                                 <Image src="/images/feedback.webp" alt="Ghost Writing" width={60} height={60} />
                                 <div class="mt-5">
-                                    <h3 class="group-hover:text-gray-600 text-2xl font-semibold text-gray-800 dark:text-white dark:group-hover:text-gray-400 uppercase">Outline Approval</h3>
-                                    <p class="mt-1 text-gray-600 dark:text-neutral-400">We make a detailed plan based on your idea. You will evaluate and approve the outline, which means you will have complete control over the path of your book from the start.</p>
+                                    <h3 class="group-hover:text-gray-600 text-2xl font-semibold text-gray-800 uppercase">Outline Approval</h3>
+                                    <p class="mt-1 text-gray-600">We make a detailed plan based on your idea. You will evaluate and approve the outline, which means you will have complete control over the path of your book from the start.</p>
 
                                 </div>
                             </div>
 
 
-                            <div class="group flex flex-col justify-center hover:bg-gray-50 focus:outline-hidden focus:bg-gray-50 rounded-xl p-4 md:p-7 dark:hover:bg-neutral-800 dark:focus:bg-neutral-800" href="#">
+                            <div class="group flex flex-col justify-center hover:bg-gray-50 focus:outline-hidden focus:bg-gray-50 rounded-xl p-4 md:p-7" href="#">
                                 <Image src="/images/revision.webp" alt="Ghost Writing" width={60} height={60} />
                                 <div class="mt-5">
-                                    <h3 class="group-hover:text-gray-600 text-2xl font-semibold text-gray-800 dark:text-white dark:group-hover:text-gray-400 uppercase">Delivery-Wise Delivery</h3>
-                                    <p class="mt-1 text-gray-600 dark:text-neutral-400">Get your content in small, easy-to-read chapters. You can read, suggest revisions, and stay up to date on the writing process to make sure your vision is portrayed precisely.</p>
+                                    <h3 class="group-hover:text-gray-600 text-2xl font-semibold text-gray-800 uppercase">Delivery-Wise Delivery</h3>
+                                    <p class="mt-1 text-gray-600">Get your content in small, easy-to-read chapters. You can read, suggest revisions, and stay up to date on the writing process to make sure your vision is portrayed precisely.</p>
 
                                 </div>
                             </div>
 
 
-                            <div class="group flex flex-col justify-center hover:bg-gray-50 focus:outline-hidden focus:bg-gray-50 rounded-xl p-4 md:p-7 dark:hover:bg-neutral-800 dark:focus:bg-neutral-800" href="#">
+                            <div class="group flex flex-col justify-center hover:bg-gray-50 focus:outline-hidden focus:bg-gray-50 rounded-xl p-4 md:p-7" href="#">
                                 <Image src="/images/publishing.webp" alt="Ghost Writing" width={60} height={60} />
                                 <div class="mt-5">
-                                    <h3 class="group-hover:text-gray-600 text-2xl font-semibold text-gray-800 dark:text-white dark:group-hover:text-gray-400 uppercase">Publishing</h3>
-                                    <p class="mt-1 text-gray-600 dark:text-neutral-400">When your manuscript is done and polished, we help you with professional publishing by preparing your book for print, formatting it, and publishing it on major platforms like Amazon, Google Books, and others.</p>
+                                    <h3 class="group-hover:text-gray-600 text-2xl font-semibold text-gray-800 uppercase">Publishing</h3>
+                                    <p class="mt-1 text-gray-600">When your manuscript is done and polished, we help you with professional publishing by preparing your book for print, formatting it, and publishing it on major platforms like Amazon, Google Books, and others.</p>
 
                                 </div>
                             </div>

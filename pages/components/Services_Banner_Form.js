@@ -465,8 +465,11 @@ export default function HeroFormBookOffer() {
               loading="lazy"
             ></Image>
             <div className="text-center">
-              <h4 className="font-poppins text-white text-2xl md:text-2xl">Avail Discount</h4>
-              <h5 className="font-poppins text-white text-lg mb-3">Exclusive Offer: Expert Book Publishing at <span className="text-blink">50% Off</span> – <br></br>Your Story Deserves to be Heard!</h5>
+              <h4 className="font-poppins text-white text-2xl md:text-2xl">Ready to Start? Let’s Talk About Your Writing Project!</h4>
+              <h5 className="font-poppins text-white text-lg mb-3">We’re excited to hear about your book or writing idea. Share your thoughts, and let's help fulfill your literary dream!</h5>
+
+
+              {/* <span className="text-blink">50% Off</span> – <br></br> */}
             </div>
             <div>
 
@@ -587,7 +590,7 @@ export default function HeroFormBookOffer() {
                 className="w-full p-4 py-2 text-white uppercase header-submit-btn rounded shadow-xl text-xl"
                 type="submit"
               >
-                Submit
+                Get a Free Quote!
               </button>
             </form>
           </div>

@@ -283,15 +283,11 @@ const openModal = () => {
                         <button className=" hidden btn-a items-center bg-gray-800 md:mr-2 mr-0 md:py-2 py-4 px-3 focus:outline-none hover:bg-gray-700 md:block">
                             <Link className="" href={'mailto:support@pinebookwriting.com'}>support@pinebookwriting.com</Link>
                         </button>
-
-                        {/* <button className="btn-a items-center bg-gray-800 md:py-2 py-4 px-3 focus:outline-none hover:bg-gray-700" onClick={handleOpenChat}>
-                            <Link className="" href={'javascript:void(0)'}>Talk to an Expert</Link>
-                        </button> */}
                     </div>
                 </div>
             </header>
 
-            <section className="bg-[url(/images/banne-main.jpg)] bg-no-repeat bg-cover overflow-hidden md:py-24 py-10">
+            <section className="bg-[url(/images/bannemain.jpg)] bg-no-repeat bg-cover overflow-hidden md:py-24 py-10">
                 <div className="container mx-auto width-container">
                     <div className="grid md:grid-cols-2 gap-4 md:gap-8 xl:gap-20 md:items-center">
                         <div className="px-4 md:px-0">
@@ -517,197 +513,6 @@ const openModal = () => {
                 </div>
             </section>
 
-
-            {/* <section className="py-16 bg-[#202735]">
-                <div className="container mx-auto width-container">
-                    <h2 className="text-4xl font-black mb-4 font-poppins text-center text-white">Partner With The Best Bookwriting Company<br /> Online That Covers All Your Writing Needs</h2>
-                    <div className="flex">
-                        <div className="grid md:grid-cols-2 gap-4 md:gap-8 xl:gap-20 md:items-center">
-                            <div className="">
-                                <div className="mb-6">
-                                    <h2 className="text-4xl font-black text-white mb-4 font-poppins">Book Editing Services</h2>
-                                    <p className="font-poppins text-white mb-7">Even if you’re an experienced writer, you still need to get your book through the eyes of a professional editor and proofreader, who’ll not only help you compile your bunch of stories but also assist you in eliminating all the errors in your literary piece.</p>
-
-                                    <p className="font-poppins text-white">Book editing absolutely changes the shape of your book and by hiring an expert for editing and proofreading purposes you can serve your book with the dedication that your book really deserves. Ensure the best quality of your manuscript before getting it published on global platforms.</p>
-                                </div>
-
-                                <ul className="grid grid-cols-1 text-white">
-                                    <li className="flex gap-1 items-center font-poppins "><FaCheck />
-                                        <p className="text-white">Grammar & Punctuation Errors</p></li>
-                                    <li className="flex gap-1 items-center font-poppins "><FaCheck />
-                                        <p className="text-white">Readability Check</p></li>
-                                    <li className="flex gap-1 items-center font-poppins "><FaCheck />
-                                        <p className="text-white">Relevancy Of The Information</p></li>
-                                    <li className="flex gap-1 items-center font-poppins "><FaCheck />
-                                        <p className="text-white">Originality Of The Content</p></li>
-                                </ul>
-                            </div>
-
-
-
-                            <div class="flex flex-wrap justify-center gap-4">
-                                <div onclick="myFunction_a()" class="relative w-48 h-48 bg-blue-500 hexagon flex items-center justify-center text-white text-center cursor-pointer transition-transform duration-300 hover:scale-105">
-                                    <span class="text-sm leading-tight">Ghostwriting<br />Services</span>
-                                </div>
-
-                                <div onclick="myFunction_b()" class="relative w-48 h-48 bg-green-500 hexagon flex items-center justify-center text-white text-center cursor-pointer transition-transform duration-300 hover:scale-105">
-                                    <span class="text-sm leading-tight">Book Editing<br />Services</span>
-                                </div>
-
-                                <div onclick="myFunction_f()" class="relative w-48 h-48 bg-purple-500 hexagon flex items-center justify-center text-white text-center cursor-pointer transition-transform duration-300 hover:scale-105">
-                                    <span class="text-sm leading-tight">Book<br />Publishing<br />Services</span>
-                                </div>
-
-                                <div class="relative w-48 h-48 bg-gray-300 hexagon flex items-center justify-center text-white text-center">
-                                    <span class="text-sm leading-tight"></span>
-                                </div>
-
-                                <div onclick="myFunction_c()" class="relative w-48 h-48 bg-pink-500 hexagon flex items-center justify-center text-white text-center cursor-pointer transition-transform duration-300 hover:scale-105">
-                                    <span class="text-sm leading-tight">Book Cover<br />Design<br />Services</span>
-                                </div>
-
-                                <div onclick="myFunction_e()" class="relative w-48 h-48 bg-yellow-500 hexagon flex items-center justify-center text-white text-center cursor-pointer transition-transform duration-300 hover:scale-105">
-                                    <span class="text-sm leading-tight">Book Printing<br />Services</span>
-                                </div>
-
-                                <div onclick="myFunction_d()" class="relative w-48 h-48 bg-red-500 hexagon flex items-center justify-center text-white text-center cursor-pointer transition-transform duration-300 hover:scale-105">
-                                    <span class="text-sm leading-tight">Book Marketing<br />Services</span>
-                                </div>
-                            </div>
-
-
-                        </div>
-
-
-                    </div>
-
-                </div>
-            </section> */}
-
-
-            {/* <section className="bg-gray-100 py-16">
-                <div className="container mx-auto width-container">
-
-                    <div className="grid md:grid-cols-2 gap-4 md:gap-8 xl:gap-20 md:items-center">
-
-                        <div className="mt-10">
-                            <Image src="/images/best-selling2.png" alt="Book Publishing Services" width={600} height={600} className="" />
-                        </div>
-
-
-                        <div className="">
-                            <div className="mb-6">
-                                <h2 className="text-4xl font-black mb-4 font-poppins">Best Ghost Book Writing Company In the USA!</h2>
-                                <h3 className="text-2xl font-black mb-2 font-poppins">Offering professional ghostwriting services online, hire the best book ghostwriters online</h3>
-
-                                <p className="font-poppins mb-5">We are professional book writing firm that has the expertise to fulfill your book writing needs by serving you a fascinating piece of work in the shape of your very own manuscript. Let expert ghost book writers help you become the next literary sensation by getting your manuscript published, globally.</p>
-
-
-                                <p className="font-poppins">The Writer’s Tree can be considered a one-stop station that can help you outshine the publishing industry by elevating your literary skills by utilizing the latest industry trends and involving professionalism in the ghostwriting process for your book. Engage with a wider audience, and communicate with the readers efficiently by serving them with the best book ghost writing services.</p>
-                            </div>
-
-                            <div className="flex button mt-5">
-                                <Link href="#" className="border-2 border-[#1a8273]  rounded-full bg-gray-200 hover:text-[#1a8273] text-gray-700 px-6 mr-4 py-3 font-poppins  transition duration-300">Get Started</Link>
-
-                                <Link href="#" className="border-2 rounded-full bg-[#1a8273] hover:bg-gray-200 hover:text-[#1a8273] text-white px-6 mr-4 py-3 font-poppins  transition duration-300">Get Started</Link>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section> */}
-
-
-            {/* <section className="bg-gray-100 py-16">
-                <div className="container mx-auto width-container">
-                           <h2 className="text-4xl font-black mb-4 font-poppins">Hire Affordable Yet Professional Book Ghost Writers</h2>
-
-                    <div className="grid md:grid-cols-2 gap-4 md:gap-8 xl:gap-20 md:items-center">
-                        <div className="">
-                            <div className="mb-6">
-                               
-                                <p className="font-poppins mb-5">Hiring an expert online book writer who is passionate and dedicated concerning their contributions to your book. Time frame is a delicate factor and you need to discuss it with the experienced ghost book writer who is going to work on your book idea at the time of hiring so you can eliminate all the unnecessary delays on the project. Whether you are an entrepreneur or a job person, it can be a daunting task for you to execute the book writing phase on your own. No matter how good you are at book writing, for the sake of efficiency, you need a Top book ghost writing services to help you through the best book writing process. Hire the best book writing company in the industry which can assist you in editing, proofreading, and formatting your manuscript in the best possible shape.</p>
-
-
-                                <p className="font-poppins mb-5">If you are an author who desires full control over the writing progress of your book, you can also ask for chapter-wise draft submission from the professional book ghost writer you choose to get done with your manuscript. For a creative process like book writing your aspirations, you’d need expert assistance from an expert so that you can elevate your author persona.</p>
-
-
-                                <p className="font-poppins mb-5">Hire creative book writers online but only trust someone who has the expertise to do justice to your aspirations. Ideally, you should choose an affordable ghostwriter from an established book writing firm. Collaborate with a professional book writing agency that has the vision to help you with affordable yet efficient assistance for your book writing project to ensure that your book reaches the right audience, that too on a wider scale than you imagined.</p>
-
-
-                                <p className="font-poppins mb-5">Hiring an experienced ghostwriter can make your life a thousand times better as an author, but if you make the wrong choice, the same overwhelming experience can turn out to be a devastating one for you. A professional ghost book writer who actually possesses diverse expertise in writing will always initiate your project after understanding your vision correctly so that your manuscript highlights your author persona.</p>
-                            </div>
-                        </div>
-
-                        <div className="mt-10">
-                            <Image src="/images/strugle.webp" alt="Book Publishing Services" width={600} height={600} className="" />
-                        </div>
-                    </div>
-                </div>
-            </section> */}
-
-
-            {/* <section className="bg-[#166b7e] py-16 ">
-                <div className="container mx-auto width-container"> 
-                    <div className="mb-6">
-                            <h2 className="text-4xl font-black mb-4 font-poppins text-white">Hire Affordable Yet Professional Book Ghost Writers</h2>
-                        <ul>
-                            <li className="flex gap-1 items-center font-poppins"><FaCheck className="text-white mr-2" />
-                                <p className="text-white">We work closely with you to ensure that our ghostwriters understand your aspirations from your book.</p></li>
-
-                            <li className="flex gap-1 items-center font-poppins"><FaCheck className="text-white mr-2" />
-                                <p className="text-white">Finalizing Table Of Contents for your book.</p></li>
-
-                            <li className="flex gap-1 items-center font-poppins"><FaCheck className="text-white mr-2" />
-                                <p className="text-white">Creative ghost book writing original content with efficiency and authenticity.</p></li>
-
-                            <li className="flex gap-1 items-center font-poppins"><FaCheck className="text-white mr-2" />
-                                <p className="text-white">Formatting and typewriting to ease up the publication process for you.</p></li>
-
-                            <li className="flex gap-1 items-center font-poppins"><FaCheck className="text-white mr-2" />
-                                <p className="text-white"> Formatting and typewriting to ease up the publication process for you.</p></li>
-
-                            <li className="flex gap-1 items-center font-poppins"><FaCheck className="text-white mr-2" />
-                                <p className="text-white">On-call availability for discussions and consultation throughout the project.</p></li>
-
-                                                        <li className="flex gap-1 items-center font-poppins"><FaCheck className="text-white mr-2" />
-                                <p className="text-white">Finalizing Table Of Contents for your book.</p></li>
-
-                            
-                            <li className="flex gap-1 items-center font-poppins"><FaCheck className="text-white mr-2" />
-                                <p className="text-white">Formatting and typewriting to ease up the publication process for you.</p></li>
-
-                        </ul>
-
-                        
-                             <p className="font-poppins my-5 text-white">Hiring an experienced ghostwriter can make your life a thousand times better as an author, but if you make the wrong choice, the same overwhelming experience can turn out to be a devastating one for you. A professional ghost book writer who actually possesses diverse expertise in writing will always initiate your project after understanding your vision correctly so that your manuscript highlights your author persona.</p>
-
-                             <Link href="#" className="border-2 border-[#1a8273]  rounded-full bg-gray-200 hover:text-[#1a8273] text-gray-700 px-6 mr-4 py-3 font-poppins  transition duration-300 inline-block">Get Started</Link>
-
-                                    <div className="">
-                                         <a class="relative inline-flex items-center justify-start px-6 py-3 overflow-hidden font-medium transition-all bg-indigo-100 rounded hover:bg-white group">
-                                                <span class="w-48 h-48 rounded rotate-[-40deg] bg-indigo-600 absolute bottom-0 left-0 -translate-x-full ease-out duration-500 transition-all translate-y-full mb-9 ml-9 group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0"></span>
-                                                <span class="relative w-full text-base font-semibold text-left text-black transition-colors duration-300 ease-in-out group-hover:text-white">Button
-                                                    Text</span>
-                                            </a>
-
-
-                                            <button
-                                            class="relative inline-flex items-center justify-start px-6 py-3 overflow-hidden font-medium transition-all bg-indigo-100 rounded hover:bg-white group">
-                                            <span
-                                            class="w-48 h-48 rounded rotate-[-40deg] bg-indigo-600 absolute bottom-0 left-0 -translate-x-full ease-out duration-500 transition-all translate-y-full mb-9 ml-9 group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0"></span>
-                                            <span
-                                            class="relative w-full text-base font-semibold text-left text-black transition-colors duration-300 ease-in-out group-hover:text-white ">Button
-                                            Text</span>
-                                            </button>
-                                    </div>
-
-                                           
-                    </div>
-                </div>
-            </section> */}
-
-
             <section className="bg-[#166b7e] md:py-16 cta px-4 md:px-0">
                 <div className="container mx-auto width-container grid grid-cols-12 items-center">
 
@@ -892,7 +697,7 @@ const openModal = () => {
                 </div>
             </section>
 
-            <section className='sec-test max-w-screen-xl mx-auto md:py-20 py-10 px-4 md:px-0'>
+            {/* <section className='sec-test max-w-screen-xl mx-auto md:py-20 py-10 px-4 md:px-0'>
                    <div className="text-center max-w-3xl mx-auto md:mb-10 mb-5">
                     <h2 className="font-poppins text-3xl text-[#1a8273] font-semibold md:text-3xl uppercase">
                         Our Success Stories
@@ -910,9 +715,6 @@ const openModal = () => {
                         <Link href={videoClient.src} className="glightbox block">
                             <div className='' key={videoClient.id}>
                                 <h2 className="font-bold text-xl text-black" >{videoClient.clientname}</h2>
-                                {/* <video height={400} width={400} controls loading="lazy" className="brand-story py-4">
-                    <source src={videoClient.src} type={videoClient.type} />
-                </video> */}
                                 <iframe className='py-4 client-testi-video' height={225} width={400} src={videoClient.src} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
                                 <h4 className='text-black'> <span className='font-bold leading-normal'>Book Title:</span> {videoClient.BookTitle}</h4>
@@ -922,7 +724,7 @@ const openModal = () => {
                         </Link>
                     ))}
                 </div>
-            </section>
+            </section> */}
 
             <section className="bg-gray-100 md:py-16 py-10 faq">
                 <div className="text-center">

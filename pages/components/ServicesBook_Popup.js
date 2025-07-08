@@ -60,8 +60,11 @@ const ServicesBook_Popup = ({isOpen, onClose}) => {
     
                                     <form className="w-full" onSubmit={handleSubmit}>
                                         <div className="text-center">
-                                            <h2 className="font-poppins text-white text-2xl mt-2">Come Celebrate with Us!</h2>
-                                            <p className="font-poppins text-white text-2xl">Exclusive Offer: Expert Book Writing at <span className="text-blink">50% Off</span> – Your Story Deserves to be Heard!</p>
+                                            <h2 className="font-poppins text-white text-2xl mt-2">Talk to Our Experts – Get Free Advice for Your Project!</h2>
+                                            <p className="font-poppins text-white text-2xl">Have questions or need guidance? We’re here to help. Connect with our team of experienced professionals for personalized advice and support on your writing journey.</p>
+
+                                     
+                                            {/* <span className="text-blink">50% Off</span> */}
                                         </div>
     
                                         <div className="py-5">
@@ -136,7 +139,7 @@ const ServicesBook_Popup = ({isOpen, onClose}) => {
                                                 </p>
                                             )}
                                             <button className="md:p-4 p-2 w-full bg-green-500 uppercase text-white rounded font-poppins submit-btn " type="submit">
-                                            Activate Your Discount Coupon
+                                            Book Your FREE Consultation Today!
                                             </button>
                                         </div>
                                     </form>

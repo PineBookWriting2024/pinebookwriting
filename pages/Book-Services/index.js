@@ -569,7 +569,7 @@ export default function LandingPage({ isOpen, onClose }) {
                             <div class="group flex flex-col justify-center hover:bg-gray-50 focus:outline-hidden focus:bg-gray-50 rounded-xl p-4 md:p-7" href="#">
                                 <Image src="/images/revision.webp" alt="Ghost Writing" width={60} height={60} />
                                 <div class="mt-5">
-                                    <h3 class="group-hover:text-gray-600 text-2xl font-semibold text-gray-800 uppercase">Delivery-Wise Delivery</h3>
+                                    <h3 class="group-hover:text-gray-600 text-2xl font-semibold text-gray-800 uppercase">Chapter-Wise Delivery</h3>
                                     <p class="mt-1 text-gray-600">Get your content in small, easy-to-read chapters. You can read, suggest revisions, and stay up to date on the writing process to make sure your vision is portrayed precisely.</p>
 
                                 </div>

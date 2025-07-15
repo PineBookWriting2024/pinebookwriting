@@ -27,6 +27,9 @@ const nextConfig = {
     { source: '/book-cover', destination: '/services', permanent: true, },
     { source: '/audio-book', destination: '/services', permanent: true, },
     { source: '/term-and-condition', destination: '/terms-and-conditions', permanent: true, },
+
+{ source: '/Book-Services', destination: '/book-services', permanent: true }
+
     // { source: '/blog', destination: '/', permanent: false, },
    ] }, 
    experimental: {

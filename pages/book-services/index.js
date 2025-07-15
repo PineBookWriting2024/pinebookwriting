@@ -52,7 +52,7 @@ const handleOpenChat = () => {
 };
 
 
-export default function LandingPage({ isOpen, onClose }) {
+export default function bookServices({ isOpen, onClose }) {
 
     const [isModalOpen, setModalOpen] = useState(false);
     const openModal = () => {

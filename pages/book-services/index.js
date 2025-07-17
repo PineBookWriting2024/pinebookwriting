@@ -295,7 +295,7 @@ export default function Home({ isOpen, onClose }) {
                             <h1 className="text-white text-3xl md:text-5xl font-bold mb-4 md:leading-normal font-poppins">Professional Book Writing Services - For Every Story, Every Genre</h1>
                             <p className="text-gray-300 mb-10 font-poppins">Have a story idea and want to turn it into a most-loved book? Pine Book Writing provides professional book writing services to assist both new and experienced authors. Whatever genre you want to work on, we help create your book with great care and creativity. Our team of expert writers is ready to help you write while maintaining your unique voice. Contact our experts today!</p>
                             <Link href="javascript:void(0)" className="border-2 rounded-2xl  text-white px-6 mr-4 py-3 hover:bg-[#1a8273] transition duration-300" onClick={() => openModal()}>Get a Quote</Link>
-                            <Link href="javascript:void(0)" className="border-2 rounded-2xl  text-white px-6 mr-4 py-3 hover:bg-[#1a8273] transition duration-300" onClick={() => openModal()}>Free Consulation</Link>
+                            <Link href="javascript:void(0)" className="border-2 rounded-2xl  text-white md:px-6 px-2 py-3 hover:bg-[#1a8273] transition duration-300" onClick={() => openModal()}>Free Consulation</Link>
                             <div className="bage-images flex items-center md:justify-between flex-wrap gap-y-4 gap-x-4 mt-10 ">
                                 <Image src="/images/Google Partner.png" alt="Book Publishing" width={130} height={100} className="mr-4" />
                                 <Image src="/images/BBB.png" alt="Book Publishing" width={130} height={100} className="mr-4" />

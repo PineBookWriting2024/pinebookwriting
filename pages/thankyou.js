@@ -28,6 +28,13 @@ export default function Home() {
               `,
                     }}
                 />
+                <script
+                    dangerouslySetInnerHTML={{
+                        __html: `
+             window.lintrk('track', { conversion_id: 22803625 });
+`,
+                    }}
+                />
             </Head>
             <section>
                 <div className="flex items-center justify-center py-28">

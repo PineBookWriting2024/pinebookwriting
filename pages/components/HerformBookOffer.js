@@ -457,13 +457,13 @@ export default function HeroFormBookOffer() {
         <div>
 
           <div className="w-full rounded-2xl px-8 py-8 bg-gray-400 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-50 border-gray-100 relative">
-            <Image
+            {/* <Image
               className="text-center header-form-off-badge"
               src={"/images/form-badge.png"}
               width={160}
               height={200}
               loading="lazy"
-            ></Image>
+            ></Image> */}
             <div className="text-center">
               <h4 className="font-poppins text-white text-2xl md:text-2xl">Avail Discount</h4>
               <h5 className="font-poppins text-white text-lg mb-3">Exclusive Offer: Expert Book Publishing at <span className="text-blink">50% Off</span> – <br></br>Your Story Deserves to be Heard!</h5>

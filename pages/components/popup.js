@@ -94,13 +94,13 @@ export default function popup({ isOpen, onClose, service }) {
             {isOpen && (
                 <section className="btm-form dark-form-bg flex-col md:flex-row fixed inset-0 bg-black bg-opacity-50 z-50 flex justify-center items-center w-auto">
                     <div className="home-popup-modal-wrapper relative my-20">
-                        <Image
+                        {/* <Image
                             className="text-center form-off-badge"
                             src={"/images/form-badge.png"}
                             width={100}
                             height={100}
                             loading="lazy"
-                        ></Image>
+                        ></Image> */}
                         <div className="form-mid-wrap bg-gray-200 connect-form-border mb-12 relative transparent-connect-form-border py-5">
                             <div className="flex flex-col md:flex-row items-center justify-start gap-10 relative mx-0 md:mx-10 px-3">
                                 <button type="button" onClick={onClose} className="home-close-btn-modal ml-4 bg-gray-300 hover:bg-gray-400 text-black py-2 px-4 rounded">
@@ -118,8 +118,8 @@ export default function popup({ isOpen, onClose, service }) {
 
                                 <form className="popup-form-wrapper" onSubmit={handleSubmit}>
                                     <div className="text-center">
-                                        <h2 className="font-poppins text-white text-2xl mt-2">Avail Discount</h2>
-                                        <p className="font-poppins text-white text-2xl">Exclusive Offer: Expert Book Writing at <span className="text-blink">50% Off</span> – Your Story Deserves to be Heard!</p>
+                                        <h2 className="font-poppins text-white text-2xl mt-2">Talk to Our Experts – Get Free Advice for Your Project!</h2>
+                                        <p className="font-poppins text-white text-2xl">Have questions or need guidance? We’re here to help. Connect with our team of experienced professionals for personalized advice and support on your writing journey.</p>
                                     </div>
 
                                     <div className="py-5">

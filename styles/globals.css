@@ -435,19 +435,21 @@
 
     .brand-portfolio-books .active{background-color:#05092a;border:1px solid #157d6e;color:#fff;}
     .brand-portfolio-books .in-active{background:linear-gradient(90deg,rgba(19,124,109,1) 0%,rgba(48,150,135,1) 100%);color:#fff;}
-    .transparent-connect-form-border{background-color:#87929d6b!important;backdrop-filter:blur(4px);background-image: url("../public/images/pop-bg.jpg");}
-
-        .transparent-connect-form-border-serv{background-color:#87929d6b!important;backdrop-filter:blur(4px);background-image: url("../public/images/service-pop-back.webp");}
+.transparent-connect-form-border {
+    background-color: #0f1010 !important;
+    backdrop-filter: blur(4px);
+    /* background-image: url(/_next/static/media/pop-bg.82d49186.jpg); */
+}
 
     .dark-form-bg{background:#433f3fe6;}
 .home-popup-modal-wrapper {
-    width: 80%;
+    width: 30%;
     height: 520px;
 }    .form-off-badge{position:absolute;left:-50px;top:-30px;z-index:1000;}
     .home-connect-form-input{background-color:#fff;font-size:17px;border-radius:10px;border:2px solid #fff0;padding:3px 17px;  /* padding: 17px; */}
     .home-popup-img-bg{height:480px!important;}
     .popup-form-wrapper {
-      width: 35%;
+      width: 100%;
       margin-left: auto;
   }    .home-close-btn-modal{position:absolute;top:-21px;background:#2c9384;right:-76px;border-radius:50%;}
 .home-close-btn-modal-new {

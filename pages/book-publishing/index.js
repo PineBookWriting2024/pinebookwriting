@@ -812,6 +812,8 @@ export default function Home() {
 
         
         <section className="book-publishing-cta-section mx-auto md:px-6 py-10 md:py-0 relative">
+                                  <Popup isOpen={isModalOpen} onClose={closeModal} service={selectedService} />
+          
           <div className="container flex items-center flex-col md:flex-row max-w-screen-xl mx-auto">
             <div className="basis-1/2 text-center flex justify-end">
               <Image src={"/images/book-image-big.webp"} width={400} height={200} className="aos-init aos-animate book-publishing-cta-img" data-aos="fade-right" data-aos-duration="1000"></Image>
@@ -822,8 +824,9 @@ export default function Home() {
               <p className="text-white mt-7">Ready to share your fascinating story with your potential audience? Contact Pine Book Writing and get a free quote now!
               </p>
               <div className="flex gap-6 md:justify-start justify-center">
-                <button className="package-get-started-btn text-md mt-5" onClick={handleOpenChat}><Link href={'javascript:;'}>Talk to an Expert</Link></button>
-                <button className="package-get-started-btn text-md mt-5"><Link href="tel:(866)-841-7463">(866)-841-7463</Link></button>
+                <button className="package-get-started-btn text-md mt-5"  onClick={() => openModal('Basic')}><Link href={'javascript:;'}>Talk to an Expert</Link></button>
+                <button className="package-get-started-btn text-md mt-5" ><Link href="tel:(866)-841-7463">(866)-841-7463</Link></button>
+
               </div>
             </div>
           </div>

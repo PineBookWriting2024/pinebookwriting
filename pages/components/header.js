@@ -1,6 +1,8 @@
-import React, { useEffect } from "react";
+import React, { useEffect , useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import Popup from "./popup";
+
 
 export default function Header() {
     // useEffect(() => {
@@ -14,11 +16,24 @@ export default function Header() {
     //     };
     // }, []);
 
-    const handleOpenChat = () => {
-        window.zE && window.zE('webWidget', 'open');
-    };
+    // const handleOpenChat = () => {
+    //     window.zE && window.zE('webWidget', 'open');
+    // };
+        const [isModalOpen, setModalOpen] = useState(false);
+        const [selectedService, setSelectedService] = useState('');
+    
+    
+        const openModal = (service) => {
+            setSelectedService(service);
+            setModalOpen(true);
+        };
+    
+        const closeModal = () => {
+            setModalOpen(false);
+        };
     return (
         <header className="container mx-auto py-2 width-container z-20">
+                        <Popup isOpen={isModalOpen} onClose={closeModal} service={selectedService} />
             <div className="flex items-center justify-between px-2 flex-wrap md:justify-strat">
                 <div className="head-logo">
                     <Link className="text-center" href="/book-publishing">
@@ -35,9 +50,10 @@ export default function Header() {
                         <Link className="" href={'mailto:support@pinebookwriting.com'}>support@pinebookwriting.com</Link>
                     </button>
 
-                    <button className="btn-a items-center bg-gray-800 md:py-2 py-4 px-3 focus:outline-none hover:bg-gray-700" onClick={handleOpenChat}>
-                        <Link className="" href={'javascript:;'}>Talk to an Expert</Link>
-                    </button>
+
+                       <button className="btn-a items-center bg-gray-800 md:py-2 py-4 px-3 focus:outline-none hover:bg-gray-700" onClick={() => openModal('Basic')}>
+                                        Talk to an Expert
+                                    </button>
                 </div>
             </div>
         </header>

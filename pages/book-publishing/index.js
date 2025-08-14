@@ -6,7 +6,7 @@ import Head from "next/head";
 
 import "swiper/css/effect-coverflow";
 import Header from "../components/header";
-import Hero from "../components/hero";
+import Hero from "../components/heroBg";
 import Popup from "../components/popup";
 import HeroForm from "../components/herform";
 import HeroFormBookOffer from "../components/HerformBookOffer";
@@ -83,7 +83,7 @@ import Packages from "../components/Packages";
 // import HomePopup from "../components/HomePopup";
 import 'glightbox/dist/css/glightbox.min.css';
 
-const HeavyComponent = dynamic(() => import('../components/hero'), {
+const HeavyComponent = dynamic(() => import('../components/heroBg'), {
   loading: () => <p>Loading...</p>,
 });
 

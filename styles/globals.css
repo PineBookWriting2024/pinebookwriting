@@ -1377,3 +1377,9 @@ a.inline.cta-btn-1 {
 section.brand-main-banner-video {
     background: #00000082;
 }
+
+
+.main-banner-image
+{
+  background-image: url("/images/banne-main.jpg");
+}

@@ -8,6 +8,13 @@ import BrandPortfolio from "./components/BrandPortfolio";
 import NewBrandFooter from "./components/NewBrandFooter";
 import BrandTopBar from "./components/BrandTopBar";
 
+import PortfolioSlider1 from "./components/PortfolioSlider1";
+import PortfolioSlider2 from "./components/PortfolioSlider2";
+import PortfolioSlider3 from "./components/PortfolioSlider3";
+import PortfolioSlider4 from "./components/PortfolioSlider4";
+import PortfolioSlider5 from "./components/PortfolioSlider5";
+
+
 export default function Portfolio() {
     const [openFAQ, setOpenFAQ] = useState(0);
 
@@ -49,7 +56,16 @@ export default function Portfolio() {
                 desc="Let’s explore our creative portfolio of ghostwriting services. We’re confident that you’ll love to get your book written by leveraging our expertise."
             />
             <BrandBannerLogo />
-            <BrandPortfolio />
+            {/* <BrandPortfolio /> */}
+
+            
+            <PortfolioSlider4 />
+            <PortfolioSlider1 />
+            <PortfolioSlider2 />
+            <PortfolioSlider3 />
+            <PortfolioSlider5 />
+
+            
             {/* <BrandCTA
                 title="Ready to Tell Your Story to the World?"
                 desc="Don’t wait anymore. Just give us a call and let our expert writers blow breathe life into your idea."

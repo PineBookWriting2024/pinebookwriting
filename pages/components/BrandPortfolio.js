@@ -72,9 +72,9 @@ export default function BrandPortfolio() {
 
     return (
         <>
-            <section className="max-w-screen-xl mx-auto brand-portfolio-books py-12">
+            {/* <section className="max-w-screen-xl mx-auto brand-portfolio-books py-12">
                 <div className="text-center mb-6">
-                    {/* <h3 className="text-2xl text-black font-poppins">Get your Book</h3> */}
+                    <h3 className="text-2xl text-black font-poppins">Get your Book</h3>
                     <h2 className=" text-4xl text-black uppercase">A Collection of Stories We’ve Helped Bring to Life</h2>
                 </div>
                 <div className="flex space-x-4 justify-center mb-12">
@@ -97,7 +97,8 @@ export default function BrandPortfolio() {
                         </div>
                     ))}
                 </div>
-            </section>
+            </section> */}
+
         </>
     );
 }

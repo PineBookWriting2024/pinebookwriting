@@ -147,7 +147,7 @@ import Link from 'next/link';
         BookTitle: "Orthomolecular biohacking: From Pauling to Panfili",
         Consultant: "Steve Hayes",
         ProjectManager: "Lia Sinclair ",
-        clientname : "Adolfo Professor Pamphili"
+        clientname : " Adolfo Professor Pamphili"
     },
 ]
 

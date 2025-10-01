@@ -13,6 +13,10 @@ export default function Privacy() {
         <>
             <Head>
                 <title>Privacy Policy | Pine Book Writing</title>
+                <meta name="description" content="Read our privacy policy to understand how we collect, use, and protect your personal information at Pine Book Writing. Your privacy is our priority."
+                />
+                <link rel="canonical" href="https://www.pinebookwriting.com/privacy-policy" />
+
                 <link rel="shortcut icon" href="/images/fav.webp" />
             </Head>
             <BrandNavbar />

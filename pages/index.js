@@ -27,6 +27,7 @@ export default function Home() {
                 <meta name="description" content="Get top-notch book writing services from experienced writers. We offer affordable and high-quality writing solutions for all genres. Contact us today!"
                 />
                 <link rel="shortcut icon" href="/images/fav.webp" />
+                <link rel="canonical" href="https://www.pinebookwriting.com/" />
                 <meta name="google-site-verification" content="ze4i-BWHkh7f9iANJUJfoWbXrFcmFC9r2fCsoz1KZA8" />
                 {/* <meta name="google-site-verification" content="ze4i-BWHkh7f9iANJUJfoWbXrFcmFC9r2fCsoz1KZA8" /> */}
                 {/* Google tag Manager Script */}

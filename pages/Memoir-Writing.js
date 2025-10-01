@@ -44,6 +44,7 @@ export default function BookEditing() {
         <>
             <Head>
                 <title>Memoir Writing | Pine Book Writing</title>
+                <link rel="canonical" href="https://www.pinebookwriting.com/Memoir-Writing" />
                 <meta
                     name="description"
                     content="Want to tell your life story? Hire our memoir writing service. We capture your voice and experiences beautifully on every page. Get in touch!."

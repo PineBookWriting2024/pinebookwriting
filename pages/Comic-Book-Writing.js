@@ -44,6 +44,7 @@ export default function BookEditing() {
         <>
             <Head>
                 <title>Comic Book Writing | Pine Book Writing</title>
+                    <link rel="canonical" href="https://www.pinebookwriting.com/Comic-Book-Writing" />
                 <meta
                     name="description"
                     content="Produce different dynamic heroes and plots with our comic book writing service. Our services are designed for visual storytelling and classic adventures."

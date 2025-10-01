@@ -44,6 +44,8 @@ export default function WebCopywriting () {
         <>
             <Head>
                 <title>Website Content | Pine Book Writing</title>
+                <link rel="canonical" href="https://www.pinebookwriting.com/web-copywriting" />
+
                 <meta
                     name="description"
                     content="Everything about Pine Book Writing—your partner in crafting, editing, and publishing your story. Experience seamless service from manuscript to bookshelf."

@@ -44,6 +44,7 @@ export default function BookEditing() {
         <>
             <Head>
                 <title>Non-Fiction Writing | Pine Book Writing</title>
+                    <link rel="canonical" href="https://www.pinebookwriting.com/Non-Fiction-Writing" />
                 <meta
                     name="description"
                     content="Make your ideas alive with our non fiction writing service. We are here to create clear, engaging, and professionally written book to educate and inspire."

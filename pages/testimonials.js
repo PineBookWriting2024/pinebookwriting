@@ -32,6 +32,7 @@ export default function Services() {
         <>
             <Head>
                 <title>Client Testimonials | Pine Book Writing</title>
+                    <link rel="canonical" href="https://www.pinebookwriting.com/testimonials" />
                 <meta
                     name="description"
                     content="Explore the real success stories and glowing feedback from our satisfied clients. See how Pine Book Writing delivers results."

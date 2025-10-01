@@ -14,6 +14,9 @@ export default function Privacy() {
         <>
             <Head>
                 <title>Terms and Conditions | Pine Book Writing</title>
+                <meta name="description" content="Read our terms and conditions to understand the rules and guidelines for using Pine Book Writing's services. Your use of our website constitutes your agreement to these terms."
+                />
+                <link rel="canonical" href="https://www.pinebookwriting.com/terms-and-conditions" />
                 <link rel="shortcut icon" href="/images/fav.webp" />
             </Head>
             <BrandNavbar />

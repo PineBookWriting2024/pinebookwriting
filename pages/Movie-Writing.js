@@ -44,6 +44,7 @@ export default function BookEditing() {
         <>
             <Head>
                 <title>Movie Writing | Pine Book Writing</title>
+                <link rel="canonical" href="https://www.pinebookwriting.com/Movie-Writing" />
                 <meta
                     name="description"
                     content="Hire our movie writing services to execute your film ideas into prevailing screenplays using robust structure, pacing, and cinematic style. Contact us now!"

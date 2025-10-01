@@ -43,6 +43,7 @@ export default function BookEditing() {
         <>
             <Head>
                 <title>Rhymes Writing | Pine Book Writing</title>
+                <link rel="canonical" href="https://www.pinebookwriting.com/Rhymes-Writing" />
                 <meta
                     name="description"
                     content="Hire our creative rhymes writing services for fun, catchy, and clever verses. Our services are Perfect for books, music, and kids’ content."

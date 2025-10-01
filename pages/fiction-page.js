@@ -91,6 +91,7 @@ export default function FictionPage() {
         <>
             <Head>
                 <title>Ghostwriting | Pine Book Writing</title>
+                    <link rel="canonical" href="https://www.pinebookwriting.com/fiction-page" />
                 <meta
                     name="description"
                     content="Everything about Pine Book Writing—your partner in crafting, editing, and publishing your story. Experience seamless service from manuscript to bookshelf."

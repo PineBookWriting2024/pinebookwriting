@@ -44,6 +44,8 @@ export default function BookEditing() {
         <>
             <Head>
                 <title>Screen Writing | Pine Book Writing</title>
+                <link rel="canonical" href="https://www.pinebookwriting.com/Screen-Writing" />
+
                 <meta
                     name="description"
                     content="Bring your script to life with our professional screen writing service—structured, dramatic, and ready for producers to read. Get in touch today!"

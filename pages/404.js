@@ -15,6 +15,7 @@ const notFound = () => {
     <div>
          <Head>
                 <title>Hire Professional Book Writers | 404</title>
+                
                 <meta name="description" content="404"
                 />
                 <link rel="shortcut icon" href="/images/fav.webp" />

@@ -44,6 +44,7 @@ export default function BookEditing() {
         <>
             <Head>
                 <title>Hip Hop Writing | Pine Book Writing</title>
+                <link rel="canonical" href="https://www.pinebookwriting.com/Hip-Hop-Writing" />
                 <meta
                     name="description"
                     content="Our hip hop writing service gives you bars that flow, have attitude, and have significance. They're great for new songs and standout verses."

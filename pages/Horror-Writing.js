@@ -44,6 +44,7 @@ export default function BookEditing() {
         <>
             <Head>
                 <title>Horror Writing | Pine Book Writing</title>
+                <link rel="canonical" href="https://www.pinebookwriting.com/Horror-Writing" />
                 <meta
                     name="description"
                     content="Scare and thrill your readers with our horror writing service with spooky, intense, and packed with psychological suspense."

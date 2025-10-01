@@ -45,6 +45,7 @@ export default function BookEditing() {
         <>
             <Head>
                 <title>Song Writing | Pine Book Writing</title>
+                <link rel="canonical" href="https://www.pinebookwriting.com/Song-Writing" />
                 <meta
                     name="description"
                     content="Let your lyrics speak with our song writing service. Original songs with rhythm, emotion, and powerful words crafted just for you. Get in touch today!"

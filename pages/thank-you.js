@@ -4,7 +4,13 @@ import Head from "next/head";
 import Script from "next/script";
 import BrandFooter from "./components/BrandFooter";
 
+
 export default function Home() {
+       useEffect(() => {
+    if (typeof window !== "undefined" && window.lintrk) {
+      window.lintrk('track', { conversion_id: 22803625 });
+    }
+  }, []);
     return (
 
         <>

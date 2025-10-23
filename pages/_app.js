@@ -66,6 +66,19 @@ export default function App({ Component, pageProps }) {
   }, []);
 
 
+
+  useEffect(() => {
+    const checkZendesk = setInterval(() => {
+      if (typeof window.$zopim !== "undefined" && window.$zopim.livechat) {
+        // Open chat automatically
+        window.$zopim.livechat.window.show();
+        clearInterval(checkZendesk);
+      }
+    }, 1000);
+    return () => clearInterval(checkZendesk);
+  }, []);
+
+
   
 
 

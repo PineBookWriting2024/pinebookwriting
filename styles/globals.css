@@ -1130,7 +1130,7 @@ video#brandVideo{position:absolute;z-index:-1;height:135vh;width:100%;object-fit
 #fixed-social {
   position: fixed;
   top: 0;
-  right: 0;
+  left: 0;
   z-index: 10;
   display: flex;
   flex-direction: column-reverse;
@@ -1151,8 +1151,8 @@ video#brandVideo{position:absolute;z-index:-1;height:135vh;width:100%;object-fit
   justify-content: center;
   align-items: center;
   border: 1px solid #0D0F38;
-  border-top-left-radius: 30px;
-  border-bottom-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
 }
 #fixed-social a span {
   line-height: 34px;

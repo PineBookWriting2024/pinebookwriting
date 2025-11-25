@@ -141,7 +141,7 @@ export default function PortfolioSlider1() {
 
 
             <div className="w-full max-w-6xl mx-auto pb-10 relative">
-                
+
 
                 <h2 className="text-3xl font-medium mb-5 text-center md:text-left">Book Cover Design</h2>
                 {/* Custom Previous Button */}
@@ -175,10 +175,13 @@ export default function PortfolioSlider1() {
                     {ImageSlides.map((slide) => (
                         <SwiperSlide key={slide.id}>
                             <div className="relative h-full flex flex-col items-center">
-                                <img
+                                <Image
                                     src={slide.src}
+                                    width={700}
+                                    height={500}
                                     alt={`Slide ${slide.id}`}
                                     className="h-72 w-auto object-contain glightbox1 cursor-pointer"
+                                    quality={70}
                                 />
                             </div>
                         </SwiperSlide>

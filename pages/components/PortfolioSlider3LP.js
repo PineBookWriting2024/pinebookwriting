@@ -49,19 +49,19 @@ export default function PortfolioSlider3LP() {
     const ImageSlides = [
         {
             id: 1,
-            src: "/brand-img/Editing Portfolio 1.jpg",
+            src: "/brand-img/Editing Portfolio 1.webp",
         },
         {
             id: 2,
-            src: "/brand-img/Editing Portfolio 2.jpg",
+            src: "/brand-img/Editing Portfolio 2.webp",
         },
         {
             id: 3,
-            src: "/brand-img/Editing Portfolio 3.jpg",
+            src: "/brand-img/Editing Portfolio 3.webp",
         },
         {
             id: 4,
-            src: "/brand-img/Editing Portfolio 4.jpg",
+            src: "/brand-img/Editing Portfolio 4.webp",
         },
     ];
 
@@ -100,13 +100,25 @@ export default function PortfolioSlider3LP() {
                 >
                     {ImageSlides.map((slide) => (
                         <SwiperSlide key={slide.id}>
-                            <div className="relative h-full flex flex-col items-center">
+                            {/* <div className="relative h-full flex flex-col items-center">
                                 <img
                                     src={slide.src}
                                     alt={`Slide ${slide.id}`}
                                     className="h-70 w-auto object-contain w-100 glightbox4 cursor-pointer"
                                 />
-                            </div>
+                            </div> */}
+
+
+                            <div className="relative h-full flex flex-col items-center">
+                                    <Image
+                                        src={slide.src}
+                                        width={700}
+                                        height={500}
+                                        alt={`Slide ${slide.id}`}
+                                        className="h-72 w-auto object-contain glightbox4 cursor-pointer"
+                                        quality={70}
+                                    />
+                                </div>
                         </SwiperSlide>
                     ))}
                 </Swiper>

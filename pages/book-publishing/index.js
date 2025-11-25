@@ -581,7 +581,7 @@ export default function Home() {
                     },
                   }}
                 >
-                  <SwiperSlide>
+                  {/* <SwiperSlide>
                     <div className="bg-white rounded-xl flex flex-row justify-between items-center border-about-card">
                       <Image
                         src={"/images/b1.png"}
@@ -594,9 +594,9 @@ export default function Home() {
                         Explore worlds of knowledge and discovery.
                       </p>
                     </div>
-                  </SwiperSlide>
+                  </SwiperSlide> */}
 
-                  <SwiperSlide>
+                  {/* <SwiperSlide>
                     <div className="bg-white rounded-xl flex flex-row items-center border-about-card">
                       <Image
                         src={"/images/b2.png"}
@@ -609,8 +609,8 @@ export default function Home() {
                         Journey through the lives and experiences of others.
                       </p>
                     </div>
-                  </SwiperSlide>
-
+                  </SwiperSlide> */}
+{/* 
                   <SwiperSlide>
                     <div className="bg-white rounded-xl flex flex-row items-center border-about-card">
                       <Image
@@ -624,7 +624,7 @@ export default function Home() {
                         Get lost in imaginary worlds and captivating narratives.
                       </p>
                     </div>
-                  </SwiperSlide>
+                  </SwiperSlide> */}
 
                   <SwiperSlide>
                     <div className="bg-white rounded-xl flex flex-row items-center border-about-card">

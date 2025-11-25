@@ -54,35 +54,35 @@ export default function PortfolioSlider1LP() {
         // },
         {
             id: 1,
-            src: "/brand-img/Chhavyvann So 2-01.png",
+            src: "/brand-img/Chhavyvann So 2-01.webp",
         },
         {
             id: 2,
-            src: "/brand-img/full cover-01 (1).png",
+            src: "/brand-img/full cover-01 (1).webp",
         },
         {
             id: 3,
-            src: "/brand-img/Hardcover lulu.png",
+            src: "/brand-img/Hardcover lulu.webp",
         },
         {
             id: 4,
-            src: "/brand-img/Katie Loftis (Book 2) PB 2.png",
+            src: "/brand-img/Katie Loftis (Book 2) PB 2.webp",
         },
         {
             id: 5,
-            src: "/brand-img/PAPERBACK-01.png",
+            src: "/brand-img/PAPERBACK-01.webp",
         },
         {
             id: 6,
-            src: "/brand-img/PAPERBACK-4 compressed.png",
+            src: "/brand-img/PAPERBACK-4 compressed.webp",
         },
         {
             id: 7,
-            src: "/brand-img/Vikki LeBeau PB 3.png",
+            src: "/brand-img/Vikki LeBeau PB 3.webp",
         },
         {
             id: 8,
-            src: "/brand-img/Jean Bosco N. Ruhashya Full cover.png",
+            src: "/brand-img/Jean Bosco N. Ruhashya Full cover.webp",
         },
     ];
 
@@ -175,10 +175,13 @@ export default function PortfolioSlider1LP() {
                     {ImageSlides.map((slide) => (
                         <SwiperSlide key={slide.id}>
                             <div className="relative h-full flex flex-col items-center">
-                                <img
+                                <Image
                                     src={slide.src}
+                                      width={700}
+                                      height={500}
                                     alt={`Slide ${slide.id}`}
                                     className="h-72 w-auto object-contain glightbox1 cursor-pointer"
+                                    quality={70}
                                 />
                             </div>
                         </SwiperSlide>

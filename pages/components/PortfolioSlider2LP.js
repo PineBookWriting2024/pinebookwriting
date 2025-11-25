@@ -49,27 +49,27 @@ export default function PortfolioSlider2LP() {
     const ImageSlides = [
         {
             id: 1,
-            src: "/brand-img/foamy and F-01 (1).png",
+            src: "/brand-img/foamy and F-01 (1).webp",
         },
         // {
         //     id: 2,
-        //     src: "/brand-img/im a boy-01 (1).png",
+        //     src: "/brand-img/im a boy-01 (1).webp",
         // },
         {
             id: 2,
-            src: "/brand-img/im a girl-01 (1).png",
+            src: "/brand-img/im a girl-01 (1).webp",
         },
         {
             id: 3,
-            src: "/brand-img/Untitled-1-01 (2).png",
+            src: "/brand-img/Untitled-1-01 (2).webp",
         },
         {
             id: 4,
-            src: "/brand-img/the phonics-01.png",
+            src: "/brand-img/the phonics-01.webp",
         },
         {
             id: 5,
-            src: "/brand-img/robert-01.png",
+            src: "/brand-img/robert-01.webp",
         },
 
     ];
@@ -108,11 +108,22 @@ export default function PortfolioSlider2LP() {
                 >
                     {ImageSlides.map((slide) => (
                         <SwiperSlide key={slide.id}>
-                            <div className="relative h-full flex flex-col items-center">
+                            {/* <div className="relative h-full flex flex-col items-center">
                                 <img
                                     src={slide.src}
                                     alt={`Slide ${slide.id}`}
                                     className="h-100 w-auto object-contain glightbox3 cursor-pointer"
+                                />
+                            </div> */}
+
+                            <div className="relative h-full flex flex-col items-center">
+                                <Image
+                                    src={slide.src}
+                                    width={700}
+                                    height={500}
+                                    alt={`Slide ${slide.id}`}
+                                    className="h-100 w-auto object-contain glightbox3 cursor-pointer"
+                                    quality={70}
                                 />
                             </div>
                         </SwiperSlide>

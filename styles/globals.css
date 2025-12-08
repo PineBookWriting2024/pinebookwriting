@@ -1115,7 +1115,7 @@ video#brandVideo{position:absolute;z-index:-1;height:135vh;width:100%;object-fit
 
 .snowbanner{
   /* overflow: hidden; */
-  position: absolute;
+  /* position: absolute; */
   height: 100vh;
 }
 
@@ -1382,7 +1382,7 @@ section.brand-main-banner-video {
 
 .main-banner-image
 {
-  background-image: url("/images/banne-main.jpg");
+  background-image: url("/images/banne-main.webp");
 }
 
 
@@ -1419,3 +1419,10 @@ section.brand-main-banner-video {
           .bk-sil2.next,.bk-sil2.prev,.bk-sil.next,.bk-sil.prev{width:0px;}
 
       }
+
+
+
+@keyframes fall {
+  0% { transform: translateY(-10px); }
+  100% { transform: translateY(100vh); }
+}

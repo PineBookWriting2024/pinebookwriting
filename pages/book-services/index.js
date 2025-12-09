@@ -273,7 +273,7 @@ export default function Home({ isOpen, onClose }) {
             <header className=" py-2 z-20">
                 <div className="width-container container mx-auto flex items-center justify-between px-2 flex-wrap md:justify-strat">
                     <div className="head-logo">
-                        <Link className="text-center" href="/Book-Services">
+                        <Link className="text-center" href="/book-services">
                             <Image alt="LOGO" src={'/images/PBWChristmas.gif'} width={200} height={80} loading="lazy" />
                         </Link>
                     </div>

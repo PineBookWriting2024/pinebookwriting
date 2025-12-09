@@ -14,6 +14,7 @@ import Services_Banner_Form from "../components/Services_Banner_Form";
 import { MdKeyboardDoubleArrowRight } from 'react-icons/md';
 import ServicesBook_Popup from "../components/ServicesBook_Popup";
 import LazyYouTube from "../components/LazyYouTube"; 
+import SnowFall from "../components/SnowFall"; // Import the SnowFall component
 
 
 
@@ -269,11 +270,11 @@ export default function Home({ isOpen, onClose }) {
                 <link rel="shortcut icon" href="/images/fav.webp" />
             </Head>
 
-            <header className="container mx-auto py-2 width-container z-20 relative">
-                <div className="flex items-center justify-between px-2 flex-wrap md:justify-strat">
+            <header className=" py-2 z-20">
+                <div className="width-container container mx-auto flex items-center justify-between px-2 flex-wrap md:justify-strat">
                     <div className="head-logo">
                         <Link className="text-center" href="/Book-Services">
-                            <Image alt="LOGO" src={'/images/writing-logo.png'} width={200} height={80} loading="lazy" />
+                            <Image alt="LOGO" src={'/images/PBWChristmas.gif'} width={200} height={80} loading="lazy" />
                         </Link>
                     </div>
 
@@ -288,7 +289,7 @@ export default function Home({ isOpen, onClose }) {
                     </div>
                 </div>
             </header>
-
+            <SnowFall />
             <section className="bg-[url(/images/banne-main.jpg)] bg-no-repeat bg-cover overflow-hidden md:py-24 py-10">
                 <div className="container mx-auto width-container">
                     <div className="grid md:grid-cols-2 gap-4 md:gap-8 xl:gap-20 md:items-center">
@@ -306,6 +307,7 @@ export default function Home({ isOpen, onClose }) {
                             </div>
                         </div>
                         <div className="">
+
                             <Services_Banner_Form />
                         </div>
 

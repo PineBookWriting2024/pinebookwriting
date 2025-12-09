@@ -429,7 +429,20 @@ export default function HeroFormBookOffer() {
         <div>
 
           <div className="w-full rounded-2xl px-8 py-8 bg-gray-400 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-50 border-gray-100 relative">
-       
+            <Image
+              className="text-center header-form-off-badge"
+              src={"/brand-img/christmas-tag.png"}
+              width={140}
+              height={180}
+              loading="lazy"
+            ></Image>
+            <Image
+              className="text-center christmas-cap-form"
+              src={"/brand-img/christmas-cap.png"}
+              width={300}
+              height={300}
+              loading="lazy"
+            ></Image>
             <div className="text-center">
               <h4 className="font-poppins text-white text-2xl md:text-2xl">Ready to Start? Let’s Talk About Your Writing Project!</h4>
               <h5 className="font-poppins text-white text-lg mb-3">We’re excited to hear about your book or writing idea. Share your thoughts, and let's help fulfill your literary dream!</h5>
@@ -560,7 +573,7 @@ export default function HeroFormBookOffer() {
 
 
         </div>
-        
+
       </div>
     </div>
   );

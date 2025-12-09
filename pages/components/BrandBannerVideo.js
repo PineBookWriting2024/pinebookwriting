@@ -28,7 +28,7 @@ export default function BrandBannerVideo({ Component = null }) {
       <>
 <div id="snow" className="pointer-events-none fixed top-0 left-0 w-full h-full z-50"></div>
       <section className="brand-main-banner-video flex items-start md:items-center justify-strat md:justify-center gap-4 md:py-14 h-full ">
-        <div className="snow"></div>
+        {/* <div className="snow"></div> */}
         <video
           className="brand-video"
           id="brandVideo"

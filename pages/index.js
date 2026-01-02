@@ -63,7 +63,7 @@ export default function Home() {
                 subdescthree=""
             />
 
-            <HomeBookSlider />  
+            <HomeBookSlider />
 
             <BrandCTA
                 title="Achieve Your Writing Dreams With Professional Ghostwriting Company!"
@@ -82,7 +82,7 @@ export default function Home() {
             <BrandFaqs />
             <BrandContact />
             {/* <BrandSister/> */}
-                       
+
 
             <NewBrandFooter />
         </>

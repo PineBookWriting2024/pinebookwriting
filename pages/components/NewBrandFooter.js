@@ -284,7 +284,7 @@ export default function NewBrandFooter() {
                 <div className="copyright-sec">
                     <div className="container text-center mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
                         <p className="text-white w-full md:text-center text-sm sm:text-left">
-                            Copyright © 2024 <span className="powered-by-text"><Link href="https://www.pinebookwriting.com/" >Pine Book Writing Inc.</Link></span> | All Rights Reserved.
+                            Copyright © 2026 <span className="powered-by-text"><Link href="https://www.pinebookwriting.com/" >Pine Book Writing Inc.</Link></span> | All Rights Reserved.
                             <Link
                                 href="/terms-and-conditions"
                                 rel="noopener noreferrer"

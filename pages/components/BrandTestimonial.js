@@ -30,7 +30,7 @@ export default function BrandTestimonial() {
                                 <p className="mb-5 pt-2">My experience with Pine Book Writing was beyond excellent. I love working with Lia Sinclair and i hope when it is time to publish my next book i get her. I love the fact that they design the cover to go with the book.
 
 </p>
-                                <span className="absolute bottom-0 mb-2">jacqueline cunningham, May 24, 2024</span>
+                                <span className="absolute bottom-0 mb-2">jacqueline cunningham, May 24, 2026</span>
                             </Link>
                         </div>
 
@@ -45,7 +45,7 @@ export default function BrandTestimonial() {
                                 </div>
                                 <h2 className="font-poppins text-xl font-bold pt-3">Good Work on Publishing</h2>
                                 <p className="mb-5 pt-2">Pine Book Writing did a good job on printing and delivering copies of my book of poetry written in Russian. They did it expeditiously and in promised time, actually, a bit faster. The quality of the paper used and printing was quite adequate. Ryan Peters, the publication manager, was very approachable, friendly, and quick to reply to my requests and questions. Dealing with Damon, the owner, was a good experience as well.</p>
-                                <span className="absolute bottom-0 mb-2">Fima, Feb 16, 2024</span>
+                                <span className="absolute bottom-0 mb-2">Fima, Feb 16, 2026</span>
                             </Link>
                         </div>
 
@@ -60,7 +60,7 @@ export default function BrandTestimonial() {
                                 </div>
                                 <h2 className="font-poppins text-xl font-bold pt-3">This is John Bowman</h2>
                                 <p className="mb-5 pt-2">This is John Bowman. I would just love to give a shout out to Pine Book Writing, my experience with them has really been beyond words. From.Lia Sinclair, Damon Peters for taking me on. I am a Christian and it has been an answer to my prayers after 4 1/2 years looking for an honest publisher thank you all so much.</p>
-                                <span className="absolute bottom-0 mb-2">John Bowman, May 30, 2024</span>
+                                <span className="absolute bottom-0 mb-2">John Bowman, May 30, 2026</span>
                             </Link>
                         </div>
 
@@ -81,7 +81,7 @@ export default function BrandTestimonial() {
                                 <p className="mb-5 pt-2">I had a great experience because as a first-time author I didn't really know the process. They helped walk me through the process step by step. Whenever I needed to talk with them, they made time for me. We had a big project, and they helped me finish it. My time spent with Pine Book Writing produced results. They helped me finish my project and for that I am very thankful.
 
 </p>
-                                <span className="absolute bottom-0 mb-2">kyle climer, July 21, 2024</span>
+                                <span className="absolute bottom-0 mb-2">kyle climer, July 21, 2026</span>
                             </Link>
                         </div>
 

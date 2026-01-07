@@ -464,9 +464,13 @@ export default function HeroFormBookOffer() {
               height={200}
               loading="lazy"
             ></Image> */}
-            <div className="text-center">
+            {/* <div className="text-center">
               <h4 className="font-poppins text-white text-2xl md:text-2xl">Avail Discount</h4>
               <h5 className="font-poppins text-white text-lg mb-3">Exclusive Offer: Expert Book Publishing at <span className="text-blink">50% Off</span> – <br></br>Your Story Deserves to be Heard!</h5>
+            </div> */}
+            <div className="text-center w-[80%] mx-auto md:mb-8">
+              <h4 className="font-poppins text-white text-2xl md:text-2xl">Ready to Start? Let’s Talk About Your Writing Project!</h4>
+              <h5 className="font-poppins text-white text-lg mb-3">We’re excited to hear about your book or writing idea. Share your thoughts, and let's help fulfill your literary dream!</h5>
             </div>
             <div>
 

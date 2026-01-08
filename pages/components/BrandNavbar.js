@@ -190,7 +190,7 @@ export default function BrandNavbar() {
                 <div className='max-w-screen-xl flex justify-between items-center mx-auto w-full'>
                     <div>
                         <Link href="/" onClick={(e) => { e.preventDefault(); window.location.href = "/"; }} className="text-xl font-bold text-white">
-                            <Image className='logo' src={'/brand-img/PBWChristmas.gif'} width={200} height={80} alt="brand logo" loading="lazy" />
+                            <Image className='logo' src={'/images/writing-logo.png'} width={200} height={80} alt="brand logo" loading="lazy" />
                         </Link>
                     </div>
                     

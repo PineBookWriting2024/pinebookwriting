@@ -32,13 +32,13 @@ export default function Smm() {
             </header>
             <BrandPrimaryHeader
                 photo_banner={"brand-img/testi-banner.jpg"}
-                title="See What Our Clients Are Saying"
-                desc="Don't rely only on our words. Explore our clients' valuable reviews about how we helped them succeed."
+                title="Helping Authors Turn Stories Into Bestsellers"
+                desc="We help authors build strong online presence, connect with readers, and promote their books through proven social media and advertising strategies."
             />
 
 
             <div className="container mx-auto p-14">
-                {/* <form className="px-5 mb-5  md:ml-20">
+                <form className="px-5 mb-5  md:ml-20">
 
                     <h1 className="md:text-4xl text-2xl text-black font-poppins font-bold">SMM Questionnaire</h1>
                     <p className="text-black leading-6  pb-5 text-base pt-4">This detailed questionnaire will help us in understanding your business and its goals.</p>
@@ -52,6 +52,19 @@ export default function Smm() {
                         <div class="relative w-full pb-6">
                             <label className="ml-2 font-semibold uppercase text-black ">Book Name</label>
                             <input type="text" name="bookName" required="" class="pl-4 pr-4 py-2 mt-2 border rounded-xl w-full text-sm shadow-xl" placeholder="Book Name"  />
+                        </div>
+
+                    </div>
+
+                    <div className="columns-2 ">
+                        <div class="relative w-full pb-6">
+                            <label className="ml-2 font-semibold uppercase text-black ">Pen Name (if any):</label>
+                            <input type="text" name="authorName" required="" class="pl-4 pr-4 py-2 mt-2 border rounded-xl w-full text-sm shadow-xl" placeholder="Enter your Pen Name"  />
+                        </div>
+
+                        <div class="relative w-full pb-6">
+                            <label className="ml-2 font-semibold uppercase text-black ">Genre(s):</label>
+                            <input type="text" name="bookName" required="" class="pl-4 pr-4 py-2 mt-2 border rounded-xl w-full text-sm shadow-xl" placeholder="Genres"  />
                         </div>
 
                     </div>
@@ -81,6 +94,45 @@ export default function Smm() {
                             <label className="ml-2 font-semibold uppercase text-black ">What time zone are you in?</label>
                             <input type="text" name="timeZone" required="" class="pl-4 pr-4 py-2 mt-2 border rounded-xl w-full text-sm shadow-xl" placeholder="Your Answer"  />
                         </div>
+                    </div>
+
+                    <div class="relative w-full pb-4">
+                        <p className="ml-2 font-semibold uppercase text-black">Publishing Stage</p><br />
+
+                        <input type="checkbox" id="PublishingStage" name="PublishingStage" value="Writing" />
+                        <label for="PublishingStage"> Writing</label><br />
+
+                        <input type="checkbox" id="PublishingStage" name="PublishingStage" value="Editing" />
+                        <label for="PublishingStage"> Editing</label><br />
+
+                        <input type="checkbox" id="PublishingStage" name="PublishingStage" value="Published" />
+                        <label for="PublishingStage"> Published</label><br />
+
+                        <input type="checkbox" id="PublishingStage" name="PublishingStage" value="Pre-Launch" />
+                        <label for="PublishingStage"> Pre-Launch</label><br />
+
+                    </div>
+
+                     <div class="relative w-full pb-4">
+                        {/* <p className="ml-2 font-semibold uppercase text-black">Marketing Goals</p><br /> */}
+                        <p className="ml-2 font-semibold uppercase text-black">What is your primary goal?</p><br />
+
+
+                        <input type="checkbox" id="PublishingStage" name="PublishingStage" value="Increase Book Sales" />
+                        <label for="PublishingStage"> Increase Book Sales</label><br />
+
+                        <input type="checkbox" id="PublishingStage" name="PublishingStage" value="Build Author Brand" />
+                        <label for="PublishingStage"> Build Author Brand</label><br />
+
+                        <input type="checkbox" id="PublishingStage" name="PublishingStage" value="Grow Social Media Following" />
+                        <label for="PublishingStage"> Grow Social Media Following</label><br />
+
+                        <input type="checkbox" id="PublishingStage" name="PublishingStage" value="Email List Growth" />
+                        <label for="PublishingStage"> Email List Growth</label><br />
+
+                        <input type="checkbox" id="PublishingStage" name="PublishingStage" value="Launch Promotion" />
+                        <label for="PublishingStage"> Launch Promotion</label><br />
+
                     </div>
 
                     <div class="relative w-full pb-4">
@@ -114,6 +166,55 @@ export default function Smm() {
                         <label for="socialMedia"> Youtube</label><br />
 
                     </div>
+
+
+                      <div class="relative w-full pb-4">
+                        <p className="ml-2 font-semibold uppercase text-black">Are you targeting:</p><br />
+
+                        <input type="checkbox" id="PublishingStage" name="targeting" value="Local Readers" />
+                        <label for="targeting"> Local Readers</label><br />
+
+                        <input type="checkbox" id="targeting" name="targeting" value="International Readers" />
+                        <label for="targeting"> International Readers</label><br />
+
+                        <input type="checkbox" id="targeting" name="targeting" value="Niche Community" />
+                        <label for="targeting"> Niche Community</label><br />
+                    </div>
+
+
+                    <div class="relative w-full pb-4">
+                        <p className="ml-2 font-semibold uppercase text-black">Do you have:</p><br />
+
+                        <input type="checkbox" id="PublishingStage" name="targeting" value="Author photos" />
+                        <label for="targeting"> Author photos</label><br />
+
+                        <input type="checkbox" id="targeting" name="targeting" value="Book covers" />
+                        <label for="targeting"> Book covers</label><br />
+                    </div>
+
+                     <p className="ml-2 font-semibold uppercase text-black"> Who is your ideal reader?</p><br />
+
+
+                    <div class="relative w-full pb-6">
+                        <label className="ml-2 font-semibold uppercase text-black ">Age</label>
+                        <input type="text" name="notableAreas" required="" class="pl-4 pr-4 py-2 mt-2 border rounded-xl w-full text-sm shadow-xl" placeholder="Age" />
+                    </div>
+
+                     <div class="relative w-full pb-6">
+                        <label className="ml-2 font-semibold uppercase text-black ">interests</label>
+                        <input type="text" name="notableAreas" required="" class="pl-4 pr-4 py-2 mt-2 border rounded-xl w-full text-sm shadow-xl" placeholder="interests" />
+                    </div>
+                     <div class="relative w-full pb-6">
+                        <label className="ml-2 font-semibold uppercase text-black ">location</label>
+                        <input type="text" name="notableAreas" required="" class="pl-4 pr-4 py-2 mt-2 border rounded-xl w-full text-sm shadow-xl" placeholder="location" />
+                    </div>
+                     <div class="relative w-full pb-6">
+                        <label className="ml-2 font-semibold uppercase text-black ">favorite authors</label>
+                        <input type="text" name="notableAreas" required="" class="pl-4 pr-4 py-2 mt-2 border rounded-xl w-full text-sm shadow-xl" placeholder="favorite authors" />
+                    </div>
+
+
+                    
 
                     <div class="relative w-full pb-6">
                         <label className="ml-2 font-semibold uppercase text-black ">What are the few Notable areas that you are struggling with in terms of social media?</label>
@@ -276,145 +377,10 @@ export default function Smm() {
                         <button class="p-4 py-2 text-white uppercase header-submit-btn rounded-xl shadow-xl text-xl" type="submit">Submit</button>
                     </div>
 
-                </form> */}
-
-
-                <form className="max-w-7xl mx-auto bg-white rounded-2xl shadow-2xl p-6 md:p-10 mb-12 space-y-10">
-
-                    {/* Heading */}
-                    <div>
-                        <h1 className="text-2xl md:text-4xl font-bold text-gray-900 mb-3">
-                            SMM Questionnaire
-                        </h1>
-                        <p className="text-gray-600 max-w-4xl">
-                            This detailed questionnaire will help us in understanding your business and its goals.
-                        </p>
-                    </div>
-
-                    {/* Author / Book */}
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                        <div>
-                            <label className="block text-sm font-semibold uppercase text-gray-700 mb-1">Author Name</label>
-                            <input type="text" name="authorName" required
-                                className="w-full px-4 py-3 border rounded-xl text-sm shadow-sm focus:ring-2 focus:ring-black/10 focus:border-black"
-                                placeholder="Enter your Name" />
-                        </div>
-
-                        <div>
-                            <label className="block text-sm font-semibold uppercase text-gray-700 mb-1">Book Name</label>
-                            <input type="text" name="bookName" required
-                                className="w-full px-4 py-3 border rounded-xl text-sm shadow-sm focus:ring-2 focus:ring-black/10 focus:border-black"
-                                placeholder="Book Name" />
-                        </div>
-                    </div>
-
-                    {/* Email / Number */}
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                        <div>
-                            <label className="block text-sm font-semibold uppercase text-gray-700 mb-1">Email</label>
-                            <input type="text" name="email" required
-                                className="w-full px-4 py-3 border rounded-xl text-sm shadow-sm focus:ring-2 focus:ring-black/10 focus:border-black"
-                                placeholder="Enter your Email" />
-                        </div>
-
-                        <div>
-                            <label className="block text-sm font-semibold uppercase text-gray-700 mb-1">Number</label>
-                            <input type="text" name="number" required
-                                className="w-full px-4 py-3 border rounded-xl text-sm shadow-sm focus:ring-2 focus:ring-black/10 focus:border-black"
-                                placeholder="Enter your number" />
-                        </div>
-                    </div>
-
-                    {/* Website / Timezone */}
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                        <div>
-                            <label className="block text-sm font-semibold uppercase text-gray-700 mb-1">Website URL</label>
-                            <input type="text" name="website" required
-                                className="w-full px-4 py-3 border rounded-xl text-sm shadow-sm focus:ring-2 focus:ring-black/10 focus:border-black"
-                                placeholder="Website URL" />
-                        </div>
-
-                        <div>
-                            <label className="block text-sm font-semibold uppercase text-gray-700 mb-1">What time zone are you in?</label>
-                            <input type="text" name="timeZone" required
-                                className="w-full px-4 py-3 border rounded-xl text-sm shadow-sm focus:ring-2 focus:ring-black/10 focus:border-black"
-                                placeholder="Your Answer" />
-                        </div>
-                    </div>
-
-                    {/* Social Media */}
-                    <div className="bg-gray-50 border rounded-2xl p-6">
-                        <p className="font-semibold uppercase text-gray-800 mb-4">
-                            What social media platforms would you like us to focus?
-                        </p>
-
-                        <div className="grid grid-cols-2 md:grid-cols-3 gap-4 text-sm">
-                            {["Facebook", "Instagram", "Twitter", "LinkedIn", "Pinterest", "Quora", "Reddit", "TikTok", "Youtube"].map(item => (
-                                <label key={item} className="flex items-center gap-3">
-                                    <input type="checkbox" name="socialMedia" value={item} className="accent-black w-4 h-4" />
-                                    {item}
-                                </label>
-                            ))}
-                        </div>
-                    </div>
-
-                    {/* Single Inputs */}
-                    {[
-                        ["notableAreas", "What are the few Notable areas that you are struggling with in terms of social media?"],
-                        ["briefDescription", "Give a brief description about your book."],
-                        ["paidAdvertisement", "How much are you willing to spending on your book paid advertisement?"]
-                    ].map(([name, label]) => (
-                        <div key={name}>
-                            <label className="block text-sm font-semibold uppercase text-gray-700 mb-1">{label}</label>
-                            <input type="text" name={name} required
-                                className="w-full px-4 py-3 border rounded-xl text-sm shadow-sm focus:ring-2 focus:ring-black/10 focus:border-black"
-                                placeholder="Your Answer" />
-                        </div>
-                    ))}
-
-                    {/* Brand Tone */}
-                    <div className="bg-gray-50 border rounded-2xl p-6">
-                        <p className="font-semibold uppercase text-gray-800 mb-4">Your Preferred Brand Tone for Book</p>
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
-                            {[
-                                "Positive and Inspiring",
-                                "Humorous",
-                                "Strong and Aggressive",
-                                "Considerate and Simple",
-                                "Emotional"
-                            ].map(item => (
-                                <label key={item} className="flex items-center gap-3">
-                                    <input type="checkbox" name="brandTone" value={item} className="accent-black w-4 h-4" />
-                                    {item}
-                                </label>
-                            ))}
-                        </div>
-                    </div>
-
-                    {/* Goals / Activities / Gender — SAME PATTERN */}
-                    {/* (exact same structure retained for all remaining checkbox sections) */}
-
-                    {/* Textarea */}
-                    <div>
-                        <label className="block text-sm font-semibold uppercase text-gray-700 mb-1">
-                            IS THERE ANYTHING ELSE YOU'D WANT TO ADD?
-                        </label>
-                        <textarea rows="4" name="message" required
-                            className="w-full px-4 py-3 border rounded-xl text-sm shadow-sm focus:ring-2 focus:ring-black/10 focus:border-black"
-                            placeholder="Please use this section for any additional comments you would like to make." />
-                    </div>
-
-                    {/* Submit */}
-                    <div className="pt-4">
-                        <button
-                            type="submit"
-                            className="px-12 py-4 bg-black text-white text-lg font-semibold uppercase rounded-xl
-                 hover:bg-gray-900 transition shadow-lg">
-                            Submit
-                        </button>
-                    </div>
-
                 </form>
+
+
+              
 
             </div>
         </>

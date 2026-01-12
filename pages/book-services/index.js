@@ -37,6 +37,7 @@ import "swiper/css/pagination";
 import "swiper/css/autoplay";
 import { faArrowRight, faArrowLeft, faPlusCircle, faCheckCircle, faMinusCircle } from "@fortawesome/free-solid-svg-icons";
 import { library } from "@fortawesome/fontawesome-svg-core";
+import Script from 'next/script';
 
 library.add(faArrowLeft, faArrowRight);
 

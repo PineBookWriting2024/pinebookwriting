@@ -17,8 +17,8 @@ export default function Home() {
                 <meta name="google-site-verification" content="ze4i-ze4i-BWHkh7f9iANJUJfoWbXrFcmFC9r2fCsoz1KZA8" />
                 <link rel="shortcut icon" href="/images/fav.png" />
                 {/* Google tag Manager Script */}
-                <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16471224604"></script>
-                <script
+                <Script async src="https://www.googletagmanager.com/gtag/js?id=AW-16471224604"></Script>
+                <Script
                     dangerouslySetInnerHTML={{
                         __html: `
                 window.dataLayer = window.dataLayer || [];
@@ -28,7 +28,7 @@ export default function Home() {
               `,
                     }}
                 />
-                <script
+                <Script
                     dangerouslySetInnerHTML={{
                         __html: `
              window.lintrk('track', { conversion_id: 22803625 });

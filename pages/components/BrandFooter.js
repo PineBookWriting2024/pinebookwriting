@@ -34,8 +34,10 @@ export default function BrandFooter() {
         };
     }, []);
 
+      <Script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=6ad75b0f-d085-4cae-9a7a-48abeb69b973"> </Script>
 
     return (
+        
         <>
             <footer className="text-white body-font brand-footer">
                 <div className="container md:px-5 pt-10 pb-10 md:pt-12 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col position-relative">

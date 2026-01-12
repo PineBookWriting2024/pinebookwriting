@@ -11,7 +11,6 @@ import PopupBundle from "./components/PopupBundle";
 
 import PopupModal from './components/PopupModal';
 import { PopupProvider } from '../context/PopupContext';
-import { useRouter } from "next/router";
 
 /* Preline Variants */
 import 'preline/variants.css';
@@ -34,10 +33,6 @@ const poppins = Poppins({
 
 
 export default function App({ Component, pageProps }) {
-
-  const router = useRouter();
-  const disableZendeskOn = ["/smm-ques"];
-  const shouldLoadZendesk = !disableZendeskOn.includes(router.pathname);
 
   const [isModalOpen, setModalOpen] = useState(true);
   const closeModal = () => {
@@ -106,20 +101,14 @@ export default function App({ Component, pageProps }) {
       </Script>
 
       {/* <Script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=6ad75b0f-d085-4cae-9a7a-48abeb69b973"> </Script> */}
-
-      {shouldLoadZendesk && (
-        <Script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=6ad75b0f-d085-4cae-9a7a-48abeb69b973"> </Script>
-      )}
-
-
-      <Script
+      <script
         dangerouslySetInnerHTML={{
           __html: `
             !function () {var reb2b = window.reb2b = window.reb2b || [];if (reb2b.invoked) return;reb2b.invoked = true;reb2b.methods = ["identify", "collect"];reb2b.factory = function (method) {return function () {var args = Array.prototype.slice.call(arguments);args.unshift(method);reb2b.push(args);return reb2b;};};for (var i = 0; i < reb2b.methods.length; i++) {var key = reb2b.methods[i];reb2b[key] = reb2b.factory(key);}reb2b.load = function (key) {var script = document.createElement("script");script.type = "text/javascript";script.async = true;script.src = "https://b2bjsstore.s3.us-west-2.amazonaws.com/b/" + key + "/961Y0H4M4KNG.js.gz";var first = document.getElementsByTagName("script")[0];first.parentNode.insertBefore(script, first);};reb2b.SNIPPET_VERSION = "1.0.1";reb2b.load("961Y0H4M4KNG");}();`,
         }}
       />
 
-      <Script
+      <script
         dangerouslySetInnerHTML={{
           __html: `
              !function(f,b,e,v,n,t,s)
@@ -137,7 +126,7 @@ export default function App({ Component, pageProps }) {
       />
 
       <noscript>
-        <Image height="1" width="1"  style={{ display: "none" }}
+        <img height="1" width="1" style={{ display: "none" }}
           src="https://www.facebook.com/tr?id=685229296766479&ev=PageView&noscript=1"
         /></noscript>
 

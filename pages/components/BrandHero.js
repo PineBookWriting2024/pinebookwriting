@@ -293,7 +293,7 @@ export default function BrandHero() {
                                     height={300}
                                     loading="lazy"
                                 ></Image> */}
-                                <div className="text-start">
+                                {/* <div className="text-start">
                                     <h4 className="font-poppins text-white text-2xl md:text-3xl font-bold christmas-banner-title">
                                         Avail Discount
                                     </h4>
@@ -302,7 +302,8 @@ export default function BrandHero() {
                                         <span className="text-blink">50% Off</span> –
                                         Your Story Deserves to be Heard!
                                     </h5>
-                                </div>
+                                </div> */}
+                                <div class="text-center" bis_skin_checked="1"><h4 class="font-poppins text-white text-2xl md:text-2xl">Ready to Start? Let’s Talk About Your Writing Project!</h4><h5 class="font-poppins text-white text-lg mb-3">We’re excited to hear about your book or writing idea. Share your thoughts, and let's help fulfill your literary dream!</h5></div>
                                 <div className="">
                                     <div className="col-span-2 w-full relative">
                                         <form className="flex flex-col gap-3 justify-start items-start" onSubmit={handleSubmit}>

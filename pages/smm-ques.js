@@ -172,33 +172,6 @@ export default function Smm() {
         }
     };
 
-    useEffect(() => {
-        const t = setTimeout(() => {
-            if (typeof window !== "undefined" && window.zE) {
-                window.zE("webWidget", "hide");
-            }
-            const style = document.createElement("style");
-            style.setAttribute("data-hide-zendesk", "true");
-            style.innerHTML = `
-        #launcher, .zEWidget-launcher, iframe[title="Zendesk Chat widget"], iframe[id*="launcher"] {
-          display: none !important;
-          visibility: hidden !important;
-          opacity: 0 !important;
-          pointer-events: none !important;
-        }
-      `;
-            document.head.appendChild(style);
-        }, 500);
-        return () => {
-            clearTimeout(t);
-            if (typeof window !== "undefined" && window.zE) {
-                window.zE("webWidget", "show");
-            }
-            const injected = document.querySelector('style[data-hide-zendesk="true"]');
-            if (injected) injected.remove();
-        };
-    }, []);
-
 
     return (
         <>

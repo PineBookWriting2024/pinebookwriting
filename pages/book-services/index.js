@@ -13,9 +13,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Services_Banner_Form from "../components/Services_Banner_Form";
 import { MdKeyboardDoubleArrowRight } from 'react-icons/md';
 import ServicesBook_Popup from "../components/ServicesBook_Popup";
-import LazyYouTube from "../components/LazyYouTube"; 
+import LazyYouTube from "../components/LazyYouTube";
 import SnowFall from "../components/SnowFall"; // Import the SnowFall component
 
+import { faFacebook, faInstagram, faLinkedin, faTwitter, faXTwitter, faYoutube } from "@fortawesome/free-brands-svg-icons";
 
 
 
@@ -255,7 +256,6 @@ export default function Home({ isOpen, onClose }) {
     const swiperRef = useRef();
 
 
-      <Script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=6ad75b0f-d085-4cae-9a7a-48abeb69b973"> </Script>
 
     return (
 
@@ -292,7 +292,7 @@ export default function Home({ isOpen, onClose }) {
                 </div>
             </header>
             {/* <SnowFall /> */}
-            
+
             <section className="bg-[url(/images/banne-main.jpg)] bg-no-repeat bg-cover overflow-hidden md:py-24 py-10">
                 <div className="container mx-auto width-container">
                     <div className="grid md:grid-cols-2 gap-4 md:gap-8 xl:gap-20 md:items-center">
@@ -660,7 +660,7 @@ export default function Home({ isOpen, onClose }) {
                         spaceBetween={20}
                         breakpoints={{
                             320: { slidesPerView: 2 },
-                            480: { slidesPerView: 2 }, 
+                            480: { slidesPerView: 2 },
                             640: { slidesPerView: 2 },
                             768: { slidesPerView: 3 },
                             1024: { slidesPerView: 4 },
@@ -729,7 +729,7 @@ export default function Home({ isOpen, onClose }) {
                                 <h2 className="font-bold text-xl text-black mb-2">{videoClient.clientname}</h2>
 
                                 <div className="py-4">
-                                      <LazyYouTube videoId={videoId} />
+                                    <LazyYouTube videoId={videoId} />
                                 </div>
 
 
@@ -911,6 +911,22 @@ export default function Home({ isOpen, onClose }) {
               Brand By
             </h2>
             <Image src={"/images/brand-writing-logo.png"} width={200} height={200}></Image> */}
+
+                            <div className="mt-4">
+                                <Link href="https://www.facebook.com/pinebookwriting0" target="_blank">
+                                    <FontAwesomeIcon icon={faFacebook} className="me-3" />
+                                </Link>
+                                {/* <Link href=""><FontAwesomeIcon icon={faLinkedin} className="me-3" /></Link> */}
+                                <Link href="https://www.instagram.com/pinebookwriting/" target="_blank">
+                                    <FontAwesomeIcon icon={faInstagram} className="me-3" />
+                                </Link>
+                                <Link href="https://x.com/pinebookwriting" target="_blank">
+                                    <FontAwesomeIcon icon={faXTwitter} className="me-3" />
+                                </Link>
+                                <Link href="https://www.youtube.com/@Pinebookwriting" target="_blank">
+                                    <FontAwesomeIcon icon={faYoutube} className="me-3" />
+                                </Link>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -942,6 +958,7 @@ export default function Home({ isOpen, onClose }) {
                 </div>
             </footer>
 
+            <Script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=6ad75b0f-d085-4cae-9a7a-48abeb69b973"> </Script>
 
 
             <ServicesBook_Popup isOpen={isModalOpen} onClose={closeModal} />

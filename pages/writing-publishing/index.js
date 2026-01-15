@@ -11,7 +11,7 @@ import HeroForm from "../components/herform";
 import HeroFormBookOffer from "../components/HerformBookOffer";
 import Footer from "../components/Footer";
 import BrandContact from "../components/BrandContactForm";
-
+import Script from "next/script";
 
 const handleOpenChat = () => {
   window.zE && window.zE('webWidget', 'open');

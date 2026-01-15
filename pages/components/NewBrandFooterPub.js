@@ -5,7 +5,7 @@ import { faArrowRight, faArrowLeft, faPlusCircle, faCheckCircle, faMinusCircle, 
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebook, faInstagram, faLinkedin, faTwitter, faXTwitter, faYoutube } from "@fortawesome/free-brands-svg-icons";
-import Script from 'next/script';
+import Script from "next/script";
 
 export default function NewBrandFooter() {
     const [isVisible, setIsVisible] = useState(false);
@@ -35,7 +35,6 @@ export default function NewBrandFooter() {
         };
     }, []);
 
-      <Script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=6ad75b0f-d085-4cae-9a7a-48abeb69b973"> </Script>
 
     return (
         <>
@@ -233,6 +232,9 @@ export default function NewBrandFooter() {
                 )}
             </div>
             {/* <WhatsAppChat /> */}
+
+                  <Script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=6ad75b0f-d085-4cae-9a7a-48abeb69b973"> </Script>
+
         </>
     );
 }

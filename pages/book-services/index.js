@@ -19,6 +19,44 @@ import SnowFall from "../components/SnowFall"; // Import the SnowFall component
 import { faFacebook, faInstagram, faLinkedin, faTwitter, faXTwitter, faYoutube } from "@fortawesome/free-brands-svg-icons";
 
 
+const clientLogos = [
+    {
+        href: "https://goo.gl/maps/D6kJBoXBJYwcZWkP7",
+        src: "/images/Google Partner.png",
+        alt: "LOGO",
+        width: 130,
+        height: 60
+    },
+    {
+        href: "https://www.bbb.org/ca/on/richmond-hill/profile/publishers-book/pine-book-writing-inc-0107-1406919",
+        src: "/images/BBB.png",
+        alt: "LOGO",
+        width: 130,
+        height: 60
+    },
+    {
+        href: "https://www.trustpilot.com/review/pinebookwriting.com",
+        src: "/images/s3.png",
+        alt: "LOGO",
+        width: 130,
+        height: 60
+    },
+    {
+        href: "https://www.yelp.com/biz/pine-book-writing-richmond-hill",
+        src: "/images/s4.png",
+        alt: "LOGO",
+        width: 130,
+        height: 60
+    },
+    {
+        href: "https://clutch.co/profile/pine-book-writing",
+        src: "/images/s6.png",
+        alt: "LOGO",
+        width: 130,
+        height: 60
+    }
+];
+
 
 // import { Swiper, SwiperSlide } from 'swiper/react';
 // import { Autoplay } from 'swiper/modules';
@@ -301,13 +339,28 @@ export default function Home({ isOpen, onClose }) {
                             <p className="text-gray-300 mb-10 font-poppins">Have a story idea and want to turn it into a most-loved book? Pine Book Writing provides professional book writing services to assist both new and experienced authors. Whatever genre you want to work on, we help create your book with great care and creativity. Our team of expert writers is ready to help you write while maintaining your unique voice. Contact our experts today!</p>
                             <Link href="javascript:void(0)" className="border-2 rounded-2xl  text-white px-6 mr-4 py-3 hover:bg-[#1a8273] transition duration-300" onClick={() => openModal()}>Get a Quote</Link>
                             <Link href="javascript:void(0)" className="border-2 rounded-2xl  text-white md:px-6 px-2 py-3 hover:bg-[#1a8273] transition duration-300" onClick={() => openModal()}>Free Consulation</Link>
-                            <div className="bage-images flex items-center md:justify-between flex-wrap gap-y-4 gap-x-4 mt-10 ">
+                            {/* <div className="bage-images flex items-center md:justify-between flex-wrap gap-y-4 gap-x-4 mt-10 ">
                                 <Image src="/images/Google Partner.png" alt="Book Publishing" width={130} height={100} className="mr-4" />
                                 <Image src="/images/BBB.png" alt="Book Publishing" width={130} height={100} className="mr-4" />
                                 <Image src="/images/s3.png" alt="Book Publishing" width={130} height={130} className="mr-4" />
                                 <Image src="/images/s4.png" alt="Book Publishing" width={100} height={130} className="" />
                                 <Image src="/images/s6.png" alt="Book Publishing" width={100} height={100} className="" />
+                            </div> */}
+
+
+                            <div className="bage-images flex items-center md:justify-between flex-wrap gap-y-4 gap-x-4 mt-10 ">
+                                {clientLogos.map((logo, index) => (
+                                    <Link key={index} href={logo.href} target="_blank">
+                                        <Image
+                                            alt={logo.alt}
+                                            src={logo.src}
+                                            width={logo.width}
+                                            height={logo.height}
+                                        />
+                                    </Link>
+                                ))}
                             </div>
+
                         </div>
                         <div className="">
 

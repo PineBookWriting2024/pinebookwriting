@@ -1426,3 +1426,8 @@ section.brand-main-banner-video {
   0% { transform: translateY(-10px); }
   100% { transform: translateY(100vh); }
 } */
+
+
+.brand-footer svg {
+    width: 16px;
+}

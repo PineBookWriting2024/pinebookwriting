@@ -1,14 +1,17 @@
 import Link from "next/link";
 import Image from "next/image";
-import { faArrowRight, faArrowLeft, faPlusCircle, faCheckCircle, faMinusCircle, faPhone, faEnvelope, faMapLocation } from "@fortawesome/free-solid-svg-icons";
+import { faArrowRight, faArrowLeft, faPlusCircle, faCheckCircle, faMinusCircle, faPhone, faEnvelope, faMapLocation,  } from "@fortawesome/free-solid-svg-icons";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+import { faFacebook, faInstagram, faLinkedin, faTwitter, faXTwitter, faYoutube } from "@fortawesome/free-brands-svg-icons";
+
+
 import Script from 'next/script';
 
 
 export default function Footer() {
-        <Script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=6ad75b0f-d085-4cae-9a7a-48abeb69b973"> </Script>
-  
+
   return (
     <footer className="text-white body-font">
       <div className="container px-5 pt-10 pb-10 md:pt-20 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col position-relative">
@@ -17,7 +20,7 @@ export default function Footer() {
             <Image src={"/images/writing-logo.png"} width={250} height={200} className="mb-2"></Image>
           </a>
           <p className="mt-2 text-sm text-white leading-7">
-          Pine Book Writing is a team of passionate book writers and publishers capable of helping authors write delightful stories and publish their work on popular online platforms. Our streamlined process and dedicated support make our services a realistic and rewarding experience for any author.
+            Pine Book Writing is a team of passionate book writers and publishers capable of helping authors write delightful stories and publish their work on popular online platforms. Our streamlined process and dedicated support make our services a realistic and rewarding experience for any author.
           </p>
         </div>
 
@@ -60,6 +63,7 @@ export default function Footer() {
               </li>
             </nav>
           </div>
+
           <div className="lg:w-1/2 md:w-1/2 w-full px-4 payment-card">
             <h2 className="text-white tracking-widest text-2xl mb-3 font-poppins">
               Accepted Payment Methods
@@ -79,16 +83,36 @@ export default function Footer() {
                 src={"/images/s2.png"}
                 width={100}
                 height={150}
-              ></Image>
+              >
+
+              </Image>
               <Image src={"/images/bage5.png"} width={100} height={200}></Image>
             </div>
+
             {/* <h2 className="title-font font-medium text-white tracking-widest text-3xl mb-3 font-poppins font-bold	mt-5">
               Brand By
             </h2>
             <Image src={"/images/brand-writing-logo.png"} width={200} height={200}></Image> */}
+
+            <div className="mt-4">
+              <Link href="https://www.facebook.com/pinebookwriting0" target="_blank">
+                <FontAwesomeIcon icon={faFacebook} className="me-3" />
+              </Link>
+              {/* <Link href=""><FontAwesomeIcon icon={faLinkedin} className="me-3" /></Link> */}
+              <Link href="https://www.instagram.com/pinebookwriting/" target="_blank">
+                <FontAwesomeIcon icon={faInstagram} className="me-3" />
+              </Link>
+              <Link href="https://x.com/pinebookwriting" target="_blank">
+                <FontAwesomeIcon icon={faXTwitter} className="me-3" />
+              </Link>
+              <Link href="https://www.youtube.com/@Pinebookwriting" target="_blank">
+                <FontAwesomeIcon icon={faYoutube} className="me-3" />
+              </Link>
+            </div>
           </div>
         </div>
       </div>
+
 
       <div className="copyright-sec">
         <div className="container text-center mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
@@ -115,6 +139,8 @@ export default function Footer() {
 
         </div>
       </div>
+        <Script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=6ad75b0f-d085-4cae-9a7a-48abeb69b973"> </Script>
+
     </footer>
   );
 }

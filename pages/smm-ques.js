@@ -183,6 +183,7 @@ export default function Smm() {
                     content="Explore the real success stories and glowing feedback from our satisfied clients. See how Pine Book Writing delivers results."
                 />
                 <link rel="shortcut icon" href="/images/fav.webp" />
+                <meta name="robots" content="noindex, nofollow" />
             </Head>
             <header id="navbar" className="bg-transparent absolute top-10 left-0 flex justify-between items-center p-4 z-10">
                 <div className='max-w-screen-xl flex justify-between items-center mx-auto w-full'>

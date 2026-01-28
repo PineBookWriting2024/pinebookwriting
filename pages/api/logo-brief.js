@@ -1,4 +1,7 @@
 import nodemailer from "nodemailer";
+import PDFDocument from "pdfkit";
+import fs from "fs";
+import path from "path";
 
 const escapeHtml = (unsafe = "") =>
     String(unsafe)
@@ -9,6 +12,144 @@ const escapeHtml = (unsafe = "") =>
         .replaceAll("'", "&#039;");
 
 const listOrNA = (arr) => (Array.isArray(arr) && arr.length ? arr.join(", ") : "N/A");
+const safeFilename = (value = "logo-brief") =>
+    String(value)
+        .toLowerCase()
+        .replace(/[^a-z0-9-_]+/g, "-")
+        .replace(/-+/g, "-")
+        .replace(/^-|-$/g, "") || "logo-brief";
+
+const loadLogoBuffer = () => {
+    const logoPath = path.join(process.cwd(), "public", "brand-img", "logo.png");
+    if (!fs.existsSync(logoPath)) return null;
+    return fs.readFileSync(logoPath);
+};
+
+const buildPdfBuffer = (data) =>
+    new Promise((resolve, reject) => {
+        try {
+            const doc = new PDFDocument({ margin: 50 });
+            const chunks = [];
+            const logoBuffer = loadLogoBuffer();
+            const pageWidth = doc.page.width;
+            const pageHeight = doc.page.height;
+            const margin = 50;
+            const labelWidth = 170;
+            const rowGap = 6;
+            let rowIndex = 0;
+
+            doc.on("data", (chunk) => chunks.push(chunk));
+            doc.on("end", () => resolve(Buffer.concat(chunks)));
+            doc.on("error", reject);
+
+            const drawHeader = () => {
+                doc.save();
+                doc.rect(0, 0, pageWidth, 90).fill("#0d0f38");
+                doc.fillColor("#ffffff");
+                if (logoBuffer) {
+                    doc.image(logoBuffer, margin, 20, { fit: [140, 50], align: "left" });
+                } else {
+                    doc.fontSize(18).text("Pine Book Writing", margin, 28, { continued: false });
+                }
+                doc.fontSize(20).text("Logo Design Brief", margin + 170, 28);
+                doc.fontSize(10).fillColor("#d6d9ff").text(
+                    `Submitted: ${new Date().toLocaleDateString("en-US", {
+                        year: "numeric",
+                        month: "long",
+                        day: "numeric",
+                    })}`,
+                    margin + 170,
+                    55
+                );
+                doc.restore();
+                doc.y = 110;
+            };
+
+            const ensurePageSpace = (height) => {
+                if (doc.y + height > pageHeight - margin) {
+                    doc.addPage();
+                    drawHeader();
+                }
+            };
+
+            const addSection = (title) => {
+                ensurePageSpace(32);
+                doc.fillColor("#0d0f38").fontSize(14).text(title);
+                doc.moveDown(0.4);
+            };
+
+            const addRow = (label, value) => {
+                const sanitizedValue = value || "N/A";
+                const valueWidth = pageWidth - margin * 2 - labelWidth - 12;
+                const valueHeight = doc.heightOfString(String(sanitizedValue), { width: valueWidth });
+                const labelHeight = doc.heightOfString(String(label), { width: labelWidth });
+                const rowHeight = Math.max(valueHeight, labelHeight) + rowGap;
+
+                ensurePageSpace(rowHeight + 6);
+
+                const rowTop = doc.y;
+                doc.save();
+                doc.rect(margin - 6, rowTop - 2, pageWidth - margin * 2 + 12, rowHeight + 4)
+                    .fill(rowIndex % 2 === 0 ? "#f5f6fb" : "#ffffff");
+                doc.restore();
+
+                doc.fillColor("#1a1a1a").font("Helvetica-Bold").fontSize(11).text(label, margin, rowTop, {
+                    width: labelWidth,
+                });
+                doc.fillColor("#333333").font("Helvetica").fontSize(11).text(String(sanitizedValue), margin + labelWidth + 12, rowTop, {
+                    width: valueWidth,
+                });
+                doc.y = rowTop + rowHeight + 2;
+                rowIndex += 1;
+            };
+
+            drawHeader();
+
+            addSection("Client Details");
+            addRow("Email", data.email);
+            addRow("Exact Name for Logo", data.exactName);
+            addRow("Company/Book Name", data.companyName);
+            addRow("Industry/Genre", data.industry);
+            addRow("Slogan/Tagline", data.slogan);
+
+            addSection("Brand References");
+            addRow("Logos They Like", data.likesLinks);
+            addRow("Logos They Don't Like", data.dislikesLinks);
+            addRow("Competitors", data.competitors);
+            addRow("Website", data.website);
+
+            addSection("Design Preferences");
+            addRow("Logo Style", data.logoStyle);
+            addRow("Look and Feel", data.lookAndFeel);
+            addRow("Preferred Colors", listOrNA(data.colors));
+            if (data.colorOther) addRow("Color Other", data.colorOther);
+            addRow("Font Style", data.fontStyle);
+            if (data.fontOther) addRow("Font Other", data.fontOther);
+
+            addSection("Usage & Notes");
+            addRow("Usage Context", listOrNA(data.usageContext));
+            if (data.usageOther) addRow("Usage Other", data.usageOther);
+            addRow("Social Media Sizes Needed", data.socialMediaSizes);
+            addRow("Description", data.description);
+            addRow("Additional Notes", data.additionalNotes);
+            addRow("Send Copy to Client", data.sendCopy ? "Yes" : "No");
+
+            addSection("Submission Metadata");
+            if (data.userIP) addRow("IP Address", data.userIP);
+            if (data.userCity || data.userRegion || data.userCountry) {
+                addRow(
+                    "Location",
+                    [data.userCity, data.userRegion, data.userCountry].filter(Boolean).join(", ")
+                );
+            }
+            if (data.referringPage) addRow("Referrer", data.referringPage);
+            if (data.currentPage) addRow("Current Page", data.currentPage);
+
+            doc.end();
+        } catch (err) {
+            reject(err);
+        }
+    });
 
 export default async function handler(req, res) {
     if (req.method !== "POST") return res.status(405).json({ success: false, message: "Method not allowed" });
@@ -58,6 +199,38 @@ export default async function handler(req, res) {
                 pass: "owwwkmrznsnddjtm",
             },
         });
+
+        const pdfBuffer = await buildPdfBuffer({
+            email,
+            exactName,
+            slogan,
+            companyName,
+            industry,
+            likesLinks,
+            dislikesLinks,
+            competitors,
+            description,
+            website,
+            socialMediaSizes,
+            logoStyle,
+            usageContext,
+            usageOther,
+            colors,
+            colorOther,
+            fontStyle,
+            fontOther,
+            lookAndFeel,
+            additionalNotes,
+            sendCopy,
+            referringPage,
+            currentPage,
+            userIP,
+            userCity,
+            userRegion,
+            userCountry,
+        });
+
+        const pdfFilename = `${safeFilename(exactName || companyName)}-logo-brief.pdf`;
 
         // Admin email
         const adminHtmlContent = `
@@ -279,6 +452,13 @@ export default async function handler(req, res) {
             to: "pinebookwriting@gmail.com",
             subject: `Logo Design Brief - ${exactName || companyName}`,
             html: adminHtmlContent,
+            attachments: [
+                {
+                    filename: pdfFilename,
+                    content: pdfBuffer,
+                    contentType: "application/pdf",
+                },
+            ],
         });
 
         // Send user email (if requested or always)

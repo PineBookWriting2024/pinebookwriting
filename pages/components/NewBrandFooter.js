@@ -4,7 +4,7 @@ import Image from "next/image";
 import { faArrowRight, faArrowLeft, faPlusCircle, faCheckCircle, faMinusCircle, faPhone, faEnvelope, faLocationArrow, faLocation, faMapLocation } from "@fortawesome/free-solid-svg-icons";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFacebook, faInstagram, faLinkedin, faTwitter, faXTwitter, faYoutube } from "@fortawesome/free-brands-svg-icons";
+import { faFacebook, faInstagram, faLinkedin, faThreads, faTwitter, faXTwitter, faYoutube } from "@fortawesome/free-brands-svg-icons";
 import Script from "next/script";
 
 
@@ -277,6 +277,9 @@ export default function NewBrandFooter() {
                                 <Link href="https://www.youtube.com/@Pinebookwriting" target="_blank">
                                     <FontAwesomeIcon icon={faYoutube} className="me-3" />
                                 </Link>
+                                <Link href="https://www.threads.com/@pinebookwriting" target="_blank">
+                                    <FontAwesomeIcon icon={faThreads} className="me-3" />
+                                </Link>
                             </div>
                          
                     </div>
@@ -350,6 +353,9 @@ export default function NewBrandFooter() {
                 </div>
                 <div>
                     <a href="https://www.linkedin.com/company/pine-book-writing-inc" class="fixed-tumblr" target="_blank"><FontAwesomeIcon icon={faLinkedin} color="#0A66C2" width={20} /><span>linkedin</span></a>
+                </div>
+                <div>
+                    <a href="https://www.threads.com/@pinebookwriting" class="fixed-tumblr" target="_blank"><FontAwesomeIcon icon={faThreads} color="#14171A" width={20} /><span>Threads</span></a>
                 </div>
             </div>
             {/* <WhatsAppChat /> */}

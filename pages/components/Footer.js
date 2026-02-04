@@ -4,7 +4,7 @@ import { faArrowRight, faArrowLeft, faPlusCircle, faCheckCircle, faMinusCircle, 
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import { faFacebook, faInstagram, faLinkedin, faTwitter, faXTwitter, faYoutube } from "@fortawesome/free-brands-svg-icons";
+import { faFacebook, faInstagram, faLinkedin, faThreads, faTwitter, faXTwitter, faYoutube } from "@fortawesome/free-brands-svg-icons";
 
 
 import Script from 'next/script';
@@ -107,6 +107,9 @@ export default function Footer() {
               </Link>
               <Link href="https://www.youtube.com/@Pinebookwriting" target="_blank">
                 <FontAwesomeIcon icon={faYoutube} className="me-3" />
+              </Link>
+              <Link href="https://www.threads.com/@pinebookwriting" target="_blank">
+                <FontAwesomeIcon icon={faThreads} className="me-3" />
               </Link>
             </div>
           </div>

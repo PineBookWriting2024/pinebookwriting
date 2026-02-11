@@ -55,7 +55,7 @@ export default function SeoCopywriting () {
                 <BrandTopBar/>
             <BrandNavbar />
             <BrandPrimaryHeader
-                            photo_banner={"/images/Seo-Content/1.webp"}
+                            photo_banner={"/images/Seo-content/1.webp"}
                 title="Expert SEO Content Writing Services"
                 desc="If you are a business website owner, an SEO specialist, or even a marketing agency looking for professional SEO-optimized content writing services, you’ve reached the right place. At Pine Book Writing we handle all aspects of SEO content writing, from keyword research and content strategy planning to writing; we’re with you every step of the way. "
             />
@@ -75,7 +75,7 @@ export default function SeoCopywriting () {
                         <p className="pt-3 text-xl text-left font-poppins">At Pine Book Writing, our expertise lies in various sectors, including website content, blog posts, articles, product descriptions, book descriptions, and more. Our team of SEO content writers does in-depth research, discover relevant and useful keywords, and write the content while considering being in your audience's shoes. This approach leads your website or content to be ranked higher.</p>
                     </div>
                     <div className="flex justify-center text-center basis-1/2 abt-pic md:justify-center">
-                        <Image src={"/images/Seo-Content/ghost-pic.webp"} width={470} height={300}
+                        <Image src={"/images/Seo-content/ghost-pic.webp"} width={470} height={300}
                             loading="lazy"
                             alt="about img"
                             className="aos-init aos-animate"
@@ -96,7 +96,7 @@ export default function SeoCopywriting () {
                         
                                             <div className="relative z-10 justify-center hidden md:col-span-3 md:flex md:justify-start">
                                                 <Image
-                                                    src="/images/Seo-Content/cta-book-12.webp"
+                                                    src="/images/Seo-content/cta-book-12.webp"
                                                     alt="Book 1"
                                                     className="absolute l-book -top-20 md:-top-36"
                                                     height={600}
@@ -216,7 +216,7 @@ export default function SeoCopywriting () {
                 <div className="relative left-0 px-12 py-10 mt-0 mb-8 brand-choose-us-section ms-auto md:left-52 md:px-20 md:mt-14 " >
                     <div className="flex flex-col items-center md:flex-row" data-aos="fade-right" data-aos-delay="0" data-aos-duration="500">
                         <div className="basis-1/3 brand-choose-us-vector">
-                        <Image src={"/images/Seo-Content/WhyChooseUs2.webp"} width={500} height={500}
+                        <Image src={"/images/Seo-content/WhyChooseUs2.webp"} width={500} height={500}
                                 loading="lazy"
                                 alt="about img"
                                 className="brand-about-img"

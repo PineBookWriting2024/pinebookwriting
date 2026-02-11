@@ -56,7 +56,7 @@ export default function ResumeWriting() {
                 <BrandTopBar/>
             <BrandNavbar />
             <BrandPrimaryHeader
-                photo_banner={"/images/Resume-Writing/1.webp"}
+                photo_banner={"/images/Resume-writing/1.webp"}
                 title="Professional Resume Writing Services"
                 desc="Is your current resume holding you back? Or are you looking for someone who is an expert in resume writing to portray your true potential to employers? If yes, then you're in the right place. We have a dedicated team of resume writers (mostly from human resource backgrounds) familiar with all the do’s and don’ts while writing a resume. Contact us to learn more!"
             />
@@ -76,7 +76,7 @@ export default function ResumeWriting() {
                         <p className="pt-3 text-xl text-left font-poppins">At Pine Book Writing, our team of resume writers always stays updated about the saturated job market and knows what to consider while writing a noteworthy resume. We utilize our immense expertise to highlight your unique competencies and achievements and will help you showcase your experiences in the best possible light by making your resume match any specific job requirements. </p>
                     </div>
                     <div className="flex justify-center text-center basis-1/2 abt-pic md:justify-center">
-                        <Image src={"/images/Resume-Writing/ghost-pic.webp"} width={470} height={300}
+                        <Image src={"/images/Resume-writing/ghost-pic.webp"} width={470} height={300}
                             loading="lazy"
                             alt="about img"
                             className="aos-init aos-animate"
@@ -96,7 +96,7 @@ export default function ResumeWriting() {
             
                                 <div className="relative z-10 justify-center hidden md:col-span-3 md:flex md:justify-start">
                                     <Image
-                                        src="/images/Resume-Writing/cta-book-12.webp"
+                                        src="/images/Resume-writing/cta-book-12.webp"
                                         alt="Book 1"
                                         className="absolute l-book -top-20 md:-top-36"
                                         height={600}
@@ -216,7 +216,8 @@ export default function ResumeWriting() {
                 <div className="relative left-0 px-12 py-10 mt-8 mb-8 brand-choose-us-section ms-auto md:left-52 md:px-20 md:mt-14 " >
                     <div className="flex flex-col items-center md:flex-row" data-aos="fade-right" data-aos-delay="0" data-aos-duration="500">
                         <div className="basis-1/3 brand-choose-us-vector">
-                        <Image src={"/images/Resume-Writing/WhyChooseUs2.webp"} width={500} height={500}
+                    
+                        <Image src={"/images/Resume-writing/WhyChooseUs2.webp"} width={500} height={500}
                                 loading="lazy"
                                 alt="about img"
                                 className="brand-about-img"

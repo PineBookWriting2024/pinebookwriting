@@ -54,28 +54,28 @@ export default function BookEditing() {
             <BrandTopBar />
             <BrandNavbar />
             <BrandPrimaryHeader
-                photo_banner={"/brand-img/Fantasy-Writing-services.png"}
+                photo_banner={"/images/Fantasy-Writing-Services/1.webp"}
                 title="Fantasy Writing Services – Helping Authors Build a Magical World"
                 desc="If you’re looking for expert assistance while working on the fantasy book genre, you’re at the right place. Pine Book Writing offers professional fantasy writing services for experienced or aspiring authors to let their imaginations soar. Contact us today!"
             />
             <BrandBannerLogo />
 
-            <div className="container mx-auto max-w-screen-xl overflow-hidden pt-0 md:py-20">
-                <div className="flex justify-center items-center flex-col md:flex-row lg:flex-row px-8 md:px-0 py-10 md:py-0">
+            <div className="container max-w-screen-xl pt-0 mx-auto overflow-hidden md:py-20">
+                <div className="flex flex-col items-center justify-center px-8 py-10 md:flex-row lg:flex-row md:px-0 md:py-0">
                     <div className="basis-1/2 abt-txt m1-h p1 aos-init aos-animate" data-aos="fade-right" data-aos-duration="1000">
-                    <h2 className="font-poppins text-3xl md:text-4xl uppercase font-bold">Pine Book Writing – Your Go-to Fantasy Writing Service</h2>
+                    <h2 className="text-3xl font-bold uppercase font-poppins md:text-4xl">Pine Book Writing – Your Go-to Fantasy Writing Service</h2>
 
-                        <h2 className="font-poppins text-2xl md:text-3xl uppercase">
+                        <h2 className="text-2xl uppercase font-poppins md:text-3xl">
                         Create Wonder with Every Word
                         </h2>
                        
-                        <p className="font-poppins text-xl text-left pt-3">
+                        <p className="pt-3 text-xl text-left font-poppins">
                         The fantasy genre requires more than imagination. It requires consistent experience to create fascinating characters and a well-crafted magical world. In this journey, Pine Book Writing offers dedicated fantasy writing services for those who want to express their dreams and creative ideas and create their own imaginative worlds. </p>
 
-                        <p className="font-poppins text-xl text-left pt-3">Our experienced fantasy writers can help your magical worlds filled with danger, wonder, and meaningful context throughout the story. You’re invited to hire our expert professionals, whether you are working on high fantasy, dark fantasy, or modern magic stories. No matter whether you’re a fresh writer or an experienced one, we’re here to serve our decade-long expertise with you to help you create something that makes your people remember you and your work!</p>
+                        <p className="pt-3 text-xl text-left font-poppins">Our experienced fantasy writers can help your magical worlds filled with danger, wonder, and meaningful context throughout the story. You’re invited to hire our expert professionals, whether you are working on high fantasy, dark fantasy, or modern magic stories. No matter whether you’re a fresh writer or an experienced one, we’re here to serve our decade-long expertise with you to help you create something that makes your people remember you and your work!</p>
                     </div>
-                    <div className="basis-1/2 abt-pic text-center flex justify-center md:justify-center">
-                        <Image src={"/brand-img/ghost-pic.webp"} width={470} height={300}
+                    <div className="flex justify-center text-center basis-1/2 abt-pic md:justify-center">
+                        <Image src={"/images/Fantasy-Writing-Services/ghost-pic.webp"} width={470} height={300}
                             loading="lazy"
                             alt="about img"
                             className="aos-init aos-animate"
@@ -83,121 +83,125 @@ export default function BookEditing() {
                         />
                     </div>
                 </div>
-                {/* <p className="font-poppins text-xl text-justify	px-10 md:px-0" data-aos="fade-right">
+                {/* <p className="px-10 text-xl text-justify font-poppins md:px-0" data-aos="fade-right">
                     Working with a professional editor also gives authors the chance to learn and grow, preparing them for future writing projects. At Pine Book Writing, we support this learning process, helping authors develop their skills and reach their full potential.
                 </p> */}
             </div>
 
-            <section className="ser-cta-banner bg-no-repeat bg-cover bg-center text-white relative overflow-visible py-14 md:py-0"
+            <section className="relative overflow-visible text-white bg-center bg-no-repeat bg-cover ser-cta-banner py-14 md:py-0"
                             style={{ backgroundImage: `url(/brand-img/bg-banner.png)` }}>
-                            <div className="grid grid-cols-1 md:grid-cols-12 items-center gap-4 max-w-8xl mx-auto relative ">
-            
-                                <div className="md:col-span-3 hidden md:flex justify-center md:justify-start relative z-10">
-                                    <Image
-                                        src="/brand-img/cta-book-12.png"
-                                        alt="Book 1"
-                                        className="l-book absolute -top-20 md:-top-48 left-36"
-                                        height={300}
-                                        width={400}
-                                    />
-                                </div>
-            
-                                <div className="md:col-span-6 text-center px-4">
-                                    <h2 className="font-poppins text-2xl text-[#98caa9] font-semibold md:text-3xl uppercase">
-                                        Breathe Your Imaginations - Acquire Expert Fantasy Writing Service 
-                                    </h2>
-                                    <p className="text-base md:text-lg py-4">If yes, then why wait? At Pine Book Writing, we’re curious to know your fantasy book idea and help you craft your next best-selling!
-                                    </p>
-            
-                                    <div className="cta-btns flex flex-col sm:flex-row items-center gap-4 justify-center">
-                                        <CTAButton />
-            
-            
-                                        <a
-                                            href="tel:(866) 841-7463"
-                                            className="text-white flex items-center gap-2">
-                                            <FaPhoneVolume className="inline" /> (866) 841-7463
-                                        </a>
-            
-                                        <a
-                                            href={'javascript:;'}
-                                            className="bg-transparent text-[#fff] px-5 py-2 border border-white
-                                                                                                                                    rounded-full flex items-center gap-2 hover:bg-gray-200 hover:text-black cta-btn-1 transition" onClick={handleOpenChat}>
-                                            Live Chat
-                                        </a>
-                                    </div>
-                                </div>
-            
-                                <div className="md:col-span-3 hidden md:flex justify-center md:justify-end">
-                                    <Image
-                                        src="/brand-img/type.png"
-                                        alt="Typewriter"
-                                        className="max-h-[300px] w-auto"
-                                        height={400}
-                                        width={400}
-                                    />
-                                </div>
-                            </div>
+                            <div className="relative grid items-center grid-cols-1 gap-6 mx-auto md:grid-cols-12 max-w-8xl">
+
+  {/* Left Image */}
+  <div className="flex justify-center md:col-span-3 md:justify-start">
+    <Image
+      src="/images/Fantasy-Writing-Services/cta-book-12.webp"
+      alt="Book 1"
+      height={300}
+      width={300}
+      className="w-auto h-auto"
+    />
+  </div>
+
+  {/* Center Content */}
+  <div className="px-4 text-center md:col-span-6">
+    <h2 className="font-poppins text-2xl md:text-3xl text-[#98caa9] font-semibold uppercase">
+      Breathe Your Imaginations - Acquire Expert Fantasy Writing Service
+    </h2>
+
+    <p className="py-4 text-base md:text-lg">
+      If yes, then why wait? At Pine Book Writing, we’re curious to know your fantasy book idea and help you craft your next best-selling!
+    </p>
+
+    <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
+      <CTAButton />
+
+      <a href="tel:(866) 841-7463" className="flex items-center gap-2 text-white">
+        <FaPhoneVolume /> (866) 841-7463
+      </a>
+
+      <button
+        onClick={handleOpenChat}
+        className="px-5 py-2 text-white transition bg-transparent border border-white rounded-full hover:bg-gray-200 hover:text-black"
+      >
+        Live Chat
+      </button>
+    </div>
+  </div>
+
+  {/* Right Image */}
+  <div className="flex justify-center md:col-span-3 md:justify-end">
+    <Image
+      src="/brand-img/type.png"
+      alt="Typewriter"
+      height={300}
+      width={300}
+      className="w-auto h-auto"
+    />
+  </div>
+
+</div>
+
                         </section>
 
             {/* inner process section start */}
-             <section className="brand-process mx-auto relative pt-20 text-center flex justify-center mb-12 overflow-hidden">
+             <section className="relative flex justify-center pt-20 mx-auto mb-12 overflow-hidden text-center brand-process">
                 <div className="max-w-screen-xl">
-                    <div className="text-center mb-6">
+                    <div className="mb-6 text-center">
                         <h3 className="text-2xl text-black font-poppins">Our Service Workflow</h3>
-                        <h2 className="font-poppins text-3xl md:text-4xl text-black font-bold" data-aos="zoom-out-down">6-Step Process of Our Ghostwriting Services</h2>
+                        <h2 className="text-3xl font-bold text-black font-poppins md:text-4xl" data-aos="zoom-out-down">6-Step Process of Our Ghostwriting Services</h2>
                     </div>
 
-                    <div className="grid md:grid-cols-3 gap-6 mb-6">
+                    <div className="grid gap-6 mb-6 md:grid-cols-3">
 
                         <div className="flex flex-row " data-aos="fade-left">
-                            <div className="brand-process-content text-left flex-col px-6 py-10">
+                            <div className="flex-col px-6 py-10 text-left brand-process-content">
                                 <span className="num-span"><b>01</b></span>
-                                <h2 className="font-poppins text-2xl text-white pro-h">Project Manager Assigning & Questionnaire</h2>
+                                <h2 className="text-2xl text-white font-poppins pro-h">Project Manager Assigning & Questionnaire</h2>
                                 <p className="">We begin our process by assigning a dedicated project manager and a questionnaire to understand your writing requirements.</p>
                             </div>
                         </div>
 
                         <div className="flex flex-row" data-aos="fade-left">
-                        <div className="brand-process-content text-left flex-col px-6 py-10">
+                        <div className="flex-col px-6 py-10 text-left brand-process-content">
                         <span className="num-span"><b>02</b></span>
-                                <h2 className="font-poppins text-2xl text-white pro-h">Research & Outlining</h2>
+                                <h2 className="text-2xl text-white font-poppins pro-h">Research & Outlining</h2>
                                 <p className="">Then, our team of professionals will conduct in-depth research, create a content outline, and send it to you for your approval.</p>
                             </div>
                         </div>
 
                         <div className="flex flex-row" data-aos="fade-left">
-                        <div className="brand-process-content text-left flex-col px-6 py-10">
+                        <div className="flex-col px-6 py-10 text-left brand-process-content">
                         <span className="num-span"><b>03</b></span>
-                                <h2 className="font-poppins text-2xl text-white pro-h">Interview Session with Writer</h2>
+                                <h2 className="text-2xl text-white font-poppins pro-h">Interview Session with Writer</h2>
                                 <p className="">After the outline approval, we arrange an interview session with our assigned writer so that you can discuss your vision, tone, and writing style.</p>
                             </div>
                         </div>
                         
                     </div>
 
-                    <div className="grid md:grid-cols-3 gap-6 mb-6" >
+                    <div className="grid gap-6 mb-6 md:grid-cols-3" >
 
                         <div className="flex flex-row " data-aos="fade-left">
-                        <div className="brand-process-content text-left flex-col px-6 py-10">
+                        <div className="flex-col px-6 py-10 text-left brand-process-content">
                         <span className="num-span"><b>04</b></span>
-                                <h2 className="font-poppins text-2xl text-white pro-h">Weekly Deliveries & Revisions</h2>
+                                <h2 className="text-2xl text-white font-poppins pro-h">Weekly Deliveries & Revisions</h2>
                                 <p className="">We provide deliveries weekly and welcome your feedback throughout the process. We also offer multiple revisions to ensure your complete satisfaction.</p>
                             </div>
                         </div>
 
                         <div className="flex flex-row" data-aos="fade-left">
-                        <div className="brand-process-content text-left flex-col px-6 py-10">
+                        <div className="flex-col px-6 py-10 text-left brand-process-content">
                         <span className="num-span"><b>05</b></span>
-                                <h2 className="font-poppins text-2xl text-white pro-h">Formatting & Layout Adjustment</h2>
+                                <h2 className="text-2xl text-white font-poppins pro-h">Formatting & Layout Adjustment</h2>
                                 <p className="">Once our ghostwriting work is finalized, we will format the manuscript according to your preferred style and make the necessary layout adjustments.</p>
                             </div>
                         </div>
 
                         <div className="flex flex-row" data-aos="fade-left">
-                        <div className="brand-process-content text-left flex-col px-6 py-10">
+                        <div className="flex-col px-6 py-10 text-left brand-process-content">
                         <span className="num-span"><b>06</b></span>
-                                <h2 className="font-poppins text-2xl text-white pro-h">Final Delivery</h2>
+                                <h2 className="text-2xl text-white font-poppins pro-h">Final Delivery</h2>
                                 <p className="">In the last step, we will deliver the finalized and polished manuscript to you in your desired format and the time we've discussed.</p>
                             </div>
                         </div>
@@ -208,48 +212,48 @@ export default function BookEditing() {
             </section>
             
             <section className="overflow-hidden" >
-                <div className="brand-choose-us-section ms-auto relative left-0 md:left-52 px-12 md:px-20 md:mt-16 mb-8 py-10 " >
-                    <div className="flex items-center flex-col md:flex-row" data-aos="fade-right" data-aos-delay="0" data-aos-duration="500">
+                <div className="relative left-0 px-12 py-10 mb-8 brand-choose-us-section ms-auto md:left-52 md:px-20 md:mt-16 " >
+                    <div className="flex flex-col items-center md:flex-row" data-aos="fade-right" data-aos-delay="0" data-aos-duration="500">
                         <div className="basis-1/3 brand-choose-us-vector">
-                        <Image src={"/brand-img/Why Choose Us 2.png"} width={500} height={500}
+                        <Image src={"/images/Fantasy-Writing-Services/WhyChooseUs2.webp"} width={500} height={500}
                                 loading="lazy"
                                 alt="about img"
                                 className="brand-about-img"
                             />
                         </div>
                         <div className="basis-1/2 md:ml-20">
-                            <h2 className="text-white font-poppins text-2xl md:text-4xl uppercase mt-10 md:mt-0 font-bold" data-aos="zoom-in-left" data-aos-delay="100">Why Choose Our Ghostwriting Services?</h2>
-                            <p className="text-white mt-2">Delight your potential readers with Pine Book Writing. We have a highly skilled team of ghostwriters with a proven record of working for globally-recognized authors. Experience quality, transparency & confidentiality.</p>
-                            <div className="flex flex-col md:flex-row gap-2 md:gap-10 mt-6">
+                            <h2 className="mt-10 text-2xl font-bold text-white uppercase font-poppins md:text-4xl md:mt-0" data-aos="zoom-in-left" data-aos-delay="100">Why Choose Our Ghostwriting Services?</h2>
+                            <p className="mt-2 text-white">Delight your potential readers with Pine Book Writing. We have a highly skilled team of ghostwriters with a proven record of working for globally-recognized authors. Experience quality, transparency & confidentiality.</p>
+                            <div className="flex flex-col gap-2 mt-6 md:flex-row md:gap-10">
                                 <ul>
-                                    <li className="font-poppins flex items-center gap-3 text-sm mb-2"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Expert Team of Writers </li>
-                                    <li className="font-poppins flex items-center gap-3 text-sm mb-2"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Guaranteed Confidentiality </li>
-                                    <li className="font-poppins flex items-center gap-3 text-sm"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Timely Delivery </li>
+                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Expert Team of Writers </li>
+                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Guaranteed Confidentiality </li>
+                                    <li className="flex items-center gap-3 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Timely Delivery </li>
                                 </ul>
                                 <ul>
-                                    <li className="font-poppins flex items-center gap-3 text-sm mb-2"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Affordable Writing Services</li>
-                                    <li className="font-poppins flex items-center gap-3 text-sm mb-2"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Deep Research</li>
-                                    <li className="font-poppins flex items-center gap-3 text-sm"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Client Focus</li>
+                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Affordable Writing Services</li>
+                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Deep Research</li>
+                                    <li className="flex items-center gap-3 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Client Focus</li>
                                 </ul>
                             </div>
                             {/* <BrandAudioPlayer src="/brand-img/why-choose-us-voice.wav" /> */}
                             <div>
-                                <button className="brand-nav-btn-1 brand-nav-btn shadow-xl mt-10 cursor-pointer btn-f" onClick={handleOpenChat}><Link href={'javascript:;'}>Speak to our Consultant</Link></button>
-                                <button className="brand-nav-btn-1 brand-nav-btn shadow-xl mt-10 cursor-pointer btn-f md:ml-3 ml-0"><Link href="tel:+18668417463">Call Now</Link></button>
+                                <button className="mt-10 shadow-xl cursor-pointer brand-nav-btn-1 brand-nav-btn btn-f" onClick={handleOpenChat}><Link href={'javascript:;'}>Speak to our Consultant</Link></button>
+                                <button className="mt-10 ml-0 shadow-xl cursor-pointer brand-nav-btn-1 brand-nav-btn btn-f md:ml-3"><Link href="tel:+18668417463">Call Now</Link></button>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <section className="brand-testimonials-section overflow-hidden">
-                <div className="max-w-screen-xl mx-auto px-4 my-10 relative py-22">
-                    <div className="text-center mb-6">
-                        <h2 className="font-poppins text-4xl text-black uppercase mb-3 font-bold" >Frequently Asked Questions</h2>
-                        {/* <h3 className="text-xl text-black font-poppins uppercase font-bold">each Out to Us for Further Assistance.</h3> */}
+            <section className="overflow-hidden brand-testimonials-section">
+                <div className="relative max-w-screen-xl px-4 mx-auto my-10 py-22">
+                    <div className="mb-6 text-center">
+                        <h2 className="mb-3 text-4xl font-bold text-black uppercase font-poppins" >Frequently Asked Questions</h2>
+                        {/* <h3 className="text-xl font-bold text-black uppercase font-poppins">each Out to Us for Further Assistance.</h3> */}
                     </div>
                     <div className="faq-que">
-                        <div className="flex flex-col md:flex-row justify-center gap-4">
+                        <div className="flex flex-col justify-center gap-4 md:flex-row">
                             {Array.from({ length: 2 }).map((_, colIndex) => (
                                 <div key={colIndex} className="w-full max-w-screen-sm">
                                     {faqData.slice(colIndex * 3, (colIndex + 1) * 3).map((faq, index) => {
@@ -257,7 +261,7 @@ export default function BookEditing() {
                                         return (
                                             <button
                                                 key={actualIndex}
-                                                className="w-full border-b-2 border-gray-300 text-white p-6 text-left mt-0 focus:outline-none mb-4 rounded-2xl bg-color"
+                                                className="w-full p-6 mt-0 mb-4 text-left text-white border-b-2 border-gray-300 focus:outline-none rounded-2xl bg-color"
                                                 onClick={() => toggleFAQ(actualIndex)}
                                             >
                                                 <div className={`text-lg font-semibold flex justify-between ${openFAQ === actualIndex ? 'border-b border-gray-300' : 'border-0'}`}>

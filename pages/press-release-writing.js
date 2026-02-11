@@ -55,26 +55,26 @@ export default function PressRelease() {
             <BrandTopBar />
             <BrandNavbar />
             <BrandPrimaryHeader
-                photo_banner={"/brand-img/press-release-writing.png"}
+                photo_banner={"/images/Press-Release-Writing/1.webp"}
                 title="Expert Press Release Writing Services"
                 desc="Bring your brand into the media's spotlight with our professional press release writing services. From product launches and events to partnership and collaboration announcements, your company deserves notability. Contact our customer service team to learn more about our services."
             />
             <BrandBannerLogo />
 
-            <div className="container mx-auto max-w-screen-xl overflow-hidden pt-0 md:py-20">
-                <div className="flex justify-center items-center flex-col md:flex-row lg:flex-row px-10 md:px-0 py-10 md:py-0">
+            <div className="container max-w-screen-xl pt-0 mx-auto overflow-hidden md:py-20">
+                <div className="flex flex-col items-center justify-center px-10 py-10 md:flex-row lg:flex-row md:px-0 md:py-0">
                     <div className="basis-1/2 abt-txt m1-h p1 aos-init aos-animate" data-aos="fade-right" data-aos-duration="1000">
 
-                        <h2 className="font-poppins text-3xl md:text-4xl uppercase font-bold">Hire a Professional Press Release Writing Agency</h2>
-                        <h2 className="font-poppins text-2xl md:text-3xl uppercase">
+                        <h2 className="text-3xl font-bold uppercase font-poppins md:text-4xl">Hire a Professional Press Release Writing Agency</h2>
+                        <h2 className="text-2xl uppercase font-poppins md:text-3xl">
                             Get Strategic Media Outreach
                         </h2>
-                        <p className="font-poppins text-xl text-left pt-3">
+                        <p className="pt-3 text-xl text-left font-poppins">
                             Hiring a professional press release writing service can help generate media coverage, promote your brand to a broader audience, and keep your audience informed about your company’s events, such as product launches, policy changes, partnerships with other brands, future improvements, etc. This practice also helps drive more traffic to your website now and again.</p>
-                        <p className="font-poppins text-xl text-left pt-3">Our expert press release writers at Pine Book Writing understand the worth of creating newsworthy content by maintaining a journalistic writing style. They work together with you to improvise your key messages and outline your news according to your audience. Our press release writing services are not limited to writing, but we also help distribute your news/announcements through various media outlets. Contact us to learn how we can help you write an impactful press release.</p>
+                        <p className="pt-3 text-xl text-left font-poppins">Our expert press release writers at Pine Book Writing understand the worth of creating newsworthy content by maintaining a journalistic writing style. They work together with you to improvise your key messages and outline your news according to your audience. Our press release writing services are not limited to writing, but we also help distribute your news/announcements through various media outlets. Contact us to learn how we can help you write an impactful press release.</p>
                     </div>
-                    <div className="basis-1/2 abt-pic text-center flex justify-center md:justify-center">
-                        <Image src={"/brand-img/PR-Writing.png"} width={470} height={300}
+                    <div className="flex justify-center text-center basis-1/2 abt-pic md:justify-center">
+                        <Image src={"/images/Press-Release-Writing/ghost-pic.webp"} width={470} height={300}
                             loading="lazy"
                             alt="about img"
                             className="aos-init aos-animate"
@@ -82,40 +82,40 @@ export default function PressRelease() {
                         />
                     </div>
                 </div>
-                {/* <p className="font-poppins text-xl text-justify	px-10 md:px-0" data-aos="fade-right">
+                {/* <p className="px-10 text-xl text-justify font-poppins md:px-0" data-aos="fade-right">
                     Working with a professional editor also gives authors the chance to learn and grow, preparing them for future writing projects. At Pine Book Writing, we support this learning process, helping authors develop their skills and reach their full potential.
                 </p> */}
             </div>
 
-            <section className="ser-cta-banner bg-no-repeat bg-cover bg-center text-white relative overflow-visible py-14 md:py-0"
+            <section className="relative overflow-visible text-white bg-center bg-no-repeat bg-cover ser-cta-banner py-14 md:py-0"
                 style={{ backgroundImage: `url(/brand-img/bg-banner.png)` }}>
-                <div className="grid grid-cols-1 md:grid-cols-12 items-center gap-4 max-w-7xl mx-auto relative ">
+                <div className="relative grid items-center grid-cols-1 gap-4 mx-auto md:grid-cols-12 max-w-7xl ">
 
-                    <div className="md:col-span-3 hidden md:flex justify-center md:justify-start relative z-10">
+                    <div className="relative z-10 justify-center hidden md:col-span-3 md:flex md:justify-start">
                         <Image
-                            src="/brand-img/cta-book-12.png"
+                            src="/images/Press-Release-Writing/cta-book-12.webp"
                             alt="Book 1"
-                            className="l-book absolute -top-20 md:-top-36"
+                            className="absolute l-book -top-20 md:-top-36"
                             height={600}
                             width={600}
                         />
                     </div>
 
-                    <div className="md:col-span-6 text-center px-4">
+                    <div className="px-4 text-center md:col-span-6">
                         <h2 className="font-poppins text-2xl text-[#98caa9] font-semibold md:text-3xl uppercase">
                             Create Buzz with Our Powerful PR Writing Service!
                         </h2>
-                        <p className="text-base md:text-lg py-4">
+                        <p className="py-4 text-base md:text-lg">
                            Get in touch with our team and get expert assistance in writing effective press releases and posting them on well-known media outlets.
                         </p>
 
-                        <div className="cta-btns flex flex-col sm:flex-row items-center gap-4 justify-center">
+                        <div className="flex flex-col items-center justify-center gap-4 cta-btns sm:flex-row">
                             <CTAButton />
 
 
                             <a
                                 href="tel:(866) 841-7463"
-                                className="text-white flex items-center gap-2"
+                                className="flex items-center gap-2 text-white"
                             >
                                 <FaPhoneVolume className="inline" /> (866) 841-7463
                             </a>
@@ -129,7 +129,7 @@ export default function PressRelease() {
                         </div>
                     </div>
 
-                    <div className="md:col-span-3 hidden md:flex justify-center md:justify-end">
+                    <div className="justify-center hidden md:col-span-3 md:flex md:justify-end">
                         <Image
                             src="/brand-img/type.png"
                             alt="Typewriter"
@@ -142,63 +142,63 @@ export default function PressRelease() {
             </section>
 
             {/* inner process section start */}
-            <section className="brand-process mx-auto relative pt-20 text-center flex justify-center mb-12 overflow-hidden">
+            <section className="relative flex justify-center pt-20 mx-auto mb-12 overflow-hidden text-center brand-process">
                 <div className="max-w-screen-xl">
-                    <div className="text-center mb-6">
+                    <div className="mb-6 text-center">
                         <h3 className="text-2xl text-black font-poppins">Our Service Workflow</h3>
-                        <h2 className="font-poppins text-3xl md:text-4xl text-black font-bold" data-aos="zoom-out-down">6-Step Process of Our Press Release Writing Services</h2>
+                        <h2 className="text-3xl font-bold text-black font-poppins md:text-4xl" data-aos="zoom-out-down">6-Step Process of Our Press Release Writing Services</h2>
                     </div>
 
-                    <div className="grid md:grid-cols-3 gap-6 mb-6">
+                    <div className="grid gap-6 mb-6 md:grid-cols-3">
 
                         <div className="flex flex-row " data-aos="fade-left">
-                            <div className="brand-process-content text-left flex-col px-6 py-10">
+                            <div className="flex-col px-6 py-10 text-left brand-process-content">
                                 <span className="num-span"><b>01</b></span>
-                                <h2 className="font-poppins text-2xl text-white pro-h">Understand Your Message</h2>
+                                <h2 className="text-2xl text-white font-poppins pro-h">Understand Your Message</h2>
                                 <p className="">We'll begin by defining clear objectives for your press release, whether you want to increase brand awareness or launch a new product.</p>
                             </div>
                         </div>
 
                         <div className="flex flex-row" data-aos="fade-left">
-                            <div className="brand-process-content text-left flex-col px-6 py-10">
+                            <div className="flex-col px-6 py-10 text-left brand-process-content">
                                 <span className="num-span"><b>02</b></span>
-                                <h2 className="font-poppins text-2xl text-white pro-h">Conduct Research</h2>
+                                <h2 className="text-2xl text-white font-poppins pro-h">Conduct Research</h2>
                                 <p className="">Our team will conduct thorough research about your target audience so that they can be sure about the writing style and tone.</p>
                             </div>
                         </div>
 
                         <div className="flex flex-row" data-aos="fade-left">
-                            <div className="brand-process-content text-left flex-col px-6 py-10">
+                            <div className="flex-col px-6 py-10 text-left brand-process-content">
                                 <span className="num-span"><b>03</b></span>
-                                <h2 className="font-poppins text-2xl text-white pro-h">PR Writing</h2>
+                                <h2 className="text-2xl text-white font-poppins pro-h">PR Writing</h2>
                                 <p className="">Then, our PR writers will produce an engaging press release that conveys your key messages and attracts the attention of journalists.</p>
                             </div>
                         </div>
 
                     </div>
 
-                    <div className="grid md:grid-cols-3 gap-6 mb-6" >
+                    <div className="grid gap-6 mb-6 md:grid-cols-3" >
 
                         <div className="flex flex-row " data-aos="fade-left">
-                            <div className="brand-process-content text-left flex-col px-6 py-10">
+                            <div className="flex-col px-6 py-10 text-left brand-process-content">
                                 <span className="num-span"><b>04</b></span>
-                                <h2 className="font-poppins text-2xl text-white pro-h">Review & Revisions</h2>
+                                <h2 className="text-2xl text-white font-poppins pro-h">Review & Revisions</h2>
                                 <p className="">Once it's written, we will send it to you for your feedback and make the necessary revisions to ensure your press release is ready for distribution.</p>
                             </div>
                         </div>
 
                         <div className="flex flex-row" data-aos="fade-left">
-                            <div className="brand-process-content text-left flex-col px-6 py-10">
+                            <div className="flex-col px-6 py-10 text-left brand-process-content">
                                 <span className="num-span"><b>05</b></span>
-                                <h2 className="font-poppins text-2xl text-white pro-h">Media Outreach</h2>
+                                <h2 className="text-2xl text-white font-poppins pro-h">Media Outreach</h2>
                                 <p className="">Then, we’ll deliberately distribute your press release to several appropriate media outlets, leveraging keyword optimization techniques to maximize visibility.</p>
                             </div>
                         </div>
 
                         <div className="flex flex-row" data-aos="fade-left">
-                            <div className="brand-process-content text-left flex-col px-6 py-10">
+                            <div className="flex-col px-6 py-10 text-left brand-process-content">
                                 <span className="num-span"><b>06</b></span>
-                                <h2 className="font-poppins text-2xl text-white pro-h">Result Tracking</h2>
+                                <h2 className="text-2xl text-white font-poppins pro-h">Result Tracking</h2>
                                 <p className="">Our service continues. We'll monitor the coverage and provide a detailed report to help you make informed decisions for future campaigns.</p>
                             </div>
                         </div>
@@ -209,48 +209,48 @@ export default function PressRelease() {
             </section>
 
             <section className="overflow-hidden" >
-                <div className="brand-choose-us-section ms-auto relative left-0 md:left-52 px-12 md:px-20 mt-20 mb-8 py-10 " >
-                    <div className="flex items-center flex-col md:flex-row" data-aos="fade-right" data-aos-delay="0" data-aos-duration="500">
+                <div className="relative left-0 px-12 py-10 mt-20 mb-8 brand-choose-us-section ms-auto md:left-52 md:px-20 " >
+                    <div className="flex flex-col items-center md:flex-row" data-aos="fade-right" data-aos-delay="0" data-aos-duration="500">
                         <div className="basis-1/3 brand-choose-us-vector">
-                            <Image src={"/brand-img/Why Choose Us 2.png"} width={500} height={500}
+                            <Image src={"/images/Press-Release-Writing/WhyChooseUs2.webp"} width={500} height={500}
                                 loading="lazy"
                                 alt="about img"
                                 className="brand-about-img"
                             />
                         </div>
                         <div className="basis-1/3 md:ml-20">
-                            <h2 className="text-white font-poppins text-2xl md:text-4xl uppercase mt-10 md:mt-0 font-bold" data-aos="zoom-in-left" data-aos-delay="100">Why Choose Our Press Release Writing Services</h2>
-                            <p className="text-white mt-2">Get your news to the right audience with our expert press release writing services. We have a steadfast team of press release writers who can help capture your audience’s attention using their immaculate expertise to drive media coverage and boost your brand reputation.</p>
-                            <div className="flex flex-col md:flex-row gap-2 md:gap-10 mt-6">
+                            <h2 className="mt-10 text-2xl font-bold text-white uppercase font-poppins md:text-4xl md:mt-0" data-aos="zoom-in-left" data-aos-delay="100">Why Choose Our Press Release Writing Services</h2>
+                            <p className="mt-2 text-white">Get your news to the right audience with our expert press release writing services. We have a steadfast team of press release writers who can help capture your audience’s attention using their immaculate expertise to drive media coverage and boost your brand reputation.</p>
+                            <div className="flex flex-col gap-2 mt-6 md:flex-row md:gap-10">
                                 <ul>
-                                    <li className="font-poppins flex items-center gap-3 text-sm mb-2"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Strategic Outreach </li>
-                                    <li className="font-poppins flex items-center gap-3 text-sm mb-2"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Strategic Outreach </li>
-                                    <li className="font-poppins flex items-center gap-3 text-sm"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Result Tracking </li>
+                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Strategic Outreach </li>
+                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Strategic Outreach </li>
+                                    <li className="flex items-center gap-3 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Result Tracking </li>
                                 </ul>
                                 <ul>
-                                    <li className="font-poppins flex items-center gap-3 text-sm mb-2"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Dedicated Writer's Team</li>
-                                    <li className="font-poppins flex items-center gap-3 text-sm mb-2"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Timely Delivery</li>
-                                    <li className="font-poppins flex items-center gap-3 text-sm"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Result-Driven Approach</li>
+                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Dedicated Writer's Team</li>
+                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Timely Delivery</li>
+                                    <li className="flex items-center gap-3 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Result-Driven Approach</li>
                                 </ul>
                             </div>
                             {/* <BrandAudioPlayer src="/brand-img/why-choose-us-voice.wav" /> */}
                             <div>
-                                <button className="brand-nav-btn-1 brand-nav-btn shadow-xl mt-10 cursor-pointer btn-f" onClick={handleOpenChat}><Link href={'javascript:;'}>Speak to our Consultant</Link></button>
-                                <button className="brand-nav-btn-1 brand-nav-btn shadow-xl mt-10 cursor-pointer btn-f md:ml-3 ml-0"><Link href="tel:+18668417463">Call Now</Link></button>
+                                <button className="mt-10 shadow-xl cursor-pointer brand-nav-btn-1 brand-nav-btn btn-f" onClick={handleOpenChat}><Link href={'javascript:;'}>Speak to our Consultant</Link></button>
+                                <button className="mt-10 ml-0 shadow-xl cursor-pointer brand-nav-btn-1 brand-nav-btn btn-f md:ml-3"><Link href="tel:+18668417463">Call Now</Link></button>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <section className="brand-testimonials-section overflow-hidden">
-                <div className="max-w-screen-xl mx-auto px-4 my-10 relative py-22">
-                    <div className="text-center mb-6">
-                        <h2 className="font-poppins text-4xl text-black uppercase mb-3 font-bold" >Frequently Asked Questions</h2>
-                        {/* <h3 className="text-xl text-black font-poppins uppercase font-bold">each Out to Us for Further Assistance.</h3> */}
+            <section className="overflow-hidden brand-testimonials-section">
+                <div className="relative max-w-screen-xl px-4 mx-auto my-10 py-22">
+                    <div className="mb-6 text-center">
+                        <h2 className="mb-3 text-4xl font-bold text-black uppercase font-poppins" >Frequently Asked Questions</h2>
+                        {/* <h3 className="text-xl font-bold text-black uppercase font-poppins">each Out to Us for Further Assistance.</h3> */}
                     </div>
                     <div className="faq-que">
-                        <div className="flex flex-col md:flex-row justify-center gap-4">
+                        <div className="flex flex-col justify-center gap-4 md:flex-row">
                             {Array.from({ length: 2 }).map((_, colIndex) => (
                                 <div key={colIndex} className="w-full max-w-screen-sm">
                                     {faqData.slice(colIndex * 3, (colIndex + 1) * 3).map((faq, index) => {
@@ -258,7 +258,7 @@ export default function PressRelease() {
                                         return (
                                             <button
                                                 key={actualIndex}
-                                                className="w-full border-b-2 border-gray-300 text-white p-6 text-left mt-0 focus:outline-none mb-4 rounded-2xl bg-color"
+                                                className="w-full p-6 mt-0 mb-4 text-left text-white border-b-2 border-gray-300 focus:outline-none rounded-2xl bg-color"
                                                 onClick={() => toggleFAQ(actualIndex)}
                                             >
                                                 <div className={`text-lg font-semibold flex justify-between ${openFAQ === actualIndex ? 'border-b border-gray-300' : 'border-0'}`}>

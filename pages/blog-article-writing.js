@@ -94,7 +94,7 @@ export default function BlogWriting() {
                                     
                                                         <div className="relative z-10 justify-center hidden md:col-span-3 md:flex md:justify-start">
                                                             <Image
-                                                                src="/images/Blog-article-writing/cta-book-12.webp"
+                                                                src="/images/blog-article-writing/cta-book-12.webp"
                                                                 alt="Book 1"
                                                                 className="absolute l-book -top-20 md:-top-36"
                                                                 height={600}

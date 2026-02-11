@@ -1,150 +1,55 @@
 import React, { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { faArrowRight, faPhone, faEnvelope } from "@fortawesome/free-solid-svg-icons";
-import { library } from "@fortawesome/fontawesome-svg-core";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function BrandNavbar() {
     const [isOpen, setIsOpen] = useState(false);
     const [serviceDropdown, setServiceDropdown] = useState(false);
-    const [hoveredService, setHoveredService] = useState(1);
-    const dropdownRef = useRef(null); // Create a ref for the dropdown
+    const dropdownRef = useRef(null);
 
-
-        const servicesRig = [
-        { name: 'Memoir Writing',
-          href: '/Memoir-Writing',
-        },
-          
-        { name: 'Non Fiction Writing',
-          href: '/Non-Fiction-Writing',
-        },
-
-        { name: 'Rhymes Writing',
-          href: '/Rhymes-Writing',
-        },
-
-        { name: 'Song Writing',
-          href: '/Song-Writing',
-        },
-
-        { name: 'Story Writing',
-          href: '/Story-Writing',
-        },
-        
-        { name: 'Autobiography Writing',
-          href: '/Autobiography-Writing',
-        },
-        
-        { name: 'Hip Hop Writing',
-          href: '/Hip-Hop-Writing',
-        },
-        
-        { name: 'Narrative Writing',
-          href: '/Narrative-Writing',
-        },
-
-        { name: 'Novel Writing',
-          href: '/Novel-Writing',
-        },
-
-        { name: 'Speech Writing',
-          href: '/Speech-Writing',
-        },
-
-        { name: 'Comedy Writing',
-          href: '/Comedy-Writing',
-        },
-
-         { name: 'Comic Book Writing',
-          href: '/Comic-Book-Writing',
-        },
-
-         { name: 'Military Fiction Writing',
-          href: '/Military-Fiction-Writing',
-        },
-
-         { name: 'Movie Writing',
-          href: '/Movie-Writing',
-        },
-
-        
-    ]
-
+    const servicesRig = [
+        { name: 'Memoir Writing', href: '/Memoir-Writing' },
+        { name: 'Non Fiction Writing', href: '/Non-Fiction-Writing' },
+        { name: 'Rhymes Writing', href: '/Rhymes-Writing' },
+        { name: 'Song Writing', href: '/Song-Writing' },
+        { name: 'Story Writing', href: '/Story-Writing' },
+        { name: 'Autobiography Writing', href: '/Autobiography-Writing' },
+        { name: 'Hip Hop Writing', href: '/Hip-Hop-Writing' },
+        { name: 'Narrative Writing', href: '/Narrative-Writing' },
+        { name: 'Novel Writing', href: '/Novel-Writing' },
+        { name: 'Speech Writing', href: '/Speech-Writing' },
+        { name: 'Comedy Writing', href: '/Comedy-Writing' },
+        { name: 'Comic Book Writing', href: '/Comic-Book-Writing' },
+        { name: 'Military Fiction Writing', href: '/Military-Fiction-Writing' },
+        { name: 'Movie Writing', href: '/Movie-Writing' },
+    ];
 
     const services = [
-        { name: 'Book Ghostwriting',
-          href: '/ghostwriting',},
+        { name: 'Book Ghostwriting', href: '/ghostwriting' },
+        { name: 'Resume Writing', href: '/resume-writing' },
+        { name: 'Social Media Copywriting', href: '/social-media-copywriting' },
+        { name: 'Web Copywriting', href: '/web-copywriting' },
+        { name: 'SEO Content Writing', href: '/seo-content' },
+        { name: 'Blogs & Article Writing', href: '/blog-article-writing' },
+        { name: 'PR Writing', href: '/press-release-writing' },
+        { name: 'Script Writing', href: '/script-writing' },
+        { name: 'Wikipedia Writing', href: '/wikipedia-writing' },
+        { name: 'Product Description Writing', href: '/product-description' },
+        { name: 'Screen Writing', href: '/Screen-Writing' },
+        { name: 'Action Adventure Writing', href: '/Action-Adventure' },
+        { name: 'Childrens Books', href: '/Childrens-Books' },
+        { name: 'Fantasy Writing', href: '/Fantasy-Writing-Services' },
+        { name: 'Horror Writing', href: '/Horror-Writing' },
+        { name: 'Sci-Fi Writing', href: '/Sci-Fi-writing' },
+        { name: 'Biography Writing', href: '/Biography-Writing' },
+    ];
 
-        { name: 'Resume Writing',
-        href: '/resume-writing',},
-
-        { name: 'Social Media Copywriting',
-            href: '/social-media-copywriting',},
-            
-                
-        { name: 'Web Copywriting',
-            href: '/web-copywriting',},
-            
-        { name: 'SEO Content Writing',
-            href: '/seo-content',},
-
-
-        { name: 'Blogs & Article Writing',
-            href: '/blog-article-writing',},
-
-
-        { name: 'PR Writing',
-            href: '/press-release-writing',},
-
-        
-        { name: 'Script Writing',
-            href: '/script-writing',},
-    
-
-        { name: 'Wikipedia Writing',
-            href: '/wikipedia-writing',},
-
-
-        { name: 'Product Description Writing',
-            href: '/product-description',},
-
-        { name: 'Screen Writing',
-            href: '/Screen-Writing',},
-            
-        { name: 'Action Adventure Writing',
-            href: '/Action-Adventure',},
-
-        { name: 'Childrens Books',
-            href: '/Childrens-Books',},
-
-        { name: 'Fantasy Writing',
-            href: '/Fantasy-Writing-Services',},
-
-        { name: 'Horror Writing',
-           href: '/Horror-Writing',},
-
-        { name: 'Sci-Fi Writing',
-           href: '/Sci-Fi-writing',},
-
-        { name: 'Biography Writing',
-           href: '/Biography-Writing',},
-        
-        ];
-
-    // Function to handle the service dropdown toggle
     const toggleServiceDropdown = () => {
-        setServiceDropdown(!serviceDropdown);
-    };
-
-    const openServiceDropdown = () => {
-        setServiceDropdown(true);
+        setServiceDropdown((prevState) => !prevState);
     };
 
     const closeServiceDropdown = () => {
         setServiceDropdown(false);
-        setHoveredService(null);
     };
 
     useEffect(() => {
@@ -160,7 +65,6 @@ export default function BrandNavbar() {
         };
 
         window.addEventListener('scroll', handleScroll);
-
         return () => {
             window.removeEventListener('scroll', handleScroll);
         };
@@ -169,7 +73,7 @@ export default function BrandNavbar() {
     const handleOpenChat = () => {
         window.zE && window.zE('webWidget', 'open');
     };
-    
+
     useEffect(() => {
         const handleClickOutside = (event) => {
             if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
@@ -178,11 +82,10 @@ export default function BrandNavbar() {
         };
 
         document.addEventListener('mousedown', handleClickOutside);
-
         return () => {
             document.removeEventListener('mousedown', handleClickOutside);
         };
-    }, [dropdownRef]);
+    }, []);
 
     return (
         <>
@@ -193,7 +96,7 @@ export default function BrandNavbar() {
                             <Image className='logo' src={'/images/writing-logo.png'} width={200} height={80} alt="brand logo" loading="lazy" />
                         </Link>
                     </div>
-                    
+
                     <div className="md:hidden">
                         <button
                             onClick={() => setIsOpen(!isOpen)}
@@ -213,165 +116,78 @@ export default function BrandNavbar() {
                         <ul className="md:flex items-center space-x-4">
                             <li className='mb-3 md:mb-0'><Link href="/" onClick={(e) => { e.preventDefault(); window.location.href = "/"; }} className="text-white hover:text-gray-300">Home</Link></li>
                             <li className='mb-3 md:mb-0'><Link href="/about" onClick={(e) => { e.preventDefault(); window.location.href = "about"; }} className="text-white hover:text-gray-300">About Us</Link></li>
-                            {/* <li className='mb-3 md:mb-0'><Link href="/services" onClick={(e) => { e.preventDefault(); window.location.href = "services"; }} className="text-white hover:text-gray-300">Services</Link></li> */}
-                            <li
-                            className="mb-3 md:mb-0"
-                                // onMouseEnter={openServiceDropdown}
-                                // onMouseLeave={closeServiceDropdown}
-                                onClick={toggleServiceDropdown}
-                                ref={dropdownRef}
-                            // className="relative"
-                            >
+                            <li className="mb-3 md:mb-0 relative services-nav-item" ref={dropdownRef}>
                                 <div className='flex items-center justify-center gap-2'>
-                                    <Link href="/services" onClick={(e) => { e.preventDefault(); window.location.href =  "/services"; }} className="cursor-pointer text-white hover:text-gray-300 flex items-center gap-2">
+                                    <Link href="/services" onClick={(e) => { e.preventDefault(); window.location.href = "/services"; }} className="cursor-pointer text-white hover:text-gray-300 flex items-center gap-2">
                                         Services
                                     </Link>
-                                    <Image src="/brand-img/down-arrow.png" alt="Open" className='service-dropdown-icon cursor-pointer' width={10} height={10} />
+                                    <button
+                                        type="button"
+                                        onClick={toggleServiceDropdown}
+                                        className="service-dropdown-trigger"
+                                        aria-expanded={serviceDropdown}
+                                        aria-label="Toggle services dropdown"
+                                    >
+                                        <Image
+                                            src="/brand-img/down-arrow.png"
+                                            alt="Open"
+                                            className={`service-dropdown-icon cursor-pointer ${serviceDropdown ? 'is-open' : ''}`}
+                                            width={10}
+                                            height={10}
+                                        />
+                                    </button>
                                 </div>
 
                                 {serviceDropdown && (
-                                    <div className="absolute mt-1 bg-white text-black rounded shadow-lg brand-custom-dropdown-menu flex justify-around">
-                                        <ul className="text-start px-4 py-4">
-                                            {services.map((service, index) => (
-                                                <li
-                                                    key={index}
-                                                    className='mb-0 flex items-center '
-                                                    onMouseEnter={() => setHoveredService(index)}
-                                                    onMouseLeave={() => setHoveredService(null)}
-                                                >
-                                                    <Link href={service.href} onClick={(e) => { e.preventDefault(); window.location.href =  service.href; }}  className='flex py-4 items-center w-full'>
-                                                        {typeof service.icon === 'string' ? (
-                                                            <Image src={service.icon} className="me-3" width={16} height={16} alt={service.name} />
-                                                        ) : (
-                                                            <FontAwesomeIcon icon={service.icon} className="me-3" width={12} />
-                                                        )}
-                                                        <div>
-                                                            <h3>{service.name}</h3>
-                                                            <p>{service.desc}</p>
-                                                        </div>
-                                                    </Link>
-                                                </li>
-                                            ))}
-                                        </ul>
+                                    <div className="brand-custom-dropdown-menu" onClick={(e) => e.stopPropagation()}>
+                                        <div className="brand-services-dropdown-head">
+                                            <h2>Explore Our Writing Services</h2>
+                                            <p>Pick a category to see all available writing specialties.</p>
+                                        </div>
+                                        <div className="brand-services-dropdown-grid">
+                                            <div className="brand-service-column">
+                                                <ul className="brand-service-list">
+                                                    {services.map((service, index) => (
+                                                        <li key={index} className='brand-service-list-item'>
+                                                            <Link
+                                                                href={service.href}
+                                                                onClick={(e) => { e.preventDefault(); window.location.href = service.href; }}
+                                                                className='brand-service-link'
+                                                            >
+                                                                <span className="service-link-dot" aria-hidden="true"></span>
+                                                                <span>{service.name}</span>
+                                                            </Link>
+                                                        </li>
+                                                    ))}
+                                                </ul>
+                                            </div>
 
-                                         <ul className="text-start px-4 py-4">
-                                            {servicesRig.map((service, index) => (
-                                                <li
-                                                    key={index}
-                                                    className='mb-0 flex items-center '
-                                                    onMouseEnter={() => setHoveredService(index)}
-                                                    onMouseLeave={() => setHoveredService(null)}
-                                                >
-                                                    <Link href={service.href} onClick={(e) => { e.preventDefault(); window.location.href =  service.href; }}  className='flex py-4 items-center w-full'>
-                                                        {typeof service.icon === 'string' ? (
-                                                            <Image src={service.icon} className="me-3" width={16} height={16} alt={service.name} />
-                                                        ) : (
-                                                            <FontAwesomeIcon icon={service.icon} className="me-3" width={12} />
-                                                        )}
-                                                        <div>
-                                                            <h3>{service.name}</h3>
-                                                            <p>{service.desc}</p>
-                                                        </div>
-                                                    </Link>
-                                                </li>
-                                            ))}
-                                        </ul>
-                                        {/* <div className='p-5 hidden md:block lg:block'>
-                                           
-                                            <h2 className='my-4 text-start'>OUR EXPERTS</h2>
-                                            <div className='flex gap-4 mt-4 justify-center'>
-                                                <div className="brand-meet-team-container text-center flex justify-center flex-col items-center">
-                                                    <Image src={"/brand-img/team-1.webp"} width={70} height={70} className="mb-2" />
-                                                    <h3 className="text-black leading-20 text-sm font-poppins uppercase">Damon Peters</h3>
-                                                </div>
-                                                <div className="brand-meet-team-container text-center flex justify-center flex-col items-center">
-                                                    <Image src={"/brand-img/team-4.webp"} width={70} height={70} className="mb-2" />
-                                                    <h3 className="text-black leading-20 text-sm font-poppins uppercase">AMARA JOHNSON
-                                                    </h3>
-                                                </div>
-                                                <div className="brand-meet-team-container text-center flex justify-center flex-col items-center">
-                                                    <Image src={"/brand-img/team-3.webp"} width={70} height={70} className="mb-2" />
-                                                    <h3 className="text-black leading-20 text-sm font-poppins uppercase">Steve Hayes
-                                                    </h3>
-                                                </div>
+                                            <div className="brand-service-column">
+                                                <ul className="brand-service-list">
+                                                    {servicesRig.map((service, index) => (
+                                                        <li key={index} className='brand-service-list-item'>
+                                                            <Link
+                                                                href={service.href}
+                                                                onClick={(e) => { e.preventDefault(); window.location.href = service.href; }}
+                                                                className='brand-service-link'
+                                                            >
+                                                                <span className="service-link-dot" aria-hidden="true"></span>
+                                                                <span>{service.name}</span>
+                                                            </Link>
+                                                        </li>
+                                                    ))}
+                                                </ul>
                                             </div>
-                                            <div className='flex gap-4 mt-4 justify-center'>
-                                                <div className="brand-meet-team-container text-center flex justify-center flex-col items-center">
-                                                    <Image src={"/brand-img/team-2.webp"} width={70} height={70} className="mb-2" />
-                                                    <h3 className="text-black leading-20 text-sm font-poppins uppercase">Ryan Peters
-                                                    </h3>
-                                                </div>
-                                                <div className="brand-meet-team-container text-center flex justify-center flex-col items-center">
-                                                    <Image src={"/brand-img/team-5.webp"} width={70} height={70} className="mb-2" />
-                                                    <h3 className="text-black leading-20 text-sm font-poppins uppercase">Lia Sinclair
-                                                    </h3>
-                                                </div>
-                                            </div>
-                                            <div className='mt-4'>
-                                                <h2 className='text-start'>TALK TO AN EXPERTS NOW!</h2>
-                                                <p className='mb-4 text-start pt-4'>Ready to bring your book to life? Schedule a call with one of our experts now to unlock your book's potential. Your customized solution awaits—don't miss out!</p>
-                                                <Link href={'javascript:;'} className="main-button font-poppins mb-5 uppercase" onClick={handleOpenChat}>schedule a call</Link>
-                                            </div>
-                                        </div> */}
-                                        {/* <div className="flex-shrink-0">
-                                            {hoveredService !== null && (
-                                                <Image
-                                                    src={services[hoveredService].image}
-                                                    alt={services[hoveredService].name}
-                                                    className='h-full w-full object-cover nav-link-hover-img rounded shadow-lg'
-                                                    width={160}
-                                                    height={160}
-                                                />
-                                            )}
-                                        </div> */}
+                                        </div>
+                                        <div className="brand-services-dropdown-footer">
+                                            <button type="button" className="talk-to-btn" onClick={handleOpenChat}>
+                                                Talk to an Expert
+                                            </button>
+                                        </div>
                                     </div>
                                 )}
                             </li>
                             <li className='mb-3 md:mb-0'><Link href="/testimonials" onClick={(e) => { e.preventDefault(); window.location.href = "testimonials"; }} className="text-white hover:text-gray-300">Testimonials</Link></li>
-                            {/* <li
-                                // onMouseEnter={openServiceDropdown}
-                                // onMouseLeave={closeServiceDropdown}
-                                onClick={toggleServiceDropdown}
-                                // className="relative"
-                            >
-                                <Link href={'javascript:;'} className="cursor-pointer text-white hover:text-gray-300 flex items-center gap-2">
-                                    Services  <Image src="/brand-img/down-arrow.png" alt="Open" className='service-dropdown-icon' width={10} height={10} />
-                                </Link>
-                                {serviceDropdown && (
-                                    <div className="absolute mt-1 w-full bg-white text-black rounded shadow-lg brand-custom-dropdown-menu flex justify-between">
-                                        <ul className="py-1 text-start px-4 py-2">
-                                            {services.map((service, index) => (
-                                                <li
-                                                    key={index}
-                                                    className='mb-3 flex items-center'
-                                                    onMouseEnter={() => setHoveredService(index)}
-                                                    onMouseLeave={() => setHoveredService(null)}
-                                                >
-                                                    <Link href={service.href} className='flex items-center w-full'>
-                                                        {typeof service.icon === 'string' ? (
-                                                            <Image src={service.icon} className="me-3" width={16} height={16} alt={service.name} />
-                                                        ) : (
-                                                            <FontAwesomeIcon icon={service.icon} className="me-3" width={12} />
-                                                        )}
-                                                        {service.name}
-                                                    </Link>
-                                                </li>
-                                            ))}
-                                        </ul>
-                                        <div className="flex-shrink-0">
-                                            {hoveredService !== null && (
-                                                <Image
-                                                    src={services[hoveredService].image}
-                                                    alt={services[hoveredService].name}
-                                                    className='h-full w-full object-cover nav-link-hover-img rounded shadow-lg'
-                                                    width={160}
-                                                    height={160}
-                                                />
-                                            )}
-                                        </div>
-                                    </div>
-                                )}
-                            </li> */}
                             <li className='mb-3 md:mb-0'><Link href="/packages" onClick={(e) => { e.preventDefault(); window.location.href = "packages"; }} className="text-white hover:text-gray-300">Packages</Link></li>
                             <li className='mb-3 md:mb-0'><Link href="/portfolio" onClick={(e) => { e.preventDefault(); window.location.href = "portfolio"; }} className="text-white hover:text-gray-300">Portfolio</Link></li>
                             <li className='mb-3 md:mb-0'><Link href="/contact-us" onClick={(e) => { e.preventDefault(); window.location.href = "contact-us"; }} className="text-white hover:text-gray-300">Contact</Link></li>

@@ -266,14 +266,14 @@ export default function BookEditing() {
 
   <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
     {[
-      { icon: '🔎', label: 'Research' },               // Research
-      { icon: '📊', label: "Editorial Assessment" },  // Assessment / Review
-      { icon: '🗂️', label: 'Chapter Outlining' },     // Structure / Planning
-      { icon: '✒️', label: 'Writing' },                // Writing
-      { icon: '📝', label: 'Editing' },                // Editing
-      { icon: '✔️', label: 'Proofreading' },           // Proofreading
-      { icon: '📐', label: 'Formatting' },             // Formatting / Layout
-      { icon: '🛡️', label: 'Quality Assurance' },     // Quality Check
+      { icon: '🔎', label: 'Research' },               
+      { icon: '📊', label: "Editorial Assessment" },  
+      { icon: '🗂️', label: 'Chapter Outlining' },    
+      { icon: '✒️', label: 'Writing' },                
+      { icon: '📝', label: 'Editing' },             
+      { icon: '✔️', label: 'Proofreading' },          
+      { icon: '📐', label: 'Formatting' },             
+      { icon: '🛡️', label: 'Quality Assurance' },    
     ].map((service, index) => (
       <div
         key={index}

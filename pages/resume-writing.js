@@ -27,53 +27,85 @@ export default function ResumeWriting() {
     };
 
     const faqData = [
-        { question: "Will the Resume you write for me be compatible with ATS?", answer: "Yes, all the resumes we write are ATS friendly and will be tested on ATS. Our approach begins with creating your resume using the keywords and phrases used by the organization/company that you are aiming for." },
+        { question: "Will the resume you write be ATS-friendly? ", answer: "Absolutely! All of the resumes created by our professional resume writing services are ATSfriendly. To make your resume visible and passable through software screenings, we use industry-specific keywords in it and also test it before delivery. " },
         
-        { question: "How to get started and what file format would you prefer to receive my career information?", answer: "To get started, we need the answered questionnaire, your current resume and all the necessary information about you that you need in the resume. Once we  all the information, we will start writing your ATS friendly resume. All the documents should be in the WORD or PDF Format." },
+        { question: "How do I get started with your services? ", answer: "You have both options: either share your current resume or your career-related information and goals in a Word file, a PDF file, or just tell them on a call. Once we receive it, our writers get to work and create a personalized resume. " },
        
-        { question: "What Is the Resume Turnaround Time?", answer: "You will receive the first draft of your resume in three business days." },
+        { question: "What is the turnaround time for the resume creation? ", answer: "Generally, we deliver the first draft within three business days. Is it urgent? You may avail of our express delivery option for urgent job applications." },
        
-        { question: "What will be the cost of my Resume?", answer: "The cost of a resume writing service can vary depending on the complexity and the type of resume that you want. Get in touch with one of our representatives for the cost of the service." },
+        { question: "What are the costs for resume writing services? ", answer: "The  costs for resume writing services  depend on its complexity, career level, and type. However, unlike others, we offer affordable resume writing services. Not only that, but there are no hidden or extra charges. Feel free to contact our team and get a free quote! " },
         
-        { question: "Will I receive my cover letter along with my resume?", answer: "Yes, you will get a cover letter once you finalize the resume." },
+        { question: "Can I also ask you to write my cover letter? ", answer: "Yes for sure, we also offer professional cover writing to our clients who want complete job application support. For this, you need to acquire our comprehensive resume and cover writing services to present a robust first impression to employers. " },
        
-        { question: "Do you offer LinkedIn Profile Writing Service?", answer: "Yes, we do offer LinkedIn profile writing service as an additional service." },
+        { question: "Do you also offer resume and LinkedIn profile writing services? ", answer: "Yes, we do. We provide complete LinkedIn profile support, from creating and optimizing your account to integrating your profile with your resume. Our LinkedIn resume writers ensure brand consistency across your professional online presence.. " },
             ];
 
     return (
         <>
             <Head>
-                <title>Resume Writing | Pine Book Writing</title>
+                <title>Expert Resume Writing Services | Pine Book Writing </title>
                                     <link rel="canonical" href="https://www.pinebookwriting.com/resume-writing" />
 
                 
                 <meta
                     name="description"
-                    content="Everything about Pine Book Writing—your partner in crafting, editing, and publishing your story. Experience seamless service from manuscript to bookshelf."
+                    content="Stand out with our professional resume writing services. Get ATS-optimized resumes, cover letters, and LinkedIn profiles that help you land more interviews."
                 />
                 <link rel="shortcut icon" href="/images/fav.webp" />
                 </Head>
                 <BrandTopBar/>
             <BrandNavbar />
-            <BrandPrimaryHeader
-                photo_banner={"/images/Resume-writing/1.webp"}
-                title="Professional Resume Writing Services"
-                desc="Is your current resume holding you back? Or are you looking for someone who is an expert in resume writing to portray your true potential to employers? If yes, then you're in the right place. We have a dedicated team of resume writers (mostly from human resource backgrounds) familiar with all the do’s and don’ts while writing a resume. Contact us to learn more!"
-            />
+           <BrandPrimaryHeader
+  photo_banner={"/images/Resume-writing/1.webp"}
+  title="Stand Out Confidently With Our Professional Resume Writing Services"
+  desc={
+    <>
+      Is your current resume holding you back? Or are you looking for someone who is an expert in resume writing to portray your true potential to employers? If yes, then you're in the right place. We have a dedicated team of resume writers (mostly from human resource backgrounds) familiar with all the do’s and don’ts while writing a resume.{" "}
+      
+      <a
+        href="https://www.pinebookwriting.com/contact-us"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="font-bold text-black underline transition decoration-2 underline-offset-4 hover:text-gray-700"
+      >
+        Get Your FREE Quote & Start Now!
+      </a>
+    </>
+  }
+/>
+
             <BrandBannerLogo />
 
             <div className="container max-w-screen-xl pt-0 mx-auto overflow-hidden md:py-20">
                 <div className="flex flex-col items-center justify-center px-8 py-10 md:flex-row lg:flex-row md:px-0 md:py-0">
                     <div className="basis-1/2 abt-txt m1-h p1 aos-init aos-animate" data-aos="fade-right" data-aos-duration="1000">
                         
-                        <h2 className="text-3xl font-bold uppercase font-poppins md:text-4xl">Hire Career-Focused Resume Writing Service</h2>
+                        <h2 className="text-3xl font-bold uppercase font-poppins md:text-4xl">Hire Career-Focused Resume Writing Service </h2>
                        
                         <h2 className="text-2xl uppercase font-poppins md:text-3xl">
-                        Stand Out from the Crowd 
+                       Stand Out from the Crowd 
                         </h2>
-                        <p className="pt-3 text-xl text-left font-poppins">
-                        Your resume gives the very first impression to your employer. It’s an influential tool that can open your doors to many career opportunities. Resume writing requires dedicated expertise and attention to detail. That’s where our resume writing service comes in.</p>
-                        <p className="pt-3 text-xl text-left font-poppins">At Pine Book Writing, our team of resume writers always stays updated about the saturated job market and knows what to consider while writing a noteworthy resume. We utilize our immense expertise to highlight your unique competencies and achievements and will help you showcase your experiences in the best possible light by making your resume match any specific job requirements. </p>
+                       <p className="leading-relaxed text-gray-700">
+  Your resume creates the very first impression on employers. It’s an influential tool that can open your doors to many career opportunities. Resume writing requires dedicated expertise and attention to detail. That’s where our professional resume writing services come in. At{" "}
+  
+  <a
+    href="https://www.pinebookwriting.com/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="font-semibold underline transition underline-offset-4 hover:text-gray-900"
+  >
+    Pine Book Writing
+  </a>
+  
+  , our team of resume writers always stays updated about the saturated job market and knows what to consider while writing a noteworthy resume. As one of the best rated resume writing services, we utilize our{" "}
+  
+  <span className="font-bold">immense expertise</span>{" "}
+  
+  to highlight your unique competencies and achievements. We help you showcase experiences in the best possible light by tailoring your resume for specific job requirements. Don’t let an ordinary resume hold you back. Contact us now to schedule a consultation and take the first step with our{" "}
+  
+  <span className="font-bold">affordable resume writing services</span>.
+</p>
+
                     </div>
                     <div className="flex justify-center text-center basis-1/2 abt-pic md:justify-center">
                         <Image src={"/images/Resume-writing/ghost-pic.webp"} width={470} height={300}
@@ -106,10 +138,10 @@ export default function ResumeWriting() {
             
                                 <div className="px-4 text-center md:col-span-6">
                                     <h2 className="font-poppins text-2xl text-[#98caa9] font-semibold md:text-3xl uppercase">
-                                        Resume Writing - Make Your Resume Work for You
+                                       Land More Job Interviews - Acquire Expert Resume Writing Service 
                                     </h2>
                                     <p className="py-4 text-base md:text-lg">
-                                        Our professional resume writing services can help you stand out in today's competitive job market so you can get noticed and employed quickly.
+                                      Our certified resume writers USA are ready to help create a resume that can impress recruiters by highlighting your real potential for your specific field and is perfectly aligned with job requirements.regardless of wherever you are.  
                                     </p>
             
                                     <div className="flex flex-col items-center justify-center gap-4 cta-btns sm:flex-row">
@@ -157,24 +189,24 @@ export default function ResumeWriting() {
                         <div className="flex flex-row " data-aos="fade-left">
                             <div className="flex-col px-6 py-10 text-left brand-process-content">
                                 <span className="num-span"><b>01</b></span>
-                                <h2 className="text-2xl text-white font-poppins pro-h">Initial Consultation</h2>
-                                <p className="">Our resume writing service process begins with conducting a discussion to learn about your career aspirations, experience, and target job.</p>
+                                <h2 className="text-2xl text-white font-poppins pro-h">Career Consultation </h2>
+                                <p className="">We begin our resume writing services with a discussion to learn about your career aspirations, In-hand experience, and the target job. </p>
                             </div>
                         </div>
 
                         <div className="flex flex-row" data-aos="fade-left">
                         <div className="flex-col px-6 py-10 text-left brand-process-content">
                         <span className="num-span"><b>02</b></span>
-                                <h2 className="text-2xl text-white font-poppins pro-h">In-Depth Interview</h2>
-                                <p className="">Then, our dedicated manager will conduct a detailed interview to gather information about your evident and unnoticed skills, achievements, and qualifications.</p>
+                                <h2 className="text-2xl text-white font-poppins pro-h">Detailed Interview </h2>
+                                <p className="">Our dedicated professional will conduct your interview, an important phase of our professional resume writing service, to present your evident or unnoticed skills, achievements, and qualifications. </p>
                             </div>
                         </div>
 
                         <div className="flex flex-row" data-aos="fade-left">
                         <div className="flex-col px-6 py-10 text-left brand-process-content">
                         <span className="num-span"><b>03</b></span>
-                                <h2 className="text-2xl text-white font-poppins pro-h">Resume Research</h2>
-                                <p className="">Our resume writers will start conducting deep research on your industry to identify noticeable keywords to outline your resume accordingly.</p>
+                                <h2 className="text-2xl text-white font-poppins pro-h">Market Research </h2>
+                                <p className="">Then, our certified resume writers research your field market, identify the mostused keywords, and create an ATS-friendly resume that aligns with employers' expectations. </p>
                             </div>
                         </div>
                         
@@ -186,23 +218,23 @@ export default function ResumeWriting() {
                         <div className="flex-col px-6 py-10 text-left brand-process-content">
                         <span className="num-span"><b>04</b></span>
                                 <h2 className="text-2xl text-white font-poppins pro-h">Draft Creation</h2>
-                                <p className="">Once the research is completed, our dedicated resume writer will create a customized resume draft that effectively highlights your key skills and accomplishments.</p>
+                                <p className="">Once research is completed, our writers craft the first draft. We always keep in mind that our affordable resume writing services help you highlight your skills and accomplishments.  </p>
                             </div>
                         </div>
 
                         <div className="flex flex-row" data-aos="fade-left">
                         <div className="flex-col px-6 py-10 text-left brand-process-content">
                         <span className="num-span"><b>05</b></span>
-                                <h2 className="text-2xl text-white font-poppins pro-h">Revisions and Feedback</h2>
-                                <p className="">Your feedback is valuable to us. We provide multiple revisions and make necessary modifications to your resume on your request.</p>
+                                <h2 className="text-2xl text-white font-poppins pro-h">Multiple Revisions </h2>
+                                <p className="">We always embrace feedback and suggestions. As the top resume writing company, we offer multiple revisions and make necessary modifications to your resume on your request.  </p>
                             </div>
                         </div>
 
                         <div className="flex flex-row" data-aos="fade-left">
                         <div className="flex-col px-6 py-10 text-left brand-process-content">
                         <span className="num-span"><b>06</b></span>
-                                <h2 className="text-2xl text-white font-poppins pro-h">Final Delivery</h2>
-                                <p className="">Lastly, we take your resume through our quality assurance process and deliver it to you in the format you require.</p>
+                                <h2 className="text-2xl text-white font-poppins pro-h">Multi-Format Delivery </h2>
+                                <p className="">After multiple reviews, we deliver your resume in multiple formats. With our online resume writing services, you will see results anytime, anywhere.  </p>
                             </div>
                         </div>
                         
@@ -210,6 +242,38 @@ export default function ResumeWriting() {
 
                 </div>
             </section>
+
+            <section className="max-w-6xl px-4 py-16 mx-auto bg-white font-poppins">
+  <h2 className="mb-12 text-xl font-medium text-center text-gray-700 md:text-2xl">
+    What's Included In Our Resume Writing Services? 
+  </h2>
+
+  <p className="mb-12 text-xl font-medium text-center text-gray-700 md:text-2xl">
+    At Pine Book Writing, we provide expert resume writing help, we don't just write and deliver, but we provide comprehensive support. Everything that you need for a perfect job application resume. 
+  </p>
+
+  <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3">
+    {[
+      { icon: '🖋️', label: 'Custom Resume Writing' },        
+      { icon: '🧐', label: "Resume Editing & Proofreading" },
+      { icon: '📄', label: 'Cover Letter Writing' },          
+      { icon: '💼', label: 'LinkedIn Profile Optimization' },  
+      { icon: '⚙️', label: 'ATS Optimization' },              
+      { icon: '🎯', label: 'Career Consultation' },           
+    ].map((service, index) => (
+      <div
+        key={index}
+        className="flex flex-col items-center justify-center h-32 p-4 text-center bg-[#f4f1ea] hover:bg-[#ebe8e0] transition-colors rounded-xl shadow-sm hover:shadow-md"
+      >
+        <div className="mb-2 text-3xl">{service.icon}</div>
+        <span className="text-[10px] font-bold uppercase tracking-widest text-gray-600">
+          {service.label}
+        </span>
+      </div>
+    ))}
+  </div>
+</section>
+
              
             
             <section className="overflow-hidden" >
@@ -224,18 +288,18 @@ export default function ResumeWriting() {
                             />
                         </div>
                         <div className="basis-1/3 md:ml-20">
-                            <h2 className="mt-10 text-2xl font-bold text-white uppercase font-poppins md:text-4xl md:mt-0" data-aos="zoom-in-left" data-aos-delay="100">Why Choose Our Resume Writing Services?</h2>
-                            <p className="mt-2 text-white">Stand out in the competitive job market with our expert resume writing services. With a dedicated team of resume writers familiar with various industries’ different trends and preferences, we offer impeccable resume writing services for several formats.</p>
+                            <h2 className="mt-10 text-2xl font-bold text-white uppercase font-poppins md:text-4xl md:mt-0" data-aos="zoom-in-left" data-aos-delay="100">What Makes Us the Best Resume Writing Services? </h2>
+                            <p className="mt-2 text-white">We help create resumes that truly help find perfect career opportunities. Our certified writers for resume, most of them from human resources backgrounds, use their relevant experience to make sure your resume has enough potential to grab an employer's attention. </p>
                             <div className="flex flex-col gap-2 mt-6 md:flex-row md:gap-10">
                                 <ul>
-                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Writers – Ex Recruiters </li>
-                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Personalized Approach </li>
-                                    <li className="flex items-center gap-3 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Multiple Resume Formats </li>
+                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Writers - Ex-Recruiters </li>
+                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Multiple Formats </li>
+                                    <li className="flex items-center gap-3 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />ATS-Friendly Resumes  Formats </li>
                                 </ul>
                                 <ul>
-                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Timely Delivery</li>
-                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Competitive Pricing</li>
-                                    <li className="flex items-center gap-3 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Multiple Revisions</li>
+                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Affordable Packages </li>
+                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Personalized Approach </li>
+                                    <li className="flex items-center gap-3 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Career Consultation </li>
                                 </ul>
                             </div>
                             {/* <BrandAudioPlayer src="/brand-img/why-choose-us-voice.wav" /> */}

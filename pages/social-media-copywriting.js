@@ -28,28 +28,28 @@ const handleOpenChat = () => {
     };
 
     const faqData = [
-        { question: "Why should I hire Pine Book Writing for Social Media Copywriting?", answer: "Every social media platform has a unique algorithm to determine how content is presented. For instance, video content often works well on TikTok, while image content might be effective on Facebook, and both types of content work more well on Instagram. Our team of social media experts is immensely familiar with these algorithms and can strategize your content accordingly." },
+        { question: "Why should I hire Pine Book Writing for social media copywriting?", answer: "Every platform works differently and our social media copywriting team makes sure each piece of content is completely aligned with the specific requirements of the targeted platform. Example: video content works best on TikTok, while static images perform better on Facebook & Instagram, so we create something that perfectly matches each platform's standard requirements and preferences." },
 
-        { question: "For which Social Media platforms will you provide content?", answer: "We specialize in offering content creation for almost all social media platforms, including Facebook, Instagram, X (ex-Twitter), LinkedIn, and TikTok. We can mirror your writing style according to the specific characteristics of each chosen platform." },
+        { question: "For which social media platforms will you provide content?", answer: "Our services are not limited to any specific social media platform, but we create social media copy for Facebook, Instagram, LinkedIn, TikTok, and X (formerly Twitter). We adapt tone and style so your content matches the vibes/nativity of every platform." },
 
-        { question: "Do you also offer Social Media Management & Advertising Services?", answer: "Yes, having our partner company named Pine Digital Hub, we can cater to all your social media needs, from creating video and graphical content to strategic social media management. Feel free to contact our customer service representative for further information." },
+        { question: "Do you also offer social media management and advertising services?", answer: "Yes, we're also running a few sub-brands, one of which is Pine Techware, through which we offer comprehensive digital marketing, design, and development solutions. So yes, along with copywriting for social media, you can acquire professional social media management and marketing services." },
 
-        { question: "How is Social Media Copywriting different from Social Media management?", answer: "Social media copywriting focuses on creating premium-quality content for social media platforms. Conversely, social media management involves supervising overall social media strategy, content creation, and scheduling." },
+        { question: "What information do you require to get started?", answer: "Want to know the exact cost? It depends on content length, type, and how many platforms you're hiring us for. We don't just offer affordable social media copywriting services, but we also keep transparency (no hidden or extra charges) and flexibility in packages that are absolutely customizable, considering your needs." },
 
-        { question: "What information do you require to get started?", answer: "Upon your signup, you will receive a simple brief form through which you will provide us with all the required information about your brand, your audience, and your desired outcome." },
+        { question: "How much does your social media copywriting service cost?", answer: "Want to know the exact cost? It depends on content length, type, and how many platforms you're hiring us for. We don't just offer affordable social media copywriting services, but we also keep transparency (no hidden or extra charges) and flexibility in packages that are absolutely customizable, considering your needs." },
 
-        { question: "How much does Social Media Copywriting Cost?", answer: "The cost of the Social Media Copywriting will be entirely based on the length and the type of content you need for your social media. It also depends on the number of social media platforms for which you need content." },
+        { question: "Is my brand information kept confidential?", answer: "Absolutely! 100% confidentiality. We make sure that everything our client provides is kept confidential and secure and shared with the relevant departments only. We don't even outsource any part of the process. So, you can be sure that all your ideas, brand guidelines, and strategies will always remain secure with us." },
     ];
 
     return (
         <>
             <Head>
-                <title>Social Media Copywriting | Pine Book Writing</title>
+                <title>Social Media Copywriting Services | Pine Book Writing</title>
                                 <link rel="canonical" href="https://www.pinebookwriting.com/social-media-copywriting" />
 
                 <meta
                     name="description"
-                    content="Everything about Pine Book Writing—your partner in crafting, editing, and publishing your story. Experience seamless service from manuscript to bookshelf."
+                    content="Skyrocket your brand by hiring Pine Book Writing's social media copywriting services. Create catchy copies with effective strategies that really work."
                 />
                 <link rel="shortcut icon" href="/images/fav.webp" />
             </Head>
@@ -57,8 +57,10 @@ const handleOpenChat = () => {
             <BrandNavbar />
             <BrandPrimaryHeader
                 photo_banner={"/images/Social-Media-Copywriting/1.webp"}
-                title="Be Social, Engage People - Professional Social Media Copywriting Service"
-                desc="Struggling to create social media content? Let us help! Our team of skilled copywriter put their expertise into crafting engaging posts that drive organic reach, maximize engagement, and uplift your brand's presence. We offer all-inclusive services, from persuasive copy to attention-grabbing graphics and videos."
+                title="Be Social, Engage People – Expert Social Media Copywriting Services"
+                desc="Are you struggling to create social media content? Don't worry! Pine Book Writing also offers exceptional social media copywriting services to those who want to post and make an impact. Our copywriting service for social media includes all social media platforms, from Facebook and Instagram to X and LinkedIn.
+
+"
             />
             <BrandBannerLogo />
 
@@ -66,14 +68,27 @@ const handleOpenChat = () => {
                 <div className="flex flex-col items-center justify-center px-8 py-10 md:flex-row lg:flex-row md:px-0 md:py-0">
                     <div className="basis-1/2 abt-txt m1-h p1 aos-init aos-animate" data-aos="fade-right" data-aos-duration="1000">
                       
-                        <h2 className="text-3xl font-bold uppercase font-poppins md:text-4xl">Professional Social Media Copywriting Company</h2>
+                        <h2 className="text-3xl font-bold uppercase font-poppins md:text-4xl">A Reliable Social Media Copywriting Company USA</h2>
                         <h2 className="text-2xl uppercase font-poppins md:text-3xl">
-                            Bespoke Social Media Copy for Every Platform
+                          Bespoke Social Media Copy for Every Platform
                         </h2>
                         <p className="pt-3 text-xl text-left font-poppins">
-                            Social media is a crucial tool for your business if you want to get and retain your potential audience. To create a post, you need to hire social media copywriting services to help you build an emotional and friendly connection with your audience and accomplish all your marketing objectives. That's where Pine Book Writing comes in.</p>
+  Social media is a crucial tool for your business if you want to get and retain your potential audience. To create a post, you need to hire social media copywriting services to help you build an <span className="font-bold">emotional and friendly connection with your audience</span> and accomplish your <span className="font-bold">marketing objectives</span>. That’s where{" "}
+  <a
+    href="https://www.pinebookwriting.com/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="font-bold underline transition underline-offset-2 hover:text-gray-700"
+  >
+    Pine Book Writing
+  </a>{" "}
+  comes in.
+</p>
 
-                        <p className="pt-3 text-xl text-left font-poppins">Pine Book Writing offers impeccable social media copywriting with a dedicated team of passionate writers whose expertise lies in writing short and snappy to longer post copies and captions for various social channels such as Facebook, Instagram, LinkedIn, and X (ex-Twitter). We have helped many clients of various industries. Contact us today for a free consultation!</p>
+<p className="pt-3 text-xl text-left font-poppins">
+  <span className="font-bold">Pine Book Writing</span> offers <span className="font-bold">impeccable social media copywriting</span> with a dedicated team of passionate writers whose expertise lies in writing everything from <span className="font-bold">short captions</span> to <span className="font-bold">longer post copies</span> for platforms like Facebook, Instagram, LinkedIn, and X (ex-Twitter). Our <span className="font-bold">social media copywriters</span> have helped clients from different industries improve <span className="font-bold">engagement and reach</span>. Contact us today for a free consultation!
+</p>
+
                     </div>
                     <div className="flex justify-center text-center basis-1/2 abt-pic md:justify-center">
                         <Image src={"/images/Social-Media-Copywriting/ghost-pic.webp"} width={470} height={300}
@@ -107,10 +122,10 @@ const handleOpenChat = () => {
             
                                 <div className="px-4 text-center md:col-span-6">
                                     <h2 className="font-poppins text-2xl text-[#98caa9] font-semibold md:text-3xl uppercase">
-                                        Hire Social Media Copywriting Service That Sells
+                                       Getting Only Likes, No Sales? We're Here to Help!
                                     </h2>
                                     <p className="py-4 text-base md:text-lg">
-                                        Every day, our unique social media copywriting services help you connect with your audience and establish a stronger online presence.
+                                      Skyrocket your brand with expert social media copywriting services that help you write inviting yet persuasive posts. Get in touch today!
                                     </p>
             
                                     <div className="flex flex-col items-center justify-center gap-4 cta-btns sm:flex-row">
@@ -158,24 +173,24 @@ const handleOpenChat = () => {
                         <div className="flex flex-row " data-aos="fade-left">
                             <div className="flex-col px-6 py-10 text-left brand-process-content">
                                 <span className="num-span"><b>01</b></span>
-                                <h2 className="text-2xl text-white font-poppins pro-h">Project Discovery</h2>
-                                <p className="">Our process begins with a detailed discussion about your social media goals, your audience, and your brand voice to understand your desired outcome. </p>
+                                <h2 className="text-2xl text-white font-poppins pro-h">Goal Discovery</h2>
+                                <p className="">Our process begins with a detailed discussion about your goals, audience, and brand voice. This ensures our social media copywriting service aligns with your desired outcome. </p>
                             </div>
                         </div>
 
                         <div className="flex flex-row" data-aos="fade-left">
                         <div className="flex-col px-6 py-10 text-left brand-process-content">
                         <span className="num-span"><b>02</b></span>
-                                <h2 className="text-2xl text-white font-poppins pro-h">Account Signup or Assessment</h2>
-                                <p className="">We help you sign up for your new social media account or assess your existing presence to address areas for improvement.</p>
+                                <h2 className="text-2xl text-white font-poppins pro-h">Profile Setup</h2>
+                                <p className="">We help you sign up for new social media accounts or assess your existing profiles to identify gaps and areas for improvement to uplift your online engagement strategy.</p>
                             </div>
                         </div>
 
                         <div className="flex flex-row" data-aos="fade-left">
                         <div className="flex-col px-6 py-10 text-left brand-process-content">
                         <span className="num-span"><b>03</b></span>
-                                <h2 className="text-2xl text-white font-poppins pro-h">Content Strategy</h2>
-                                <p className="">Then, our social media copywriting team works together to create a tailored content strategy that perfectly matches your desired goals.</p>
+                                <h2 className="text-2xl text-white font-poppins pro-h">Content Planning</h2>
+                                <p className="">Our team creates a personalized content plan as a part of the process whether it is copywriting for facebook or other platforms. We make sure it matches your desired goals and connects with your audience.</p>
                             </div>
                         </div>
                         
@@ -186,16 +201,16 @@ const handleOpenChat = () => {
                         <div className="flex flex-row " data-aos="fade-left">
                         <div className="flex-col px-6 py-10 text-left brand-process-content">
                         <span className="num-span"><b>04</b></span>
-                                <h2 className="text-2xl text-white font-poppins pro-h">Content Creation</h2>
-                                <p className="">The main phase. Our team of skilled copywriters gets to work and craft persuasive, informative, or interactive posts that convey your message effectively.</p>
+                                <h2 className="text-2xl text-white font-poppins pro-h">Copy Creation</h2>
+                                <p className="">Our highly competent social media copywriters write something that strengthens your brand message and persuades people to take the actions you want.</p>
                             </div>
                         </div>
 
                         <div className="flex flex-row" data-aos="fade-left">
                         <div className="flex-col px-6 py-10 text-left brand-process-content">
                         <span className="num-span"><b>05</b></span>
-                                <h2 className="text-2xl text-white font-poppins pro-h">Revision &  Feedback</h2>
-                                <p className="">We will share an online content calendar with you so you can view each copy and give valuable feedback.</p>
+                                <h2 className="text-2xl text-white font-poppins pro-h">Feedback & Revisions</h2>
+                                <p className="">We share an easy-to-view content calendar with you so you can review each post's content, give feedback and see if your social media content matches your expectations.</p>
                             </div>
                         </div>
 
@@ -203,7 +218,7 @@ const handleOpenChat = () => {
                         <div className="flex-col px-6 py-10 text-left brand-process-content">
                         <span className="num-span"><b>06</b></span>
                                 <h2 className="text-2xl text-white font-poppins pro-h">Ongoing Support</h2>
-                                <p className="">We also provide ongoing support to guide you on implementing social media strategy and optimizing content performance.</p>
+                                <p className="">We provide continued support on strategies, post optimizations, and performance improvements with effective ad copywriting for long-term growth.</p>
                             </div>
                         </div>
                         
@@ -211,6 +226,41 @@ const handleOpenChat = () => {
 
                 </div>
             </section>
+
+
+             <section className="max-w-6xl px-4 py-16 mx-auto bg-white font-poppins">
+                 <h2 className="mb-12 text-xl font-medium text-center text-gray-700 md:text-2xl">
+    Our Offerings
+  </h2>
+  <h2 className="mb-12 text-xl font-medium text-center text-gray-700 md:text-2xl">
+   Everything We Cover in Social Media Copywriting Service
+  </h2>
+
+  <p className="mb-12 text-xl font-medium text-center text-gray-700 md:text-2xl">
+  We include everything in our social media copywriting services that you need to make your brand presence robust and professional.
+  </p>
+
+  <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3">
+    {[
+     { icon: '🖋️', label: 'Captions & Posts' },
+      { icon: '🧐', label: 'Ad Copywriting' },
+      { icon: '📄', label: 'Content Calendars' },
+      { icon: '💼', label: 'Hashtag & Tagline Copy' },
+      { icon: '⚙️', label: 'Reels & Shorts Scriptwriting' },
+      { icon: '🎯', label: 'Copy for Post Designs' },         
+    ].map((service, index) => (
+      <div
+        key={index}
+        className="flex flex-col items-center justify-center h-32 p-4 text-center bg-[#f4f1ea] hover:bg-[#ebe8e0] transition-colors rounded-xl shadow-sm hover:shadow-md"
+      >
+        <div className="mb-2 text-3xl">{service.icon}</div>
+        <span className="text-[10px] font-bold uppercase tracking-widest text-gray-600">
+          {service.label}
+        </span>
+      </div>
+    ))}
+  </div>
+</section>
 
             <section className="overflow-hidden" >
                 <div className="relative left-0 px-12 py-10 mt-0 mb-8 brand-choose-us-section ms-auto md:left-52 md:px-20 md:mt-14 " >
@@ -223,18 +273,18 @@ const handleOpenChat = () => {
                             />
                         </div>
                         <div className="basis-1/3 md:ml-20">
-                            <h2 className="mt-10 text-2xl font-bold text-white uppercase font-poppins md:text-4xl md:mt-0" data-aos="zoom-in-left" data-aos-delay="100">Why Choose Our Social Media Copywriting?</h2>
-                            <p className="mt-2 text-white">At Pine Book Writing, we offer more than just our words. Our team of skilled social media copywriters blends creativity, data-driven insights, and immense expertise to write engaging content that brings results.</p>
+                            <h2 className="mt-10 text-2xl font-bold text-white uppercase font-poppins md:text-4xl md:mt-0" data-aos="zoom-in-left" data-aos-delay="100">Why Choose Our Social Media Copywriting Services?</h2>
+                            <p className="mt-2 text-white">At Pine Book Writing, we believe social media isn't just about posting. Instead, it's a tool to connect and engage people beyond their expectations. That’s why we’ve designed our SMM copywriting service in a way that genuinely helps brands attract attention and bring notable results. Each of your posts matters to us.</p>
                             <div className="flex flex-col gap-2 mt-6 md:flex-row md:gap-10">
                                 <ul>
-                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} /> Expert Copywriters </li>
-                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} /> Tailored Content </li>
-                                    <li className="flex items-center gap-3 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} /> Engaging Copy </li>
+                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />	Skilled Copywriters </li>
+                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} /> Fast Turnaround </li>
+                                    <li className="flex items-center gap-3 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} /> 	Platform-Specific Content </li>
                                 </ul>
                                 <ul>
-                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} /> Data-Driven Approach</li>
-                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} /> Brand Voice Alignment</li>
-                                    <li className="flex items-center gap-3 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} /> Multi-channel Expertise</li>
+                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} /> 	Affordable Packages</li>
+                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} /> 	Graphics & Video Creation</li>
+                                    <li className="flex items-center gap-3 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />	Brand Voice Alignment</li>
                                 </ul>
                             </div>
                             {/* <BrandAudioPlayer src="/brand-img/why-choose-us-voice.wav" /> */}

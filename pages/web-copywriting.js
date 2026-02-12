@@ -27,28 +27,28 @@ export default function WebCopywriting () {
     };
 
     const faqData = [
-        { question: "What kind of web copy do you write?", answer: "Being pioneers in the writing industry, we produce a vast variety of web content, including homepage content, about company pages, landing pages, product descriptions, and blog posts. Our offerings are specifically designed for your unique needs and your target audience." },
+        { question: "What kind of web copy do you write?", answer: "Being pioneers in the writing industry, we produce a vast variety of content through our web copywriting services, like homepages, about pages, landing pages, product descriptions, and blog posts. Each piece is bespoke to your unique audience and goals." },
         
-        { question: "How do you ensure my brand voice is reflected in the content?", answer: "Our team of website copywriters works collaboratively to understand your brand voice and message first. Then, they incorporate your unique brand voice into every section of the website to ensure consistency throughout the website." },
+        { question: "How do you ensure my brand voice is reflected in the content?", answer: "Our team of website copywriters collaboratively understands your brand voice and message first. Then, they incorporate your unique brand voice into every section of the website to ensure consistency throughout the website." },
        
-        { question: "How do you conduct keyword research for web copy?", answer: "We have a dedicated team of SEO professionals who conduct thorough keyword research to find relevant and most searched terms and phrases. Then, they strategically infuse them into your content to improve its visibility in SERPs." },
+        { question: "How do you conduct keyword research for web copy?", answer: "The timeline of our web content writing services depends on many factors, such as the number of web pages, website UI, wordcount requirement (if any), and the complexities of your SEO requirement. However, we can provide an estimated timeline after discussing your project requirements. " },
        
-        { question: "How long do your web content writing services take?", answer: "The timeline of writing the website content depends on many factors, such as the number of web pages, website UI, wordcount requirement (if any), and the complexities of your SEO requirement. However, we can provide an estimated timeline after discussing your project requirements. " },
+        { question: "How long does your website content writing service take?", answer: "The timeline of our web content writing services depends on many factors, such as the number of web pages, website UI, wordcount requirement (if any), and the complexities of your SEO requirement. However, we can provide an estimated timeline after discussing your project requirements.  " },
         
-        { question: "Do you write website content using AI Tools?", answer: "No, we do not write web copies using any AI-generative tools to ensure every line is based on facts and a human feel. However, we don’t neglect the importance of having familiarity with AI for topics, Ideas, and Research purposes." },
+        { question: "Do you write website content using AI Tools?", answer: "No, we do not write web copies using any AI tools to ensure every line is based on facts and a human feel. However, we don’t neglect the importance of having familiarity with AI for topics, Ideas, and Research purposes." },
        
-        { question: "Can I request revisions to the web copy?", answer: "Absolutely. Unlike others, we offer multiple revisions to ensure your 100% satisfaction with our work.  We embrace our clients' feedback and work until they’re happy." },
+        { question: "Can I request revisions to the web copy?", answer: "Absolutely. As part of our best content writing services for websites, we offer multiple revisions to ensure your 100% satisfaction with our work.  We embrace our clients' feedback and work until they’re happy." },
             ];
 
     return (
         <>
             <Head>
-                <title>Website Content | Pine Book Writing</title>
+                <title>Expert web copywriting services | Pine Book Writing</title>
                 <link rel="canonical" href="https://www.pinebookwriting.com/web-copywriting" />
 
                 <meta
                     name="description"
-                    content="Everything about Pine Book Writing—your partner in crafting, editing, and publishing your story. Experience seamless service from manuscript to bookshelf."
+                    content="Uplift your brand with professional web copywriting services. Well-researched content that can help your website rank and grab visitors' attention quickly."
                 />
                 <link rel="shortcut icon" href="/images/fav.webp" />
                 </Head>
@@ -56,8 +56,8 @@ export default function WebCopywriting () {
             <BrandNavbar />
             <BrandPrimaryHeader
                 photo_banner={"/images/Web-Copywriting/1.webp"}
-                title="Expert Web Copywriting Services"
-                desc="Don't know how to write a persuasive and compelling web copy that drives conversions? Don't worry! Our team of experienced copywriters brings years of experience in website content writing for various industries. Contact us to learn more about our services now!"
+                title="Best Web Copywriting Services to Strengthen Your Online Presence"
+                desc="Your website requires content that can inform and persuade your visitors at once. At Pine Book Writing, we offer professional web copywriting services and create compelling and persuasive content for homepages, services pages, and landing pages in your own preferred messaging style."
             />
             <BrandBannerLogo />
 
@@ -65,14 +65,14 @@ export default function WebCopywriting () {
                 <div className="flex flex-col items-center justify-center px-8 py-10 md:flex-row lg:flex-row md:px-0 md:py-0">
                     <div className="basis-1/2 abt-txt m1-h p1 aos-init aos-animate" data-aos="fade-right" data-aos-duration="1000">
                        
-                        <h2 className="text-3xl font-bold uppercase font-poppins md:text-4xl">Fuel your Website with Expert Website Content Writing Services</h2>
+                        <h2 className="text-3xl font-bold uppercase font-poppins md:text-4xl">Build Credibility - Hire Expert Web Copywriting Services</h2>
                         <h2 className="text-2xl uppercase font-poppins md:text-3xl">
-                        Persuasive Words, Profitable Impact
+                       Build Credibility - Hire Expert Web Copywriting Services
                         </h2>
                         <p className="pt-3 text-xl text-left font-poppins">
-                        Your journey to build an online presence doesn’t end with building an appealing website. Your website needs to be fueled with SEO-optimized yet persuasive content that can capture your visitor’s attention, answer their queries regarding your business, and convince them to take action. And that’s where we come in.</p>
+                      In order to create exceptional online presence, having a well functioning and appealing website is not enough. Hire our professional web copywriting services that offer SEO-friendly yet audience-friendly content. A great web copy answers questions about your business and encourages action. And that's what we do at Pine Book Writing.</p>
 
-                        <p className="pt-3 text-xl text-left font-poppins">At Pine Book Writing, we have a team of skilled copywriters who are familiar with working in numerous industries. Whether you want to write for a business website, informative website, education website or landing page, our services are there for you. We will help you connect with your audience and portray your brand’s unique voice and values. We’ll highlight your unique selling points and create a persuasive and engaging call to action to encourage your readers/visitors to act!</p>
+                        <p className="pt-3 text-xl text-left font-poppins">In order to create exceptional online presence, having a well functioning and appealing website is not enough. Hire our professional web copywriting services that offer SEO-friendly yet audience-friendly content. A great web copy answers questions about your business and encourages action. And that's what we do at Pine Book Writing.</p>
                     </div>
                     <div className="flex justify-center text-center basis-1/2 abt-pic md:justify-center">
                         <Image src={"/images/Web-Copywriting/ghost-pic.webp"} width={470} height={300}
@@ -106,11 +106,12 @@ export default function WebCopywriting () {
             
                                 <div className="px-4 text-center md:col-span-6">
                                     <h2 className="font-poppins text-2xl text-[#98caa9] font-semibold md:text-3xl uppercase">
-                                        Web Copywriting Service that Turns Clicks into Conversions
+                                      Losing Leads From Weak SEO-Friendly Copywriting?
                                     </h2>
-                                    <p className="py-4 text-base md:text-lg">
-                                        Get in touch with our web copywriting experts, that can help you reach, inform, and turn your visitors into repetitive customers.
-                                    </p>
+                                   <p>
+Weak website copy costs your customers. Trust our web copywriting services, as we deliver easily understandable and <a href="https://www.pinebookwriting.com/seo-content" target="_blank" rel="noopener noreferrer">SEO-optimized content</a> that visitors find useful and trustworthy.
+</p>
+
             
                                     <div className="flex flex-col items-center justify-center gap-4 cta-btns sm:flex-row">
                                                  <CTAButton />
@@ -149,7 +150,7 @@ export default function WebCopywriting () {
                 <div className="max-w-screen-xl">
                     <div className="mb-6 text-center">
                         <h3 className="text-2xl text-black font-poppins">Our Service Workflow</h3>
-                        <h2 className="text-3xl font-bold text-black font-poppins md:text-4xl" data-aos="zoom-out-down">6-Step Process of Our Web Content Writing Services</h2>
+                        <h2 className="text-3xl font-bold text-black font-poppins md:text-4xl" data-aos="zoom-out-down">6-Step Process of Website Copywriting Services</h2>
                     </div>
 
                     <div className="grid gap-6 mb-6 md:grid-cols-3">
@@ -157,8 +158,8 @@ export default function WebCopywriting () {
                         <div className="flex flex-row " data-aos="fade-left">
                             <div className="flex-col px-6 py-10 text-left brand-process-content">
                                 <span className="num-span"><b>01</b></span>
-                                <h2 className="text-2xl text-white font-poppins pro-h">Project Brief</h2>
-                                <p className="">Our service process begins with sending you a web content writing questionnaire to understand your business, audience, and other preferences.</p>
+                                <h2 className="text-2xl text-white font-poppins pro-h">Getting Started</h2>
+                                <p className="">Our service process begins with sending you a web content writing services questionnaire to understand your business, audience, and other preferences.</p>
                             </div>
                         </div>
 
@@ -166,7 +167,7 @@ export default function WebCopywriting () {
                         <div className="flex-col px-6 py-10 text-left brand-process-content">
                         <span className="num-span"><b>02</b></span>
                                 <h2 className="text-2xl text-white font-poppins pro-h">Thorough Research</h2>
-                                <p className="">Once we get all the details, our writers will conduct deep research about your industry to understand your brand, audience and unique voice fully.</p>
+                                <p className="">Once we get all the details, our writers will conduct deep research about your industry to understand your brand, audience and unique voice fully. </p>
                             </div>
                         </div>
 
@@ -174,7 +175,7 @@ export default function WebCopywriting () {
                         <div className="flex-col px-6 py-10 text-left brand-process-content">
                         <span className="num-span"><b>03</b></span>
                                 <h2 className="text-2xl text-white font-poppins pro-h">Content Planning</h2>
-                                <p className="">After research, we create a robust content strategy that fully aligns with your unique business goals and objectives.</p>
+                                <p className="">After research, we create a robust website content strategy that fully aligns with your unique business goals and objectives.</p>
                             </div>
                         </div>
                         
@@ -186,7 +187,7 @@ export default function WebCopywriting () {
                         <div className="flex-col px-6 py-10 text-left brand-process-content">
                         <span className="num-span"><b>04</b></span>
                                 <h2 className="text-2xl text-white font-poppins pro-h">Copywriting</h2>
-                                <p className="">Then, we assign your web content writing task to our best-fit writer, who has prior writing experience for your particular business niche.</p>
+                                <p className="">Then, we assign your web content writing task to our best-fit writer, who has prior experience in web copywriting services for your particular business niche.</p>
                             </div>
                         </div>
 
@@ -194,7 +195,7 @@ export default function WebCopywriting () {
                         <div className="flex-col px-6 py-10 text-left brand-process-content">
                         <span className="num-span"><b>05</b></span>
                                 <h2 className="text-2xl text-white font-poppins pro-h">Refining & Revision</h2>
-                                <p className="">After completing the write-up, we take our content through our proficient editing process to ensure it is error-free and plagiarism-free.</p>
+                                <p className="">After completing the write-up, we take our content through our proficient editing process to ensure that it is error-free, plagiarism-free, and SEO-friendly content.</p>
                             </div>
                         </div>
 
@@ -210,6 +211,40 @@ export default function WebCopywriting () {
 
                 </div>
             </section>
+
+            <section className="max-w-6xl px-4 py-16 mx-auto bg-white font-poppins">
+                 <h2 className="mb-12 text-xl font-medium text-center text-gray-700 md:text-2xl">
+    Our Offerings
+  </h2>
+  <h2 className="mb-12 text-xl font-medium text-center text-gray-700 md:text-2xl">
+  What’s Included In Our Web Copywriting Services   
+  </h2>
+
+  <p className="mb-12 text-xl font-medium text-center text-gray-700 md:text-2xl">
+  Our website copywriting company covers everything needed to create a robust impression and catch visitors' attention immediately. Our content perfectly conveys your brand message, knocks search engines, and moves users toward action.
+  </p>
+
+  <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3">
+    {[
+     { icon: '🖋️', label: 'Home Page Copy' },
+      { icon: '🧐', label: 'Services Page Copywriting' },
+      { icon: '📄', label: 'Landing Page Copywriting' },
+      { icon: '💼', label: 'About Us Page' },
+      { icon: '⚙️', label: 'Product Descriptions' },
+      { icon: '🎯', label: 'SEO Copy Optimization' },         
+    ].map((service, index) => (
+      <div
+        key={index}
+        className="flex flex-col items-center justify-center h-32 p-4 text-center bg-[#f4f1ea] hover:bg-[#ebe8e0] transition-colors rounded-xl shadow-sm hover:shadow-md"
+      >
+        <div className="mb-2 text-3xl">{service.icon}</div>
+        <span className="text-[10px] font-bold uppercase tracking-widest text-gray-600">
+          {service.label}
+        </span>
+      </div>
+    ))}
+  </div>
+</section>
             
             <section className="overflow-hidden" >
                 <div className="relative left-0 px-12 py-10 mt-0 mb-8 brand-choose-us-section ms-auto md:left-52 md:px-20 md:mt-14 " >
@@ -222,18 +257,18 @@ export default function WebCopywriting () {
                             />
                         </div>
                         <div className="basis-1/3 md:ml-20">
-                            <h2 className="mt-10 text-2xl font-bold text-white uppercase font-poppins md:text-4xl md:mt-0" data-aos="zoom-in-left" data-aos-delay="100">Why Choose Our Web Copywriting Services?</h2>
-                            <p className="mt-2 text-white">Educate and persuade your audience with our web copywriting services. We write website content for humans, not for search engines. We use a persuasive yet friendly style to build a meaningful relationship with the audience.</p>
+                            <h2 className="mt-10 text-2xl font-bold text-white uppercase font-poppins md:text-4xl md:mt-0" data-aos="zoom-in-left" data-aos-delay="100">Why Choose Our Web Copywriting Agency in USA?</h2>
+                            <p className="mt-2 text-white">At <a href="https://www.pinebookwriting.com" target="_blank" class="font-bold" rel="noopener noreferrer">Pine Book Writing</a>, our web copywriting services go beyond just writing words. We study your audience, industry, and competitors, and write something that sets you apart. We mix creativity and strategy in our writing to create something that helps you connect with your audience the right way.</p>
                             <div className="flex flex-col gap-2 mt-6 md:flex-row md:gap-10">
                                 <ul>
-                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Increased Conversions </li>
-                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Higher ROI </li>
-                                    <li className="flex items-center gap-3 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />SEO Optimized Content </li>
+                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Skilled Copywriters </li>
+                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />	Human-Written Copy </li>
+                                    <li className="flex items-center gap-3 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />	SEO-Friendly Content </li>
                                 </ul>
                                 <ul>
-                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Audience Focus</li>
-                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Expert Copywriters</li>
-                                    <li className="flex items-center gap-3 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Human-Friendly Content</li>
+                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Fast Turnaround</li>
+                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />	Conversion-Focused Copy</li>
+                                    <li className="flex items-center gap-3 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />	Affordable Packages</li>
                                 </ul>
                             </div>
                             {/* <BrandAudioPlayer src="/brand-img/why-choose-us-voice.wav" /> */}

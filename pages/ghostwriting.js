@@ -255,6 +255,39 @@ export default function BookEditing() {
             </section>
 
 
+<section className="max-w-6xl px-4 py-16 mx-auto bg-white font-poppins">
+  <h2 className="mb-12 text-xl font-medium text-center text-gray-700 md:text-2xl">
+    What's Included in Our Ghostwriting Services?
+  </h2>
+
+  <p className="mb-12 text-xl font-medium text-center text-gray-700 md:text-2xl">
+    We've designed our ghost writing service in a way that you can get complete professional support from start to finish. Our creative ghostwriting experts help you through the whole process, making your book perfectly publish-ready.
+  </p>
+
+  <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
+    {[
+      { icon: '🔎', label: 'Research' },               // Research
+      { icon: '📊', label: "Editorial Assessment" },  // Assessment / Review
+      { icon: '🗂️', label: 'Chapter Outlining' },     // Structure / Planning
+      { icon: '✒️', label: 'Writing' },                // Writing
+      { icon: '📝', label: 'Editing' },                // Editing
+      { icon: '✔️', label: 'Proofreading' },           // Proofreading
+      { icon: '📐', label: 'Formatting' },             // Formatting / Layout
+      { icon: '🛡️', label: 'Quality Assurance' },     // Quality Check
+    ].map((service, index) => (
+      <div
+        key={index}
+        className="flex flex-col items-center justify-center h-32 p-4 text-center bg-[#f4f1ea] hover:bg-[#ebe8e0] transition-colors rounded-xl shadow-sm hover:shadow-md"
+      >
+        <div className="mb-2 text-3xl">{service.icon}</div>
+        <span className="text-[10px] font-bold uppercase tracking-widest text-gray-600">
+          {service.label}
+        </span>
+      </div>
+    ))}
+  </div>
+</section>
+
 <section className="relative flex justify-center py-20 mx-auto overflow-hidden text-center bg-gray-50 brand-process">
   <div className="w-full max-w-screen-xl px-4">
     
@@ -301,38 +334,7 @@ export default function BookEditing() {
     </div>
   </div>
 </section>        
-<section className="max-w-6xl px-4 py-16 mx-auto bg-white font-poppins">
-  <h2 className="mb-12 text-xl font-medium text-center text-gray-700 md:text-2xl">
-    What's Included in Our Ghostwriting Services?
-  </h2>
 
-  <p className="mb-12 text-xl font-medium text-center text-gray-700 md:text-2xl">
-    We've designed our ghost writing service in a way that you can get complete professional support from start to finish. Our creative ghostwriting experts help you through the whole process, making your book perfectly publish-ready.
-  </p>
-
-  <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
-    {[
-      { icon: '🔎', label: 'Research' },               // Research
-      { icon: '📊', label: "Editorial Assessment" },  // Assessment / Review
-      { icon: '🗂️', label: 'Chapter Outlining' },     // Structure / Planning
-      { icon: '✒️', label: 'Writing' },                // Writing
-      { icon: '📝', label: 'Editing' },                // Editing
-      { icon: '✔️', label: 'Proofreading' },           // Proofreading
-      { icon: '📐', label: 'Formatting' },             // Formatting / Layout
-      { icon: '🛡️', label: 'Quality Assurance' },     // Quality Check
-    ].map((service, index) => (
-      <div
-        key={index}
-        className="flex flex-col items-center justify-center h-32 p-4 text-center bg-[#f4f1ea] hover:bg-[#ebe8e0] transition-colors rounded-xl shadow-sm hover:shadow-md"
-      >
-        <div className="mb-2 text-3xl">{service.icon}</div>
-        <span className="text-[10px] font-bold uppercase tracking-widest text-gray-600">
-          {service.label}
-        </span>
-      </div>
-    ))}
-  </div>
-</section>
 
 {/* <section class=" bg-white font-poppins">
   <div class="max-w-7xl px-6 mx-auto">

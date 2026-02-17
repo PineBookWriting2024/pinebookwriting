@@ -27,15 +27,27 @@ export default function BookEditing() {
     };
 
     const faqData = [
-        { question: "What is Ghostwriting?", answer: "Ghostwriting is the name of hiring a professional writer to write your book. In return, the writer will gather all the relevant information, conduct in-depth research, and craft a manuscript that meets your vision." },
+        { question: "What is military fiction writing?", answer: "In military fiction writing, stories are written based on war, defense (real or imagined) or real-life military experiences. Writers use real military elements and mix them with fictional elements or events to create emotionally powerful and authentic stories." },
 
-        { question: "Is your ghostwriting ethical and authentic?", answer: "Absolutely, it is both ethical and authentic. Ghostwriting is extremely common, especially in the world of book writing. This service is considered the same as having any professional hired to perform a specific task. At Pine Book Writing, we serve our expertise in writing to put your creative ideas into a manuscript." },
+        { question: "Can you help me write a military novel based on real events?", answer: "Yes. At Pine Book Writing, our military fiction writers for hire can help you pen real events or wartime memories and create a professionally written military book. This is actually what we do." },
 
-        { question: "Who will own the rights in Ghostwriting?", answer: "We are just your writing partner. We write it as a ghostwriting service, and you own it. As an author, you own all the rights and credits for the final product. Not only that, the royalties your book earns will also be yours." },
+        { question: "How do you make sure the story feels realistic?", answer: "Before starting to write, our writers conduct detailed research on different war-related aspects and elements, like geographical presentation of different areas, artillery, and strategies (used in war), to make sure each battle scene and dialogue feels believable." },
 
-        { question: "Can I hire you to write one chapter of my book and later write the other chapters?	", answer: "Yes, you can also hire us chapter by chapter. Here, we are confident that once you see our writing professionalism and expertise, you will definitely want to go toward the last chapter of your book. So, if you want to hire us for a single chapter, you are also welcome." },
+        { question: "Do I need to have full story details before hiring you?	", answer: "Not at all! If you don't have a full story, come with a basic idea or concept. Our fiction writers and researchers will handle the rest." },
 
-        { question: "How long will it take to write a book?", answer: "The completion time of the ghostwriting services entirely depends on the complexity, genre, and your book's length. However, we usually take 3 to 6 months on average. Moreover, the time also depends on how much material you provide and the research required on the particular topic." },
+       {
+  question: "Not at all! If you don't have a full story, come with a basic idea or concept. Our fiction writers and researchers will handle the rest. What types of military fiction novels do you write?",
+  answer: `
+  We write for all forms of military fiction novels. You can sign up for our services whether you want to write a:
+
+  1. Historical war story.
+  2. Modern army thriller.
+  3. Veteran life fiction.
+  4. Air combat story.
+  5. Sea combat story.
+  `
+}
+,   
 
         { question: "How much does ghostwriting a book cost?", answer: "The cost of ghostwriting also varies based on your book's length, genre, and complexity. You can view our packages here. Moreover, if you want to customize the any package according to your need, you can speak to our representative. " },
     ];
@@ -43,11 +55,11 @@ export default function BookEditing() {
     return (
         <>
             <Head>
-                <title>Military Fiction Writing | Pine Book Writing</title>
+                <title>Hire the Best Military Fiction Writing Services </title>
                 <link rel="canonical" href="https://www.pinebookwriting.com/Military-Fiction-Writing" />
                 <meta
                     name="description"
-                    content="Everything about Pine Book Writing—your partner in crafting, editing, and publishing your story. Experience seamless service from manuscript to bookshelf."
+                    content="Write your war stories using professional military fiction writing services by Pine Book Writing. Infuse emotions into your coming military fiction book."
                 />
                 <link rel="shortcut icon" href="/images/fav.webp" />
             </Head>
@@ -55,24 +67,25 @@ export default function BookEditing() {
             <BrandNavbar />
             <BrandPrimaryHeader
                 photo_banner={"/images/Military-Fiction-Writing/1.webp"}
-                title="Military Fiction Writing Service That Delivers Impact"
-                desc="Want to write and publish a military-themed story? Make your dream come alive with our exceptional and realistic military fiction writing service made for veterans and storytellers. Get a free quote now!"
+                title="Deliver Impact with Expert Military Fiction Writing Services"
+                desc="At Pine Book Writing, we have a dedicated team of writers who specialize in military fiction writing services. Whether you want to write a modern war novel, a historical battle tale, or a military story based on real-life experiences, our skilled team of military fiction writers for hire is ready to serve. Contact us today!"
             />
             <BrandBannerLogo />
 
             <div className="container max-w-screen-xl pt-0 mx-auto overflow-hidden md:py-20">
                 <div className="flex flex-col items-center justify-center px-8 py-10 md:flex-row lg:flex-row md:px-0 md:py-0">
                     <div className="basis-1/2 abt-txt m1-h p1 aos-init aos-animate" data-aos="fade-right" data-aos-duration="1000">
-                        <h2 className="text-3xl font-bold uppercase font-poppins md:text-4xl">Hire Military Fiction Writing Service Experts to Craft</h2>
+                        <h2 className="text-3xl font-bold uppercase font-poppins md:text-4xl">Professional Military Fiction Writing Services</h2>
 
                         <h2 className="text-2xl uppercase font-poppins md:text-3xl">
-                            Real Stories, Real Emotion
+                           For Realistic War Stories
                         </h2>
 
                         <p className="pt-3 text-xl text-left font-poppins">
-                            With our military fiction writing service, you may write stories that are exciting, true to life, and full of passion based on real or imagined events. We make sure your novel is both real and interesting by focusing on structure, character development, and authenticity.  </p>
+                          With our best military writing services, you may write stories that are exciting, true to life, and full of emotions based on real or imagined events. We make sure your war fiction story is both real and interesting by focusing on structure, character development and authentic details.  </p>
 
-                        <p className="pt-3 text-xl text-left font-poppins">Our writers know how to write in the style and detail that your story needs, whether you're a veteran, an enthusiast, or a fiction writer. We help with everything from coming up with ideas and making an outline to writing and editing the final draft. We work diligently to keep the bravery, emotion, and action in your story and make sure it appeals to many of your audience. Why still thinking? Share your story idea, and get it into a perfectly written book!</p>
+                        <p className="pt-3 text-xl text-left font-poppins">Our military fiction writers know how to write in the style and detail that your story needs, whether you're a veteran, an enthusiast, or a fiction writer working on the military historical fiction genre. We help with everything from coming up with ideas and making an outline to writing and editing the final draft. We work diligently to keep the bravery, emotion, and action in your story and make sure it appeals to many of your audience. </p>
+                         <p className="pt-3 text-xl text-left font-poppins">Why still thinking? Share your story idea, and get it into a perfectly written book!</p>
                     </div>
                     <div className="flex justify-center text-center basis-1/2 abt-pic md:justify-center">
                         <Image src={"/images/Military-Fiction-Writing/ghost-pic.webp"} width={470} height={300}
@@ -104,9 +117,9 @@ export default function BookEditing() {
 
                     <div className="px-4 text-center md:col-span-6">
                         <h2 className="font-poppins text-2xl text-[#98caa9] font-semibold md:text-3xl uppercase">
-                            Want to Convert Your War Story in to the Best-Selling?
+                           Ready to Convert Your War Story Into The Best-Selling?
                         </h2>
-                        <p className="py-4 text-base md:text-lg">Let’s connect and turn your military fiction into a powerful, memorable, and best-selling book.</p>
+                        <p className="py-4 text-base md:text-lg">Hire expert military fiction writers and let them turn your military fiction story into the best-selling book.</p>
 
                         <div className="flex flex-col items-center justify-center gap-4 cta-btns sm:flex-row">
                             <CTAButton />
@@ -152,24 +165,24 @@ export default function BookEditing() {
                         <div className="flex flex-row " data-aos="fade-left">
                             <div className="flex-col px-6 py-10 text-left brand-process-content">
                                 <span className="num-span"><b>01</b></span>
-                                <h2 className="text-2xl text-white font-poppins pro-h">Project Manager Assigning & Questionnaire</h2>
-                                <p className="">We begin our process by assigning a dedicated project manager and a questionnaire to understand your writing requirements.</p>
+                                <h2 className="text-2xl text-white font-poppins pro-h">Project Onboarding</h2>
+                                <p className="">We begin our process by assigning a dedicated project manager to you and a questionnaire to learn about your writing requirements for our military ghostwriting services.</p>
                             </div>
                         </div>
 
                         <div className="flex flex-row" data-aos="fade-left">
                             <div className="flex-col px-6 py-10 text-left brand-process-content">
                                 <span className="num-span"><b>02</b></span>
-                                <h2 className="text-2xl text-white font-poppins pro-h">Research & Outlining</h2>
-                                <p className="">Then, our team of professionals will conduct in-depth research, create a content outline, and send it to you for your approval.</p>
+                                <h2 className="text-2xl text-white font-poppins pro-h">Research & Outline</h2>
+                                <p className="">Then, our military fiction writers will conduct in-depth research, create a content outline, and send it to you for your approval, ensuring you're satisfied with our military fiction writing experts.</p>
                             </div>
                         </div>
 
                         <div className="flex flex-row" data-aos="fade-left">
                             <div className="flex-col px-6 py-10 text-left brand-process-content">
                                 <span className="num-span"><b>03</b></span>
-                                <h2 className="text-2xl text-white font-poppins pro-h">Interview Session with Writer</h2>
-                                <p className="">After the outline approval, we arrange an interview session with our assigned writer so that you can discuss your vision, tone, and writing style.</p>
+                                <h2 className="text-2xl text-white font-poppins pro-h">Author Interview</h2>
+                                <p className="">After the outline approval, we arrange an interview session with our dedicated writer so that you can discuss your vision, tone, and writing style.</p>
                             </div>
                         </div>
 
@@ -180,16 +193,16 @@ export default function BookEditing() {
                         <div className="flex flex-row " data-aos="fade-left">
                             <div className="flex-col px-6 py-10 text-left brand-process-content">
                                 <span className="num-span"><b>04</b></span>
-                                <h2 className="text-2xl text-white font-poppins pro-h">Weekly Deliveries & Revisions</h2>
-                                <p className="">We provide deliveries weekly and welcome your feedback throughout the process. We also offer multiple revisions to ensure your complete satisfaction.</p>
+                                <h2 className="text-2xl text-white font-poppins pro-h">Draft Submissions</h2>
+                                <p className="">We provide deliveries weekly and accept your feedback throughout the process. We also offer multiple revisions to ensure your complete satisfaction.</p>
                             </div>
                         </div>
 
                         <div className="flex flex-row" data-aos="fade-left">
                             <div className="flex-col px-6 py-10 text-left brand-process-content">
                                 <span className="num-span"><b>05</b></span>
-                                <h2 className="text-2xl text-white font-poppins pro-h">Formatting & Layout Adjustment</h2>
-                                <p className="">Once our ghostwriting work is finalized, we will format the manuscript according to your preferred style and make the necessary layout adjustments.</p>
+                                <h2 className="text-2xl text-white font-poppins pro-h">Formatting & Layout</h2>
+                                <p className="">Once our military fiction book work is finished, we will format the work in your preferred style and make the layout adjustments if required.</p>
                             </div>
                         </div>
 
@@ -197,7 +210,7 @@ export default function BookEditing() {
                             <div className="flex-col px-6 py-10 text-left brand-process-content">
                                 <span className="num-span"><b>06</b></span>
                                 <h2 className="text-2xl text-white font-poppins pro-h">Final Delivery</h2>
-                                <p className="">In the last step, we will deliver the finalized and polished manuscript to you in your desired format and the time we've discussed.</p>
+                                <p className="">Lastly, we will hand over the quality-checked and well-organized manuscript to you in your preferred format within the promised timeframe.</p>
                             </div>
                         </div>
 
@@ -205,6 +218,40 @@ export default function BookEditing() {
 
                 </div>
             </section>
+
+             <section className="max-w-6xl px-4 py-16 mx-auto bg-white font-poppins">
+                 <h2 className="mb-12 text-xl font-medium text-center text-gray-700 md:text-2xl">
+    Our Offerings
+  </h2>
+  <h2 className="mb-12 text-xl font-medium text-center text-gray-700 md:text-2xl">
+  What’s Included In Our Military Fiction Writing Services
+  </h2>
+
+  <p className="mb-12 text-xl font-medium text-center text-gray-700 md:text-2xl">
+  Hire military fiction writers for your next military fiction book at <a className="font-bold" href="https://www.pinebookwriting.com">Pine Book Writing</a>. We work together with our clients, combining research, creativity and storytelling expertise to write an impactful story.
+  </p>
+
+  <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3">
+    {[
+     { icon: '🖋️', label: 'Concept Development ' },
+      { icon: '🧐', label: 'Historical & Tactical Research' },
+      { icon: '📄', label: 'Character & Plot Development    ' },
+      { icon: '💼', label: 'Manuscript Writing' },
+      { icon: '⚙️', label: 'Editing & Proofreading' },
+      { icon: '🎯', label: 'Formatting & Finalization' },         
+    ].map((service, index) => (
+      <div
+        key={index}
+        className="flex flex-col items-center justify-center h-32 p-4 text-center bg-[#f4f1ea] hover:bg-[#ebe8e0] transition-colors rounded-xl shadow-sm hover:shadow-md"
+      >
+        <div className="mb-2 text-3xl">{service.icon}</div>
+        <span className="text-[10px] font-bold uppercase tracking-widest text-gray-600">
+          {service.label}
+        </span>
+      </div>
+    ))}
+  </div>
+</section>
 
             <section className="overflow-hidden" >
                 <div className="relative left-0 px-12 py-10 mb-8 brand-choose-us-section ms-auto md:left-52 md:px-20 md:mt-16 " >
@@ -217,18 +264,18 @@ export default function BookEditing() {
                             />
                         </div>
                         <div className="basis-1/2 md:ml-20">
-                            <h2 className="mt-10 text-2xl font-bold text-white uppercase font-poppins md:text-4xl md:mt-0" data-aos="zoom-in-left" data-aos-delay="100">Why Choose Our Ghostwriting Services?</h2>
-                            <p className="mt-2 text-white">Delight your potential readers with Pine Book Writing. We have a highly skilled team of ghostwriters with a proven record of working for globally-recognized authors. Experience quality, transparency & confidentiality.</p>
+                            <h2 className="mt-10 text-2xl font-bold text-white uppercase font-poppins md:text-4xl md:mt-0" data-aos="zoom-in-left" data-aos-delay="100">What Makes Us the Best in Military Fiction Writing Services</h2>
+                            <p className="mt-2 text-white">At Pine Book Writing, our competent team of military fiction writers doesn’t just write about war, but also infuses the real feel into it. They use real-world knowledge and merge it in creative storytelling that makes your story sound authentic yet emotionally powerful.</p>
                             <div className="flex flex-col gap-2 mt-6 md:flex-row md:gap-10">
                                 <ul>
-                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Expert Team of Writers </li>
-                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Guaranteed Confidentiality </li>
-                                    <li className="flex items-center gap-3 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Timely Delivery </li>
+                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />	Experienced Military Ghostwriters </li>
+                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Fast Turnaround</li>
+                                    <li className="flex items-center gap-3 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />	Authentic Battle Detailing </li>
                                 </ul>
                                 <ul>
-                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Affordable Writing Services</li>
-                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Deep Research</li>
-                                    <li className="flex items-center gap-3 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Client Focus</li>
+                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Custom Storytelling</li>
+                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Emotional Character Depth</li>
+                                    <li className="flex items-center gap-3 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />	Affordable Packages</li>
                                 </ul>
                             </div>
                             {/* <BrandAudioPlayer src="/brand-img/why-choose-us-voice.wav" /> */}

@@ -28,28 +28,28 @@ export default function ScriptWriting () {
     };
 
     const faqData = [
-        { question: "What is scriptwriting?", answer: "Scriptwriting or screenplay writing is an art of composing dialogue and action sequences for various media such as films, TV shows, Ad, podcast, or any interactive video or audio." },
+        { question: "What is scriptwriting?", answer: "Scriptwriting or screenplay writing service is the art of composing dialogue and action sequences for various media such as films, TV shows, Ad, podcast, or any interactive video or audio." },
         
-        { question: "How long does it take to create a script?", answer: "The time scriptwriting takes to completed depends on its length, complexity as well as the level of detail required. Usually, we take around 20 days to 3months period to complete your script. But, films or TV shows, turnaround time can vary." },
+        { question: "How long does it take to create a script?", answer: "The time scriptwriting takes to complete depends on its length, complexity, as well as the level of detail required. Usually, we take around 20 days to 3 months to complete your script. But for films or TV shows, turnaround time can vary." },
        
-        { question: "What kinds of scripts do you prefer to write?", answer: "We master in writing a wide variety of scripts, from a YouTube video and TV show to films and podcasts. Our team of scriptwriters is adaptable and can work for different genres and styles." },
+        { question: "What kinds of scripts do you write?", answer: "We master in writing a wide variety of scripts, from YouTube videos and TV shows to films and podcasts. Our team of scriptwriters is adaptable and can work for different genres and styles." },
        
-        { question: "Will I have ownership of the script?", answer: "Yes Absolutely, you will have 100% ownership of the script once we deliver it to you. We also provide a transfer of copyright to you." },
+        { question: "Will I have the ownership of the script?", answer: "Absolutely! As the final product for which you required a script will be completely yours, you will have 100% ownership of the script. We also transfer the copyright of the script." },
         
-        { question: "Do I need to get the copyright for my scripts?", answer: "As discussed above, you will get the 100% copyright along with the delivery. Moreover, you can also register your script’s copyrights with Writer's Guild of America to protect your intellectual property if you want." },
+        { question: "Do I need to get the copyright for my scripts?", answer: "Generally, we give you full copyright ownership of your content. However, if you’d like to register it yourself, you can do so through the Writers Guild of America." },
        
-        { question: "Is your scriptwriting service 100% confidential?", answer: "Absolutely, all of our writing services are fully confidential as we handle all the data (provided by you or created for you) with the strict privacy." },
+        { question: "Is your scriptwriting service 100% confidential?", answer: "Absolutely! Not only our script writing service, but all kinds of writing services are fully confidential, as we handle all the data (provided by you or created for you) with strict privacy policies." },
             ];
 
     return (
         <>
             <Head>
-                <title>Script Writing | Pine Book Writing</title>
+                <title>Expert Script Writing Services With Pine Book Writing</title>
                 <link rel="canonical" href="https://www.pinebookwriting.com/script-writing" />
 
                 <meta
                     name="description"
-                    content="Everything about Pine Book Writing—your partner in crafting, editing, and publishing your story. Experience seamless service from manuscript to bookshelf."
+                    content="Pine Book Writing offers professional script writing services with a team of expert scriptwriters that can turn your raw ideas into winning stories."
                 />
                 <link rel="shortcut icon" href="/images/fav.webp" />
 
@@ -58,8 +58,8 @@ export default function ScriptWriting () {
             <BrandNavbar />
             <BrandPrimaryHeader
                  photo_banner={"/images/Script-Writing/1.webp"}
-                title="Media Production, Perfected - Expert Scriptwriting Services"
-                desc="Whether you want to make a film, a podcast, an advert, or any interactive video, you need a perfectly crafted script. Our expert scriptwriters bring your vision to life. Let us turn your imagination into the perfect narrative!"
+                title="Best Script Writing Services for Movies, Ads, and Videos"
+                desc="Want to write a perfect script for your videos, movies, commercials or YouTube videos? Don't go anywhere! As a creative scriptwriting company in USA,  we have a team of expert scriptwriters who create meaningful yet accurate scripts that truly connect and keep people watching till the end."
             />
             <BrandBannerLogo />
 
@@ -69,11 +69,11 @@ export default function ScriptWriting () {
                         
                         <h2 className="text-3xl font-bold uppercase font-poppins md:text-4xl">Professional Scriptwriting Services for Every Format</h2>
                         <h2 className="text-2xl uppercase font-poppins md:text-3xl">
-                        Cultivate Your Audio/Video Production
+                       Cultivate Your Audio/Video Production
                         </h2>
-                        <p className="pt-3 text-xl text-left font-poppins">The purpose of writing a script is to capture your audience's attention, delight them with the idea you are presenting, or convey anything entertainingly or engagingly. Whether you're creating a film, a TV show, an Ad, or any video, a well-written script is required.</p>
+                        <p className="pt-3 text-xl text-left font-poppins">The purpose of writing a script is to capture your audience's attention, delight them with the idea you want to present, or convey anything entertainingly or engagingly. Whether you're creating a film, a TV show, an ad, or any video, a professionally written script is required.</p>
 
-                        <p className="pt-3 text-xl text-left font-poppins">As a leading scriptwriting company, we understand the importance of creativity, which should be infused in each line of the script to convey your message or story in the way you desire. We create custom scripts for a variety of materials and ensure that your story is in a creative way. Let Pine Book Writing create a delightful script for your next video or audio that can entertain, inform, and inspire your viewers or listeners!</p>
+                        <p className="pt-3 text-xl text-left font-poppins">As a leading script writing services company, we believe creativity is everything when it comes to writing a script. Creativity helps convey a message or story exactly the way we desire. We create custom scripts for a variety of projects, from film and TV scripts to digital content, and ensure that your story is expressed in the most captivating way. Let Pine Book Writing produce a meaningful yet on-point script for your next video or audio that can entertain, inform, or inspire your audience!</p>
                     </div>
                     <div className="flex justify-center text-center basis-1/2 abt-pic md:justify-center">
                         <Image src={"/images/Script-Writing/ghost-pic.webp"} width={470} height={300}
@@ -106,10 +106,10 @@ export default function ScriptWriting () {
             
                                 <div className="px-4 text-center md:col-span-6">
                                     <h2 className="font-poppins text-2xl text-[#98caa9] font-semibold md:text-3xl uppercase">
-                                        Want to Write Scripts for Your Content? Hire Expert Script Writing Service!
+                                      Failed to Write a Flawless Script? Hire Expert Script Writing Services!
                                     </h2>
                                     <p className="py-4 text-base md:text-lg">
-                                       Through our exceptional script writing service, we bring drama, precision, and storytelling influence to your film, ads, or audio projects!
+                                      Hire the best scriptwriter who can closely understand your ideas and turn them into something you didn’t even think of. Let’s bring precision and storytelling influence to your project with an expert team of audio/video script creators.
                                     </p>
             
                                     <div className="flex flex-col items-center justify-center gap-4 cta-btns sm:flex-row">
@@ -149,7 +149,7 @@ export default function ScriptWriting () {
                 <div className="max-w-screen-xl">
                     <div className="mb-6 text-center">
                         <h3 className="text-2xl text-black font-poppins">Our Service Workflow</h3>
-                        <h2 className="text-3xl font-bold text-black font-poppins md:text-4xl" data-aos="zoom-out-down">6-Step Process of Our Professional Scriptwriting Service</h2>
+                        <h2 className="text-3xl font-bold text-black font-poppins md:text-4xl" data-aos="zoom-out-down">6-Step Process of Our Scriptwriting Services</h2>
                     </div>
 
                     <div className="grid gap-6 mb-6 md:grid-cols-3">
@@ -158,7 +158,7 @@ export default function ScriptWriting () {
                             <div className="flex-col px-6 py-10 text-left brand-process-content">
                                 <span className="num-span"><b>01</b></span>
                                 <h2 className="text-2xl text-white font-poppins pro-h">Project Consultation</h2>
-                                <p className="">Our scriptwriting process begins with discussing your scriptwriting purpose, story or message, target audience, and desired tone and style.</p>
+                                <p className="">Our scriptwriting service process begins with listening to you first. We understand purpose, message, and your audience first in order to take a perfect start.</p>
                             </div>
                         </div>
 
@@ -166,15 +166,15 @@ export default function ScriptWriting () {
                         <div className="flex-col px-6 py-10 text-left brand-process-content">
                         <span className="num-span"><b>02</b></span>
                                 <h2 className="text-2xl text-white font-poppins pro-h">Character Development</h2>
-                                <p className="">In the next step, we'll work together with you to develop enticing characters that carry your story/message ahead.</p>
+                                <p className="">Next, we work together with you to develop meaningful and engaging characters that carry your story forward which is something our professional script writers specialize in.</p>
                             </div>
                         </div>
 
                         <div className="flex flex-row" data-aos="fade-left">
                         <div className="flex-col px-6 py-10 text-left brand-process-content">
                         <span className="num-span"><b>03</b></span>
-                                <h2 className="text-2xl text-white font-poppins pro-h">Plot Outline</h2>
-                                <p className="">Then, we'll carefully create a detailed plot outline, sketching your story's key segments and turning points to make it more organized.</p>
+                                <h2 className="text-2xl text-white font-poppins pro-h">Plot Outlining</h2>
+                                <p className="">Then, we'll carefully create a detailed plot outline, sketching your story's key segments and turning points to make it well-structured and easy to follow.</p>
                             </div>
                         </div>
                         
@@ -186,7 +186,7 @@ export default function ScriptWriting () {
                         <div className="flex-col px-6 py-10 text-left brand-process-content">
                         <span className="num-span"><b>04</b></span>
                                 <h2 className="text-2xl text-white font-poppins pro-h">Script Writing</h2>
-                                <p className="">Next, one of our dedicated writers will get to work and draft a complete script based on your vision and the approved outline.</p>
+                                <p className="">And then, one of our skilled scriptwriters starts scriptwriting while keeping your vision and your approved outline in mind. We make it smooth from start to end.</p>
                             </div>
                         </div>
 
@@ -194,7 +194,7 @@ export default function ScriptWriting () {
                         <div className="flex-col px-6 py-10 text-left brand-process-content">
                         <span className="num-span"><b>05</b></span>
                                 <h2 className="text-2xl text-white font-poppins pro-h">Revisions and Feedback</h2>
-                                <p className="">Before the final delivery, you will receive your draft for review, and we offer multiple revisions to ensure your 100% satisfaction.</p>
+                                <p className="">Before final delivery, you’ll receive your draft for review. We provide multiple revisions through our script editing services to make sure the script fully matches your expectations</p>
                             </div>
                         </div>
 
@@ -202,7 +202,7 @@ export default function ScriptWriting () {
                         <div className="flex-col px-6 py-10 text-left brand-process-content">
                         <span className="num-span"><b>06</b></span>
                                 <h2 className="text-2xl text-white font-poppins pro-h">Final Delivery</h2>
-                                <p className="">Once you approve the script, we'll deliver the completed and formatted version ready for production or further development.</p>
+                                <p className="">Once you approve, we’ll deliver the polished, formatted screenplay ready for production, whether it’s for film, YouTube, or any video platform.</p>
                             </div>
                         </div>
                         
@@ -210,6 +210,40 @@ export default function ScriptWriting () {
 
                 </div>
             </section>
+
+              <section className="max-w-6xl px-4 py-16 mx-auto bg-white font-poppins">
+                 <h2 className="mb-12 text-xl font-medium text-center text-gray-700 md:text-2xl">
+    Our Offerings
+  </h2>
+  <h2 className="mb-12 text-xl font-medium text-center text-gray-700 md:text-2xl">
+What’s Included In Our Expert Scriptwriting Services
+  </h2>
+
+  <p className="mb-12 text-xl font-medium text-center text-gray-700 md:text-2xl">
+  Hire script writers for everything you need to deliver a refined and well-organized message to your audience. We work together with our clients. We combine creativity and storytelling expertise to make sure the script is ready for perfect execution.
+  </p>
+
+  <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3">
+    {[
+     { icon: '🖋️', label: 'Creative Concepting' },
+      { icon: '🧐', label: 'Story & Scene Outlining ' },
+      { icon: '📄', label: 'Character Creation ' },
+      { icon: '💼', label: 'Dialogue Writing' },
+      { icon: '⚙️', label: 'Script Formatting' },
+      { icon: '🎯', label: 'Editing & Revisions' },         
+    ].map((service, index) => (
+      <div
+        key={index}
+        className="flex flex-col items-center justify-center h-32 p-4 text-center bg-[#f4f1ea] hover:bg-[#ebe8e0] transition-colors rounded-xl shadow-sm hover:shadow-md"
+      >
+        <div className="mb-2 text-3xl">{service.icon}</div>
+        <span className="text-[10px] font-bold uppercase tracking-widest text-gray-600">
+          {service.label}
+        </span>
+      </div>
+    ))}
+  </div>
+</section>
 
             <section className="overflow-hidden" >
                 <div className="relative left-0 px-12 py-10 mt-0 mb-8 brand-choose-us-section ms-auto md:left-52 md:px-20 md:mt-14 " >
@@ -223,17 +257,17 @@ export default function ScriptWriting () {
                         </div>
                         <div className="basis-1/3 md:ml-20">
                             <h2 className="mt-10 text-2xl font-bold text-white uppercase font-poppins md:text-4xl md:mt-0" data-aos="zoom-in-left" data-aos-delay="100">Why Choose Our Scriptwriting Services?</h2>
-                            <p className="mt-2 text-white">At Pine Book Writing, our scriptwriting excels with a unique blend of creativity and expertise. We produce each script fit to your vision and deliver exceptional results leveraging our collaborative approach.</p>
+                            <p className="mt-2 text-white">At Pine Book Writing, our scriptwriting excels with a unique blend of creativity and expertise. We produce each script to fit your vision and deliver exceptional results, leveraging our collaborative approach.</p>
                             <div className="flex flex-col gap-2 mt-6 md:flex-row md:gap-10">
                                 <ul>
-                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} /> Confidentiality Guaranteed </li>
-                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} /> Tailored Creativity </li>
-                                    <li className="flex items-center gap-3 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} /> Multi-format Scriptwriters </li>
+                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} /> Experienced Scriptwriters </li>
+                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} /> 	Fast & Flexible Delivery </li>
+                                    <li className="flex items-center gap-3 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} /> Genre Versatility </li>
                                 </ul>
                                 <ul>
-                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} /> Affordable Pricing</li>
-                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} /> Client-Centric Approach</li>
-                                    <li className="flex items-center gap-3 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} /> Industry Expertise</li>
+                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} /> 	Affordable Packages</li>
+                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} /> Collaborative Approach</li>
+                                    <li className="flex items-center gap-3 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} /> 	Quality Guarantee</li>
                                 </ul>
                             </div>
                             {/* <BrandAudioPlayer src="/brand-img/why-choose-us-voice.wav" /> */}

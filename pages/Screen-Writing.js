@@ -27,28 +27,28 @@ export default function BookEditing() {
     };
 
     const faqData = [
-        { question: "What is Ghostwriting?", answer: "Ghostwriting is the name of hiring a professional writer to write your book. In return, the writer will gather all the relevant information, conduct in-depth research, and craft a manuscript that meets your vision." },
+        { question: "Do you help if I only have a rough idea?", answer: "Yes. Many clients start with half ideas. Our screenplay writers for hire help shape it slowly into a clear story." },
         
-        { question: "Is your ghostwriting ethical and authentic?", answer: "Absolutely, it is both ethical and authentic. Ghostwriting is extremely common, especially in the world of book writing. This service is considered the same as having any professional hired to perform a specific task. At Pine Book Writing, we serve our expertise in writing to put your creative ideas into a manuscript." },
+        { question: "Can I hire a screenwriter just for editing?", answer: "Yes, we offer screenplay proofreading services and script fixing if your draft already exists." },
        
-        { question: "Who will own the rights in Ghostwriting?", answer: "We are just your writing partner. We write it as a ghostwriting service, and you own it. As an author, you own all the rights and credits for the final product. Not only that, the royalties your book earns will also be yours." },
+        { question: "Do you write for movies and TV shows?", answer: "We work on film screenplay writing services and TV screenplay writing services, depending on your project type." },
        
-        { question: "Can I hire you to write one chapter of my book and later write the other chapters?	", answer: "Yes, you can also hire us chapter by chapter. Here, we are confident that once you see our writing professionalism and expertise, you will definitely want to go toward the last chapter of your book. So, if you want to hire us for a single chapter, you are also welcome." },
+        { question: "Will the script sound like my voice?	", answer: "Yes. We adjust tone carefully so it doesn’t feel written by someone else completely." },
         
-        { question: "How long will it take to write a book?", answer: "The completion time of the ghostwriting services entirely depends on the complexity, genre, and your book's length. However, we usually take 3 to 6 months on average. Moreover, the time also depends on how much material you provide and the research required on the particular topic." },
+        { question: "How long does screenwriting take?", answer: "Timelines depend on length and feedback speed. Short scripts move faster. Full films take more care." },
        
-        { question: "How much does ghostwriting a book cost?", answer: "The cost of ghostwriting also varies based on your book's length, genre, and complexity. You can view our packages here. Moreover, if you want to customize the any package according to your need, you can speak to our representative. " },
+        { question: "Can you work with an unfinished or messy script?", answer: "Yes, that’s very common. Even if your script is half-written or all over the place, we can help clean it up and guide it forward. " },
             ];
 
     return (
         <>
             <Head>
-                <title>Screen Writing | Pine Book Writing</title>
+                <title>Professional Screenwriting Service | Pine Book Writing</title>
                 <link rel="canonical" href="https://www.pinebookwriting.com/Screen-Writing" />
 
                 <meta
                     name="description"
-                    content="Bring your script to life with our professional screen writing service—structured, dramatic, and ready for producers to read. Get in touch today!"
+                    content="Want to hire a screenwriting service? We help turn ideas or rough drafts into clear, watchable scripts for film, TV, and web without losing your own voice."
                 />
                 <link rel="shortcut icon" href="/images/fav.webp" />
                 </Head>
@@ -56,24 +56,25 @@ export default function BookEditing() {
             <BrandNavbar />
             <BrandPrimaryHeader
                 photo_banner={"/images/Screen-Writing/1.webp"}
-                title="Write Powerful Scripts with Professional Screen Writing Services"
-                desc="With our professional screenwriting service, you can write screenplays that will grab the attention of both producers and those watching. Let’s get connected to discuss your project!"
+                title="Professional Screenwriting Service for Films, TV, and Series"
+                desc="We offer a screenwriting service that helps aspiring screenwriters, producers, literary managers and novelists turn raw ideas into watchable scripts. Hire a screenwriter who understands all aspects without forcing the story or overcomplicating things. Contact Pine Book Writing today!"
             />
             <BrandBannerLogo />
 
             <div className="container max-w-screen-xl pt-0 mx-auto overflow-hidden md:py-20">
                 <div className="flex flex-col items-center justify-center px-8 py-10 md:flex-row lg:flex-row md:px-0 md:py-0">
                     <div className="basis-1/2 abt-txt m1-h p1 aos-init aos-animate" data-aos="fade-right" data-aos-duration="1000">
-                    <h2 className="text-3xl font-bold uppercase font-poppins md:text-4xl">Pine Book Writing - Offering Exceptional Screen Writing Service</h2>
+                    <h2 className="text-3xl font-bold uppercase font-poppins md:text-4xl">Offering Exceptional Screen Writing Services</h2>
 
                         <h2 className="text-2xl uppercase font-poppins md:text-3xl">
-                        Let Your Story Shine on the Screen
+                       Scripts That Move, Breathe, and Hold Attention
                         </h2>
                        
                         <p className="pt-3 text-xl text-left font-poppins">
-                       We have designed our screenwriting service to help those who want their stories into gripping screenplays. Whether you’re up to write a short film or a screenplay, our experienced screenplay writers ensure that everything is on point from structure and dialogue to pacing.</p>
+                      Good screenwriting is not about fancy words. It’s about timing, silence and moments that feel true. Our screenwriting service at Pine Book Writing can help you with your scripts that your audience would actually want to watch.</p>
 
-                        <p className="pt-3 text-xl text-left font-poppins">Our team of professionals works with you and understands the concept in your mind. Then, they bring it to life with their exceptional skills in formatting and storytelling. We help you write something that truly makes you stand out in today’s modern and competitive world. We prioritize your success and use our immense expertise to make our screen writing process flawless and fulfilling.</p>
+                        <p className="pt-3 text-xl text-left font-poppins">Whether you want to hire a screenwriter for a short film. A full movie. Or a web series. We keep things simple. Story first. Characters that breathe. Scenes that don’t drag. We also support clients who already have drafts but need structure, flow, or clarity through screenplay writing services and light consulting.</p>
+                         <p className="pt-3 text-xl text-left font-poppins">Some clients come with just a thought. Others come with messy pages. Both are fine. We work patiently, step by step, until the script feels right on screen.</p>
                     </div>
                     <div className="flex justify-center text-center basis-1/2 abt-pic md:justify-center">
                         <Image src={"/images/Screen-Writing/ghost-pic.webp"} width={470} height={300}
@@ -105,9 +106,9 @@ export default function BookEditing() {
             
                                 <div className="px-4 text-center md:col-span-6">
                                     <h2 className="font-poppins text-2xl text-[#98caa9] font-semibold md:text-3xl uppercase">
-                                        Let’s Write a Screenplay That Can Get Noticed Quickly!
+                                       Stuck With a Script? Let Our Screenwriter Help
                                     </h2>
-                                    <p className="py-4 text-base md:text-lg">Our screenwriting service makes your ideas come to life. Start your next project with us today!</p>
+                                    <p className="py-4 text-base md:text-lg">Hire a professional screenwriter who understands all aspects of screenwriting work. From rough first drafts to the final polished one, we help your script move toward production without losing your own voice along the way.</p>
             
                                     <div className="flex flex-col items-center justify-center gap-4 cta-btns sm:flex-row">
                                         <CTAButton />
@@ -145,7 +146,7 @@ export default function BookEditing() {
                 <div className="max-w-screen-xl">
                     <div className="mb-6 text-center">
                         <h3 className="text-2xl text-black font-poppins">Our Service Workflow</h3>
-                        <h2 className="text-3xl font-bold text-black font-poppins md:text-4xl" data-aos="zoom-out-down">6-Step Process of Our Ghostwriting Services</h2>
+                        <h2 className="text-3xl font-bold text-black font-poppins md:text-4xl" data-aos="zoom-out-down">6-Step Process of Our Screenwriting Services</h2>
                     </div>
 
                     <div className="grid gap-6 mb-6 md:grid-cols-3">
@@ -153,24 +154,24 @@ export default function BookEditing() {
                         <div className="flex flex-row " data-aos="fade-left">
                             <div className="flex-col px-6 py-10 text-left brand-process-content">
                                 <span className="num-span"><b>01</b></span>
-                                <h2 className="text-2xl text-white font-poppins pro-h">Project Manager Assigning & Questionnaire</h2>
-                                <p className="">We begin our process by assigning a dedicated project manager and a questionnaire to understand your writing requirements.</p>
+                                <h2 className="text-2xl text-white font-poppins pro-h">Idea Discussion</h2>
+                                <p className="">First, we talk through your idea, tone, genre and goals so the script doesn’t feel confused later. This helps whether you hire a script writer early or mid-stage.</p>
                             </div>
                         </div>
 
                         <div className="flex flex-row" data-aos="fade-left">
                         <div className="flex-col px-6 py-10 text-left brand-process-content">
                         <span className="num-span"><b>02</b></span>
-                                <h2 className="text-2xl text-white font-poppins pro-h">Research & Outlining</h2>
-                                <p className="">Then, our team of professionals will conduct in-depth research, create a content outline, and send it to you for your approval.</p>
+                                <h2 className="text-2xl text-white font-poppins pro-h">Story Structure Setup</h2>
+                                <p className="">Then, we build a clear structure that works for films or TV, avoiding loose scenes. This step matters a lot in original screenplay writing.</p>
                             </div>
                         </div>
 
                         <div className="flex flex-row" data-aos="fade-left">
                         <div className="flex-col px-6 py-10 text-left brand-process-content">
                         <span className="num-span"><b>03</b></span>
-                                <h2 className="text-2xl text-white font-poppins pro-h">Interview Session with Writer</h2>
-                                <p className="">After the outline approval, we arrange an interview session with our assigned writer so that you can discuss your vision, tone, and writing style.</p>
+                                <h2 className="text-2xl text-white font-poppins pro-h">Character Shaping</h2>
+                                <p className="">The story's characters are shaped slowly, with flaws and motives. That’s how professional screenwriting services keep stories believable.</p>
                             </div>
                         </div>
                         
@@ -181,24 +182,24 @@ export default function BookEditing() {
                         <div className="flex flex-row " data-aos="fade-left">
                         <div className="flex-col px-6 py-10 text-left brand-process-content">
                         <span className="num-span"><b>04</b></span>
-                                <h2 className="text-2xl text-white font-poppins pro-h">Weekly Deliveries & Revisions</h2>
-                                <p className="">We provide deliveries weekly and welcome your feedback throughout the process. We also offer multiple revisions to ensure your complete satisfaction.</p>
+                                <h2 className="text-2xl text-white font-poppins pro-h">Script Drafting</h2>
+                                <p className="">Next, our script writers write the full screenplay, focusing on visuals, rhythm, and natural dialogue without any forced efforts.</p>
                             </div>
                         </div>
 
                         <div className="flex flex-row" data-aos="fade-left">
                         <div className="flex-col px-6 py-10 text-left brand-process-content">
                         <span className="num-span"><b>05</b></span>
-                                <h2 className="text-2xl text-white font-poppins pro-h">Formatting & Layout Adjustment</h2>
-                                <p className="">Once our ghostwriting work is finalized, we will format the manuscript according to your preferred style and make the necessary layout adjustments.</p>
+                                <h2 className="text-2xl text-white font-poppins pro-h">Review & Fixing</h2>
+                                <p className="">Here, our screenplay proofreading services begin. We check revisions, pacing, flow and scene balancing without any over-edits.</p>
                             </div>
                         </div>
 
                         <div className="flex flex-row" data-aos="fade-left">
                         <div className="flex-col px-6 py-10 text-left brand-process-content">
                         <span className="num-span"><b>06</b></span>
-                                <h2 className="text-2xl text-white font-poppins pro-h">Final Delivery</h2>
-                                <p className="">In the last step, we will deliver the finalized and polished manuscript to you in your desired format and the time we've discussed.</p>
+                                <h2 className="text-2xl text-white font-poppins pro-h">Final Script Delivery</h2>
+                                <p className="">You receive a clean, industry-style script ready for pitching, filming, or further development through screenplay development services.</p>
                             </div>
                         </div>
                         
@@ -206,6 +207,40 @@ export default function BookEditing() {
 
                 </div>
             </section>
+
+             <section className="max-w-6xl px-4 py-16 mx-auto bg-white font-poppins">
+                 <h2 className="mb-12 text-xl font-medium text-center text-gray-700 md:text-2xl">
+    Our Offerings
+  </h2>
+  <h2 className="mb-12 text-xl font-medium text-center text-gray-700 md:text-2xl">
+What’s Included In Our Expert Screenwriting Services
+  </h2>
+
+  <p className="mb-12 text-xl font-medium text-center text-gray-700 md:text-2xl">
+  Pine Book Writing offers everything that is needed to take a screenplay from idea stage to a ready-to-use script. Without rushing the creative process.
+  </p>
+
+  <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3">
+    {[
+     { icon: '🖋️', label: 'Custom Screenplay Writing' },
+      { icon: '🧐', label: 'Screenplay Ghostwriting Services' },
+      { icon: '📄', label: 'Script Revisions & Proofreading' },
+      { icon: '💼', label: 'Screenplay Consulting Services' },
+      { icon: '⚙️', label: 'Film & TV Screenplay Writing' },
+      { icon: '🎯', label: 'Script Formatting Support' },         
+    ].map((service, index) => (
+      <div
+        key={index}
+        className="flex flex-col items-center justify-center h-32 p-4 text-center bg-[#f4f1ea] hover:bg-[#ebe8e0] transition-colors rounded-xl shadow-sm hover:shadow-md"
+      >
+        <div className="mb-2 text-3xl">{service.icon}</div>
+        <span className="text-[10px] font-bold uppercase tracking-widest text-gray-600">
+          {service.label}
+        </span>
+      </div>
+    ))}
+  </div>
+</section>
             
             <section className="overflow-hidden" >
                 <div className="relative left-0 px-12 py-10 mb-8 brand-choose-us-section ms-auto md:left-52 md:px-20 md:mt-16 " >
@@ -218,18 +253,18 @@ export default function BookEditing() {
                             />
                         </div>
                         <div className="basis-1/2 md:ml-20">
-                            <h2 className="mt-10 text-2xl font-bold text-white uppercase font-poppins md:text-4xl md:mt-0" data-aos="zoom-in-left" data-aos-delay="100">Why Choose Our Ghostwriting Services?</h2>
-                            <p className="mt-2 text-white">Delight your potential readers with Pine Book Writing. We have a highly skilled team of ghostwriters with a proven record of working for globally-recognized authors. Experience quality, transparency & confidentiality.</p>
+                            <h2 className="mt-10 text-2xl font-bold text-white uppercase font-poppins md:text-4xl md:mt-0" data-aos="zoom-in-left" data-aos-delay="100">What Makes Our Screenwriting Service Stand Out?</h2>
+                            <p className="mt-2 text-white">We listen first. Then write. Our screenwriting service at Pine Book Writing focuses on honest storytelling, clear structure, and flexible collaboration, so your script feels natural, not factory-made or rushed.</p>
                             <div className="flex flex-col gap-2 mt-6 md:flex-row md:gap-10">
                                 <ul>
-                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Expert Team of Writers </li>
-                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Guaranteed Confidentiality </li>
-                                    <li className="flex items-center gap-3 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Timely Delivery </li>
+                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />	Real story focus </li>
+                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />	Clear communication</li>
+                                    <li className="flex items-center gap-3 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />	Calm working process </li>
                                 </ul>
                                 <ul>
-                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Affordable Writing Services</li>
-                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Deep Research</li>
-                                    <li className="flex items-center gap-3 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Client Focus</li>
+                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />	Industry-aware scripts</li>
+                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />	Flexible writing support</li>
+                                    <li className="flex items-center gap-3 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />	Writer-first approach</li>
                                 </ul>
                             </div>
                             {/* <BrandAudioPlayer src="/brand-img/why-choose-us-voice.wav" /> */}

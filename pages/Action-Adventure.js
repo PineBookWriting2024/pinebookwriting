@@ -27,27 +27,27 @@ export default function BookEditing() {
     };
 
     const faqData = [
-        { question: "What is Ghostwriting?", answer: "Ghostwriting is the name of hiring a professional writer to write your book. In return, the writer will gather all the relevant information, conduct in-depth research, and craft a manuscript that meets your vision." },
+        { question: "Do you provide full ghostwriting for action adventure books?", answer: "Yes. Our adventure novel writing services include full ghostwriting. We handle everything from planning to final draft while keeping your ideas and voice at the center." },
 
-        { question: "Is your ghostwriting ethical and authentic?", answer: "Absolutely, it is both ethical and authentic. Ghostwriting is extremely common, especially in the world of book writing. This service is considered the same as having any professional hired to perform a specific task. At Pine Book Writing, we serve our expertise in writing to put your creative ideas into a manuscript." },
+        { question: "Can you write a long adventure series?", answer: "Yes. We offer adventure series writing services with consistent characters, tone, and story flow across multiple books." },
 
-        { question: "Who will own the rights in Ghostwriting?", answer: "We are just your writing partner. We write it as a ghostwriting service, and you own it. As an author, you own all the rights and credits for the final product. Not only that, the royalties your book earns will also be yours." },
+        { question: "Will my story be original?", answer: "Every project is written from scratch. We never reuse content or copy other books. Your story is fully original and created only for you." },
 
-        { question: "Can I hire you to write one chapter of my book and later write the other chapters?	", answer: "Yes, you can also hire us chapter by chapter. Here, we are confident that once you see our writing professionalism and expertise, you will definitely want to go toward the last chapter of your book. So, if you want to hire us for a single chapter, you are also welcome." },
+        { question: "Can I request changes after the draft?	", answer: "Yes. Revisions are part of the process. We adjust scenes, pacing, or characters based on your feedback." },
 
-        { question: "How long will it take to write a book?", answer: "The completion time of the ghostwriting services entirely depends on the complexity, genre, and your book's length. However, we usually take 3 to 6 months on average. Moreover, the time also depends on how much material you provide and the research required on the particular topic." },
+        { question: "Do you help new writers with no outline?", answer: "Absolutely. Many clients start with just an idea. We help shape it into a full plot before writing begins." },
 
-        { question: "How much does ghostwriting a book cost?", answer: "The cost of ghostwriting also varies based on your book's length, genre, and complexity. You can view our packages here. Moreover, if you want to customize the any package according to your need, you can speak to our representative. " },
+        { question: "Who owns the rights to the book?", answer: "You do. Once the project is complete, all rights and credit belong fully to you. " },
     ];
 
     return (
         <>
             <Head>
-                <title>Action Adventure Writing | Pine Book Writing</title>
+                <title>Action Adventure Writing Services | Pine Book Writing</title>
                 <link rel="canonical" href="https://www.pinebookwriting.com/Action-Adventure" />
                 <meta
                     name="description"
-                    content="Offering brilliant action adventure writing service to craft high-stakes storytelling with interesting twists, and memorable characters. Contact us now!"
+                    content="Looking for action adventure writing services? Pine Book Writing helps write action-packed stories with a team of industry-leading storytellers/writers."
                 />
                 <link rel="shortcut icon" href="/images/fav.webp" />
             </Head>
@@ -55,24 +55,24 @@ export default function BookEditing() {
             <BrandNavbar />
             <BrandPrimaryHeader
                 photo_banner={"/images/Action-Adventure/1.webp"}
-                title="Create Bold Stories with Our Action Adventure Writing Service"
-                desc="Enter the world of thrill and excitement with Pine Book Writing. Hire our action adventure writing service to write fast-paced and memorable action-packed story books. Let get connected and discuss your writing project today!"
+                title="Professional Action Adventure Writing Services"
+                desc="Stories full of risk, movement, and hard choices. Our action adventure writing services help turn rough ideas into fast-moving fiction that keeps readers hooked, page after page. Don’t wait, just contact us today!"
             />
             <BrandBannerLogo />
 
             <div className="container max-w-screen-xl pt-0 mx-auto overflow-hidden md:py-20">
                 <div className="flex flex-col items-center justify-center px-8 py-10 md:flex-row lg:flex-row md:px-0 md:py-0">
                     <div className="basis-1/2 abt-txt m1-h p1 aos-init aos-animate" data-aos="fade-right" data-aos-duration="1000">
-                        <h2 className="text-3xl font-bold uppercase font-poppins md:text-4xl">Action Adventure Writing Service: Unlock the Thrill</h2>
+                        <h2 className="text-3xl font-bold uppercase font-poppins md:text-4xl">Where Action Actually Means Something</h2>
 
                         <h2 className="text-2xl uppercase font-poppins md:text-3xl">
-                            Fuel Your Story with Excitement
+                          Adventure Fiction Ghostwriting Services
                         </h2>
 
                         <p className="pt-3 text-xl text-left font-poppins">
-                            Action-adventure stories are penetrating, keeping readers on the edge of seat and present moments that make them gasp. Want to write that one? Our action adventure writing service is here to help you do that. We have a strong command over how to keep readers lost into it from the first sentence to the last word. We do it by presenting brave heroes, and exciting escapes.</p>
+                          Action adventure stories are not just about fights or chases. They are about why people move, run, or risk their lives. That’s how we write. With purpose, not noise.</p>
 
-                        <p className="pt-3 text-xl text-left font-poppins">In order to make your story enthralling, we work on rapid pace, imaginative settings, and high stakes. Our writers collaboratively work with the authors to derive new ideas with exciting characters and twists. We infuse excitements into dangerous moments whether it's be spy thriller, jungle expedition, or a survival. Our experienced action adventure writers can create a novel based on your idea, that your readers couldn't put down until the end.</p>
+                        <p className="pt-3 text-xl text-left font-poppins">At Pine Book Writing, our action adventure writing services are built for writers who want real tension and clear direction. Some clients come with half an idea. Others bring notes, scenes, or messy chapters. Both work. As adventure fiction ghostwriters for hire, we focus on clean plots, strong stakes, and characters who don’t feel flat. We write action fiction that reads smooth, not rushed, and never copied. If you want a single book or a full series, we help shape it patiently.</p>
                     </div>
                     <div className="flex justify-center text-center basis-1/2 abt-pic md:justify-center">
                         <Image  src="/images/Action-Adventure/ghost-pic.webp" width={470} height={300}
@@ -104,9 +104,9 @@ export default function BookEditing() {
 
                     <div className="px-4 text-center md:col-span-6">
                         <h2 className="font-poppins text-2xl text-[#98caa9] font-semibold md:text-3xl uppercase">
-                            Want to Write an Epic Adventure? Leave it to Us!
+                            Start Your Action Adventure Writing With Us
                         </h2>
-                        <p className="py-4 text-base md:text-lg">Don’t wait, get in touch with our expert adventure writers and discuss your next project now!
+                        <p className="py-4 text-base md:text-lg">Tell us what you’re thinking about. We’ll help shape it into an action-packed fiction story that feels right, not forced or overworked. Hire our action adventure writers now!
                         </p>
 
                         <div className="flex flex-col items-center justify-center gap-4 cta-btns sm:flex-row">
@@ -145,7 +145,7 @@ export default function BookEditing() {
                 <div className="max-w-screen-xl">
                     <div className="mb-6 text-center">
                         <h3 className="text-2xl text-black font-poppins">Our Service Workflow</h3>
-                        <h2 className="text-3xl font-bold text-black font-poppins md:text-4xl" data-aos="zoom-out-down">6-Step Process of Our Ghostwriting Services</h2>
+                        <h2 className="text-3xl font-bold text-black font-poppins md:text-4xl" data-aos="zoom-out-down">6-Step Process of Our Action Adventure Writing Services</h2>
                     </div>
 
                     <div className="grid gap-6 mb-6 md:grid-cols-3">
@@ -153,24 +153,24 @@ export default function BookEditing() {
                         <div className="flex flex-row " data-aos="fade-left">
                             <div className="flex-col px-6 py-10 text-left brand-process-content">
                                 <span className="num-span"><b>01</b></span>
-                                <h2 className="text-2xl text-white font-poppins pro-h">Project Manager Assigning & Questionnaire</h2>
-                                <p className="">We begin our process by assigning a dedicated project manager and a questionnaire to understand your writing requirements.</p>
+                                <h2 className="text-2xl text-white font-poppins pro-h">Story Talk</h2>
+                                <p className="">We begin with a simple conversation. Your idea, genre style, length, and goals. No pressure to be perfect. We listen first and take notes carefully.</p>
                             </div>
                         </div>
 
                         <div className="flex flex-row" data-aos="fade-left">
                             <div className="flex-col px-6 py-10 text-left brand-process-content">
                                 <span className="num-span"><b>02</b></span>
-                                <h2 className="text-2xl text-white font-poppins pro-h">Research & Outlining</h2>
-                                <p className="">Then, our team of professionals will conduct in-depth research, create a content outline, and send it to you for your approval.</p>
+                                <h2 className="text-2xl text-white font-poppins pro-h">Plot Direction</h2>
+                                <p className="">Next, we shape a clear plot path. Main conflict, action points, and endings. You review this part before writing starts, so nothing goes off track.</p>
                             </div>
                         </div>
 
                         <div className="flex flex-row" data-aos="fade-left">
                             <div className="flex-col px-6 py-10 text-left brand-process-content">
                                 <span className="num-span"><b>03</b></span>
-                                <h2 className="text-2xl text-white font-poppins pro-h">Interview Session with Writer</h2>
-                                <p className="">After the outline approval, we arrange an interview session with our assigned writer so that you can discuss your vision, tone, and writing style.</p>
+                                <h2 className="text-2xl text-white font-poppins pro-h">Characters Setup</h2>
+                                <p className="">Characters are built with flaws and reasons. Heroes, villains, side roles. We keep them human, not loud, so the action feels more real.</p>
                             </div>
                         </div>
 
@@ -181,24 +181,24 @@ export default function BookEditing() {
                         <div className="flex flex-row " data-aos="fade-left">
                             <div className="flex-col px-6 py-10 text-left brand-process-content">
                                 <span className="num-span"><b>04</b></span>
-                                <h2 className="text-2xl text-white font-poppins pro-h">Weekly Deliveries & Revisions</h2>
-                                <p className="">We provide deliveries weekly and welcome your feedback throughout the process. We also offer multiple revisions to ensure your complete satisfaction.</p>
+                                <h2 className="text-2xl text-white font-poppins pro-h">Writing Phase</h2>
+                                <p className="">We write the draft step by step. Action scenes are clear, pacing stays steady, and chapters flow naturally. No heavy words. Just clean storytelling.</p>
                             </div>
                         </div>
 
                         <div className="flex flex-row" data-aos="fade-left">
                             <div className="flex-col px-6 py-10 text-left brand-process-content">
                                 <span className="num-span"><b>05</b></span>
-                                <h2 className="text-2xl text-white font-poppins pro-h">Formatting & Layout Adjustment</h2>
-                                <p className="">Once our ghostwriting work is finalized, we will format the manuscript according to your preferred style and make the necessary layout adjustments.</p>
+                                <h2 className="text-2xl text-white font-poppins pro-h">Feedback Edits</h2>
+                                <p className="">You read the draft and share thoughts. We revise scenes, adjust flow, or fix weak parts. This part is slow on purpose. It matters.</p>
                             </div>
                         </div>
 
                         <div className="flex flex-row" data-aos="fade-left">
                             <div className="flex-col px-6 py-10 text-left brand-process-content">
                                 <span className="num-span"><b>06</b></span>
-                                <h2 className="text-2xl text-white font-poppins pro-h">Final Delivery</h2>
-                                <p className="">In the last step, we will deliver the finalized and polished manuscript to you in your desired format and the time we've discussed.</p>
+                                <h2 className="text-2xl text-white font-poppins pro-h">Final Manuscript</h2>
+                                <p className="">After revisions, we deliver the final story. Ready for editing, publishing, or next steps. The work is yours. Fully and clearly.</p>
                             </div>
                         </div>
 
@@ -206,6 +206,40 @@ export default function BookEditing() {
 
                 </div>
             </section>
+
+              <section className="max-w-6xl px-4 py-16 mx-auto bg-white font-poppins">
+                 <h2 className="mb-12 text-xl font-medium text-center text-gray-700 md:text-2xl">
+    Our Offerings
+  </h2>
+  <h2 className="mb-12 text-xl font-medium text-center text-gray-700 md:text-2xl">
+What’s Included In Our Action Adventure Writing Services
+  </h2>
+
+  <p className="mb-12 text-xl font-medium text-center text-gray-700 md:text-2xl">
+  Pine Book Writing offers writing support for full books, series, and custom stories. All written fresh and shaped around your idea. No templates are used.
+  </p>
+
+  <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3">
+    {[
+     { icon: '🖋️', label: 'Action Adventure Novels' },
+      { icon: '🧐', label: 'Action Adventure Novels' },
+      { icon: '📄', label: 'Action Fiction Ghostwriting' },
+      { icon: '💼', label: 'Custom Adventure Stories' },
+      { icon: '⚙️', label: 'Plot Development' },
+      { icon: '🎯', label: 'Character Building' },         
+    ].map((service, index) => (
+      <div
+        key={index}
+        className="flex flex-col items-center justify-center h-32 p-4 text-center bg-[#f4f1ea] hover:bg-[#ebe8e0] transition-colors rounded-xl shadow-sm hover:shadow-md"
+      >
+        <div className="mb-2 text-3xl">{service.icon}</div>
+        <span className="text-[10px] font-bold uppercase tracking-widest text-gray-600">
+          {service.label}
+        </span>
+      </div>
+    ))}
+  </div>
+</section>
 
             <section className="overflow-hidden" >
                 <div className="relative left-0 px-12 py-10 mb-8 brand-choose-us-section ms-auto md:left-52 md:px-20 md:mt-16 " >
@@ -218,18 +252,18 @@ export default function BookEditing() {
                             />
                         </div>
                         <div className="basis-1/2 md:ml-20">
-                            <h2 className="mt-10 text-2xl font-bold text-white uppercase font-poppins md:text-4xl md:mt-0" data-aos="zoom-in-left" data-aos-delay="100">Why Choose Our Ghostwriting Services?</h2>
-                            <p className="mt-2 text-white">Delight your potential readers with Pine Book Writing. We have a highly skilled team of ghostwriters with a proven record of working for globally-recognized authors. Experience quality, transparency & confidentiality.</p>
+                            <h2 className="mt-10 text-2xl font-bold text-white uppercase font-poppins md:text-4xl md:mt-0" data-aos="zoom-in-left" data-aos-delay="100">Why Do Action Adventure Authors Choose Pine Book Writing?</h2>
+                            <p className="mt-2 text-white">We don’t rush stories or overcomplicate them. Our focus stays on strong action, clear writing, and steady support, so your book feels natural and readable.</p>
                             <div className="flex flex-col gap-2 mt-6 md:flex-row md:gap-10">
                                 <ul>
-                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Expert Team of Writers </li>
-                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Guaranteed Confidentiality </li>
-                                    <li className="flex items-center gap-3 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Timely Delivery </li>
+                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />	Original writing </li>
+                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />	Honest feedback </li>
+                                    <li className="flex items-center gap-3 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />	Clean pacing</li>
                                 </ul>
                                 <ul>
-                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Affordable Writing Services</li>
-                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Deep Research</li>
-                                    <li className="flex items-center gap-3 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Client Focus</li>
+                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Flexible scope</li>
+                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />	Simple process</li>
+                                    <li className="flex items-center gap-3 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />	Full ownership</li>
                                 </ul>
                             </div>
                             {/* <BrandAudioPlayer src="/brand-img/why-choose-us-voice.wav" /> */}

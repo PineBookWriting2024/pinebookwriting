@@ -27,27 +27,27 @@ export default function BookEditing() {
     };
 
     const faqData = [
-        { question: "What is Ghostwriting?", answer: "Ghostwriting is the name of hiring a professional writer to write your book. In return, the writer will gather all the relevant information, conduct in-depth research, and craft a manuscript that meets your vision." },
+        { question: "Do you write full fantasy novels or only parts?", answer: "Both. We handle full fantasy book writing, or help with outlines, chapters, or rewrites depending on what stage your project is at." },
         
-        { question: "Is your ghostwriting ethical and authentic?", answer: "Absolutely, it is both ethical and authentic. Ghostwriting is extremely common, especially in the world of book writing. This service is considered the same as having any professional hired to perform a specific task. At Pine Book Writing, we serve our expertise in writing to put your creative ideas into a manuscript." },
+        { question: "Can you help with fantasy series planning?", answer: "Yes. Our fantasy series writing services help plan long arcs, character growth, and future books without locking you into rigid structures." },
        
-        { question: "Who will own the rights in Ghostwriting?", answer: "We are just your writing partner. We write it as a ghostwriting service, and you own it. As an author, you own all the rights and credits for the final product. Not only that, the royalties your book earns will also be yours." },
+        { question: "Will the story sound like other fantasy books?", answer: "No. We avoid copying trends. Our modern fantasy writers focus on original voices, even when working within familiar fantasy themes." },
        
-        { question: "Can I hire you to write one chapter of my book and later write the other chapters?	", answer: "Yes, you can also hire us chapter by chapter. Here, we are confident that once you see our writing professionalism and expertise, you will definitely want to go toward the last chapter of your book. So, if you want to hire us for a single chapter, you are also welcome." },
+        { question: "Do you offer ghostwriting for fantasy books?", answer: "Yes. We provide fantasy ghostwriters for hire who write under NDA, keeping your authorship and creative ownership fully protected." },
         
-        { question: "How long will it take to write a book?", answer: "The completion time of the ghostwriting services entirely depends on the complexity, genre, and your book's length. However, we usually take 3 to 6 months on average. Moreover, the time also depends on how much material you provide and the research required on the particular topic." },
+        { question: "Is world building included?", answer: "Yes, but only when needed. Fantasy world building supports the story, not the other way around. We keep it balanced." },
        
-        { question: "How much does ghostwriting a book cost?", answer: "The cost of ghostwriting also varies based on your book's length, genre, and complexity. You can view our packages here. Moreover, if you want to customize the any package according to your need, you can speak to our representative. " },
+        { question: "Can I be involved during writing?", answer: "Absolutely. Fantasy writing works best with feedback. You stay involved during drafts, reviews, and revisions without feeling overwhelmed. " },
             ];
 
     return (
         <>
             <Head>
-                <title>Fantasy Writing | Pine Book Writing</title>
+                <title>Best Fantasy writing services | Pine Book Writing</title>
                 <link rel="canonical" href="https://www.pinebookwriting.com/Fantasy-Writing-Services" />
                 <meta
                     name="description"
-                    content="Create magical worlds with our fantasy writing service that is rich in tradition, characters, and immersive storytelling from start to finish."
+                    content="Looking for fantasy writing services? We help turn ideas into engaging fantasy books, series and novels with strong characters and believable worlds."
                 />
                 <link rel="shortcut icon" href="/images/fav.webp" />
                 </Head>
@@ -55,24 +55,25 @@ export default function BookEditing() {
             <BrandNavbar />
             <BrandPrimaryHeader
                 photo_banner={"/images/Fantasy-Writing-Services/1.webp"}
-                title="Fantasy Writing Services – Helping Authors Build a Magical World"
-                desc="If you’re looking for expert assistance while working on the fantasy book genre, you’re at the right place. Pine Book Writing offers professional fantasy writing services for experienced or aspiring authors to let their imaginations soar. Contact us today!"
+                title="Fantasy Writing Services - Create a World Beyond Imagination"
+                desc="Fantasy stories work best when they feel lived-in, not overdone. Our fantasy writing services, with the best fantasy book writers onboarded, help turn your ideas, notes, or half-formed worlds into enthralling stories that readers actually stay with till the end."
             />
             <BrandBannerLogo />
 
             <div className="container max-w-screen-xl pt-0 mx-auto overflow-hidden md:py-20">
                 <div className="flex flex-col items-center justify-center px-8 py-10 md:flex-row lg:flex-row md:px-0 md:py-0">
                     <div className="basis-1/2 abt-txt m1-h p1 aos-init aos-animate" data-aos="fade-right" data-aos-duration="1000">
-                    <h2 className="text-3xl font-bold uppercase font-poppins md:text-4xl">Pine Book Writing – Your Go-to Fantasy Writing Service</h2>
+                    <h2 className="text-3xl font-bold uppercase font-poppins md:text-4xl">Best Fantasy Writing Services That Go Beyond Tropes</h2>
 
                         <h2 className="text-2xl uppercase font-poppins md:text-3xl">
-                        Create Wonder with Every Word
+                      Stories Built With Heart
                         </h2>
                        
                         <p className="pt-3 text-xl text-left font-poppins">
-                        The fantasy genre requires more than imagination. It requires consistent experience to create fascinating characters and a well-crafted magical world. In this journey, Pine Book Writing offers dedicated fantasy writing services for those who want to express their dreams and creative ideas and create their own imaginative worlds. </p>
+                        Fantasy is not just magic and battles. It is also people. Choices. Loss. Hope. At Pine Book Writing, our professional fantasy writers work with a focus on fantasy storytelling that feels human and real. Even inside unreal worlds. </p>
 
-                        <p className="pt-3 text-xl text-left font-poppins">Our experienced fantasy writers can help your magical worlds filled with danger, wonder, and meaningful context throughout the story. You’re invited to hire our expert professionals, whether you are working on high fantasy, dark fantasy, or modern magic stories. No matter whether you’re a fresh writer or an experienced one, we’re here to serve our decade-long expertise with you to help you create something that makes your people remember you and your work!</p>
+                        <p className="pt-3 text-xl text-left font-poppins">When people sign up for our services, some clients come with maps and lore. Others just have a feeling or a character voice. Both are okay. We work on fantasy fiction writing that grows naturally, scene by scene. From epic fantasy novel writing to character-driven fantasy stories, we keep the writing clear, readable and emotionally grounded. World building matters? Yes, but only when it serves the story.</p>
+                         <p className="pt-3 text-xl text-left font-poppins">Whether you’re planning one book or a long fantasy series, you’re welcome at Pine Book Writing. We can help your shape your story without forcing trends or copying other fantasy or children story books.</p>
                     </div>
                     <div className="flex justify-center text-center basis-1/2 abt-pic md:justify-center">
                         <Image src={"/images/Fantasy-Writing-Services/ghost-pic.webp"} width={470} height={300}
@@ -106,11 +107,11 @@ export default function BookEditing() {
   {/* Center Content */}
   <div className="px-4 text-center md:col-span-6">
     <h2 className="font-poppins text-2xl md:text-3xl text-[#98caa9] font-semibold uppercase">
-      Breathe Your Imaginations - Acquire Expert Fantasy Writing Service
+     Let’s Build Your Fantasy World Together
     </h2>
 
     <p className="py-4 text-base md:text-lg">
-      If yes, then why wait? At Pine Book Writing, we’re curious to know your fantasy book idea and help you craft your next best-selling!
+      Have a fascinating story idea that won’t leave you alone? Don’t wait! Our top fantasy writers for hire can help you shape that into a real book, with structure, depth, and your voice still intact.
     </p>
 
     <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
@@ -149,7 +150,7 @@ export default function BookEditing() {
                 <div className="max-w-screen-xl">
                     <div className="mb-6 text-center">
                         <h3 className="text-2xl text-black font-poppins">Our Service Workflow</h3>
-                        <h2 className="text-3xl font-bold text-black font-poppins md:text-4xl" data-aos="zoom-out-down">6-Step Process of Our Ghostwriting Services</h2>
+                        <h2 className="text-3xl font-bold text-black font-poppins md:text-4xl" data-aos="zoom-out-down">6-Step Process of Our Fantasy Writing Services</h2>
                     </div>
 
                     <div className="grid gap-6 mb-6 md:grid-cols-3">
@@ -157,24 +158,24 @@ export default function BookEditing() {
                         <div className="flex flex-row " data-aos="fade-left">
                             <div className="flex-col px-6 py-10 text-left brand-process-content">
                                 <span className="num-span"><b>01</b></span>
-                                <h2 className="text-2xl text-white font-poppins pro-h">Project Manager Assigning & Questionnaire</h2>
-                                <p className="">We begin our process by assigning a dedicated project manager and a questionnaire to understand your writing requirements.</p>
+                                <h2 className="text-2xl text-white font-poppins pro-h">Idea Listening</h2>
+                                <p className="">We start by listening, really. Your world, characters, tone, even confusion. Fantasy book writing works best when the writer understands what kind of story you “don’t” want too.</p>
                             </div>
                         </div>
 
                         <div className="flex flex-row" data-aos="fade-left">
                         <div className="flex-col px-6 py-10 text-left brand-process-content">
                         <span className="num-span"><b>02</b></span>
-                                <h2 className="text-2xl text-white font-poppins pro-h">Research & Outlining</h2>
-                                <p className="">Then, our team of professionals will conduct in-depth research, create a content outline, and send it to you for your approval.</p>
+                                <h2 className="text-2xl text-white font-poppins pro-h">World & Story Planning</h2>
+                                <p className="">We sketch the fantasy world building basics. Rules, limits, cultures, magic systems. Nothing too heavy. Just enough so the story stays consistent and believable.</p>
                             </div>
                         </div>
 
                         <div className="flex flex-row" data-aos="fade-left">
                         <div className="flex-col px-6 py-10 text-left brand-process-content">
                         <span className="num-span"><b>03</b></span>
-                                <h2 className="text-2xl text-white font-poppins pro-h">Interview Session with Writer</h2>
-                                <p className="">After the outline approval, we arrange an interview session with our assigned writer so that you can discuss your vision, tone, and writing style.</p>
+                                <h2 className="text-2xl text-white font-poppins pro-h">Character Development</h2>
+                                <p className="">Strong fantasy books depend on people, not powers. We shape character-driven fantasy stories with clear motivations, flaws, and emotional arcs that evolve naturally across chapters.</p>
                             </div>
                         </div>
                         
@@ -185,24 +186,24 @@ export default function BookEditing() {
                         <div className="flex flex-row " data-aos="fade-left">
                         <div className="flex-col px-6 py-10 text-left brand-process-content">
                         <span className="num-span"><b>04</b></span>
-                                <h2 className="text-2xl text-white font-poppins pro-h">Weekly Deliveries & Revisions</h2>
-                                <p className="">We provide deliveries weekly and welcome your feedback throughout the process. We also offer multiple revisions to ensure your complete satisfaction.</p>
+                                <h2 className="text-2xl text-white font-poppins pro-h">Draft Writing</h2>
+                                <p className="">This is where writing begins. Our fantasy ghostwriters write clean scenes, strong pacing, and natural dialogue. The goal is flow, not showing off vocabulary.</p>
                             </div>
                         </div>
 
                         <div className="flex flex-row" data-aos="fade-left">
                         <div className="flex-col px-6 py-10 text-left brand-process-content">
                         <span className="num-span"><b>05</b></span>
-                                <h2 className="text-2xl text-white font-poppins pro-h">Formatting & Layout Adjustment</h2>
-                                <p className="">Once our ghostwriting work is finalized, we will format the manuscript according to your preferred style and make the necessary layout adjustments.</p>
+                                <h2 className="text-2xl text-white font-poppins pro-h">Review & Refinement</h2>
+                                <p className="">You read. We adjust. Scenes may shift. Some parts get trimmed. That back-and-forth matters a lot in professional fantasy writing services, so we don’t rush it.</p>
                             </div>
                         </div>
 
                         <div className="flex flex-row" data-aos="fade-left">
                         <div className="flex-col px-6 py-10 text-left brand-process-content">
                         <span className="num-span"><b>06</b></span>
-                                <h2 className="text-2xl text-white font-poppins pro-h">Final Delivery</h2>
-                                <p className="">In the last step, we will deliver the finalized and polished manuscript to you in your desired format and the time we've discussed.</p>
+                                <h2 className="text-2xl text-white font-poppins pro-h">Final Polish</h2>
+                                <p className="">We edit for clarity, consistency, and tone. The final manuscript is prepared for publishing or pitching, especially for clients </p>
                             </div>
                         </div>
                         
@@ -210,6 +211,49 @@ export default function BookEditing() {
 
                 </div>
             </section>
+
+               <section className="max-w-6xl px-4 py-16 mx-auto bg-white font-poppins">
+                 <h2 className="mb-12 text-xl font-medium text-center text-gray-700 md:text-2xl">
+    Our Offerings
+  </h2>
+  <h2 className="mb-12 text-xl font-medium text-center text-gray-700 md:text-2xl">
+What’s Included In Our Fantasy Ghostwriting Services
+  </h2>
+
+  <p className="mb-12 text-xl font-medium text-center text-gray-700 md:text-2xl">
+  <a 
+    href="https://pinebookwriting.com" 
+    target="_blank" 
+    rel="noopener noreferrer"
+    className="font-semibold text-blue-600 hover:underline"
+  >
+    Pine Book Writing
+  </a>{" "}
+  offers flexible fantasy writing support, whether you need full books, partial help, or long-term collaboration across multiple fantasy stories or series ideas.
+</p>
+
+
+  <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3">
+    {[
+     { icon: '🖋️', label: 'Urban Fantasy Writing' },
+      { icon: '🧐', label: 'High Fantasy Writing' },
+      { icon: '📄', label: 'Dark Fantasy Writing' },
+      { icon: '💼', label: 'Fantasy Series Development' },
+      { icon: '⚙️', label: 'World Building Support' },
+      { icon: '🎯', label: 'Character Arc Writing' },         
+    ].map((service, index) => (
+      <div
+        key={index}
+        className="flex flex-col items-center justify-center h-32 p-4 text-center bg-[#f4f1ea] hover:bg-[#ebe8e0] transition-colors rounded-xl shadow-sm hover:shadow-md"
+      >
+        <div className="mb-2 text-3xl">{service.icon}</div>
+        <span className="text-[10px] font-bold uppercase tracking-widest text-gray-600">
+          {service.label}
+        </span>
+      </div>
+    ))}
+  </div>
+</section>
             
             <section className="overflow-hidden" >
                 <div className="relative left-0 px-12 py-10 mb-8 brand-choose-us-section ms-auto md:left-52 md:px-20 md:mt-16 " >
@@ -222,18 +266,18 @@ export default function BookEditing() {
                             />
                         </div>
                         <div className="basis-1/2 md:ml-20">
-                            <h2 className="mt-10 text-2xl font-bold text-white uppercase font-poppins md:text-4xl md:mt-0" data-aos="zoom-in-left" data-aos-delay="100">Why Choose Our Ghostwriting Services?</h2>
-                            <p className="mt-2 text-white">Delight your potential readers with Pine Book Writing. We have a highly skilled team of ghostwriters with a proven record of working for globally-recognized authors. Experience quality, transparency & confidentiality.</p>
+                            <h2 className="mt-10 text-2xl font-bold text-white uppercase font-poppins md:text-4xl md:mt-0" data-aos="zoom-in-left" data-aos-delay="100">Offering Pro-Level Fantasy Writing Services - Without Copying Others</h2>
+                            <p className="mt-2 text-white">We focus on original fantasy fiction writing. Not recycled plots. Every story we write is shaped carefully with patience, honest feedback, and respect for your creative vision and direction.</p>
                             <div className="flex flex-col gap-2 mt-6 md:flex-row md:gap-10">
                                 <ul>
-                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Expert Team of Writers </li>
-                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Guaranteed Confidentiality </li>
-                                    <li className="flex items-center gap-3 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Timely Delivery </li>
+                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Original story focus </li>
+                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Genre understanding </li>
+                                    <li className="flex items-center gap-3 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />	Clear communication </li>
                                 </ul>
                                 <ul>
-                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Affordable Writing Services</li>
-                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Deep Research</li>
-                                    <li className="flex items-center gap-3 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Client Focus</li>
+                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Long-term support</li>
+                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />	Flexible writing style</li>
+                                    <li className="flex items-center gap-3 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />	Writer-first approach</li>
                                 </ul>
                             </div>
                             {/* <BrandAudioPlayer src="/brand-img/why-choose-us-voice.wav" /> */}

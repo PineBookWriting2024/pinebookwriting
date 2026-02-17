@@ -27,27 +27,27 @@ export default function BookEditing() {
     };
 
     const faqData = [
-        { question: "What is Ghostwriting?", answer: "Ghostwriting is the name of hiring a professional writer to write your book. In return, the writer will gather all the relevant information, conduct in-depth research, and craft a manuscript that meets your vision." },
+        { question: "How do your movie writing services work?", answer: "It’s simple really. You share your movie idea, and our movie script writers start shaping it into a full story. We stay in touch till it feels right." },
 
-        { question: "Is your ghostwriting ethical and authentic?", answer: "Absolutely, it is both ethical and authentic. Ghostwriting is extremely common, especially in the world of book writing. This service is considered the same as having any professional hired to perform a specific task. At Pine Book Writing, we serve our expertise in writing to put your creative ideas into a manuscript." },
+        { question: "Can I hire a movie script writer for a short film?", answer: "We work on both ( a short film or a full-length movie). Our team of writers knows how to write a clear and enthralling script with clear scenes and dialogue." },
 
-        { question: "Who will own the rights in Ghostwriting?", answer: "We are just your writing partner. We write it as a ghostwriting service, and you own it. As an author, you own all the rights and credits for the final product. Not only that, the royalties your book earns will also be yours." },
+        { question: "How long does it take to finish a movie script?", answer: "Depends on the project size. Movie script writing normally takes a few weeks. But sometimes it takes more if the client shares a lot of feedback or asks for multiple rewrites." },
 
-        { question: "Can I hire you to write one chapter of my book and later write the other chapters?	", answer: "Yes, you can also hire us chapter by chapter. Here, we are confident that once you see our writing professionalism and expertise, you will definitely want to go toward the last chapter of your book. So, if you want to hire us for a single chapter, you are also welcome." },
+        { question: "Can I give notes during the writing process?	", answer: "Of course, you can. We love when clients share feedback. It helps us make sure the movie script turns out exactly how you want." },
 
-        { question: "How long will it take to write a book?", answer: "The completion time of the ghostwriting services entirely depends on the complexity, genre, and your book's length. However, we usually take 3 to 6 months on average. Moreover, the time also depends on how much material you provide and the research required on the particular topic." },
+        { question: "What genres do you write in?", answer: "Pretty much all. Action, romance, thriller, drama, comedy. Our movie writers have worked across genres and can match the tone you want." },
 
-        { question: "How much does ghostwriting a book cost?", answer: "The cost of ghostwriting also varies based on your book's length, genre, and complexity. You can view our packages here. Moreover, if you want to customize the any package according to your need, you can speak to our representative. " },
+        { question: "Do you offer revisions after delivery?", answer: "Of course. We offer multiple revisions for your absolute satisfaction. Writing a movie script is not the work of one individual. It’s teamwork. And we want your final draft to feel perfectly aligned with what you expected." },
     ];
 
     return (
         <>
             <Head>
-                <title>Movie Writing | Pine Book Writing</title>
+                <title>Best Movie Writing Services | Script Writers for Hire</title>
                 <link rel="canonical" href="https://www.pinebookwriting.com/Movie-Writing" />
                 <meta
                     name="description"
-                    content="Hire our movie writing services to execute your film ideas into prevailing screenplays using robust structure, pacing, and cinematic style. Contact us now!"
+                    content="Get expert movie writing services and create a perfect movie script. Hire skilled writers for your short or full length movie script at Pine Book Writing."
                 />
                 <link rel="shortcut icon" href="/images/fav.webp" />
             </Head>
@@ -55,24 +55,25 @@ export default function BookEditing() {
             <BrandNavbar />
             <BrandPrimaryHeader
                 photo_banner={"/images/Movie-Writing/1.webp"}
-                title="Movie Writing Service That Helps Make Your Story Alive"
-                desc="Need help making your movie idea a reality? Our experienced movie writers can convert your ideas into a thrilling, unforgettable story. Our professionals write screenplays that draw in audiences and take your project to the next level. Let’s have a quick call!"
+                title="Movie Writing Services That Turn Ideas Into Real Stories"
+                desc="Our movie writing services are for those who’ve got a story but don’t know how to put it on paper the right way. From movie script writing to dialogue writing, we help you shape your idea into something real and watchable."
             />
             <BrandBannerLogo />
 
             <div className="container max-w-screen-xl pt-0 mx-auto overflow-hidden md:py-20">
                 <div className="flex flex-col items-center justify-center px-8 py-10 md:flex-row lg:flex-row md:px-0 md:py-0">
                     <div className="basis-1/2 abt-txt m1-h p1 aos-init aos-animate" data-aos="fade-right" data-aos-duration="1000">
-                        <h2 className="text-3xl font-bold uppercase font-poppins md:text-4xl">All-encompassing Movie Writing Service</h2>
+                        <h2 className="text-3xl font-bold uppercase font-poppins md:text-4xl">Professional Movie Writing - Write Something Really Watchable</h2>
 
                         <h2 className="text-2xl uppercase font-poppins md:text-3xl">
                             From Concept to Script
                         </h2>
 
                         <p className="pt-3 text-xl text-left font-poppins">
-                            Do you have an idea for a movie but don't know how to get started? Our movie writing services will help you transform your idea into a full script. We help you with every step of making a short film, an indie movie, or a big screenplay, from designing the story to breaking down the scenes to developing the characters and writing the dialogue. </p>
+                           Good movies always start with good writing. And Pine Book Writing really cares. Our professional movie writing team knows how to work on a small idea and make it a script that keeps people watching. So, we can help whether you’re planning to write a movie script from the very beginning or just fixing scenes. </p>
 
-                        <p className="pt-3 text-xl text-left font-poppins">Our team of professionals knows how to tell stories through film and uses industry-standard formats to make sure your script is both innovative and professional. We turn your ideas into interesting storylines that are ready for the screen, from emotional dramas to action-packed thrillers. Your plot doesn't just stay on paper with our movie writing service, but it comes to life in every scene.</p>
+                        <p className="pt-3 text-xl text-left font-poppins">Our movie script writers for hire better understand all the aspects of it. They are also familiar with things that make a story feel natural. Not forced. We can help you with dialogue writing for movies, so your characters sound like real people. From short films to full-length features, we know what producers and viewers look for. </p>
+                        <p className="pt-3 text-xl text-left font-poppins">Let’s take your movie idea and build it into something that fits the industry standard screenplay formatting and still keeps your personal style alive!</p>
                     </div>
                     <div className="flex justify-center text-center basis-1/2 abt-pic md:justify-center">
                         <Image src={"/images/Movie-Writing/ghost-pic.webp"} width={470} height={300}
@@ -105,9 +106,9 @@ export default function BookEditing() {
 
                     <div className="px-4 text-center md:col-span-6">
                         <h2 className="font-poppins text-2xl text-[#98caa9] font-semibold md:text-3xl uppercase">
-                            Want to Convert Your Story into a Movie? We’re Here to Help!
+                           Ready to Write a Movie People Watch Untill End?
                         </h2>
-                        <p className="py-4 text-base md:text-lg">Let’s discuss this idea with our screenplay writing experts and be amazed to know it’s possible in more ways than you just imagined.</p>
+                        <p className="py-4 text-base md:text-lg">Acquire our movie script writers for hire and give liveliness to your script. We’ll make your idea a strong, watchable script by infusing real emotions with natural flow.</p>
 
                         <div className="flex flex-col items-center justify-center gap-4 cta-btns sm:flex-row">
                             <CTAButton />
@@ -147,7 +148,7 @@ export default function BookEditing() {
                 <div className="max-w-screen-xl">
                     <div className="mb-6 text-center">
                         <h3 className="text-2xl text-black font-poppins">Our Service Workflow</h3>
-                        <h2 className="text-3xl font-bold text-black font-poppins md:text-4xl" data-aos="zoom-out-down">6-Step Process of Our Ghostwriting Services</h2>
+                        <h2 className="text-3xl font-bold text-black font-poppins md:text-4xl" data-aos="zoom-out-down">6-Step Process of Our Movie Writing Services</h2>
                     </div>
 
                     <div className="grid gap-6 mb-6 md:grid-cols-3">
@@ -155,24 +156,24 @@ export default function BookEditing() {
                         <div className="flex flex-row " data-aos="fade-left">
                             <div className="flex-col px-6 py-10 text-left brand-process-content">
                                 <span className="num-span"><b>01</b></span>
-                                <h2 className="text-2xl text-white font-poppins pro-h">Project Manager Assigning & Questionnaire</h2>
-                                <p className="">We begin our process by assigning a dedicated project manager and a questionnaire to understand your writing requirements.</p>
+                                <h2 className="text-2xl text-white font-poppins pro-h">Story Discussion</h2>
+                                <p className="">We start by talking about your movie idea, its message, and main characters. Our movie script writer notes every detail to build a strong base..</p>
                             </div>
                         </div>
 
                         <div className="flex flex-row" data-aos="fade-left">
                             <div className="flex-col px-6 py-10 text-left brand-process-content">
                                 <span className="num-span"><b>02</b></span>
-                                <h2 className="text-2xl text-white font-poppins pro-h">Research & Outlining</h2>
-                                <p className="">Then, our team of professionals will conduct in-depth research, create a content outline, and send it to you for your approval.</p>
+                                <h2 className="text-2xl text-white font-poppins pro-h">Concept Development</h2>
+                                <p className="">Our professional movie writing team expands your idea into a clear story concept with strong characters, emotions, and conflicts that make the movie worth watching.</p>
                             </div>
                         </div>
 
                         <div className="flex flex-row" data-aos="fade-left">
                             <div className="flex-col px-6 py-10 text-left brand-process-content">
                                 <span className="num-span"><b>03</b></span>
-                                <h2 className="text-2xl text-white font-poppins pro-h">Interview Session with Writer</h2>
-                                <p className="">After the outline approval, we arrange an interview session with our assigned writer so that you can discuss your vision, tone, and writing style.</p>
+                                <h2 className="text-2xl text-white font-poppins pro-h">Script Outline</h2>
+                                <p className="">We create a complete outline, including each scene and dialogue hints. This helps in writing a movie script that flows naturally from start to end.</p>
                             </div>
                         </div>
 
@@ -183,16 +184,16 @@ export default function BookEditing() {
                         <div className="flex flex-row " data-aos="fade-left">
                             <div className="flex-col px-6 py-10 text-left brand-process-content">
                                 <span className="num-span"><b>04</b></span>
-                                <h2 className="text-2xl text-white font-poppins pro-h">Weekly Deliveries & Revisions</h2>
-                                <p className="">We provide deliveries weekly and welcome your feedback throughout the process. We also offer multiple revisions to ensure your complete satisfaction.</p>
+                                <h2 className="text-2xl text-white font-poppins pro-h">Dialogue Writing</h2>
+                                <p className="">Next, our writers focus on dialogue writing for movies, keeping every line realistic, emotional, and easy to relate with, depending on the movie’s tone and genre.</p>
                             </div>
                         </div>
 
                         <div className="flex flex-row" data-aos="fade-left">
                             <div className="flex-col px-6 py-10 text-left brand-process-content">
                                 <span className="num-span"><b>05</b></span>
-                                <h2 className="text-2xl text-white font-poppins pro-h">Formatting & Layout Adjustment</h2>
-                                <p className="">Once our ghostwriting work is finalized, we will format the manuscript according to your preferred style and make the necessary layout adjustments.</p>
+                                <h2 className="text-2xl text-white font-poppins pro-h">Script Formatting</h2>
+                                <p className="">After writing, we edit and fix every detail following screenplay formatting (industry standard) to ensure your movie script looks professional and ready for production.</p>
                             </div>
                         </div>
 
@@ -200,7 +201,7 @@ export default function BookEditing() {
                             <div className="flex-col px-6 py-10 text-left brand-process-content">
                                 <span className="num-span"><b>06</b></span>
                                 <h2 className="text-2xl text-white font-poppins pro-h">Final Delivery</h2>
-                                <p className="">In the last step, we will deliver the finalized and polished manuscript to you in your desired format and the time we've discussed.</p>
+                                <p className="">Once approved, we deliver the final version of your script. Our film writing services guarantee a clean, polished story ready for directors and producers.</p>
                             </div>
                         </div>
 
@@ -208,6 +209,40 @@ export default function BookEditing() {
 
                 </div>
             </section>
+
+             <section className="max-w-6xl px-4 py-16 mx-auto bg-white font-poppins">
+                 <h2 className="mb-12 text-xl font-medium text-center text-gray-700 md:text-2xl">
+    Our Offerings
+  </h2>
+  <h2 className="mb-12 text-xl font-medium text-center text-gray-700 md:text-2xl">
+ What’s Included In Our Movie Script Writing Services
+  </h2>
+
+  <p className="mb-12 text-xl font-medium text-center text-gray-700 md:text-2xl">
+  Our movie <a href="https://www.pinebookwriting.com/movie-script-writing-services" className="text-blue-600 hover:underline">writing services at Pine Book Writing</a> cover everything from concept to final script. We handle story development, dialogues, and screenplay formatting to make your film script truly production-ready.
+  </p>
+
+  <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3">
+    {[
+     { icon: '🖋️', label: 'Story & Concept Development' },
+      { icon: '🧐', label: 'Scriptwriting & Screenplay ' },
+      { icon: '📄', label: 'Dialogue Writing   ' },
+      { icon: '💼', label: 'Editing & Proofreading' },
+      { icon: '⚙️', label: 'Screenplay Formatting' },
+      { icon: '🎯', label: 'Short Film Script Writing' },         
+    ].map((service, index) => (
+      <div
+        key={index}
+        className="flex flex-col items-center justify-center h-32 p-4 text-center bg-[#f4f1ea] hover:bg-[#ebe8e0] transition-colors rounded-xl shadow-sm hover:shadow-md"
+      >
+        <div className="mb-2 text-3xl">{service.icon}</div>
+        <span className="text-[10px] font-bold uppercase tracking-widest text-gray-600">
+          {service.label}
+        </span>
+      </div>
+    ))}
+  </div>
+</section>
 
             <section className="overflow-hidden" >
                 <div className="relative left-0 px-12 py-10 mb-8 brand-choose-us-section ms-auto md:left-52 md:px-20 md:mt-16 " >
@@ -220,18 +255,18 @@ export default function BookEditing() {
                             />
                         </div>
                         <div className="basis-1/2 md:ml-20">
-                            <h2 className="mt-10 text-2xl font-bold text-white uppercase font-poppins md:text-4xl md:mt-0" data-aos="zoom-in-left" data-aos-delay="100">Why Choose Our Ghostwriting Services?</h2>
-                            <p className="mt-2 text-white">Delight your potential readers with Pine Book Writing. We have a highly skilled team of ghostwriters with a proven record of working for globally-recognized authors. Experience quality, transparency & confidentiality.</p>
+                            <h2 className="mt-10 text-2xl font-bold text-white uppercase font-poppins md:text-4xl md:mt-0" data-aos="zoom-in-left" data-aos-delay="100">What Makes Our Movie Writing Services Stand Out?</h2>
+                            <p className="mt-2 text-white">We’re not just writers but storytellers who understand how movies connect with people. Our professional movie writing team makes sure every story feels real and emotional. Not robotic. From plot building to dialogue creation, we pay attention to every small detail that makes your script outstanding.</p>
                             <div className="flex flex-col gap-2 mt-6 md:flex-row md:gap-10">
                                 <ul>
-                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Expert Team of Writers </li>
-                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Guaranteed Confidentiality </li>
-                                    <li className="flex items-center gap-3 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Timely Delivery </li>
+                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />	Creative Storytelling</li>
+                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />	Fast Turnaround</li>
+                                    <li className="flex items-center gap-3 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Realistic Dialogues</li>
                                 </ul>
                                 <ul>
-                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Affordable Writing Services</li>
-                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Deep Research</li>
-                                    <li className="flex items-center gap-3 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Client Focus</li>
+                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Personalized Approach</li>
+                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />	Film Industry Expertise</li>
+                                    <li className="flex items-center gap-3 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />	100% Original Scripts</li>
                                 </ul>
                             </div>
                             {/* <BrandAudioPlayer src="/brand-img/why-choose-us-voice.wav" /> */}

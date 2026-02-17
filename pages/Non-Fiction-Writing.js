@@ -27,27 +27,27 @@ export default function BookEditing() {
     };
 
     const faqData = [
-        { question: "What is Ghostwriting?", answer: "Ghostwriting is the name of hiring a professional writer to write your book. In return, the writer will gather all the relevant information, conduct in-depth research, and craft a manuscript that meets your vision." },
+        { question: "Do you help with research for non-fiction books?", answer: "Yes. Research is a core part of our process. We collect reliable sources, facts, and references, then write them in a way that feels simple, not academic or heavy." },
         
-        { question: "Is your ghostwriting ethical and authentic?", answer: "Absolutely, it is both ethical and authentic. Ghostwriting is extremely common, especially in the world of book writing. This service is considered the same as having any professional hired to perform a specific task. At Pine Book Writing, we serve our expertise in writing to put your creative ideas into a manuscript." },
+        { question: "Can I hire a non-fiction writer if I only have an idea?", answer: "That’s common. Many clients start with rough thoughts. Our best non fiction writers help shape ideas into structured chapters step by step." },
        
-        { question: "Who will own the rights in Ghostwriting?", answer: "We are just your writing partner. We write it as a ghostwriting service, and you own it. As an author, you own all the rights and credits for the final product. Not only that, the royalties your book earns will also be yours." },
+        { question: "Will the writing sound like me?", answer: "We work hard to keep your voice. The goal isn’t to sound like us. It’s to sound like you, you’re the actual author. We keep things clearer and better organized." },
        
-        { question: "Can I hire you to write one chapter of my book and later write the other chapters?	", answer: "Yes, you can also hire us chapter by chapter. Here, we are confident that once you see our writing professionalism and expertise, you will definitely want to go toward the last chapter of your book. So, if you want to hire us for a single chapter, you are also welcome." },
+        { question: "Do you write business and educational non-fiction?", answer: "Of course we do. We handle educational non-fiction writing, professional books and expert-driven non-fiction content for different industries." },
         
-        { question: "How long will it take to write a book?", answer: "The completion time of the ghostwriting services entirely depends on the complexity, genre, and your book's length. However, we usually take 3 to 6 months on average. Moreover, the time also depends on how much material you provide and the research required on the particular topic." },
+        { question: "How long does a non-fiction book take?", answer: "Timelines of your non-fiction work depend on length and research needs. Most projects take several weeks, sometimes longer. We give a clear schedule early on." },
        
-        { question: "How much does ghostwriting a book cost?", answer: "The cost of ghostwriting also varies based on your book's length, genre, and complexity. You can view our packages here. Moreover, if you want to customize the any package according to your need, you can speak to our representative. " },
+        { question: "Is editing included in your service?", answer: "Basic editing and polishing are included. If you need heavy revisions or deep rewriting, we discuss that before moving ahead. " },
             ];
 
     return (
         <>
             <Head>
-                <title>Non-Fiction Writing | Pine Book Writing</title>
+                <title>Best Non-Fiction Writers for Hire | Pine Book Writing</title>
                     <link rel="canonical" href="https://www.pinebookwriting.com/Non-Fiction-Writing" />
                 <meta
                     name="description"
-                    content="Make your ideas alive with our non fiction writing service. We are here to create clear, engaging, and professionally written book to educate and inspire."
+                    content="We're offering exceptional non-fiction writing services with leading writers capable of writing your ideas with perfection and creating a non-fiction book."
                 />
                 <link rel="shortcut icon" href="/images/fav.webp" />
                 </Head>
@@ -56,23 +56,32 @@ export default function BookEditing() {
             <BrandPrimaryHeader
                 photo_banner={"/images/Non-Fiction-Writing/1.webp"}
                 title="Your Wisdom, Our Words - Expert Non-Fiction Writing Services"
-                desc="Are you planning to write a non-fiction book to share facts, insights, or personal experiences? Take our hands and let us remove your burden with our expert non-fiction writing services. Book your free consultation today!"
+                desc="Real stories. Real knowledge. Written in a way people actually want to read. Through our exceptional non-fiction writing services, we help authors turn their ideas, experience and research work into clear books that sound human. Not stiff or textbook-like."
             />
             <BrandBannerLogo />
 
             <div className="container max-w-screen-xl pt-0 mx-auto overflow-hidden md:py-20">
                 <div className="flex flex-col items-center justify-center px-8 py-10 md:flex-row lg:flex-row md:px-0 md:py-0">
                     <div className="basis-1/2 abt-txt m1-h p1 aos-init aos-animate" data-aos="fade-right" data-aos-duration="1000">
-                    <h2 className="text-3xl font-bold uppercase font-poppins md:text-4xl">All-Inclusive Non-Fiction Book Writing Service</h2>
+                    <h2 className="text-3xl font-bold uppercase font-poppins md:text-4xl">All-Inclusive Creative Non-Fiction Writing Services</h2>
 
                         <h2 className="text-2xl uppercase font-poppins md:text-3xl">
-                        Fact-based Stories Told with Clarity and Professionalism
+                      Share Your Wisdom With Clarity
                         </h2>
                        
                         <p className="pt-3 text-xl text-left font-poppins">
-                        If you’re up to writing something that is based on truth, facts, and experiences, Non-fiction writing service is here for you. Whether you want to create a guidebook, memoir, article, or food recipe book, we’re ready to help present your ideas professionally and clearly.</p>
+                       Unlike fiction, non-fiction writing isn’t about dramatic language. It’s about clarity, accuracy, and trust. Our non-fiction writing service is designed for authors who want to educate, inform, or inspire readers without losing meaning or authenticity.</p>
 
-                        <p className="pt-3 text-xl text-left font-poppins">At Pine Book Writing, our team of professional non-fiction writers is committed to delivering excellence. They carefully research your work, suggest changes, and work collaboratively with you to make your book’s content fact-checked and easy to read. Let’s turn your thoughts or life lessons into a well-crafted non-fiction book!</p>
+                      <ul className="pt-3 text-xl text-left list-disc list-inside font-poppins">
+  <li>Writing a non-fiction book</li>
+  <li>Developing business or educational content</li>
+  <li>Working on research-based material</li>
+</ul>
+
+<p className="pt-3 text-xl text-left font-poppins">
+  Our professional non-fiction writers focus on structure, flow, and factual accuracy. Some projects require narrative non-fiction writing, while others need educational or informational book writing. We handle both with equal care. So, if you’re searching for non-fiction writers for hire who respect facts and still write like real humans, Pine Book Writing is the right place.
+</p>
+
                     </div>
                     <div className="flex justify-center text-center basis-1/2 abt-pic md:justify-center">
                         <Image src={"/images/Non-Fiction-Writing/ghost-pic.webp"} width={470} height={300}
@@ -104,9 +113,11 @@ export default function BookEditing() {
             
                                 <div className="px-4 text-center md:col-span-6">
                                     <h2 className="font-poppins text-2xl text-[#98caa9] font-semibold md:text-3xl uppercase">
-                                        Hire Non-Fiction Writing Service that Truly helps inspire!
+                                     
+Ready to Present Your Wisdom Through a Book?
+
                                     </h2>
-                                    <p className="py-4 text-base md:text-lg">Share your knowledge, stories, and ideas with immense confidence.</p>
+                                    <p className="py-4 text-base md:text-lg">Hire our best non fiction writing services, and let us turn your ideas into a book that readers trust, finish, and recommend without sounding salesy or forced.</p>
             
                                     <div className="flex flex-col items-center justify-center gap-4 cta-btns sm:flex-row">
                                         <CTAButton />
@@ -144,7 +155,7 @@ export default function BookEditing() {
                 <div className="max-w-screen-xl">
                     <div className="mb-6 text-center">
                         <h3 className="text-2xl text-black font-poppins">Our Service Workflow</h3>
-                        <h2 className="text-3xl font-bold text-black font-poppins md:text-4xl" data-aos="zoom-out-down">6-Step Process of Our Ghostwriting Services</h2>
+                        <h2 className="text-3xl font-bold text-black font-poppins md:text-4xl" data-aos="zoom-out-down">6-Step Process of Our Non-Fiction Writing Services</h2>
                     </div>
 
                     <div className="grid gap-6 mb-6 md:grid-cols-3">
@@ -152,24 +163,24 @@ export default function BookEditing() {
                         <div className="flex flex-row " data-aos="fade-left">
                             <div className="flex-col px-6 py-10 text-left brand-process-content">
                                 <span className="num-span"><b>01</b></span>
-                                <h2 className="text-2xl text-white font-poppins pro-h">Project Manager Assigning & Questionnaire</h2>
-                                <p className="">We begin our process by assigning a dedicated project manager and a questionnaire to understand your writing requirements.</p>
+                                <h2 className="text-2xl text-white font-poppins pro-h">Idea & Purpose Discussion</h2>
+                                <p className="">We begin with a real conversation. topic, goals, audience, and tone. Non-fiction writing works best when we understand why the book exists in the first place.</p>
                             </div>
                         </div>
 
                         <div className="flex flex-row" data-aos="fade-left">
                         <div className="flex-col px-6 py-10 text-left brand-process-content">
                         <span className="num-span"><b>02</b></span>
-                                <h2 className="text-2xl text-white font-poppins pro-h">Research & Outlining</h2>
-                                <p className="">Then, our team of professionals will conduct in-depth research, create a content outline, and send it to you for your approval.</p>
+                                <h2 className="text-2xl text-white font-poppins pro-h">Research & Direction</h2>
+                                <p className="">Our team collects reliable sources, facts, and structure ideas. Research-based non-fiction writing needs balance. Enough depth, but not overload. We keep it readable.</p>
                             </div>
                         </div>
 
                         <div className="flex flex-row" data-aos="fade-left">
                         <div className="flex-col px-6 py-10 text-left brand-process-content">
                         <span className="num-span"><b>03</b></span>
-                                <h2 className="text-2xl text-white font-poppins pro-h">Interview Session with Writer</h2>
-                                <p className="">After the outline approval, we arrange an interview session with our assigned writer so that you can discuss your vision, tone, and writing style.</p>
+                                <h2 className="text-2xl text-white font-poppins pro-h">Content Planning</h2>
+                                <p className="">We outline chapters and flow carefully. We keep long-form non-fiction writing material organized so that readers won't feel lost and confused.</p>
                             </div>
                         </div>
                         
@@ -180,24 +191,24 @@ export default function BookEditing() {
                         <div className="flex flex-row " data-aos="fade-left">
                         <div className="flex-col px-6 py-10 text-left brand-process-content">
                         <span className="num-span"><b>04</b></span>
-                                <h2 className="text-2xl text-white font-poppins pro-h">Weekly Deliveries & Revisions</h2>
-                                <p className="">We provide deliveries weekly and welcome your feedback throughout the process. We also offer multiple revisions to ensure your complete satisfaction.</p>
+                                <h2 className="text-2xl text-white font-poppins pro-h">Writing Drafts</h2>
+                                <p className="">Writing begins with clear language and simple explanations. Our non-fiction writers for hire focus on meaning, not filler.</p>
                             </div>
                         </div>
 
                         <div className="flex flex-row" data-aos="fade-left">
                         <div className="flex-col px-6 py-10 text-left brand-process-content">
                         <span className="num-span"><b>05</b></span>
-                                <h2 className="text-2xl text-white font-poppins pro-h">Formatting & Layout Adjustment</h2>
-                                <p className="">Once our ghostwriting work is finalized, we will format the manuscript according to your preferred style and make the necessary layout adjustments.</p>
+                                <h2 className="text-2xl text-white font-poppins pro-h">Review & Refinement</h2>
+                                <p className="">You review the draft. We adjust tone, sections, or examples. Non-fiction improves with honest feedback and a little back-and-forth.</p>
                             </div>
                         </div>
 
                         <div className="flex flex-row" data-aos="fade-left">
                         <div className="flex-col px-6 py-10 text-left brand-process-content">
                         <span className="num-span"><b>06</b></span>
-                                <h2 className="text-2xl text-white font-poppins pro-h">Final Delivery</h2>
-                                <p className="">In the last step, we will deliver the finalized and polished manuscript to you in your desired format and the time we've discussed.</p>
+                                <h2 className="text-2xl text-white font-poppins pro-h">Final Polish & Delivery</h2>
+                                <p className="">Here editing, fact checks and formatting get done. The final publish-ready manuscript goes to you in your preferred format.</p>
                             </div>
                         </div>
                         
@@ -205,6 +216,40 @@ export default function BookEditing() {
 
                 </div>
             </section>
+
+             <section className="max-w-6xl px-4 py-16 mx-auto bg-white font-poppins">
+                 <h2 className="mb-12 text-xl font-medium text-center text-gray-700 md:text-2xl">
+    Our Offerings
+  </h2>
+  <h2 className="mb-12 text-xl font-medium text-center text-gray-700 md:text-2xl">
+What’s Included In Our Non-Fiction Writing Services
+  </h2>
+
+  <p className="mb-12 text-xl font-medium text-center text-gray-700 md:text-2xl">
+Our non fiction writing service comprises many aspects of writing, from idea development, editing, and proofreading to finalizing the draft overall. We keep everything accurate, readable and fully aligned with your own voice.
+  </p>
+
+  <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3">
+    {[
+     { icon: '🖋️', label: 'Research-Based Writing' },
+      { icon: '🧐', label: 'Narrative Non-Fiction ' },
+      { icon: '📄', label: 'Educational Book Writing ' },
+      { icon: '💼', label: 'Thought-Leadership Writing' },
+      { icon: '⚙️', label: 'Informational Book Writing' },
+      { icon: '🎯', label: 'Long-Form Projects' },         
+    ].map((service, index) => (
+      <div
+        key={index}
+        className="flex flex-col items-center justify-center h-32 p-4 text-center bg-[#f4f1ea] hover:bg-[#ebe8e0] transition-colors rounded-xl shadow-sm hover:shadow-md"
+      >
+        <div className="mb-2 text-3xl">{service.icon}</div>
+        <span className="text-[10px] font-bold uppercase tracking-widest text-gray-600">
+          {service.label}
+        </span>
+      </div>
+    ))}
+  </div>
+</section>
             
             <section className="overflow-hidden" >
                 <div className="relative left-0 px-12 py-10 mb-8 brand-choose-us-section ms-auto md:left-52 md:px-20 md:mt-16 " >
@@ -217,18 +262,18 @@ export default function BookEditing() {
                             />
                         </div>
                         <div className="basis-1/2 md:ml-20">
-                            <h2 className="mt-10 text-2xl font-bold text-white uppercase font-poppins md:text-4xl md:mt-0" data-aos="zoom-in-left" data-aos-delay="100">Why Choose Our Ghostwriting Services?</h2>
-                            <p className="mt-2 text-white">Delight your potential readers with Pine Book Writing. We have a highly skilled team of ghostwriters with a proven record of working for globally-recognized authors. Experience quality, transparency & confidentiality.</p>
+                            <h2 className="mt-10 text-2xl font-bold text-white uppercase font-poppins md:text-4xl md:mt-0" data-aos="zoom-in-left" data-aos-delay="100">Why Authors Trust Pine Book Writing’s Non-Fiction Services</h2>
+                            <p className="mt-2 text-white">The thing that literally differentiates us from others is that we don’t write like machines. We listen, ask questions and write carefully. Our non-fiction writing services are built on clarity, honesty, and experience. No shortcuts. No copy/paste formulas. Original work.</p>
                             <div className="flex flex-col gap-2 mt-6 md:flex-row md:gap-10">
                                 <ul>
-                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Expert Team of Writers </li>
-                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Guaranteed Confidentiality </li>
-                                    <li className="flex items-center gap-3 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Timely Delivery </li>
+                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />	Clear communication </li>
+                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />	Patient revisions </li>
+                                    <li className="flex items-center gap-3 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />	Fact-focused writing </li>
                                 </ul>
                                 <ul>
-                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Affordable Writing Services</li>
-                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Deep Research</li>
-                                    <li className="flex items-center gap-3 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Client Focus</li>
+                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />	Experienced writers</li>
+                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />	Real research</li>
+                                    <li className="flex items-center gap-3 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />	Human tone</li>
                                 </ul>
                             </div>
                             {/* <BrandAudioPlayer src="/brand-img/why-choose-us-voice.wav" /> */}

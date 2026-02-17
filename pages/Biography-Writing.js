@@ -27,27 +27,27 @@ export default function BookEditing() {
     };
 
     const faqData = [
-        { question: "What is Ghostwriting?", answer: "Ghostwriting is the name of hiring a professional writer to write your book. In return, the writer will gather all the relevant information, conduct in-depth research, and craft a manuscript that meets your vision." },
+        { question: "What is the difference between a biography and a memoir?", answer: "A biography covers a full life journey of a person. Whereas memoir is focused on specific events, phases of life or lessons rather. Not everything from start to finish." },
         
-        { question: "Is your ghostwriting ethical and authentic?", answer: "Absolutely, it is both ethical and authentic. Ghostwriting is extremely common, especially in the world of book writing. This service is considered the same as having any professional hired to perform a specific task. At Pine Book Writing, we serve our expertise in writing to put your creative ideas into a manuscript." },
+        { question: "Do I need to have everything written already?", answer: "Not at all. Our biography writers for hire help you recall and organize your story through guided interviews and discussions." },
        
-        { question: "Who will own the rights in Ghostwriting?", answer: "We are just your writing partner. We write it as a ghostwriting service, and you own it. As an author, you own all the rights and credits for the final product. Not only that, the royalties your book earns will also be yours." },
+        { question: "Who owns the final biography manuscript?", answer: "Of course, you do. Once delivered, the biography book writing work belongs fully to you. Means, you will have it with complete rights and confidentiality respected." },
        
-        { question: "Can I hire you to write one chapter of my book and later write the other chapters?	", answer: "Yes, you can also hire us chapter by chapter. Here, we are confident that once you see our writing professionalism and expertise, you will definitely want to go toward the last chapter of your book. So, if you want to hire us for a single chapter, you are also welcome." },
+        { question: "Can you write executive or professional biographies?	", answer: "Yes. We offer executive biography writing for leaders, founders, and professionals who want polished yet personal life stories." },
         
-        { question: "How long will it take to write a book?", answer: "The completion time of the ghostwriting services entirely depends on the complexity, genre, and your book's length. However, we usually take 3 to 6 months on average. Moreover, the time also depends on how much material you provide and the research required on the particular topic." },
+        { question: "How long does biography writing take?", answer: "Timelines depend on length and detail, but most biography writing service projects take a few months, including interviews, drafting, and revisions." },
        
-        { question: "How much does ghostwriting a book cost?", answer: "The cost of ghostwriting also varies based on your book's length, genre, and complexity. You can view our packages here. Moreover, if you want to customize the any package according to your need, you can speak to our representative. " },
+        { question: "Is everything kept private?", answer: "Absolutely. Our professional life story writers follow strict confidentiality, and nothing is shared without your written approval. " },
             ];
 
     return (
         <>
             <Head>
-                <title>Biography Writing | Pine Book Writing</title>
+                <title>Best Biography Writing Services | Biography Writers for hire</title>
                 <link rel="canonical" href="https://www.pinebookwriting.com/Biography-Writing" />
                 <meta
                     name="description"
-                    content="Hire our biography writing service to craft a lasting legacy that is detailed, interesting, and base on your life story and accomplishments."
+                    content="We offer expert biography writing services to help people write their life stories in a well-formatted and professional book. Let's discuss your work now!"
                 />
                 <link rel="shortcut icon" href="/images/fav.webp" />
                 </Head>
@@ -55,24 +55,28 @@ export default function BookEditing() {
             <BrandNavbar />
             <BrandPrimaryHeader
                 photo_banner={"/brand-img/Biography-Writing.png"}
-                title="Preserve Your Life Story with Expert Biography Writing Service"
-                desc="Want your life story to be written and preserved? Leave it to Pine Book Writing, as we have a team of expert biography writers on board. Share your idea with our experts and get a perfectly written draft with our professional biography writing services."
+                title="Your Life Story - Our words - Expert Biography Writing Services"
+                desc="Every life has a story. And every story deserves to be told. Through our biography writing services, we help people share their real experiences, memories, and life-achievements in a well-written, professional book. A book that represents you in an honest yet professional way. Get a quote today!"
             />
             <BrandBannerLogo />
 
             <div className="container max-w-screen-xl pt-0 mx-auto overflow-hidden md:py-20">
                 <div className="flex flex-col items-center justify-center px-8 py-10 md:flex-row lg:flex-row md:px-0 md:py-0">
                     <div className="basis-1/2 abt-txt m1-h p1 aos-init aos-animate" data-aos="fade-right" data-aos-duration="1000">
-                    <h2 className="text-3xl font-bold uppercase font-poppins md:text-4xl">Professional Biography Writing Services</h2>
+                    <h2 className="text-3xl font-bold uppercase font-poppins md:text-4xl">Best Biography Writing Services That Go Deeper</h2>
 
                         <h2 className="text-2xl uppercase font-poppins md:text-3xl">
-                        Personal Stories & Histories Long-Preserved
+                       We Turn Real Lives into Meaningful Stories
                         </h2>
                        
                         <p className="pt-3 text-xl text-left font-poppins">
-                        At Pine Book Writing, we believe that every story deserves to be told in a professional manner. If you want your or your loved one’s life story to be preserved and to be read for many years to come, we welcome you to our professional biography writing services. </p>
+                      Writing about your own life isn’t easy. Knowing where to start, what to include and what to leave out. That’s where our professional biography writing services help. We listen to YOU first. Then we shape your experiences into a story. A story that flows in a natural way. </p>
 
-                        <p className="pt-3 text-xl text-left font-poppins">Our team of biography writers ensures each word is written with clarity and purpose. They work diligently and closely with you, from initial consultation to final draft delivery, to help you preserve your story and shape it into a gripping narrative. We take time to understand your story and voice, but never compromise on the quality of work. Let’s write about your life story and turn it into a legacy!</p>
+                        <p className="pt-3 text-xl text-left font-poppins">At  <a href="https://www.pinebookwriting.com" className="text-blue-500 hover:underline">Pine Book Writing</a>, our biography writers work with different people. Be they entrepreneurs, executives, public figures or everyday people who want their stories written with care.</p>
+
+                         <p className="pt-3 text-xl text-left font-poppins">Some of our clients want a full biography book writing project. Others look for <a href="/Memoir-Writing" className="text-blue-500 hover:underline">memoir writing services</a> that focus on a specific phase, memory, or turning point in life. Both are welcome here.</p>
+
+                          <p className="pt-3 text-xl text-left font-poppins">We handle your personal biography writing with respect, patience, and a lot of listening. Your voice stays yours. We just help you put it on paper in a way readers can actually connect with.</p>
                     </div>
                     <div className="flex justify-center text-center basis-1/2 abt-pic md:justify-center">
                         <Image src="/images/Biography-Writing/ghost-pic.webp" width={470} height={300}
@@ -105,10 +109,10 @@ export default function BookEditing() {
             
                                 <div className="px-4 text-center md:col-span-6">
                                     <h2 className="font-poppins text-2xl text-[#98caa9] font-semibold md:text-3xl uppercase">
-                                        Don’t Wait, Start Your Biography Writing Project Today!
+                                       Let Your Life Story Be Written Right - Hire Our Bio Writing Services Today!
                                     </h2>
                                     <p className="py-4 text-base md:text-lg">
-                                        Preserve your life memories in a professionally written biography book.
+                                      Just share your experiences with us clearly and honestly. Our biography writing service helps you turn memories into a story people remember, without pressure or rushing the process.
                                     </p>
             
                                     <div className="flex flex-col items-center justify-center gap-4 cta-btns sm:flex-row">
@@ -148,7 +152,7 @@ export default function BookEditing() {
                 <div className="max-w-screen-xl">
                     <div className="mb-6 text-center">
                         <h3 className="text-2xl text-black font-poppins">Our Service Workflow</h3>
-                        <h2 className="text-3xl font-bold text-black font-poppins md:text-4xl" data-aos="zoom-out-down">6-Step Process of Our Ghostwriting Services</h2>
+                        <h2 className="text-3xl font-bold text-black font-poppins md:text-4xl" data-aos="zoom-out-down">6-Step Process of Our Biography Writing Services</h2>
                     </div>
 
                     <div className="grid gap-6 mb-6 md:grid-cols-3">
@@ -156,24 +160,24 @@ export default function BookEditing() {
                         <div className="flex flex-row " data-aos="fade-left">
                             <div className="flex-col px-6 py-10 text-left brand-process-content">
                                 <span className="num-span"><b>01</b></span>
-                                <h2 className="text-2xl text-white font-poppins pro-h">Project Manager Assigning & Questionnaire</h2>
-                                <p className="">We begin our process by assigning a dedicated project manager and a questionnaire to understand your writing requirements.</p>
+                                <h2 className="text-2xl text-white font-poppins pro-h">Story Discovery</h2>
+                                <p className="">We begin with conversations, not documents. You talk, we listen. Life moments, challenges, wins, even pauses. This helps our life story writing services understand the real shape of your journey.</p>
                             </div>
                         </div>
 
                         <div className="flex flex-row" data-aos="fade-left">
                         <div className="flex-col px-6 py-10 text-left brand-process-content">
                         <span className="num-span"><b>02</b></span>
-                                <h2 className="text-2xl text-white font-poppins pro-h">Research & Outlining</h2>
-                                <p className="">Then, our team of professionals will conduct in-depth research, create a content outline, and send it to you for your approval.</p>
+                                <h2 className="text-2xl text-white font-poppins pro-h">Structure Planning</h2>
+                                <p className="">Next, we organize your memories into a clear structure. Timeline, chapters, key turning points. Biography manuscript writing works better when the story feels guided, not scattered.</p>
                             </div>
                         </div>
 
                         <div className="flex flex-row" data-aos="fade-left">
                         <div className="flex-col px-6 py-10 text-left brand-process-content">
                         <span className="num-span"><b>03</b></span>
-                                <h2 className="text-2xl text-white font-poppins pro-h">Interview Session with Writer</h2>
-                                <p className="">After the outline approval, we arrange an interview session with our assigned writer so that you can discuss your vision, tone, and writing style.</p>
+                                <h2 className="text-2xl text-white font-poppins pro-h">Interviews & Research</h2>
+                                <p className="">Our professional biography writers ask deeper questions. We may review old notes, speeches, or records if needed. This step adds accuracy and emotional balance to written life histories.</p>
                             </div>
                         </div>
                         
@@ -184,16 +188,16 @@ export default function BookEditing() {
                         <div className="flex flex-row " data-aos="fade-left">
                         <div className="flex-col px-6 py-10 text-left brand-process-content">
                         <span className="num-span"><b>04</b></span>
-                                <h2 className="text-2xl text-white font-poppins pro-h">Weekly Deliveries & Revisions</h2>
-                                <p className="">We provide deliveries weekly and welcome your feedback throughout the process. We also offer multiple revisions to ensure your complete satisfaction.</p>
+                                <h2 className="text-2xl text-white font-poppins pro-h">Writing The Draft</h2>
+                                <p className="">Now the writing starts. Calm pace. Clean language. We focus on biographical storytelling that sounds human, not dramatic or stiff. Your story, written with care.</p>
                             </div>
                         </div>
 
                         <div className="flex flex-row" data-aos="fade-left">
                         <div className="flex-col px-6 py-10 text-left brand-process-content">
                         <span className="num-span"><b>05</b></span>
-                                <h2 className="text-2xl text-white font-poppins pro-h">Formatting & Layout Adjustment</h2>
-                                <p className="">Once our ghostwriting work is finalized, we will format the manuscript according to your preferred style and make the necessary layout adjustments.</p>
+                                <h2 className="text-2xl text-white font-poppins pro-h">Review & Refinement</h2>
+                                <p className="">You read. You react. We revise. This back-and-forth matters in personal biography writing. We adjust tone, detail, and flow until it feels right to you.</p>
                             </div>
                         </div>
 
@@ -201,7 +205,7 @@ export default function BookEditing() {
                         <div className="flex-col px-6 py-10 text-left brand-process-content">
                         <span className="num-span"><b>06</b></span>
                                 <h2 className="text-2xl text-white font-poppins pro-h">Final Delivery</h2>
-                                <p className="">In the last step, we will deliver the finalized and polished manuscript to you in your desired format and the time we've discussed.</p>
+                                <p className="">Once approved, we deliver a polished manuscript. Ready for print, sharing, or publishing. Many clients move forward with autobiography writing services after this stage.</p>
                             </div>
                         </div>
                         
@@ -209,6 +213,40 @@ export default function BookEditing() {
 
                 </div>
             </section>
+
+              <section className="max-w-6xl px-4 py-16 mx-auto bg-white font-poppins">
+                 <h2 className="mb-12 text-xl font-medium text-center text-gray-700 md:text-2xl">
+    Our Offerings
+  </h2>
+  <h2 className="mb-12 text-xl font-medium text-center text-gray-700 md:text-2xl">
+  What’s Included In Our Biography Writing Services
+  </h2>
+
+  <p className="mb-12 text-xl font-medium text-center text-gray-700 md:text-2xl">
+ We support the full writing process, from first conversations to final manuscript, making sure your life story is written clearly, respectfully, and in a voice that feels like you.
+  </p>
+
+  <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3">
+    {[
+     { icon: '🖋️', label: 'Personal Biography Writing' },
+      { icon: '🧐', label: 'Memoir Writing Services' },
+      { icon: '📄', label: 'Executive Biography Writing  ' },
+      { icon: '💼', label: 'Autobiography Writing' },
+      { icon: '⚙️', label: 'Biography Book Writing' },
+      { icon: '🎯', label: 'Biography Editing & Proofreading' },         
+    ].map((service, index) => (
+      <div
+        key={index}
+        className="flex flex-col items-center justify-center h-32 p-4 text-center bg-[#f4f1ea] hover:bg-[#ebe8e0] transition-colors rounded-xl shadow-sm hover:shadow-md"
+      >
+        <div className="mb-2 text-3xl">{service.icon}</div>
+        <span className="text-[10px] font-bold uppercase tracking-widest text-gray-600">
+          {service.label}
+        </span>
+      </div>
+    ))}
+  </div>
+</section>
             
             <section className="overflow-hidden" >
                 <div className="relative left-0 px-12 py-10 mb-8 brand-choose-us-section ms-auto md:left-52 md:px-20 md:mt-16 " >
@@ -221,18 +259,18 @@ export default function BookEditing() {
                             />
                         </div>
                         <div className="basis-1/2 md:ml-20">
-                            <h2 className="mt-10 text-2xl font-bold text-white uppercase font-poppins md:text-4xl md:mt-0" data-aos="zoom-in-left" data-aos-delay="100">Why Choose Our Ghostwriting Services?</h2>
-                            <p className="mt-2 text-white">Delight your potential readers with Pine Book Writing. We have a highly skilled team of ghostwriters with a proven record of working for globally-recognized authors. Experience quality, transparency & confidentiality.</p>
+                            <h2 className="mt-10 text-2xl font-bold text-white uppercase font-poppins md:text-4xl md:mt-0" data-aos="zoom-in-left" data-aos-delay="100">Why People Trust Us With Their Stories?</h2>
+                            <p className="mt-2 text-white">Our team does not rush life stories. With our industry-famous expertise in life story writing services, we focus on listening, clarity, and honesty. So your biography feels real, personal and worth reading. See why what elements help us stand out:</p>
                             <div className="flex flex-col gap-2 mt-6 md:flex-row md:gap-10">
                                 <ul>
-                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Expert Team of Writers </li>
-                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Guaranteed Confidentiality </li>
-                                    <li className="flex items-center gap-3 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Timely Delivery </li>
+                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />	Careful listening </li>
+                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />	Real human tone</li>
+                                    <li className="flex items-center gap-3 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />	Flexible collaboration </li>
                                 </ul>
                                 <ul>
-                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Affordable Writing Services</li>
-                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Deep Research</li>
-                                    <li className="flex items-center gap-3 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Client Focus</li>
+                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />	Experienced writers</li>
+                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Confidential process</li>
+                                    <li className="flex items-center gap-3 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />	Clear communication</li>
                                 </ul>
                             </div>
                             {/* <BrandAudioPlayer src="/brand-img/why-choose-us-voice.wav" /> */}

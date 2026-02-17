@@ -26,27 +26,27 @@ export default function BookEditing() {
     };
 
     const faqData = [
-        { question: "What is Ghostwriting?", answer: "Ghostwriting is the name of hiring a professional writer to write your book. In return, the writer will gather all the relevant information, conduct in-depth research, and craft a manuscript that meets your vision." },
+        { question: "Do you write rhymes for children only?", answer: "No. We write children’s rhymes, educational verses, and lyrical rhymes for adults too. It really depends on what you need." },
         
-        { question: "Is your ghostwriting ethical and authentic?", answer: "Absolutely, it is both ethical and authentic. Ghostwriting is extremely common, especially in the world of book writing. This service is considered the same as having any professional hired to perform a specific task. At Pine Book Writing, we serve our expertise in writing to put your creative ideas into a manuscript." },
+        { question: "Can I hire a rhyme writer for learning content?", answer: "Yes. Educational rhyme writing is one of our common requests. It helps kids remember ideas easily." },
        
-        { question: "Who will own the rights in Ghostwriting?", answer: "We are just your writing partner. We write it as a ghostwriting service, and you own it. As an author, you own all the rights and credits for the final product. Not only that, the royalties your book earns will also be yours." },
+        { question: "Do you match a specific rhythm or style?", answer: "We do. You can share examples, or we can suggest a rhythm that fits your project best." },
        
-        { question: "Can I hire you to write one chapter of my book and later write the other chapters?	", answer: "Yes, you can also hire us chapter by chapter. Here, we are confident that once you see our writing professionalism and expertise, you will definitely want to go toward the last chapter of your book. So, if you want to hire us for a single chapter, you are also welcome." },
+        { question: "How long does rhyme writing take?	", answer: "Short rhymes take less time. Bigger projects need more care. We’ll share timelines clearly before starting." },
         
-        { question: "How long will it take to write a book?", answer: "The completion time of the ghostwriting services entirely depends on the complexity, genre, and your book's length. However, we usually take 3 to 6 months on average. Moreover, the time also depends on how much material you provide and the research required on the particular topic." },
+        { question: "Will the rhymes sound natural when read aloud?", answer: "That’s a big focus for us. We test rhymes by reading them out loud during editing." },
        
-        { question: "How much does ghostwriting a book cost?", answer: "The cost of ghostwriting also varies based on your book's length, genre, and complexity. You can view our packages here. Moreover, if you want to customize the any package according to your need, you can speak to our representative. " },
+        { question: "Can I request changes after delivery?", answer: "Yes, small edits are part of the process. We want the rhyme to feel right to you. " },
             ];
 
     return (
         <>
             <Head>
-                <title>Rhymes Writing | Pine Book Writing</title>
+                <title>Creative Rhymes Writing Services | Pine Book Writing</title>
                 <link rel="canonical" href="https://www.pinebookwriting.com/Rhymes-Writing" />
                 <meta
                     name="description"
-                    content="Hire our creative rhymes writing services for fun, catchy, and clever verses. Our services are Perfect for books, music, and kids’ content."
+                    content="Check out the best rhymes writing services here. Hire the best rhyme writing experts and get your rhyme project done with professional care and attention."
                 />
                 <link rel="shortcut icon" href="/images/fav.webp" />
                 </Head>
@@ -54,24 +54,25 @@ export default function BookEditing() {
             <BrandNavbar />
             <BrandPrimaryHeader
                 photo_banner={"/images/Rhymes-Writing/1.webp"}
-                title="Expert Rhyme Writing Services for Creative Rhymes"
-                desc="Are you seeking expert assistance in writing rhymes for your song, children’s book, or poetry? If yes, then you’re at the right place at Pine Book Writing. We offer professional rhyme writing services to deliver spirited yet meaningful lines personalized for you. Get in touch now!"
+                title="Create an Impactful Piece of Art With Best Rhymes Writing Services"
+                desc="Are you seeking expert assistance in writing rhymes for your song, children’s book, or poetry? If yes, then we have the best solutions. We offer professional rhyme writing services to deliver spirited yet meaningful lines personalized for you."
             />
             <BrandBannerLogo />
 
             <div className="container max-w-screen-xl pt-0 mx-auto overflow-hidden md:py-20">
                 <div className="flex flex-col items-center justify-center px-8 py-10 md:flex-row lg:flex-row md:px-0 md:py-0">
                     <div className="basis-1/2 abt-txt m1-h p1 aos-init aos-animate" data-aos="fade-right" data-aos-duration="1000">
-                    <h2 className="text-3xl font-bold uppercase font-poppins md:text-4xl">Best Rhymes Writing Services for Your Songs and Stories</h2>
+                    <h2 className="text-3xl font-bold uppercase font-poppins md:text-4xl">Best Rhyme Writers for Hire | Pine Book Writing</h2>
 
                         <h2 className="text-2xl uppercase font-poppins md:text-3xl">
-                        Catchy lines with rhythm and heart
+                      Words That Sound Right
                         </h2>
                        
                         <p className="pt-3 text-xl text-left font-poppins">
-                        Rhymes writing requires a dedicated skillset, and our rhyme writers are familiar with how to let words flow smoothly with a creative touch. Whether you’re up to writing song lyrics, poetry for children, or any kind of educational content, we’re here to help you write rhymes that are easy to read and pleasing to hear.</p>
+                       Good rhymes are not about matching words at the end. They're about sound, timing and how the line feels when read out loud. It requires a dedicated skillset and our rhyme writers at <a href="https://www.pinebookwriting.com" className="text-blue-500 hover:underline">Pine Book Writing</a> have expertise in it. They firmly know how to let words flow with a creative touch.</p>
 
-                        <p className="pt-3 text-xl text-left font-poppins">Our team of rhyme writers at Pine Book Writing works diligently, focusing on the rhythm, sound patterns, and language simplicity that fascinate readers or listeners of the particular piece of content. So why still thinking? Bring your idea to us, we’ll bring the rhyme that helps it stand out.</p>
+                        <p className="pt-3 text-xl text-left font-poppins">Whether you want to write rhymes for children's books, learning books, songs, or short poems, we take our time to understand and work on them accordingly.</p>
+                        <p className="pt-3 text-xl text-left font-poppins">Looking to hire a rhyme writer who doesn't overdo it? This is your destination. Our team of professional rhyme writers keeps things clean yet readable. No heavy words. No awkward beats.</p>
                     </div>
                     <div className="flex justify-center text-center basis-1/2 abt-pic md:justify-center">
                         <Image src={"/images/Rhymes-Writing/ghost-pic.webp"} width={470} height={300}
@@ -103,9 +104,9 @@ export default function BookEditing() {
 
                     <div className="px-4 text-center md:col-span-6">
                         <h2 className="font-poppins text-2xl text-[#98caa9] font-semibold md:text-3xl uppercase">
-                            Get Started with Our Rhymes Writing Services
+                           Let’s Write Rhymes That People Remember!
                         </h2>
-                        <p className="py-4 text-base md:text-lg">Let’s create fun and memorable rhymes that truly stand out!</p>
+                        <p className="py-4 text-base md:text-lg">So, are you ready to hire a rhyme writer? Hire our rhyme writing services and create words that flow well, sound natural, and connect to your idea in the right way.</p>
 
                         <div className="flex flex-col items-center justify-center gap-4 cta-btns sm:flex-row">
                             <CTAButton />
@@ -143,7 +144,7 @@ export default function BookEditing() {
                 <div className="max-w-screen-xl">
                     <div className="mb-6 text-center">
                         <h3 className="text-2xl text-black font-poppins">Our Service Workflow</h3>
-                        <h2 className="text-3xl font-bold text-black font-poppins md:text-4xl" data-aos="zoom-out-down">6-Step Process of Our Ghostwriting Services</h2>
+                        <h2 className="text-3xl font-bold text-black font-poppins md:text-4xl" data-aos="zoom-out-down">6-Step Process of Our Rhymes Writing Services   </h2>
                     </div>
 
                     <div className="grid gap-6 mb-6 md:grid-cols-3">
@@ -151,24 +152,24 @@ export default function BookEditing() {
                         <div className="flex flex-row " data-aos="fade-left">
                             <div className="flex-col px-6 py-10 text-left brand-process-content">
                                 <span className="num-span"><b>01</b></span>
-                                <h2 className="text-2xl text-white font-poppins pro-h">Project Manager Assigning & Questionnaire</h2>
-                                <p className="">We begin our process by assigning a dedicated project manager and a questionnaire to understand your writing requirements.</p>
+                                <h2 className="text-2xl text-white font-poppins pro-h">Idea & Purpose Talk</h2>
+                                <p className="">We start with a simple chat. Who is it for, kids or adults, fun or learning. Rhymes work better when the purpose is clear early.</p>
                             </div>
                         </div>
 
                         <div className="flex flex-row" data-aos="fade-left">
                         <div className="flex-col px-6 py-10 text-left brand-process-content">
                         <span className="num-span"><b>02</b></span>
-                                <h2 className="text-2xl text-white font-poppins pro-h">Research & Outlining</h2>
-                                <p className="">Then, our team of professionals will conduct in-depth research, create a content outline, and send it to you for your approval.</p>
+                                <h2 className="text-2xl text-white font-poppins pro-h">Tone & Rhythm Choice</h2>
+                                <p className="">Before writing, we decide the rhythm. Fast, slow, playful, soft. Rhyme writing depends heavily on how it sounds. Not just how it reads.</p>
                             </div>
                         </div>
 
                         <div className="flex flex-row" data-aos="fade-left">
                         <div className="flex-col px-6 py-10 text-left brand-process-content">
                         <span className="num-span"><b>03</b></span>
-                                <h2 className="text-2xl text-white font-poppins pro-h">Interview Session with Writer</h2>
-                                <p className="">After the outline approval, we arrange an interview session with our assigned writer so that you can discuss your vision, tone, and writing style.</p>
+                                <h2 className="text-2xl text-white font-poppins pro-h">First Draft Writing</h2>
+                                <p className="">Our rhyme writers begin writing lines with natural flow. No forcing words. If a line sounds odd, we fix it early, not later.</p>
                             </div>
                         </div>
                         
@@ -179,16 +180,16 @@ export default function BookEditing() {
                         <div className="flex flex-row " data-aos="fade-left">
                         <div className="flex-col px-6 py-10 text-left brand-process-content">
                         <span className="num-span"><b>04</b></span>
-                                <h2 className="text-2xl text-white font-poppins pro-h">Weekly Deliveries & Revisions</h2>
-                                <p className="">We provide deliveries weekly and welcome your feedback throughout the process. We also offer multiple revisions to ensure your complete satisfaction.</p>
+                                <h2 className="text-2xl text-white font-poppins pro-h">Read-Out-Testing</h2>
+                                <p className="">We read the rhymes out loud. This step matters. Rhyming verse writing should sound smooth when spoken, not just look good on paper.</p>
                             </div>
                         </div>
 
                         <div className="flex flex-row" data-aos="fade-left">
                         <div className="flex-col px-6 py-10 text-left brand-process-content">
                         <span className="num-span"><b>05</b></span>
-                                <h2 className="text-2xl text-white font-poppins pro-h">Formatting & Layout Adjustment</h2>
-                                <p className="">Once our ghostwriting work is finalized, we will format the manuscript according to your preferred style and make the necessary layout adjustments.</p>
+                                <h2 className="text-2xl text-white font-poppins pro-h">Edits & Adjustments</h2>
+                                <p className="">You review the draft. We tweak words, beats, or endings. Creative rhyme composition always needs a little back and forth.</p>
                             </div>
                         </div>
 
@@ -196,7 +197,7 @@ export default function BookEditing() {
                         <div className="flex-col px-6 py-10 text-left brand-process-content">
                         <span className="num-span"><b>06</b></span>
                                 <h2 className="text-2xl text-white font-poppins pro-h">Final Delivery</h2>
-                                <p className="">In the last step, we will deliver the finalized and polished manuscript to you in your desired format and the time we've discussed.</p>
+                                <p className="">You receive clean, ready-to-use rhymes. Perfect for books, lessons, songs, or short verses. Simple files. No confusion.</p>
                             </div>
                         </div>
                         
@@ -204,6 +205,40 @@ export default function BookEditing() {
 
                 </div>
             </section>
+
+             <section className="max-w-6xl px-4 py-16 mx-auto bg-white font-poppins">
+                 <h2 className="mb-12 text-xl font-medium text-center text-gray-700 md:text-2xl">
+    Our Offerings
+  </h2>
+  <h2 className="mb-12 text-xl font-medium text-center text-gray-700 md:text-2xl">
+What’s Included In Our Rhyme Writing Services
+  </h2>
+
+  <p className="mb-12 text-xl font-medium text-center text-gray-700 md:text-2xl">
+We offer flexible rhyme writing services for your education or lyrical projects. We always keep the rhythm clear and the language easy to enjoy.
+  </p>
+
+  <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3">
+    {[
+     { icon: '🖋️', label: 'Children’s rhyme writing' },
+      { icon: '🧐', label: 'Educational rhyme writing' },
+      { icon: '📄', label: 'Lyrical rhyme writing ' },
+      { icon: '💼', label: 'Short verse writing' },
+      { icon: '⚙️', label: 'Poetic rhyme writing' },
+      { icon: '🎯', label: 'Rhythmic writing services' },         
+    ].map((service, index) => (
+      <div
+        key={index}
+        className="flex flex-col items-center justify-center h-32 p-4 text-center bg-[#f4f1ea] hover:bg-[#ebe8e0] transition-colors rounded-xl shadow-sm hover:shadow-md"
+      >
+        <div className="mb-2 text-3xl">{service.icon}</div>
+        <span className="text-[10px] font-bold uppercase tracking-widest text-gray-600">
+          {service.label}
+        </span>
+      </div>
+    ))}
+  </div>
+</section>
             
             <section className="overflow-hidden" >
                 <div className="relative left-0 px-12 py-10 mb-8 brand-choose-us-section ms-auto md:left-52 md:px-20 md:mt-16 " >
@@ -216,18 +251,18 @@ export default function BookEditing() {
                             />
                         </div>
                         <div className="basis-1/2 md:ml-20">
-                            <h2 className="mt-10 text-2xl font-bold text-white uppercase font-poppins md:text-4xl md:mt-0" data-aos="zoom-in-left" data-aos-delay="100">Why Choose Our Ghostwriting Services?</h2>
-                            <p className="mt-2 text-white">Delight your potential readers with Pine Book Writing. We have a highly skilled team of ghostwriters with a proven record of working for globally-recognized authors. Experience quality, transparency & confidentiality.</p>
+                            <h2 className="mt-10 text-2xl font-bold text-white uppercase font-poppins md:text-4xl md:mt-0" data-aos="zoom-in-left" data-aos-delay="100">Why Choose Our Rhymes Writing Services?</h2>
+                            <p className="mt-2 text-white">Our rhyming writers focus on sound, flow, and the meaning behind. We don’t rush lines or stuff words. Every rhyme is written with care and real attention. Here’s why we’re the right choice for your rhyming needs:</p>
                             <div className="flex flex-col gap-2 mt-6 md:flex-row md:gap-10">
                                 <ul>
-                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Expert Team of Writers </li>
-                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Guaranteed Confidentiality </li>
-                                    <li className="flex items-center gap-3 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Timely Delivery </li>
+                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />	Natural flow </li>
+                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />	Human Testing & edits </li>
+                                    <li className="flex items-center gap-3 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />	Clear rhythm </li>
                                 </ul>
                                 <ul>
-                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Affordable Writing Services</li>
-                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Deep Research</li>
-                                    <li className="flex items-center gap-3 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Client Focus</li>
+                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />	Flexible tone</li>
+                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Simple words</li>
+                                    <li className="flex items-center gap-3 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />	Multiple Revisions</li>
                                 </ul>
                             </div>
                             {/* <BrandAudioPlayer src="/brand-img/why-choose-us-voice.wav" /> */}

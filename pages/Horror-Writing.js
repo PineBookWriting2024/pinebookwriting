@@ -27,27 +27,27 @@ export default function BookEditing() {
     };
 
     const faqData = [
-        { question: "What is Ghostwriting?", answer: "Ghostwriting is the name of hiring a professional writer to write your book. In return, the writer will gather all the relevant information, conduct in-depth research, and craft a manuscript that meets your vision." },
+        { question: "What type of horror do you write?", answer: "We write many styles, including supernatural horror fiction, psychological horror, ghost stories, and thriller horror writing. The fear level depends on your vision and audience." },
         
-        { question: "Is your ghostwriting ethical and authentic?", answer: "Absolutely, it is both ethical and authentic. Ghostwriting is extremely common, especially in the world of book writing. This service is considered the same as having any professional hired to perform a specific task. At Pine Book Writing, we serve our expertise in writing to put your creative ideas into a manuscript." },
+        { question: "Do you help write the best horror novels from scratch?", answer: "Yes. Our horror novel writing services guide you from idea to final manuscript, even if you only have a rough concept or single scene." },
        
-        { question: "Who will own the rights in Ghostwriting?", answer: "We are just your writing partner. We write it as a ghostwriting service, and you own it. As an author, you own all the rights and credits for the final product. Not only that, the royalties your book earns will also be yours." },
+        { question: "Do you offer short horror stories too?", answer: "Absolutely. Our horror short story writing services are ideal for anthologies, magazines, and personal projects." },
        
-        { question: "Can I hire you to write one chapter of my book and later write the other chapters?	", answer: "Yes, you can also hire us chapter by chapter. Here, we are confident that once you see our writing professionalism and expertise, you will definitely want to go toward the last chapter of your book. So, if you want to hire us for a single chapter, you are also welcome." },
+        { question: "How scary will the story be?	", answer: "That’s your choice. Some want subtle dread, others want darker horror writing. We adjust tone based on what feels right to you." },
         
-        { question: "How long will it take to write a book?", answer: "The completion time of the ghostwriting services entirely depends on the complexity, genre, and your book's length. However, we usually take 3 to 6 months on average. Moreover, the time also depends on how much material you provide and the research required on the particular topic." },
+        { question: "Will my story feel original?", answer: "Yes. We avoid copying famous horror books. Our focus stays on character-driven horror stories with fresh ideas." },
        
-        { question: "How much does ghostwriting a book cost?", answer: "The cost of ghostwriting also varies based on your book's length, genre, and complexity. You can view our packages here. Moreover, if you want to customize the any package according to your need, you can speak to our representative. " },
+        { question: "Is my story kept confidential?", answer: "Always. When you hire a horror writer from us, your work remains private and fully owned by you." },
             ];
 
     return (
         <>
             <Head>
-                <title>Horror Writing | Pine Book Writing</title>
+                <title>Professional Horror Writing Services | Pine Book Writing</title>
                 <link rel="canonical" href="https://www.pinebookwriting.com/Horror-Writing" />
                 <meta
                     name="description"
-                    content="Scare and thrill your readers with our horror writing service with spooky, intense, and packed with psychological suspense."
+                    content="Writing a horror story?  Hire Expert horror writing services  to create character-driven horror fiction that stays with readers long after the final page."
                 />
                 <link rel="shortcut icon" href="/images/fav.webp" />
                 </Head>
@@ -55,24 +55,26 @@ export default function BookEditing() {
             <BrandNavbar />
             <BrandPrimaryHeader
                 photo_banner={"/images/Horror-Writing/1.webp"}
-                title="Craft Scary Tales with Our Horror Writing Services"
-                desc="Want to create a spine-tingling and suspenseful horror story that would get many praises? If yes, then you’ve reached the right place. We have a dedicated team of horror writers who can tell stories that truly haunt your readers in the best way possible. Get in touch today!"
+                title="Horror Writing Services - Write to Scare"
+                desc="Stories that scare don’t shout. They creep in slowly. Our horror writing services help turn dark ideas into stories that linger, disturb a little and feel real long after the last page. Have any scary story ideas to write a horror story? Contact us right away!"
             />
             <BrandBannerLogo />
 
             <div className="container max-w-screen-xl pt-0 mx-auto overflow-hidden md:py-20">
                 <div className="flex flex-col items-center justify-center px-8 py-10 md:flex-row lg:flex-row md:px-0 md:py-0">
                     <div className="basis-1/2 abt-txt m1-h p1 aos-init aos-animate" data-aos="fade-right" data-aos-duration="1000">
-                    <h2 className="text-3xl font-bold uppercase font-poppins md:text-4xl">Terrifyingly Good Horror Writing Service</h2>
+                    <h2 className="text-3xl font-bold uppercase font-poppins md:text-4xl">Create Dark Tales With Our Horror Writing Services </h2>
 
                         <h2 className="text-2xl uppercase font-poppins md:text-3xl">
-                        Horror That Feels Real
+                       Stories That Crawl Under Skin
                         </h2>
                        
                         <p className="pt-3 text-xl text-left font-poppins">
-                        Good horror writing is about building believable fear and unforgettable moments, along with maintaining suspense in the story. So, if you’re someone who wants to write that kind of horror story, our horror writing service is for you. We help you write horror stories with frightful surroundings and terrible plot twists.</p>
+                       Horror is not just blood or monsters. It’s stressful. Silence. A feeling that something is wrong but you can’t explain why. Our horror fiction writing focuses on mood, pacing and characters who feel human, even when things turn ugly.</p>
 
-                        <p className="pt-3 text-xl text-left font-poppins">Pine Book Writing can help you develop a psychological or supernatural horror novel or an exciting thriller. Our group of horror writers will work hard to make your narrative exceptional by adding suspense and emotion to it. From concept to composing the last word, we make sure your story is one that your reader can’t put down and won’t forget that soon. Ready to make your audience scared with your story? Get in touch with us now!</p>
+                        <p className="pt-3 text-xl text-left font-poppins">Whether you’re writing a horror novel, working on horror story writing, or developing a supernatural concept, our team at <a href="https://www.pinebookwriting.com" className="text-blue-500 hover:underline">Pine Book Writing</a> helps shape your idea without relying on tired clichés. Some clients arrive with half an idea; others have already started horror book writing and feel stuck. Both are welcome.</p>
+
+                         <p className="pt-3 text-xl text-left font-poppins">We write character-driven horror stories where fear builds naturally. From psychological dread to supernatural horror fiction, we keep it grounded. That’s what makes the scare work. So why wait? Sign up for the best <a href="https://www.pinebookwriting.com/ghostwriting-services" className="text-blue-500 hover:underline">ghostwriting services today!</a></p>
                     </div>
                     <div className="flex justify-center text-center basis-1/2 abt-pic md:justify-center">
                         <Image src={"/images/Horror-Writing/ghost-pic.webp"} width={470} height={300}
@@ -105,9 +107,9 @@ export default function BookEditing() {
             
                                 <div className="px-4 text-center md:col-span-6">
                                     <h2 className="font-poppins text-2xl text-[#98caa9] font-semibold md:text-3xl uppercase">
-                                        Ready to Haunt Your Book with Horror? Let’s Connect!
+                                      Let’s Turn Fear Into Pages - Join Pine Book Writing!
                                     </h2>
-                                    <p className="py-4 text-base md:text-lg">Acquire our horror writing service today to create something that will make your readers feel scary and loved at once!
+                                    <p className="py-4 text-base md:text-lg">If you want to write a horror story that feels unsettling and honest and unforgettable, our horror writing services can help you write something your readers won’t forget. Explore our past work and see why clients trust us with their darkest ideas.
                                     </p>
             
                                     <div className="flex flex-col items-center justify-center gap-4 cta-btns sm:flex-row">
@@ -146,7 +148,7 @@ export default function BookEditing() {
                 <div className="max-w-screen-xl">
                     <div className="mb-6 text-center">
                         <h3 className="text-2xl text-black font-poppins">Our Service Workflow</h3>
-                        <h2 className="text-3xl font-bold text-black font-poppins md:text-4xl" data-aos="zoom-out-down">6-Step Process of Our Ghostwriting Services</h2>
+                        <h2 className="text-3xl font-bold text-black font-poppins md:text-4xl" data-aos="zoom-out-down">6-Step Process of Our Horror Writing Services</h2>
                     </div>
 
                     <div className="grid gap-6 mb-6 md:grid-cols-3">
@@ -154,24 +156,24 @@ export default function BookEditing() {
                         <div className="flex flex-row " data-aos="fade-left">
                             <div className="flex-col px-6 py-10 text-left brand-process-content">
                                 <span className="num-span"><b>01</b></span>
-                                <h2 className="text-2xl text-white font-poppins pro-h">Project Manager Assigning & Questionnaire</h2>
-                                <p className="">We begin our process by assigning a dedicated project manager and a questionnaire to understand your writing requirements.</p>
+                                <h2 className="text-2xl text-white font-poppins pro-h">Idea & Fear Mapping</h2>
+                                <p className="">We talk about your idea and the kind of fear you want. Psychological, supernatural, or slow-burning. Writing a horror novel works best when fear is clearly understood first.</p>
                             </div>
                         </div>
 
                         <div className="flex flex-row" data-aos="fade-left">
                         <div className="flex-col px-6 py-10 text-left brand-process-content">
                         <span className="num-span"><b>02</b></span>
-                                <h2 className="text-2xl text-white font-poppins pro-h">Research & Outlining</h2>
-                                <p className="">Then, our team of professionals will conduct in-depth research, create a content outline, and send it to you for your approval.</p>
+                                <h2 className="text-2xl text-white font-poppins pro-h">Story Structure Setup</h2>
+                                <p className="">Our horror writer plans the story flow. Where tension rises, where silence sits, and where it breaks. No rush. Suspense-driven horror stories need breathing space.</p>
                             </div>
                         </div>
 
                         <div className="flex flex-row" data-aos="fade-left">
                         <div className="flex-col px-6 py-10 text-left brand-process-content">
                         <span className="num-span"><b>03</b></span>
-                                <h2 className="text-2xl text-white font-poppins pro-h">Interview Session with Writer</h2>
-                                <p className="">After the outline approval, we arrange an interview session with our assigned writer so that you can discuss your vision, tone, and writing style.</p>
+                                <h2 className="text-2xl text-white font-poppins pro-h">First Draft Writing</h2>
+                                <p className="">Drafting begins with focus on mood and voice. Horror story writing needs rhythm. Scenes are written carefully, not loud, not rushed. Fear should feel earned.</p>
                             </div>
                         </div>
                         
@@ -182,16 +184,16 @@ export default function BookEditing() {
                         <div className="flex flex-row " data-aos="fade-left">
                         <div className="flex-col px-6 py-10 text-left brand-process-content">
                         <span className="num-span"><b>04</b></span>
-                                <h2 className="text-2xl text-white font-poppins pro-h">Weekly Deliveries & Revisions</h2>
-                                <p className="">We provide deliveries weekly and welcome your feedback throughout the process. We also offer multiple revisions to ensure your complete satisfaction.</p>
+                                <h2 className="text-2xl text-white font-poppins pro-h">Feedback & Adjustments</h2>
+                                <p className="">You review the draft. We revise tone, scenes, or pacing. Horror writing improves through back and forth. We don’t argue. We adjust patiently.</p>
                             </div>
                         </div>
 
                         <div className="flex flex-row" data-aos="fade-left">
                         <div className="flex-col px-6 py-10 text-left brand-process-content">
                         <span className="num-span"><b>05</b></span>
-                                <h2 className="text-2xl text-white font-poppins pro-h">Formatting & Layout Adjustment</h2>
-                                <p className="">Once our ghostwriting work is finalized, we will format the manuscript according to your preferred style and make the necessary layout adjustments.</p>
+                                <h2 className="text-2xl text-white font-poppins pro-h">Editing & Refinement</h2>
+                                <p className="">Our editors smooth the language, sharpen scenes, and remove anything that feels forced. Character-driven horror stories need clean, natural flow to work.</p>
                             </div>
                         </div>
 
@@ -199,7 +201,7 @@ export default function BookEditing() {
                         <div className="flex-col px-6 py-10 text-left brand-process-content">
                         <span className="num-span"><b>06</b></span>
                                 <h2 className="text-2xl text-white font-poppins pro-h">Final Delivery</h2>
-                                <p className="">In the last step, we will deliver the finalized and polished manuscript to you in your desired format and the time we've discussed.</p>
+                                <p className="">You receive the polished manuscript, ready for publishing or submission.  Your written horror story is delivered professionally and confidentially.</p>
                             </div>
                         </div>
                         
@@ -207,6 +209,40 @@ export default function BookEditing() {
 
                 </div>
             </section>
+
+             <section className="max-w-6xl px-4 py-16 mx-auto bg-white font-poppins">
+                 <h2 className="mb-12 text-xl font-medium text-center text-gray-700 md:text-2xl">
+    Our Offerings
+  </h2>
+  <h2 className="mb-12 text-xl font-medium text-center text-gray-700 md:text-2xl">
+  What’s Included In Our Horror Writing Services
+  </h2>
+
+  <p className="mb-12 text-xl font-medium text-center text-gray-700 md:text-2xl">
+  From concept shaping to final edits, our professional horror writing services cover everything needed to create chilling, readable, and emotionally grounded horror stories.
+  </p>
+
+  <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3">
+    {[
+     { icon: '🖋️', label: 'Horror Novel Writing ' },
+      { icon: '🧐', label: 'Horror Short Story Writing' },
+      { icon: '📄', label: 'Supernatural Horror Fiction   ' },
+      { icon: '💼', label: 'Ghost Story Writing Services' },
+      { icon: '⚙️', label: 'Thriller Horror Writing' },
+      { icon: '🎯', label: 'Horror Editing & Proofreading' },         
+    ].map((service, index) => (
+      <div
+        key={index}
+        className="flex flex-col items-center justify-center h-32 p-4 text-center bg-[#f4f1ea] hover:bg-[#ebe8e0] transition-colors rounded-xl shadow-sm hover:shadow-md"
+      >
+        <div className="mb-2 text-3xl">{service.icon}</div>
+        <span className="text-[10px] font-bold uppercase tracking-widest text-gray-600">
+          {service.label}
+        </span>
+      </div>
+    ))}
+  </div>
+</section>
             
             <section className="overflow-hidden" >
                 <div className="relative left-0 px-12 py-10 mb-8 brand-choose-us-section ms-auto md:left-52 md:px-20 md:mt-16 " >
@@ -219,18 +255,18 @@ export default function BookEditing() {
                             />
                         </div>
                         <div className="basis-1/2 md:ml-20">
-                            <h2 className="mt-10 text-2xl font-bold text-white uppercase font-poppins md:text-4xl md:mt-0" data-aos="zoom-in-left" data-aos-delay="100">Why Choose Our Ghostwriting Services?</h2>
-                            <p className="mt-2 text-white">Delight your potential readers with Pine Book Writing. We have a highly skilled team of ghostwriters with a proven record of working for globally-recognized authors. Experience quality, transparency & confidentiality.</p>
+                            <h2 className="mt-10 text-2xl font-bold text-white uppercase font-poppins md:text-4xl md:mt-0" data-aos="zoom-in-left" data-aos-delay="100">Why Authors Trust Our Best Horror Writers Team?</h2>
+                            <p className="mt-2 text-white">We don’t chase shock value. We focus on atmosphere, characters, and slow tension. That’s why clients looking to hire a horror writer stay with us.</p>
                             <div className="flex flex-col gap-2 mt-6 md:flex-row md:gap-10">
                                 <ul>
-                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Expert Team of Writers </li>
-                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Guaranteed Confidentiality </li>
-                                    <li className="flex items-center gap-3 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Timely Delivery </li>
+                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />	Mood-first writing </li>
+                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />	Genre understanding </li>
+                                    <li className="flex items-center gap-3 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />	Realistic fear </li>
                                 </ul>
                                 <ul>
-                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Affordable Writing Services</li>
-                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Deep Research</li>
-                                    <li className="flex items-center gap-3 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Client Focus</li>
+                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />	Clean storytelling</li>
+                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />	Patient revisions</li>
+                                    <li className="flex items-center gap-3 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />	Writer-friendly process</li>
                                 </ul>
                             </div>
                             {/* <BrandAudioPlayer src="/brand-img/why-choose-us-voice.wav" /> */}

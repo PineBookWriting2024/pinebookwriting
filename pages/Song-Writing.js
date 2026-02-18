@@ -28,27 +28,27 @@ export default function BookEditing() {
     };
 
     const faqData = [
-        { question: "What is Ghostwriting?", answer: "Ghostwriting is the name of hiring a professional writer to write your book. In return, the writer will gather all the relevant information, conduct in-depth research, and craft a manuscript that meets your vision." },
+        { question: "Do you write full songs or just lyrics?", answer: "Mostly lyrics, but we write them melody-ready. If you have music, we fit words to it. If not, we still keep rhythm in mind." },
         
-        { question: "Is your ghostwriting ethical and authentic?", answer: "Absolutely, it is both ethical and authentic. Ghostwriting is extremely common, especially in the world of book writing. This service is considered the same as having any professional hired to perform a specific task. At Pine Book Writing, we serve our expertise in writing to put your creative ideas into a manuscript." },
+        { question: "Can I hire a songwriter online from anywhere?", answer: "Yes. Our songwriting services work online. You don’t need to search “song writing services near me”. Location doesn’t matter as long as communication stays clear. However, we’re a Canada-based firm and our second brand is located in USA." },
        
-        { question: "Who will own the rights in Ghostwriting?", answer: "We are just your writing partner. We write it as a ghostwriting service, and you own it. As an author, you own all the rights and credits for the final product. Not only that, the royalties your book earns will also be yours." },
+        { question: "What genres do you work with?", answer: "Pop, indie, acoustic, soft rock and simple commercial songs. We have an extensive team of writers and large connections in the music industry. If your project needs honest words. We can help." },
        
-        { question: "Can I hire you to write one chapter of my book and later write the other chapters?	", answer: "Yes, you can also hire us chapter by chapter. Here, we are confident that once you see our writing professionalism and expertise, you will definitely want to go toward the last chapter of your book. So, if you want to hire us for a single chapter, you are also welcome." },
+        { question: "Will the song sound like my style?	", answer: "That’s the main goal. We don’t copy others. We write around your voice, references, and comfort level. We write what your audience will actually love." },
         
-        { question: "How long will it take to write a book?", answer: "The completion time of the ghostwriting services entirely depends on the complexity, genre, and your book's length. However, we usually take 3 to 6 months on average. Moreover, the time also depends on how much material you provide and the research required on the particular topic." },
+        { question: "How many revisions do you allow?", answer: "We allow multiple reasonable revisions. Songs often need tweaking. We understand that and don’t disappear after the first draft." },
        
-        { question: "How much does ghostwriting a book cost?", answer: "The cost of ghostwriting also varies based on your book's length, genre, and complexity. You can view our packages here. Moreover, if you want to customize the any package according to your need, you can speak to our representative. " },
+        { question: "Do you keep my song idea private?", answer: "Always. Your song, lyrics and ideas always stay yours. We don’t reuse or resell anything. " },
             ];
 
     return (
         <>
             <Head>
-                <title>Song Writing | Pine Book Writing</title>
+                <title>professional songwriting services | Pine Book Writing</title>
                 <link rel="canonical" href="https://www.pinebookwriting.com/Song-Writing" />
                 <meta
                     name="description"
-                    content="Let your lyrics speak with our song writing service. Original songs with rhythm, emotion, and powerful words crafted just for you. Get in touch today!"
+                    content="Want to write a song? Our custom songwriting services at Pine Book Writing offer custom lyrics, melody-ready writing, and experienced songwriters for hire."
                 />
                 <link rel="shortcut icon" href="/images/fav.webp" />
                 </Head>
@@ -56,24 +56,24 @@ export default function BookEditing() {
             <BrandNavbar />
             <BrandPrimaryHeader
                 photo_banner={"/images/Song-Writing/1.webp"}
-                title="Professional Song Writing That Hits the Right Note"
-                desc="Want to express your voice with catchy and powerful lyrics? Leave it on our professional songwriting services. We can help you create evocative songs that truly connect with your audience emotionally yet musically. Get in touch now!"
+                title="Best Songwriting Services - Real Songs, Real Lyricists"
+                desc="Want to express your voice with catchy yet powerful lyrics that feel honest? No need to worry! Acquire our songwriting services, as we can help you create evocative songs that really connect with people emotionally yet musically. Stop just thinking!"
             />
             <BrandBannerLogo />
 
             <div className="container max-w-screen-xl pt-0 mx-auto overflow-hidden md:py-20">
                 <div className="flex flex-col items-center justify-center px-8 py-10 md:flex-row lg:flex-row md:px-0 md:py-0">
                     <div className="basis-1/2 abt-txt m1-h p1 aos-init aos-animate" data-aos="fade-right" data-aos-duration="1000">
-                    <h2 className="text-3xl font-bold uppercase font-poppins md:text-4xl">Hire Song Writing Service for Every Mood</h2>
+                    <h2 className="text-3xl font-bold uppercase font-poppins md:text-4xl">Offering Professional Songwriting Services</h2>
 
                         <h2 className="text-2xl uppercase font-poppins md:text-3xl">
-                        We Create Lyrics that Speak from the Heart
+                      With Real Emotions, Real Words
                         </h2>
                        
                         <p className="pt-3 text-xl text-left font-poppins">
-                        Whether your taste is pop, hip-hop, country, or soul, our song writing service can produce words that fit your style. We take your ideas or thoughts and translate them into words that naturally fit rhythm and meaning. </p>
+                      At Pine Book Writing, we believe that writing a song isn't about sounding clever all the time. It’s about saying something people can actually feel. With having large connections to expert producers and music artists, we pick the right lyricist from our team. We assign it to someone who works on songs that reach millions of views. </p>
 
-                        <p className="pt-3 text-xl text-left font-poppins">We leverage our connections with expert producers and music artists and pick the right lyricist from our team who works on songs that reach millions of views every day. Our work methodology is simple, cooperative, and geared at helping you to create a unique song. We provide you with fresh verses, a repeat, or the entire song if you need it.</p>
+                        <p className="pt-3 text-xl text-left font-poppins">Whether you're up to write a song from scratch, or stuck halfway, our song writers for hire are ready to step in and help you continue until its polished version comes. We keep emotions, lyrics and flow in our focus to create something special and meaningful. No heavy words. No fake depth.</p>
                     </div>
                     <div className="flex justify-center text-center basis-1/2 abt-pic md:justify-center">
                         <Image src={"/images/Song-Writing/ghost-pic.webp"} width={470} height={300}
@@ -105,9 +105,9 @@ export default function BookEditing() {
                         
                                             <div className="px-4 text-center md:col-span-6">
                                                 <h2 className="font-poppins text-2xl text-[#98caa9] font-semibold md:text-3xl uppercase">
-                                                    Get Lyrics That Hit – Expert Song Writing Services
+                                                 Let’s Write a Song that Really Hits!
                                                 </h2>
-                                                <p className="py-4 text-base md:text-lg">Let our lyrics writers turn your idea into fascinating music!</p>
+                                                <p className="py-4 text-base md:text-lg">Hire a songwriter at <a href="https://pinebookwriting.com" className="text-[#98caa9] hover:underline">Pine Book Writing</a>. We always listen first. Through our exceptional and passionate songwriting service, we’ll help you write songs that sound right and touch the hearts of many.</p>
                         
                                                 <div className="flex flex-col items-center justify-center gap-4 cta-btns sm:flex-row">
                                                     <CTAButton />
@@ -145,7 +145,7 @@ export default function BookEditing() {
                 <div className="max-w-screen-xl">
                     <div className="mb-6 text-center">
                         <h3 className="text-2xl text-black font-poppins">Our Service Workflow</h3>
-                        <h2 className="text-3xl font-bold text-black font-poppins md:text-4xl" data-aos="zoom-out-down">6-Step Process of Our Ghostwriting Services</h2>
+                        <h2 className="text-3xl font-bold text-black font-poppins md:text-4xl" data-aos="zoom-out-down">6-Step Process of Our Songwriting Services</h2>
                     </div>
 
                     <div className="grid gap-6 mb-6 md:grid-cols-3">
@@ -153,24 +153,24 @@ export default function BookEditing() {
                         <div className="flex flex-row " data-aos="fade-left">
                             <div className="flex-col px-6 py-10 text-left brand-process-content">
                                 <span className="num-span"><b>01</b></span>
-                                <h2 className="text-2xl text-white font-poppins pro-h">Project Manager Assigning & Questionnaire</h2>
-                                <p className="">We begin our process by assigning a dedicated project manager and a questionnaire to understand your writing requirements.</p>
+                                <h2 className="text-2xl text-white font-poppins pro-h">Idea Listening</h2>
+                                <p className="">We start by listening. Your mood. Message. Reference tracks. Even your confusion. Song writing works better when we know what you’re trying to say, not just the genre.</p>
                             </div>
                         </div>
 
                         <div className="flex flex-row" data-aos="fade-left">
                         <div className="flex-col px-6 py-10 text-left brand-process-content">
                         <span className="num-span"><b>02</b></span>
-                                <h2 className="text-2xl text-white font-poppins pro-h">Research & Outlining</h2>
-                                <p className="">Then, our team of professionals will conduct in-depth research, create a content outline, and send it to you for your approval.</p>
+                                <h2 className="text-2xl text-white font-poppins pro-h">Direction Mapping</h2>
+                                <p className="">Our songwriter outlines structure, tone, and pacing. We keep nothing complex. Just a clear path so the song doesn’t feel lost halfway through.</p>
                             </div>
                         </div>
 
                         <div className="flex flex-row" data-aos="fade-left">
                         <div className="flex-col px-6 py-10 text-left brand-process-content">
                         <span className="num-span"><b>03</b></span>
-                                <h2 className="text-2xl text-white font-poppins pro-h">Interview Session with Writer</h2>
-                                <p className="">After the outline approval, we arrange an interview session with our assigned writer so that you can discuss your vision, tone, and writing style.</p>
+                                <h2 className="text-2xl text-white font-poppins pro-h">Lyric Drafting</h2>
+                                <p className="">Then, we begin writing a song using simple words and natural flow. The focus stays on emotion, not fancy lines. Lyrics should sound good when sung aloud.</p>
                             </div>
                         </div>
                         
@@ -181,16 +181,16 @@ export default function BookEditing() {
                         <div className="flex flex-row " data-aos="fade-left">
                         <div className="flex-col px-6 py-10 text-left brand-process-content">
                         <span className="num-span"><b>04</b></span>
-                                <h2 className="text-2xl text-white font-poppins pro-h">Weekly Deliveries & Revisions</h2>
-                                <p className="">We provide deliveries weekly and welcome your feedback throughout the process. We also offer multiple revisions to ensure your complete satisfaction.</p>
+                                <h2 className="text-2xl text-white font-poppins pro-h">Melody Fit Check</h2>
+                                <p className="">If you have music, we align lyrics to it. Melody-ready songwriting means syllables, pauses, and rhythm feel right, not squeezed or rushed.</p>
                             </div>
                         </div>
 
                         <div className="flex flex-row" data-aos="fade-left">
                         <div className="flex-col px-6 py-10 text-left brand-process-content">
                         <span className="num-span"><b>05</b></span>
-                                <h2 className="text-2xl text-white font-poppins pro-h">Formatting & Layout Adjustment</h2>
-                                <p className="">Once our ghostwriting work is finalized, we will format the manuscript according to your preferred style and make the necessary layout adjustments.</p>
+                                <h2 className="text-2xl text-white font-poppins pro-h">Revisions & Tweaks</h2>
+                                <p className="">You review. We adjust lines, mood, or hooks. Songwriting is personal, so we expect back and forth. No rush, no ego.</p>
                             </div>
                         </div>
 
@@ -198,7 +198,7 @@ export default function BookEditing() {
                         <div className="flex-col px-6 py-10 text-left brand-process-content">
                         <span className="num-span"><b>06</b></span>
                                 <h2 className="text-2xl text-white font-poppins pro-h">Final Delivery</h2>
-                                <p className="">In the last step, we will deliver the finalized and polished manuscript to you in your desired format and the time we've discussed.</p>
+                                <p className="">You receive clean lyrics, ready to record or compose further. Our song writing service online makes sure the song feels finished, not half-done.</p>
                             </div>
                         </div>
                         
@@ -206,6 +206,40 @@ export default function BookEditing() {
 
                 </div>
             </section>
+
+              <section className="max-w-6xl px-4 py-16 mx-auto bg-white font-poppins">
+                 <h2 className="mb-12 text-xl font-medium text-center text-gray-700 md:text-2xl">
+    Our Offerings
+  </h2>
+  <h2 className="mb-12 text-xl font-medium text-center text-gray-700 md:text-2xl">
+What’s Included In Our Songwriting Services
+  </h2>
+
+  <p className="mb-12 text-xl font-medium text-center text-gray-700 md:text-2xl">
+Our professional song writing services cover many aspects. Whether you want to write a personal or commercial song, we help create songs that feel smooth and natural.
+  </p>
+
+  <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3">
+    {[
+     { icon: '🖋️', label: 'Custom Song Lyrics Writing' },
+      { icon: '🧐', label: 'Melody-Ready Songwriting' },
+      { icon: '📄', label: 'Commercial Songwriting Services ' },
+      { icon: '💼', label: 'Lyric-Focused Songwriting' },
+      { icon: '⚙️', label: 'Original Song Lyrics Writing' },
+      { icon: '🎯', label: 'Song Composition Writing' },         
+    ].map((service, index) => (
+      <div
+        key={index}
+        className="flex flex-col items-center justify-center h-32 p-4 text-center bg-[#f4f1ea] hover:bg-[#ebe8e0] transition-colors rounded-xl shadow-sm hover:shadow-md"
+      >
+        <div className="mb-2 text-3xl">{service.icon}</div>
+        <span className="text-[10px] font-bold uppercase tracking-widest text-gray-600">
+          {service.label}
+        </span>
+      </div>
+    ))}
+  </div>
+</section>
             
             <section className="overflow-hidden" >
                 <div className="relative left-0 px-12 py-10 mb-8 brand-choose-us-section ms-auto md:left-52 md:px-20 md:mt-16 " >
@@ -218,18 +252,18 @@ export default function BookEditing() {
                             />
                         </div>
                         <div className="basis-1/2 md:ml-20">
-                            <h2 className="mt-10 text-2xl font-bold text-white uppercase font-poppins md:text-4xl md:mt-0" data-aos="zoom-in-left" data-aos-delay="100">Why Choose Our Ghostwriting Services?</h2>
-                            <p className="mt-2 text-white">Delight your potential readers with Pine Book Writing. We have a highly skilled team of ghostwriters with a proven record of working for globally-recognized authors. Experience quality, transparency & confidentiality.</p>
+                            <h2 className="mt-10 text-2xl font-bold text-white uppercase font-poppins md:text-4xl md:mt-0" data-aos="zoom-in-left" data-aos-delay="100">Why People Trust Our Songwriting Service</h2>
+                            <p className="mt-2 text-white">Pine Book Writing has a large team of ghostwriters, songwriters and lyricists. Each of them is capable of doing their job with honesty and high passion. Our songwriting service is slow when needed, honest in feedback, and focused on making songs people actually want to listen to.</p>
                             <div className="flex flex-col gap-2 mt-6 md:flex-row md:gap-10">
                                 <ul>
-                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Expert Team of Writers </li>
-                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Guaranteed Confidentiality </li>
-                                    <li className="flex items-center gap-3 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Timely Delivery </li>
+                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />	Real listening </li>
+                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />	Music-first mindset</li>
+                                    <li className="flex items-center gap-3 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />	Honest lyrics </li>
                                 </ul>
                                 <ul>
-                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Affordable Writing Services</li>
-                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Deep Research</li>
-                                    <li className="flex items-center gap-3 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Client Focus</li>
+                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />	Flexible revisions</li>
+                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />	Quiet collaboration</li>
+                                    <li className="flex items-center gap-3 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />	No overwriting</li>
                                 </ul>
                             </div>
                             {/* <BrandAudioPlayer src="/brand-img/why-choose-us-voice.wav" /> */}

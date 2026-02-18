@@ -27,27 +27,27 @@ export default function BookEditing() {
     };
 
     const faqData = [
-        { question: "What is Ghostwriting?", answer: "Ghostwriting is the name of hiring a professional writer to write your book. In return, the writer will gather all the relevant information, conduct in-depth research, and craft a manuscript that meets your vision." },
+        { question: "What is narrative writing exactly?", answer: "Narrative writing focuses on telling real or imagined events through a story lens. It highlights experience, emotion and flow instead of listing facts or summaries." },
 
-        { question: "Is your ghostwriting ethical and authentic?", answer: "Absolutely, it is both ethical and authentic. Ghostwriting is extremely common, especially in the world of book writing. This service is considered the same as having any professional hired to perform a specific task. At Pine Book Writing, we serve our expertise in writing to put your creative ideas into a manuscript." },
+        { question: "Can you help if I only have rough memories?", answer: "Yes. Many clients start with scattered thoughts. Our narrative ghostwriters help organize and shape them into a complete, readable story." },
 
-        { question: "Who will own the rights in Ghostwriting?", answer: "We are just your writing partner. We write it as a ghostwriting service, and you own it. As an author, you own all the rights and credits for the final product. Not only that, the royalties your book earns will also be yours." },
+        { question: "Will the narrative still sound like me?", answer: "Always. We pay close attention to voice and tone. Our writing reflects your way of thinking, not a generic writing style." },
 
-        { question: "Can I hire you to write one chapter of my book and later write the other chapters?	", answer: "Yes, you can also hire us chapter by chapter. Here, we are confident that once you see our writing professionalism and expertise, you will definitely want to go toward the last chapter of your book. So, if you want to hire us for a single chapter, you are also welcome." },
+        { question: "Is this only for personal stories?	", answer: "No. Narrative writing can also be used for creative nonfiction, professional storytelling, or experience-based content where clarity and emotion matter." },
 
-        { question: "How long will it take to write a book?", answer: "The completion time of the ghostwriting services entirely depends on the complexity, genre, and your book's length. However, we usually take 3 to 6 months on average. Moreover, the time also depends on how much material you provide and the research required on the particular topic." },
+        { question: "How involved do I need to be?", answer: "As involved as you want. Some clients give detailed feedback, others prefer minimal check-ins. We adjust to your comfort level." },
 
-        { question: "How much does ghostwriting a book cost?", answer: "The cost of ghostwriting also varies based on your book's length, genre, and complexity. You can view our packages here. Moreover, if you want to customize the any package according to your need, you can speak to our representative. " },
+        { question: "Do you keep everything confidential?", answer: "Yes. Every narrative project is handled privately. Your story stays yours, always. " },
     ];
 
     return (
         <>
             <Head>
-                <title>Narrative Writing | Pine Book Writing</title>
+                <title>Narrative Writing Services | Narrative Writers For Hire</title>
                 <link rel="canonical" href="https://www.pinebookwriting.com/Narrative-Writing" />
                 <meta
                     name="description"
-                    content="Hire expert narrative writing service that can help you write stories that are full of emotion and character and keep readers interested from beginning to end."
+                    content="Bring your own narrative and acquire the best narrative writing services. We offer expert narrative writing help with having top-class writers on board."
                 />
                 <link rel="shortcut icon" href="/images/fav.webp" />
             </Head>
@@ -55,24 +55,25 @@ export default function BookEditing() {
             <BrandNavbar />
             <BrandPrimaryHeader
                 photo_banner={"/images/Narrative-Writing/1.webp"}
-                title="Write Your Narratives with Expert Narrative Writing Services"
-                desc="Do you want to write a story that makes others see and feel things just by reading it? We can do it for you perfectly. Our professional narrative writers are readily available to write a story for you."
+                title="Narrative Writing Services That Hold Meaning"
+                desc="Not every story fits a template. Our narrative writing services focus on your experiences, your timing, and your voice, so the final piece feels personal, not rewritten. Don’t wait! Contact us right away!"
             />
             <BrandBannerLogo />
 
             <div className="container max-w-screen-xl pt-0 mx-auto overflow-hidden md:py-20">
                 <div className="flex flex-col items-center justify-center px-8 py-10 md:flex-row lg:flex-row md:px-0 md:py-0">
                     <div className="basis-1/2 abt-txt m1-h p1 aos-init aos-animate" data-aos="fade-right" data-aos-duration="1000">
-                        <h2 className="text-3xl font-bold uppercase font-poppins md:text-4xl">Professional Ghostwriting Services</h2>
+                        <h2 className="text-3xl font-bold uppercase font-poppins md:text-4xl">Best Narrative Writers For Hire for Every Genre</h2>
 
                         <h2 className="text-2xl uppercase font-poppins md:text-3xl">
-                            Puffing Life into Your Story
+                          Your Story Deserves to Be Told
                         </h2>
 
                         <p className="pt-3 text-xl text-left font-poppins">
-                            Good storytelling is not just about writing words, but about sparking emotions and engaging readers. That's what we do at Pine Book Writing, and that's what makes us the best narrative writing company. Our team of professional narrative writers is familiar with how to write a perfect story that leaves its mark and wonders on its readers.</p>
+                           Narrative writing works best when it follows how life actually unfolds. Not everything happens neatly, and that’s fine. Our narrative writing services help writers arrange experiences in a practical and sensible way. Without altering the actual meanings and events that happened in the story.</p>
 
-                        <p className="pt-3 text-xl text-left font-poppins">They are ready to help you in many ways, just share your great story idea that you want to share with the world. Our narrative writing services for books and stories cover everything from ghostwriting and editing to publishing support. Let Pine Book Writing write a perfect narrative for your new story!</p>
+                        <p className="pt-3 text-xl text-left font-poppins">At <a href="https://www.pinebookwriting.com" className="text-blue-500 hover:underline">Pine Book Writing</a>, we work with personal narratives, life events, and experience-based storytelling where emotion and clarity matter equally. Whether you require our services for linear, non-linear, descriptive, or viewpoint narratives, we’re available to serve. We help connect your life moments and thoughts into a steady narrative that reads naturally.</p>
+                         <p className="pt-3 text-xl text-left font-poppins">Our team of narrative writers is outstanding. They focus on structure, tone, and pacing while writing. And the result feels readable and true to the experience behind it.</p>
                     </div>
                     <div className="flex justify-center text-center basis-1/2 abt-pic md:justify-center">
                         <Image src={"/images/Narrative-Writing/ghost-pic.webp"} width={470} height={300}
@@ -104,9 +105,9 @@ export default function BookEditing() {
 
                     <div className="px-4 text-center md:col-span-6">
                         <h2 className="font-poppins text-2xl text-[#98caa9] font-semibold md:text-3xl uppercase">
-                            Ready to Start Your Narrative Writing Project?
+                           Ready To Shape Your Story Properly? Hire Expert Narrative Writing Services
                         </h2>
-                        <p className="py-4 text-base md:text-lg">Get in touch with our expert writers and get your ideas formed into memorable stories.</p>
+                        <p className="py-4 text-base md:text-lg">Does your story matter to you but feel hard to explain? We can help! Our expert writers will turn it into something readable, honest and complete. No pressure. Just real writing help. Get in touch!</p>
 
                         <div className="flex flex-col items-center justify-center gap-4 cta-btns sm:flex-row">
                             <CTAButton />
@@ -145,7 +146,7 @@ export default function BookEditing() {
                 <div className="max-w-screen-xl">
                     <div className="mb-6 text-center">
                         <h3 className="text-2xl text-black font-poppins">Our Service Workflow</h3>
-                        <h2 className="text-3xl font-bold text-black font-poppins md:text-4xl" data-aos="zoom-out-down">6-Step Process of Our Ghostwriting Services</h2>
+                        <h2 className="text-3xl font-bold text-black font-poppins md:text-4xl" data-aos="zoom-out-down">6-Step Process of Our Narrative Writing Services</h2>
                     </div>
 
                     <div className="grid gap-6 mb-6 md:grid-cols-3">
@@ -153,24 +154,24 @@ export default function BookEditing() {
                         <div className="flex flex-row " data-aos="fade-left">
                             <div className="flex-col px-6 py-10 text-left brand-process-content">
                                 <span className="num-span"><b>01</b></span>
-                                <h2 className="text-2xl text-white font-poppins pro-h">Project Manager Assigning & Questionnaire</h2>
-                                <p className="">We begin our process by assigning a dedicated project manager and a questionnaire to understand your writing requirements.</p>
+                                <h2 className="text-2xl text-white font-poppins pro-h">Story Listening  </h2>
+                                <p className="">We begin by listening carefully. Your experiences, tone, timeline, and intention. Narrative writing works best when we understand what moments matter most, and which ones should quietly fade.</p>
                             </div>
                         </div>
 
                         <div className="flex flex-row" data-aos="fade-left">
                             <div className="flex-col px-6 py-10 text-left brand-process-content">
                                 <span className="num-span"><b>02</b></span>
-                                <h2 className="text-2xl text-white font-poppins pro-h">Research & Outlining</h2>
-                                <p className="">Then, our team of professionals will conduct in-depth research, create a content outline, and send it to you for your approval.</p>
+                                <h2 className="text-2xl text-white font-poppins pro-h">Narrative Direction</h2>
+                                <p className="">Our narrative writers create a clear story direction. We decide pacing, point of view, and emotional focus so the narrative flows naturally without sounding forced or overly dramatic.</p>
                             </div>
                         </div>
 
                         <div className="flex flex-row" data-aos="fade-left">
                             <div className="flex-col px-6 py-10 text-left brand-process-content">
                                 <span className="num-span"><b>03</b></span>
-                                <h2 className="text-2xl text-white font-poppins pro-h">Interview Session with Writer</h2>
-                                <p className="">After the outline approval, we arrange an interview session with our assigned writer so that you can discuss your vision, tone, and writing style.</p>
+                                <h2 className="text-2xl text-white font-poppins pro-h">Draft Development</h2>
+                                <p className="">Writing begins with a flexible draft. We focus on emotion-driven storytelling, not perfect lines. The goal is clarity first, rhythm later, and honesty throughout the narrative.</p>
                             </div>
                         </div>
 
@@ -181,16 +182,16 @@ export default function BookEditing() {
                         <div className="flex flex-row " data-aos="fade-left">
                             <div className="flex-col px-6 py-10 text-left brand-process-content">
                                 <span className="num-span"><b>04</b></span>
-                                <h2 className="text-2xl text-white font-poppins pro-h">Weekly Deliveries & Revisions</h2>
-                                <p className="">We provide deliveries weekly and welcome your feedback throughout the process. We also offer multiple revisions to ensure your complete satisfaction.</p>
+                                <h2 className="text-2xl text-white font-poppins pro-h">Review & Adjust</h2>
+                                <p className="">You read and react. We revise wherever it’s needed. Personal narrative writing often needs small shifts to feel right, and we stay patient through that.</p>
                             </div>
                         </div>
 
                         <div className="flex flex-row" data-aos="fade-left">
                             <div className="flex-col px-6 py-10 text-left brand-process-content">
                                 <span className="num-span"><b>05</b></span>
-                                <h2 className="text-2xl text-white font-poppins pro-h">Formatting & Layout Adjustment</h2>
-                                <p className="">Once our ghostwriting work is finalized, we will format the manuscript according to your preferred style and make the necessary layout adjustments.</p>
+                                <h2 className="text-2xl text-white font-poppins pro-h">Refinement Phase</h2>
+                                <p className="">Our professional narrative writers soften transitions, refine language and overall tighten the story. We keep your voice intact while improving flow and readability.</p>
                             </div>
                         </div>
 
@@ -198,7 +199,7 @@ export default function BookEditing() {
                             <div className="flex-col px-6 py-10 text-left brand-process-content">
                                 <span className="num-span"><b>06</b></span>
                                 <h2 className="text-2xl text-white font-poppins pro-h">Final Delivery</h2>
-                                <p className="">In the last step, we will deliver the finalized and polished manuscript to you in your desired format and the time we've discussed.</p>
+                                <p className="">Lastly, you receive a clean and well-structured narrative ready for your purpose. Nothing overdone. Just a complete story that feels finished.</p>
                             </div>
                         </div>
 
@@ -206,6 +207,40 @@ export default function BookEditing() {
 
                 </div>
             </section>
+
+             <section className="max-w-6xl px-4 py-16 mx-auto bg-white font-poppins">
+                 <h2 className="mb-12 text-xl font-medium text-center text-gray-700 md:text-2xl">
+    Our Offerings
+  </h2>
+  <h2 className="mb-12 text-xl font-medium text-center text-gray-700 md:text-2xl">
+What’s Included In Our Narrative Writing Services
+  </h2>
+
+  <p className="mb-12 text-xl font-medium text-center text-gray-700 md:text-2xl">
+As a comprehensive ghostwriting service company, we handle all aspects that help a writer/author be successful in their purpose. See what’s more we offer:
+  </p>
+
+  <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3">
+    {[
+     { icon: '🖋️', label: 'Personal Narrative Writing' },
+      { icon: '🧐', label: 'Narrative Ghostwriting' },
+      { icon: '📄', label: 'Life Story Narration' },
+      { icon: '💼', label: 'Chronological Life Narratives' },
+      { icon: '⚙️', label: 'Creative Nonfiction Writing' },
+      { icon: '🎯', label: 'Experience-Based Storytelling' },         
+    ].map((service, index) => (
+      <div
+        key={index}
+        className="flex flex-col items-center justify-center h-32 p-4 text-center bg-[#f4f1ea] hover:bg-[#ebe8e0] transition-colors rounded-xl shadow-sm hover:shadow-md"
+      >
+        <div className="mb-2 text-3xl">{service.icon}</div>
+        <span className="text-[10px] font-bold uppercase tracking-widest text-gray-600">
+          {service.label}
+        </span>
+      </div>
+    ))}
+  </div>
+</section>
 
              <section className="overflow-hidden" >
                 <div className="relative left-0 px-12 py-10 mb-8 brand-choose-us-section ms-auto md:left-52 md:px-20 md:mt-16 " >
@@ -218,18 +253,18 @@ export default function BookEditing() {
                             />
                         </div>
                         <div className="basis-1/2 md:ml-20">
-                            <h2 className="mt-10 text-2xl font-bold text-white uppercase font-poppins md:text-4xl md:mt-0" data-aos="zoom-in-left" data-aos-delay="100">Why Choose Our Ghostwriting Services?</h2>
-                            <p className="mt-2 text-white">Delight your potential readers with Pine Book Writing. We have a highly skilled team of ghostwriters with a proven record of working for globally-recognized authors. Experience quality, transparency & confidentiality.</p>
+                            <h2 className="mt-10 text-2xl font-bold text-white uppercase font-poppins md:text-4xl md:mt-0" data-aos="zoom-in-left" data-aos-delay="100">Why People Prefer Our Narrative Writing Services?</h2>
+                            <p className="mt-2 text-white">People choose us because narrative writing needs understanding, not assumptions. We take time to grasp context and emotional weight before writing a single line. The focus stays on meaning, not decoration.</p>
                             <div className="flex flex-col gap-2 mt-6 md:flex-row md:gap-10">
                                 <ul>
-                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Expert Team of Writers </li>
-                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Guaranteed Confidentiality </li>
-                                    <li className="flex items-center gap-3 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Timely Delivery </li>
+                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />	Listener-first approach </li>
+                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />	Experience sensitivity </li>
+                                    <li className="flex items-center gap-3 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />	Context awareness </li>
                                 </ul>
                                 <ul>
-                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Affordable Writing Services</li>
-                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Deep Research</li>
-                                    <li className="flex items-center gap-3 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Client Focus</li>
+                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />	Clear storytelling</li>
+                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />	Flexible collaboration</li>
+                                    <li className="flex items-center gap-3 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />	Respectful revisions</li>
                                 </ul>
                             </div>
                             {/* <BrandAudioPlayer src="/brand-img/why-choose-us-voice.wav" /> */}

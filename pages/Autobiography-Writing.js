@@ -28,27 +28,27 @@ export default function BookEditing() {
     };
 
     const faqData = [
-        { question: "What is Ghostwriting?", answer: "Ghostwriting is the name of hiring a professional writer to write your book. In return, the writer will gather all the relevant information, conduct in-depth research, and craft a manuscript that meets your vision." },
+        { question: "How long does autobiography writing usually take?", answer: "It depends on your story length and how detailed it is. Some books take a few months. Others need more time. We don’t rush timelines. Feel free to contact us and know the exact timeline for your work." },
 
-        { question: "Is your ghostwriting ethical and authentic?", answer: "Absolutely, it is both ethical and authentic. Ghostwriting is extremely common, especially in the world of book writing. This service is considered the same as having any professional hired to perform a specific task. At Pine Book Writing, we serve our expertise in writing to put your creative ideas into a manuscript." },
+        { question: "Will the autobiography sound like me?", answer: "Yes. That’s our main goal. We write in your voice, based on your interviews and feedback. If something feels off, we listen to you carefully and fix it." },
 
-        { question: "Who will own the rights in Ghostwriting?", answer: "We are just your writing partner. We write it as a ghostwriting service, and you own it. As an author, you own all the rights and credits for the final product. Not only that, the royalties your book earns will also be yours." },
+        { question: "Is my story kept confidential?", answer: "Absolutely. Confidential ghostwriting is the core part of our process. Your life story is never shared with any third party without your permission." },
 
-        { question: "Can I hire you to write one chapter of my book and later write the other chapters?	", answer: "Yes, you can also hire us chapter by chapter. Here, we are confident that once you see our writing professionalism and expertise, you will definitely want to go toward the last chapter of your book. So, if you want to hire us for a single chapter, you are also welcome." },
+        { question: "Can you help if I only have rough memories?	", answer: "Why not? You’re not alone if this is the case. Many clients start with nothing written. We guide you through questions and conversations to shape your life story in a natural way." },
 
-        { question: "How long will it take to write a book?", answer: "The completion time of the ghostwriting services entirely depends on the complexity, genre, and your book's length. However, we usually take 3 to 6 months on average. Moreover, the time also depends on how much material you provide and the research required on the particular topic." },
+        { question: "Do you offer editing only?", answer: "Yes. If you have already written your autobiography and want us to check and fix the flaws, our autobiography editing service is for you. We help improve flow, clarity and overall structure." },
 
-        { question: "How much does ghostwriting a book cost?", answer: "The cost of ghostwriting also varies based on your book's length, genre, and complexity. You can view our packages here. Moreover, if you want to customize the any package according to your need, you can speak to our representative. " },
+        { question: "Is this service only for famous people?", answer: "Not at all. Every life has a story worth telling. Our autobiography writers work with everyday people too. " },
     ];
 
     return (
         <>
             <Head>
-                <title>Autobiography Writing | Pine Book Writing</title>
+                <title>Best Autobiography Writing Services | Pine Book Writing</title>
                 <link rel="canonical" href="https://www.pinebookwriting.com/Autobiography-Writing" />
                 <meta
                     name="description"
-                    content="Want to share your life story? Hire our expert autobiography writing services and create personal, interesting, and well-written book to spread your voice!"
+                    content="Looking for the best autobiography writing services? We have highly competent ghostwriters at Pine Book Writing to help you write your personal life story"
                 />
                 <link rel="shortcut icon" href="/images/fav.webp" />
             </Head>
@@ -56,24 +56,25 @@ export default function BookEditing() {
             <BrandNavbar />
             <BrandPrimaryHeader
                 photo_banner={"/images/Autobiography-Writing/1.webp"}
-                title="Your Story, Your Perspective – Professional Autobiography Writing Service"
-                desc="Want to share your life experiences in your own voice and perspective? Hire the best autobiography writing services at Pine Book Writing. Our autobiography writers are capable of making your story interesting yet inspiring to your readers. Book a free call now!"
+                title="Autobiography Writing Services That Respect Your Story"
+                desc="Your life isn’t a template. Your life story should be written in your voice. We are offering exceptional autobiography writing services for those who want to write their real-life memories and present them in a clean and professional book. Get in touch with us today!"
             />
             <BrandBannerLogo />
 
             <div className="container max-w-screen-xl pt-0 mx-auto overflow-hidden md:py-20">
                 <div className="flex flex-col items-center justify-center px-8 py-10 md:flex-row lg:flex-row md:px-0 md:py-0">
                     <div className="basis-1/2 abt-txt m1-h p1 aos-init aos-animate" data-aos="fade-right" data-aos-duration="1000">
-                        <h2 className="text-3xl font-bold uppercase font-poppins md:text-4xl">Offering Expert Autobiography Writing Services</h2>
+                        <h2 className="text-3xl font-bold uppercase font-poppins md:text-4xl">Best Autobiography Writers for Hire</h2>
 
                         <h2 className="text-2xl uppercase font-poppins md:text-3xl">
-                            Get Your Life Story Written with Professionalism
+                           Your Story, Told Right
                         </h2>
 
                         <p className="pt-3 text-xl text-left font-poppins">
-                            At Pine Book Writing, we believe that everyone’s story is different and all stories deserve to be noticed if written well. We help our clients pen their personal life journey in their own voice. We first listen to their experiences, achievements, and other noteworthy moments. Following it, we craft a narrative that emphasizes your growth, life challenges, and accomplishments. </p>
+                          Writing an autobiography is personal. Sometimes emotional too. We don’t rush it. The thing that differentiates our autobiography writing services from others is that it is built for people who want their life story written with care, not noise. </p>
 
-                        <p className="pt-3 text-xl text-left font-poppins">Your objectives for writing an autobiography could be different. Whether it’s for publishing purposes or sharing it with your loved ones, we’ll guide you every step of the way. Now let’s work together and convert your life journey into a professional autobiography!</p>
+                        <p className="pt-3 text-xl text-left font-poppins">Some clients come with notes. Others with just memories and feelings. And that’s fine. Our autobiography writers take time to listen, ask the right questions and shape your personal life story naturally. No forced drama. No pretending.</p>
+                         <p className="pt-3 text-xl text-left font-poppins">Whether you’re writing your autobiography for family, legacy, or publishing, we help organize events, emotions and timelines clearly. If you need an autobiography ghostwriter separately, your privacy is protected. Always. We focus on true life story writing that reads smoothly and humanly. That’s how it feels real.</p>
                     </div>
                     <div className="flex justify-center text-center basis-1/2 abt-pic md:justify-center">
                         <Image  src="/images/Autobiography-Writing/ghost-pic.webp" width={470} height={300}
@@ -107,10 +108,10 @@ export default function BookEditing() {
 
                     <div className="px-4 text-center md:col-span-6">
                         <h2 className="font-poppins text-2xl text-[#98caa9] font-semibold md:text-3xl uppercase">
-                            Bring Your Literary Vision to Life
+                          You Don’t Have To Write It Alone - Let’s Help!
                         </h2>
                         <p className="py-4 text-base md:text-lg">
-                            Professional Ghostwriting ServicesProfessional Ghostwriting ServicesProfessional Ghostwriting Services
+                           Writing feels overwhelming? That’s normal. Just hire the best autobiography writing services at <a href="https://www.pinebookwriting.com" className="text-[#98caa9] underline">Pine Book Writing</a>. Our autobiography writers guide you through the process and handle all the hard parts. Let’s get connected!
                         </p>
 
                         <div className="flex flex-col items-center justify-center gap-4 cta-btns sm:flex-row">
@@ -150,7 +151,7 @@ export default function BookEditing() {
                 <div className="max-w-screen-xl">
                     <div className="mb-6 text-center">
                         <h3 className="text-2xl text-black font-poppins">Our Service Workflow</h3>
-                        <h2 className="text-3xl font-bold text-black font-poppins md:text-4xl" data-aos="zoom-out-down">6-Step Process of Our Ghostwriting Services</h2>
+                        <h2 className="text-3xl font-bold text-black font-poppins md:text-4xl" data-aos="zoom-out-down">6-Step Process of Our Autobiography Writing Services</h2>
                     </div>
 
                     <div className="grid gap-6 mb-6 md:grid-cols-3">
@@ -158,24 +159,24 @@ export default function BookEditing() {
                         <div className="flex flex-row " data-aos="fade-left">
                             <div className="flex-col px-6 py-10 text-left brand-process-content">
                                 <span className="num-span"><b>01</b></span>
-                                <h2 className="text-2xl text-white font-poppins pro-h">Project Manager Assigning & Questionnaire</h2>
-                                <p className="">We begin our process by assigning a dedicated project manager and a questionnaire to understand your writing requirements.</p>
+                                <h2 className="text-2xl text-white font-poppins pro-h">Story Discovery</h2>
+                                <p className="">We begin with listening. Your memories, milestones, and your concerns. Writing an autobiography works best when we fully understand your life story and what matters most to you.</p>
                             </div>
                         </div>
 
                         <div className="flex flex-row" data-aos="fade-left">
                             <div className="flex-col px-6 py-10 text-left brand-process-content">
                                 <span className="num-span"><b>02</b></span>
-                                <h2 className="text-2xl text-white font-poppins pro-h">Research & Outlining</h2>
-                                <p className="">Then, our team of professionals will conduct in-depth research, create a content outline, and send it to you for your approval.</p>
+                                <h2 className="text-2xl text-white font-poppins pro-h">Interview & Notes</h2>
+                                <p className="">One of our project managers conducts relaxed interviews, and our writers review your notes. Nothing formal. Just natural talks that help understand emotions, tone, and important life moments.</p>
                             </div>
                         </div>
 
                         <div className="flex flex-row" data-aos="fade-left">
                             <div className="flex-col px-6 py-10 text-left brand-process-content">
                                 <span className="num-span"><b>03</b></span>
-                                <h2 className="text-2xl text-white font-poppins pro-h">Interview Session with Writer</h2>
-                                <p className="">After the outline approval, we arrange an interview session with our assigned writer so that you can discuss your vision, tone, and writing style.</p>
+                                <h2 className="text-2xl text-white font-poppins pro-h">Structure Planning</h2>
+                                <p className="">Then, we organize events into a clean timeline. Childhood. Growth. Challenges and turning points. This keeps the autobiography writing clear and easy to follow, without confusion or jumps.</p>
                             </div>
                         </div>
 
@@ -186,16 +187,16 @@ export default function BookEditing() {
                         <div className="flex flex-row " data-aos="fade-left">
                             <div className="flex-col px-6 py-10 text-left brand-process-content">
                                 <span className="num-span"><b>04</b></span>
-                                <h2 className="text-2xl text-white font-poppins pro-h">Weekly Deliveries & Revisions</h2>
-                                <p className="">We provide deliveries weekly and welcome your feedback throughout the process. We also offer multiple revisions to ensure your complete satisfaction.</p>
+                                <h2 className="text-2xl text-white font-poppins pro-h">First Draft Writing</h2>
+                                <p className="">After understanding and planning, we start writing carefully. We focus on personal history writing that sounds like you. Not us. Simple language. Honest moments. No overwriting.</p>
                             </div>
                         </div>
 
                         <div className="flex flex-row" data-aos="fade-left">
                             <div className="flex-col px-6 py-10 text-left brand-process-content">
                                 <span className="num-span"><b>05</b></span>
-                                <h2 className="text-2xl text-white font-poppins pro-h">Formatting & Layout Adjustment</h2>
-                                <p className="">Once our ghostwriting work is finalized, we will format the manuscript according to your preferred style and make the necessary layout adjustments.</p>
+                                <h2 className="text-2xl text-white font-poppins pro-h">Review & Editing</h2>
+                                <p className="">You read the draft, and we revise if anything is required. Autobiography editing helps fix flow and clarity. This step usually needs back and forth, and we’re patient with that.</p>
                             </div>
                         </div>
 
@@ -203,7 +204,7 @@ export default function BookEditing() {
                             <div className="flex-col px-6 py-10 text-left brand-process-content">
                                 <span className="num-span"><b>06</b></span>
                                 <h2 className="text-2xl text-white font-poppins pro-h">Final Delivery</h2>
-                                <p className="">In the last step, we will deliver the finalized and polished manuscript to you in your desired format and the time we've discussed.</p>
+                                <p className="">The final file is prepared, clean and ready. For printing, sharing, or publishing. Confidential ghostwriting is respected till the very last step.</p>
                             </div>
                         </div>
 
@@ -211,6 +212,40 @@ export default function BookEditing() {
 
                 </div>
             </section>
+
+              <section className="max-w-6xl px-4 py-16 mx-auto bg-white font-poppins">
+                 <h2 className="mb-12 text-xl font-medium text-center text-gray-700 md:text-2xl">
+    Our Offerings
+  </h2>
+  <h2 className="mb-12 text-xl font-medium text-center text-gray-700 md:text-2xl">
+ What’s Included In Our Autobiography Writing Services
+  </h2>
+
+  <p className="mb-12 text-xl font-medium text-center text-gray-700 md:text-2xl">
+Our professional autobiography writing services cover everything. Everything from the author's first interview to final editing. You choose what you need. We adjust the process around your ease and pace.
+  </p>
+
+  <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3">
+    {[
+     { icon: '🖋️', label: 'Autobiography Ghostwriting' },
+      { icon: '🧐', label: 'Personal Life Story Writing' },
+      { icon: '📄', label: 'Autobiography Editing' },
+      { icon: '💼', label: 'Interview-Based Writing' },
+      { icon: '⚙️', label: 'Manuscript Structuring' },
+      { icon: '🎯', label: 'Confidential Writing Support' },         
+    ].map((service, index) => (
+      <div
+        key={index}
+        className="flex flex-col items-center justify-center h-32 p-4 text-center bg-[#f4f1ea] hover:bg-[#ebe8e0] transition-colors rounded-xl shadow-sm hover:shadow-md"
+      >
+        <div className="mb-2 text-3xl">{service.icon}</div>
+        <span className="text-[10px] font-bold uppercase tracking-widest text-gray-600">
+          {service.label}
+        </span>
+      </div>
+    ))}
+  </div>
+</section>
 
             <section className="overflow-hidden" >
                 <div className="relative left-0 px-12 py-10 mb-8 brand-choose-us-section ms-auto md:left-52 md:px-20 md:mt-16 " >
@@ -223,18 +258,18 @@ export default function BookEditing() {
                             />
                         </div>
                         <div className="basis-1/2 md:ml-20">
-                            <h2 className="mt-10 text-2xl font-bold text-white uppercase font-poppins md:text-4xl md:mt-0" data-aos="zoom-in-left" data-aos-delay="100">Why Choose Our Ghostwriting Services?</h2>
-                            <p className="mt-2 text-white">Delight your potential readers with Pine Book Writing. We have a highly skilled team of ghostwriters with a proven record of working for globally-recognized authors. Experience quality, transparency & confidentiality.</p>
+                            <h2 className="mt-10 text-2xl font-bold text-white uppercase font-poppins md:text-4xl md:mt-0" data-aos="zoom-in-left" data-aos-delay="100">Why People Trust Pine Book Writing With Their Life Stories</h2>
+                            <p className="mt-2 text-white">Writing someone’s life story requires trust. We respect that. Our team at Pine Book Writing handles autobiography writing with patience, privacy, and honesty. Our writers make sure your story feels true. Here’s why you should hire us:</p>
                             <div className="flex flex-col gap-2 mt-6 md:flex-row md:gap-10">
                                 <ul>
-                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Expert Team of Writers </li>
-                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Guaranteed Confidentiality </li>
-                                    <li className="flex items-center gap-3 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Timely Delivery </li>
+                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />	100% Privacy respected</li>
+                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />	Patient listening </li>
+                                    <li className="flex items-center gap-3 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />	Calm process</li>
                                 </ul>
                                 <ul>
-                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Affordable Writing Services</li>
-                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Deep Research</li>
-                                    <li className="flex items-center gap-3 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Client Focus</li>
+                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />	Multiple Revisions</li>
+                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />	Human writing</li>
+                                    <li className="flex items-center gap-3 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />	Honest storytelling</li>
                                 </ul>
                             </div>
                             {/* <BrandAudioPlayer src="/brand-img/why-choose-us-voice.wav" /> */}

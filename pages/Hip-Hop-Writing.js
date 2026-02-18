@@ -27,27 +27,27 @@ export default function BookEditing() {
     };
 
     const faqData = [
-        { question: "What is Ghostwriting?", answer: "Ghostwriting is the name of hiring a professional writer to write your book. In return, the writer will gather all the relevant information, conduct in-depth research, and craft a manuscript that meets your vision." },
+        { question: "Do you write in different hip hop styles?", answer: "Yes, we write in multiple styles. Trap. Boom bap. Melodic. Conscious. Drill. We write and adjust flow and tone based on your sound. Not any ready-made or fixed template." },
         
-        { question: "Is your ghostwriting ethical and authentic?", answer: "Absolutely, it is both ethical and authentic. Ghostwriting is extremely common, especially in the world of book writing. This service is considered the same as having any professional hired to perform a specific task. At Pine Book Writing, we serve our expertise in writing to put your creative ideas into a manuscript." },
+        { question: "ICan you write to my existing beat?", answer: "Absolutely. Beat-based lyric writing is preferred. It helps with flow, bar length, and overall delivery." },
        
-        { question: "Who will own the rights in Ghostwriting?", answer: "We are just your writing partner. We write it as a ghostwriting service, and you own it. As an author, you own all the rights and credits for the final product. Not only that, the royalties your book earns will also be yours." },
+        { question: "Will the lyrics sound like me?", answer: "Absolutely, that’s our main goal. We ask questions and do research. Then we write in a way that fits your voice. Not ours." },
        
-        { question: "Can I hire you to write one chapter of my book and later write the other chapters?	", answer: "Yes, you can also hire us chapter by chapter. Here, we are confident that once you see our writing professionalism and expertise, you will definitely want to go toward the last chapter of your book. So, if you want to hire us for a single chapter, you are also welcome." },
+        { question: "Do you offer hip hop ghostwriting services?	", answer: "Yes. Ghostwriting is one of our main cores. We maintain full confidentiality. You own the lyrics 100% once delivered." },
         
-        { question: "How long will it take to write a book?", answer: "The completion time of the ghostwriting services entirely depends on the complexity, genre, and your book's length. However, we usually take 3 to 6 months on average. Moreover, the time also depends on how much material you provide and the research required on the particular topic." },
+        { question: "Can you help with hooks only?", answer: "Yes. Chorus and hook writing is available if verses are already done or planned. Feel free to discuss in detail." },
        
-        { question: "How much does ghostwriting a book cost?", answer: "The cost of ghostwriting also varies based on your book's length, genre, and complexity. You can view our packages here. Moreover, if you want to customize the any package according to your need, you can speak to our representative. " },
+        { question: "Is this service for beginners or professionals?", answer: "Both. We work with new artists and experienced hip hop artists who just want sharper writing. Both are welcome at Pine Book Writing. " },
             ];
 
     return (
         <>
             <Head>
-                <title>Hip Hop Writing | Pine Book Writing</title>
+                <title>Hip Hop Writing Services | Hip Hop Ghostwriter for Hire</title>
                 <link rel="canonical" href="https://www.pinebookwriting.com/Hip-Hop-Writing" />
                 <meta
                     name="description"
-                    content="Our hip hop writing service gives you bars that flow, have attitude, and have significance. They're great for new songs and standout verses."
+                    content="Our hip hop writing services offer ghostwriting support to new and old hip-hop artists. Our team of hip hop writers handles all aspects of bringing lyrics to life."
                 />
                 <link rel="shortcut icon" href="/images/fav.webp" />
                 </Head>
@@ -55,24 +55,25 @@ export default function BookEditing() {
             <BrandNavbar />
             <BrandPrimaryHeader
                 photo_banner={"/images/Hip-Hop-Writing/1.webp"}
-                title="Acquire Expert Hip Hop Writing That Hits Hard"
-                desc="Looking for professional hip hop writing services for your next rap or R&B music? Stop searching, as Pine Book Writing is here to help with a team of experienced hip hop writers who have helped many until now. Get in touch right away!"
+                title="Hip Hop Writing Service Built For Real Voices"
+                desc="Our hip hop writing service helps artists turn raw thoughts into tight bars. From writing rap lyrics to hooks and full songs, we support every stage of the creative process. Our hip hop writers focus on flow, feeling, and authenticity."
             />
             <BrandBannerLogo />
 
             <div className="container max-w-screen-xl pt-0 mx-auto overflow-hidden md:py-20">
                 <div className="flex flex-col items-center justify-center px-8 py-10 md:flex-row lg:flex-row md:px-0 md:py-0">
                     <div className="basis-1/2 abt-txt m1-h p1 aos-init aos-animate" data-aos="fade-right" data-aos-duration="1000">
-                    <h2 className="text-3xl font-bold uppercase font-poppins md:text-4xl">Uplift Your Lyrics and with Hip Hop Writing</h2>
+                    <h2 className="text-3xl font-bold uppercase font-poppins md:text-4xl">Hip Hop Writing Service With Real Bars</h2>
 
                         <h2 className="text-2xl uppercase font-poppins md:text-3xl">
-                        Original Lyrics, Original Impact
+                        Lyrics That Match Your Flow
                         </h2>
                        
                         <p className="pt-3 text-xl text-left font-poppins">
-                        If you’re an artist who wants to uplift your game in lyrics, our hip-hop writing services are for you. Whether you require full verses, attractive hooks, or just want support from experts with structure and flow, our writers are familiar with the rhythm and the depth of hip-hop culture.</p>
+                       Are you an artist and want to up your game in hip-hop? You're at the right place. Our hip-hop writing services are made for you. Made for artists who want lyrics that actually sound like them. not copied styles or recycled lines.</p>
 
-                        <p className="pt-3 text-xl text-left font-poppins">With years of experience in hip-hop writing, our team of writers works with authenticity, creativity, and originality in order to meet your expectations regarding voice and style. No matter whether you are a future rapper or an experienced player, we’ll help you create music that grabs attention. Don’t think too much, get in touch with our experts and get a free quote for your project!</p>
+                        <p className="pt-3 text-xl text-left font-poppins">With years of experience, our writers work with authentic creativity and originality  to every project. Whether you're stuck on a verse, need help writing rap lyrics from scratch, or want to hire hip hop rap ghostwriters who truly understand hip hop culture, we're ready to help. We take time to listen first. Some artists want conscious rap lyrics. Some want commercial hooks. Others just want bars that hit hard on the beat.</p>
+                        <p className="pt-3 text-xl text-left font-poppins">Our hip-hop writers work with cadence, punchlines and overall structure. We don’t overfill lines. We don’t force metaphors. Every verse is written to sit naturally on the beat, not fight it.</p>
                     </div>
                     <div className="flex justify-center text-center basis-1/2 abt-pic md:justify-center">
                         <Image src={"/images/Hip-Hop-Writing/ghost-pic.webp"} width={470} height={300}
@@ -104,10 +105,10 @@ export default function BookEditing() {
                                     
                                                         <div className="px-4 text-center md:col-span-6">
                                                             <h2 className="font-poppins text-2xl text-[#98caa9] font-semibold md:text-3xl uppercase">
-                                                                Craft the Best – Hire an Expert Hip Hop Writing Service 
+                                                              Let Your Lyrics Speak Louder - Hire Best Hip Hop Songwriters
                                                             </h2>
                                                             <p className="py-4 text-base md:text-lg">
-                                                                Let’s write original and hard-hitting lyrics by experts who can understand your sound and story closely.
+                                                               Got ideas but can’t lock the words? Hire a hip hop writer who understands flow, hooks, and real expression. Let’s write something that truly fits your voice.
                                                             </p>
                                     
                                                             <div className="flex flex-col items-center justify-center gap-4 cta-btns sm:flex-row">
@@ -146,7 +147,7 @@ export default function BookEditing() {
                 <div className="max-w-screen-xl">
                     <div className="mb-6 text-center">
                         <h3 className="text-2xl text-black font-poppins">Our Service Workflow</h3>
-                        <h2 className="text-3xl font-bold text-black font-poppins md:text-4xl" data-aos="zoom-out-down">6-Step Process of Our Ghostwriting Services</h2>
+                        <h2 className="text-3xl font-bold text-black font-poppins md:text-4xl" data-aos="zoom-out-down">6-Step Process of Our Hip Hop Writing Service</h2>
                     </div>
 
                     <div className="grid gap-6 mb-6 md:grid-cols-3">
@@ -154,24 +155,24 @@ export default function BookEditing() {
                         <div className="flex flex-row " data-aos="fade-left">
                             <div className="flex-col px-6 py-10 text-left brand-process-content">
                                 <span className="num-span"><b>01</b></span>
-                                <h2 className="text-2xl text-white font-poppins pro-h">Project Manager Assigning & Questionnaire</h2>
-                                <p className="">We begin our process by assigning a dedicated project manager and a questionnaire to understand your writing requirements.</p>
+                                <h2 className="text-2xl text-white font-poppins pro-h">Sound & Style Check</h2>
+                                <p className="">We start by understanding your sound. Old-school, trap, drill, conscious, or melodic. We also ask about references, influences, and what you don’t want. That part matters more than people think.</p>
                             </div>
                         </div>
 
                         <div className="flex flex-row" data-aos="fade-left">
                         <div className="flex-col px-6 py-10 text-left brand-process-content">
                         <span className="num-span"><b>02</b></span>
-                                <h2 className="text-2xl text-white font-poppins pro-h">Research & Outlining</h2>
-                                <p className="">Then, our team of professionals will conduct in-depth research, create a content outline, and send it to you for your approval.</p>
+                                <h2 className="text-2xl text-white font-poppins pro-h">Idea & Message Mapping</h2>
+                                <p className="">Next, we break down the topic, mood, and message. Whether it’s storytelling or punchline-heavy, we shape the idea so the verse doesn’t drift halfway through.</p>
                             </div>
                         </div>
 
                         <div className="flex flex-row" data-aos="fade-left">
                         <div className="flex-col px-6 py-10 text-left brand-process-content">
                         <span className="num-span"><b>03</b></span>
-                                <h2 className="text-2xl text-white font-poppins pro-h">Interview Session with Writer</h2>
-                                <p className="">After the outline approval, we arrange an interview session with our assigned writer so that you can discuss your vision, tone, and writing style.</p>
+                                <h2 className="text-2xl text-white font-poppins pro-h">Beat & Flow Alignment</h2>
+                                <p className="">If you have a beat, we write directly to it. Flow, cadence, and bar length are adjusted so lyrics sit naturally. No rushed syllables. No awkward pauses.</p>
                             </div>
                         </div>
                         
@@ -182,24 +183,24 @@ export default function BookEditing() {
                         <div className="flex flex-row " data-aos="fade-left">
                         <div className="flex-col px-6 py-10 text-left brand-process-content">
                         <span className="num-span"><b>04</b></span>
-                                <h2 className="text-2xl text-white font-poppins pro-h">Weekly Deliveries & Revisions</h2>
-                                <p className="">We provide deliveries weekly and welcome your feedback throughout the process. We also offer multiple revisions to ensure your complete satisfaction.</p>
+                                <h2 className="text-2xl text-white font-poppins pro-h">Writing Bars & Hooks</h2>
+                                <p className="">This is where writing rap lyrics happens. Verses, hooks, bridges (if needed). We focus on clean rhymes, natural wordplay, and lines that sound good when spoken out loud.</p>
                             </div>
                         </div>
 
                         <div className="flex flex-row" data-aos="fade-left">
                         <div className="flex-col px-6 py-10 text-left brand-process-content">
                         <span className="num-span"><b>05</b></span>
-                                <h2 className="text-2xl text-white font-poppins pro-h">Formatting & Layout Adjustment</h2>
-                                <p className="">Once our ghostwriting work is finalized, we will format the manuscript according to your preferred style and make the necessary layout adjustments.</p>
+                                <h2 className="text-2xl text-white font-poppins pro-h">Revisions & Feedback</h2>
+                                <p className="">You review everything. Want bars harder? Cleaner? More personal? We adjust it accordingly. Hip hop writing works best when there’s a collaborative work approach used.</p>
                             </div>
                         </div>
 
                         <div className="flex flex-row" data-aos="fade-left">
                         <div className="flex-col px-6 py-10 text-left brand-process-content">
                         <span className="num-span"><b>06</b></span>
-                                <h2 className="text-2xl text-white font-poppins pro-h">Final Delivery</h2>
-                                <p className="">In the last step, we will deliver the finalized and polished manuscript to you in your desired format and the time we've discussed.</p>
+                                <h2 className="text-2xl text-white font-poppins pro-h">Refinement & Delivery</h2>
+                                <p className="">Final lyrics are refined for performance. We check rhythm, clarity, and energy. You receive clean files, ready for recording or further production.</p>
                             </div>
                         </div>
                         
@@ -207,6 +208,40 @@ export default function BookEditing() {
 
                 </div>
             </section>
+
+              <section className="max-w-6xl px-4 py-16 mx-auto bg-white font-poppins">
+                 <h2 className="mb-12 text-xl font-medium text-center text-gray-700 md:text-2xl">
+    Our Offerings
+  </h2>
+  <h2 className="mb-12 text-xl font-medium text-center text-gray-700 md:text-2xl">
+What’s Included In Our Hip Hop Writing Service
+  </h2>
+
+  <p className="mb-12 text-xl font-medium text-center text-gray-700 md:text-2xl">
+From single verses to full songs, our hip hop writing service covers everything. Lyrics. Hooks, structure. We write with care, awareness and respect for your sound.
+  </p>
+
+  <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3">
+    {[
+     { icon: '🖋️', label: 'Rap Lyric Writing' },
+      { icon: '🧐', label: 'Hook & Chorus Writing' },
+      { icon: '📄', label: 'Full Hip Hop Songwriting' },
+      { icon: '💼', label: 'Ghostwriting for Artists' },
+      { icon: '⚙️', label: 'Punchline & Bar Writing' },
+      { icon: '🎯', label: 'Beat-based Lyric Writing' },         
+    ].map((service, index) => (
+      <div
+        key={index}
+        className="flex flex-col items-center justify-center h-32 p-4 text-center bg-[#f4f1ea] hover:bg-[#ebe8e0] transition-colors rounded-xl shadow-sm hover:shadow-md"
+      >
+        <div className="mb-2 text-3xl">{service.icon}</div>
+        <span className="text-[10px] font-bold uppercase tracking-widest text-gray-600">
+          {service.label}
+        </span>
+      </div>
+    ))}
+  </div>
+</section>
             
             <section className="overflow-hidden" >
                 <div className="relative left-0 px-12 py-10 mb-8 brand-choose-us-section ms-auto md:left-52 md:px-20 md:mt-16 " >
@@ -219,18 +254,20 @@ export default function BookEditing() {
                             />
                         </div>
                         <div className="basis-1/2 md:ml-20">
-                            <h2 className="mt-10 text-2xl font-bold text-white uppercase font-poppins md:text-4xl md:mt-0" data-aos="zoom-in-left" data-aos-delay="100">Why Choose Our Ghostwriting Services?</h2>
-                            <p className="mt-2 text-white">Delight your potential readers with Pine Book Writing. We have a highly skilled team of ghostwriters with a proven record of working for globally-recognized authors. Experience quality, transparency & confidentiality.</p>
+                            <h2 className="mt-10 text-2xl font-bold text-white uppercase font-poppins md:text-4xl md:mt-0" data-aos="zoom-in-left" data-aos-delay="100">Beat-based Lyrics
+Writing
+</h2>
+                            <p className="mt-2 text-white">We write hip hop like it’s supposed to be written. We listen to you first. Understand culture. And use absolutely no shortcuts. With our hip-hop ghostwriting service, your lyrics always stay yours. We just help shape them better.</p>
                             <div className="flex flex-col gap-2 mt-6 md:flex-row md:gap-10">
                                 <ul>
-                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Expert Team of Writers </li>
-                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Guaranteed Confidentiality </li>
-                                    <li className="flex items-center gap-3 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Timely Delivery </li>
+                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />	Real flow sense </li>
+                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />	Clean punchlines</li>
+                                    <li className="flex items-center gap-3 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />	Culture-aware writers</li>
                                 </ul>
                                 <ul>
-                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Affordable Writing Services</li>
-                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Deep Research</li>
-                                    <li className="flex items-center gap-3 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Client Focus</li>
+                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />	Voice protection</li>
+                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />	Beat-first writing</li>
+                                    <li className="flex items-center gap-3 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />	Private ghostwriting</li>
                                 </ul>
                             </div>
                             {/* <BrandAudioPlayer src="/brand-img/why-choose-us-voice.wav" /> */}

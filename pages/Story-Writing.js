@@ -27,27 +27,27 @@ export default function BookEditing() {
     };
 
     const faqData = [
-        { question: "What is Ghostwriting?", answer: "Ghostwriting is the name of hiring a professional writer to write your book. In return, the writer will gather all the relevant information, conduct in-depth research, and craft a manuscript that meets your vision." },
+        { question: "Do you help with story ideas too?", answer: "Yes. Many clients come without ideas. We help brainstorm story ideas and build them slowly. No pressure. We take time." },
         
-        { question: "Is your ghostwriting ethical and authentic?", answer: "Absolutely, it is both ethical and authentic. Ghostwriting is extremely common, especially in the world of book writing. This service is considered the same as having any professional hired to perform a specific task. At Pine Book Writing, we serve our expertise in writing to put your creative ideas into a manuscript." },
+        { question: "Can I hire short story writers only?", answer: "Of course. We offer short story writing services separately. Small stories matter just as much as long ones. Feel free to discuss your short story needs." },
        
-        { question: "Who will own the rights in Ghostwriting?", answer: "We are just your writing partner. We write it as a ghostwriting service, and you own it. As an author, you own all the rights and credits for the final product. Not only that, the royalties your book earns will also be yours." },
+        { question: "Will the story sound like my voice?", answer: "Of course, we keep it as our main priority. We write after understanding your tone and style. It won’t sound robotic or copied." },
        
-        { question: "Can I hire you to write one chapter of my book and later write the other chapters?	", answer: "Yes, you can also hire us chapter by chapter. Here, we are confident that once you see our writing professionalism and expertise, you will definitely want to go toward the last chapter of your book. So, if you want to hire us for a single chapter, you are also welcome." },
+        { question: "Do you offer story editing services?	", answer: "Yes. If you already wrote something, we can help with story editing, fixing flow and weak parts without changing your core idea. We also offer developmental editing to suggest which areas could be improved further." },
         
-        { question: "How long will it take to write a book?", answer: "The completion time of the ghostwriting services entirely depends on the complexity, genre, and your book's length. However, we usually take 3 to 6 months on average. Moreover, the time also depends on how much material you provide and the research required on the particular topic." },
+        { question: "Is this service only for fiction?", answer: "Most people acquire our story writing for fiction writing. But it’s not limited to it. We also write personal stories, real-life stories, and fact-based education stories too. Feel free to contact us. We’ll guide you honestly." },
        
-        { question: "How much does ghostwriting a book cost?", answer: "The cost of ghostwriting also varies based on your book's length, genre, and complexity. You can view our packages here. Moreover, if you want to customize the any package according to your need, you can speak to our representative. " },
+        { question: "How long does story writing take?", answer: "Well, it actually depends on length and complexity. However, short stories are quicker. So they don’t take much time. We always share timelines before starting." },
             ];
 
     return (
         <>
             <Head>
-                <title>Story Writing | Pine Book Writing</title>
+                <title>Story Writing Services | Short Story Writers for Hire</title>
                 <link rel="canonical" href="https://www.pinebookwriting.com/Story-Writing" />
                 <meta
                     name="description"
-                    content="Partner with us to turn your ideas into enthralling tales with our expert story writing service. We crop stories to educate, entertain, and engage readers."
+                    content="We offer exceptional story writing services for people who want to write, edit, or plan a story with support from industry-expert writers and editors."
                 />
                 <link rel="shortcut icon" href="/images/fav.webp" />
                 </Head>
@@ -55,25 +55,28 @@ export default function BookEditing() {
             <BrandNavbar />
             <BrandPrimaryHeader
                 photo_banner={"/images/Story-Writing/1.webp"}
-                title="Craft Fascinating Stories with Our Story Writing Services"
-                desc="Looking for to creating a written masterpiece from your story idea? You’re at right place! Our story writing services enable you to create readers-loving, interesting, and memorable stories. We write all from fiction to true events."
+                title="Custom Story Writing Services by Human Writers - Not AI"
+                desc="Have a great idea and want to turn that into an enthralling story that people truly enjoy? Acquire expert story writing services from professional human writers. We write with heart, not noise. Get in touch today!"
             />
             <BrandBannerLogo />
 
             <div className="container max-w-screen-xl pt-0 mx-auto overflow-hidden md:py-20">
                 <div className="flex flex-col items-center justify-center px-8 py-10 md:flex-row lg:flex-row md:px-0 md:py-0">
                     <div className="basis-1/2 abt-txt m1-h p1 aos-init aos-animate" data-aos="fade-right" data-aos-duration="1000">
-                    <h2 className="text-3xl font-bold uppercase font-poppins md:text-4xl">Best Story Writing Service for Every Genre</h2>
+                    <h2 className="text-3xl font-bold uppercase font-poppins md:text-4xl">Exemplary Story Writing Services | Pine Book Writing</h2>
 
                         <h2 className="text-2xl uppercase font-poppins md:text-3xl">
-                        Personalized Stories Crafted with Care
+                       Stories That Readers Actually Enjoy
                         </h2>
                        
                         <p className="pt-3 text-xl text-left font-poppins">
-                        At Pine Book Writing, our story writing service helps you to comprehend your ideas and vision. Our talented team of writers can create a heart-touching narrative, a short story, a full-length tale, or anything else you could wish. We take great attention to your selected writing tone, weigh your ideas, and craft stories your audience will find appealing. </p>
+                       Good story writing is not about waving a magic wand. It takes time, thinking, and getting the small things right. Our story writing service is designed for people who have ideas but don’t know how to shape them, or simply don’t have time to write.  </p>
 
-                        <p className="pt-3 text-xl text-left font-poppins">Having years of writing experience, we ensure your tale stands out with emotional power, rich information, and neat and clear word organization. Writing stories is not only a talent; it's a passion we utilize to let your message shine. Don’t wait and get in touch with us to let’s help you share your story to the world!</p>
+                        <p className="pt-3 text-xl text-left font-poppins">We help with story ideas, plot development, and character creation that feel natural. No copy-paste characters. No forced drama. Whether you are working on short story writing, memoir writing, fiction writing, or custom story writing for personal or publishing use. We keep it simple. </p>Some clients come with half pages. Some come with nothing at all. That’s fine. Our creative story writers work patiently. They refine the flow. They make edits where needed. And most importantly, they make sure the story feels complete, like it should. 
+                        <p className="pt-3 text-xl text-left font-poppins">Some clients come with half pages. Some come with nothing at all. That’s fine. Our creative story writers work patiently. They refine the flow. They make edits where needed. And most importantly, they make sure the story feels complete, like it should. </p>
+                        <p className="pt-3 text-xl text-left font-poppins">Ready? Don’t just wait! Contact our friendly client representatives and get to know how and where to get started! </p>
                     </div>
+
                     <div className="flex justify-center text-center basis-1/2 abt-pic md:justify-center">
                         <Image src={"/images/Story-Writing/ghost-pic.webp"} width={470} height={300}
                             loading="lazy"
@@ -104,10 +107,9 @@ export default function BookEditing() {
             
                                 <div className="px-4 text-center md:col-span-6">
                                     <h2 className="font-poppins text-2xl text-[#98caa9] font-semibold md:text-3xl uppercase">
-                                        Hire Exceptional Story Writing Services!
+                                      Let’s Get Your Story Written by Award-Winning Story Writers
                                     </h2>
-                                    <p className="py-4 text-base md:text-lg">Want to craft a story that Remembered long?
-Share your vision with us, and we’ll write it beautifully!
+                                    <p className="py-4 text-base md:text-lg">Don’t think just about hiring a story writer! Our team of professional writers is ready to serve their expertise in writing for different genres. Get your project quote today! 
 </p>
             
                                     <div className="flex flex-col items-center justify-center gap-4 cta-btns sm:flex-row">
@@ -146,7 +148,7 @@ Share your vision with us, and we’ll write it beautifully!
                 <div className="max-w-screen-xl">
                     <div className="mb-6 text-center">
                         <h3 className="text-2xl text-black font-poppins">Our Service Workflow</h3>
-                        <h2 className="text-3xl font-bold text-black font-poppins md:text-4xl" data-aos="zoom-out-down">6-Step Process of Our Ghostwriting Services</h2>
+                        <h2 className="text-3xl font-bold text-black font-poppins md:text-4xl" data-aos="zoom-out-down">6-Step Process of Our Story Writing Services</h2>
                     </div>
 
                     <div className="grid gap-6 mb-6 md:grid-cols-3">
@@ -154,24 +156,24 @@ Share your vision with us, and we’ll write it beautifully!
                         <div className="flex flex-row " data-aos="fade-left">
                             <div className="flex-col px-6 py-10 text-left brand-process-content">
                                 <span className="num-span"><b>01</b></span>
-                                <h2 className="text-2xl text-white font-poppins pro-h">Project Manager Assigning & Questionnaire</h2>
-                                <p className="">We begin our process by assigning a dedicated project manager and a questionnaire to understand your writing requirements.</p>
+                                <h2 className="text-2xl text-white font-poppins pro-h">Idea Listening</h2>
+                                <p className="">We start by listening carefully. Your story idea, mood, purpose, and doubts too. This step helps us understand what kind of story you actually want, not what sounds fancy.</p>
                             </div>
                         </div>
 
                         <div className="flex flex-row" data-aos="fade-left">
                         <div className="flex-col px-6 py-10 text-left brand-process-content">
                         <span className="num-span"><b>02</b></span>
-                                <h2 className="text-2xl text-white font-poppins pro-h">Research & Outlining</h2>
-                                <p className="">Then, our team of professionals will conduct in-depth research, create a content outline, and send it to you for your approval.</p>
+                                <h2 className="text-2xl text-white font-poppins pro-h">Story Planning</h2>
+                                <p className="">Next, we work on plot development. A simple structure is created so the story doesn’t feel confusing, rushed, or flat. Just a clear direction to follow.</p>
                             </div>
                         </div>
 
                         <div className="flex flex-row" data-aos="fade-left">
                         <div className="flex-col px-6 py-10 text-left brand-process-content">
                         <span className="num-span"><b>03</b></span>
-                                <h2 className="text-2xl text-white font-poppins pro-h">Interview Session with Writer</h2>
-                                <p className="">After the outline approval, we arrange an interview session with our assigned writer so that you can discuss your vision, tone, and writing style.</p>
+                                <h2 className="text-2xl text-white font-poppins pro-h">Character Creation</h2>
+                                <p className="">Our story writer builds characters slowly. Their voice, habits, and flaws matter. Real-feeling characters make storytelling easier and more engaging, even in short stories.</p>
                             </div>
                         </div>
                         
@@ -182,16 +184,16 @@ Share your vision with us, and we’ll write it beautifully!
                         <div className="flex flex-row " data-aos="fade-left">
                         <div className="flex-col px-6 py-10 text-left brand-process-content">
                         <span className="num-span"><b>04</b></span>
-                                <h2 className="text-2xl text-white font-poppins pro-h">Weekly Deliveries & Revisions</h2>
-                                <p className="">We provide deliveries weekly and welcome your feedback throughout the process. We also offer multiple revisions to ensure your complete satisfaction.</p>
+                                <h2 className="text-2xl text-white font-poppins pro-h">Writing The Draft</h2>
+                                <p className="">This is where writing begins. We focus on flow and tone. The language stays easy. No heavy lines. Just natural storytelling that feels smooth while reading.</p>
                             </div>
                         </div>
 
                         <div className="flex flex-row" data-aos="fade-left">
                         <div className="flex-col px-6 py-10 text-left brand-process-content">
                         <span className="num-span"><b>05</b></span>
-                                <h2 className="text-2xl text-white font-poppins pro-h">Formatting & Layout Adjustment</h2>
-                                <p className="">Once our ghostwriting work is finalized, we will format the manuscript according to your preferred style and make the necessary layout adjustments.</p>
+                                <h2 className="text-2xl text-white font-poppins pro-h">Editing & Fixingt</h2>
+                                <p className="">Story editing comes next. We fix pacing, tighten scenes, and remove weak parts. This step helps the story feel complete. Not messy or overwritten.</p>
                             </div>
                         </div>
 
@@ -199,7 +201,7 @@ Share your vision with us, and we’ll write it beautifully!
                         <div className="flex-col px-6 py-10 text-left brand-process-content">
                         <span className="num-span"><b>06</b></span>
                                 <h2 className="text-2xl text-white font-poppins pro-h">Final Delivery</h2>
-                                <p className="">In the last step, we will deliver the finalized and polished manuscript to you in your desired format and the time we've discussed.</p>
+                                <p className="">You receive a clean story file. Ready to publish, share, or revise further. We also guide you if you need small changes later. No stress.</p>
                             </div>
                         </div>
                         
@@ -207,6 +209,40 @@ Share your vision with us, and we’ll write it beautifully!
 
                 </div>
             </section>
+
+             <section className="max-w-6xl px-4 py-16 mx-auto bg-white font-poppins">
+                 <h2 className="mb-12 text-xl font-medium text-center text-gray-700 md:text-2xl">
+    Our Offerings
+  </h2>
+  <h2 className="mb-12 text-xl font-medium text-center text-gray-700 md:text-2xl">
+What’s Included In Our Story Writing Services
+  </h2>
+
+  <p className="mb-12 text-xl font-medium text-center text-gray-700 md:text-2xl">
+All aspects are covered from ideas to the final draft. We offer story writing services that are flexible, simple, and built around what your story actually needs.
+  </p>
+
+  <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3">
+    {[
+     { icon: '🖋️', label: 'Short Story Writing' },
+      { icon: '🧐', label: 'Fiction Writing' },
+      { icon: '📄', label: 'Ghostwriting Stories' },
+      { icon: '💼', label: 'Story Editing' },
+      { icon: '⚙️', label: 'Plot Development' },
+      { icon: '🎯', label: 'Life Story Writing' },         
+    ].map((service, index) => (
+      <div
+        key={index}
+        className="flex flex-col items-center justify-center h-32 p-4 text-center bg-[#f4f1ea] hover:bg-[#ebe8e0] transition-colors rounded-xl shadow-sm hover:shadow-md"
+      >
+        <div className="mb-2 text-3xl">{service.icon}</div>
+        <span className="text-[10px] font-bold uppercase tracking-widest text-gray-600">
+          {service.label}
+        </span>
+      </div>
+    ))}
+  </div>
+</section>
             
             <section className="overflow-hidden" >
                 <div className="relative left-0 px-12 py-10 mb-8 brand-choose-us-section ms-auto md:left-52 md:px-20 md:mt-16 " >
@@ -219,18 +255,18 @@ Share your vision with us, and we’ll write it beautifully!
                             />
                         </div>
                         <div className="basis-1/2 md:ml-20">
-                            <h2 className="mt-10 text-2xl font-bold text-white uppercase font-poppins md:text-4xl md:mt-0" data-aos="zoom-in-left" data-aos-delay="100">Why Choose Our Ghostwriting Services?</h2>
-                            <p className="mt-2 text-white">Delight your potential readers with Pine Book Writing. We have a highly skilled team of ghostwriters with a proven record of working for globally-recognized authors. Experience quality, transparency & confidentiality.</p>
+                            <h2 className="mt-10 text-2xl font-bold text-white uppercase font-poppins md:text-4xl md:mt-0" data-aos="zoom-in-left" data-aos-delay="100">Why Is Our Story Writing Service Popular?</h2>
+                            <p className="mt-2 text-white">People choose our story writing services because we always keep communication open, explain our choices, and involve them at every step. No guessing. No silent writing.</p>
                             <div className="flex flex-col gap-2 mt-6 md:flex-row md:gap-10">
                                 <ul>
-                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Expert Team of Writers </li>
-                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Guaranteed Confidentiality </li>
-                                    <li className="flex items-center gap-3 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Timely Delivery </li>
+                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />	Clear storytelling</li>
+                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />	Reader-first writing </li>
+                                    <li className="flex items-center gap-3 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />		Smooth flow</li>
                                 </ul>
                                 <ul>
-                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Affordable Writing Services</li>
-                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Deep Research</li>
-                                    <li className="flex items-center gap-3 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Client Focus</li>
+                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />	Strong structure</li>
+                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />		Original plots</li>
+                                    <li className="flex items-center gap-3 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />	Honest feedback</li>
                                 </ul>
                             </div>
                             {/* <BrandAudioPlayer src="/brand-img/why-choose-us-voice.wav" /> */}

@@ -27,27 +27,27 @@ export default function BookEditing() {
     };
 
     const faqData = [
-        { question: "What is Ghostwriting?", answer: "Ghostwriting is the name of hiring a professional writer to write your book. In return, the writer will gather all the relevant information, conduct in-depth research, and craft a manuscript that meets your vision." },
+        { question: "Can you help if I only have a basic novel idea?", answer: "Yes. Many clients start with just a concept or theme. Our novel writers help with different aspects before writing begins. Plot building. Characters. Structure. " },
 
-        { question: "Is your ghostwriting ethical and authentic?", answer: "Absolutely, it is both ethical and authentic. Ghostwriting is extremely common, especially in the world of book writing. This service is considered the same as having any professional hired to perform a specific task. At Pine Book Writing, we serve our expertise in writing to put your creative ideas into a manuscript." },
+        { question: "Is this a ghostwriting service or collaborative writing?", answer: "It can be either. Some clients want full novel ghostwriting. Others prefer close collaboration. So, we adjust the process based on how involved you want to be." },
 
-        { question: "Who will own the rights in Ghostwriting?", answer: "We are just your writing partner. We write it as a ghostwriting service, and you own it. As an author, you own all the rights and credits for the final product. Not only that, the royalties your book earns will also be yours." },
+        { question: "Do you write romance novels as well?", answer: "Yes. We have romance novel writers on our team. We handle contemporary, emotional and light romance styles while keeping pacing and character chemistry natural." },
 
-        { question: "Can I hire you to write one chapter of my book and later write the other chapters?	", answer: "Yes, you can also hire us chapter by chapter. Here, we are confident that once you see our writing professionalism and expertise, you will definitely want to go toward the last chapter of your book. So, if you want to hire us for a single chapter, you are also welcome." },
+        { question: "How long does novel writing usually take?", answer: "It depends on different aspects. Length. Genre. And revision rounds. Most novels take a few months. However we share timelines with you clearly before starting. No surprises later." },
 
-        { question: "How long will it take to write a book?", answer: "The completion time of the ghostwriting services entirely depends on the complexity, genre, and your book's length. However, we usually take 3 to 6 months on average. Moreover, the time also depends on how much material you provide and the research required on the particular topic." },
+        { question: "Will my novel stay confidential?", answer: "Absolutely. Confidential novel ghostwriting is standard for us. Your ideas or manuscripts are never shared or reused." },
 
-        { question: "How much does ghostwriting a book cost?", answer: "The cost of ghostwriting also varies based on your book's length, genre, and complexity. You can view our packages here. Moreover, if you want to customize the any package according to your need, you can speak to our representative. " },
+        { question: "Can you revise an already written novel?", answer: "Yes. If you already wrote parts of your novel, share it with us. We will edit on many aspects to make it perfect without changing your core voice. " },
     ];
 
     return (
         <>
             <Head>
-                <title>Novel Writing | Pine Book Writing</title>
+                <title>Professional Novel Writing Services | Pine Book Writing</title>
                 <link rel="canonical" href="https://www.pinebookwriting.com/Novel-Writing" />
                 <meta
                     name="description"
-                    content="Achieve your author dream with expert novel writing services. We offer assistance creating books developed with plot, structure, and enticing storytelling."
+                    content="Looking for novel writing services? Our team of experts helps authors shape ideas, write strong stories, and complete novels ready for publishing."
                 />
                 <link rel="shortcut icon" href="/images/fav.webp" />
             </Head>
@@ -55,24 +55,24 @@ export default function BookEditing() {
             <BrandNavbar />
             <BrandPrimaryHeader
                 photo_banner={"/images/Novel-Writing/1.webp"}
-                title="Novel Writing Service that Truly Fits Your Vision"
-                desc="Use our narrative writing services to turn your ideas into stories that will inspire, inform, and connect with your readers on an emotional level. Get in touch right away!"
+                title="Novel Writing Services For New & Seasoned Writers"
+                desc="Writing a novel alone can feel heavy and confusing. Our novel writing services connect you with experienced novel writers who help shape your idea into a full book, without taking over your voice. Get in touch today!"
             />
             <BrandBannerLogo />
 
             <div className="container max-w-screen-xl pt-0 mx-auto overflow-hidden md:py-20">
                 <div className="flex flex-col items-center justify-center px-8 py-10 md:flex-row lg:flex-row md:px-0 md:py-0">
                     <div className="basis-1/2 abt-txt m1-h p1 aos-init aos-animate" data-aos="fade-right" data-aos-duration="1000">
-                        <h2 className="text-3xl font-bold uppercase font-poppins md:text-4xl">Hire Full-Length Novel Writing Services</h2>
+                        <h2 className="text-3xl font-bold uppercase font-poppins md:text-4xl">Novel Writing Service With Real Direction</h2>
 
                         <h2 className="text-2xl uppercase font-poppins md:text-3xl">
-                            Novel Writing that Inspires Readers
+                           For Stories That Want To Breathe
                         </h2>
 
                         <p className="pt-3 text-xl text-left font-poppins">
-                            Do you have a wonderful concept for a book, but don't know how to start? We can help you with every step of writing a novel, from coming up with an outline and developing your characters to writing and editing your final draft. We help you tell your unique story by giving it good pacing, interesting dialogue, and well-rounded characters. </p>
+                           Writing a novel is not only about filling pages. It’s about holding attention, building characters, and knowing when to slow down or push forward. Many people start strong, then get stuck halfway. That’s where our novel writing service helps. </p>
 
-                        <p className="pt-3 text-xl text-left font-poppins">Our talented writers can develop novels that will keep you interested from the first page to the last, whether you want a romance, thriller, or sci-fi.</p>
+                        <p className="pt-3 text-xl text-left font-poppins">We work with writers who want to write a novel but need structure, guidance, or full support. From romance to general fiction novel writing, our professional novel writers focus on flow, character depth, and story logic. Some clients come with rough notes. Others with just an idea. Both are fine. We shape custom novel writing plans that grow naturally, chapter by chapter. No rushing. No forced drama. Just solid storytelling that feels readable and honest.</p>
                     </div>
                     <div className="flex justify-center text-center basis-1/2 abt-pic md:justify-center">
                         <Image src={"/images/Novel-Writing/ghost-pic.webp"} width={470} height={300}
@@ -104,9 +104,9 @@ export default function BookEditing() {
 
                     <div className="px-4 text-center md:col-span-6">
                         <h2 className="font-poppins text-2xl text-[#98caa9] font-semibold md:text-3xl uppercase">
-                            Ready to Start Your Novel Writing Journey? Let’s Connect!
+                           Let’s Turn That Story Into The Best-selling Novel!
                         </h2>
-                        <p className="py-4 text-base md:text-lg">Work with professional writers who can help you develop a book that is worth publishing and sharing.</p>
+                        <p className="py-4 text-base md:text-lg">Feeling stuck or unsure where to begin? Talk to our novel writers for hire and see how your story can move forward, one clear step at a time.</p>
 
                         <div className="flex flex-col items-center justify-center gap-4 cta-btns sm:flex-row">
                             <CTAButton />
@@ -144,7 +144,7 @@ export default function BookEditing() {
                 <div className="max-w-screen-xl">
                     <div className="mb-6 text-center">
                         <h3 className="text-2xl text-black font-poppins">Our Service Workflow</h3>
-                        <h2 className="text-3xl font-bold text-black font-poppins md:text-4xl" data-aos="zoom-out-down">6-Step Process of Our Ghostwriting Services</h2>
+                        <h2 className="text-3xl font-bold text-black font-poppins md:text-4xl" data-aos="zoom-out-down">6-Step Process of Our Novel Writing Services</h2>
                     </div>
 
                     <div className="grid gap-6 mb-6 md:grid-cols-3">
@@ -152,24 +152,24 @@ export default function BookEditing() {
                         <div className="flex flex-row " data-aos="fade-left">
                             <div className="flex-col px-6 py-10 text-left brand-process-content">
                                 <span className="num-span"><b>01</b></span>
-                                <h2 className="text-2xl text-white font-poppins pro-h">Project Manager Assigning & Questionnaire</h2>
-                                <p className="">We begin our process by assigning a dedicated project manager and a questionnaire to understand your writing requirements.</p>
+                                <h2 className="text-2xl text-white font-poppins pro-h">Story Listening</h2>
+                                <p className="">We start by listening. Your idea, genre, tone, and doubts. Whether you’re writing a novel from scratch or half done, we understand what kind of support you actually need.</p>
                             </div>
                         </div>
 
                         <div className="flex flex-row" data-aos="fade-left">
                             <div className="flex-col px-6 py-10 text-left brand-process-content">
                                 <span className="num-span"><b>02</b></span>
-                                <h2 className="text-2xl text-white font-poppins pro-h">Research & Outlining</h2>
-                                <p className="">Then, our team of professionals will conduct in-depth research, create a content outline, and send it to you for your approval.</p>
+                                <h2 className="text-2xl text-white font-poppins pro-h">Plot & Structure </h2>
+                                <p className="">Our novel writers create a clear story outline. Chapters, pacing, arcs. Nothing too rigid. Just enough structure so the novel doesn’t drift or lose direction midway.</p>
                             </div>
                         </div>
 
                         <div className="flex flex-row" data-aos="fade-left">
                             <div className="flex-col px-6 py-10 text-left brand-process-content">
                                 <span className="num-span"><b>03</b></span>
-                                <h2 className="text-2xl text-white font-poppins pro-h">Interview Session with Writer</h2>
-                                <p className="">After the outline approval, we arrange an interview session with our assigned writer so that you can discuss your vision, tone, and writing style.</p>
+                                <h2 className="text-2xl text-white font-poppins pro-h">Character Development</h2>
+                                <p className="">Characters are shaped carefully. Their voice, background, and motivation. We focus on character-driven novels so readers feel connected, not just watching events happen.</p>
                             </div>
                         </div>
 
@@ -180,24 +180,24 @@ export default function BookEditing() {
                         <div className="flex flex-row " data-aos="fade-left">
                             <div className="flex-col px-6 py-10 text-left brand-process-content">
                                 <span className="num-span"><b>04</b></span>
-                                <h2 className="text-2xl text-white font-poppins pro-h">Weekly Deliveries & Revisions</h2>
-                                <p className="">We provide deliveries weekly and welcome your feedback throughout the process. We also offer multiple revisions to ensure your complete satisfaction.</p>
+                                <h2 className="text-2xl text-white font-poppins pro-h">Draft Writing </h2>
+                                <p className="">This is where writing starts. Chapter by chapter. The language stays readable. Scenes flow naturally. We keep checking tone and genre so the novel feels consistent throughout.</p>
                             </div>
                         </div>
 
                         <div className="flex flex-row" data-aos="fade-left">
                             <div className="flex-col px-6 py-10 text-left brand-process-content">
                                 <span className="num-span"><b>05</b></span>
-                                <h2 className="text-2xl text-white font-poppins pro-h">Formatting & Layout Adjustment</h2>
-                                <p className="">Once our ghostwriting work is finalized, we will format the manuscript according to your preferred style and make the necessary layout adjustments.</p>
+                                <h2 className="text-2xl text-white font-poppins pro-h">Review & Revisions</h2>
+                                <p className="">You read the draft and share feedback. We revise pacing, dialogue, or scenes. Novel ghostwriting works best with back and forth, and we stay patient here.</p>
                             </div>
                         </div>
 
                         <div className="flex flex-row" data-aos="fade-left">
                             <div className="flex-col px-6 py-10 text-left brand-process-content">
                                 <span className="num-span"><b>06</b></span>
-                                <h2 className="text-2xl text-white font-poppins pro-h">Final Delivery</h2>
-                                <p className="">In the last step, we will deliver the finalized and polished manuscript to you in your desired format and the time we've discussed.</p>
+                                <h2 className="text-2xl text-white font-poppins pro-h">Editing & Delivery</h2>
+                                <p className="">We polish the manuscript, fix clarity issues, and prepare a clean file. Ready for the next steps. Confidential novel <a href="https://www.pinebookwriting.com/ghostwriting" class="text-blue-400 hover:underline" target="_blank" rel="noopener noreferrer">ghostwriting </a>is always respected.</p>
                             </div>
                         </div>
 
@@ -205,6 +205,40 @@ export default function BookEditing() {
 
                 </div>
             </section>
+
+                <section className="max-w-6xl px-4 py-16 mx-auto bg-white font-poppins">
+                 <h2 className="mb-12 text-xl font-medium text-center text-gray-700 md:text-2xl">
+    Our Offerings
+  </h2>
+  <h2 className="mb-12 text-xl font-medium text-center text-gray-700 md:text-2xl">
+What’s Included In Our Novel Writing Services
+  </h2>
+
+  <p className="mb-12 text-xl font-medium text-center text-gray-700 md:text-2xl">
+We cover the full novel writing process, from idea shaping to final manuscript, with flexible options depending on genre, length, and how much help you want.
+  </p>
+
+  <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3">
+    {[
+     { icon: '🖋️', label: 'Fiction Novel Writing' },
+      { icon: '🧐', label: 'Romance Novel Writing' },
+      { icon: '📄', label: 'Novel Ghostwriting' },
+      { icon: '💼', label: 'Character Development' },
+      { icon: '⚙️', label: 'Manuscript Editing & Revisions' },
+      { icon: '🎯', label: 'Genre-Based Novel Writing' },         
+    ].map((service, index) => (
+      <div
+        key={index}
+        className="flex flex-col items-center justify-center h-32 p-4 text-center bg-[#f4f1ea] hover:bg-[#ebe8e0] transition-colors rounded-xl shadow-sm hover:shadow-md"
+      >
+        <div className="mb-2 text-3xl">{service.icon}</div>
+        <span className="text-[10px] font-bold uppercase tracking-widest text-gray-600">
+          {service.label}
+        </span>
+      </div>
+    ))}
+  </div>
+</section>
 
             <section className="overflow-hidden" >
                 <div className="relative left-0 px-12 py-10 mb-8 brand-choose-us-section ms-auto md:left-52 md:px-20 md:mt-16 " >
@@ -217,18 +251,18 @@ export default function BookEditing() {
                             />
                         </div>
                         <div className="basis-1/2 md:ml-20">
-                            <h2 className="mt-10 text-2xl font-bold text-white uppercase font-poppins md:text-4xl md:mt-0" data-aos="zoom-in-left" data-aos-delay="100">Why Choose Our Ghostwriting Services?</h2>
-                            <p className="mt-2 text-white">Delight your potential readers with Pine Book Writing. We have a highly skilled team of ghostwriters with a proven record of working for globally-recognized authors. Experience quality, transparency & confidentiality.</p>
+                            <h2 className="mt-10 text-2xl font-bold text-white uppercase font-poppins md:text-4xl md:mt-0" data-aos="zoom-in-left" data-aos-delay="100">Why Writers Trust Our Novel Writing Services</h2>
+                            <p className="mt-2 text-white">Writing a novel is personal. You’re trusting someone with your idea. We respect that. Our approach stays collaborative, quiet, and focused on building a novel that feels like yours.</p>
                             <div className="flex flex-col gap-2 mt-6 md:flex-row md:gap-10">
                                 <ul>
-                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Expert Team of Writers </li>
-                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Guaranteed Confidentiality </li>
-                                    <li className="flex items-center gap-3 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Timely Delivery </li>
+                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />	Dedicated novel writers </li>
+                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />	Flexible writing support </li>
+                                    <li className="flex items-center gap-3 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />	Genre-specific expertise </li>
                                 </ul>
                                 <ul>
-                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Affordable Writing Services</li>
-                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Deep Research</li>
-                                    <li className="flex items-center gap-3 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Client Focus</li>
+                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />	Confidential handling</li>
+                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />	Honest feedback</li>
+                                    <li className="flex items-center gap-3 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />	Clear communication</li>
                                 </ul>
                             </div>
                             {/* <BrandAudioPlayer src="/brand-img/why-choose-us-voice.wav" /> */}

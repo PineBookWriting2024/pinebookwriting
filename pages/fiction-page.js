@@ -119,16 +119,18 @@ export default function FictionPage() {
             />
 
             <BrandCTA
-                title="Achieve Your Writing Dreams With Professional Ghostwriting Company!"
+                title="Stuck With Your Book Or Lack Time to Write?
+Let’s Handle It!
+"
                 desc="Don’t have time to write your fascinating story? Let our team of experts guide you. Contact us today and take the first step towards becoming the best author.."
                 btntext="Speak to our Consultant"
             />
 
-                 <section className="book_genres my-12">
+                 <section className="my-12 book_genres">
           <div className="container mx-auto text-center">
             <div className="genres-h mx-auto w-[80%] pb-8">
-              <h3 className="font-poppins text-3xl md:text-4xl leading-10">From a Memoir & Romance to Sci-Fi Novel<br/> 
-              <span className="leading font-semibold"> We Write It All </span></h3>
+              <h3 className="text-3xl leading-10 font-poppins md:text-4xl">From a Memoir & Romance to Sci-Fi Novel<br/> 
+              <span className="font-semibold leading"> We Write It All </span></h3>
 
               
               <p className="pt-3">At Pine Book Writing, we take pride in having a large team of skilled ghostwriters whose expertise lies in working for numerous book genres. Have a look at the array of genres we're competent enough to work for:</p>
@@ -136,10 +138,10 @@ export default function FictionPage() {
 
    
 
-            <div className="grid md:grid-cols-5 grid-cols-2 md:gap-6 gap-3">
+            <div className="grid grid-cols-2 gap-3 md:grid-cols-5 md:gap-6">
                   {filteredBooks.map(book => (
-                    <div className='genres-icon border' key={book.id} >
-                          <Image src={book.imageUrl} className="genres-pic text-center mx-auto" height={"90"} width={"90"}></Image>
+                    <div className='border genres-icon' key={book.id} >
+                          <Image src={book.imageUrl} className="mx-auto text-center genres-pic" height={"90"} width={"90"}></Image>
                           <h4><span>{book.title}</span></h4>
                     </div>
                   ))}

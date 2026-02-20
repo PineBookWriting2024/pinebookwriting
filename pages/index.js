@@ -23,8 +23,8 @@ export default function Home() {
     return (
         <>
             <Head>
-                <title>Hire Professional Book Writers | Pine Book Writing</title>
-                <meta name="description" content="Get top-notch book writing services from experienced writers. We offer affordable and high-quality writing solutions for all genres. Contact us today!"
+                <title>Affordable book writing services for authors of all genres</title>
+                <meta name="description" content="Looking for a trusted book writing company? Pine Book Writing offers expert writers for different genres that include fiction, non-fiction, memoir, and others."
                 />
                 <link rel="shortcut icon" href="/images/fav.webp" />
                 <link rel="canonical" href="https://www.pinebookwriting.com/" />
@@ -54,11 +54,14 @@ export default function Home() {
             <BrandBannerLogo />
 
             <BrandAbout
-                headingmain="Overcome Writer's Block with Pine Book Writing"
+                headingmain="Helping Writers Break Past The Blank Page"
+                
 
-                subdescone="Are you having a hard time writing your book? The frustrating sight of a blank page can stop you in your tracks. Know that you're not the only one going through this. Many people who want to be writers run into this problem. Don't worry, though; Pine Book Writing is here to help.
+                subdescone="Are you struggling to write your book? A blank page can stop everything. Projects get delayed. Confidence drops. This happens to first-time writers and experienced authors alike. It’s just writer’s block. At Pine Book Writing, we, as a full-service book writing agency, understand this problem and are ready to help new and seasoned writers/authors move forward. Not only by writing but also in polishing their write-up to make it all proudly presentable to their audience.
 "
-                subdesctwo="We help writers find their way through the maze of creativity by providing them with the support and tools they need to turn their ideas into beautiful words. No more writer's block! With Pine Book Writing by your side, you can start your road to becoming a successful author.
+                subdesctwo="With a large team of skilled writers on board, we offer dedicated solutions for each genre, be it fiction, non-fiction, education, fantasy, children's books or any other genre. Each writer has years of book writing experience and knows their responsibility to turn your ideas into beautiful words.
+No more writer's block! With Pine Book Writing by your side, you can start your road to becoming a successful author.
+
 "
                 subdescthree=""
             />
@@ -66,8 +69,10 @@ export default function Home() {
             <HomeBookSlider />
 
             <BrandCTA
-                title="Achieve Your Writing Dreams With Professional Ghostwriting Company!"
-                desc="Don’t have time to write your fascinating story? Let our team of experts guide you. Contact us today and take the first step towards becoming the best author.."
+                title="Stuck With Your Book Or Lack Time to Write?
+Let’s Handle It!
+"
+                desc="If your book is half-written or still in your head, our writers help you move past confusion and turn rough ideas into something structured yet readable."
                 btntext="Speak to our Consultant"
             />
 

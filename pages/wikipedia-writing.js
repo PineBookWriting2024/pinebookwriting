@@ -45,12 +45,12 @@ export default function Wikipedia() {
     return (
         <>
             <Head>
-                <title>Wikipedia Writing | Pine Book Writing</title>
+                <title>Wikipedia writing services | Wikipedia writers for hire</title>
                 <link rel="canonical" href="https://www.pinebookwriting.com/wikipedia-writing" />
 
                 <meta
                     name="description"
-                    content="Everything about Pine Book Writing—your partner in crafting, editing, and publishing your story. Experience seamless service from manuscript to bookshelf."
+                    content="Get professional Wikipedia writing services for page creation, editing, and approval. Hire expert Wikipedia writers to build a notable digital presence."
                 />
                 <link rel="shortcut icon" href="/images/fav.webp" />
             </Head>
@@ -59,7 +59,7 @@ export default function Wikipedia() {
             <BrandPrimaryHeader
                 photo_banner={"/images/Wikipedia-Writing/1.webp"}
                 title="Professional Wikipedia Writing Services"
-                desc="Are you seeking professional Wikipedia writing services to enhance your online or business presence? If yes, then Pine Book Writing is here for you! Our expert Wikipedia writers have helped hundreds of clients, including politicians, actors, and other notable individuals."
+                desc="Are you seeking the best Wikipedia writing services to enhance your online or business presence? If yes, then Pine Book Writing is here for you! Our expert Wikipedia writers have helped hundreds of clients, including politicians, actors, and other notable individuals."
             />
             <BrandBannerLogo />
 
@@ -72,7 +72,7 @@ export default function Wikipedia() {
                             Your Story On Wikipedia
                         </h2>
                         <p className="pt-3 text-xl text-left font-poppins">
-                            Unsurprisingly, Wikipedia is the most powerful platform that helps people see legitimate information about many things, personalities, places, and more. It can help enhance your online presence and credibility. A professionally written Wikipedia article can attract audiences, build authority, and improve ranking on search engines. It requires a lot of writing expertise and proficiency to follow Wikipedia’s strict guidelines.</p>
+                           Unsurprisingly, Wikipedia is the most powerful platform that helps people see legitimate information about many things, personalities, places, and more. It can help enhance your online presence and credibility. A professionally written Wikipedia article can attract audiences, build authority, and improve ranking on search engines. It requires a lot of writing expertise and proficiency to follow Wikipedia’s strict guidelines.</p>
 
                         <p className="pt-3 text-xl text-left font-poppins">At Pine Book Writing, our skilled team of Wikipedia writers is immensely familiar with Wikipedia’s policies and guidelines. They bring years of experience in writing informative, readable, and well-researched articles based on Wikipedia’s standards. We will highlight your achievements, contributions, and knowledge base in order to establish a robust Wikipedia presence. </p>
                     </div>
@@ -87,9 +87,9 @@ export default function Wikipedia() {
                     </div>
                 </div>
 
-                <p className="px-10 pt-3 text-xl text-left font-poppins md:px-0" data-aos="fade-right">
+                {/* <p className="px-10 pt-3 text-xl text-left font-poppins md:px-0" data-aos="fade-right">
                     Let’s help you create a noteworthy Wikipedia article that portrays your career and life accomplishments. Contact us now to discuss your project with experts!
-                </p>
+                </p> */}
             </div>
 
 
@@ -109,10 +109,10 @@ export default function Wikipedia() {
             
                                 <div className="px-4 text-center md:col-span-6">
                                     <h2 className="font-poppins text-2xl text-[#98caa9] font-semibold md:text-3xl uppercase">
-                                        Hire Expert Wikipedia Writing Services to Get Notability Globally!
+                                       Hire Expert Wikipedia Writing Services to Get Notability Globally!
                                     </h2>
                                     <p className="py-4 text-base md:text-lg">
-                                       Create well-written and well-researched wiki pages to tell the world about you and your success. Contact us today!
+                                     Create well-written and well-researched wiki pages to tell the world about you and your success. Contact us today!
                                     </p>
             
                                     <div className="flex flex-col items-center justify-center gap-4 cta-btns sm:flex-row">
@@ -214,6 +214,40 @@ export default function Wikipedia() {
                 </div>
             </section>
 
+               <section className="max-w-6xl px-4 py-16 mx-auto bg-white font-poppins">
+                 <h2 className="mb-12 text-xl font-medium text-center text-gray-700 md:text-2xl">
+    Our Offerings
+  </h2>
+  <h2 className="mb-12 text-xl font-medium text-center text-gray-700 md:text-2xl">
+What’s Included In Our WikiPedia Writing Services
+  </h2>
+
+  <p className="mb-12 text-xl font-medium text-center text-gray-700 md:text-2xl">
+Our Wikipedia writing service covers all aspects from research and planning to refining the draft. So you receive a ready-to-deliver Wikipedia article fit for your event.
+  </p>
+
+  <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3">
+    {[
+     { icon: '🖋️', label: 'Topic Assessment' },
+      { icon: '🧐', label: 'Research & Drafting' },
+      { icon: '📄', label: 'Citation & Formatting' },
+      { icon: '💼', label: 'Wikipedia Page Creation' },
+      { icon: '⚙️', label: 'Monitoring & Maintenance' },
+      { icon: '🎯', label: 'Conflict Resolution' },         
+    ].map((service, index) => (
+      <div
+        key={index}
+        className="flex flex-col items-center justify-center h-32 p-4 text-center bg-[#f4f1ea] hover:bg-[#ebe8e0] transition-colors rounded-xl shadow-sm hover:shadow-md"
+      >
+        <div className="mb-2 text-3xl">{service.icon}</div>
+        <span className="text-[10px] font-bold uppercase tracking-widest text-gray-600">
+          {service.label}
+        </span>
+      </div>
+    ))}
+  </div>
+</section>
+
             <section className="overflow-hidden" >
                 <div className="relative left-0 px-12 py-10 mt-6 mb-8 brand-choose-us-section ms-auto md:left-52 md:px-20 md:mt-14 " >
                     <div className="flex flex-col items-center md:flex-row" data-aos="fade-right" data-aos-delay="0" data-aos-duration="500">
@@ -226,7 +260,7 @@ export default function Wikipedia() {
                         </div>
                         <div className="basis-1/3 md:ml-20">
                             <h2 className="mt-10 text-2xl font-bold text-white uppercase font-poppins md:text-4xl md:mt-0" data-aos="zoom-in-left" data-aos-delay="100">Why Choose Our Wikipedia Writing Services?</h2>
-                            <p className="mt-2 text-white">Strengthen your personal or business online presence with our professionally written Wikipedia article.  We have a team of experienced Wikipedia writers who create accurate and engaging articles adhering to Wikipedia’s guidelines.</p>
+                            <p className="mt-2 text-white">Strengthen your personal or business online presence with our professionally written Wikipedia article. We have a team of experienced Wikipedia writers for hire who create accurate and engaging articles adhering to Wikipedia’s guidelines.</p>
                             <div className="flex flex-col gap-2 mt-6 md:flex-row md:gap-10">
                                 <ul>
                                     <li className="flex items-start gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} /> Dedicated Writer’s Tea </li>

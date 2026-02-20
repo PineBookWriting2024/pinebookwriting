@@ -11,8 +11,8 @@ export default function BrandChooseUs() {
     return (
         <>
             <section className="overflow-hidden" >
-                <div className="brand-choose-us-section ms-auto relative left-0 md:left-52 px-3 md:px-16 mt-20 mb-8 " >
-                    <div className="flex items-center flex-col md:flex-row p-4" data-aos="fade-right" data-aos-delay="0" data-aos-duration="500">
+                <div className="relative left-0 px-3 mt-20 mb-8 brand-choose-us-section ms-auto md:left-52 md:px-16 " >
+                    <div className="flex flex-col items-center p-4 md:flex-row" data-aos="fade-right" data-aos-delay="0" data-aos-duration="500">
                         <div className="basis-1/3 brand-choose-us-vector">
                             {/* <Image src={"/brand-img/why-choose-us-img.webp"} width={350} height={200} className="brand-choose-us-img"></Image> */}
                             <Image src={"/brand-img/Why Choose Us 2.png"} width={500} height={500}
@@ -21,25 +21,25 @@ export default function BrandChooseUs() {
                                 className="brand-about-img"
                             />
                         </div>
-                        <div className="basis-1/2 md:ml-20 py-8">
-                            <h2 className="text-white font-poppins text-2xl md:text-4xl uppercase md:mt-20 mt-0 font-bold" data-aos="zoom-in-left" data-aos-delay="100">Why Choose Pine Book Writing?</h2>
-                            <p className="text-white mt-2 w-[95%]">At Pine Book Writing, we have a talented team of writers who are closely familiar with all aspects of writing for various genres. They have helped hundreds of clients make their books best-selling with our impeccable writing expertise. </p>
-                            <div className="flex flex-col md:flex-row gap-2 md:gap-10 mt-6">
+                        <div className="py-8 basis-1/2 md:ml-20">
+                            <h2 className="mt-0 text-2xl font-bold text-white uppercase font-poppins md:text-4xl md:mt-20" data-aos="zoom-in-left" data-aos-delay="100">Why Authors Choose Our Book Writing Services</h2>
+                            <p className="text-white mt-2 w-[95%]">At <a href="https://www.pinebookwriting.com" className="text-blue-200 underline">Pine Book Writing</a>, our book writing services are not just about writing and delivering. But we listen first. Understand your thoughts and your audience as well. We assign you a dedicated project manager to understand your needs, assign the best writer for your needs and keep you updated throughout the process. No copy/paste templates. Only original work. </p>
+                            <div className="flex flex-col gap-2 mt-6 md:flex-row md:gap-10">
                                 <ul>
-                                    <li className="font-poppins flex items-center gap-3 text-sm mb-2"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />100% Author Credit</li>
-                                    <li className="font-poppins flex items-center gap-3 text-sm mb-2"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Proofreading & Editing</li>
-                                    <li className="font-poppins flex items-center gap-3 text-sm"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Fast Turnaround Time</li>
+                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />		Fast Deliveries</li>
+                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />		100% Confidentiality</li>
+                                    <li className="flex items-center gap-3 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />		Writer-Author Collaboration</li>
                                 </ul>
                                 <ul>
-                                    <li className="font-poppins flex items-center gap-3 text-sm mb-2"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Personalized Support</li>
-                                    <li className="font-poppins flex items-center gap-3 text-sm mb-2"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Multiple Revisions</li>
-                                    <li className="font-poppins flex items-center gap-3 text-sm"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Quality Assurance</li>
+                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />		Multiple Revisions</li>
+                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />		Chapter-by-Chapter Work</li>
+                                    <li className="flex items-center gap-3 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Quality Assurance</li>
                                 </ul>
                             </div>
                             {/* <BrandAudioPlayer src="/brand-img/why-choose-us-voice.wav" /> */}
                             <div>
-                                <button className="brand-nav-btn-1 brand-nav-btn shadow-xl mt-10 cursor-pointer btn-f" onClick={handleOpenChat}><Link href={'javascript:;'}>Speak to our Consultant</Link></button>
-                                <button className="brand-nav-btn-1 brand-nav-btn shadow-xl mt-10 cursor-pointer btn-f md:ml-3 ml-0"><Link href="tel:+18668417463">Call Now</Link></button>
+                                <button className="mt-10 shadow-xl cursor-pointer brand-nav-btn-1 brand-nav-btn btn-f" onClick={handleOpenChat}><Link href={'javascript:;'}>Speak to our Consultant</Link></button>
+                                <button className="mt-10 ml-0 shadow-xl cursor-pointer brand-nav-btn-1 brand-nav-btn btn-f md:ml-3"><Link href="tel:+18668417463">Call Now</Link></button>
                             </div>
                         </div>
                     </div>

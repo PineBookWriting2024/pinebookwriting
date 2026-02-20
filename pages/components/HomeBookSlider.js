@@ -477,15 +477,15 @@ export default function HomeBookSlider() {
 
     return (
         <>
-            <div className="w-full max-w-6xl mx-auto py-8 relative home-book-cover">
+            <div className="relative w-full max-w-6xl py-8 mx-auto home-book-cover">
                 {/* Custom Previous Button */}
                 <div
-                    className="absolute top-1/2 -left-10 transform -translate-y-1/2 bk-sil2 portfoilio-slider5-icon prev cursor-pointer"
+                    className="absolute transform -translate-y-1/2 cursor-pointer top-1/2 -left-10 bk-sil2 portfoilio-slider5-icon prev"
                     onClick={() => swiperRef2.current?.slidePrev()}
                 >
                     <FontAwesomeIcon icon={faArrowLeft} color="#000" width={18} />
                 </div>
-                <div className="flex space-x-4 justify-center mb-12">
+                <div className="flex justify-center mb-12 space-x-4">
                     {['Published Books', 'Coming Soon'].map(category => (
                         <button
                             key={category}
@@ -520,13 +520,13 @@ export default function HomeBookSlider() {
                     }}
                 >
 
-                    <div className="grid grid-cols-2 md:grid-cols-4 gap-4 justify-center">
+                    <div className="grid justify-center grid-cols-2 gap-4 md:grid-cols-4">
                         {filteredBooks.map(book => (
                             <SwiperSlide key={book.id}>
                                 {book.url ? (
-                                    <Link href={book.url} className="relative h-full flex flex-col gap-6 books" target="_blank">
+                                    <Link href={book.url} className="relative flex flex-col h-full gap-6 books" target="_blank">
                                         <div>
-                                            <img src={book.src} alt={`Book ${book.id}`} className="h-70 w-auto object-contain w-100" />
+                                            <img src={book.src} alt={`Book ${book.id}`} className="object-contain w-auto h-70 w-100" />
                                         </div>
                                         <div className="content">
                                             <h4 className="text-size-custom">{book.title}</h4>
@@ -534,9 +534,9 @@ export default function HomeBookSlider() {
                                         </div>
                                     </Link>
                                 ) : (
-                                    <div className="relative h-full flex flex-col gap-6 books">
+                                    <div className="relative flex flex-col h-full gap-6 books">
                                         <div>
-                                            <img src={book.src} alt={`Book ${book.id}`} className="h-70 w-auto object-contain w-100" />
+                                            <img src={book.src} alt={`Book ${book.id}`} className="object-contain w-auto h-70 w-100" />
                                         </div>
                                         <div className="content">
                                             <h4 className="text-size-custom">{book.title}</h4>
@@ -547,15 +547,16 @@ export default function HomeBookSlider() {
                             </SwiperSlide>
                         ))}
                     </div>
+                    <h1 className="mt-4 text-2xl font-bold text-center">We've Helped Many Writers Get Their Names Under the Best Titles</h1>
                     {/* {ImageSlides.map((slide) => (
                         <SwiperSlide key={slide.id}>
                             {slide.url ? (
-                                <Link href={slide.url} className="relative h-full flex flex-col gap-6" target="_blank">
+                                <Link href={slide.url} className="relative flex flex-col h-full gap-6" target="_blank">
                                     <div>
                                         <img
                                             src={slide.src}
                                             alt={`Slide ${slide.id}`}
-                                            className="h-70 w-auto object-contain w-100"
+                                            className="object-contain w-auto h-70 w-100"
                                         />
                                     </div>
                                     <div>
@@ -564,12 +565,12 @@ export default function HomeBookSlider() {
                                     </div>
                                 </Link>
                             ) : (
-                                <div className="relative h-full flex flex-col gap-6">
+                                <div className="relative flex flex-col h-full gap-6">
                                     <div>
                                         <img
                                             src={slide.src}
                                             alt={`Slide ${slide.id}`}
-                                            className="h-70 w-auto object-contain w-100"
+                                            className="object-contain w-auto h-70 w-100"
                                         />
                                     </div>
                                     <div>
@@ -585,7 +586,7 @@ export default function HomeBookSlider() {
 
                 {/* Custom Next Button */}
                 <div
-                    className="absolute top-1/2 -right-10 transform -translate-y-1/2 bk-sil2 portfoilio-slider5-icon next cursor-pointer"
+                    className="absolute transform -translate-y-1/2 cursor-pointer top-1/2 -right-10 bk-sil2 portfoilio-slider5-icon next"
                     onClick={() => swiperRef2.current?.slideNext()}
                 >
                     <FontAwesomeIcon icon={faArrowRight} color="#000" width={18} />

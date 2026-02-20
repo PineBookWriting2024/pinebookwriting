@@ -26,24 +26,29 @@ export default function BrandFaqs() {
     };
 
     const faqData = [
-        { question: "What is Ghostwriting?", answer: "Ghostwriting is the name of hiring a professional writer to write your book. In return, the writer will gather all the relevant information, conduct in-depth research, and craft a manuscript that meets your vision." },
-        { question: "Is your ghostwriting ethical and authentic?", answer: "Absolutely, it is both ethical and authentic. Ghostwriting is extremely common, especially in the world of book writing. This service is considered the same as having any professional hired to perform a specific task. At Pine Book Writing, we serve our expertise in writing to put your creative ideas into a manuscript." },
-        { question: "Who will own the rights in Ghostwriting?", answer: "We are just your writing partner. We write it as a ghostwriting service, and you own it. As an author, you own all the rights and credits for the final product. Not only that, the royalties your book earns will also be yours." },
-        { question: "Can I hire you to write one chapter of my book and later write the other chapters?", answer: "Yes, you can also hire us chapter by chapter. Here, we are confident that once you see our writing professionalism and expertise, you will definitely want to go toward the last chapter of your book. So, if you want to hire us for a single chapter, you are also welcome." },
-        { question: "How long will it take to write a book?", answer: "The completion time of the ghostwriting services entirely depends on the complexity, genre, and your book's length. However, we usually take 3 to 6 months on average. Moreover, the time also depends on how much material you provide and the research required on the particular topic." },
-        { question: "How much does writing a book cost?", answer: "The cost of ghostwriting also varies based on your book's length, genre, and complexity. However, it can be somewhere between a few thousand to tens of thousands of dollars. Contact our customer service team to get transparent and accurate pricing for your project." }
+        { question: "Do your services include research when needed?", answer: "Yes. For non-fiction, biographies, or educational books, research is included. We don’t overdo it though. Just enough to support the story or message properly." },
+
+        { question: "How is pricing decided for different writing services?", answer: "Pricing depends on word count, genre, complexity, and timeline. A short story is not priced like a full book. We explain costs clearly before starting. No hidden stuff." },
+
+        { question: "Are these services suitable for first-time authors?", answer: "Very much. Many clients are writing their first book. We explain things slowly, answer small questions, and don’t assume you already know the publishing or writing world." },
+
+        { question: "What if I’m not sure which writing service I need?", answer: "That happens a lot. You can explain your idea and goal, and we guide you. We’ll suggest the right service instead of pushing something that doesn’t fit." },
+        
+        { question: "Can I choose only one service instead of a full package?", answer: "Although we offer affordable book writing packages. But yes, you can choose. Some clients only need writing, others editing, some just refinement. You don’t have to buy everything. We keep services flexible. Not forced bundles." },
+
+        { question: "How do revisions work across different writing services?", answer: "Revisions are part of the process. After each draft, you review and share thoughts. We revise based on that. Sometimes it takes one round, sometimes two or three. That’s normal." }
     ];
 
     return (
         <>
-            <section className="brand-testimonials-section overflow-hidden">
-                <div className="max-w-screen-xl mx-auto px-4 my-10 relative py-22">
-                    <div className="text-center mb-6">
-                        <h2 className="font-poppins text-3xl text-black uppercase mb-3 font-bold" >Frequently Asked Questions</h2>
-                        {/* <h3 className="text-xl text-black font-poppins uppercase font-bold">each Out to Us for Further Assistance.</h3> */}
+            <section className="overflow-hidden brand-testimonials-section">
+                <div className="relative max-w-screen-xl px-4 mx-auto my-10 py-22">
+                    <div className="mb-6 text-center">
+                        <h2 className="mb-3 text-3xl font-bold text-black uppercase font-poppins" >Frequently Asked Questions</h2>
+                        {/* <h3 className="text-xl font-bold text-black uppercase font-poppins">each Out to Us for Further Assistance.</h3> */}
                     </div>
                     <div className="faq-que">
-                        <div className="flex flex-col md:flex-row justify-center gap-4">
+                        <div className="flex flex-col justify-center gap-4 md:flex-row">
                             {Array.from({ length: 2 }).map((_, colIndex) => (
                                 <div key={colIndex} className="w-full max-w-screen-sm">
                                     {faqData.slice(colIndex * 3, (colIndex + 1) * 3).map((faq, index) => {
@@ -51,7 +56,7 @@ export default function BrandFaqs() {
                                         return (
                                             <button
                                                 key={actualIndex}
-                                                className="w-full border-b-2 border-gray-300 text-white p-6 text-left mt-0 focus:outline-none mb-4 rounded-2xl bg-color"
+                                                className="w-full p-6 mt-0 mb-4 text-left text-white border-b-2 border-gray-300 focus:outline-none rounded-2xl bg-color"
                                                 onClick={() => toggleFAQ(actualIndex)}
                                             >
                                                 <div className={`text-lg font-semibold flex justify-between ${openFAQ === actualIndex ? 'border-b border-gray-300' : 'border-0'}`}>

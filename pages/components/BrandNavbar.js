@@ -22,6 +22,7 @@ export default function BrandNavbar() {
         { name: 'Comic Book Writing', href: '/Comic-Book-Writing' },
         { name: 'Military Fiction Writing', href: '/Military-Fiction-Writing' },
         { name: 'Movie Writing', href: '/Movie-Writing' },
+        { name: 'Book Editing', href: '/Book-Editing' },
     ];
 
     const services = [
@@ -42,6 +43,7 @@ export default function BrandNavbar() {
         { name: 'Horror Writing', href: '/Horror-Writing' },
         { name: 'Sci-Fi Writing', href: '/Sci-Fi-writing' },
         { name: 'Biography Writing', href: '/Biography-Writing' },
+        
     ];
 
     const toggleServiceDropdown = () => {
@@ -89,8 +91,8 @@ export default function BrandNavbar() {
 
     return (
         <>
-            <header id="navbar" className="bg-transparent absolute top-10 left-0 flex justify-between items-center md:pb-4 z-20">
-                <div className='max-w-screen-xl flex justify-between items-center mx-auto w-full'>
+            <header id="navbar" className="absolute left-0 z-20 flex items-center justify-between bg-transparent top-10 md:pb-4">
+                <div className='flex items-center justify-between w-full max-w-screen-xl mx-auto'>
                     <div>
                         <Link href="/" onClick={(e) => { e.preventDefault(); window.location.href = "/"; }} className="text-xl font-bold text-white">
                             <Image className='logo' src={'/images/writing-logo.png'} width={200} height={80} alt="brand logo" loading="lazy" />
@@ -100,10 +102,10 @@ export default function BrandNavbar() {
                     <div className="md:hidden">
                         <button
                             onClick={() => setIsOpen(!isOpen)}
-                            className="text-white hover:text-gray-300 focus:outline-none focus:text-gray-300 z-20"
+                            className="z-20 text-white hover:text-gray-300 focus:outline-none focus:text-gray-300"
                             aria-label="Toggle navigation"
                         >
-                            <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 {isOpen ? (
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
                                 ) : (
@@ -113,12 +115,12 @@ export default function BrandNavbar() {
                         </button>
                     </div>
                     <nav className={`${isOpen ? 'block' : 'hidden'} absolute flex flex-col bg-gray-900 text-center items-center self-end py-8 mt-2 space-y-6 font-semibold w-full mb-8 top-20 md:top-0 right-0 left-0 md:space-y-0 md:flex md:flex-row md:relative md:bg-transparent md:space-x-4 md:mt-0 md:py-0 md:w-auto md:block`}>
-                        <ul className="md:flex items-center space-x-4">
+                        <ul className="items-center space-x-4 md:flex">
                             <li className='mb-3 md:mb-0'><Link href="/" onClick={(e) => { e.preventDefault(); window.location.href = "/"; }} className="text-white hover:text-gray-300">Home</Link></li>
                             <li className='mb-3 md:mb-0'><Link href="/about" onClick={(e) => { e.preventDefault(); window.location.href = "about"; }} className="text-white hover:text-gray-300">About Us</Link></li>
-                            <li className="mb-3 md:mb-0 relative services-nav-item" ref={dropdownRef}>
+                            <li className="relative mb-3 md:mb-0 services-nav-item" ref={dropdownRef}>
                                 <div className='flex items-center justify-center gap-2'>
-                                    <Link href="/services" onClick={(e) => { e.preventDefault(); window.location.href = "/services"; }} className="cursor-pointer text-white hover:text-gray-300 flex items-center gap-2">
+                                    <Link href="/services" onClick={(e) => { e.preventDefault(); window.location.href = "/services"; }} className="flex items-center gap-2 text-white cursor-pointer hover:text-gray-300">
                                         Services
                                     </Link>
                                     <button
@@ -191,7 +193,7 @@ export default function BrandNavbar() {
                             <li className='mb-3 md:mb-0'><Link href="/packages" onClick={(e) => { e.preventDefault(); window.location.href = "packages"; }} className="text-white hover:text-gray-300">Packages</Link></li>
                             <li className='mb-3 md:mb-0'><Link href="/portfolio" onClick={(e) => { e.preventDefault(); window.location.href = "portfolio"; }} className="text-white hover:text-gray-300">Portfolio</Link></li>
                             <li className='mb-3 md:mb-0'><Link href="/contact-us" onClick={(e) => { e.preventDefault(); window.location.href = "contact-us"; }} className="text-white hover:text-gray-300">Contact</Link></li>
-                            <li><Link href={'javascript:;'} className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 brand-nav-btn font-poppins text-sm" onClick={handleOpenChat}>Talk to an Expert</Link></li>
+                            <li><Link href={'javascript:;'} className="px-4 py-2 text-sm text-white bg-blue-500 rounded hover:bg-blue-600 brand-nav-btn font-poppins" onClick={handleOpenChat}>Talk to an Expert</Link></li>
                         </ul>
                     </nav>
                 </div>

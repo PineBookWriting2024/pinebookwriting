@@ -23,6 +23,9 @@ export default function BrandNavbar() {
         { name: 'Military Fiction Writing', href: '/Military-Fiction-Writing' },
         { name: 'Movie Writing', href: '/Movie-Writing' },
         { name: 'Book Editing', href: '/Book-Editing' },
+        { name: 'Book Formatting', href: '/Book-Formatting-Writing' },
+        { name: 'Book Self Publishing', href: '/Book-Self-Publishing' },
+        { name: 'Proofreading', href: '/Proofreading-Writing' },
     ];
 
     const services = [

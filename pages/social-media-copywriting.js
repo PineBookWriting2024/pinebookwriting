@@ -32,7 +32,23 @@ const handleOpenChat = () => {
 
         { question: "For which social media platforms will you provide content?", answer: "Our services are not limited to any specific social media platform, but we create social media copy for Facebook, Instagram, LinkedIn, TikTok, and X (formerly Twitter). We adapt tone and style so your content matches the vibes/nativity of every platform." },
 
-        { question: "Do you also offer social media management and advertising services?", answer: "Yes, we're also running a few sub-brands, one of which is Pine Techware, through which we offer comprehensive digital marketing, design, and development solutions. So yes, along with copywriting for social media, you can acquire professional social media management and marketing services." },
+        {
+    question: "Do you also offer social media management and advertising services?",
+    answer: (
+      <>
+        Yes, we're also running a few sub-brands, one of which is{" "}
+        <a
+          href="https://www.pinetechware.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-blue-400 underline hover:text-blue-500"
+        >
+          Pine Techware
+        </a>
+        , through which we offer comprehensive digital marketing, design, and development solutions. So yes, along with copywriting for social media, you can acquire professional social media management and marketing services.
+      </>
+    )
+  },
 
         { question: "What information do you require to get started?", answer: "Want to know the exact cost? It depends on content length, type, and how many platforms you're hiring us for. We don't just offer affordable social media copywriting services, but we also keep transparency (no hidden or extra charges) and flexibility in packages that are absolutely customizable, considering your needs." },
 
@@ -73,12 +89,12 @@ const handleOpenChat = () => {
                           Bespoke Social Media Copy for Every Platform
                         </h2>
                         <p className="pt-3 text-xl text-left font-poppins">
-  Social media is a crucial tool for your business if you want to get and retain your potential audience. To create a post, you need to hire social media copywriting services to help you build an <span className="font-bold">emotional and friendly connection with your audience</span> and accomplish your <span className="font-bold">marketing objectives</span>. That’s where{" "}
+  Social media is a crucial tool for your business if you want to get and retain your potential audience. To create a post, you need to hire social media copywriting services to help you build an emotional and friendly connection with your audience and accomplish your marketing objectives. That’s where{" "}
   <a
     href="https://www.pinebookwriting.com/"
     target="_blank"
     rel="noopener noreferrer"
-    className="font-bold underline transition underline-offset-2 hover:text-gray-700"
+    className="underline transition underline-offset-2 hover:text-blue-700"
   >
     Pine Book Writing
   </a>{" "}
@@ -86,7 +102,7 @@ const handleOpenChat = () => {
 </p>
 
 <p className="pt-3 text-xl text-left font-poppins">
-  <span className="font-bold">Pine Book Writing</span> offers <span className="font-bold">impeccable social media copywriting</span> with a dedicated team of passionate writers whose expertise lies in writing everything from <span className="font-bold">short captions</span> to <span className="font-bold">longer post copies</span> for platforms like Facebook, Instagram, LinkedIn, and X (ex-Twitter). Our <span className="font-bold">social media copywriters</span> have helped clients from different industries improve <span className="font-bold">engagement and reach</span>. Contact us today for a free consultation!
+  Pine Book Writing offers impeccable social media copywriting with a dedicated team of passionate writers whose expertise lies in writing everything from short captions to longer post copies for platforms like Facebook, Instagram, LinkedIn, and X (ex-Twitter). Our social media copywriters have helped clients from different industries improve engagement and reach. Contact us today for a free consultation!
 </p>
 
                     </div>
@@ -273,7 +289,7 @@ const handleOpenChat = () => {
                             />
                         </div>
                         <div className="basis-1/3 md:ml-20">
-                            <h2 className="mt-10 text-2xl font-bold text-white uppercase font-poppins md:text-4xl md:mt-0" data-aos="zoom-in-left" data-aos-delay="100">Why Choose Our Social Media Copywriting Services?</h2>
+                            <h2 className="mt-10 text-2xl font-bold text-white uppercase font-poppins md:text-3xl md:mt-0" data-aos="zoom-in-left" data-aos-delay="100">Why Choose Our Social Media </h2>
                             <p className="mt-2 text-white">At Pine Book Writing, we believe social media isn't just about posting. Instead, it's a tool to connect and engage people beyond their expectations. That’s why we’ve designed our SMM copywriting service in a way that genuinely helps brands attract attention and bring notable results. Each of your posts matters to us.</p>
                             <div className="flex flex-col gap-2 mt-6 md:flex-row md:gap-10">
                                 <ul>

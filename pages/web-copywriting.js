@@ -31,7 +31,7 @@ export default function WebCopywriting () {
         
         { question: "How do you ensure my brand voice is reflected in the content?", answer: "Our team of website copywriters collaboratively understands your brand voice and message first. Then, they incorporate your unique brand voice into every section of the website to ensure consistency throughout the website." },
        
-        { question: "How do you conduct keyword research for web copy?", answer: "The timeline of our web content writing services depends on many factors, such as the number of web pages, website UI, wordcount requirement (if any), and the complexities of your SEO requirement. However, we can provide an estimated timeline after discussing your project requirements. " },
+        { question: "How do you conduct keyword research for web copy?", answer: "We have a dedicated team of SEO professionals who conduct thorough keyword research to find relevant and most searched terms and phrases. Then, they strategically infuse them into your content to improve its visibility in SERPs. " },
        
         { question: "How long does your website content writing service take?", answer: "The timeline of our web content writing services depends on many factors, such as the number of web pages, website UI, wordcount requirement (if any), and the complexities of your SEO requirement. However, we can provide an estimated timeline after discussing your project requirements.  " },
         
@@ -67,12 +67,23 @@ export default function WebCopywriting () {
                        
                         <h2 className="text-3xl font-bold uppercase font-poppins md:text-4xl">Build Credibility - Hire Expert Web Copywriting Services</h2>
                         <h2 className="text-2xl uppercase font-poppins md:text-3xl">
-                       Build Credibility - Hire Expert Web Copywriting Services
+                       Write Words that Bring Results
                         </h2>
                         <p className="pt-3 text-xl text-left font-poppins">
                       In order to create exceptional online presence, having a well functioning and appealing website is not enough. Hire our professional web copywriting services that offer SEO-friendly yet audience-friendly content. A great web copy answers questions about your business and encourages action. And that's what we do at Pine Book Writing.</p>
 
-                        <p className="pt-3 text-xl text-left font-poppins">In order to create exceptional online presence, having a well functioning and appealing website is not enough. Hire our professional web copywriting services that offer SEO-friendly yet audience-friendly content. A great web copy answers questions about your business and encourages action. And that's what we do at Pine Book Writing.</p>
+                       <p className="pt-3 text-xl text-left font-poppins">
+  We have a team of competent web copywriters, each of whom has extensive experience in creating{" "}
+  <a
+    href="https://www.pinebookwriting.com/seo-content"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-blue-600 underline hover:text-blue-800"
+  >
+    SEO-optimized content
+  </a>{" "}
+  for many businesses and industries. Whether you want to write for a simple informative website, an Ecommerce platform, a blog website, an author website, or want to acquire landing page copywriting, our top-quality content creation service is ready. We help you connect with your audience and portray your brand's unique voice with easily readable words.
+</p>
                     </div>
                     <div className="flex justify-center text-center basis-1/2 abt-pic md:justify-center">
                         <Image src={"/images/Web-Copywriting/ghost-pic.webp"} width={470} height={300}
@@ -109,7 +120,7 @@ export default function WebCopywriting () {
                                       Losing Leads From Weak SEO-Friendly Copywriting?
                                     </h2>
                                    <p>
-Weak website copy costs your customers. Trust our web copywriting services, as we deliver easily understandable and <a href="https://www.pinebookwriting.com/seo-content" target="_blank" rel="noopener noreferrer">SEO-optimized content</a> that visitors find useful and trustworthy.
+Weak website copy costs your customers. Trust our web copywriting services, as we deliver easily understandable and SEO-optimized content that visitors find useful and trustworthy.
 </p>
 
             

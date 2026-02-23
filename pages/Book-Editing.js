@@ -54,7 +54,7 @@ export default function BookEditing() {
             <BrandTopBar />
             <BrandNavbar />
             <BrandPrimaryHeader
-                photo_banner={"/images/Fantasy-Writing-Services/1.webp"}
+                photo_banner={"/images/Book-Editing/1.webp"}
                 title="Book Editing Services That Refine Your Story"
                 desc="Have you written a perfect book and want to publish it? Don't neglect the importance of professional editing. A good manuscript deserves more than just quick fixes.  We offer exceptional book editing services that help you refine overall language and structure so it reads clear and ready for real readers."
             />
@@ -76,7 +76,7 @@ export default function BookEditing() {
                         
                     </div>
                     <div className="flex justify-center text-center basis-1/2 abt-pic md:justify-center">
-                        <Image src={"/images/Fantasy-Writing-Services/ghost-pic.webp"} width={470} height={300}
+                        <Image src={"/images/Book-Editing/ghost-pic.webp"} width={470} height={300}
                             loading="lazy"
                             alt="about img"
                             className="aos-init aos-animate"
@@ -96,7 +96,7 @@ export default function BookEditing() {
   {/* Left Image */}
   <div className="flex justify-center md:col-span-3 md:justify-start">
     <Image
-      src="/images/Fantasy-Writing-Services/cta-book-12.webp"
+      src="/images/Book-Editing/cta-book-12.webp"
       alt="Book 1"
       height={300}
       width={300}
@@ -251,7 +251,7 @@ What’s Included In Our Book Editing Services
                 <div className="relative left-0 px-12 py-10 mb-8 brand-choose-us-section ms-auto md:left-52 md:px-20 md:mt-16 " >
                     <div className="flex flex-col items-center md:flex-row" data-aos="fade-right" data-aos-delay="0" data-aos-duration="500">
                         <div className="basis-1/3 brand-choose-us-vector">
-                        <Image src={"/images/Fantasy-Writing-Services/WhyChooseUs2.webp"} width={500} height={500}
+                        <Image src={"/images/Book-Editing/WhyChooseUs2.webp"} width={500} height={500}
                                 loading="lazy"
                                 alt="about img"
                                 className="brand-about-img"

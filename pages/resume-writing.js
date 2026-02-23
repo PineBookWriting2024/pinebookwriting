@@ -62,14 +62,56 @@ export default function ResumeWriting() {
     <>
       Is your current resume holding you back? Or are you looking for someone who is an expert in resume writing to portray your true potential to employers? If yes, then you're in the right place. We have a dedicated team of resume writers (mostly from human resource backgrounds) familiar with all the do’s and don’ts while writing a resume.{" "}
       
-      <a
-        href="https://www.pinebookwriting.com/contact-us"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="font-bold text-black underline transition decoration-2 underline-offset-4 hover:text-gray-700"
-      >
-        Get Your FREE Quote & Start Now!
-      </a>
+     <a
+  href="https://www.pinebookwriting.com/contact-us"
+  target="_blank"
+  rel="noopener noreferrer"
+  style={{ display: "inline-block", textDecoration: "none" }}
+>
+  <button
+    style={{
+      backgroundColor: "#000",
+      color: "#fff",
+      padding: "12px 32px",
+      fontSize: "16px",
+      fontWeight: "600",
+      borderRadius: "50px",
+      border: "none",
+      cursor: "pointer",
+      boxShadow: "0 4px 14px 0 rgba(0,0,0,0.39)",
+      transition: "all 0.3s ease",
+      display: "flex",
+      alignItems: "center",
+      gap: "10px",
+      marginTop: "20px"
+    }}
+    onMouseOver={(e) => {
+      e.currentTarget.style.backgroundColor = "#333";
+      e.currentTarget.style.transform = "translateY(-2px)";
+      e.currentTarget.style.boxShadow = "0 6px 20px rgba(0,0,0,0.23)";
+    }}
+    onMouseOut={(e) => {
+      e.currentTarget.style.backgroundColor = "#000";
+      e.currentTarget.style.transform = "translateY(0)";
+      e.currentTarget.style.boxShadow = "0 4px 14px 0 rgba(0,0,0,0.39)";
+    }}
+  >
+    Get Your FREE Quote & Start Now!
+    <svg 
+      width="18" 
+      height="18" 
+      viewBox="0 0 24 24" 
+      fill="none" 
+      stroke="currentColor" 
+      strokeWidth="2" 
+      strokeLinecap="round" 
+      strokeLinejoin="round"
+    >
+      <line x1="5" y1="12" x2="19" y2="12"></line>
+      <polyline points="12 5 19 12 12 19"></polyline>
+    </svg>
+  </button>
+</a>
     </>
   }
 />
@@ -85,26 +127,28 @@ export default function ResumeWriting() {
                         <h2 className="text-2xl uppercase font-poppins md:text-3xl">
                        Stand Out from the Crowd 
                         </h2>
-                       <p className="leading-relaxed text-gray-700">
-  Your resume creates the very first impression on employers. It’s an influential tool that can open your doors to many career opportunities. Resume writing requires dedicated expertise and attention to detail. That’s where our professional resume writing services come in. At{" "}
-  
-  <a
-    href="https://www.pinebookwriting.com/"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="font-semibold underline transition underline-offset-4 hover:text-gray-900"
-  >
-    Pine Book Writing
-  </a>
-  
-  , our team of resume writers always stays updated about the saturated job market and knows what to consider while writing a noteworthy resume. As one of the best rated resume writing services, we utilize our{" "}
-  
-  <span className="font-bold">immense expertise</span>{" "}
-  
-  to highlight your unique competencies and achievements. We help you showcase experiences in the best possible light by tailoring your resume for specific job requirements. Don’t let an ordinary resume hold you back. Contact us now to schedule a consultation and take the first step with our{" "}
-  
-  <span className="font-bold">affordable resume writing services</span>.
-</p>
+                      <div className="text-gray-700">
+  <p className="mb-4 leading-relaxed">
+    Your resume creates the very first impression on employers. It’s an influential tool that can open your doors to many career opportunities. Resume writing requires dedicated expertise and attention to detail. That’s where our professional resume writing services come in. At{" "}
+    <a
+      href="https://www.pinebookwriting.com/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="font-semibold underline transition underline-offset-4 hover:text-gray-900"
+    >
+      Pine Book Writing
+    </a>
+    , our team of resume writers always stays updated about the saturated job market and knows what to consider while writing a noteworthy resume.
+  </p>
+
+  <p className="mb-4 leading-relaxed">
+    As one of the best rated resume writing services, we utilize our <span className="font-bold">immense expertise</span> to highlight your unique competencies and achievements. We help you showcase experiences in the best possible light by tailoring your resume for specific job requirements.
+  </p>
+
+  <p className="mb-4 leading-relaxed">
+    Don’t let an ordinary resume hold you back. Contact us now to schedule a consultation and take the first step with our <span className="font-bold">affordable resume writing services</span>.
+  </p>
+</div>
 
                     </div>
                     <div className="flex justify-center text-center basis-1/2 abt-pic md:justify-center">
@@ -116,9 +160,7 @@ export default function ResumeWriting() {
                         />
                     </div>
                 </div>
-                <p className="px-10 text-xl text-left font-poppins md:px-0" data-aos="fade-right">
-                    Don't let an ordinary resume hold you back. Contact us now to schedule a consultation and step ahead towards your success.
-                </p>
+               
             </div>
 
                        <section

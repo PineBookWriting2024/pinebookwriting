@@ -1,6 +1,6 @@
+import { usePopupcta } from "../../context/PopupContext";
 import useHubspotForm from "/hooks/hubspot";
 import React, { useState, useRef } from "react";
-// import SnowFall from "./SnowFall";
 
 import Image from "next/image";
 import Link from "next/link";
@@ -31,7 +31,7 @@ export default function BrandHero() {
     const [showSuccess, setShowSuccess] = useState(false);
     const [phoneError, setPhoneError] = useState("");
     const swiperRef2 = useRef(null);
-
+const { openModal } = usePopupcta();
     // Object
     const clientLogos = [
         {
@@ -147,16 +147,80 @@ export default function BrandHero() {
                             {/* <WavyText text="DO YOU HAVE A MANUSCRIPT READY TO BE PUBLISHED?" replay={true} style={{ color: 'white' }} className="text-3xl font-bold text-white font-poppins md:text-5xl" /> */}
                             {/* <FadeIn> */}
                             <p className="pt-4 text-xl text-white">
-                               Are you in search of a team of writing experts or a full-scale book writing company? Pine Book Writing has an extensive team of award-winning book writers (all genres), copywriters, research writers and SEO writers that can offer all writing solutions under one umbrella. We don’t just write, but also guide. Get a FREE quote today!</p>
-                               <div class="flex justify-between text-white text-[18px] mt-2">
-  <div class="space-y-4">
-    <div>Skilled Writers</div>
-    <div>Quality-Control Deliveries</div>
-  </div>
-  <div class="space-y-4">
-    <div>Expert Assistance</div>
-    <div>Multiple Revisions</div>
-  </div>
+                               Are you in search of a team of writing experts or a full-scale book writing company? Pine Book Writing has an extensive team of award-winning book writers (all genres), copywriters, research writers and SEO writers that can offer all writing solutions under one umbrella. We don’t just write, but also guide. </p><button
+  onClick={openModal}
+  style={{
+    backgroundColor: "#000",
+    color: "#fff",
+    padding: "12px 32px",
+    fontSize: "16px",
+    fontWeight: "600",
+    borderRadius: "50px",
+    border: "none",
+    cursor: "pointer",
+    boxShadow: "0 4px 14px 0 rgba(0,0,0,0.39)",
+    transition: "all 0.3s ease",
+    display: "flex",
+    alignItems: "center",
+    gap: "10px",
+    marginTop: "20px"
+  }}
+  onMouseOver={(e) => {
+    e.currentTarget.style.backgroundColor = "#333";
+    e.currentTarget.style.transform = "translateY(-2px)";
+    e.currentTarget.style.boxShadow = "0 6px 20px rgba(0,0,0,0.23)";
+  }}
+  onMouseOut={(e) => {
+    e.currentTarget.style.backgroundColor = "#000";
+    e.currentTarget.style.transform = "translateY(0)";
+    e.currentTarget.style.boxShadow = "0 4px 14px 0 rgba(0,0,0,0.39)";
+  }}
+>
+  Get a FREE quote today!
+  <svg 
+    width="18" 
+    height="18" 
+    viewBox="0 0 24 24" 
+    fill="none" 
+    stroke="currentColor" 
+    strokeWidth="2" 
+    strokeLinecap="round" 
+    strokeLinejoin="round"
+  >
+    <line x1="5" y1="12" x2="19" y2="12" />
+    <polyline points="12 5 19 12 12 19" />
+  </svg>
+</button>
+                               <div className="flex justify-between text-white text-[18px] mt-2">
+  <div class="bg-[#d2d2d298] rounded-2xl shadow-xl p-8 max-w-4xl mx-auto">
+  
+ <ul class="grid grid-cols-2 gap-x-16 gap-y-6 text-white font-semibold text-lg justify-center">
+  
+  <li class="flex items-center text-gray-900 gap-2">
+    <span class="text-gray-800 text-xl">✔</span>
+    Skilled Writers
+  </li>
+
+  
+
+  <li class="flex items-center text-gray-900 gap-2">
+    <span class="text-gray-800 text-xl">✔</span>
+    Expert Assistance
+  </li>
+
+   <li class="flex items-center gap-2 text-gray-900  whitespace-nowrap">
+  <span class="text-gray-800 text-xl">✔</span>
+  Quality-Control Deliveries
+</li>
+ 
+
+  <li class="flex items-center gap-2 text-gray-900">
+    <span class="text-gray-800 text-xl">✔</span>
+    Multiple Revisions
+  </li>
+
+</ul>
+</div>
 </div>
 
                             <h4 className="mt-8 text-2xl font-bold text-white uppercase font-poppins">Our Credibility</h4>

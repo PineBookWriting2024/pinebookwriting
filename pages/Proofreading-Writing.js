@@ -54,7 +54,7 @@ export default function BookEditing() {
             <BrandTopBar />
             <BrandNavbar />
             <BrandPrimaryHeader
-                photo_banner={"/images/Narrative-Writing/1.webp"}
+                photo_banner={"/images/ProofReading/1.webp"}
                 title="Professional Proofreading Services - A Final Check Before You Publish"
                 desc="Our book proofreading services give your manuscript a careful final review before printing or publishing. We fix grammar, typos, and other small errors to make your book look clean and ready for readers."
             />
@@ -75,7 +75,7 @@ export default function BookEditing() {
                         <p className="pt-3 text-xl text-left font-poppins">That’s where our book proofreading services step in. We provide line-by-line proofreading to make your manuscript polished and error-free. Our professional book proofreaders focus on grammar and punctuation correction, typo and consistency checks, and formatting details. This is not rewriting. It’s careful final manuscript review before publishing. Whether you need manuscript proofreading services for print or ebook, we help you publish with confidence. Because readers do notice small mistakes… even if writers sometimes don’t.</p>
                     </div>
                     <div className="flex justify-center text-center basis-1/2 abt-pic md:justify-center">
-                        <Image src={"/images/Narrative-Writing/ghost-pic.webp"} width={470} height={300}
+                        <Image src={"/images/ProofReading/ghost-pic.webp"} width={470} height={300}
                             loading="lazy"
                             alt="about img"
                             className="aos-init aos-animate"
@@ -94,7 +94,7 @@ export default function BookEditing() {
 
                     <div className="relative z-10 justify-center hidden md:col-span-3 md:flex md:justify-start">
                         <Image
-                            src="/images/Narrative-Writing/cta-book-12.webp"
+                            src="/images/ProofReading/cta-book-12.webp"
                             alt="Book 1"
                             className="absolute l-book -top-20 md:-top-36"
                             height={600}
@@ -245,7 +245,7 @@ Our proofreading services cover everything that helps us catch overlooked errors
                 <div className="relative left-0 px-12 py-10 mb-8 brand-choose-us-section ms-auto md:left-52 md:px-20 md:mt-16 " >
                     <div className="flex flex-col items-center md:flex-row" data-aos="fade-right" data-aos-delay="0" data-aos-duration="500">
                         <div className="basis-1/3 brand-choose-us-vector">
-                            <Image src={"/images/Narrative-Writing/WhyChooseUs2.webp"} width={500} height={500}
+                            <Image src={"/images/ProofReading/WhyChooseUs2.webp"} width={500} height={500}
                                 loading="lazy"
                                 alt="about img"
                                 className="brand-about-img"

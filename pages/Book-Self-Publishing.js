@@ -54,7 +54,7 @@ export default function BookEditing() {
             <BrandTopBar />
             <BrandNavbar />
             <BrandPrimaryHeader
-                photo_banner={"/images/Story-Writing/1.webp"}
+                photo_banner={"/images/Publishing-Services/1.webp"}
                 title="Book Self-Publishing Services | Your Book, Your Way"
                 desc="Our book self-publishing services help authors publish without confusion or stress. From setup to final upload, we guide you step by step, keeping your ownership safe and clear."
             />
@@ -77,7 +77,7 @@ export default function BookEditing() {
                     </div>
 
                     <div className="flex justify-center text-center basis-1/2 abt-pic md:justify-center">
-                        <Image src={"/images/Story-Writing/ghost-pic.webp"} width={470} height={300}
+                        <Image src={"/images/Publishing-Services/ghost-pic.webp"} width={470} height={300}
                             loading="lazy"
                             alt="about img"
                             className="aos-init aos-animate"
@@ -96,7 +96,7 @@ export default function BookEditing() {
             
                                 <div className="relative z-10 justify-center hidden md:col-span-3 md:flex md:justify-start">
                                     <Image
-                                        src="/images/Story-Writing/cta-book-12.webp"
+                                        src="/images/Publishing-Services/cta-book-12.webp"
                                         alt="Book 1"
                                         className="absolute l-book -top-20 md:-top-36"
                                         height={600}
@@ -247,7 +247,7 @@ We offer flexible self-publishing support that covers both print and digital pub
                 <div className="relative left-0 px-12 py-10 mb-8 brand-choose-us-section ms-auto md:left-52 md:px-20 md:mt-16 " >
                     <div className="flex flex-col items-center md:flex-row" data-aos="fade-right" data-aos-delay="0" data-aos-duration="500">
                         <div className="basis-1/3 brand-choose-us-vector">
-                        <Image src={"/images/Story-Writing/WhyChooseUs2.webp"} width={500} height={500}
+                        <Image src={"/images/Publishing-Services/WhyChooseUs2.webp"} width={500} height={500}
                                 loading="lazy"
                                 alt="about img"
                                 className="brand-about-img"

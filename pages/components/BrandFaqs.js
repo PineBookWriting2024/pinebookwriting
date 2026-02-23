@@ -26,17 +26,20 @@ export default function BrandFaqs() {
     };
 
     const faqData = [
-        { question: "Do your services include research when needed?", answer: "Yes. For non-fiction, biographies, or educational books, research is included. We don’t overdo it though. Just enough to support the story or message properly." },
+        { question: "What does a book writing company actually do?", answer: "A book writing company helps you write your ideas and create a professional book. Good professional writers support you at every step, whether you require assistance in story ideation, chapter outline or writing the right words." },
 
-        { question: "How is pricing decided for different writing services?", answer: "Pricing depends on word count, genre, complexity, and timeline. A short story is not priced like a full book. We explain costs clearly before starting. No hidden stuff." },
+        { question: "Can I hire a book writer if I only have an idea?", answer: "Yes. Many clients start with just an idea. Our writers help organize thoughts, build structure, and slowly turn your idea into a complete book." },
 
-        { question: "Are these services suitable for first-time authors?", answer: "Very much. Many clients are writing their first book. We explain things slowly, answer small questions, and don’t assume you already know the publishing or writing world." },
+        { question: "AIs my book idea kept confidential?", answer: "Yes, confidentiality matters. Your story ideas and personal details stay private. We always maintain complete privacy. You own all credits and ownership rights as well." },
 
-        { question: "What if I’m not sure which writing service I need?", answer: "That happens a lot. You can explain your idea and goal, and we guide you. We’ll suggest the right service instead of pushing something that doesn’t fit." },
+        { question: "Can you help if my book is already half written?", answer: "Yes. We also work with unfinished drafts. Our writers review what you share. They check and fix gaps, improve flow and help complete your book smoothly." },
         
-        { question: "Can I choose only one service instead of a full package?", answer: "Although we offer affordable book writing packages. But yes, you can choose. Some clients only need writing, others editing, some just refinement. You don’t have to buy everything. We keep services flexible. Not forced bundles." },
+       {
+  question: "How do I get started with your book writing agency?",
+  answer: "You can sign up via our contact form or by calling **(866) 841-7463**. A representative will guide you, suggest the best package, timeline, and assign a dedicated writer."
+},
 
-        { question: "How do revisions work across different writing services?", answer: "Revisions are part of the process. After each draft, you review and share thoughts. We revise based on that. Sometimes it takes one round, sometimes two or three. That’s normal." }
+        { question: "How long does it take to write a book?", answer: "The timeline depends on the book’s genre, complexity, and length. On average, projects take 3 to 6 months, depending on the material provided and research requirements." }
     ];
 
     return (

@@ -292,16 +292,34 @@ const handleOpenChat = () => {
                             <h2 className="mt-10 text-2xl font-bold text-white uppercase font-poppins md:text-3xl md:mt-0" data-aos="zoom-in-left" data-aos-delay="100">Why Choose Our Social Media </h2>
                             <p className="mt-2 text-white">At Pine Book Writing, we believe social media isn't just about posting. Instead, it's a tool to connect and engage people beyond their expectations. That’s why we’ve designed our SMM copywriting service in a way that genuinely helps brands attract attention and bring notable results. Each of your posts matters to us.</p>
                             <div className="flex flex-col gap-2 mt-6 md:flex-row md:gap-10">
-                                <ul>
-                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />	Skilled Copywriters </li>
-                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} /> Fast Turnaround </li>
-                                    <li className="flex items-center gap-3 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} /> 	Platform-Specific Content </li>
-                                </ul>
-                                <ul>
-                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} /> 	Affordable Packages</li>
-                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} /> 	Graphics & Video Creation</li>
-                                    <li className="flex items-center gap-3 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />	Brand Voice Alignment</li>
-                                </ul>
+                               <ul>
+  <li className="flex items-center gap-3 mb-2 text-sm font-poppins whitespace-nowrap">
+    <Image src="/images/check-mark.png" className="icon" width={13} height={13} /> 
+    Skilled Copywriters
+  </li>
+  <li className="flex items-center gap-3 mb-2 text-sm font-poppins whitespace-nowrap">
+    <Image src="/images/check-mark.png" className="icon" width={13} height={13} /> 
+    Fast Turnaround
+  </li>
+  <li className="flex items-center gap-3 text-sm font-poppins whitespace-nowrap">
+    <Image src="/images/check-mark.png" className="icon" width={13} height={13} /> 
+    Platform-Specific Content
+  </li>
+</ul>
+                               <ul>
+  <li className="flex items-center gap-3 mb-2 text-sm font-poppins whitespace-nowrap">
+    <Image src="/images/check-mark.png" className="icon" width={13} height={13} /> 
+    Affordable Packages
+  </li>
+  <li className="flex items-center gap-3 mb-2 text-sm font-poppins whitespace-nowrap">
+    <Image src="/images/check-mark.png" className="icon" width={13} height={13} /> 
+    Graphics & Video Creation
+  </li>
+  <li className="flex items-center gap-3 text-sm font-poppins whitespace-nowrap">
+    <Image src="/images/check-mark.png" className="icon" width={13} height={13} /> 
+    Brand Voice Alignment
+  </li>
+</ul>
                             </div>
                             {/* <BrandAudioPlayer src="/brand-img/why-choose-us-voice.wav" /> */}
                             <div>

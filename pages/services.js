@@ -43,9 +43,9 @@ export default function Services() {
                     <div className="basis-1/2 abt-txt m1-h p1 aos-init aos-animate" data-aos="fade-right" data-aos-duration="1000">
                     <h2 className="text-3xl font-bold uppercase font-poppins md:text-4xl">Professional Book Writing Services | Pine Book Writing</h2>
 
-                        <h2 className="text-2xl uppercase font-poppins md:text-3xl">
+                        <h3 className="text-2xl uppercase font-poppins md:text-3xl">
                       All genres. One trusted team.
-                        </h2>
+                        </h3>
                        
                         <p className="pt-3 text-xl text-left font-poppins">
                       Writing a book often starts with excitement. But then confusion hits. And that’s normal. Our book writing services are designed to support writers and authors at every stage of the journey. We work with fiction and non-fiction, short or long projects, and first-time or experienced authors. Here, you’ll collaborate with experienced project managers and experienced book writers who listen carefully before executing your vision. </p>
@@ -116,7 +116,7 @@ export default function Services() {
                             </div>
                             <div className="relative basis-1/2 brand-service-card-img">
                                 <span className="square">
-                                    <Link href="/resume-writing">Read More</Link>
+                                    <Link href="/fiction-page">Read More</Link>
                                 </span>
                                 <div className="service-card-img">
                                     <Image src={"/brand-img/fiction-9.png"} width={250} height={200}></Image>
@@ -130,7 +130,7 @@ export default function Services() {
                         <div className="flex flex-col gap-4 mx-auto text-center brand-service-card md:flex-row md:w-full">
                             <div className="relative basis-1/2 brand-service-card-img">
                                 <span className="square">
-                                    <Link href="/press-release-writing">Read More</Link>
+                                    <Link href="/Non-Fiction-Writing">Read More</Link>
                                 </span>
                                 <div className="service-card-img">
                                     <Image src={"/brand-img/non-fiction-7.png"} width={270} height={200}></Image>
@@ -152,7 +152,7 @@ export default function Services() {
                         <div className="flex flex-col gap-4 mx-auto text-center brand-service-card md:flex-row md:w-full">
                             <div className="relative basis-1/2 brand-service-card-img">
                                 <span className="square">
-                                    <Link href="/web-copywriting">Read More</Link>
+                                    <Link href="/Sci-Fi-writing">Read More</Link>
                                 </span>
                                 <div className="service-card-img">
                                     <Image src={"/brand-img/wcw.jpg"} width={250} className="icon" height={200}></Image>
@@ -211,7 +211,7 @@ export default function Services() {
                             </div>
                             <div className="relative basis-1/2 brand-service-card-img">
                                 <span className="square">
-                                    <Link href="/childrens-book-writing">Read More</Link>
+                                    <Link href="/Childrens-Books">Read More</Link>
                                 </span>
                                 <div className="service-card-img">
                                     <Image src={"/brand-img/b&a.jpg"} width={250} height={200}></Image>
@@ -230,7 +230,7 @@ export default function Services() {
                         <div className="flex flex-col gap-4 mx-auto text-center brand-service-card md:flex-row md:w-full">
                             <div className="relative basis-1/2 brand-service-card-img">
                                 <span className="square">
-                                    <Link href="/wikipedia-writing">Read More</Link>
+                                    <Link href="/web-copywriting">Read More</Link>
                                 </span>
                                 <div className="service-card-img">
                                     <Image src={"/brand-img/ww.jpg"} width={270} height={200}></Image>
@@ -252,7 +252,7 @@ export default function Services() {
                         <div className="flex flex-col gap-4 mx-auto text-center brand-service-card md:flex-row md:w-full">
                             <div className="relative basis-1/2 brand-service-card-img">
                                 <span className="square">
-                                    <Link href="/script-writing">Read More</Link>
+                                    <Link href="/blog-article-writing">Read More</Link>
                                 </span>
                                 <div className="service-card-img">
                                     <Image src={"/brand-img/sw.jpg"} width={250} className="icon" height={200}></Image>
@@ -289,7 +289,7 @@ export default function Services() {
                             </div>
                             <div className="relative basis-1/2 brand-service-card-img">
                                 <span className="square">
-                                    <Link href="/social-media-copywriting">Read More</Link>
+                                    <Link href="/script-writing">Read More</Link>
                                 </span>
                                 <div className="service-card-img">
                                     <Image src={"/brand-img/smcw.jpg"} width={250} height={200}></Image>
@@ -324,7 +324,7 @@ export default function Services() {
 
                             <div className="relative basis-1/2 brand-service-card-img">
                                 <span className="square">
-                                    <Link href="https://pinebookpublishing.com/book-editing" target="_blank">Read More</Link>
+                                    <Link href="/Rhymes-Writing" target="_blank">Read More</Link>
                                 </span>
                                 <div className="service-card-img">
                                     <Image src={"/brand-img/service-img1.png"} width={250} height={200}></Image>
@@ -346,7 +346,7 @@ export default function Services() {
 
                             <div className="relative basis-1/2 brand-service-card-img">
                                 <span className="square">
-                                    <Link href="https://pinebookpublishing.com/proofreading" target="_blank">Read More</Link>
+                                    <Link href="/Book-Self-Publishing" target="_blank">Read More</Link>
                                 </span>
                                 <div className="service-card-img">
                                     <Image src={"/brand-img/service-img2.png"} width={250} height={200}></Image>
@@ -381,7 +381,7 @@ export default function Services() {
                             </div>
                             <div className="relative basis-1/2 brand-service-card-img">
                                 <span className="square">
-                                    <Link href="https://pinebookpublishing.com/book-formatting" target="_blank">Read More</Link>
+                                    <Link href="/Book-Editing" target="_blank">Read More</Link>
                                 </span>
                                 <div className="service-card-img">
                                     <Image src={"/brand-img/service-img3.webp"} width={270} height={200}></Image>
@@ -404,7 +404,7 @@ export default function Services() {
                             </div>
                             <div className="relative basis-1/2 brand-service-card-img">
                                 <span className="square">
-                                    <Link href="https://pinebookpublishing.com/typesetting-layout-adjustment" target="_blank">Read More</Link>
+                                    <Link href="/Proofreading-Writing" target="_blank">Read More</Link>
                                 </span>
                                 <div className="service-card-img">
                                     <Image src={"/brand-img/service-img4.webp"} width={250} className="icon" height={200}></Image>
@@ -418,7 +418,7 @@ export default function Services() {
                         <div className="flex gap-4 brand-service-card">
                             <div className="relative basis-1/2 brand-service-card-img">
                                 <span className="square">
-                                    <Link href="https://pinebookpublishing.com/book-publishing" target="_blank">Read More</Link>
+                                    <Link href="/Book-Formatting-Writing" target="_blank">Read More</Link>
                                 </span>
                                 <div className="service-card-img">
                                     <Image src={"/brand-img/service-img6.webp"} width={250} height={200}></Image>

@@ -69,7 +69,7 @@ export default function BrandServices() {
                             </div>
                             <div className="relative basis-1/2 brand-service-card-img">
                                 <span className="square">
-                                    <Link href="/fiction-book-writing">Read More</Link>
+                                    <Link href="/fiction-page">Read More</Link>
                                 </span>
                                 <div className="service-card-img">
                                     <Image src={"/brand-img/fiction-9.png"} width={250} height={200}></Image>
@@ -83,7 +83,7 @@ export default function BrandServices() {
                         <div className="flex flex-col gap-4 mx-auto text-center brand-service-card md:flex-row md:w-full">
                             <div className="relative basis-1/2 brand-service-card-img">
                                 <span className="square">
-                                    <Link href="/non-fiction-writing">Read More</Link>
+                                    <Link href="/Non-Fiction-Writing">Read More</Link>
                                 </span>
                                 <div className="service-card-img">
                                     <Image src={"/brand-img/non-fiction-9.png"} width={270} height={200}></Image>
@@ -105,7 +105,7 @@ export default function BrandServices() {
                         <div className="flex flex-col gap-4 mx-auto text-center brand-service-card md:flex-row md:w-full">
                             <div className="relative basis-1/2 brand-service-card-img">
                                 <span className="square">
-                                    <Link href="/web-copywriting">Read More</Link>
+                                    <Link href="/Sci-Fi-writing">Read More</Link>
                                 </span>
                                 <div className="service-card-img">
                                     <Image src={"/brand-img/wcw.jpg"} width={250} className="icon" height={200}></Image>
@@ -161,7 +161,7 @@ export default function BrandServices() {
                             </div>
                             <div className="relative basis-1/2 brand-service-card-img">
                                 <span className="square">
-                                    <Link href="/blog-article-writing">Read More</Link>
+                                    <Link href="/Childrens-Books">Read More</Link>
                                 </span>
                                 <div className="service-card-img">
                                     <Image src={"/brand-img/b&a.jpg"} width={250} height={200}></Image>

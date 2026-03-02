@@ -23,17 +23,19 @@ export default function BrandChooseUs() {
                         </div>
                         <div className="py-8 basis-1/2 md:ml-20">
                             <h2 className="mt-0 text-2xl font-bold text-white uppercase font-poppins md:text-4xl md:mt-20" data-aos="zoom-in-left" data-aos-delay="100">What Makes Us the Best Book Writing Company?</h2>
-                            <p className="text-white mt-2 w-[95%]">At Pine Book Writing, our book writers for hire do not just write on all genres, but each of them specializes in a different genre. Most of them are published authors who closely understand all the ups and downs of the writing and publishing journey. We've helped hundreds of clients make their books best-selling with our impeccable book writing services. </p>
+                           <p className="text-white mt-2 w-[95%]">
+  At Pine Book Writing, our book writers for hire do not just write on all genres, but each of them specializes in a different genre. Most of them are published authors who closely understand all the ups and downs of the writing and publishing journey. We've helped hundreds of clients make their books best-selling with our impeccable book writing services.
+</p>
                             <div className="flex flex-col gap-2 mt-6 md:flex-row md:gap-10">
                                 <ul>
-                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />		Fast Deliveries</li>
-                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />		100% Confidentiality</li>
-                                    <li className="flex items-center gap-3 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />		Writer-Author Collaboration</li>
+                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />	100% Author Credit</li>
+                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />		Personalized Support</li>
+                                    <li className="flex items-center gap-3 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />		Proofreading & Editing</li>
                                 </ul>
                                 <ul>
                                     <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />		Multiple Revisions</li>
-                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />		Chapter-by-Chapter Work</li>
-                                    <li className="flex items-center gap-3 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Quality Assurance</li>
+                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />			Quality Assurance</li>
+                                    <li className="flex items-center gap-3 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Fast Turnaround Time</li>
                                 </ul>
                             </div>
                             {/* <BrandAudioPlayer src="/brand-img/why-choose-us-voice.wav" /> */}

@@ -16,27 +16,31 @@ export default function BrandAbout(props) {
 
     return (
         <>
-            <div className="container mx-auto max-w-screen-xl overflow-hidden pt-0 md:pt-20">
-                <div className="flex justify-center items-center flex-col md:flex-row lg:flex-row px-4 md:px-0 py-10 md:py-0 pb-0">
+            <div className="container max-w-screen-xl pt-0 mx-auto overflow-hidden md:pt-20">
+                <div className="flex flex-col items-center justify-center px-4 py-10 pb-0 md:flex-row lg:flex-row md:px-0 md:py-0">
                     <div className="basis-1/2 abt-txt m1-h p1 aos-init aos-animate" data-aos="fade-right" data-aos-duration="1000">
-                        <h4 className="font-poppins text-3xl md:text-5xl font-bold">
-                        {props.headingmain}
-                        </h4>
-                        <p className="font-poppins text-xl pt-4">
+                       <h4 className="text-3xl font-bold font-poppins md:text-5xl">
+  {props.headingmain}
+</h4>
+
+<h3 className="mt-3 text-2xl font-semibold font-poppins md:text-3xl">
+  {props.headingsub}
+</h3>
+                        <p className="pt-4 text-xl font-poppins">
                             {props.subdescone}
                         </p>
-                        <p className="font-poppins text-xl mb-5">
+                        <p className="mb-5 text-xl font-poppins">
                             {props.subdesctwo}
                         </p>
-                        <p className="font-poppins text-xl mb-8">
+                        <p className="mb-8 text-xl font-poppins">
                             {props.subdescthree}
                         </p>
                         {isHomePage && (
-                            <Link href="/about" className="button font-poppins brand-nav-btn-1 brand-nav-btn shadow-xl mt-10 cursor-pointer btn-f ">READ MORE</Link>
+                            <Link href="/about" className="mt-10 shadow-xl cursor-pointer button font-poppins brand-nav-btn-1 brand-nav-btn btn-f ">READ MORE</Link>
                         )}
                         {/* </FadeIn> */}
                     </div>
-                    <div className="basis-1/2 abt-pic text-center flex justify-center md:justify-end mt-10">
+                    <div className="flex justify-center mt-10 text-center basis-1/2 abt-pic md:justify-end">
                         <motion.div
                             initial={false}
                             animate={

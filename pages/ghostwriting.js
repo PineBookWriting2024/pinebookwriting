@@ -1,83 +1,83 @@
-import { usePopupcta } from "../context/PopupContext";
-import React, { useState } from "react";
-import Head from "next/head";
-import Image from "next/image";
-import Link from "next/link";
-import BrandNavbar from "./components/BrandNavbar";
-import BrandBannerLogo from "./components/BrandBannerLogo";
-import BrandPrimaryHeader from "./components/BrandPrimaryHeader";
-import NewBrandFooter from "./components/NewBrandFooter";
-import BrandTopBar from "./components/BrandTopBar";
-import { FaPhoneVolume } from "react-icons/fa";
-import CTAButton from './components/CTAButton';
+    import { usePopupcta } from "../context/PopupContext";
+    import React, { useState } from "react";
+    import Head from "next/head";
+    import Image from "next/image";
+    import Link from "next/link";
+    import BrandNavbar from "./components/BrandNavbar";
+    import BrandBannerLogo from "./components/BrandBannerLogo";
+    import BrandPrimaryHeader from "./components/BrandPrimaryHeader";
+    import NewBrandFooter from "./components/NewBrandFooter";
+    import BrandTopBar from "./components/BrandTopBar";
+    import { FaPhoneVolume } from "react-icons/fa";
+    import CTAButton from './components/CTAButton';
 
-export default function GhostwritingServices() {
-  const { openModal } = usePopupcta();
-  const [openFAQ, setOpenFAQ] = useState(null);
+    export default function GhostwritingServices() {
+    const { openModal } = usePopupcta();
+    const [openFAQ, setOpenFAQ] = useState(null);
 
-  const toggleFAQ = (index) => setOpenFAQ(openFAQ === index ? null : index);
+    const toggleFAQ = (index) => setOpenFAQ(openFAQ === index ? null : index);
 
-  const faqData = [
-    { question: "What is Ghostwriting?", answer: "Ghostwriting service is the name of hiring a professional writer for your book. In return, the writer will gather all the relevant information, conduct in-depth research, and craft a manuscript that meets your vision. Our professional ghostwriting services ensure your book feels authentic and well-written." },
-    { question: "Is ghostwriting ethical and authentic?", answer: "Absolutely, it is both ethical and authentic. Ghostwriting is extremely common, especially in the world of book writing. This service is considered the same as having any professional hired to perform a specific task. At Pine Book Writing, we offer affordable ghostwriting services to put your creative ideas into a manuscript with integrity." },
-    { question: "Who will own the rights in Ghostwriting?", answer: "We are just your writing partner. We work for you as a ghost writing service, and you own it. As an author, you own all the rights and credits for the final product. Not only that, the royalties your book earns will also be yours." },
-    { question: "Can I hire you to write one chapter and later the rest?", answer: "Yes, you can also hire us chapter by chapter. Here, we are confident that once you see our professional ghostwriters’ expertise, you will definitely want to move forward with your entire book. If you want to start with a single chapter, you’re welcome." },
-    { question: "How long will it take to write a book?", answer: "The completion time of the ghost book writing services depends on the complexity, genre, and your book’s length as well. However, we usually take 3 to 6 months on average. The time also depends on how much material you provide and the research required on the topic." },
-    { question: "How much does ghostwriting a book cost?", answer: "The cost of our book ghostwriting services varies based on your book’s length, genre, and complexity. You can view our ghostwriting packages or request a ghostwriter cost estimate from our representative to customize the plan according to your needs." },
-  ];
+    const faqData = [
+        { question: "What is Ghostwriting?", answer: "Ghostwriting service is the name of hiring a professional writer for your book. In return, the writer will gather all the relevant information, conduct in-depth research, and craft a manuscript that meets your vision. Our professional ghostwriting services ensure your book feels authentic and well-written." },
+        { question: "Is ghostwriting ethical and authentic?", answer: "Absolutely, it is both ethical and authentic. Ghostwriting is extremely common, especially in the world of book writing. This service is considered the same as having any professional hired to perform a specific task. At Pine Book Writing, we offer affordable ghostwriting services to put your creative ideas into a manuscript with integrity." },
+        { question: "Who will own the rights in Ghostwriting?", answer: "We are just your writing partner. We work for you as a ghost writing service, and you own it. As an author, you own all the rights and credits for the final product. Not only that, the royalties your book earns will also be yours." },
+        { question: "Can I hire you to write one chapter and later the rest?", answer: "Yes, you can also hire us chapter by chapter. Here, we are confident that once you see our professional ghostwriters’ expertise, you will definitely want to move forward with your entire book. If you want to start with a single chapter, you’re welcome." },
+        { question: "How long will it take to write a book?", answer: "The completion time of the ghost book writing services depends on the complexity, genre, and your book’s length as well. However, we usually take 3 to 6 months on average. The time also depends on how much material you provide and the research required on the topic." },
+        { question: "How much does ghostwriting a book cost?", answer: "The cost of our book ghostwriting services varies based on your book’s length, genre, and complexity. You can view our ghostwriting packages or request a ghostwriter cost estimate from our representative to customize the plan according to your needs." },
+    ];
 
-  const handleOpenChat = () => {
-    window.zE && window.zE('webWidget', 'open');
-  };
+    const handleOpenChat = () => {
+        window.zE && window.zE('webWidget', 'open');
+    };
 
-  return (
-    <>
-      <Head>
-        <title>Affordable Ghostwriting Services - Pine Book Writing</title>
-        <link rel="canonical" href="https://www.pinebookwriting.com/ghostwriting" />
-        <meta
-          name="description"
-          content="Want freedom from long sitting for outlining, writing, editing, and all the necessary tasks to write a perfect book? Hire our expert ghostwriting services."
-        />
-        <link rel="shortcut icon" href="/images/fav.webp" />
-      </Head>
+    return (
+        <>
+        <Head>
+            <title>Affordable Ghostwriting Services - Pine Book Writing</title>
+            <link rel="canonical" href="https://www.pinebookwriting.com/ghostwriting" />
+            <meta
+            name="description"
+            content="Want freedom from long sitting for outlining, writing, editing, and all the necessary tasks to write a perfect book? Hire our expert ghostwriting services."
+            />
+            <link rel="shortcut icon" href="/images/fav.webp" />
+        </Head>
 
-      <BrandTopBar />
-      <BrandNavbar />
+        <BrandTopBar />
+        <BrandNavbar />
 
-      <BrandPrimaryHeader
-        photo_banner={"/images/Ghostwriting/1.webp"}
-        title="Professional Ghostwriting Services for Every Author Worldwide"
-        desc={
-          <div>
-            <div className="mb-4">
-              Write your story the way your readers actually want. Hire our expert ghostwriting services. 
-              No matter if you are writing for the first time or already have written many books, 
-              our team of skilled writers is capable of writing books that match your vision and audience's expectations.
+        <BrandPrimaryHeader
+            photo_banner={"/images/Ghostwriting/1.webp"}
+            title="Professional Ghostwriting Services for Every Author Worldwide"
+            desc={
+            <div>
+                <div className="mb-4">
+                Write your story the way your readers actually want. Hire our expert ghostwriting services. 
+                No matter if you are writing for the first time or already have written many books, 
+                our team of skilled writers is capable of writing books that match your vision and audience's expectations.
+                </div>
+                <button
+                onClick={openModal}
+                style={{
+                    backgroundColor: "#000",
+                    color: "#fff",
+                    padding: "12px 32px",
+                    fontSize: "16px",
+                    fontWeight: "600",
+                    borderRadius: "50px",
+                    border: "none",
+                    cursor: "pointer",
+                    boxShadow: "0 4px 14px 0 rgba(0,0,0,0.39)",
+                    display: "inline-flex",
+                    alignItems: "center",
+                    gap: "10px",
+                    marginTop: "10px"
+                }}
+                >
+                Get a FREE quote today!
+                </button>
             </div>
-            <button
-              onClick={openModal}
-              style={{
-                backgroundColor: "#000",
-                color: "#fff",
-                padding: "12px 32px",
-                fontSize: "16px",
-                fontWeight: "600",
-                borderRadius: "50px",
-                border: "none",
-                cursor: "pointer",
-                boxShadow: "0 4px 14px 0 rgba(0,0,0,0.39)",
-                display: "inline-flex",
-                alignItems: "center",
-                gap: "10px",
-                marginTop: "10px"
-              }}
-            >
-              Get a FREE quote today!
-            </button>
-          </div>
-        }
-      />
+            }
+        />
 
       <BrandBannerLogo />
             <div className="container max-w-screen-xl pt-0 mx-auto overflow-hidden md:py-20">
@@ -101,7 +101,7 @@ export default function GhostwritingServices() {
   That's why we introduced book ghostwriting services,aiming to help new or experienced authors create books, from enthralling
   children's books and autobiographies to fiction or{" "}
   <Link href="/non-fiction">
-    <span className="text-blue-600 hover:underline">
+    <span className="text-black underline ">
       non-fiction literature
     </span>
   </Link>{" "}
@@ -117,7 +117,7 @@ export default function GhostwritingServices() {
   informative memoir ghostwriter, a suspenseful novel
   or a fascinating{" "}
   <Link href="/childrens-book-writing">
-    <span className="text-blue-600 hover:underline">
+    <span className="text-black underline ">
       children's storybook
     </span>
   </Link>
@@ -476,18 +476,19 @@ export default function GhostwritingServices() {
                             />
                         </div>
                         <div className="basis-1/2 md:ml-20">
-                            <h2 className="mt-10 text-2xl font-bold text-white uppercase font-poppins md:text-4xl md:mt-0" data-aos="zoom-in-left" data-aos-delay="100">What Makes Us The Best Ghostwriting Services In USA And WorldWide?</h2>
+                            <h2 className="mt-10 text-2xl font-bold text-white uppercase font-poppins md:text-4xl md:mt-0" data-aos="zoom-in-left" data-aos-delay="100">What Makes Us The Best Ghostwriting Services In USA & WorldWide?</h2>
                            <p className="mt-2 text-white">
-  professional ghostwriting services for authors. At{" "}
+   At{" "}
   <a
     href="https://www.pinebookwriting.com"
-    style={{ color: "#004080", fontWeight: "bold", textDecoration: "underline" }}
+    style={{ color: "#000000"  ,
+       fontWeight: "bold", textDecoration: "underline" }}
     target="_blank"
     rel="noopener noreferrer"
   >
     Pine Book Writing
   </a>
-  , we keep expertise, creativity, and transparency at our core to deliver in every genre. We promise to help create a book that feels authentic, professional, and completely yours. We offer:
+  , we keep expertise, creativity, and transparency at our core  to professional ghostwriting services for authors to deliver  in every genre. We promise to help to create a book that feels authentic, professional, and completely yours.We offer: 
 </p>
                             <div className="flex flex-col gap-2 mt-6 md:flex-row md:gap-10">
                                 <ul>

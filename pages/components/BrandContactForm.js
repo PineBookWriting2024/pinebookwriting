@@ -95,7 +95,7 @@ export default function BrandContact() {
                             </div>
 
                             <form className="basis-1/2 px-5 mb-5  md:ml-20" onSubmit={handleSubmit}>
-                                <h3 className="text-black leading-20 font-bold text-3xl md:text-4xl font-poppins text-start uppercase">
+                                <h3 className="text-black leading-20 font-bold text-3xl md:text-3xl font-poppins text-start uppercase">
                                     Let’s Get in Touch
                                 </h3>
                                 <p className="text-black leading-6  pb-5 text-base pt-4">

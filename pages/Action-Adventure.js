@@ -65,7 +65,7 @@ export default function BookEditing() {
                     <div className="basis-1/2 abt-txt m1-h p1 aos-init aos-animate" data-aos="fade-right" data-aos-duration="1000">
                         <h2 className="text-3xl font-bold uppercase font-poppins md:text-4xl">Where Action Actually Means Something</h2>
 
-                        <h2 className="text-2xl uppercase font-poppins md:text-3xl">
+                        <h2 className="text-2xl uppercase font-poppins md:text-xl">
                           Adventure Fiction Ghostwriting Services
                         </h2>
 

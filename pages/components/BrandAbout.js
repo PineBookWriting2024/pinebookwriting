@@ -19,13 +19,13 @@ export default function BrandAbout(props) {
             <div className="container max-w-screen-xl pt-0 mx-auto overflow-hidden md:pt-20">
                 <div className="flex flex-col items-center justify-center px-4 py-10 pb-0 md:flex-row lg:flex-row md:px-0 md:py-0">
                     <div className="basis-1/2 abt-txt m1-h p1 aos-init aos-animate" data-aos="fade-right" data-aos-duration="1000">
-                       <h4 className="text-3xl font-bold font-poppins md:text-5xl">
-  {props.headingmain}
-</h4>
+                        <h4 className="text-3xl font-bold font-poppins md:text-3xl">
+                            {props.headingmain}
+                        </h4>
 
-<h3 className="mt-3 text-2xl font-semibold font-poppins md:text-3xl">
-  {props.headingsub}
-</h3>
+                        <h3 className="mt-3 text-2xl font-semibold font-poppins md:text-2xl">
+                            {props.headingsub}
+                        </h3>
                         <p className="pt-4 text-xl font-poppins">
                             {props.subdescone}
                         </p>

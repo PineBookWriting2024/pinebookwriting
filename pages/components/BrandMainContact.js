@@ -99,7 +99,7 @@ export default function BrandMainContact() {
                     </div>
                     <div className="basis-full brand-main-contact-form">
                         <form className="px-10 md:px-20 py-12" onSubmit={handleSubmit}>
-                            <h3 className="text-black leading-20 font-bold text-4xl  font-poppins text-start uppercase aos-init aos-animate" data-aos="zoom-out">
+                            <h3 className="text-black leading-20 font-bold text-3xl  font-poppins text-start uppercase aos-init aos-animate" data-aos="zoom-out">
                                 Get in touch With Us
                             </h3>
                             <p className="text-black leading-6  pb-5 text-base">

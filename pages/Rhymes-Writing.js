@@ -69,7 +69,7 @@ export default function BookEditing() {
                         </h2>
                        
                         <p className="pt-3 text-xl text-left font-poppins">
-                       Good rhymes are not about matching words at the end. They're about sound, timing and how the line feels when read out loud. It requires a dedicated skillset and our rhyme writers at <a href="https://www.pinebookwriting.com" className="text-blue-500 hover:underline">Pine Book Writing</a> have expertise in it. They firmly know how to let words flow with a creative touch.</p>
+                       Good rhymes are not about matching words at the end. They're about sound, timing and how the line feels when read out loud. It requires a dedicated skillset and our rhyme writers at <a href="https://www.pinebookwriting.com" className="hover:underline">Pine Book Writing</a> have expertise in it. They firmly know how to let words flow with a creative touch.</p>
 
                         <p className="pt-3 text-xl text-left font-poppins">Whether you want to write rhymes for children's books, learning books, songs, or short poems, we take our time to understand and work on them accordingly.</p>
                         <p className="pt-3 text-xl text-left font-poppins">Looking to hire a rhyme writer who doesn't overdo it? This is your destination. Our team of professional rhyme writers keeps things clean yet readable. No heavy words. No awkward beats.</p>

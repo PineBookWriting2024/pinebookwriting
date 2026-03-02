@@ -72,7 +72,7 @@ export default function BrandLogo() {
                                 </a>
                                 <div className="mt-4">
                                     <h3 className="text-black text-sm title-font mb-1 font-bold font-poppins">{badge.title}</h3>
-                                    <h2 className="text-black title-font text-xs">{badge.desc}</h2>
+                                    <h4 className="text-black title-font text-xs">{badge.desc}</h4>
                                 </div>
                             </div>
                         ))} 

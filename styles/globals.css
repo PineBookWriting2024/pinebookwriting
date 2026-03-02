@@ -9,7 +9,7 @@
 @font-face{font-family:'Cinzel Decorative';
   src:url('../pages/Lucida\ Bright\ Regular.ttf') format('ttf');}
   body{font-family:'Lucida Bright Regular',sans-serif;}
-  p{font-size:17px!important;}
+  p{font-size:16px!important;}
   ::-webkit-scrollbar{width:12px;}
   ::-webkit-scrollbar-thumb{background-color:#1b1d43;border-radius:6px;border:3px solid white;}
   ::-webkit-scrollbar-track{background-color:#fff;}
@@ -1526,4 +1526,12 @@ section.brand-main-banner-video {
 
 .brand-footer svg {
     width: 16px;
+}
+
+a{
+  font-weight: unset !important;
+}
+
+h2{
+  font-size: 30px !important;
 }

@@ -189,9 +189,9 @@ export default function NewBrandFooter() {
                     </div>
 
                     <div className="widget-2 relative lg:w-1/4">
-                        <h2 className="title-font text-white tracking-widest text-2xl md:text-2xl mb-3 font-poppins font-bold	">
+                        <h3 className="title-font text-white tracking-widest text-2xl md:text-2xl mb-3 font-poppins font-bold	">
                             Services
-                        </h2>
+                        </h3>
                         <nav className="list-none md:mb-10 mb-6 md:mt-5">
                             {services.map((service, index) => (
                                 <li key={index} className="mt-3">
@@ -204,9 +204,9 @@ export default function NewBrandFooter() {
                     </div>
 
                     <div className="widget-2 relative lg:w-1/4">
-                     <h2 className="title-font text-white tracking-widest text-2xl md:text-2xl mb-3 font-poppins font-bold opacity-0">
+                     <h3 className="title-font text-white tracking-widest text-2xl md:text-2xl mb-3 font-poppins font-bold opacity-0">
                             Services
-                        </h2>
+                        </h3>
                         <nav className="list-none md:mb-10 mb-6 md:mt-5">
                             {servicessecond.map((service, index) => (
                                 <li key={index} className="mt-3">
@@ -220,9 +220,9 @@ export default function NewBrandFooter() {
                     </div>
 
                     <div className="widget-2 relative lg:w-1/4">
-                         <h2 className="title-font text-white tracking-widest text-2xl md:text-2xl mb-3 font-poppins font-bold opacity-0">
+                         <h3 className="title-font text-white tracking-widest text-2xl md:text-2xl mb-3 font-poppins font-bold opacity-0">
                             Services
-                        </h2>
+                        </h3>
                         <nav className="list-none md:mb-10 mb-6 md:mt-5">
                           {servicesthird.map((service, index) => (
                                 <li key={index} className="mt-3">
@@ -235,9 +235,9 @@ export default function NewBrandFooter() {
                     </div>
 
                     <div className="widget-3 relative lg:w-1/4">
-                            <h2 className="title-font text-white tracking-widest text-2xl md:text-2xl mb-5 font-poppins font-bold	">
+                            <h3 className="title-font text-white tracking-widest text-2xl md:text-2xl mb-5 font-poppins font-bold	">
                                 Contact Info
-                            </h2>
+                            </h3>
                             <Link
                                 href="tel:8668417463"
                                 className="text-white text-sm hover:text-white font-poppins flex items-center md:items-start mb-5"

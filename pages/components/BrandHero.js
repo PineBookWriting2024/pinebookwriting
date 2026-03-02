@@ -140,7 +140,7 @@ const { openModal } = usePopupcta();
                         <div className="mb-4">
                             <h3 className="mb-4 text-2xl text-white font-poppins md:text-3xl aos-init aos-animate"> <span className="px-2 py-0 text-2xl">Pine Book Writing</span></h3>
                             <FadeIn>
-                                <h1 className="text-3xl font-bold text-white uppercase font-poppins md:text-3xl">
+                                <h1 className="text-3xl font-bold text-white uppercase font-poppins md:text-2xl">
                                    Best Book Writing Company in USA & Worldwide
                                 </h1>
                             </FadeIn>
@@ -191,30 +191,30 @@ const { openModal } = usePopupcta();
     <polyline points="12 5 19 12 12 19" />
   </svg>
 </button>
-                               <div className="flex justify-between text-white text-[18px] mt-2">
-  <div class="bg-[#d2d2d298] rounded-2xl shadow-xl p-8 max-w-4xl mx-auto">
+                               <div className="flex justify-between text-white text-[18px] mt-5">
+  <div class="bg-[#d2d2d298] rounded-2xl shadow-xl p-4 w-full mx-auto">
   
- <ul class="grid grid-cols-2 gap-x-16 gap-y-6 text-white font-semibold text-lg justify-center">
+ <ul class="grid grid-cols-2 gap-x-16 gap-y-3 text-white font-semibold text-lg justify-center">
   
-  <li class="flex items-center text-gray-900 gap-2">
+  <li class="flex items-center text-gray-900 gap-2 text-sm">
     <span class="text-gray-800 text-xl">✔</span>
     Skilled Writers
   </li>
 
   
 
-  <li class="flex items-center text-gray-900 gap-2">
+  <li class="flex items-center text-gray-900 gap-2 text-sm">
     <span class="text-gray-800 text-xl">✔</span>
     Expert Assistance
   </li>
 
-   <li class="flex items-center gap-2 text-gray-900  whitespace-nowrap">
+   <li class="flex items-center gap-2 text-gray-900  whitespace-nowrap text-sm">
   <span class="text-gray-800 text-xl">✔</span>
   Quality-Control Deliveries
 </li>
  
 
-  <li class="flex items-center gap-2 text-gray-900">
+  <li class="flex items-center gap-2 text-gray-900 text-sm">
     <span class="text-gray-800 text-xl">✔</span>
     Multiple Revisions
   </li>
@@ -223,7 +223,7 @@ const { openModal } = usePopupcta();
 </div>
 </div>
 
-                            <h4 className="mt-8 text-2xl font-bold text-white uppercase font-poppins">Our Credibility</h4>
+                            <h4 className="mt-8 text-xl font-bold text-white uppercase font-poppins">Our Credibility</h4>
                             {/* </FadeIn> */}
                             <div className="flex items-center justify-start gap-2 mt-8 md:gap-x-8 client-logo-sec">
                                 <Swiper
@@ -376,7 +376,7 @@ const { openModal } = usePopupcta();
                                         Your Story Deserves to be Heard!
                                     </h5>
                                 </div> */}
-                                <div class="text-center" bis_skin_checked="1"><h4 class="font-poppins text-white text-2xl md:text-2xl">Ready to Start? Let’s Talk About Your Writing Project!</h4><h5 class="font-poppins text-white text-lg mb-3">We’re excited to hear about your book or writing idea. Share your thoughts, and let's help fulfill your literary dream!</h5></div>
+                                <div class="text-center" bis_skin_checked="1"><h4 class="font-poppins text-white text-2xl md:text-xl">Ready to Start? Let’s Talk About Your Writing Project!</h4><h5 class="font-poppins text-white text-sm mb-3">We’re excited to hear about your book or writing idea. Share your thoughts, and let's help fulfill your literary dream!</h5></div>
                                 <div className="">
                                     <div className="relative w-full col-span-2">
                                         <form className="flex flex-col items-start justify-start gap-3" onSubmit={handleSubmit}>

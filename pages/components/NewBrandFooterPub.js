@@ -50,9 +50,9 @@ export default function NewBrandFooter() {
                             </p>
                         </div>
                         <div className="lg:w-1/5 md:w-1/5 w-full px-4 widget-2 relative">
-                            <h2 className="title-font text-white tracking-widest text-2xl md:text-2xl mb-3 font-poppins font-bold	">
+                            <h3 className="title-font text-white tracking-widest text-2xl md:text-2xl mb-3 font-poppins font-bold	">
                                 Quick Links
-                            </h2>
+                            </h3>
                             <nav className="list-none mb-10 mt-5">
                                 <li>
                                     <Link href="/">
@@ -93,9 +93,9 @@ export default function NewBrandFooter() {
                             </nav>
                         </div>
                         <div className="lg:w-1/5 md:w-1/5 w-full px-4 widget-2 relative">
-                            <h2 className="title-font text-white tracking-widest text-2xl md:text-2xl mb-3 font-poppins font-bold	">
+                            <h3 className="title-font text-white tracking-widest text-2xl md:text-2xl mb-3 font-poppins font-bold	">
                                 Services
-                            </h2>
+                            </h3>
                             <nav className="list-none mb-10 mt-5">
                                 <li>
                                     <Link href="/ghostwriting" onClick={(e) => { e.preventDefault(); window.location.href = "/ghostwriting"; }}>
@@ -132,9 +132,9 @@ export default function NewBrandFooter() {
 
 
                         <div className="lg:w-1/4 md:w-1/4 w-full px-4 widget-3 relative">
-                            <h2 className="title-font text-white tracking-widest text-2xl md:text-2xl mb-3 font-poppins font-bold	">
+                            <h3 className="title-font text-white tracking-widest text-2xl md:text-2xl mb-3 font-poppins font-bold	">
                                 Contact Info
-                            </h2>
+                            </h3>
                             <Link
                                 href="tel:8887867135"
                                 className="text-white text-sm hover:text-white font-poppins flex justify-center md:justify-start mb-5"

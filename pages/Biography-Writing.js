@@ -72,9 +72,9 @@ export default function BookEditing() {
                         <p className="pt-3 text-xl text-left font-poppins">
                       Writing about your own life isn’t easy. Knowing where to start, what to include and what to leave out. That’s where our professional biography writing services help. We listen to YOU first. Then we shape your experiences into a story. A story that flows in a natural way. </p>
 
-                        <p className="pt-3 text-xl text-left font-poppins">At  <a href="https://www.pinebookwriting.com" className="text-blue-500 hover:underline">Pine Book Writing</a>, our biography writers work with different people. Be they entrepreneurs, executives, public figures or everyday people who want their stories written with care.</p>
+                        <p className="pt-3 text-xl text-left font-poppins">At  <a href="https://www.pinebookwriting.com" className="hover:underline">Pine Book Writing</a>, our biography writers work with different people. Be they entrepreneurs, executives, public figures or everyday people who want their stories written with care.</p>
 
-                         <p className="pt-3 text-xl text-left font-poppins">Some of our clients want a full biography book writing project. Others look for <a href="/Memoir-Writing" className="text-blue-500 hover:underline">memoir writing services</a> that focus on a specific phase, memory, or turning point in life. Both are welcome here.</p>
+                         <p className="pt-3 text-xl text-left font-poppins">Some of our clients want a full biography book writing project. Others look for <a href="/Memoir-Writing" className="hover:underline">memoir writing services</a> that focus on a specific phase, memory, or turning point in life. Both are welcome here.</p>
 
                           <p className="pt-3 text-xl text-left font-poppins">We handle your personal biography writing with respect, patience, and a lot of listening. Your voice stays yours. We just help you put it on paper in a way readers can actually connect with.</p>
                     </div>

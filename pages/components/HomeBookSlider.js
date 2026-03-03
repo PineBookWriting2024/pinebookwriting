@@ -547,7 +547,7 @@ export default function HomeBookSlider() {
                             </SwiperSlide>
                         ))}
                     </div>
-                    <h1 className="mt-4 text-xl text-center">We've Helped Many Writers Get Their Names Under the Best Titles</h1>
+                    <h2 className="mt-4 text-xl text-center">We've Helped Many Writers Get Their Names Under the Best Titles</h2>
                     {/* {ImageSlides.map((slide) => (
                         <SwiperSlide key={slide.id}>
                             {slide.url ? (

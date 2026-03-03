@@ -29,6 +29,7 @@ export default function BrandAbout(props) {
                         <p className="pt-4 text-xl font-poppins">
                             {props.subdescone}
                         </p>
+                        <br></br>
                         <p className="mb-5 text-xl font-poppins">
                             {props.subdesctwo}
                         </p>

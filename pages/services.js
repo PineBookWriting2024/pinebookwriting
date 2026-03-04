@@ -81,7 +81,7 @@ export default function Services() {
                         <p className="pt-3 text-xl text-left font-poppins">
                             Writing a book often starts with excitement. But then confusion hits. And that’s normal. Our book writing services are designed to support writers and authors at every stage of the journey. We work with fiction and non-fiction, short or long projects, and first-time or experienced authors. Here, you’ll collaborate with experienced project managers and experienced book writers who listen carefully before executing your vision. </p>
 
-                        <p className="pt-3 text-xl text-left font-poppins">We don't just help with writing. But with Planning. Drafting. Editing and Revisions. We work without rushing or forcing ideas. Every manuscript is shaped around your unique voice and handled with care. We believe in simple processes, honest guidance and writing that genuinely connects with readers.
+                        <p className="pt-3 text-xl text-left font-poppins">We don't just help with writing. But with Planning. Drafting. <a href="https://www.pinebookwriting.com/Book-Editing" className="underline">Editing</a> and Revisions. We work without rushing or forcing ideas. Every manuscript is shaped around your unique voice and handled with care. We believe in simple processes, honest guidance and writing that genuinely connects with readers.
                         </p>
                     </div>
                     <div className="flex justify-center text-center basis-1/2 abt-pic md:justify-center">

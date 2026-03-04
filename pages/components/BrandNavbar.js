@@ -146,7 +146,7 @@ export default function BrandNavbar() {
                                 {serviceDropdown && (
                                     <div className="brand-custom-dropdown-menu" onClick={(e) => e.stopPropagation()}>
                                         <div className="brand-services-dropdown-head">
-                                            <h2>Explore Our Writing Services</h2>
+                                            <h2 className='text-xl'>Explore Our Writing Services</h2>
                                             <p>Pick a category to see all available writing specialties.</p>
                                         </div>
                                         <div className="brand-services-dropdown-grid">

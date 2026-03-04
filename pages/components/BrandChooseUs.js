@@ -24,7 +24,7 @@ export default function BrandChooseUs() {
                         <div className="py-8 basis-1/2 md:ml-20">
                             <h2 className="mt-0 text-2xl font-bold text-white uppercase font-poppins md:text-4xl md:mt-20" data-aos="zoom-in-left" data-aos-delay="100">Why Authors Choose Our Book Writing Services</h2>
                             <p className="text-white mt-2 w-[95%]">
-                                At <a href="https://pinebookpublishing.com/">Pine Book Writing</a>, our book writing services are not just about writing and delivering. But we listen first. Understand your thoughts and your audience as well. We assign you a dedicated project manager to understand your needs, assign the best writer for your needs and keep you updated throughout the process. No copy/paste templates. Only original work.
+                                At <a href="https://pinebookpublishing.com/" className="underline">Pine Book Writing</a>, our book writing services are not just about writing and delivering. But we listen first. Understand your thoughts and your audience as well. We assign you a dedicated project manager to understand your needs, assign the best writer for your needs and keep you updated throughout the process. No copy/paste templates. Only original work.
                             </p>
                             <div className="flex flex-col gap-2 mt-6 md:flex-row md:gap-10">
                                 <ul>

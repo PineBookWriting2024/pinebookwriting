@@ -41,7 +41,7 @@ export default function SocialMediaCopywriting() {
                         href="https://www.pinetechware.com/"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-blue-400 underline hover:text-blue-500"
+                        className="underline hover:text-blue-500"
                     >
                         Pine Techware
                     </a>
@@ -50,7 +50,7 @@ export default function SocialMediaCopywriting() {
             )
         },
 
-        { question: "What information do you require to get started?", answer: "Want to know the exact cost? It depends on content length, type, and how many platforms you're hiring us for. We don't just offer affordable social media copywriting services, but we also keep transparency (no hidden or extra charges) and flexibility in packages that are absolutely customizable, considering your needs." },
+        { question: "What information do you require to get started?", answer: "Right after you've signed up for our service, we ask for a brief about your brand, your goals, and your audience. Then, we help you create your account. Already created? We review it, then start copywriting, keeping you updated about each piece of content." },
 
         { question: "How much does your social media copywriting service cost?", answer: "Want to know the exact cost? It depends on content length, type, and how many platforms you're hiring us for. We don't just offer affordable social media copywriting services, but we also keep transparency (no hidden or extra charges) and flexibility in packages that are absolutely customizable, considering your needs." },
 
@@ -85,9 +85,9 @@ export default function SocialMediaCopywriting() {
                     <div className="basis-1/2 abt-txt m1-h p1 aos-init aos-animate" data-aos="fade-right" data-aos-duration="1000">
 
                         <h2 className="text-3xl font-bold uppercase font-poppins md:text-4xl">A Reliable Social Media Copywriting Company USA</h2>
-                        <h2 className="text-2xl uppercase font-poppins md:text-3xl">
+                        <h3 className="mt-2 text-2xl font-semibold font-poppins md:text-2xl uppercase">
                             Bespoke Social Media Copy for Every Platform
-                        </h2>
+                        </h3>
                         <p className="pt-3 text-xl text-left font-poppins">
                             Social media is a crucial tool for your business if you want to get and retain your potential audience. To create a post, you need to hire social media copywriting services to help you build an emotional and friendly connection with your audience and accomplish your marketing objectives. That’s where{" "}
                             <a
@@ -180,8 +180,8 @@ export default function SocialMediaCopywriting() {
             <section className="relative flex justify-center pt-20 mx-auto mb-12 overflow-hidden text-center brand-process">
                 <div className="max-w-screen-xl">
                     <div className="mb-6 text-center">
-                        <h3 className="text-2xl text-black font-poppins">Our Service Workflow</h3>
-                        <h2 className="text-3xl font-bold text-black font-poppins md:text-4xl" data-aos="zoom-out-down">6-Step Process of Our Social Media Copywriting Services</h2>
+                        <h3 className="text-2xl text-black font-bold font-poppins">Our Service Workflow</h3>
+                        <h2 className="text-3xl text-black font-poppins md:text-4xl" data-aos="zoom-out-down">6-Step Process of Our Social Media Copywriting Services</h2>
                     </div>
 
                     <div className="grid gap-6 mb-6 md:grid-cols-3">
@@ -245,10 +245,10 @@ export default function SocialMediaCopywriting() {
 
 
             <section className="max-w-6xl px-4 py-16 mx-auto bg-white font-poppins">
-                <h2 className="mb-12 text-xl font-medium text-center text-gray-700 md:text-2xl">
+                <h2 className="mb-4 text-xl font-bold text-center text-gray-700 md:text-2xl">
                     Our Offerings
                 </h2>
-                <h2 className="mb-12 text-xl font-medium text-center text-gray-700 md:text-2xl">
+                <h2 className="mb-4 text-xl font-medium text-center text-gray-700 md:text-2xl">
                     Everything We Cover in Social Media Copywriting Service
                 </h2>
 

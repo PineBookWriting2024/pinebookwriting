@@ -27,27 +27,28 @@ export default function BlogWriting() {
     };
 
     const faqData = [
-        { question: "What kind of articles and blogs do you write?", answer: "Having a diverse team of article writers and bloggers on board, we produce a variety of articles and blogs, from informative, promotional (persuasive), and product reviews to entertaining content. Whether you require a blog or an in-depth article, they are familiar with various topics and styles to meet your needs." },
+        { question: "What makes your blog writing services different?", answer: "We combine SEO blog writing services with real audience research. Our blogs are written for both search engines and human readers, not just algorithms." },
 
-        { question: "How do I provide topic ideas for my articles and blogs?", answer: "You are always open to sharing your unique and creative ideas, keywords, or target audience with us. However, we also help select the right niche and suggest different engaging and trending topic ideas to thrive in your industry." },
+        { question: "Can I hire blog writers for a single post?", answer: "Yes. You can use our blog post writing service for single articles or ongoing monthly blog writing services packages." },
 
-        { question: "Can I request revisions to the article or blog?", answer: "Absolutely! Unlike many others, Pine Book Writing offers multiple revisions to achieve 100% client satisfaction. We embrace our clients’ valuable feedback and work together with you to make the necessary changes to make your post entirely according to your requirements." },
+        { question: "Do you provide SEO blog writing service only?", answer: "We provide both SEO blog writing service and general blog content writing services. If you don’t need SEO, we adjust accordingly." },
 
-        { question: "How much does your article and blog writing service cost?", answer: "The exact pricing for your article and blog project is entirely based on your project’s scope, tenure, and complexity. However, you will get transparent and affordable pricing from our customer service team." },
+        { question: "Who writes the blog articles?", answer: "Our professional blog writers have experience in multiple industries. We match writers based on niche and content style requirements." },
 
-        { question: "How long does it take to write an article or blog?", answer: "The time required to write an article or a blog depends on your specific niche, requirements, and word count, whether you need a 500-word-long article or a 2000-word-long blog post, a general blog post, or a keyword-rich article. We provide an estimated time of delivery during a project discussion." },
+        { question: "Are your blogs keyword-optimized?", answer: "Yes. We create keyword-optimized blogs with proper placement, headings, and natural usage to support blog SEO optimization." },
 
-        { question: "Do you offer SEO optimization for articles and blogs?", answer: "Yes, along with all kinds of writing services, here’s a dedicated service named “SEO Content Writing Services,” which is listed among other services. Our SEO writing experts conduct keyword research, optimize content structure, infuse relevant keywords, and adhere to SEO best practices to rank your content in search engine results." },
+        { question: "Do you help with blog content planning?", answer: "Yes. We assist with blog content planning and strategy so your content marketing blogs are consistent and aligned with your business goals." },
     ];
 
     return (
         <>
             <Head>
-                <title>Blog Writing | Pine Book Writing</title>
+                <title>Blog Writing Services | SEO Blog Writers for Hire</title>
                 <link rel="canonical" href="https://www.pinebookwriting.com/blog-article-writing" />
                 <meta
                     name="description"
-                    content="Everything about Pine Book Writing—your partner in crafting, editing, and publishing your story. Experience seamless service from manuscript to bookshelf."
+                    content="Get professional blog writing services that drive traffic and leads. Our SEO blog writing service delivers keyword-optimized, engaging blog articles that fit your industry and audience.
+"
                 />
                 <link rel="shortcut icon" href="/images/fav.webp" />
             </Head>
@@ -55,8 +56,10 @@ export default function BlogWriting() {
             <BrandNavbar />
             <BrandPrimaryHeader
                 photo_banner={"/images/blog-article-writing/1.webp"}
-                title="Professional Article & Blog Writing Services"
-                desc="Pine Book Writing offers premium article and blog writing services to help website owners, marketers, and bloggers get flawless and engaging pieces of content for their purposes. Contact us to get a free quote now!"
+                title="Professional Blog Writing Services For Bloggers & Marketers
+"
+                desc="We create blog writing services that help brands grow traffic, build trust, and actually convert readers. From SEO blog content to long-form blog posts, we write blogs people read till the end.
+"
             />
             <BrandBannerLogo />
 
@@ -64,13 +67,19 @@ export default function BlogWriting() {
                 <div className="flex flex-col items-center justify-center px-8 py-10 md:flex-row lg:flex-row md:px-0 md:py-0">
                     <div className="basis-1/2 abt-txt m1-h p1 aos-init aos-animate" data-aos="fade-right" data-aos-duration="1000">
                         
-                        <h2 className="text-3xl font-bold uppercase font-poppins md:text-4xl">Professional Article and Blog Writing Services</h2>
-                        <h2 className="text-2xl uppercase font-poppins md:text-3xl">
-                            Drive More Traffic & Engagement
-                        </h2>
-                        <p className="pt-3 text-xl text-left font-poppins">Are you a blogger willing to share your experiences or stories with others? Or are you a website owner or marketer searching for professional article and blog writing services to rank your website in search engine results? Pine Book Writing has you covered!</p>
+                        <h2 className="text-3xl font-bold uppercase font-poppins md:text-4xl">Professional Blog Writing Services That Actually Work
+</h2>
+                        <h3 className="text-2xl uppercase font-poppins md:text-3xl">
+                            Content That Brings Results
 
-                        <p className="pt-3 text-xl text-left font-poppins">Whether you are going to start a personal blog or have to write any type of article to drive more traffic to your business website, such as a product review, a news article, an informative guide, and more, all you need to have is well-researched and quality content. At Pine Book Writing, our experienced article and blog writers start their work with in-depth research and adhere to the SEO best practices that help your website rank high on search engine result pages (SERPs). They are also familiar with multiple writing styles and tones to meet your specific writing needs.</p>
+                        </h3>
+                        <p className="pt-3 text-xl text-left font-poppins">Not every blog writing service understands search intent. And honestly, that’s where most blogs fail. We focus on SEO blog writing services that are built around real keyword research, blog SEO optimization, and clear content structure.
+</p>
+
+                        <p className="pt-3 text-xl text-left font-poppins">Our professional blog writers create keyword-optimized blogs that are easy to read but still strong for search engines. We don’t stuff keywords. We place them naturally. Whether you need industry blog writing, content marketing blogs, or conversion-focused blogs, we write with purpose.
+</p>
+ <p className="pt-3 text-xl text-left font-poppins">We also help with blog content planning and strategy. Because without direction, blogs become random posts that don’t bring traffic. If you’re looking to hire blog writers who understand SEO and reader behavior, you’re in the right place.
+</p>
                     </div>
                     <div className="flex justify-center text-center basis-1/2 abt-pic md:justify-center">
                         <Image src={"/images/blog-article-writing/ghost-pic.webp"} width={470} height={300}
@@ -104,10 +113,11 @@ export default function BlogWriting() {
                                     
                                                         <div className="px-4 text-center md:col-span-6">
                                                             <h2 className="font-poppins text-2xl text-[#98caa9] font-semibold md:text-3xl uppercase">
-                                                                Looking for a Professional Blog & Article Writing Service? Let’s Connect!
+                                                                Let’s Build Blogs That Grow Traffic
                                                             </h2>
                                                             <p className="py-4 text-base md:text-lg">
-                                                                We have a dedicated team of blog and article writers who write content that informs, inspires, and helps make your audience keep reading your work.
+                                                                Start your SEO blog writing service today and work with blog content writers who know how to turn ideas into traffic and leads.
+
                                                             </p>
                                     
                                                             <div className="flex flex-col items-center justify-center gap-4 cta-btns sm:flex-row">
@@ -147,7 +157,7 @@ export default function BlogWriting() {
                 <div className="max-w-screen-xl">
                     <div className="mb-6 text-center">
                         <h3 className="text-2xl text-black font-poppins">Our Service Workflow</h3>
-                        <h2 className="text-3xl font-bold text-black font-poppins md:text-4xl" data-aos="zoom-out-down">6-Step Process of Our Article & Blog Writing Services</h2>
+                        <h2 className="text-3xl font-bold text-black font-poppins md:text-4xl" data-aos="zoom-out-down">6-Step Process of Our Blog Writing Services</h2>
                     </div>
 
                     <div className="grid gap-6 mb-6 md:grid-cols-3">
@@ -155,24 +165,25 @@ export default function BlogWriting() {
                         <div className="flex flex-row " data-aos="fade-left">
                             <div className="flex-col px-6 py-10 text-left brand-process-content">
                                 <span className="num-span"><b>01</b></span>
-                                <h2 className="text-2xl text-white font-poppins pro-h">Project Discovery</h2>
-                                <p className="">Our writing process begins with understanding your target audience, writing style, and other requirements to create content aligned with your vision.</p>
+                                <h2 className="text-2xl text-white font-poppins pro-h">Discussion</h2>
+                                <p className="">We first understand your niche, audience, and business goals. Some clients want traffic. Some want leads. We clarify expectations before writing even starts.</p>
                             </div>
                         </div>
 
                         <div className="flex flex-row" data-aos="fade-left">
                         <div className="flex-col px-6 py-10 text-left brand-process-content">
                         <span className="num-span"><b>02</b></span>
-                                <h2 className="text-2xl text-white font-poppins pro-h">Conduct Research</h2>
-                                <p className="">In this step, our team of writers conducts detailed research on your topic before writing the content to ensure the content is appropriately up-to-date.</p>
+                                <h2 className="text-2xl text-white font-poppins pro-h">Keyword Research</h2>
+                                <p className="">Our team researches primary and secondary keywords, search intent, and competitors. We build a blog content strategy that makes sense for long-term growth.</p>
                             </div>
                         </div>
 
                         <div className="flex flex-row" data-aos="fade-left">
                         <div className="flex-col px-6 py-10 text-left brand-process-content">
                         <span className="num-span"><b>03</b></span>
-                                <h2 className="text-2xl text-white font-poppins pro-h">Content Writing</h2>
-                                <p className="">After the research, one of our dedicated writers gets to work and create content based on your unique vision and requirements.</p>
+                                <h2 className="text-2xl text-white font-poppins pro-h">Outline Creation
+</h2>
+                                <p className="">Before drafting, we create a structured outline. Headings, subheadings, keyword placement. Everything is planned so the blog flows naturally and ranks better.</p>
                             </div>
                         </div>
                         
@@ -183,24 +194,25 @@ export default function BlogWriting() {
                         <div className="flex flex-row " data-aos="fade-left">
                         <div className="flex-col px-6 py-10 text-left brand-process-content">
                         <span className="num-span"><b>04</b></span>
-                                <h2 className="text-2xl text-white font-poppins pro-h">Editing</h2>
-                                <p className="">Our expert editors take a meticulous review and make necessary changes/edits to make your content error-less and readable.</p>
+                                <h2 className="text-2xl text-white font-poppins pro-h">Writing & Optimization</h2>
+                                <p className="">Our blog writers create SEO blog content that sounds human, not robotic. We focus on clarity, readability, and blog SEO optimization without overdoing anything.</p>
                             </div>
                         </div>
 
                         <div className="flex flex-row" data-aos="fade-left">
                         <div className="flex-col px-6 py-10 text-left brand-process-content">
                         <span className="num-span"><b>05</b></span>
-                                <h2 className="text-2xl text-white font-poppins pro-h">Plagiarism Check</h2>
-                                <p className="">Your content must be 100% unique. We use premium plagiarism-detection tools to ensure your content is not copied from anywhere.</p>
+                                <h2 className="text-2xl text-white font-poppins pro-h">Editing & Proofreading
+</h2>
+                                <p className="">Every blog article goes through editing for grammar, tone, and structure. Small errors can reduce trust, so we fix them carefully.</p>
                             </div>
                         </div>
 
                         <div className="flex flex-row" data-aos="fade-left">
                         <div className="flex-col px-6 py-10 text-left brand-process-content">
                         <span className="num-span"><b>06</b></span>
-                                <h2 className="text-2xl text-white font-poppins pro-h">Revision & Delivery</h2>
-                                <p className="">We will send you the draft and provide multiple revisions until it's perfect. Lastly, we'll deliver the final document in your desired format.</p>
+                                <h2 className="text-2xl text-white font-poppins pro-h">Review & Delivery</h2>
+                                <p className="">You receive the final blog post ready to publish. If revisions are needed, we adjust quickly. We keep the process simple and clear.</p>
                             </div>
                         </div>
                         
@@ -208,6 +220,43 @@ export default function BlogWriting() {
 
                 </div>
             </section>
+
+             <section className="max-w-6xl px-4 py-16 mx-auto bg-white font-poppins">
+                <h2 className="mb-4 text-xl font-bold text-center text-gray-700 md:text-2xl">
+                    Our Offerings
+                </h2>
+                <h2 className="mb-4 text-xl font-medium text-center text-gray-700 md:text-2xl">
+                    What’s Included In Our Blog Writing Services
+
+                </h2>
+
+                <p className="mb-12 text-xl font-medium text-center text-gray-700 md:text-2xl">
+                   Our blog writing services packages are built to support traffic growth, SEO rankings, and brand authority through consistent, high-quality blog articles.
+
+                </p>
+
+                <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3">
+                    {[
+                        { icon: '🖋️', label: 'SEO Blog Writing Services' },
+                        { icon: '🧐', label: 'Article Writing Services' },
+                        { icon: '📄', label: 'Long-Form Blog Posts' },
+                        { icon: '💼', label: 'Industry Blog Writing' },
+                        { icon: '⚙️', label: 'Blog Content Strategy' },
+                        { icon: '🎯', label: 'Blog SEO Optimization' },
+                    ].map((service, index) => (
+                        <div
+                            key={index}
+                            className="flex flex-col items-center justify-center h-32 p-4 text-center bg-[#f4f1ea] hover:bg-[#ebe8e0] transition-colors rounded-xl shadow-sm hover:shadow-md"
+                        >
+                            <div className="mb-2 text-3xl">{service.icon}</div>
+                            <span className="text-[10px] font-bold uppercase tracking-widest text-gray-600">
+                                {service.label}
+                            </span>
+                        </div>
+                    ))}
+                </div>
+            </section>
+
 
             <section className="overflow-hidden" >
                 <div className="relative left-0 px-12 py-10 mt-6 mb-8 brand-choose-us-section ms-auto md:left-52 md:px-20 md:mt-14 " >
@@ -220,18 +269,19 @@ export default function BlogWriting() {
                             />
                         </div>
                         <div className="basis-1/3 md:ml-20">
-                            <h2 className="mt-10 text-2xl font-bold text-white uppercase font-poppins md:text-4xl md:mt-0" data-aos="zoom-in-left" data-aos-delay="100">Why Choose Our Article & Blog Writing Service?</h2>
-                            <p className="mt-2 text-white">Start your own blog or write SEO-optimized articles for various purposes. We offer affordable article & blog writing services leveraging the immense expertise of experienced article writers and bloggers.</p>
+                            <h2 className="mt-10 text-2xl font-bold text-white uppercase font-poppins md:text-4xl md:mt-0" data-aos="zoom-in-left" data-aos-delay="100">Why Brands Choose Our Blog Writing Services</h2>
+                            <p className="mt-2 text-white">There are many blog writers for hire online. But finding professional blog writers who understand SEO, structure, and conversion is not easy. We mix experience with research. No guesswork. No random topics. We focus on value first. Rankings follow.
+</p>
                             <div className="flex flex-col gap-2 mt-6 md:flex-row md:gap-10">
                                 <ul>
-                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} /> Niche-Selection </li>
-                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} /> High-Quality Writing </li>
-                                    <li className="flex items-center gap-3 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} /> Timely Delivery </li>
+                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} /> Real keyword research </li>
+                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} /> Industry experience </li>
+                                    <li className="flex items-center gap-3 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} /> SEO-focused writing </li>
                                 </ul>
                                 <ul>
-                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} /> Topic Suggestions</li>
-                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} /> Affordable Pricing</li>
-                                    <li className="flex items-center gap-3 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} /> 100% Plagiarism-Free</li>
+                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} /> Conversion intent</li>
+                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} /> Clear communication</li>
+                                    <li className="flex items-center gap-3 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />On-time delivery</li>
                                 </ul>
                             </div>
                             {/* <BrandAudioPlayer src="/brand-img/why-choose-us-voice.wav" /> */}

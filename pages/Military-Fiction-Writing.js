@@ -36,7 +36,7 @@ export default function BookEditing() {
         { question: "Do I need to have full story details before hiring you?	", answer: "Not at all! If you don't have a full story, come with a basic idea or concept. Our fiction writers and researchers will handle the rest." },
 
        {
-  question: "Not at all! If you don't have a full story, come with a basic idea or concept. Our fiction writers and researchers will handle the rest. What types of military fiction novels do you write?",
+  question: "What types of military fiction do you write?",
   answer: `
   We write for all forms of military fiction novels. You can sign up for our services whether you want to write a:
 
@@ -49,13 +49,14 @@ export default function BookEditing() {
 }
 ,   
 
-        { question: "How much does ghostwriting a book cost?", answer: "The cost of ghostwriting also varies based on your book's length, genre, and complexity. You can view our packages here. Moreover, if you want to customize the any package according to your need, you can speak to our representative. " },
+        { question: "How long does it take to complete a military fiction book?", answer: "Usually, it takes 3 to 6 months to completely write a book. But the exact timeline depends on different aspects like story length, complexity, and how much research it requires. " },
     ];
 
     return (
         <>
             <Head>
-                <title>Hire the Best Military Fiction Writing Services </title>
+                <title>Hire the Best Military Fiction Writing Services 
+</title>
                 <link rel="canonical" href="https://www.pinebookwriting.com/Military-Fiction-Writing" />
                 <meta
                     name="description"
@@ -68,7 +69,8 @@ export default function BookEditing() {
             <BrandPrimaryHeader
                 photo_banner={"/images/Military-Fiction-Writing/1.webp"}
                 title="Deliver Impact with Expert Military Fiction Writing Services"
-                desc="At Pine Book Writing, we have a dedicated team of writers who specialize in military fiction writing services. Whether you want to write a modern war novel, a historical battle tale, or a military story based on real-life experiences, our skilled team of military fiction writers for hire is ready to serve. Contact us today!"
+                desc="At Pine Book Writing, we have a dedicated team of writers who specialize in military fiction writing services. Whether you want to write a modern war novel, a historical battle tale, or a military story based on real-life experiences, our skilled team of military fiction writers for hire is ready to serve. Contact us today!
+"
             />
             <BrandBannerLogo />
 
@@ -82,7 +84,7 @@ export default function BookEditing() {
                         </h2>
 
                         <p className="pt-3 text-xl text-left font-poppins">
-                          With our best military writing services, you may write stories that are exciting, true to life, and full of emotions based on real or imagined events. We make sure your war fiction story is both real and interesting by focusing on structure, character development and authentic details.  </p>
+                         With our best military writing services, you may write stories that are exciting, true to life, and full of emotions based on real or imagined events. We make sure your war fiction story is both real and interesting by focusing on structure, character development and authentic details.</p>
 
                         <p className="pt-3 text-xl text-left font-poppins">Our military fiction writers know how to write in the style and detail that your story needs, whether you're a veteran, an enthusiast, or a fiction writer working on the military historical fiction genre. We help with everything from coming up with ideas and making an outline to writing and editing the final draft. We work diligently to keep the bravery, emotion, and action in your story and make sure it appeals to many of your audience. </p>
                          <p className="pt-3 text-xl text-left font-poppins">Why still thinking? Share your story idea, and get it into a perfectly written book!</p>
@@ -117,9 +119,11 @@ export default function BookEditing() {
 
                     <div className="px-4 text-center md:col-span-6">
                         <h2 className="font-poppins text-2xl text-[#98caa9] font-semibold md:text-3xl uppercase">
-                           Ready to Convert Your War Story Into The Best-Selling?
+                          Ready to Convert Your War Story Into The Best-Selling?
+
                         </h2>
-                        <p className="py-4 text-base md:text-lg">Hire expert military fiction writers and let them turn your military fiction story into the best-selling book.</p>
+                        <p className="py-4 text-base md:text-lg">Hire expert military fiction writers and let them turn your military fiction story into the best-selling book.
+</p>
 
                         <div className="flex flex-col items-center justify-center gap-4 cta-btns sm:flex-row">
                             <CTAButton />
@@ -157,7 +161,8 @@ export default function BookEditing() {
                 <div className="max-w-screen-xl">
                     <div className="mb-6 text-center">
                         <h3 className="text-2xl text-black font-poppins">Our Service Workflow</h3>
-                        <h2 className="text-3xl font-bold text-black font-poppins md:text-4xl" data-aos="zoom-out-down">6-Step Process of Our Ghostwriting Services</h2>
+                        <h2 className="text-3xl font-bold text-black font-poppins md:text-4xl" data-aos="zoom-out-down">6-Step Process of Our Military Fiction Book Writing
+</h2>
                     </div>
 
                     <div className="grid gap-6 mb-6 md:grid-cols-3">
@@ -224,11 +229,12 @@ export default function BookEditing() {
     Our Offerings
   </h2>
   <h2 className="mb-12 text-xl font-medium text-center text-gray-700 md:text-2xl">
-  What’s Included In Our Military Fiction Writing Services
+What’s Included In Our Military Fiction Writing Services
+
   </h2>
 
   <p className="mb-12 text-xl font-medium text-center text-gray-700 md:text-2xl">
-  Hire military fiction writers for your next military fiction book at <a className="font-bold" href="https://www.pinebookwriting.com">Pine Book Writing</a>. We work together with our clients, combining research, creativity and storytelling expertise to write an impactful story.
+  Hire military fiction writers for your next military fiction book at <a className="text-black underline " href="https://www.pinebookwriting.com">Pine Book Writing</a>. We work together with our clients, combining research, creativity and storytelling expertise to write an impactful story.
   </p>
 
   <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3">

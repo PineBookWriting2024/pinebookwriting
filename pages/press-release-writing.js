@@ -37,18 +37,20 @@ export default function PressRelease() {
 
         { question: "How long will my press release stay on the web?", answer: "In most cases, a press release stays on the web for around 10 - 12 months, but it also depends on the policies of that particular platform." },
 
-        { question: "What do I need to provide you to write my PR copy?     ", answer: "We ask our clients to provide all the necessary information about the news by providing them with a Questionnaire. You may also provide the news/message during a call with us. Don't have any specific news to share but want to write a press release for brand credibility? Don't worry! We will share multiple ideas with you.' " },
+        { question: "What do I need to provide you to write my PR copy?     ", answer: "We ask our clients to provide all the necessary information about the news by providing them with a Questionnaire. You may also provide the news/message during a call with us. Don't have any specific news to share but want to write a press release for brand credibility? Don't worry! We will share multiple ideas with you. " },
     ];
 
     return (
         <>
             <Head>
-                <title>Expert Press Release Writing Services | Pine Book Writing</title>
+                <title>Expert Press Release Writing Services | Pine Book Writing
+</title>
                 <link rel="canonical" href="https://www.pinebookwriting.com/press-release-writing" />
 
                 <meta
                     name="description"
-                    content="Get noticed with exceptional press release writing services. We write newsworthy PR copies that not only help uplift visibility but also improve brand image."
+                    content="Get noticed with exceptional press release writing services. We write newsworthy PR copies that not only help uplift visibility but also improve brand image.
+."
                 />
                 <link rel="shortcut icon" href="/images/fav.webp" />
             </Head>
@@ -57,7 +59,8 @@ export default function PressRelease() {
             <BrandPrimaryHeader
                 photo_banner={"/images/Press-Release-Writing/1.webp"}
                 title="Expert Press Release Writing Services"
-                desc="Want to share an official message/news with your audience on a large scale? We're here to help as we bring brands into the media's spotlight through our press release writing services. Share the words about your new product launch or any news/announcement that deserves notability. Contact us to get a FREE quote today!. Contact our customer service team to learn more about our services."
+                desc="Want to share an official message/news with your audience on a large scale? We're here to help as we bring brands into the media's spotlight through our press release writing services. Share the words about your new product launch or any news/announcement that deserves notability. Contact us to get a FREE quote today!
+"
             />
             <BrandBannerLogo />
 
@@ -65,12 +68,13 @@ export default function PressRelease() {
                 <div className="flex flex-col items-center justify-center px-10 py-10 md:flex-row lg:flex-row md:px-0 md:py-0">
                     <div className="basis-1/2 abt-txt m1-h p1 aos-init aos-animate" data-aos="fade-right" data-aos-duration="1000">
 
-                        <h2 className="text-3xl font-bold uppercase font-poppins md:text-4xl">Hire a Professional Press Release Writing Agency</h2>
-                        <h2 className="text-2xl uppercase font-poppins md:text-3xl">
+                        <h2 className="text-3xl font-bold uppercase font-poppins md:text-4xl">Hire a Professional Press Release Writing Service</h2>
+                        <h3 className="text-2xl uppercase font-poppins md:text-3xl">
                             Get Strategic Media Outreach
-                        </h2>
+
+                        </h3>
                         <p className="pt-3 text-xl text-left font-poppins">
-                           Successful businesses and organizations always maintain a constant connection with their audience. They keep them informed about the company's different events, such as product launches, changes in policies, partnerships with others and many other things that the audience of a good company/organization must be aware of. That's exactly where Press Release comes into action. Not only that, but press releases also cause an increase in the website's traffic in an organic way.</p>
+                          Successful businesses and organizations always maintain a constant connection with their audience. They keep them informed about the company's different events, such as product launches, changes in policies, partnerships with others and many other things that the audience of a good company/organization must be aware of. That's exactly where Press Release comes into action. Not only that, but press releases also cause an increase in the website's traffic in an organic way.</p>
                         <p className="pt-3 text-xl text-left font-poppins">At Pine Book Writing, we have a dedicated team of Press Release writers who understand the worth of creating newsworthy content using a journalistic writing style. They work together with you, improvise your key message, and outline the news that fits exactly the way your audience understands. We do not just write a PR copy but also distribute your news/announcements on many popular media outlets based on your demand. Contact us to get a FREE quote today!</p>
                     </div>
                     <div className="flex justify-center text-center basis-1/2 abt-pic md:justify-center">
@@ -103,10 +107,10 @@ export default function PressRelease() {
 
                     <div className="px-4 text-center md:col-span-6">
                         <h2 className="font-poppins text-2xl text-[#98caa9] font-semibold md:text-3xl uppercase">
-                           Create Media Buzz With Our Powerful PR Writing Service
+                         Create Media Buzz With Our Powerful PR Writing Service
                         </h2>
                         <p className="py-4 text-base md:text-lg">
-                         Get in touch with our team and get expert assistance in writing effective press releases and posting them on well-known media outlets.
+                        Get in touch with our team and get expert assistance in writing effective press releases and posting them on well-known media outlets.
                         </p>
 
                         <div className="flex flex-col items-center justify-center gap-4 cta-btns sm:flex-row">
@@ -146,7 +150,8 @@ export default function PressRelease() {
                 <div className="max-w-screen-xl">
                     <div className="mb-6 text-center">
                         <h3 className="text-2xl text-black font-poppins">Our Service Workflow</h3>
-                        <h2 className="text-3xl font-bold text-black font-poppins md:text-4xl" data-aos="zoom-out-down">6-Step Process of Our Press Release Writing Services</h2>
+                        <h2 className="text-3xl font-bold text-black font-poppins md:text-4xl" data-aos="zoom-out-down">6-Step Process of Our Press Release Writing Services
+</h2>
                     </div>
 
                     <div className="grid gap-6 mb-6 md:grid-cols-3">
@@ -171,7 +176,8 @@ export default function PressRelease() {
                             <div className="flex-col px-6 py-10 text-left brand-process-content">
                                 <span className="num-span"><b>03</b></span>
                                 <h2 className="text-2xl text-white font-poppins pro-h">PR Writing</h2>
-                                <p className="">Then, our PR writers start drafting your press release in a way that helps convey your key messages and attracts the attention of journalists.</p>
+                                <p className="">Then, our PR writers start drafting your press release in a way that helps convey your key messages and attracts the attention of journalists.
+</p>
                             </div>
                         </div>
 
@@ -213,11 +219,11 @@ export default function PressRelease() {
     Our Offerings
   </h2>
   <h2 className="mb-12 text-xl font-medium text-center text-gray-700 md:text-2xl">
-  What’s Included In Our Press Release Writing Services
+ What’s Included In Our Press Release Writing Services
   </h2>
 
   <p className="mb-12 text-xl font-medium text-center text-gray-700 md:text-2xl">
-  Hire military PR writers for your next press release at <a class="font-bold" href="https://www.pinebookwriting.com">Pine Book Writing</a>. We work together with our clients, combining research, creativity and storytelling expertise to write an impactful press release article.
+  Hire military PR writers for your next press release at <a class="text-black underline" href="https://www.pinebookwriting.com">Pine Book Writing</a>. We work together with our clients, combining research, creativity and storytelling expertise to write an impactful press release article.
   </p>
 
   <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3">
@@ -225,7 +231,7 @@ export default function PressRelease() {
      { icon: '🖋️', label: 'Structure & Formatting' },
       { icon: '🧐', label: 'Research & Writing' },
       { icon: '📄', label: 'Newsworthy Angle' },
-      { icon: '💼', label: 'Newsworthy Angle' },
+      { icon: '💼', label: 'Editorial Review' },
       { icon: '⚙️', label: 'Platform-Specific Customization' },
       { icon: '🎯', label: 'Multi-Platform Distribution' },         
     ].map((service, index) => (
@@ -263,7 +269,7 @@ export default function PressRelease() {
                                 </ul>
                                 <ul>
                                     <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />	SEO Optimization</li>
-                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />•	Media Coverage Guarantee</li>
+                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />	Media Coverage Guarantee</li>
                                     <li className="flex items-center gap-3 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Result-Driven Approach</li>
                                 </ul>
                             </div>

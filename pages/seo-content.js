@@ -27,28 +27,29 @@ export default function SeoCopywriting () {
     };
 
     const faqData = [
-        { question: "What is SEO content writing?", answer: "SEO content writing is all about choosing the appropriate words and phrases while writing to keep search engines informed about what your website or content is about. As a result, search engines showcase your website or content to your audience." },
+        { question: "What is SEO content writing?", answer: "When generating SEO content, a group of writers picks out the right terms and phrases so that search engines can figure out what your site is about. Your website has a better chance of ranking higher if it has material that is good for SEO." },
         
-        { question: "How do you conduct keyword research?", answer: "In order to identify relevant and high-volume and relevant keywords, we use premium keyword research tools such as Ahref, SEMRush, and Moz. Overall, our research ensures your content meets with popular search terms." },
+        { question: "How do you conduct keyword research?", answer: "To find high-volume yet relevant search keywords, we only use premium tools like Ahrefs, SEMrush, and Moz. This way, we make sure that our content writing service aligns with popular search terms." },
        
-        { question: "What kind of SEO content do you create?", answer: "Primarily being a writing agency, we produce a wide range of SEO material, such as articles, blog posts, product descriptions, website copies, and more. We strive to provide content that entirely meets your specific needs." },
+        { question: "What kind of SEO content do you write?", answer: "As a professional SEO writing company, we write for many kinds of SEO material, from onsite and offsite blogs to articles, product descriptions, and SEO optimized web content. Each piece that we write truly matches your brand persona and meets your marketing goals." },
        
-        { question: "How long does it take to create SEO content?", answer: "The exact time of content creation ultimately depends on its length and the keywords infusing requirements. To know the exact duration, you may contact our customer services team, and they will provide you with an estimated timeline based on your specific needs." },
+        { question: "How long does it take to create SEO content?", answer: "The exact timeline of writing and completing the SEO content is based on your project's length, complexity as well as keyword optimization requirements. However, we provide clear and practical timelines once we have reviewed your project details. Feel free to contact our team to know the exact timeline." },
         
-        { question: "How do you measure content performance?", answer: "Our content performance measurement method is based on monitoring organic traffic, keyword ranking, visitor staying time, and, most importantly, conversions. This data helps us assess how our content is compelling and where improvements are required." },
+        { question: "How do you measure content performance?", answer: "To analyze the performance of our content, we look at things like organic traffic, keyword rankings, users' time spent on page, and the number of conversions. These stats tell us how well our optimized digital material is doing and what we need to do to make it better. " },
        
-        { question: "How do you ensure your content is mistake-free?", answer: "Being a leading writing agency, we have a large team of proofreaders and editors to go through every piece of content before its publication and final delivery to the client. They ensure that every line and word is chosen appropriately and correctly to make the content precise and readable." },
+        { question: "How do you ensure your content is mistake-free?", answer: "Before the final delivery of the content, it is sent to our senior editors and proofreaders. This process makes sure that either there are any changes required or the content is completely ready to deliver to our clients." },
             ];
 
     return (
         <>
             <Head>
-                <title>SEO Content | Pine Book Writing</title>
+                <title>SEO Content Writing Services | Pine Book Writing
+</title>
                 <link rel="canonical" href="https://www.pinebookwriting.com//seo-content" />
 
                 <meta
                     name="description"
-                    content="Everything about Pine Book Writing—your partner in crafting, editing, and publishing your story. Experience seamless service from manuscript to bookshelf."
+                    content="Uplift the website's rank with SEO content writing services. Our writers deliver content that helps bring traffic and perfectly connect with the audience."
                 />
                 <link rel="shortcut icon" href="/images/fav.webp" />
                 </Head>
@@ -56,8 +57,8 @@ export default function SeoCopywriting () {
             <BrandNavbar />
             <BrandPrimaryHeader
                             photo_banner={"/images/Seo-content/1.webp"}
-                title="Expert SEO Content Writing Services"
-                desc="If you are a business website owner, an SEO specialist, or even a marketing agency looking for professional SEO-optimized content writing services, you’ve reached the right place. At Pine Book Writing we handle all aspects of SEO content writing, from keyword research and content strategy planning to writing; we’re with you every step of the way. "
+                title="Skyrocket SEO - Hire Professional SEO Writing Services  "
+                desc="If you are a business website owner, an SEO specialist, or even a marketing agency looking for professional SEO writing services, you’ve reached the right place. Along with writing, we handle all aspects of SEO content writing. Keyword research. content strategy. Technical formatting. "
             />
             <BrandBannerLogo />
 
@@ -65,14 +66,15 @@ export default function SeoCopywriting () {
                 <div className="flex flex-col items-center justify-center px-8 py-10 md:flex-row lg:flex-row md:px-0 md:py-0">
                     <div className="basis-1/2 abt-txt m1-h p1 aos-init aos-animate" data-aos="fade-right" data-aos-duration="1000">
                        
-                        <h2 className="text-3xl font-bold uppercase font-poppins md:text-4xl">Professional SEO Writing Services </h2>
+                        <h2 className="text-3xl font-bold uppercase font-poppins md:text-4xl">Professional SEO Content Writing Services </h2>
                         <h2 className="text-2xl uppercase font-poppins md:text-3xl">
-                        Boost Your Search Engine Ranking 
+                       Uplift Your Search Engine Ranking
                         </h2>
                         <p className="pt-3 text-xl text-left font-poppins">
-                        Search engine optimization does not mean overly stuffing your content with keywords and waiting for it to be ranked high. It's all about understanding the search intent of internet users. When you follow the search engine's guidelines properly while writing, editing, and formatting the content, your content is likely to get ranked on the search results. </p>
+                        Search engine optimization does not mean that you should be overly stuffing your content with keywords and waiting for it to be ranked. Instead, it’s about understanding search intent and writing with purpose. When you follow search engine guidelines for writing, editing and formatting, your content has a greater chance of appearing higher in search results.
+</p>
 
-                        <p className="pt-3 text-xl text-left font-poppins">At Pine Book Writing, our expertise lies in various sectors, including website content, blog posts, articles, product descriptions, book descriptions, and more. Our team of SEO content writers does in-depth research, discover relevant and useful keywords, and write the content while considering being in your audience's shoes. This approach leads your website or content to be ranked higher.</p>
+                        <p className="pt-3 text-xl text-left font-poppins">At <a href="https://www.pinebookwriting.com/" className="text-black underline hover:underline">Pine Book Writing</a>, our expertise covers multiple sectors. SEO website content writing. Blog posts. Guest posting. Product descriptions. Book descriptions and others. Our team of professional SEO writers do in-depth research, find relevant yet high-volume keywords, and write content with your audience in mind. This strategic approach helps your website and content rank higher.</p>
                     </div>
                     <div className="flex justify-center text-center basis-1/2 abt-pic md:justify-center">
                         <Image src={"/images/Seo-content/ghost-pic.webp"} width={470} height={300}
@@ -106,10 +108,11 @@ export default function SeoCopywriting () {
                         
                                             <div className="px-4 text-center md:col-span-6">
                                                 <h2 className="font-poppins text-2xl text-[#98caa9] font-semibold md:text-3xl uppercase">
-                                                    Ready to Uplift Your Website? The Best SEO Content Writing Service
+                                                   Struggling to Rank? Hire Our SEO Content Writing Services!
                                                 </h2>
                                                 <p className="py-4 text-base md:text-lg">
-                                                    Don’t let your website go unnoticed. Our SEO content writing services can help your site grow on multiple search engines using relevant and high-volume keywords.
+                                                   Your web content must be aligned with search engine's best practices. Our team of SEO writers are always informed about Google's latest updates and write something that really helps search visitors. That helps us rank websites higher on search engines.
+
                                                 </p>
                         
                                                 <div className="flex flex-col items-center justify-center gap-4 cta-btns sm:flex-row">
@@ -150,7 +153,8 @@ export default function SeoCopywriting () {
                 <div className="max-w-screen-xl">
                     <div className="mb-6 text-center">
                         <h3 className="text-2xl text-black font-poppins">Our Services Workflow</h3>
-                        <h2 className="text-3xl font-bold text-black font-poppins md:text-4xl" data-aos="zoom-out-down">6-Step Process of Our SEO Writing Services</h2>
+                        <h2 className="text-3xl font-bold text-black font-poppins md:text-4xl" data-aos="zoom-out-down">6-Step Process of Our SEO Content Writing Services
+</h2>
                     </div>
 
                     <div className="grid gap-6 mb-6 md:grid-cols-3">
@@ -159,7 +163,7 @@ export default function SeoCopywriting () {
                             <div className="flex-col px-6 py-10 text-left brand-process-content">
                                 <span className="num-span"><b>01</b></span>
                                 <h2 className="text-2xl text-white font-poppins pro-h">Understand Your Business</h2>
-                                <p className="">Our process begins with understanding your business goals, and your target audience in order to write reader and SEO-friendly content. </p>
+                                <p className="">We start by fully understanding your business, your goals, and your target audience so that we can deliver reader- and SEO-friendly content. As a trusted SEO writing agency, we pen each word that matches your needs. </p>
                             </div>
                         </div>
 
@@ -167,15 +171,15 @@ export default function SeoCopywriting () {
                         <div className="flex-col px-6 py-10 text-left brand-process-content">
                         <span className="num-span"><b>02</b></span>
                                 <h2 className="text-2xl text-white font-poppins pro-h">Keyword Research</h2>
-                                <p className="">Our competent SEO team conducts thorough keyword research leveraging the most advanced tools to identify high-volume and low-competitive keywords.</p>
+                                <p className="">Our highly competent SEO professionals get to work, use advanced tools to find high-volume and low-competition keywords before starting content writing for SEO.</p>
                             </div>
                         </div>
 
                         <div className="flex flex-row" data-aos="fade-left">
                         <div className="flex-col px-6 py-10 text-left brand-process-content">
                         <span className="num-span"><b>03</b></span>
-                                <h2 className="text-2xl text-white font-poppins pro-h">Create Content</h2>
-                                <p className="">Once the research is done, our SEO writers get to work and write content that is engaging, informative, and adhering to the Search Engine Guidelines.</p>
+                                <h2 className="text-2xl text-white font-poppins pro-h">SEO Content Writing</h2>
+                                <p className="">Once research is complete, our professional SEO writers start writing content that's not only engaging but also informative and aligned with SEO best practices.</p>
                             </div>
                         </div>
                         
@@ -186,8 +190,8 @@ export default function SeoCopywriting () {
                         <div className="flex flex-row " data-aos="fade-left">
                         <div className="flex-col px-6 py-10 text-left brand-process-content">
                         <span className="num-span"><b>04</b></span>
-                                <h2 className="text-2xl text-white font-poppins pro-h">Optimization</h2>
-                                <p className="">Then, we optimize your content with meta titles & descriptions, tags, images, and other SEO trends to ensure it ranks higher in search engine results pages.</p>
+                                <h2 className="text-2xl text-white font-poppins pro-h">Content Optimization</h2>
+                                <p className="">We don't just write content that appears on the web pages, but we will write meta titles/descriptions and tags, and create relevant images to make sure they look good in SERPs.</p>
                             </div>
                         </div>
 
@@ -195,7 +199,7 @@ export default function SeoCopywriting () {
                         <div className="flex-col px-6 py-10 text-left brand-process-content">
                         <span className="num-span"><b>05</b></span>
                                 <h2 className="text-2xl text-white font-poppins pro-h">Editing & Revision</h2>
-                                <p className="">In this phase, our team of editors will proofread the content to ensure there are no grammatical, punctual, or structural errors. We will also revise the content upon your request.</p>
+                                <p className="">Before uploading/delivering your content, our experienced editors proofread it to fix any typos, grammar, or structure errors. Not only that, but we also get your feedback and revise it accordingly.</p>
                             </div>
                         </div>
 
@@ -203,7 +207,7 @@ export default function SeoCopywriting () {
                         <div className="flex-col px-6 py-10 text-left brand-process-content">
                         <span className="num-span"><b>06</b></span>
                                 <h2 className="text-2xl text-white font-poppins pro-h">Final Delivery</h2>
-                                <p className="">In the last step, we deliver the SEO-optimized content in your desired format and within the promised delivery time to ensure your utmost satisfaction with the work.</p>
+                                <p className="">Once your content goes through all necessary phases, we deliver your SEO-optimized content to you in your desired format on time, with transparency to acquire your full satisfaction with the work.</p>
                             </div>
                         </div>
                         
@@ -211,6 +215,40 @@ export default function SeoCopywriting () {
 
                 </div>
             </section>
+
+            <section className="max-w-6xl px-4 py-16 mx-auto bg-white font-poppins">
+                 <h2 className="mb-12 text-xl font-medium text-center text-gray-700 md:text-2xl">
+    Our Offerings
+  </h2>
+  <h2 className="mb-12 text-xl font-medium text-center text-gray-700 md:text-2xl">
+What’s Included In Our SEO Content Writing Services
+  </h2>
+
+  <p className="mb-12 text-xl font-medium text-center text-gray-700 md:text-2xl">
+At our SEO writing company in USA,we cover everything that's required to write informative yet promotional content infusing relevant search terms that practically help a website rank well. 
+  </p>
+
+  <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3">
+    {[
+     { icon: '🖋️', label: 'Keyword Research' },
+      { icon: '🧐', label: 'SEO Website Content' },
+      { icon: '📄', label: 'Blog & Article Writing ' },
+      { icon: '💼', label: 'Product & Service Description' },
+      { icon: '⚙️', label: 'On-Page Content Optimization' },
+      { icon: '🎯', label: 'Editing & Proofreading' },         
+    ].map((service, index) => (
+      <div
+        key={index}
+        className="flex flex-col items-center justify-center h-32 p-4 text-center bg-[#f4f1ea] hover:bg-[#ebe8e0] transition-colors rounded-xl shadow-sm hover:shadow-md"
+      >
+        <div className="mb-2 text-3xl">{service.icon}</div>
+        <span className="text-[10px] font-bold uppercase tracking-widest text-gray-600">
+          {service.label}
+        </span>
+      </div>
+    ))}
+  </div>
+</section>
             
             <section className="overflow-hidden" >
                 <div className="relative left-0 px-12 py-10 mt-0 mb-8 brand-choose-us-section ms-auto md:left-52 md:px-20 md:mt-14 " >
@@ -223,18 +261,19 @@ export default function SeoCopywriting () {
                             />
                         </div>
                         <div className="basis-1/3 md:ml-20">
-                            <h2 className="mt-10 text-2xl font-bold text-white uppercase font-poppins md:text-4xl md:mt-0" data-aos="zoom-in-left" data-aos-delay="100">Why Choose Our SEO Content Writing Services?</h2>
-                            <p className="mt-2 text-white">Skyrocket your online visibility with our impeccable SEO-optimized content writing services. We have a professional team of SEO content writers and SEO specialists who specialize in strategic content planning writing engaging and optimized content that helps improve rankings.</p>
+                            <h2 className="mt-10 text-2xl font-bold text-white uppercase font-poppins md:text-4xl md:mt-0" data-aos="zoom-in-left" data-aos-delay="100">What Makes Us the Best SEO Writing Agency in USA</h2>
+                            <p className="mt-2 text-white">The team of professionals at Pine Book Writing, is completely aware that content for web (Onsite or Offsite) isn't just about words. It's all about results. That's why we've designed our SEO content writing service dedicated to helping businesses improve visibility, bring organic readers in a practical yet natural way. What we deliver is work for both people and search engines.
+</p>
                             <div className="flex flex-col gap-2 mt-6 md:flex-row md:gap-10">
                                 <ul>
-                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Expert SEO Writers </li>
-                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />SEO Specialists </li>
-                                    <li className="flex items-center gap-3 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Keyword Optimization </li>
+                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Dedicated SEO Writers </li>
+                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Keyword-Optimization </li>
+                                    <li className="flex items-center gap-3 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />100% SEO-Friendly Content </li>
                                 </ul>
                                 <ul>
-                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Engaging Content</li>
-                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Timely Delivery</li>
-                                    <li className="flex items-center gap-3 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Proven Results</li>
+                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Fast Turnaround</li>
+                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Affordable & Flexible Packages</li>
+                                    <li className="flex items-center gap-3 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Content Marketing Strategy</li>
                                 </ul>
                             </div>
                             {/* <BrandAudioPlayer src="/brand-img/why-choose-us-voice.wav" /> */}

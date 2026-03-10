@@ -27,17 +27,17 @@ export default function PressRelease() {
     };
 
     const faqData = [
-        { question: "What is the purpose of a press release?", answer: "The companies, organizations, or public figures who already have or are pursuing a large audience base keep people informed about what's happening or going to be in the future using press releases." },
+        { question: "What is the purpose of a press release?", answer: "Press releases are to help companies and celebrities share official news with people through the most well-known media platforms. Our PR writing service can help you write it and get it out to the right people." },
 
-        { question: "How long should a press release be?", answer: "Although the length of a press release depends on how big the news/announcement is, the ideal length is between 300 and 400 words. Moreover, most PR publishing platforms ask to write a press release within a specific range." },
+        { question: "How long should a press release be?", answer: "Although the length of a press release depends on how big the news/announcement is, the ideal length is between 300 and 400 words. Moreover, most PR publishing platforms require writing a press release within a specific range." },
 
         { question: "When should I use a press release?", answer: "It's the right time to get that media coverage whenever you or your company are up to something genuinely newsworthy and shareable to a large audience." },
 
-        { question: "How much does it cost to have a press release written & published?", answer: "The cost of writing and publishing a press release is based on the following factors  1. The length and complexity of the press release.    2. The number and type of media platform(s) you want to publish your press release on. 3. The amount of research required to write your press release. To get an exact price, feel free to contact our customer representatives. They'll provide a personalized and transparent project quote." },
+        { question: "How much does it cost to have a PR written & published?", answer: "The cost of writing and publishing a press release is based on the following factors  1. The length and complexity of the press release.    2. The number and type of media platform(s) you want to publish your press release on. 3. The amount of research required to write your press release. To get an exact price, feel free to contact our customer representatives. They'll provide a personalized and transparent project quote." },
 
-        { question: "How long will my Press Release stay on the web?", answer: "In most cases, a press release stays on the web for around 10 - 12 months, but it also depends on the policies of that particular platform." },
+        { question: "How long will my press release stay on the web?", answer: "In most cases, a press release stays on the web for around 10 - 12 months, but it also depends on the policies of that particular platform." },
 
-        { question: "What do I need to provide you to write my press release?", answer: "We ask our clients to provide all the necessary information about the news by providing them a 'Press Release Writing Questionnaire.' " },
+        { question: "What do I need to provide you to write my PR copy?     ", answer: "We ask our clients to provide all the necessary information about the news by providing them with a Questionnaire. You may also provide the news/message during a call with us. Don't have any specific news to share but want to write a press release for brand credibility? Don't worry! We will share multiple ideas with you.' " },
     ];
 
     return (

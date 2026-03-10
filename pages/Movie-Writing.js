@@ -233,7 +233,7 @@ export default function BookEditing() {
     ].map((service, index) => (
       <div
         key={index}
-        className="flex flex-col items-center justify-center h-32 p-4 text-center bg-[#f4f1ea] hover:bg-[#ebe8e0] transition-colors rounded-xl shadow-sm hover:shadow-md"
+        className="flex flex-col items-center justify-center h-32 p-4 text-center bg-[#eaf4ed] hover:bg-[#ebe8e0] transition-colors rounded-xl shadow-sm hover:shadow-md"
       >
         <div className="mb-2 text-3xl">{service.icon}</div>
         <span className="text-[10px] font-bold uppercase tracking-widest text-gray-600">

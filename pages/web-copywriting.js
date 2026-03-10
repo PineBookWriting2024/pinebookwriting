@@ -66,9 +66,9 @@ export default function WebCopywriting () {
                     <div className="basis-1/2 abt-txt m1-h p1 aos-init aos-animate" data-aos="fade-right" data-aos-duration="1000">
                        
                         <h2 className="text-3xl font-bold uppercase font-poppins md:text-4xl">Build Credibility - Hire Expert Web Copywriting Services</h2>
-                        <h2 className="text-2xl uppercase font-poppins md:text-3xl">
+                        <h3 className="text-2xl uppercase font-poppins md:text-3xl">
                        Write Words that Bring Results
-                        </h2>
+                        </h3>
                         <p className="pt-3 text-xl text-left font-poppins">
                       In order to create exceptional online presence, having a well functioning and appealing website is not enough. Hire our professional web copywriting services that offer SEO-friendly yet audience-friendly content. A great web copy answers questions about your business and encourages action. And that's what we do at Pine Book Writing.</p>
 
@@ -78,7 +78,7 @@ export default function WebCopywriting () {
     href="https://www.pinebookwriting.com/seo-content"
     target="_blank"
     rel="noopener noreferrer"
-    className="text-blue-600 underline hover:text-blue-800"
+    className="text-black underline hover:text-black"
   >
     SEO-optimized content
   </a>{" "}

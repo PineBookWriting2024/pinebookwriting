@@ -47,7 +47,8 @@ export default function BookEditing() {
                 <link rel="canonical" href="https://www.pinebookwriting.com/Movie-Writing" />
                 <meta
                     name="description"
-                    content="Get expert movie writing services and create a perfect movie script. Hire skilled writers for your short or full length movie script at Pine Book Writing."
+                    content="Get expert movie writing services and create a perfect movie script. Hire skilled writers for your short or full length movie script at Pine Book Writing.
+"
                 />
                 <link rel="shortcut icon" href="/images/fav.webp" />
             </Head>
@@ -56,23 +57,27 @@ export default function BookEditing() {
             <BrandPrimaryHeader
                 photo_banner={"/images/Movie-Writing/1.webp"}
                 title="Movie Writing Services That Turn Ideas Into Real Stories"
-                desc="Our movie writing services are for those who’ve got a story but don’t know how to put it on paper the right way. From movie script writing to dialogue writing, we help you shape your idea into something real and watchable."
+                desc="Our movie writing services are for those who’ve got a story but don’t know how to put it on paper the right way. From movie script writing to dialogue writing, we help you shape your idea into something real and watchable.
+"
             />
             <BrandBannerLogo />
 
             <div className="container max-w-screen-xl pt-0 mx-auto overflow-hidden md:py-20">
                 <div className="flex flex-col items-center justify-center px-8 py-10 md:flex-row lg:flex-row md:px-0 md:py-0">
                     <div className="basis-1/2 abt-txt m1-h p1 aos-init aos-animate" data-aos="fade-right" data-aos-duration="1000">
-                        <h2 className="text-3xl font-bold uppercase font-poppins md:text-4xl">Professional Movie Writing - Write Something Really Watchable</h2>
+                        <h2 className="text-3xl font-bold uppercase font-poppins md:text-4xl">Professional Movie Writing - Write Something Really Watchable
+</h2>
 
                         <h2 className="text-2xl uppercase font-poppins md:text-3xl">
                             From Concept to Script
                         </h2>
 
                         <p className="pt-3 text-xl text-left font-poppins">
-                           Good movies always start with good writing. And Pine Book Writing really cares. Our professional movie writing team knows how to work on a small idea and make it a script that keeps people watching. So, we can help whether you’re planning to write a movie script from the very beginning or just fixing scenes. </p>
+                          Good movies always start with good writing. And Pine Book Writing really cares. Our professional movie writing team knows how to work on a small idea and make it a script that keeps people watching. So, we can help whether you’re planning to write a movie script from the very beginning or just fixing scenes. 
+ </p>
 
-                        <p className="pt-3 text-xl text-left font-poppins">Our movie script writers for hire better understand all the aspects of it. They are also familiar with things that make a story feel natural. Not forced. We can help you with dialogue writing for movies, so your characters sound like real people. From short films to full-length features, we know what producers and viewers look for. </p>
+                        <p className="pt-3 text-xl text-left font-poppins">Our movie script writers for hire better understand all the aspects of it. They are also familiar with things that make a story feel natural. Not forced. We can help you with dialogue writing for movies, so your characters sound like real people. From short films to full-length features, we know what producers and viewers look for. 
+</p>
                         <p className="pt-3 text-xl text-left font-poppins">Let’s take your movie idea and build it into something that fits the industry standard screenplay formatting and still keeps your personal style alive!</p>
                     </div>
                     <div className="flex justify-center text-center basis-1/2 abt-pic md:justify-center">
@@ -106,7 +111,7 @@ export default function BookEditing() {
 
                     <div className="px-4 text-center md:col-span-6">
                         <h2 className="font-poppins text-2xl text-[#98caa9] font-semibold md:text-3xl uppercase">
-                           Ready to Write a Movie People Watch Untill End?
+                          Ready to Write a Movie People Watch Untill End?
                         </h2>
                         <p className="py-4 text-base md:text-lg">Acquire our movie script writers for hire and give liveliness to your script. We’ll make your idea a strong, watchable script by infusing real emotions with natural flow.</p>
 
@@ -148,7 +153,8 @@ export default function BookEditing() {
                 <div className="max-w-screen-xl">
                     <div className="mb-6 text-center">
                         <h3 className="text-2xl text-black font-poppins">Our Service Workflow</h3>
-                        <h2 className="text-3xl font-bold text-black font-poppins md:text-4xl" data-aos="zoom-out-down">6-Step Process of Our Movie Writing Services</h2>
+                        <h2 className="text-3xl font-bold text-black font-poppins md:text-4xl" data-aos="zoom-out-down">6-Step Process of Our Movie Writing Services
+</h2>
                     </div>
 
                     <div className="grid gap-6 mb-6 md:grid-cols-3">
@@ -157,7 +163,7 @@ export default function BookEditing() {
                             <div className="flex-col px-6 py-10 text-left brand-process-content">
                                 <span className="num-span"><b>01</b></span>
                                 <h2 className="text-2xl text-white font-poppins pro-h">Story Discussion</h2>
-                                <p className="">We start by talking about your movie idea, its message, and main characters. Our movie script writer notes every detail to build a strong base..</p>
+                                <p className="">We start by talking about your movie idea, its message, and main characters. Our movie script writer notes every detail to build a strong base.</p>
                             </div>
                         </div>
 
@@ -219,7 +225,7 @@ export default function BookEditing() {
   </h2>
 
   <p className="mb-12 text-xl font-medium text-center text-gray-700 md:text-2xl">
-  Our movie <a href="https://www.pinebookwriting.com/movie-script-writing-services" className="text-blue-600 hover:underline">writing services at Pine Book Writing</a> cover everything from concept to final script. We handle story development, dialogues, and screenplay formatting to make your film script truly production-ready.
+  Our <a href="https://www.pinebookwriting.com/movie-script-writing-services" className="text-black underline hover:underline">movie  writing services</a> at Pine Book Writing cover everything from concept to final script. We handle story development, dialogues, and screenplay formatting to make your film script truly production-ready.
   </p>
 
   <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3">

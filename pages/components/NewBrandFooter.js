@@ -37,147 +37,195 @@ export default function NewBrandFooter() {
     }, []);
 
 
-     const services = [
-        { name: 'Book Ghostwriting',
-          href: '/ghostwriting',},
-
-        { name: 'Resume Writing',
-        href: '/resume-writing',},
-
-        { name: 'Social Media Copywriting',
-            href: '/social-media-copywriting',},
-            
-                
-        { name: 'Web Copywriting',
-            href: '/web-copywriting',},
-            
-        { name: 'SEO Content Writing',
-            href: '/seo-content',},
-
-
-        { name: 'Blogs & Article Writing',
-            href: '/blog-article-writing',},
-
-
-        { name: 'PR Writing',
-            href: '/press-release-writing',},
-
-          { name: 'Military Fiction Writing',
-          href: '/Military-Fiction-Writing',
+    const services = [
+        {
+            name: 'Book Ghostwriting',
+            href: '/ghostwriting',
         },
 
-         { name: 'Movie Writing',
-          href: '/Movie-Writing',
+        {
+            name: 'Resume Writing',
+            href: '/resume-writing',
         },
 
-           { name: 'Script Writing',
-            href: '/script-writing',},
-
-            
-
-        
-        
-
-        ];
-
-  const servicessecond = [
-         { name: 'Product Description Writing',
-            href: '/product-description',},
-
-        { name: 'Screen Writing',
-            href: '/Screen-Writing',},
-            
-        { name: 'Action Adventure Writing',
-            href: '/Action-Adventure',},
-
-        { name: 'Childrens Books',
-            href: '/Childrens-Books',},
-
-        { name: 'Fantasy Writing',
-            href: '/Fantasy-Writing-Services',},
-
-        { name: 'Horror Writing',
-           href: '/Horror-Writing',},
-
-        { name: 'Sci-Fi Writing',
-           href: '/Sci-Fi-writing',},
-
-        { name: 'Biography Writing',
-           href: '/Biography-Writing',},
-
-           { name: 'Comedy Writing',
-          href: '/Comedy-Writing',
+        {
+            name: 'Social Media Copywriting',
+            href: '/social-media-copywriting',
         },
 
-         { name: 'Comic Book Writing',
-          href: '/Comic-Book-Writing',
+
+        {
+            name: 'Web Copywriting',
+            href: '/web-copywriting',
         },
 
-           
-
-     
- ];
-
- const servicesthird = [
-      { name: 'Memoir Writing',
-          href: '/Memoir-Writing',
-        },
-          
-        { name: 'Non Fiction Writing',
-          href: '/Non-Fiction-Writing',
+        {
+            name: 'SEO Content Writing',
+            href: '/seo-content',
         },
 
-        { name: 'Rhymes Writing',
-          href: '/Rhymes-Writing',
+
+        {
+            name: 'Blogs & Article Writing',
+            href: '/blog-article-writing',
         },
 
-        { name: 'Song Writing',
-          href: '/Song-Writing',
+
+        {
+            name: 'PR Writing',
+            href: '/press-release-writing',
         },
 
-        { name: 'Story Writing',
-          href: '/Story-Writing',
-        },
-        
-        { name: 'Autobiography Writing',
-          href: '/Autobiography-Writing',
-        },
-        
-        { name: 'Hip Hop Writing',
-          href: '/Hip-Hop-Writing',
-        },
-        
-        { name: 'Narrative Writing',
-          href: '/Narrative-Writing',
-        },
-           { name: 'Novel Writing',
-          href: '/Novel-Writing',
+        {
+            name: 'Military Fiction Writing',
+            href: '/Military-Fiction-Writing',
         },
 
-        { name: 'Speech Writing',
-          href: '/Speech-Writing',
+        {
+            name: 'Movie Writing',
+            href: '/Movie-Writing',
         },
 
-         { name: 'Wikipedia Writing',
-            href: '/wikipedia-writing',},
+        {
+            name: 'Script Writing',
+            href: '/script-writing',
+        },
 
- ]
 
- const servicesfourth = [
-  
 
-     
 
-       
 
-    
+
+    ];
+
+    const servicessecond = [
+        {
+            name: 'Product Description Writing',
+            href: '/product-description',
+        },
+
+        {
+            name: 'Screen Writing',
+            href: '/Screen-Writing',
+        },
+
+        {
+            name: 'Action Adventure Writing',
+            href: '/Action-Adventure',
+        },
+
+        {
+            name: 'Childrens Books',
+            href: '/Childrens-Books',
+        },
+
+        {
+            name: 'Fantasy Writing',
+            href: '/Fantasy-Writing-Services',
+        },
+
+        {
+            name: 'Horror Writing',
+            href: '/Horror-Writing',
+        },
+
+        {
+            name: 'Sci-Fi Writing',
+            href: '/Sci-Fi-writing',
+        },
+
+        {
+            name: 'Biography Writing',
+            href: '/Biography-Writing',
+        },
+
+        {
+            name: 'Comedy Writing',
+            href: '/Comedy-Writing',
+        },
+
+        {
+            name: 'Comic Book Writing',
+            href: '/Comic-Book-Writing',
+        },
+
+
+
+
+    ];
+
+    const servicesthird = [
+        {
+            name: 'Memoir Writing',
+            href: '/Memoir-Writing',
+        },
+
+        {
+            name: 'Non Fiction Writing',
+            href: '/Non-Fiction-Writing',
+        },
+
+        {
+            name: 'Rhymes Writing',
+            href: '/Rhymes-Writing',
+        },
+
+        {
+            name: 'Song Writing',
+            href: '/Song-Writing',
+        },
+
+        {
+            name: 'Story Writing',
+            href: '/Story-Writing',
+        },
+
+        {
+            name: 'Autobiography Writing',
+            href: '/Autobiography-Writing',
+        },
+
+        {
+            name: 'Hip Hop Writing',
+            href: '/Hip-Hop-Writing',
+        },
+
+        {
+            name: 'Narrative Writing',
+            href: '/Narrative-Writing',
+        },
+        {
+            name: 'Novel Writing',
+            href: '/Novel-Writing',
+        },
+
+        {
+            name: 'Speech Writing',
+            href: '/Speech-Writing',
+        },
+
+        {
+            name: 'Wikipedia Writing',
+            href: '/wikipedia-writing',
+        },
+
+    ]
+
+    const servicesfourth = [
+
+
+
+
+
+
+
     ]
 
     return (
         <>
             <footer className="text-white body-font brand-footer">
                 <div className="container px-5 py-10 md:pb-10 md:pt-12 mx-auto flex md:flex-row flex-col md:justify-evenly md:gap-9">
-                   
+
                     <div className="md:px-4 widget-2 relative md:flex-row flex-col items-center md:items-start lg:w-1/3 w-full">
                         <a className="flex title-font font-medium items-center justify-start md:justify-center text-white">
                             <Image src={"/brand-img/PineBookWriters.gif"} width={250} height={200}></Image>
@@ -204,7 +252,7 @@ export default function NewBrandFooter() {
                     </div>
 
                     <div className="widget-2 relative lg:w-1/4">
-                     <h3 className="title-font text-white tracking-widest text-2xl md:text-2xl mb-3 font-poppins font-bold opacity-0">
+                        <h3 className="title-font text-white tracking-widest text-2xl md:text-2xl mb-3 font-poppins font-bold opacity-0">
                             Services
                         </h3>
                         <nav className="list-none md:mb-10 mb-6 md:mt-5">
@@ -220,11 +268,11 @@ export default function NewBrandFooter() {
                     </div>
 
                     <div className="widget-2 relative lg:w-1/4">
-                         <h3 className="title-font text-white tracking-widest text-2xl md:text-2xl mb-3 font-poppins font-bold opacity-0">
+                        <h3 className="title-font text-white tracking-widest text-2xl md:text-2xl mb-3 font-poppins font-bold opacity-0">
                             Services
                         </h3>
                         <nav className="list-none md:mb-10 mb-6 md:mt-5">
-                          {servicesthird.map((service, index) => (
+                            {servicesthird.map((service, index) => (
                                 <li key={index} className="mt-3">
                                     <Link href={service.href} onClick={(e) => { e.preventDefault(); window.location.href = service.href; }}>
                                         {service.name}
@@ -235,61 +283,61 @@ export default function NewBrandFooter() {
                     </div>
 
                     <div className="widget-3 relative lg:w-1/4">
-                            <h3 className="title-font text-white tracking-widest text-2xl md:text-2xl mb-5 font-poppins font-bold	">
-                                Contact Info
-                            </h3>
-                            <Link
-                                href="tel:8668417463"
-                                className="text-white text-sm hover:text-white font-poppins flex items-center md:items-start mb-5"
-                            >
-                                <FontAwesomeIcon icon={faPhone} className="me-3" />
-                                (866) 841-7463
+                        <h3 className="title-font text-white tracking-widest text-2xl md:text-2xl mb-5 font-poppins font-bold	">
+                            Contact Info
+                        </h3>
+                        <Link
+                            href="tel:8668417463"
+                            className="text-white text-sm hover:text-white font-poppins flex items-center md:items-start mb-5"
+                        >
+                            <FontAwesomeIcon icon={faPhone} className="me-3" />
+                            (866) 841-7463
+                        </Link>
+                        <Link
+                            href="mailto:support@pinebookwriting.com"
+                            className="text-white hover:text-white font-poppins text-sm flex items-center md:items-start mb-5"
+                        >
+                            <FontAwesomeIcon icon={faEnvelope} className="me-3" />
+                            {" "}
+                            support@pinebookwriting.com{" "}
+                        </Link>
+                        <h4 className="text-white leading-20 font-bold text-xl  md:text-md font-poppins md:ext-center lg:text-start uppercase">
+                            Canada Address:
+                        </h4>
+                        <p className="text-white mb-5"> R-10225 Yonge St, Suite #250, Richmond Hill, ON L4C 3B2</p>
+                        <h4 className="text-white leading-20 font-bold text-xl md:text-md font-poppins md:text-center lg:text-start uppercase">
+                            USA Address:
+                        </h4>
+                        <p className="text-white mb-5">211 E 43rd St, 7th Floor, Suite #424, New York City, NY 10017</p>
+                        <div>
+                            <Link href="https://www.facebook.com/pinebookwriting0" target="_blank">
+                                <FontAwesomeIcon icon={faFacebook} className="me-3" />
                             </Link>
-                            <Link
-                                href="mailto:support@pinebookwriting.com"
-                                className="text-white hover:text-white font-poppins text-sm flex items-center md:items-start mb-5"
-                            >
-                                <FontAwesomeIcon icon={faEnvelope} className="me-3" />
-                                {" "}
-                                support@pinebookwriting.com{" "}
+                            <Link href="https://www.linkedin.com/company/pine-book-writing-inc">
+                                <FontAwesomeIcon icon={faLinkedin} className="me-3" />
                             </Link>
-                            <h4 className="text-white leading-20 font-bold text-xl  md:text-md font-poppins md:ext-center lg:text-start uppercase">
-                                Canada Address:
-                            </h4>
-                            <p className="text-white mb-5"> R-10225 Yonge St, Suite #250, Richmond Hill, ON L4C 3B2</p>
-                            <h4 className="text-white leading-20 font-bold text-xl md:text-md font-poppins md:text-center lg:text-start uppercase">
-                                USA Address:
-                            </h4>
-                            <p className="text-white mb-5">211 E 43rd St, 7th Floor, Suite #424, New York City, NY 10017</p>
-                            <div>
-                                <Link href="https://www.facebook.com/pinebookwriting0" target="_blank">
-                                    <FontAwesomeIcon icon={faFacebook} className="me-3" />
-                                </Link>
-                                <Link href="https://www.linkedin.com/company/pine-book-writing-inc">
-                                    <FontAwesomeIcon icon={faLinkedin} className="me-3" />
-                                </Link>
-                                <Link href="https://www.instagram.com/pinebookwriting/" target="_blank">
-                                    <FontAwesomeIcon icon={faInstagram} className="me-3" />
-                                </Link>
-                                <Link href="https://x.com/pinebookwriting" target="_blank">
-                                    <FontAwesomeIcon icon={faXTwitter} className="me-3" />
-                                </Link>
-                                <Link href="https://www.youtube.com/@Pinebookwriting" target="_blank">
-                                    <FontAwesomeIcon icon={faYoutube} className="me-3" />
-                                </Link>
-                                <Link href="https://www.threads.com/@pinebookwriting" target="_blank">
-                                    <FontAwesomeIcon icon={faThreads} className="me-3" />
-                                </Link>
-                            </div>
-                         
+                            <Link href="https://www.instagram.com/pinebookwriting/" target="_blank">
+                                <FontAwesomeIcon icon={faInstagram} className="me-3" />
+                            </Link>
+                            <Link href="https://x.com/pinebookwriting" target="_blank">
+                                <FontAwesomeIcon icon={faXTwitter} className="me-3" />
+                            </Link>
+                            <Link href="https://www.youtube.com/@Pinebookwriting" target="_blank">
+                                <FontAwesomeIcon icon={faYoutube} className="me-3" />
+                            </Link>
+                            <Link href="https://www.threads.com/@pinebookwriting" target="_blank">
+                                <FontAwesomeIcon icon={faThreads} className="me-3" />
+                            </Link>
+                        </div>
+
                     </div>
-                   
+
                 </div>
 
                 <div className="copyright-sec">
                     <div className="container text-center mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
                         <p className="text-white w-full md:text-center text-sm sm:text-left">
-                            Copyright © 2026 <span className="powered-by-text"><Link href="https://pinecarrier.com/" >pintechware.com</Link></span> | All Rights Reserved.
+                            Copyright © 2026 <span className="powered-by-text"><Link href="https://pinetechware.com/" >pintechware.com</Link></span> | All Rights Reserved.
                             <Link
                                 href="/terms-and-conditions"
                                 rel="noopener noreferrer"
@@ -360,7 +408,7 @@ export default function NewBrandFooter() {
             </div>
             {/* <WhatsAppChat /> */}
 
-                  <Script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=6ad75b0f-d085-4cae-9a7a-48abeb69b973"> </Script>
+            <Script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=6ad75b0f-d085-4cae-9a7a-48abeb69b973"> </Script>
 
         </>
     );

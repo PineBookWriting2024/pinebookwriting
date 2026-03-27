@@ -44,7 +44,7 @@ export default function BookEditing() {
         <>
             <Head>
                 <title>Best Biography Writing Services | Biography Writers for hire</title>
-                <link rel="canonical" href="https://www.pinebookwriting.com/Biography-Writing" />
+                <link rel="canonical" href="https://www.pinebookwriting.com/biography-writing" />
                 <meta
                     name="description"
                     content="We offer expert biography writing services to help people write their life stories in a well-formatted and professional book. Let's discuss your work now!"

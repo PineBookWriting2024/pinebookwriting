@@ -44,7 +44,7 @@ export default function BookEditing() {
         <>
             <Head>
                 <title>Best Fantasy writing services | Pine Book Writing</title>
-                <link rel="canonical" href="https://www.pinebookwriting.com/Fantasy-Writing-Services" />
+                <link rel="canonical" href="https://www.pinebookwriting.com/fantasy-writing-services" />
                 <meta
                     name="description"
                     content="Looking for fantasy writing services? We help turn ideas into engaging fantasy books, series and novels with strong characters and believable worlds."

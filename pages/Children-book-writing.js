@@ -12,8 +12,7 @@ import BrandAudioPlayer from "./components/BrandAudioPlayer";
 import NewBrandFooter from "./components/NewBrandFooter";
 import BrandTopBar from "./components/BrandTopBar";
 import { FaPhoneVolume } from "react-icons/fa";
-import CTAButton from './components/CTAButton';
-
+import CTAButton from './components/CTAButton'; 
 
 export default function BookEditing() {
     const handleOpenChat = () => {
@@ -27,57 +26,55 @@ export default function BookEditing() {
     };
 
     const faqData = [
-        { question: "What type of horror do you write?", answer: "We write many styles, including supernatural horror fiction, psychological horror, ghost stories, and thriller horror writing. The fear level depends on your vision and audience." },
+        { question: "Can you help if I only have a small idea?", answer: "Yes, that’s very common. Many clients come with just a thought or lesson. We help turn it into a full children’s story, step by step." },
         
-        { question: "Do you help write the best horror novels from scratch?", answer: "Yes. Our horror novel writing services guide you from idea to final manuscript, even if you only have a rough concept or single scene." },
+        { question: "Do you write for different age groups?", answer: "We do. From toddlers to early readers, we adjust tone, word length, and pacing so the story fits the child’s age properly." },
        
-        { question: "Do you offer short horror stories too?", answer: "Absolutely. Our horror short story writing services are ideal for anthologies, magazines, and personal projects." },
+        { question: "Will the story be original?", answer: "Always. Our professional children’s book ghostwriters focus on original writing. No copied plots, no recycled characters." },
        
-        { question: "How scary will the story be?	", answer: "That’s your choice. Some want subtle dread, others want darker horror writing. We adjust tone based on what feels right to you." },
+        { question: "Can you edit a children’s book I already wrote?	", answer: "Yes. Our children book editors can revise, clean, and improve flow without changing your original voice too much." },
         
-        { question: "Will my story feel original?", answer: "Yes. We avoid copying famous horror books. Our focus stays on character-driven horror stories with fresh ideas." },
+        { question: "Do you help with illustrations?", answer: "We don’t draw, but we write in a way that works well for illustrated children’s book writing and guide you on next steps." },
        
-        { question: "Is my story kept confidential?", answer: "Always. When you hire a horror writer from us, your work remains private and fully owned by you." },
+        { question: "How long does it take to write a children’s book?", answer: "It depends on length and feedback speed. Most projects take a few weeks, sometimes less but sometimes a bit more." },
             ];
 
     return (
         <>
             <Head>
-                <title>Professional Horror Writing Services | Pine Book Writing</title>
-                <link rel="canonical" href="https://www.pinebookwriting.com/Horror-Writing" />
+                <title>Best Children Book Writing Services | Pine Book Writing</title>
+                    <link rel="canonical" href="https://www.pinebookwriting.com/Children-book-writing" />
                 <meta
                     name="description"
-                    content="Writing a horror story?  Hire Expert horror writing services  to create character-driven horror fiction that stays with readers long after the final page."
+                    content="Looking to write children’s books? Our children's book writing service helps turn simple ideas into age-appropriate stories that kids enjoy and parents trust."
                 />
                 <link rel="shortcut icon" href="/images/fav.webp" />
                 </Head>
             <BrandTopBar />
             <BrandNavbar />
             <BrandPrimaryHeader
-                photo_banner={"/images/Horror-Writing/1.webp"}
-                title="Horror Writing Services - Write to Scare"
-                desc="Stories that scare don’t shout. They creep in slowly. Our horror writing services help turn dark ideas into stories that linger, disturb a little and feel real long after the last page. Have any scary story ideas to write a horror story? Contact us right away!"
+                photo_banner={"/images/Childrens-Books/1.webp"}
+                title="Expert Children’s Books Writing Services - Pine Book Writing"
+                desc="Stories for kids need care. Not noise. Our children's books writing services help new and experienced authors turn simple ideas into age-right stories that feel warm, fun and easy to remember. Not forced or overdone. Get in touch today!"
             />
             <BrandBannerLogo />
 
             <div className="container max-w-screen-xl pt-0 mx-auto overflow-hidden md:py-20">
                 <div className="flex flex-col items-center justify-center px-8 py-10 md:flex-row lg:flex-row md:px-0 md:py-0">
                     <div className="basis-1/2 abt-txt m1-h p1 aos-init aos-animate" data-aos="fade-right" data-aos-duration="1000">
-                    <h2 className="text-3xl font-bold uppercase font-poppins md:text-4xl">Create Dark Tales With Our Horror Writing Services </h2>
+                    <h2 className="text-3xl font-bold uppercase font-poppins md:text-4xl">Offering Children's Book Ghostwriting Services</h2>
 
                         <h2 className="text-2xl uppercase font-poppins md:text-3xl">
-                       Stories That Crawl Under Skin
+                       Stories That Kids Actually Enjoy
                         </h2>
                        
                         <p className="pt-3 text-xl text-left font-poppins">
-                       Horror is not just blood or monsters. It’s stressful. Silence. A feeling that something is wrong but you can’t explain why. Our horror fiction writing focuses on mood, pacing and characters who feel human, even when things turn ugly.</p>
+                     Writing a children’s book is not just about cute words. It’s about knowing how kids think, what keeps them listening, and when a story should pause. Our children book writing service focuses on clarity, emotion and rhythm that feels right for young readers. </p>
 
-                        <p className="pt-3 text-xl text-left font-poppins">Whether you’re writing a horror novel, working on horror story writing, or developing a supernatural concept, our team at <a href="https://www.pinebookwriting.com" className="hover:underline">Pine Book Writing</a> helps shape your idea without relying on tired clichés. Some clients arrive with half an idea; others have already started horror book writing and feel stuck. Both are welcome.</p>
-
-                         <p className="pt-3 text-xl text-left font-poppins">We write character-driven horror stories where fear builds naturally. From psychological dread to supernatural horror fiction, we keep it grounded. That’s what makes the scare work. So why wait? Sign up for the best <a href="https://www.pinebookwriting.com/ghostwriting-services" className="hover:underline">ghostwriting services today!</a></p>
+                        <p className="pt-3 text-xl text-left font-poppins">Some clients come with a rough idea. Others have already started writing a children’s book but feel stuck. That’s normal. Our children book ghostwriting services help shape stories for picture books, early readers, and short fiction. We also work closely with children’s book editors when needed, so the story flows well and stays age-appropriate. Whether you want to hire a children book writer or just fix what you already wrote, we keep things simple and honest. So, don’t wait and get in touch with Pine Book Writing’s team today!</p>
                     </div>
                     <div className="flex justify-center text-center basis-1/2 abt-pic md:justify-center">
-                        <Image src={"/images/Horror-Writing/ghost-pic.webp"} width={470} height={300}
+                        <Image src={"/images/Childrens-Books/ghost-pic.webp"} width={470} height={300}
                             loading="lazy"
                             alt="about img"
                             className="aos-init aos-animate"
@@ -90,14 +87,13 @@ export default function BookEditing() {
                 </p> */}
             </div>
 
-
             <section className="relative overflow-visible text-white bg-center bg-no-repeat bg-cover ser-cta-banner py-14 md:py-0"
                             style={{ backgroundImage: `url(/brand-img/bg-banner.png)` }}>
                             <div className="relative grid items-center grid-cols-1 gap-4 mx-auto md:grid-cols-12 max-w-7xl ">
             
                                 <div className="relative z-10 justify-center hidden md:col-span-3 md:flex md:justify-start">
                                     <Image
-                                        src="/images/Horror-Writing/cta-book-12.webp"
+                                        src="/images/Childrens-Books/cta-book-12.webp"
                                         alt="Book 1"
                                         className="absolute l-book -top-20 md:-top-36"
                                         height={600}
@@ -107,25 +103,27 @@ export default function BookEditing() {
             
                                 <div className="px-4 text-center md:col-span-6">
                                     <h2 className="font-poppins text-2xl text-[#98caa9] font-semibold md:text-3xl uppercase">
-                                      Let’s Turn Fear Into Pages - Join Pine Book Writing!
+                                       Let’s Write Something Kids Love
                                     </h2>
-                                    <p className="py-4 text-base md:text-lg">If you want to write a horror story that feels unsettling and honest and unforgettable, our horror writing services can help you write something your readers won’t forget. Explore our past work and see why clients trust us with their darkest ideas.
+                                    <p className="py-4 text-base md:text-lg">
+                                       Have an idea sitting in your head for too long? Our children's book writing service helps you write children books that parents trust and kids enjoy reading again and again.
                                     </p>
             
                                     <div className="flex flex-col items-center justify-center gap-4 cta-btns sm:flex-row">
-                                        <CTAButton />
+                                                 <CTAButton />
             
             
                                         <a
                                             href="tel:(866) 841-7463"
-                                            className="flex items-center gap-2 text-white">
+                                            className="flex items-center gap-2 text-white"
+                                        >
                                             <FaPhoneVolume className="inline" /> (866) 841-7463
                                         </a>
             
-                                        <a
+                                          <a
                                             href={'javascript:;'}
                                             className="bg-transparent text-[#fff] px-5 py-2 border border-white
-                                                                                                                                    rounded-full flex items-center gap-2 hover:bg-gray-200 hover:text-black cta-btn-1 transition" onClick={handleOpenChat}>
+             rounded-full flex items-center gap-2 hover:bg-gray-200 hover:text-black cta-btn-1 transition" onClick={handleOpenChat}>
                                             Live Chat
                                         </a>
                                     </div>
@@ -143,12 +141,13 @@ export default function BookEditing() {
                             </div>
                         </section>
 
+
             {/* inner process section start */}
              <section className="relative flex justify-center pt-20 mx-auto mb-12 overflow-hidden text-center brand-process">
                 <div className="max-w-screen-xl">
                     <div className="mb-6 text-center">
                         <h3 className="text-2xl text-black font-poppins">Our Service Workflow</h3>
-                        <h2 className="text-3xl font-bold text-black font-poppins md:text-4xl" data-aos="zoom-out-down">6-Step Process of Our Horror Writing Services</h2>
+                        <h2 className="text-3xl font-bold text-black font-poppins md:text-4xl" data-aos="zoom-out-down">6-Step Process of Our Children's Book Writing Service</h2>
                     </div>
 
                     <div className="grid gap-6 mb-6 md:grid-cols-3">
@@ -156,24 +155,24 @@ export default function BookEditing() {
                         <div className="flex flex-row " data-aos="fade-left">
                             <div className="flex-col px-6 py-10 text-left brand-process-content">
                                 <span className="num-span"><b>01</b></span>
-                                <h2 className="text-2xl text-white font-poppins pro-h">Idea & Fear Mapping</h2>
-                                <p className="">We talk about your idea and the kind of fear you want. Psychological, supernatural, or slow-burning. Writing a horror novel works best when fear is clearly understood first.</p>
+                                <h2 className="text-2xl text-white font-poppins pro-h">Idea Understanding</h2>
+                                <p className="">We start by listening. Your idea, age group, tone and even doubts. Writing a children’s book works best when we understand who the story is really for.</p>
                             </div>
                         </div>
 
                         <div className="flex flex-row" data-aos="fade-left">
                         <div className="flex-col px-6 py-10 text-left brand-process-content">
                         <span className="num-span"><b>02</b></span>
-                                <h2 className="text-2xl text-white font-poppins pro-h">Story Structure Setup</h2>
-                                <p className="">Our horror writer plans the story flow. Where tension rises, where silence sits, and where it breaks. No rush. Suspense-driven horror stories need breathing space.</p>
+                                <h2 className="text-2xl text-white font-poppins pro-h">Planning & Structure</h2>
+                                <p className="">Our children’s book writer builds a simple story plan. Nothing complex. Just clear flow, gentle message, and space for imagination to grow naturally..</p>
                             </div>
                         </div>
 
                         <div className="flex flex-row" data-aos="fade-left">
                         <div className="flex-col px-6 py-10 text-left brand-process-content">
                         <span className="num-span"><b>03</b></span>
-                                <h2 className="text-2xl text-white font-poppins pro-h">First Draft Writing</h2>
-                                <p className="">Drafting begins with focus on mood and voice. Horror story writing needs rhythm. Scenes are written carefully, not loud, not rushed. Fear should feel earned.</p>
+                                <h2 className="text-2xl text-white font-poppins pro-h">Drafting</h2>
+                                <p className="">Draft writing begins. The language stays soft and age-appropriate. We focus on children’s fiction writing that feels easy to read, not heavy or confusing.</p>
                             </div>
                         </div>
                         
@@ -184,16 +183,16 @@ export default function BookEditing() {
                         <div className="flex flex-row " data-aos="fade-left">
                         <div className="flex-col px-6 py-10 text-left brand-process-content">
                         <span className="num-span"><b>04</b></span>
-                                <h2 className="text-2xl text-white font-poppins pro-h">Feedback & Adjustments</h2>
-                                <p className="">You review the draft. We revise tone, scenes, or pacing. Horror writing improves through back and forth. We don’t argue. We adjust patiently.</p>
+                                <h2 className="text-2xl text-white font-poppins pro-h">Multiple Revisions</h2>
+                                <p className="">You review the draft. We adjust scenes, pacing, or tone. Custom children’s story writing needs back and forth, and we’re patient with that.</p>
                             </div>
                         </div>
 
                         <div className="flex flex-row" data-aos="fade-left">
                         <div className="flex-col px-6 py-10 text-left brand-process-content">
                         <span className="num-span"><b>05</b></span>
-                                <h2 className="text-2xl text-white font-poppins pro-h">Editing & Refinement</h2>
-                                <p className="">Our editors smooth the language, sharpen scenes, and remove anything that feels forced. Character-driven horror stories need clean, natural flow to work.</p>
+                                <h2 className="text-2xl text-white font-poppins pro-h">Editing & Refining</h2>
+                                <p className="">Editing and polishing follows. Our expert editors check clarity, reading level, and flow so the story feels smooth and friendly.</p>
                             </div>
                         </div>
 
@@ -201,7 +200,7 @@ export default function BookEditing() {
                         <div className="flex-col px-6 py-10 text-left brand-process-content">
                         <span className="num-span"><b>06</b></span>
                                 <h2 className="text-2xl text-white font-poppins pro-h">Final Delivery</h2>
-                                <p className="">You receive the polished manuscript, ready for publishing or submission.  Your written horror story is delivered professionally and confidentially.</p>
+                                <p className="">Final delivery is prepared. Clean file, ready for illustration or publishing. Picture book writing services often move to this stage with ease.</p>
                             </div>
                         </div>
                         
@@ -215,21 +214,21 @@ export default function BookEditing() {
     Our Offerings
   </h2>
   <h2 className="mb-12 text-xl font-medium text-center text-gray-700 md:text-2xl">
-  What’s Included In Our Horror Writing Services
+What’s Included In Our Children Book Writing
   </h2>
 
   <p className="mb-12 text-xl font-medium text-center text-gray-700 md:text-2xl">
-  From concept shaping to final edits, our professional horror writing services cover everything needed to create chilling, readable, and emotionally grounded horror stories.
+  From first idea to final words, our kids book writing services support every stage, while keeping stories simple, readable, and suitable for young minds. We do all that can help you list your book among the best children's books.
   </p>
 
   <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3">
     {[
-     { icon: '🖋️', label: 'Horror Novel Writing ' },
-      { icon: '🧐', label: 'Horror Short Story Writing' },
-      { icon: '📄', label: 'Supernatural Horror Fiction   ' },
-      { icon: '💼', label: 'Ghost Story Writing Services' },
-      { icon: '⚙️', label: 'Thriller Horror Writing' },
-      { icon: '🎯', label: 'Horror Editing & Proofreading' },         
+     { icon: '🖋️', label: 'Picture Book Writing' },
+      { icon: '🧐', label: 'Early Reader Book Writing' },
+      { icon: '📄', label: 'Children’s Book Ghostwriting' },
+      { icon: '💼', label: 'Age-Appropriate Editing' },
+      { icon: '⚙️', label: 'Story Development for Kids' },
+      { icon: '🎯', label: 'Design & Illustration' },         
     ].map((service, index) => (
       <div
         key={index}
@@ -243,30 +242,31 @@ export default function BookEditing() {
     ))}
   </div>
 </section>
+
             
             <section className="overflow-hidden" >
                 <div className="relative left-0 px-12 py-10 mb-8 brand-choose-us-section ms-auto md:left-52 md:px-20 md:mt-16 " >
                     <div className="flex flex-col items-center md:flex-row" data-aos="fade-right" data-aos-delay="0" data-aos-duration="500">
                         <div className="basis-1/3 brand-choose-us-vector">
-                        <Image src={"/images/Horror-Writing/WhyChooseUs2.webp"} width={500} height={500}
+                        <Image src={"/images/Childrens-Books/WhyChooseUs2.webp"} width={500} height={500}
                                 loading="lazy"
                                 alt="about img"
                                 className="brand-about-img"
                             />
                         </div>
                         <div className="basis-1/2 md:ml-20">
-                            <h2 className="mt-10 text-2xl font-bold text-white uppercase font-poppins md:text-4xl md:mt-0" data-aos="zoom-in-left" data-aos-delay="100">Why Authors Trust Our Best Horror Writers Team?</h2>
-                            <p className="mt-2 text-white">We don’t chase shock value. We focus on atmosphere, characters, and slow tension. That’s why clients looking to hire a horror writer stay with us.</p>
+                            <h2 className="mt-10 text-2xl font-bold text-white uppercase font-poppins md:text-4xl md:mt-0" data-aos="zoom-in-left" data-aos-delay="100">Why Children's Writers Prefer Choosing Our Ghostwriting Services?</h2>
+                            <p className="mt-2 text-white">At Pine Book Writing, we don’t rush stories. Children's book writing needs patience, softness and real care. Our team writes with heart. Our team of children’s book ghostwriters for hire doesn’t use templates. And we keep the child reader at the center always.</p>
                             <div className="flex flex-col gap-2 mt-6 md:flex-row md:gap-10">
                                 <ul>
-                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />	Mood-first writing </li>
-                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />	Genre understanding </li>
-                                    <li className="flex items-center gap-3 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />	Realistic fear </li>
+                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />	Kid-first writing </li>
+                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />	Honest feedback </li>
+                                    <li className="flex items-center gap-3 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />	Soft Language</li>
                                 </ul>
                                 <ul>
-                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />	Clean storytelling</li>
-                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />	Patient revisions</li>
-                                    <li className="flex items-center gap-3 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />	Writer-friendly process</li>
+                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />	Simple process</li>
+                                    <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />	Age clarity</li>
+                                    <li className="flex items-center gap-3 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />	Multiple revisions</li>
                                 </ul>
                             </div>
                             {/* <BrandAudioPlayer src="/brand-img/why-choose-us-voice.wav" /> */}

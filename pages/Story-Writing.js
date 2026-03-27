@@ -44,7 +44,7 @@ export default function BookEditing() {
         <>
             <Head>
                 <title>Story Writing Services | Short Story Writers for Hire</title>
-                <link rel="canonical" href="https://www.pinebookwriting.com/Story-Writing" />
+                <link rel="canonical" href="https://www.pinebookwriting.com/story-writing" />
                 <meta
                     name="description"
                     content="We offer exceptional story writing services for people who want to write, edit, or plan a story with support from industry-expert writers and editors."

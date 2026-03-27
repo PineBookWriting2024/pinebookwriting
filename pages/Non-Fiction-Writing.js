@@ -44,7 +44,7 @@ export default function BookEditing() {
         <>
             <Head>
                 <title>Best Non-Fiction Writers for Hire | Pine Book Writing</title>
-                    <link rel="canonical" href="https://www.pinebookwriting.com/Non-Fiction-Writing" />
+                    <link rel="canonical" href="https://www.pinebookwriting.com/non-fiction-writing" />
                 <meta
                     name="description"
                     content="We're offering exceptional non-fiction writing services with leading writers capable of writing your ideas with perfection and creating a non-fiction book."

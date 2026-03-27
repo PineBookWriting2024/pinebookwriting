@@ -44,7 +44,7 @@ export default function BookEditing() {
         <>
             <Head>
                 <title>Narrative Writing Services | Narrative Writers For Hire</title>
-                <link rel="canonical" href="https://www.pinebookwriting.com/Narrative-Writing" />
+                <link rel="canonical" href="https://www.pinebookwriting.com/narrative-writing" />
                 <meta
                     name="description"
                     content="Bring your own narrative and acquire the best narrative writing services. We offer expert narrative writing help with having top-class writers on board."

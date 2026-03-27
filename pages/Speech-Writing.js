@@ -44,7 +44,7 @@ export default function BookEditing() {
         <>
             <Head>
                 <title>Bespoke Speech Writing Services | Pine Book Writing</title>
-                <link rel="canonical" href="https://www.pinebookwriting.com/Speech-Writing" />
+                <link rel="canonical" href="https://www.pinebookwriting.com/speech-writing" />
                 <meta
                     name="description"
                     content="Looking for trusted speech writing services? Join us to craft a clear, powerful speech for your personal or professional purpose. Write with confidentiality."

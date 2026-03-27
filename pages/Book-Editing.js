@@ -44,7 +44,7 @@ export default function BookEditing() {
         <>
             <Head>
                 <title>Book Editing Services | Expert Book Editors for Hire</title>
-                <link rel="canonical" href="https://www.pinebookwriting.com/Fantasy-Writing-Services" />
+                <link rel="canonical" href="https://www.pinebookwriting.com/fantasy-writing-services" />
                 <meta
                     name="description"
                     content="Get trusted book editing services for fiction, non-fiction, and other genres. Our expert editors help refine your work, making it shareable with the world."

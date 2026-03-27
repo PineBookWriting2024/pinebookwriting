@@ -57,7 +57,7 @@ export default function BookEditing() {
             <Head>
                 <title>Hire the Best Military Fiction Writing Services 
 </title>
-                <link rel="canonical" href="https://www.pinebookwriting.com/Military-Fiction-Writing" />
+                <link rel="canonical" href="https://www.pinebookwriting.com/military-fiction-writing" />
                 <meta
                     name="description"
                     content="Write your war stories using professional military fiction writing services by Pine Book Writing. Infuse emotions into your coming military fiction book."

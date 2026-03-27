@@ -44,7 +44,7 @@ export default function BookEditing() {
         <>
             <Head>
                 <title>Professional Screenwriting Service | Pine Book Writing</title>
-                <link rel="canonical" href="https://www.pinebookwriting.com/Screen-Writing" />
+                <link rel="canonical" href="https://www.pinebookwriting.com/screen-writing" />
 
                 <meta
                     name="description"

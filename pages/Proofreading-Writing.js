@@ -44,7 +44,7 @@ export default function BookEditing() {
         <>
             <Head>
                 <title>Expert Book Proofreading Services | Pine Book Writing</title>
-                <link rel="canonical" href="https://www.pinebookwriting.com/Narrative-Writing" />
+                <link rel="canonical" href="https://www.pinebookwriting.com/narrative-writing" />
                 <meta
                     name="description"
                     content="Explore our book proofreading services at Pine Book Writing and see how we help authors get their books refined and ready to publish."

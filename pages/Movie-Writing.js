@@ -44,7 +44,7 @@ export default function BookEditing() {
         <>
             <Head>
                 <title>Best Movie Writing Services | Script Writers for Hire</title>
-                <link rel="canonical" href="https://www.pinebookwriting.com/Movie-Writing" />
+                <link rel="canonical" href="https://www.pinebookwriting.com/movie-writing" />
                 <meta
                     name="description"
                     content="Get expert movie writing services and create a perfect movie script. Hire skilled writers for your short or full length movie script at Pine Book Writing.
@@ -262,7 +262,8 @@ export default function BookEditing() {
                         </div>
                         <div className="basis-1/2 md:ml-20">
                             <h2 className="mt-10 text-2xl font-bold text-white uppercase font-poppins md:text-4xl md:mt-0" data-aos="zoom-in-left" data-aos-delay="100">What Makes Our Movie Writing Services Stand Out?</h2>
-                            <p className="mt-2 text-white">We’re not just writers but storytellers who understand how movies connect with people. Our professional movie writing team makes sure every story feels real and emotional. Not robotic. From plot building to dialogue creation, we pay attention to every small detail that makes your script outstanding.</p>
+                            <p className="mt-2 text-white">We’re not just writers but storytellers who understand how movies connect with people. Our professional movie writing team makes sure every story feels real and emotional. Not robotic. From plot building to dialogue creation, we pay attention to every small detail that makes your script outstanding.
+</p>
                             <div className="flex flex-col gap-2 mt-6 md:flex-row md:gap-10">
                                 <ul>
                                     <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />	Creative Storytelling</li>

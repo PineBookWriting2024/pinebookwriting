@@ -45,7 +45,7 @@ export default function BookEditing() {
         <>
             <Head>
                 <title>Best Autobiography Writing Services | Pine Book Writing</title>
-                <link rel="canonical" href="https://www.pinebookwriting.com/Autobiography-Writing" />
+                <link rel="canonical" href="https://www.pinebookwriting.com/autobiography-writing" />
                 <meta
                     name="description"
                     content="Looking for the best autobiography writing services? We have highly competent ghostwriters at Pine Book Writing to help you write your personal life story"

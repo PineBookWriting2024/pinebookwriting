@@ -43,7 +43,7 @@ export default function BookEditing() {
         <>
             <Head>
                 <title>Comedy Writing | Pine Book Writing</title>
-                <link rel="canonical" href="https://www.pinebookwriting.com/Comedy-Writing" />
+                <link rel="canonical" href="https://www.pinebookwriting.com/comedy-writing" />
                 <meta
                     name="description"
                     content="Make your audience laugh with our comedy writing service. We craft comedy with wit, pace, and style that match your voice and audience’s taste."

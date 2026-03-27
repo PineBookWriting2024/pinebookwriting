@@ -44,7 +44,7 @@ export default function BookEditing() {
         <>
             <Head>
                 <title>Action Adventure Writing Services | Pine Book Writing</title>
-                <link rel="canonical" href="https://www.pinebookwriting.com/Action-Adventure" />
+                <link rel="canonical" href="https://www.pinebookwriting.com/action-adventure-writing" />
                 <meta
                     name="description"
                     content="Looking for action adventure writing services? Pine Book Writing helps write action-packed stories with a team of industry-leading storytellers/writers."

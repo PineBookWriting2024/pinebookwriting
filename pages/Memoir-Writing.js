@@ -44,7 +44,7 @@ export default function BookEditing() {
         <>
             <Head>
                 <title>Acquire Memoir Writing Services by Trusted Ghostwriters</title>
-                <link rel="canonical" href="https://www.pinebookwriting.com/Memoir-Writing" />
+                <link rel="canonical" href="https://www.pinebookwriting.com/memoir-writing" />
                 <meta
                     name="description"
                     content="Offering memoir writing services for personal stories, life events and family histories. We handle it all from interviews to your final draft,."

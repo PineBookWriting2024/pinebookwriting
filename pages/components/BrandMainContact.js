@@ -191,7 +191,7 @@ export default function BrandMainContact() {
                 </div>
             </section>
 
-              <section className="max-w-screen-xl mx-auto mt-20 mb-8">
+            <section className="max-w-screen-xl mx-auto mt-20 mb-8">
                 <div className="flex justify-around md:flex-row">
                     {/* <div className="brand-meet-team-container text-center flex justify-center flex-col items-center">
                         <Image src={"/brand-img/Kenneth Snyder.webp"} width={210} height={200} className="mb-5" />
@@ -229,7 +229,7 @@ export default function BrandMainContact() {
                         <p className="text-black font-bold text-xl">lia@pinebookwriting.com</p>
                         {/* <p className="text-black leading-20 font-bold text-xl md:text-4xl uppercase">289-379-7913</p> */}
                     </div>
-                     <div className="w-1/2 brand-meet-team-container text-center flex justify-center flex-col items-center mt-5">
+                    <div className="w-1/2 brand-meet-team-container text-center flex justify-center flex-col items-center mt-5">
                         <Image src={"/brand-img/Jerome Preston.webp"} width={210} height={200} className="mb-5" />
                         <h3 className="text-black leading-20 text-3xl md:text-3xl font-poppins uppercase">Jerome Preston</h3>
                         <h4 className="text-black text-xl font-poppins">Senior Consultant & Outreach Manager</h4>
@@ -251,7 +251,7 @@ export default function BrandMainContact() {
                         <h4 className="text-black text-xl font-poppins">Client Success Strategist</h4>
                         <p className="text-black font-bold text-xl">ryan@pinebookwriting.com</p>
                     </div>
-                     <div className="w-1/2 brand-meet-team-container text-center flex justify-center flex-col items-center mt-5">
+                    <div className="w-1/2 brand-meet-team-container text-center flex justify-center flex-col items-center mt-5">
                         <Image src={"/brand-img/Marcus Ryan.webp"} width={210} height={200} className="mb-5" />
                         <h3 className="text-black leading-20 text-3xl md:text-3xl font-poppins uppercase">Marcus Ryan</h3>
                         <h4 className="text-black text-xl font-poppins">Senior Marketing Strategists</h4>

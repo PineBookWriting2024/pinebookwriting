@@ -66,11 +66,11 @@ export default function BookEditing() {
                         <h2 className="text-3xl font-bold uppercase font-poppins md:text-4xl">Professional Speech Writing Services That Sound Like You</h2>
 
                         <h2 className="text-2xl uppercase font-poppins md:text-3xl">
-                           Real Words. Real Impact.
+                            Real Words. Real Impact.
                         </h2>
 
                         <p className="pt-3 text-xl text-left font-poppins">
-                           At Pine Book Writing, we don't write just big words. We write the right words. That matters a lot. Many people know what they have to say, but the time when they start to write it... It just doesn't come out right. And that's where our service works. </p>
+                            At Pine Book Writing, we don't write just big words. We write the right words. That matters a lot. Many people know what they have to say, but the time when they start to write it... It just doesn't come out right. And that's where our service works. </p>
 
                         <p className="pt-3 text-xl text-left font-poppins">We don't just start writing. But we listen and understand your message and tone. Also, understand your audience first. We can help you write something personal, whether it's a motivational speech, a business speech, or a public speaking speech. No copy/paste. No robotic words. So, if you are planning to hire a speech writer who listens first, then writes, stop searching now. We're here for all your writing needs.</p>
                     </div>
@@ -105,8 +105,8 @@ export default function BookEditing() {
 
                     <div className="px-4 text-center md:col-span-6">
                         <h2 className="font-poppins text-2xl text-[#98caa9] font-semibold md:text-3xl uppercase">
-                           
-Ready To Deliver A Powerful Yet Meaningful Speech?
+
+                            Ready To Deliver A Powerful Yet Meaningful Speech?
 
                         </h2>
                         <p className="py-4 text-base md:text-lg">GHire a speechwriter who understands your voice and message. Let’s craft a speech that feels natural and earns real attention.</p>
@@ -209,39 +209,39 @@ Ready To Deliver A Powerful Yet Meaningful Speech?
                 </div>
             </section>
 
-             <section className="max-w-6xl px-4 py-16 mx-auto bg-white font-poppins">
-                 <h2 className="mb-12 text-xl font-medium text-center text-gray-700 md:text-2xl">
-    Our Offerings
-  </h2>
-  <h2 className="mb-12 text-xl font-medium text-center text-gray-700 md:text-2xl">
-What’s Included In Our Speech Writing Services
-  </h2>
+            <section className="max-w-6xl px-4 py-16 mx-auto bg-white font-poppins">
+                <h2 className="mb-12 text-xl font-medium text-center text-gray-700 md:text-2xl">
+                    Our Offerings
+                </h2>
+                <h2 className="mb-12 text-xl font-medium text-center text-gray-700 md:text-2xl">
+                    What’s Included In Our Speech Writing Services
+                </h2>
 
-  <p className="mb-12 text-xl font-medium text-center text-gray-700 md:text-2xl">
-Our speech writing service covers all aspects from research and planning to refining the draft. So you receive a ready-to-deliver speech fit for your event.
-  </p>
+                <p className="mb-12 text-xl font-medium text-center text-gray-700 md:text-2xl">
+                    Our speech writing service covers all aspects from research and planning to refining the draft. So you receive a ready-to-deliver speech fit for your event.
+                </p>
 
-  <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3">
-    {[
-     { icon: '🖋️', label: 'Keynote Speech Writing' },
-      { icon: '🧐', label: 'Business Speech Writing' },
-      { icon: '📄', label: 'Motivational Speech Writing' },
-      { icon: '💼', label: 'Political Speech Writing' },
-      { icon: '⚙️', label: 'Public Speaking Speech Writing' },
-      { icon: '🎯', label: 'Speech Editing' },         
-    ].map((service, index) => (
-      <div
-        key={index}
-        className="flex flex-col items-center justify-center h-32 p-4 text-center bg-[#f4f1ea] hover:bg-[#ebe8e0] transition-colors rounded-xl shadow-sm hover:shadow-md"
-      >
-        <div className="mb-2 text-3xl">{service.icon}</div>
-        <span className="text-[10px] font-bold uppercase tracking-widest text-gray-600">
-          {service.label}
-        </span>
-      </div>
-    ))}
-  </div>
-</section>
+                <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3">
+                    {[
+                        { icon: '🖋️', label: 'Keynote Speech Writing' },
+                        { icon: '🧐', label: 'Business Speech Writing' },
+                        { icon: '📄', label: 'Motivational Speech Writing' },
+                        { icon: '💼', label: 'Political Speech Writing' },
+                        { icon: '⚙️', label: 'Public Speaking Speech Writing' },
+                        { icon: '🎯', label: 'Speech Editing' },
+                    ].map((service, index) => (
+                        <div
+                            key={index}
+                            className="flex flex-col items-center justify-center h-32 p-4 text-center bg-[#f4f1ea] hover:bg-[#ebe8e0] transition-colors rounded-xl shadow-sm hover:shadow-md"
+                        >
+                            <div className="mb-2 text-3xl">{service.icon}</div>
+                            <span className="text-[10px] font-bold uppercase tracking-widest text-gray-600">
+                                {service.label}
+                            </span>
+                        </div>
+                    ))}
+                </div>
+            </section>
 
             <section className="overflow-hidden" >
                 <div className="relative left-0 px-12 py-10 mb-8 brand-choose-us-section ms-auto md:left-52 md:px-20 md:mt-16 " >

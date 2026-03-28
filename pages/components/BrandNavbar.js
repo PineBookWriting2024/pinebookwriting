@@ -22,10 +22,10 @@ export default function BrandNavbar() {
         { name: 'Comic Book Writing', href: '/comic-book-writing' },
         { name: 'Military Fiction Writing', href: '/military-fiction-writing' },
         { name: 'Movie Writing', href: '/movie-writing' },
-        { name: 'Book Editing', href: '/Book-Editing' },
-        { name: 'Book Formatting', href: '/Book-Formatting-Writing' },
-        { name: 'Book Self Publishing', href: '/Book-Self-Publishing' },
-        { name: 'Proofreading', href: '/Proofreading-Writing' },
+        { name: 'Book Editing', href: '/book-editing' },
+        { name: 'Book Formatting', href: '/book-formatting-writing' },
+        { name: 'Book Self Publishing', href: '/book-self-publishing' },
+        { name: 'Proofreading', href: '/proofreading-writing' },
     ];
 
     const services = [
@@ -41,12 +41,12 @@ export default function BrandNavbar() {
         { name: 'Product Description Writing', href: '/product-description' },
         { name: 'Screen Writing', href: '/screen-writing' },
         { name: 'Action Adventure Writing', href: '/action-adventure-writing' },
-        { name: 'Childrens Books', href: '/Children-book-writing' },
+        { name: 'Childrens Books', href: '/children-book-writing' },
         { name: 'Fantasy Writing', href: '/fantasy-writing-services' },
         { name: 'Horror Writing', href: '/horror-book-writing' },
-        { name: 'Sci-Fi Writing', href: '/Sci-Fi-writing' },
+        { name: 'Sci-Fi Writing', href: '/sci-fi-writing' },
         { name: 'Biography Writing', href: '/biography-writing' },
-        
+
     ];
 
     const toggleServiceDropdown = () => {

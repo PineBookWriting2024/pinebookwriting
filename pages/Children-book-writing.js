@@ -43,7 +43,7 @@ export default function BookEditing() {
         <>
             <Head>
                 <title>Best Children Book Writing Services | Pine Book Writing</title>
-                <link rel="canonical" href="https://www.pinebookwriting.com/Children-book-writing" />
+                <link rel="canonical" href="https://www.pinebookwriting.com/children-book-writing" />
                 <meta
                     name="description"
                     content="Looking to write children’s books? Our children's book writing service helps turn simple ideas into age-appropriate stories that kids enjoy and parents trust."

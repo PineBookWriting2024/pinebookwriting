@@ -1,6 +1,8 @@
 import { NextResponse } from 'next/server'
 
 const legacyCaseRedirects = {
+  '/ghostwriting': '/ghostwriting-service',
+  '/ghostwriting-services': '/ghostwriting-service',
   '/Autobiography-Writing': '/autobiography-writing',
   '/Biography-Writing': '/biography-writing',
   '/Book-Formatting-Writing': '/book-formatting-writing',

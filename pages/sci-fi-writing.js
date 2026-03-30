@@ -44,7 +44,7 @@ export default function BookEditing() {
         <>
             <Head>
                 <title>Sci-Fi Writing | Pine Book Writing</title>
-                <link rel="canonical" href="https://www.pinebookwriting.com/Sci-Fi-writing" />
+                <link rel="canonical" href="https://www.pinebookwriting.com/sci-fi-writing" />
                 <meta
                     name="description"
                     content="Looking for the best sci-fi writing services? Pine Book Writing helps you create science fiction stories, novels, and futuristic fiction with expert support."

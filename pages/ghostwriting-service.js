@@ -32,7 +32,7 @@ export default function GhostwritingServices() {
     <>
       <Head>
         <title>Affordable Ghostwriting Services - Pine Book Writing</title>
-        <link rel="canonical" href="https://www.pinebookwriting.com/ghostwriting" />
+        <link rel="canonical" href="https://www.pinebookwriting.com/ghostwriting-service" />
         <meta
           name="description"
           content="Want freedom from long sitting for outlining, writing, editing, and all the necessary tasks to write a perfect book? Hire our expert ghostwriting services."
@@ -70,7 +70,7 @@ export default function GhostwritingServices() {
               while some have both wonderful ideas and time, but lack writing skills.
               That's why we introduced book ghostwriting services,aiming to help new or experienced authors create books, from enthralling
               children's books and autobiographies to fiction or{" "}
-              <Link href="/Non-Fiction-Writing">
+              <Link href="/non-fiction-writing">
                 <span className="text-black underline ">
                   non-fiction literature
                 </span>
@@ -86,7 +86,7 @@ export default function GhostwritingServices() {
               how much experience of writing you retain. Whether you need guidance with an
               informative memoir ghostwriter, a suspenseful novel
               or a fascinating{" "}
-              <Link href="/Childrens-Books">
+              <Link href="/children-book-writing">
                 <span className="text-black underline ">
                   children's storybook
                 </span>
@@ -331,18 +331,18 @@ export default function GhostwritingServices() {
           border: "1px solid #e0e0e0"
         }}>
           {[
-            { title: "Book Editing Services", link: "/Book-Editing", icon: "M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" },
-            { title: "Children's Book Editor", link: "/Childrens-Books", icon: "M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" },
-            { title: "Comedy Writing Services", link: "/Comedy-Writing", icon: "M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" },
-            { title: "Comic Book Writing", link: "/Comic-Book-Writing", icon: "M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" },
+            { title: "Book Editing Services", link: "/book-editing", icon: "M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" },
+            { title: "Children's Book Editor", link: "/children-book-writing", icon: "M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" },
+            { title: "Comedy Writing Services", link: "/comedy-writing", icon: "M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" },
+            { title: "Comic Book Writing", link: "/comic-book-writing", icon: "M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" },
             { title: "Fiction Writing Services", link: "/fiction-page", icon: "M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z" },
-            { title: "Hip Hop Ghostwriting", link: "/Hip-Hop-Writing", icon: "M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z" },
-            { title: "Horror Writing Services", icon: "M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z", link: "/Horror-Writing" },
-            { title: "Memoir Writing Services", link: "/Memoir-Writing", icon: "M8 7v8a2 2 0 002 2h6M8 7V5a2 2 0 012-2h4.586a1 1 0 01.707.293l4.414 4.414a1 1 0 01.293.707V15a2 2 0 01-2 2h-2M8 7H6a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2v-2" },
-            { title: "Non Fiction Writing", link: "/Non-Fiction-Writing", icon: "M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z" },
+            { title: "Hip Hop Ghostwriting", link: "/hip-hop-writing", icon: "M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z" },
+            { title: "Horror Writing Services", icon: "M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z", link: "/horror-book-writing" },
+            { title: "Memoir Writing Services", link: "/memoir-writing", icon: "M8 7v8a2 2 0 002 2h6M8 7V5a2 2 0 012-2h4.586a1 1 0 01.707.293l4.414 4.414a1 1 0 01.293.707V15a2 2 0 01-2 2h-2M8 7H6a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2v-2" },
+            { title: "Non Fiction Writing", link: "/non-fiction-writing", icon: "M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z" },
             { title: "Script Writing Services", link: "/script-writing", icon: "M7 4V2M17 4V2M3 8h18M5 4h14a2 2 0 012 2v12a2 2 0 01-2 2H5a2 2 0 01-2-2V6a2 2 0 012-2z" },
-            { title: "Song Writing Services", link: "/Song-Writing", icon: "M9 19V6l12-2v13M9 10l12-2M6 18a3 3 0 100-6 3 3 0 000 6zm12-2a3 3 0 100-6 3 3 0 000 6z" },
-            { title: "Speech Writing Services", link: "/speech-writing-services", icon: "M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" }
+            { title: "Song Writing Services", link: "/song-writing", icon: "M9 19V6l12-2v13M9 10l12-2M6 18a3 3 0 100-6 3 3 0 000 6zm12-2a3 3 0 100-6 3 3 0 000 6z" },
+            { title: "Speech Writing Services", link: "/speech-writing", icon: "M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" }
           ].map((service, index) => {
             const row = Math.floor(index / 4);
             const col = index % 4;

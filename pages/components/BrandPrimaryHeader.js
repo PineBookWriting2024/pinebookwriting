@@ -7,7 +7,6 @@ export default function BrandPrimaryHeader(props) {
     const { openModal } = usePopupcta();
 
     const serviceRoutes = new Set([
-        "/ghostwriting",
         "/ghostwriting-service",
         "/resume-writing",
         "/social-media-copywriting",

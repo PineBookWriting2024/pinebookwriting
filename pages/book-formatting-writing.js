@@ -44,7 +44,7 @@ export default function BookEditing() {
         <>
             <Head>
                 <title>Expert Book Formatting Services | Pine Book Writing</title>
-                <link rel="canonical" href="https://www.pinebookwriting.com/Fantasy-Writing-Services" />
+                <link rel="canonical" href="https://www.pinebookwriting.com/book-formatting-writing" />
                 <meta
                     name="description"
                     content="Need book formatting services that meet publishing rules? We format books for print, Kindle, and ePub. Clean layouts, smooth uploads, and files ready to publish."

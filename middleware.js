@@ -17,7 +17,7 @@ const legacyCaseRedirects = {
   '/Horror-Writing': '/horror-book-writing',
   '/Memoir-Writing': '/memoir-writing',
   '/Military-Fiction-Writing': '/military-fiction-writing',
-  '/Movie-Writing': '/movie-script-writing-services',
+  '/movie-writing': '/movie-script-writing-services',
   '/Narrative-Writing': '/narrative-writing',
   '/Non-Fiction-Writing': '/non-fiction-writing',
   '/Novel-Writing': '/novel-writing',

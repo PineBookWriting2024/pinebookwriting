@@ -66,16 +66,16 @@ export default function BookEditing() {
                         <h2 className="text-3xl font-bold uppercase font-poppins md:text-4xl">Where Action Actually Means Something</h2>
 
                         <h2 className="text-2xl uppercase font-poppins md:text-xl">
-                          Adventure Fiction Ghostwriting Services
+                            Adventure Fiction Ghostwriting Services
                         </h2>
 
                         <p className="pt-3 text-xl text-left font-poppins">
-                          Action adventure stories are not just about fights or chases. They are about why people move, run, or risk their lives. That’s how we write. With purpose, not noise.</p>
+                            Action adventure stories are not just about fights or chases. They are about why people move, run, or risk their lives. That’s how we write. With purpose, not noise.</p>
 
                         <p className="pt-3 text-xl text-left font-poppins">At Pine Book Writing, our action adventure writing services are built for writers who want real tension and clear direction. Some clients come with half an idea. Others bring notes, scenes, or messy chapters. Both work. As adventure fiction ghostwriters for hire, we focus on clean plots, strong stakes, and characters who don’t feel flat. We write action fiction that reads smooth, not rushed, and never copied. If you want a single book or a full series, we help shape it patiently.</p>
                     </div>
                     <div className="flex justify-center text-center basis-1/2 abt-pic md:justify-center">
-                        <Image  src="/images/Action-Adventure/ghost-pic.webp" width={470} height={300}
+                        <Image src="/images/Action-Adventure/ghost-pic.webp" width={470} height={300}
                             loading="lazy"
                             alt="about img"
                             className="aos-init aos-animate"
@@ -207,39 +207,39 @@ export default function BookEditing() {
                 </div>
             </section>
 
-              <section className="max-w-6xl px-4 py-16 mx-auto bg-white font-poppins">
-                 <h2 className="mb-12 text-xl font-medium text-center text-gray-700 md:text-2xl">
-    Our Offerings
-  </h2>
-  <h2 className="mb-12 text-xl font-medium text-center text-gray-700 md:text-2xl">
-What’s Included In Our Action Adventure Writing Services
-  </h2>
+            <section className="max-w-6xl px-4 py-16 mx-auto bg-white font-poppins">
+                <h2 className="mb-12 text-xl font-medium text-center text-gray-700 md:text-2xl">
+                    Our Offerings
+                </h2>
+                <h2 className="mb-12 text-xl font-medium text-center text-gray-700 md:text-2xl">
+                    What’s Included In Our Action Adventure Writing Services
+                </h2>
 
-  <p className="mb-12 text-xl font-medium text-center text-gray-700 md:text-2xl">
-  Pine Book Writing offers writing support for full books, series, and custom stories. All written fresh and shaped around your idea. No templates are used.
-  </p>
+                <p className="mb-12 text-xl font-medium text-center text-gray-700 md:text-2xl">
+                    Pine Book Writing offers writing support for full books, series, and custom stories. All written fresh and shaped around your idea. No templates are used.
+                </p>
 
-  <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3">
-    {[
-     { icon: '🖋️', label: 'Action Adventure Novels' },
-      { icon: '🧐', label: 'Action Adventure Novels' },
-      { icon: '📄', label: 'Action Fiction Ghostwriting' },
-      { icon: '💼', label: 'Custom Adventure Stories' },
-      { icon: '⚙️', label: 'Plot Development' },
-      { icon: '🎯', label: 'Character Building' },         
-    ].map((service, index) => (
-      <div
-        key={index}
-        className="flex flex-col items-center justify-center h-32 p-4 text-center bg-[#f4f1ea] hover:bg-[#ebe8e0] transition-colors rounded-xl shadow-sm hover:shadow-md"
-      >
-        <div className="mb-2 text-3xl">{service.icon}</div>
-        <span className="text-[10px] font-bold uppercase tracking-widest text-gray-600">
-          {service.label}
-        </span>
-      </div>
-    ))}
-  </div>
-</section>
+                <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3">
+                    {[
+                        { icon: '🖋️', label: 'Action Adventure Novels' },
+                        { icon: '🧐', label: 'Action Adventure Novels' },
+                        { icon: '📄', label: 'Action Fiction Ghostwriting' },
+                        { icon: '💼', label: 'Custom Adventure Stories' },
+                        { icon: '⚙️', label: 'Plot Development' },
+                        { icon: '🎯', label: 'Character Building' },
+                    ].map((service, index) => (
+                        <div
+                            key={index}
+                            className="flex flex-col items-center justify-center h-32 p-4 text-center bg-[#f4f1ea] hover:bg-[#ebe8e0] transition-colors rounded-xl shadow-sm hover:shadow-md"
+                        >
+                            <div className="mb-2 text-3xl">{service.icon}</div>
+                            <span className="text-[10px] font-bold uppercase tracking-widest text-gray-600">
+                                {service.label}
+                            </span>
+                        </div>
+                    ))}
+                </div>
+            </section>
 
             <section className="overflow-hidden" >
                 <div className="relative left-0 px-12 py-10 mb-8 brand-choose-us-section ms-auto md:left-52 md:px-20 md:mt-16 " >

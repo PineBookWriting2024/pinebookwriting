@@ -1,16 +1,20 @@
 import { NextResponse } from 'next/server'
 
 const legacyCaseRedirects = {
+  '/Action-Adventure': '/action-adventure-writing',
   '/ghostwriting': '/ghostwriting-service',
   '/ghostwriting-services': '/ghostwriting-service',
   '/Autobiography-Writing': '/autobiography-writing',
   '/Biography-Writing': '/biography-writing',
   '/Book-Formatting-Writing': '/book-formatting-writing',
   '/Book-Self-Publishing': '/book-self-publishing',
+  '/Childrens-Books': '/children-book-writing',
   '/Children-book-writing': '/children-book-writing',
   '/Comedy-Writing': '/comedy-writing',
   '/Comic-Book-Writing': '/comic-book-writing',
+  '/Fantasy-Writing-Services': '/fantasy-writing-services',
   '/Hip-Hop-Writing': '/hip-hop-writing',
+  '/Horror-Writing': '/horror-book-writing',
   '/Memoir-Writing': '/memoir-writing',
   '/Military-Fiction-Writing': '/military-fiction-writing',
   '/Movie-Writing': '/movie-writing',
@@ -27,7 +31,7 @@ const legacyCaseRedirects = {
   '/Wiki-Writing': '/wiki-writing'
 }
 
-export function middleware (request) {
+export function middleware(request) {
   const { pathname } = request.nextUrl
   const destination = legacyCaseRedirects[pathname]
 

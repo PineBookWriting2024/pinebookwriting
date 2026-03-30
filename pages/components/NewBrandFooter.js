@@ -74,7 +74,7 @@ export default function NewBrandFooter() {
         { name: 'Comedy Writing', href: '/comedy-writing' },
         { name: 'Comic Book Writing', href: '/comic-book-writing' },
         { name: 'Military Fiction Writing', href: '/military-fiction-writing' },
-        { name: 'Movie Script Writing Services', href: '/movie-script-writing-services' },
+        { name: 'Movie Writing', href: '/movie-writing' },
         { name: 'Book Editing', href: '/book-editing' },
         { name: 'Book Formatting', href: '/book-formatting-writing' },
         { name: 'Book Self Publishing', href: '/book-self-publishing' },

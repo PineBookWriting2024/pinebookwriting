@@ -29,7 +29,7 @@ export default function BrandNavbar() {
     ];
 
     const services = [
-        { name: 'Book Ghostwriting', href: '/ghostwriting' },
+        { name: 'Book Ghostwriting', href: '/ghostwriting-service' },
         { name: 'Resume Writing', href: '/resume-writing' },
         { name: 'Social Media Copywriting', href: '/social-media-copywriting' },
         { name: 'Web Copywriting', href: '/web-copywriting' },

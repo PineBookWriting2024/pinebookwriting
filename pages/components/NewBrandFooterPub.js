@@ -98,7 +98,7 @@ export default function NewBrandFooter() {
                             </h3>
                             <nav className="list-none mb-10 mt-5">
                                 <li>
-                                    <Link href="/ghostwriting" onClick={(e) => { e.preventDefault(); window.location.href = "/ghostwriting"; }}>
+                                    <Link href="/ghostwriting-service" onClick={(e) => { e.preventDefault(); window.location.href = "/ghostwriting-service"; }}>
                                         Book Ghostwriting
                                     </Link>
                                 </li>

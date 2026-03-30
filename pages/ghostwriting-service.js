@@ -1,4 +1,3 @@
-import { usePopupcta } from "../context/PopupContext";
 import React, { useState } from "react";
 import Head from "next/head";
 import Image from "next/image";
@@ -12,7 +11,6 @@ import { FaPhoneVolume } from "react-icons/fa";
 import CTAButton from './components/CTAButton';
 
 export default function GhostwritingServices() {
-  const { openModal } = usePopupcta();
   const [openFAQ, setOpenFAQ] = useState(null);
 
   const toggleFAQ = (index) => setOpenFAQ(openFAQ === index ? null : index);
@@ -48,35 +46,7 @@ export default function GhostwritingServices() {
       <BrandPrimaryHeader
         photo_banner={"/images/Ghostwriting/1.webp"}
         title="Professional Ghostwriting Services for Every Author Worldwide"
-        desc={
-          <div>
-            <div className="mb-4">
-              Write your story the way your readers actually want. Hire our expert ghostwriting services.
-              No matter if you are writing for the first time or already have written many books,
-              our team of skilled writers is capable of writing books that match your vision and audience's expectations.
-            </div>
-            <button
-              onClick={openModal}
-              style={{
-                backgroundColor: "#000",
-                color: "#fff",
-                padding: "12px 32px",
-                fontSize: "16px",
-                fontWeight: "600",
-                borderRadius: "50px",
-                border: "none",
-                cursor: "pointer",
-                boxShadow: "0 4px 14px 0 rgba(0,0,0,0.39)",
-                display: "inline-flex",
-                alignItems: "center",
-                gap: "10px",
-                marginTop: "10px"
-              }}
-            >
-              Get a FREE quote today!
-            </button>
-          </div>
-        }
+        desc="Write your story the way your readers actually want. Hire our expert ghostwriting services. No matter if you are writing for the first time or already have written many books, our team of skilled writers is capable of writing books that match your vision and audience's expectations."
       />
 
       <BrandBannerLogo />

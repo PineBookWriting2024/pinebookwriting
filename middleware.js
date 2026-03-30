@@ -8,7 +8,6 @@ const legacyCaseRedirects = {
   '/Children-book-writing': '/children-book-writing',
   '/Comedy-Writing': '/comedy-writing',
   '/Comic-Book-Writing': '/comic-book-writing',
-  '/Fantasy-Writing-Services': '/fantasy-writing-services',
   '/Hip-Hop-Writing': '/hip-hop-writing',
   '/Memoir-Writing': '/memoir-writing',
   '/Military-Fiction-Writing': '/military-fiction-writing',
@@ -36,4 +35,3 @@ export function middleware (request) {
   url.pathname = destination
   return NextResponse.redirect(url, 308)
 }
-

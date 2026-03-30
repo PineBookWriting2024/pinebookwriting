@@ -67,57 +67,6 @@ export default function ResumeWriting() {
                         <p>
                             We have a dedicated team of resume writers (mostly from human resource backgrounds) familiar with all the do’s and don’ts while writing a resume.
                         </p>
-
-                        <a
-                            href="https://www.pinebookwriting.com/contact-us"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            style={{ display: "inline-block", textDecoration: "none" }}
-                        >
-                            <button
-                                style={{
-                                    backgroundColor: "#000",
-                                    color: "#fff",
-                                    padding: "12px 32px",
-                                    fontSize: "16px",
-                                    fontWeight: "600",
-                                    borderRadius: "50px",
-                                    border: "none",
-                                    cursor: "pointer",
-                                    boxShadow: "0 4px 14px 0 rgba(0,0,0,0.39)",
-                                    transition: "all 0.3s ease",
-                                    display: "flex",
-                                    alignItems: "center",
-                                    gap: "10px",
-                                    marginTop: "20px"
-                                }}
-                                onMouseOver={(e) => {
-                                    e.currentTarget.style.backgroundColor = "#333";
-                                    e.currentTarget.style.transform = "translateY(-2px)";
-                                    e.currentTarget.style.boxShadow = "0 6px 20px rgba(0,0,0,0.23)";
-                                }}
-                                onMouseOut={(e) => {
-                                    e.currentTarget.style.backgroundColor = "#000";
-                                    e.currentTarget.style.transform = "translateY(0)";
-                                    e.currentTarget.style.boxShadow = "0 4px 14px 0 rgba(0,0,0,0.39)";
-                                }}
-                            >
-                                Get Your FREE Quote & Start Now!
-                                <svg
-                                    width="18"
-                                    height="18"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    strokeWidth="2"
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                >
-                                    <line x1="5" y1="12" x2="19" y2="12"></line>
-                                    <polyline points="12 5 19 12 12 19"></polyline>
-                                </svg>
-                            </button>
-                        </a>
                     </>
                 }
             />

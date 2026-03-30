@@ -38,177 +38,47 @@ export default function NewBrandFooter() {
 
 
     const services = [
-        {
-            name: 'Book Ghostwriting',
-            href: '/ghostwriting',
-        },
-
-        {
-            name: 'Resume Writing',
-            href: '/resume-writing',
-        },
-
-        {
-            name: 'Social Media Copywriting',
-            href: '/social-media-copywriting',
-        },
-
-
-        {
-            name: 'Web Copywriting',
-            href: '/web-copywriting',
-        },
-
-        {
-            name: 'SEO Content Writing',
-            href: '/seo-content',
-        },
-
-
-        {
-            name: 'Blogs & Article Writing',
-            href: '/blog-article-writing',
-        },
-
-
-        {
-            name: 'PR Writing',
-            href: '/press-release-writing',
-        },
-
-        {
-            name: 'Military Fiction Writing',
-            href: '/Military-Fiction-Writing',
-        },
-
-        {
-            name: 'Movie Writing',
-            href: '/Movie-Writing',
-        },
-
-        {
-            name: 'Script Writing',
-            href: '/script-writing',
-        },
-
-
-
-
-
-
+        { name: 'Book Ghostwriting', href: '/ghostwriting-service' },
+        { name: 'Resume Writing', href: '/resume-writing' },
+        { name: 'Social Media Copywriting', href: '/social-media-copywriting' },
+        { name: 'Web Copywriting', href: '/web-copywriting' },
+        { name: 'SEO Content Writing', href: '/seo-content' },
+        { name: 'Blogs & Article Writing', href: '/blog-article-writing' },
+        { name: 'PR Writing', href: '/press-release-writing' },
+        { name: 'Script Writing', href: '/script-writing' },
+        { name: 'Wikipedia Writing', href: '/wikipedia-writing' },
+        { name: 'Product Description Writing', href: '/product-description' },
+        { name: 'Screen Writing', href: '/screen-writing' },
+        { name: 'Action Adventure Writing', href: '/action-adventure-writing' },
     ];
 
     const servicessecond = [
-        {
-            name: 'Product Description Writing',
-            href: '/product-description',
-        },
-
-        {
-            name: 'Screen Writing',
-            href: '/Screen-Writing',
-        },
-
-        {
-            name: 'Action Adventure Writing',
-            href: '/Action-Adventure',
-        },
-
-        {
-            name: 'Childrens Books',
-            href: '/Childrens-Books',
-        },
-
-        {
-            name: 'Fantasy Writing',
-            href: '/Fantasy-Writing-Services',
-        },
-
-        {
-            name: 'Horror Writing',
-            href: '/Horror-Writing',
-        },
-
-        {
-            name: 'Sci-Fi Writing',
-            href: '/Sci-Fi-writing',
-        },
-
-        {
-            name: 'Biography Writing',
-            href: '/Biography-Writing',
-        },
-
-        {
-            name: 'Comedy Writing',
-            href: '/Comedy-Writing',
-        },
-
-        {
-            name: 'Comic Book Writing',
-            href: '/Comic-Book-Writing',
-        },
-
-
-
-
+        { name: 'Childrens Books', href: '/children-book-writing' },
+        { name: 'Fantasy Writing', href: '/fantasy-writing-services' },
+        { name: 'Horror Writing', href: '/horror-book-writing' },
+        { name: 'Sci-Fi Writing', href: '/sci-fi-writing' },
+        { name: 'Biography Writing', href: '/biography-writing' },
+        { name: 'Memoir Writing', href: '/memoir-writing' },
+        { name: 'Non Fiction Writing', href: '/non-fiction-writing' },
+        { name: 'Rhymes Writing', href: '/rhymes-writing' },
+        { name: 'Song Writing', href: '/song-writing' },
+        { name: 'Story Writing', href: '/story-writing' },
+        { name: 'Autobiography Writing', href: '/autobiography-writing' },
+        { name: 'Hip Hop Writing', href: '/hip-hop-writing' },
     ];
 
     const servicesthird = [
-        {
-            name: 'Memoir Writing',
-            href: '/Memoir-Writing',
-        },
-
-        {
-            name: 'Non Fiction Writing',
-            href: '/Non-Fiction-Writing',
-        },
-
-        {
-            name: 'Rhymes Writing',
-            href: '/Rhymes-Writing',
-        },
-
-        {
-            name: 'Song Writing',
-            href: '/Song-Writing',
-        },
-
-        {
-            name: 'Story Writing',
-            href: '/Story-Writing',
-        },
-
-        {
-            name: 'Autobiography Writing',
-            href: '/Autobiography-Writing',
-        },
-
-        {
-            name: 'Hip Hop Writing',
-            href: '/Hip-Hop-Writing',
-        },
-
-        {
-            name: 'Narrative Writing',
-            href: '/Narrative-Writing',
-        },
-        {
-            name: 'Novel Writing',
-            href: '/Novel-Writing',
-        },
-
-        {
-            name: 'Speech Writing',
-            href: '/Speech-Writing',
-        },
-
-        {
-            name: 'Wikipedia Writing',
-            href: '/wikipedia-writing',
-        },
-
+        { name: 'Narrative Writing', href: '/narrative-writing' },
+        { name: 'Novel Writing', href: '/novel-writing' },
+        { name: 'Speech Writing', href: '/speech-writing' },
+        { name: 'Comedy Writing', href: '/comedy-writing' },
+        { name: 'Comic Book Writing', href: '/comic-book-writing' },
+        { name: 'Military Fiction Writing', href: '/military-fiction-writing' },
+        { name: 'Movie Writing', href: '/movie-writing' },
+        { name: 'Book Editing', href: '/book-editing' },
+        { name: 'Book Formatting', href: '/book-formatting-writing' },
+        { name: 'Book Self Publishing', href: '/book-self-publishing' },
+        { name: 'Proofreading', href: '/proofreading-writing' },
     ]
 
     const servicesfourth = [

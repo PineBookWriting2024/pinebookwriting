@@ -17,7 +17,7 @@ const legacyCaseRedirects = {
   '/Horror-Writing': '/horror-book-writing',
   '/Memoir-Writing': '/memoir-writing',
   '/Military-Fiction-Writing': '/military-fiction-writing',
-  '/Movie-Writing': '/movie-writing',
+  '/Movie-Writing': '/movie-script-writing-services',
   '/Narrative-Writing': '/narrative-writing',
   '/Non-Fiction-Writing': '/non-fiction-writing',
   '/Novel-Writing': '/novel-writing',
@@ -26,7 +26,7 @@ const legacyCaseRedirects = {
   '/Sci-Fi-writing': '/sci-fi-writing',
   '/Screen-Writing': '/screen-writing',
   '/Song-Writing': '/song-writing',
-  '/Speech-Writing': '/speech-writing',
+  '/Speech-Writing': '/speech-writing-services',
   '/Story-Writing': '/story-writing',
   '/Wiki-Writing': '/wiki-writing'
 }

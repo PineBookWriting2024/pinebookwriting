@@ -70,11 +70,11 @@ export default function NewBrandFooter() {
     const servicesthird = [
         { name: 'Narrative Writing', href: '/narrative-writing' },
         { name: 'Novel Writing', href: '/novel-writing' },
-        { name: 'Speech Writing', href: '/speech-writing' },
+        { name: 'Speech Writing Services', href: '/speech-writing-services' },
         { name: 'Comedy Writing', href: '/comedy-writing' },
         { name: 'Comic Book Writing', href: '/comic-book-writing' },
         { name: 'Military Fiction Writing', href: '/military-fiction-writing' },
-        { name: 'Movie Writing', href: '/movie-writing' },
+        { name: 'Movie Script Writing Services', href: '/movie-script-writing-services' },
         { name: 'Book Editing', href: '/book-editing' },
         { name: 'Book Formatting', href: '/book-formatting-writing' },
         { name: 'Book Self Publishing', href: '/book-self-publishing' },

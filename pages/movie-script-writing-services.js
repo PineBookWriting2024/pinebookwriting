@@ -66,18 +66,18 @@ export default function BookEditing() {
                 <div className="flex flex-col items-center justify-center px-8 py-10 md:flex-row lg:flex-row md:px-0 md:py-0">
                     <div className="basis-1/2 abt-txt m1-h p1 aos-init aos-animate" data-aos="fade-right" data-aos-duration="1000">
                         <h2 className="text-3xl font-bold uppercase font-poppins md:text-4xl">Professional Movie Writing - Write Something Really Watchable
-</h2>
+                        </h2>
 
                         <h2 className="text-2xl uppercase font-poppins md:text-3xl">
                             From Concept to Script
                         </h2>
 
                         <p className="pt-3 text-xl text-left font-poppins">
-                          Good movies always start with good writing. And Pine Book Writing really cares. Our professional movie writing team knows how to work on a small idea and make it a script that keeps people watching. So, we can help whether you’re planning to write a movie script from the very beginning or just fixing scenes. 
- </p>
+                            Good movies always start with good writing. And Pine Book Writing really cares. Our professional movie writing team knows how to work on a small idea and make it a script that keeps people watching. So, we can help whether you’re planning to write a movie script from the very beginning or just fixing scenes.
+                        </p>
 
-                        <p className="pt-3 text-xl text-left font-poppins">Our movie script writers for hire better understand all the aspects of it. They are also familiar with things that make a story feel natural. Not forced. We can help you with dialogue writing for movies, so your characters sound like real people. From short films to full-length features, we know what producers and viewers look for. 
-</p>
+                        <p className="pt-3 text-xl text-left font-poppins">Our movie script writers for hire better understand all the aspects of it. They are also familiar with things that make a story feel natural. Not forced. We can help you with dialogue writing for movies, so your characters sound like real people. From short films to full-length features, we know what producers and viewers look for.
+                        </p>
                         <p className="pt-3 text-xl text-left font-poppins">Let’s take your movie idea and build it into something that fits the industry standard screenplay formatting and still keeps your personal style alive!</p>
                     </div>
                     <div className="flex justify-center text-center basis-1/2 abt-pic md:justify-center">
@@ -111,7 +111,7 @@ export default function BookEditing() {
 
                     <div className="px-4 text-center md:col-span-6">
                         <h2 className="font-poppins text-2xl text-[#98caa9] font-semibold md:text-3xl uppercase">
-                          Ready to Write a Movie People Watch Untill End?
+                            Ready to Write a Movie People Watch Untill End?
                         </h2>
                         <p className="py-4 text-base md:text-lg">Acquire our movie script writers for hire and give liveliness to your script. We’ll make your idea a strong, watchable script by infusing real emotions with natural flow.</p>
 
@@ -154,7 +154,7 @@ export default function BookEditing() {
                     <div className="mb-6 text-center">
                         <h3 className="text-2xl text-black font-poppins">Our Service Workflow</h3>
                         <h2 className="text-3xl font-bold text-black font-poppins md:text-4xl" data-aos="zoom-out-down">6-Step Process of Our Movie Writing Services
-</h2>
+                        </h2>
                     </div>
 
                     <div className="grid gap-6 mb-6 md:grid-cols-3">
@@ -216,39 +216,39 @@ export default function BookEditing() {
                 </div>
             </section>
 
-             <section className="max-w-6xl px-4 py-16 mx-auto bg-white font-poppins">
-                 <h2 className="mb-12 text-xl font-medium text-center text-gray-700 md:text-2xl">
-    Our Offerings
-  </h2>
-  <h2 className="mb-12 text-xl font-medium text-center text-gray-700 md:text-2xl">
- What’s Included In Our Movie Script Writing Services
-  </h2>
+            <section className="max-w-6xl px-4 py-16 mx-auto bg-white font-poppins">
+                <h2 className="mb-12 text-xl font-medium text-center text-gray-700 md:text-2xl">
+                    Our Offerings
+                </h2>
+                <h2 className="mb-12 text-xl font-medium text-center text-gray-700 md:text-2xl">
+                    What’s Included In Our Movie Script Writing Services
+                </h2>
 
-  <p className="mb-12 text-xl font-medium text-center text-gray-700 md:text-2xl">
-  Our <a href="https://www.pinebookwriting.com/movie-script-writing-services" className="text-black underline hover:underline">movie  writing services</a> at Pine Book Writing cover everything from concept to final script. We handle story development, dialogues, and screenplay formatting to make your film script truly production-ready.
-  </p>
+                <p className="mb-12 text-xl font-medium text-center text-gray-700 md:text-2xl">
+                    Our <a href="https://www.pinebookwriting.com/movie-script-writing-services" className="text-black underline hover:underline">movie  writing services</a> at Pine Book Writing cover everything from concept to final script. We handle story development, dialogues, and screenplay formatting to make your film script truly production-ready.
+                </p>
 
-  <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3">
-    {[
-     { icon: '🖋️', label: 'Story & Concept Development' },
-      { icon: '🧐', label: 'Scriptwriting & Screenplay ' },
-      { icon: '📄', label: 'Dialogue Writing   ' },
-      { icon: '💼', label: 'Editing & Proofreading' },
-      { icon: '⚙️', label: 'Screenplay Formatting' },
-      { icon: '🎯', label: 'Short Film Script Writing' },         
-    ].map((service, index) => (
-      <div
-        key={index}
-        className="flex flex-col items-center justify-center h-32 p-4 text-center bg-[#eaf4ed] hover:bg-[#ebe8e0] transition-colors rounded-xl shadow-sm hover:shadow-md"
-      >
-        <div className="mb-2 text-3xl">{service.icon}</div>
-        <span className="text-[10px] font-bold uppercase tracking-widest text-gray-600">
-          {service.label}
-        </span>
-      </div>
-    ))}
-  </div>
-</section>
+                <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3">
+                    {[
+                        { icon: '🖋️', label: 'Story & Concept Development' },
+                        { icon: '🧐', label: 'Scriptwriting & Screenplay ' },
+                        { icon: '📄', label: 'Dialogue Writing   ' },
+                        { icon: '💼', label: 'Editing & Proofreading' },
+                        { icon: '⚙️', label: 'Screenplay Formatting' },
+                        { icon: '🎯', label: 'Short Film Script Writing' },
+                    ].map((service, index) => (
+                        <div
+                            key={index}
+                            className="flex flex-col items-center justify-center h-32 p-4 text-center bg-[#eaf4ed] hover:bg-[#ebe8e0] transition-colors rounded-xl shadow-sm hover:shadow-md"
+                        >
+                            <div className="mb-2 text-3xl">{service.icon}</div>
+                            <span className="text-[10px] font-bold uppercase tracking-widest text-gray-600">
+                                {service.label}
+                            </span>
+                        </div>
+                    ))}
+                </div>
+            </section>
 
             <section className="overflow-hidden" >
                 <div className="relative left-0 px-12 py-10 mb-8 brand-choose-us-section ms-auto md:left-52 md:px-20 md:mt-16 " >
@@ -263,7 +263,7 @@ export default function BookEditing() {
                         <div className="basis-1/2 md:ml-20">
                             <h2 className="mt-10 text-2xl font-bold text-white uppercase font-poppins md:text-4xl md:mt-0" data-aos="zoom-in-left" data-aos-delay="100">What Makes Our Movie Writing Services Stand Out?</h2>
                             <p className="mt-2 text-white">We’re not just writers but storytellers who understand how movies connect with people. Our professional movie writing team makes sure every story feels real and emotional. Not robotic. From plot building to dialogue creation, we pay attention to every small detail that makes your script outstanding.
-</p>
+                            </p>
                             <div className="flex flex-col gap-2 mt-6 md:flex-row md:gap-10">
                                 <ul>
                                     <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />	Creative Storytelling</li>

@@ -37,7 +37,7 @@ export default function Bookcover() {
      <main>
   <section className="relative h-[400px] flex items-center justify-center text-center text-white overflow-hidden">
 
-    {/* Background Image */}
+   
     <div className="absolute inset-0">
       <img
         src="/brand-img/Logo-brief-banner.webp"
@@ -46,10 +46,10 @@ export default function Bookcover() {
       />
     </div>
 
-    {/* Overlay */}
+   
     <div className="absolute inset-0 bg-black/50"></div>
 
-    {/* Content */}
+   
     <div className="relative z-10 max-w-2xl px-4">
       <h1 className="mb-3 text-3xl font-bold">
         Create Your Perfect Brand Cover 
@@ -64,9 +64,9 @@ export default function Bookcover() {
   <div className="min-h-screen px-4 py-10 font-sans bg-white">
       <div className="max-w-3xl mx-auto space-y-4">
         
-        {/* Header Card */}
+       
         <div className="overflow-hidden bg-white border border-gray-200 rounded-lg shadow-sm">
-          <div className="h-1 bg-[#4285f4] w-full rounded" /> {/* The blue top accent */}
+          <div className="h-1 bg-[#4285f4] w-full rounded" /> 
           <div className="p-6 sm:p-8">
             <h1 className="mb-4 text-3xl font-bold tracking-tight text-gray-900 uppercase font-poppins">
               BOOK COVER DETAILS
@@ -80,7 +80,7 @@ export default function Bookcover() {
           </div>
         </div>
 
-        {/* Email Field Card */}
+       
         <div className="p-6 bg-white border border-gray-200 rounded-lg shadow-sm">
           <label className="block mb-6 text-base font-normal text-gray-900">
            Official Pen/Author Name<span className="text-red-600">*</span>
@@ -93,7 +93,7 @@ export default function Bookcover() {
           />
         </div>
 
-        {/* Logo Name Card */}
+       
         <div className="p-6 bg-white border border-gray-200 rounded-lg shadow-sm">
           <label className="block mb-6 text-base font-normal text-gray-900">
            Official Book Name<span className="text-red-600">*</span>
@@ -106,7 +106,7 @@ export default function Bookcover() {
           />
         </div>
 
-        {/* Slogan Card */}
+        
         <div className="p-6 bg-white border border-gray-200 rounded-lg shadow-sm">
           <label className="block mb-1 text-base font-normal text-gray-900">
            About the Author
@@ -143,18 +143,17 @@ export default function Bookcover() {
           />
         </div>
 <div className="max-w-3xl p-6 mx-auto mt-4 font-sans bg-white border border-gray-200 rounded-lg shadow-sm">
-  {/* Field Header */}
+ 
   <label className="block mb-4 text-base font-normal text-gray-900">
     Book Dimensions: <span className="text-red-600">*</span>
   </label>
 
-  {/* Row Container */}
+
   <div className="flex flex-row items-center gap-6 pb-2 overflow-x-auto">
     
-    {/* Option 1 */}
-    <div className="flex flex-wrap justify-center gap-6">
+       <div className="flex flex-wrap justify-center gap-6">
 
-  {/* Option 1 */}
+  
   <label className="flex flex-col items-center space-y-3 cursor-pointer group">
     <div className="flex items-center justify-center w-32 h-32 text-lg font-semibold transition-colors border border-black rounded-lg group-hover:border-blue-500 group-hover:shadow-md">
       6x9
@@ -170,7 +169,7 @@ export default function Bookcover() {
     </div>
   </label>
 
-  {/* Option 2 */}
+  
   <label className="flex flex-col items-center space-y-3 cursor-pointer group">
     <div className="flex items-center justify-center w-32 h-32 text-lg font-semibold transition-colors border border-black rounded-lg group-hover:border-blue-500 group-hover:shadow-md">
       5.5x8.5
@@ -185,7 +184,7 @@ export default function Bookcover() {
     </div>
   </label>
 
-  {/* Option 3 */}
+  
   <label className="flex flex-col items-center space-y-3 cursor-pointer group">
     <div className="flex items-center justify-center w-32 h-32 text-lg font-semibold transition-colors border border-black rounded-lg group-hover:border-blue-500 group-hover:shadow-md">
       8.5x11
@@ -256,7 +255,7 @@ export default function Bookcover() {
 
     <div className="max-w-3xl p-6 mx-auto mt-4 bg-white border border-gray-200 rounded-lg shadow-sm">
 
-  {/* Question */}
+
   <label className="block mb-2 text-base font-normal text-gray-900">
     1. Your Cover Ideas
     <span className="text-red-600">*</span>
@@ -266,10 +265,10 @@ export default function Bookcover() {
     Select a cover style that best matches your vision for the book. You can also share reference images if needed.
   </p>
 
-  {/* Grid */}
+
   <div className="grid grid-cols-2 gap-4 sm:grid-cols-3">
 
-    {/* Option 1 */}
+    
     <label className="cursor-pointer group">
       <input type="radio" name="coverIdea" value="cover1" className="sr-only peer" required />
 
@@ -345,7 +344,7 @@ export default function Bookcover() {
     Upload any existing artwork or photos that should be included in the design.
   </p>
 
-  {/* Custom Styled File Input */}
+ 
   <div className="relative">
     <input
       type="file"
@@ -361,7 +360,7 @@ export default function Bookcover() {
 
 <div className="max-w-3xl p-8 mx-auto mt-6 font-sans bg-white border border-gray-200 shadow-sm rounded-2xl">
   
-  {/* Field Header */}
+
   <div className="mb-6">
     <label className="block text-base font-semibold tracking-tight text-gray-900">
       1. Do you have a Color Scheme in mind? <span className="text-red-600">*</span>
@@ -371,7 +370,7 @@ export default function Bookcover() {
     </p>
   </div>
 
-  {/* Text Input Section */}
+ 
   <div className="relative mt-4">
     <textarea
       rows="3"
@@ -386,7 +385,7 @@ className='border border-gray-300 focus:ring-blue-500 focus:border-blue-500 bloc
 </div>
 
 <div className="max-w-3xl p-8 mx-auto mt-6 font-sans bg-white border border-gray-200 shadow-sm rounded-2xl">
-  {/* Field Header */}
+
   <div className="mb-6">
     <label className="block text-base font-semibold tracking-tight text-gray-900">
       What overall style you would want to have in the book cover? <span className="text-red-600">*</span>
@@ -396,7 +395,6 @@ className='border border-gray-300 focus:ring-blue-500 focus:border-blue-500 bloc
     </p>
   </div>
 
-  {/* Selection List */}
   <div className="space-y-4">
     
     {[
@@ -406,19 +404,19 @@ className='border border-gray-300 focus:ring-blue-500 focus:border-blue-500 bloc
       { label: "Artist Discretion", desc: "Let our experts choose the best style for your genre.", color: "bg-purple-500" }
     ].map((item) => (
       <label key={item.label} className="flex items-center space-x-4 cursor-pointer group">
-        {/* Hidden Radio */}
+        
         <input
           type="radio"
           name="coverStyle"
           value={item.label}
-          className="w-5 h-5 text-blue-600 border-gray-300 focus:ring-blue-500 accent-blue-600"
+          className="w-5 h-5 text-blue-500 border-gray-300 focus:ring-blue-500 accent-blue-600"
           required
         />
         
-        {/* Color/Style Preview Box */}
+       
         <div className={`w-8 h-8 rounded-md shadow-sm transition-transform group-hover:scale-110 ${item.color}`}></div>
         
-        {/* Label Text */}
+        
         <div className="flex flex-col">
           <span className="text-sm font-medium text-gray-800">
             <span className="font-bold">{item.label}:</span> {item.desc}
@@ -436,7 +434,7 @@ className='border border-gray-300 focus:ring-blue-500 focus:border-blue-500 bloc
 
 <div className="max-w-3xl p-8 mx-auto mt-6 font-sans bg-white border border-gray-200 shadow-sm rounded-2xl">
   
-  {/* Field Header */}
+ 
   <div className="mb-4">
     <label className="block text-base font-semibold tracking-tight text-gray-900">
       Your Author Photo <span className="text-red-600">*</span>
@@ -446,7 +444,7 @@ className='border border-gray-300 focus:ring-blue-500 focus:border-blue-500 bloc
     </p>
   </div>
 
-    {/* Custom Styled File Input */}
+    
     <div className="relative">
         <input
             type="file"
@@ -460,7 +458,7 @@ className='border border-gray-300 focus:ring-blue-500 focus:border-blue-500 bloc
 <div className="max-w-3xl px-4 mx-auto mt-8 mb-10">
   <div className="flex items-center space-x-4">
     
-    {/* SUBMIT BUTTON */}
+    
     <button 
       type="submit"
       className="px-6 py-3 rounded-lg text-[#e8e9eb] font-medium bg-[#335c36] hover:bg-[#e2e8f0] transition-colors"
@@ -468,7 +466,7 @@ className='border border-gray-300 focus:ring-blue-500 focus:border-blue-500 bloc
         Submit
     </button>
 
-    {/* CLEAR FORM BUTTON */}
+  
     <button 
       type="reset"
       className="px-6 py-3 rounded-lg text-[#2a3b52] font-medium bg-[#f0f3f7] hover:bg-[#e2e8f0] transition-colors"

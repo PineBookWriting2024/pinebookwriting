@@ -22,7 +22,7 @@ const legacyCaseRedirects = {
   '/Non-Fiction-Writing': '/non-fiction-writing',
   '/Novel-Writing': '/novel-writing',
   '/Proofreading-Writing': '/proofreading-writing',
-  '/script-writing': '/movie-script-writing-services',
+  '/movie-script-writing-services': '/script-writing',
   '/Rhymes-Writing': '/rhymes-writing',
   '/Sci-Fi-writing': '/sci-fi-writing',
   '/Screen-Writing': '/screen-writing',

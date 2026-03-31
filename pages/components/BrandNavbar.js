@@ -17,7 +17,7 @@ export default function BrandNavbar() {
         { name: 'Hip Hop Writing', href: '/hip-hop-writing' },
         { name: 'Narrative Writing', href: '/narrative-writing' },
         { name: 'Novel Writing', href: '/novel-writing' },
-        { name: 'Speech Writing', href: '/speech-writing-services' },
+        { name: 'Speech Writing', href: '/speech-writing' },
         { name: 'Comedy Writing', href: '/comedy-writing' },
         { name: 'Comic Book Writing', href: '/comic-book-writing' },
         { name: 'Military Fiction Writing', href: '/military-fiction-writing' },

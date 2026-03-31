@@ -27,7 +27,7 @@ const legacyCaseRedirects = {
   '/Sci-Fi-writing': '/sci-fi-writing',
   '/Screen-Writing': '/screen-writing',
   '/Song-Writing': '/song-writing',
-  '/Speech-Writing': '/speech-writing-services',
+  '/speech-writing-services': '/speech-writing',
   '/Story-Writing': '/story-writing',
   '/Wiki-Writing': '/wiki-writing'
 }

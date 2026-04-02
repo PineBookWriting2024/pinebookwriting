@@ -1,8 +1,6 @@
-import useHubspotForm from "/hooks/hubspot";
-import React, { useState, useEffect } from "react";
+import React, { useEffect, useState } from 'react';
 import Image from "next/image";
 import Link from "next/link";
-import { useRouter } from 'next/navigation';
 import FadeIn from "./FadeIn";
 
 export const countryCodes = [
@@ -250,33 +248,44 @@ export const countryCodes = [
 ];
 
 
-export default function HeroFormBookOffer() {
 
-
-
-
-
-  const router = useRouter();
-  const { submitMainContactForm } = useHubspotForm();
+export default function HeroFormBookOfferLP({ onOpenModal }) {
   const [email, setEmail] = useState("");
   const [firstName, setFirstName] = useState("");
   const [phone, setPhone] = useState("");
-  // const [budgets, setBudget] = useState("");
   const [category, setCategory] = useState("");
-
   const [message, setMessage] = useState("");
   const [showSuccess, setShowSuccess] = useState(false);
   const [phoneError, setPhoneError] = useState("");
-  const [selectedCountry, setSelectedCountry] = useState(null); // Default to the first country
-
-  const [countryCodeValue, setCountryCodeValue] = useState("");
+  const [selectedCountry, setSelectedCountry] = useState(null);
   const [loading, setLoading] = useState(true);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const handleOpenChat = () => {
+    window.zE && window.zE('webWidget', 'open');
+  };
+
+  // Get user location info
+  const [userInfo, setUserInfo] = useState({
+    ip: '',
+    city: '',
+    region: '',
+    country: ''
+  });
 
   const fetchUserRegion = async () => {
     try {
       const response = await fetch("https://ipwhois.app/json/");
       const data = await response.json();
       console.log("IP API Response:", data);
+
+      // Store user info for email
+      setUserInfo({
+        ip: data.ip || '',
+        city: data.city || '',
+        region: data.region || '',
+        country: data.country || ''
+      });
 
       const detectedCountry = countryCodes.find((c) => c.countryCode === data.country_code);
       if (detectedCountry) {
@@ -293,28 +302,166 @@ export default function HeroFormBookOffer() {
     }
   };
 
+  useEffect(() => {
+    fetchUserRegion();
+  }, []);
+
   const handleCountryChange = (e) => {
     const selectedCountryCode = e.target.value;
     const country = countryCodes.find((c) => c.countryCode === selectedCountryCode);
-    console.log("Selected Country: ", country); // Debug log
+    console.log("Selected Country: ", country);
     if (country) {
       setSelectedCountry(country);
-      setCountryCodeValue(selectedCountry.code);  // Update country code when country is selected
-
     }
   };
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    const setters = {
+      firstName: setFirstName,
+      email: setEmail,
+      message: setMessage,
+      category: setCategory,
+      phone: setPhone,
+    };
+
+    const setter = setters[name];
+    if (setter) {
+      if (name === 'phone') {
+        const phoneRegex = /^\d{0,}$/;
+        if (phoneRegex.test(value)) {
+          setter(value);
+          if (value.length < 9) {
+            setPhoneError("Phone number must be at least 9 digits");
+          } else {
+            setPhoneError("");
+          }
+        } else {
+          setPhoneError("Invalid phone number format");
+        }
+      } else {
+        // For all other fields (firstName, email, message, category)
+        setter(value);
+      }
+    }
+  };
+
+  // const handleChange = (e) => {
+  //   const { name, value } = e.target;
+  //   const setters = {
+  //     firstName: setFirstName,
+  //     email: setEmail,
+  //     message: setMessage,
+  //     category: setCategory,
+  //     phone: setPhone,
+  //   };
+
+  //   const setter = setters[name];
+  //   if (setter) {
+  //     if (name === 'phone') {
+  //       const phoneRegex = /^\d{0,}$/;
+  //       if (phoneRegex.test(value)) {
+  //         setter(value);
+  //         if (value.length < 9) {
+  //           setPhoneError("Phone number must be at least 9 digits");
+  //         } else {
+  //           setPhoneError("");
+  //         }
+  //       } else {
+  //         setPhoneError("Invalid phone number format");
+  //       }
+  //     }
+  //   }
+  // };
+
+  const sendEmailNotification = async (formData) => {
+    try {
+      const response = await fetch('/api/send-signup-email', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          firstName: formData.firstName,
+          email: formData.email,
+          phone: formData.phone,
+          category: formData.category,
+          message: formData.message,
+          countryCode: formData.countryCode,
+          currentPage: window.location.href,
+          referringPage: document.referrer || 'Direct visit',
+          userIP: userInfo.ip,
+          userCity: userInfo.city,
+          userRegion: userInfo.region,
+          userCountry: userInfo.country
+        }),
+      });
+
+      const result = await response.json();
+
+      if (!result.success) {
+        console.error('Email sending failed:', result.message);
+      } else {
+        console.log('Email sent successfully');
+      }
+
+      return result;
+    } catch (error) {
+      console.error('Error sending email:', error);
+      return { success: false, error: error.message };
+    }
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    if (!selectedCountry) {
+      alert("Country is loading, please wait.");
+      return;
+    }
+
+    if (phone.length < 9) {
+      setPhoneError("Phone number must be at least 9 digits");
+      return;
+    }
+
+    setIsSubmitting(true);
+
+    const combinedPhoneNumber = `+${selectedCountry.code} ${phone}`;
+    const formData = {
+      firstName,
+      email,
+      phone: combinedPhoneNumber,
+      category,
+      message,
+      countryCode: selectedCountry.countryCode,
+    };
+
+    try {
+      const emailResult = await sendEmailNotification(formData);
+      const emailOk = !!emailResult?.success;
+
+      if (emailOk) {
+        setShowSuccess(true);
+        setTimeout(() => (window.location.href = "/thank-you-page-new-lp"), 1500);
+      } else {
+        alert("There was an error submitting your form. Please try again.");
+      }
+    } catch (error) {
+      console.error("Form submission error:", error);
+      alert("There was an error submitting your form. Please try again.");
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
 
   const categoryPublishing = [
     "Book Publishing",
     "Book Editing",
     "Proofreading",
     "Book Formatting",
-
   ];
-
-  useEffect(() => {
-    fetchUserRegion();
-  }, []);
 
 
 
@@ -340,13 +487,13 @@ export default function HeroFormBookOffer() {
       width: 130,
       height: 60
     },
-    {
-      href: "https://www.yelp.com/biz/pine-book-writing-richmond-hill",
-      src: "/images/s4.png",
-      alt: "LOGO",
-      width: 130,
-      height: 60
-    },
+    // {
+    //   href: "https://www.yelp.com/biz/pine-book-writing-richmond-hill",
+    //   src: "/images/s4.png",
+    //   alt: "LOGO",
+    //   width: 130,
+    //   height: 60
+    // },
     {
       href: "https://clutch.co/profile/pine-book-writing",
       src: "/images/s6.png",
@@ -358,247 +505,226 @@ export default function HeroFormBookOffer() {
 
 
 
-
-
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    const setters = {
-      firstName: setFirstName,
-      email: setEmail,
-      message: setMessage,
-      // budgets: setBudget,
-      category: setCategory,
-      phone: setPhone,
-    };
-
-    console.log(value);
-
-    const setter = setters[name];
-    if (setter) {
-      if (name === 'phone') {
-        const phoneRegex = /^\d{0,}$/;
-        if (phoneRegex.test(value)) {
-          setter(value);
-          if (value.length < 9) {
-            setPhoneError("Phone number must be at least 9 digits");
-          } else {
-            setPhoneError("");
-          }
-        } else {
-          setPhoneError("Invalid phone number format");
-        }
-      } else {
-        setter(value);
-      }
-    }
-  };
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    if (phone.length < 9) {
-      setPhoneError("Phone number must be at least 9 digits");
-      return;
-    }
-    const response = await submitMainContactForm(
-      firstName,
-      email,
-      phone,
-      // budgets,
-      message
-    );
-    if (response) {
-      setShowSuccess(true);
-      router.push('/thank-you');
-      // router.push('/thankyou-offer')
-      setTimeout(() => {
-        setShowSuccess(false);
-        setEmail("");
-        setFirstName("");
-        setPhone("");
-        // setBudget("");
-        setMessage("");
-      }, 3000);
-    }
-
-    console.log("response", response);
-  };
-
   return (
-    <div className="container mx-4 pt-20 md:mx-32 tablet-margin-banner brand-hero-section">
-      <div className="grid grid-cols-1 sm:gap-8 sm:py-0 md:grid-cols-2 text-left items-center justify-between md:gap-8 md:py-30">
-        <div className="mb-4">
 
-          <h3 className="font-poppins text-2xl mb-4 aos-init aos-animate text-white"><span className="px-2 py-0">#1 Self</span> Publishing Company</h3>
-          <FadeIn>
-            <h1 className="font-poppins text-3xl text-white font-bold">
-              DO YOU HAVE A MANUSCRIPT READY TO BE PUBLISHED?
-            </h1>
-          </FadeIn>
+    <div className="relative overflow-hidden w-full" style={{ zIndex: 1 }}>
+      {/* <SnowFall /> */}
+      <div className="container px-4 pt-20 tablet-margin-banner mx-auto max-w-screen-xl brand-hero-section relative z-10">
+        <div className="grid grid-cols-1 sm:gap-8 sm:py-0 md:grid-cols-2 text-left items-center justify-between md:gap-8 md:py-36">
+          <div className="mb-4">
+            <h3 className="font-poppins text-2xl mb-4 aos-init aos-animate text-white">
+              <span className="px-2 py-0 blink">#1 Self</span> Publishing Company
+            </h3>
+            <FadeIn>
+              <h1 className="font-poppins text-3xl md:text-3xl text-white font-bold">
+                DO YOU HAVE A MANUSCRIPT READY TO BE PUBLISHED?
+              </h1>
+            </FadeIn>
+            <p className="text-xl text-white pt-4">
+              Pine Book Publishing has made it much easier to self-publish a book, with hands-on support from the first word to the final cover. Our process involves Proofreading, Editing, Formatting, Book Cover Design, Publishing, and print-on-demand through a vast network of global outlets.
+            </p>
+            <h4 className="font-poppins text-2xl mt-8 text-white uppercase font-bold">
+              Our Credibility
+            </h4>
+            <div className="flex justify-start items-center mt-8 gap-2 md:gap-x-8 client-logo-sec">
+              {clientLogos.map((logo, index) => (
+                <Link key={index} href={logo.href} target="_blank">
+                  <Image
+                    alt={logo.alt}
+                    src={logo.src}
+                    width={logo.width}
+                    height={logo.height}
+                  />
+                </Link>
+              ))}
+            </div>
+            <div className="flex flex-col sm:flex-row flex-wrap gap-4 pt-4 content-center mt-6">
+              {/* Button 1 */}
+              <button
+                onClick={() => onOpenModal?.()}
+                type="button"
+                className="bg-[#fff] text-[#15184c] font-semibold px-6 py-3 rounded-full flex items-center gap-2  duration-300 hover:bg-[#15184c] hover:text-white"
+              >
+                Publish Your Book Now
+                <svg
+                  className="w-4 h-4"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  viewBox="0 0 512 512"
+                >
+                  <path d="M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 
+                0s-12.5 32.8 0 45.3L402.7 224H32c-17.7 
+                0-32 14.3-32 32s14.3 32 32 32h370.7L297.4 
+                393.4c-12.5 12.5-12.5 32.8 0 
+                45.3s32.8 12.5 45.3 0l160-160z" />
+                </svg>
+              </button>
 
-          <p className="text-xl text-white pt-4">
-            Pine Book Writing has made it much more easier to self-publish a book, with hands-on support from the first word to the final cover. Our process involves Proofreading, Editing, Formatting, Book Cover Design and print-on-demand through a vast network of global outlets.
-          </p>
-          <h4 className="font-poppins text-2xl mt-8 text-white uppercase font-bold">Our Credibility</h4>
-
-          <div className="flex justify-start items-center mt-8 gap-2 md:gap-x-8 client-logo-sec about-logos-sec">
-            {clientLogos.map((logo, index) => (
-              <Link key={index} href={logo.href} target="_blank">
-                <Image
-                  alt={logo.alt}
-                  src={logo.src}
-                  width={logo.width}
-                  height={logo.height}
-                />
-              </Link>
-            ))}
+              {/* Button 2 */}
+              <button
+                type="button"
+                onClick={handleOpenChat}
+                className="bg-[#fff] text-[#15184c] font-semibold px-6 py-3 rounded-full flex items-center gap-2  duration-300 hover:bg-[#15184c] hover:text-white"
+              >
+                Live Chat
+              </button>
+            </div>
           </div>
-        </div>
-
-        <div>
-
-          <div className="w-full rounded-2xl px-8 py-8 bg-gray-400 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-50 border-gray-100 relative">
-            {/* <Image
-              className="text-center header-form-off-badge"
-              src={"/images/form-badge.png"}
-              width={160}
-              height={200}
-              loading="lazy"
-            ></Image> */}
-            {/* <div className="text-center">
-              <h4 className="font-poppins text-white text-2xl md:text-2xl">Avail Discount</h4>
-              <h5 className="font-poppins text-white text-lg mb-3">Exclusive Offer: Expert Book Publishing at <span className="text-blink">50% Off</span> – <br></br>Your Story Deserves to be Heard!</h5>
-            </div> */}
-            <div className="text-center w-[80%] mx-auto md:mb-8">
-              <h4 className="font-poppins text-white text-2xl md:text-2xl">Ready to Start? Let’s Talk About Your Writing Project!</h4>
-              <h5 className="font-poppins text-white text-lg mb-3">We’re excited to hear about your book or writing idea. Share your thoughts, and let's help fulfill your literary dream!</h5>
-            </div>
-            <div>
-
-            </div>
-
-
-            <form className="flex flex-col gap-4 justify-start items-start" onSubmit={handleSubmit}>
-              <div className="relative w-full">
-                <input
-                  type="text"
-                  name="firstName"
-                  onChange={handleChange}
-                  value={firstName}
-                  required
-                  className="pl-4 pr-4 py-2 border rounded-xl w-full text-sm shadow-xl"
-                  placeholder="Enter your Name"
-                />
+          <div>
+            <div className="px-4 py-3 w-full rounded-2xl px-8 py-8 bg-gray-400 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-50 border-gray-100 relative">
+              {/* <Image
+                className="text-center header-form-off-badge"
+                src={"/brand-img/christmas-tag.png"}
+                width={140}
+                height={180}
+                loading="lazy"
+              ></Image>
+              <Image
+                className="text-center christmas-cap-form"
+                src={"/brand-img/christmas-cap.png"}
+                width={300}
+                height={300}
+                loading="lazy"
+              ></Image> */}
+              <div className="text-start">
+                <h4 className="font-poppins text-white text-2xl md:text-4xl font-bold christmas-banner-title">
+                  Avail Discount
+                </h4>
+                <h5 className="font-poppins text-white text-lg mb-3 christmas-banner-desc">
+                  Exclusive Offer: Expert Book Publishing at{" "}
+                  <span className="text-blink">50% Off</span> – <br />
+                  Your Story Deserves to be Heard!
+                </h5>
               </div>
+              <div className="grid grid-cols-1 md:grid-cols-1 gap-8">
+                <div className="col-span-2 w-full relative">
 
-              <div className="relative w-full">
-
-                <div className='tel-box'>
-
-                  {/* new code */}
-                  <div className="country-input-wrapper w-full">
-                    <div className="select-box">
-                      {loading ? (
-                        <p>Loading...</p>
-                      ) : (
-                        <div className="select-box flex items-center">
-                          <select
-                            className="country-select pl-2 pr-2 py-2 cursor-pointer"
-                            onChange={handleCountryChange}
-                            value={selectedCountry ? selectedCountry.countryCode : ""}
-                          >
-                            <option value="" disabled>
-                              Select your country
-                            </option>
-                            {countryCodes.map((country) => (
-                              <option key={country.countryCode} value={country.countryCode}>
-                                {country.name} (+{country.code})
-                              </option>
-                            ))}
-                          </select>
-                          {selectedCountry && (
-                            <img
-                              src={selectedCountry.flag}
-                              alt={`Flag of ${selectedCountry.name}`}
-                              className="flag-img w-6 h-4 ml-2"
-                            />
-                          )}
-                        </div>
-                      )}
-                    </div>
-                    <div className="country-input-wrapper flex items-center mt-2">
-                      <span className="country-code text-lg font-semibold">
-                        +{selectedCountry ? selectedCountry.code : ""}
-                      </span>
+                  <form className="flex flex-col gap-4 justify-start items-start" onSubmit={handleSubmit}>
+                    <div className="relative w-full">
                       <input
-                        type="tel"
-                        placeholder="Enter your Phone"
-                        className="tel pl-4 pr-4 py-2 border rounded-xl w-full text-sm shadow-xl"
-                        onChange={(e) => setPhone(e.target.value)}
-                        value={phone}
+                        type="text"
+                        name="firstName"
+                        onChange={handleChange}
+                        value={firstName}
                         required
+                        className="pl-4 pr-4 py-2 border rounded-xl w-full text-sm shadow-xl"
+                        placeholder="Enter your Name"
                       />
                     </div>
-                  </div>
+                    <div className="relative w-full">
+                      <div className='tel-box'>
+                        {/* new code */}
+                        <div className="country-input-wrapper w-full">
+                          <div className="select-box">
+                            {loading ? (
+                              <p>Loading...</p>
+                            ) : (
+                              <div className="select-box flex items-center">
+                                <select
+                                  className="country-select pl-2 pr-2 py-2 cursor-pointer"
+                                  // onChange={handleCountryChange}
+                                  // value={selectedCountry ? selectedCountry.code : ""}
+                                  onChange={handleCountryChange}
+                                  value={selectedCountry ? selectedCountry.countryCode : ""}
+                                >
+                                  <option value="" disabled>
+                                    Select your country
+                                  </option>
+                                  {countryCodes.map((country) => (
+                                    <option key={country.countryCode} value={country.countryCode}>
+                                      {country.name} (+{country.code})
+                                    </option>
+                                  ))}
+                                </select>
+                                {selectedCountry && (
+                                  <img
+                                    src={selectedCountry.flag}
+                                    alt={`Flag of ${selectedCountry.name}`}
+                                    className="flag-img w-6 h-4 ml-2"
+                                  />
+                                )}
+                              </div>
+                            )}
+                          </div>
+                          <div className="country-input-wrapper flex items-center mt-2">
+                            <span className="country-code text-lg font-semibold">
+                              +{selectedCountry ? selectedCountry.code : ""}
+                            </span>
 
+                            <input
+                              type="tel"
+                              name="phone"
+                              placeholder="Enter your Phone"
+                              className={`tel pl-4 pr-4 py-2 border rounded-xl w-full text-sm shadow-xl ${phoneError ? "border-red-500" : ""
+                                }`}
+                              onChange={handleChange}
+                              value={phone}
+                              required
+                            />
+                          </div>
 
-                </div>
-              </div>
+                          {phoneError && (
+                            <p className="text-[#FF0000] text-xs mt-1">
+                              {phoneError}
+                            </p>
+                          )}
+                        </div>
+                      </div>
+                    </div>
+                    <div className="relative w-full">
+                      <input
+                        type="text"
+                        name="email"
+                        onChange={handleChange}
+                        value={email}
+                        required
+                        className="pl-4 pr-4 py-2 border rounded-xl w-full text-sm shadow-xl"
+                        placeholder="Enter your Email"
+                      />
+                    </div>
+                    <div className="relative w-full">
+                      <select name="category" value={category} onChange={handleChange} className="text-grey outline-0 pl-4 pr-4 py-2 border text-sm rounded-lg shadow-xl w-full header-form-input">
+                        <option value="" className="text-sm text-muted" disabled>Our Services
+                        </option>
+                        {categoryPublishing.map(option => (
+                          <option key={option} value={option}>{option}</option>
+                        ))}
+                      </select>
+                    </div>
 
-
-              <div className="relative w-full">
-                <input
-                  type="text"
-                  name="email"
-                  onChange={handleChange}
-                  value={email}
-                  required
-                  className="pl-4 pr-4 py-2 border rounded-xl w-full text-sm shadow-xl"
-                  placeholder="Enter your Email"
-                />
-              </div>
-              <div className="relative w-full">
-                <select name="category" value={category} onChange={handleChange} className="text-grey outline-0 pl-4 pr-4 py-2 border text-sm rounded-lg shadow-xl w-full header-form-input">
-                  <option value="" className="text-sm text-muted" disabled>Our Services
-                  </option>
-                  {categoryPublishing.map(option => (
-                    <option key={option} value={option}>{option}</option>
-                  ))}
-                </select>
-              </div>
-
-              <div className="relative w-full">
-                <textarea
-                  className="pl-4 pr-4 py-2 border rounded-xl w-full text-sm shadow-xl"
-                  rows={3}
-                  onChange={handleChange}
-                  value={message}
-                  required
-                  placeholder="Enter your Message"
-                  name="message"
-                ></textarea>
-                <div
-                  className="absolute inset-y-0 left-0 pl-3 pt-3 
+                    <div className="relative w-full">
+                      <textarea
+                        className="pl-4 pr-4 py-2 border rounded-xl w-full text-sm shadow-xl"
+                        rows={3}
+                        onChange={handleChange}
+                        value={message}
+                        placeholder="Enter your Message"
+                        name="message"
+                      ></textarea>
+                      <div
+                        className="absolute inset-y-0 left-0 pl-3 pt-3 
                    flex items-start  
                    pointer-events-none"
-                ></div>
+                      ></div>
+                    </div>
+                    {showSuccess && (
+                      <p className="px-1 py-2 text-green-700">
+                        Form submitted Successfully!
+                      </p>
+                    )}
+                    <button
+                      className="w-full p-4 py-2 text-white uppercase header-submit-btn rounded rounded-xl shadow-xl text-xl disabled:opacity-50"
+                      type="submit"
+                      disabled={isSubmitting}
+                    >
+                      {isSubmitting ? 'Submitting...' : 'Submit'}
+                    </button>
+                  </form>
+                </div>
               </div>
-              {showSuccess && (
-                <p className="px-1 py-2 text-green-700">
-                  Form submitted Successfully!
-                </p>
-              )}
-              <button
-                className="w-full p-4 py-2 text-white uppercase header-submit-btn rounded shadow-xl text-xl"
-                type="submit"
-              >
-                Submit
-              </button>
-            </form>
+            </div>
           </div>
-
-
         </div>
-        
       </div>
     </div>
   );

@@ -1,80 +1,80 @@
 import nodemailer from "nodemailer";
 
 const escapeHtml = (unsafe = "") =>
-    String(unsafe)
-        .replaceAll("&", "&amp;")
-        .replaceAll("<", "&lt;")
-        .replaceAll(">", "&gt;")
-        .replaceAll('"', "&quot;")
-        .replaceAll("'", "&#039;");
+  String(unsafe)
+    .replaceAll("&", "&amp;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;")
+    .replaceAll('"', "&quot;")
+    .replaceAll("'", "&#039;");
 
 const listOrNA = (arr) => (Array.isArray(arr) && arr.length ? arr.join(", ") : "N/A");
 
 export default async function handler(req, res) {
-    if (req.method !== "POST") return res.status(405).json({ success: false, message: "Method not allowed" });
+  if (req.method !== "POST") return res.status(405).json({ success: false, message: "Method not allowed" });
 
-    const {
-        authorName,
-        bookName,
-        penName,
-        genres,
-        email,
-        number,
-        website,
-        timeZone,
+  const {
+    authorName,
+    bookName,
+    penName,
+    genres,
+    email,
+    number,
+    website,
+    timeZone,
 
-        idealReaderAge,
-        idealReaderInterests,
-        idealReaderLocation,
-        idealReaderFavoriteAuthors,
+    idealReaderAge,
+    idealReaderInterests,
+    idealReaderLocation,
+    idealReaderFavoriteAuthors,
 
-        notableAreas,
-        briefDescription,
-        paidAdvertisement,
+    notableAreas,
+    briefDescription,
+    paidAdvertisement,
 
-        WritingStage,
-        primaryGoal,
-        socialMedia,
-        targeting,
-        assets,
-        brandTone,
-        expectations,
-        activities,
-        gender,
+    WritingStage,
+    primaryGoal,
+    socialMedia,
+    targeting,
+    assets,
+    brandTone,
+    expectations,
+    activities,
+    gender,
 
-        bookBranding,
-        regionToMarket,
-        ageRange,
-        marketingServices,
-        mediaAccounts,
-        information,
-        message,
+    bookBranding,
+    regionToMarket,
+    ageRange,
+    marketingServices,
+    mediaAccounts,
+    information,
+    message,
 
-        referringPage,
-        currentPage,
-        userIP,
-        userCity,
-        userRegion,
-        userCountry,
-    } = req.body || {};
+    referringPage,
+    currentPage,
+    userIP,
+    userCity,
+    userRegion,
+    userCountry,
+  } = req.body || {};
 
-    if (!email || !authorName || !bookName) {
-        return res.status(400).json({ success: false, message: "Missing required fields" });
-    }
+  if (!email || !authorName || !bookName) {
+    return res.status(400).json({ success: false, message: "Missing required fields" });
+  }
 
-    try {
-        const transporter = nodemailer.createTransport({
-            host: "smtp.gmail.com",
-            port: 465,
-            secure: true,
-            auth: {
-                user: "pinebookwriting@gmail.com",
-                pass: "owwwkmrznsnddjtm",
-            },
-        });
+  try {
+    const transporter = nodemailer.createTransport({
+      host: "smtp.gmail.com",
+      port: 465,
+      secure: true,
+      auth: {
+        user: "pinebookwriting@gmail.com",
+        pass: "owwwkmrznsnddjtm",
+      },
+    });
 
-        // Admin email
-        const adminHtmlContent = `
+    // Admin email
+    const adminHtmlContent = `
       <div style="font-family: Arial, sans-serif; background-color:#f8f9fa; padding: 20px;">
         <div style="max-width:700px; margin:0 auto; background:#ffffff; border-radius:8px; box-shadow:0 2px 6px rgba(0,0,0,0.1);">
           <div style="background:#0d0f38; color:#ffffff; padding:16px 24px; border-radius:8px 8px 0 0;">
@@ -261,8 +261,8 @@ export default async function handler(req, res) {
       </div>
     `;
 
-        // User thank you email
-        const userHtmlContent = `
+    // User thank you email
+    const userHtmlContent = `
       <div style="font-family: Arial, sans-serif; background-color:#f8f9fa; padding: 20px;">
         <div style="max-width:600px; margin:0 auto; background:#ffffff; border-radius:8px; box-shadow:0 2px 6px rgba(0,0,0,0.1);">
           <div style="background:linear-gradient(135deg, #0d0f38 0%, #1a1d5e 100%); color:#ffffff; padding:32px 24px; border-radius:8px 8px 0 0; text-align:center;">
@@ -304,34 +304,34 @@ export default async function handler(req, res) {
       </div>
     `;
 
-        // Send admin
-        const adminInfo = await transporter.sendMail({
-            from: `"Pine Book Writing" <pinebookwriting@gmail.com>`,
-            to: "pinebookwriting@gmail.com",
-            subject: `SMM Questionnaire - ${authorName || "User"}`,
-            html: adminHtmlContent,
-        });
+    // Send admin
+    const adminInfo = await transporter.sendMail({
+      from: `"Pine Book Writing" <pinebookwriting@gmail.com>`,
+      to: "pinebookwriting@gmail.com",
+      subject: `SMM Questionnaire - ${authorName || "User"}`,
+      html: adminHtmlContent,
+    });
 
-        // Send user
-        const userMailInfo = await transporter.sendMail({
-            from: `"Pine Book Writing" <pinebookwriting@gmail.com>`,
-            to: email,
-            subject: `We received your SMM Questionnaire`,
-            html: userHtmlContent,
-        });
+    // Send user
+    const userMailInfo = await transporter.sendMail({
+      from: `"Pine Book Writing" <pinebookwriting@gmail.com>`,
+      to: email,
+      subject: `We received your SMM Questionnaire`,
+      html: userHtmlContent,
+    });
 
-        return res.status(200).json({
-            success: true,
-            message: "SMM questionnaire emails sent successfully",
-            adminMessageId: adminInfo.messageId,
-            userMessageId: userMailInfo.messageId,
-        });
-    } catch (error) {
-        console.error("❌ Error sending SMM questionnaire email:", error);
-        return res.status(500).json({
-            success: false,
-            message: "Failed to send email",
-            error: error.message,
-        });
-    }
+    return res.status(200).json({
+      success: true,
+      message: "SMM questionnaire emails sent successfully",
+      adminMessageId: adminInfo.messageId,
+      userMessageId: userMailInfo.messageId,
+    });
+  } catch (error) {
+    console.error("❌ Error sending SMM questionnaire email:", error);
+    return res.status(500).json({
+      success: false,
+      message: "Failed to send email",
+      error: error.message,
+    });
+  }
 }

@@ -154,7 +154,7 @@ export default function Bundle({ isOpen, onClose, service }) {
                                 <div className="single-packages-footer flex  w-100 justify-center">
                                     <div >
                                         <h5 className="text-xl">Share your idea!</h5>
-                                        <p className="text-md text-black"><Link href="tel:(866)-841-7463">(866)-841-7463</Link></p>
+                                        <p className="text-md text-black"><Link href="tel:(866) 841-7463">(866) 841-7463</Link></p>
                                     </div>
                                     <span className="border-line mx-8"></span>
                                     <div>
@@ -223,7 +223,7 @@ export default function Bundle({ isOpen, onClose, service }) {
                                 <div className="single-packages-footer flex  w-100 justify-center">
                                     <div >
                                         <h5 className="text-xl">Share your idea!</h5>
-                                        <p className="text-md text-black"><Link href="tel:(866)-841-7463">(866)-841-7463</Link></p>
+                                        <p className="text-md text-black"><Link href="tel:(866) 841-7463">(866) 841-7463</Link></p>
                                     </div>
                                     <span className="border-line mx-8"></span>
                                     <div>
@@ -296,7 +296,7 @@ export default function Bundle({ isOpen, onClose, service }) {
                                 <div className="single-packages-footer flex  w-100 justify-center">
                                     <div >
                                         <h5 className="text-xl">Share your idea!</h5>
-                                        <p className="text-md text-black"><Link href="tel:(866)-841-7463">(866)-841-7463</Link></p>
+                                        <p className="text-md text-black"><Link href="tel:(866) 841-7463">(866) 841-7463</Link></p>
                                     </div>
                                     <span className="border-line mx-8"></span>
                                     <div>
@@ -397,7 +397,7 @@ export default function Bundle({ isOpen, onClose, service }) {
                                 <div className="single-packages-footer flex  w-100 justify-center">
                                     <div >
                                         <h5 className="text-xl">Share your idea!</h5>
-                                        <p className="text-md text-black"><Link href="tel:(866)-841-7463">(866)-841-7463</Link></p>
+                                        <p className="text-md text-black"><Link href="tel:(866) 841-7463">(866) 841-7463</Link></p>
                                     </div>
                                     <span className="border-line mx-8"></span>
                                     <div>
@@ -499,7 +499,7 @@ export default function Bundle({ isOpen, onClose, service }) {
                                 <div className="single-packages-footer flex  w-100 justify-center">
                                     <div >
                                         <h5 className="text-xl">Share your idea!</h5>
-                                        <p className="text-md text-black"><Link href="tel:(866)-841-7463">(866)-841-7463</Link></p>
+                                        <p className="text-md text-black"><Link href="tel:(866) 841-7463">(866) 841-7463</Link></p>
                                     </div>
                                     <span className="border-line mx-8"></span>
                                     <div>
@@ -604,7 +604,7 @@ export default function Bundle({ isOpen, onClose, service }) {
                                 <div className="single-packages-footer flex  w-100 justify-center">
                                     <div >
                                         <h5 className="text-xl">Share your idea!</h5>
-                                        <p className="text-md text-black"><Link href="tel:(866)-841-7463">(866)-841-7463</Link></p>
+                                        <p className="text-md text-black"><Link href="tel:(866) 841-7463">(866) 841-7463</Link></p>
                                     </div>
                                     <span className="border-line mx-8"></span>
                                     <div>

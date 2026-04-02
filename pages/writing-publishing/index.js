@@ -568,7 +568,7 @@ export default function Home() {
                   <button className="book-publishing-cta-btn-3 shadow-xl mt-10 cursor-pointer bg-white">
                     <a href="javascript:;">Talk to an Expert</a></button>
                   <button className="book-publishing-cta-btn-2 shadow-xl mt-10 cursor-pointer bg-white">
-                    <a href="tel:8887867135">(888)786-7135</a></button>
+                    <a href="tel:8668417463">(866) 841-7463</a></button>
                 </div>
 
               </div>
@@ -949,7 +949,7 @@ export default function Home() {
                   <div className="single-packages-footer flex  w-100 justify-center">
                     <div >
                       <h5 className="text-xl">Share your idea!</h5>
-                      <p className="text-md text-black"><Link href="tel:(888) 786-7135">(888) 786-7135</Link></p>
+                      <p className="text-md text-black"><Link href="tel:(866) 841-7463">(866) 841-7463</Link></p>
                     </div>
                     <span className="border-line mx-8"></span>
                     <div>
@@ -1022,7 +1022,7 @@ export default function Home() {
                   <div className="single-packages-footer flex  w-100 justify-center">
                     <div >
                       <h5 className="text-xl">Share your idea!</h5>
-                      <p className="text-md text-black"><Link href="tel:(888) 786-7135">(888) 786-7135</Link></p>
+                      <p className="text-md text-black"><Link href="tel:(866) 841-7463">(866) 841-7463</Link></p>
                     </div>
                     <span className="border-line mx-8"></span>
                     <div>
@@ -1101,7 +1101,7 @@ export default function Home() {
                   <div className="single-packages-footer flex  w-100 justify-center">
                     <div >
                       <h5 className="text-xl">Share your idea!</h5>
-                      <p className="text-md text-black"><Link href="tel:(888) 786-7135">(888) 786-7135</Link></p>
+                      <p className="text-md text-black"><Link href="tel:(866) 841-7463">(866) 841-7463</Link></p>
                     </div>
                     <span className="border-line mx-8"></span>
                     <div>
@@ -1422,7 +1422,7 @@ export default function Home() {
               </p>
               <div className="flex gap-6 md:justify-start justify-center">
                 <button className="package-get-started-btn text-md mt-5" onClick={handleOpenChat}><Link href={'javascript:;'}>Talk to an Expert</Link></button>
-                <button className="package-get-started-btn text-md mt-5"><Link href="tel:(888) 786-7135">(888) 786-7135</Link></button>
+                <button className="package-get-started-btn text-md mt-5"><Link href="tel:(866) 841-7463">(866) 841-7463</Link></button>
               </div>
             </div>
           </div>

@@ -4,10 +4,10 @@ import Image from "next/image";
 import { faArrowRight, faArrowLeft, faPlusCircle, faCheckCircle, faMinusCircle, faPhone, faEnvelope, faLocationArrow, faLocation, faMapLocation } from "@fortawesome/free-solid-svg-icons";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFacebook, faInstagram, faLinkedin, faThreads, faTwitter, faXTwitter, faYoutube } from "@fortawesome/free-brands-svg-icons";
-import Script from "next/script";
+import { faFacebook, faInstagram, faLinkedin, faTwitter, faXTwitter, faYoutube, faThreads } from "@fortawesome/free-brands-svg-icons";
+// import WhatsAppChat from "./WhatsAppChat";
 
-export default function NewBrandFooter() {
+export default function BrandFooterBook() {
     const [isVisible, setIsVisible] = useState(false);
 
     // Function to toggle visibility based on scroll position
@@ -39,20 +39,41 @@ export default function NewBrandFooter() {
     return (
         <>
             <footer className="text-white body-font brand-footer">
-                <div className="container px-5 pt-0 pb-10 md:pt-12 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col position-relative">
-                    <div className="flex-grow flex flex-wrap -mb-10 md:mt-0 mt-0 md:text-left text-center justify-evenly py-10">
+                <div className="container px-5 pt-10 pb-10 md:pt-12 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col position-relative">
+                    <div className="flex-grow flex flex-wrap -mb-10 md:mt-0 mt-10 md:text-left text-center justify-evenly py-10">
                         <div className="lg:w-1/3 md:w-1/4 w-full px-4 widget-2 relative">
                             <a className="flex title-font font-medium items-center md:justify-start justify-center text-white">
                                 <Image src={"/brand-img/logo.png"} width={250} height={200}></Image>
                             </a>
-                            <p className="mt-2 text-sm text-white leading-7 px-0 md:px-4 mb-5">
-                                Pine Book Writing offers expert ghostwriting services to help new and seasoned authors tell their stories to their audiences worldwide. Our exceptional team of writers, editors, and designers brings years of experience in crafting engaging books that become the best-selling ones.
+                            <p className="mt-2 text-sm text-white leading-7 px-4">
+                                Pine Book Publishing is a team of passionate book publishers that believe in the power of storytelling and the importance of writers' ability to tell their tales. Our streamlined process and dedicated support make book publishing service a realistic and rewarding goal for any author.
                             </p>
+                            {/* <nav className="list-none mb-10 mt-5">
+                                <li>
+                                    <Link
+                                        href="tel:8668417463"
+                                        className="text-white text-sm hover:text-white font-poppins flex justify-center md:justify-start"
+                                    >
+                                        <FontAwesomeIcon icon={faPhone} className="me-3" />
+                                        (866) 841-7463
+                                    </Link>
+                                </li>
+                                <li className="mt-3">
+                                    <Link
+                                        href="mailto:support@pinebookpublishing.com"
+                                        className="text-white hover:text-white font-poppins text-sm flex justify-center md:justify-start"
+                                    >
+                                        <FontAwesomeIcon icon={faEnvelope} className="me-3" />
+                                        {" "}
+                                        support@pinebookpublishing.com{" "}
+                                    </Link>
+                                </li>
+                            </nav> */}
                         </div>
                         <div className="lg:w-1/5 md:w-1/5 w-full px-4 widget-2 relative">
-                            <h3 className="title-font text-white tracking-widest text-2xl md:text-2xl mb-3 font-poppins font-bold	">
+                            <h2 className="title-font text-white tracking-widest text-2xl md:text-2xl mb-3 font-poppins font-bold	">
                                 Quick Links
-                            </h3>
+                            </h2>
                             <nav className="list-none mb-10 mt-5">
                                 <li>
                                     <Link href="/">
@@ -93,38 +114,60 @@ export default function NewBrandFooter() {
                             </nav>
                         </div>
                         <div className="lg:w-1/5 md:w-1/5 w-full px-4 widget-2 relative">
-                            <h3 className="title-font text-white tracking-widest text-2xl md:text-2xl mb-3 font-poppins font-bold	">
+                            <h2 className="title-font text-white tracking-widest text-2xl md:text-2xl mb-3 font-poppins font-bold	">
                                 Services
-                            </h3>
+                            </h2>
                             <nav className="list-none mb-10 mt-5">
                                 <li>
-                                    <Link href="/ghostwriting-service" onClick={(e) => { e.preventDefault(); window.location.href = "/ghostwriting-service"; }}>
-                                        Book Ghostwriting
+                                    <Link href="/book-publishing" onClick={(e) => { e.preventDefault(); window.location.href = "/book-publishing"; }}>
+                                        Book Publishing
                                     </Link>
                                 </li>
                                 <li className="mt-3">
-                                    <Link href="/resume-writing" onClick={(e) => { e.preventDefault(); window.location.href = "/resume-writing"; }}>
-                                        Resume Writing
+                                    <Link href="/book-editing" onClick={(e) => { e.preventDefault(); window.location.href = "/book-editing"; }}>
+                                        Book Editing
                                     </Link>
                                 </li>
                                 <li className="mt-3">
-                                    <Link href="/web-copywriting" onClick={(e) => { e.preventDefault(); window.location.href = "/web-copywriting"; }}>
-                                        Web Copywriting
+                                    <Link href="/proofreading" onClick={(e) => { e.preventDefault(); window.location.href = "/proofreading"; }}>
+                                        Proofreading
+                                    </Link>
+                                </li>
+                                {/* <li className="mt-3">
+                                    Services
+                                </li> */}
+                                <li className="mt-3">
+                                    <Link href="/book-formatting" onClick={(e) => { e.preventDefault(); window.location.href = "/book-formatting"; }}>
+                                        Book Formatting
                                     </Link>
                                 </li>
                                 <li className="mt-3">
-                                    <Link href="/seo-content" onClick={(e) => { e.preventDefault(); window.location.href = "/seo-content"; }}>
-                                        SEO Content Writing
+                                    <Link href="/typesetting-layout-adjustment" onClick={(e) => { e.preventDefault(); window.location.href = "/typesetting-layout-adjustment"; }}>
+                                        Typesetting & Layout
+                                    </Link>
+                                </li>
+
+                                {/* <li className="mt-3">
+                                    Testimonials
+                                </li> */}
+                                <li className="mt-3">
+                                    <Link href="/print-on-demand" onClick={(e) => { e.preventDefault(); window.location.href = "/print-on-demand"; }}>
+                                        Print On Demand
                                     </Link>
                                 </li>
                                 <li className="mt-3">
-                                    <Link href="/press-release-writing" onClick={(e) => { e.preventDefault(); window.location.href = "/press-release-writing"; }}>
-                                        Press Release Writing
+                                    <Link href="/document-processing" onClick={(e) => { e.preventDefault(); window.location.href = "/document-processing"; }}>
+                                        Document Processing
                                     </Link>
                                 </li>
                                 <li className="mt-3">
-                                    <Link href="/social-media-copywriting" onClick={(e) => { e.preventDefault(); window.location.href = "/social-media-copywriting"; }}>
-                                        Social Media Copywriting
+                                    <Link href="/audio-book" onClick={(e) => { e.preventDefault(); window.location.href = "/audio-book"; }}>
+                                        Audiobook
+                                    </Link>
+                                </li>
+                                <li className="mt-3">
+                                    <Link href="/isbn-and-barcode" onClick={(e) => { e.preventDefault(); window.location.href = "/isbn-and-barcode"; }}>
+                                        ISBN & Barcode
                                     </Link>
                                 </li>
                             </nav>
@@ -132,9 +175,16 @@ export default function NewBrandFooter() {
 
 
                         <div className="lg:w-1/4 md:w-1/4 w-full px-4 widget-3 relative">
-                            <h3 className="title-font text-white tracking-widest text-2xl md:text-2xl mb-3 font-poppins font-bold	">
+                            <h2 className="title-font text-white tracking-widest text-2xl md:text-2xl mb-3 font-poppins font-bold	">
                                 Contact Info
-                            </h3>
+                            </h2>
+                            {/* <Link
+                                href="tel:8668417463"
+                                className="text-white text-sm hover:text-white font-poppins flex justify-center md:justify-start mb-5"
+                            >
+                                <FontAwesomeIcon icon={faPhone} className="me-3" />
+                                (866) 841-7463
+                            </Link> */}
                             <Link
                                 href="tel:8668417463"
                                 className="text-white text-sm hover:text-white font-poppins flex justify-center md:justify-start mb-5"
@@ -143,12 +193,12 @@ export default function NewBrandFooter() {
                                 (866) 841-7463
                             </Link>
                             <Link
-                                href="mailto:support@pinebookwriting.com"
+                                href="mailto:support@pinebookpublishing.com"
                                 className="text-white hover:text-white font-poppins text-sm flex justify-center md:justify-start mb-5"
                             >
                                 <FontAwesomeIcon icon={faEnvelope} className="me-3" />
                                 {" "}
-                                support@pinebookwriting.com{" "}
+                                support@pinebookpublishing.com{" "}
                             </Link>
                             <h4 className="text-white leading-20 font-bold text-xl md:text-md font-poppins text-center lg:text-start uppercase">
                                 Canada Address:
@@ -178,7 +228,48 @@ export default function NewBrandFooter() {
                                     <FontAwesomeIcon icon={faThreads} className="me-3" />
                                 </Link>
                             </div>
-                         
+                            {/* <nav className="list-none mb-10 mt-5">
+                                <li>
+                                    <Link href="/book-editing" onClick={(e) => { e.preventDefault(); window.location.href = "/book-editing"; }}>
+                                        Book Editing
+                                    </Link>
+                                </li>
+                                <li className="mt-3">
+                                    <Link href="/proofreading" onClick={(e) => { e.preventDefault(); window.location.href = "/proofreading"; }}>
+                                        Proofreading
+                                    </Link>
+                                </li>
+                                <li className="mt-3">
+                                    <Link href={'javascript:;'}>
+                                        Book Formatting
+                                    </Link>
+                                </li>
+                                <li className="mt-3">
+                                    <Link href={'javascript:;'}>
+                                        Typesetting & Layout
+                                    </Link>
+                                </li>
+                                <li className="mt-3">
+                                    <Link href="/book-publishing" onClick={(e) => { e.preventDefault(); window.location.href = "/book-publishing"; }}>
+                                        Book Publishing
+                                    </Link>
+                                </li>
+                                <li className="mt-3">
+                                    <Link href={'javascript:;'}>
+                                        Audio Book
+                                    </Link>
+                                </li>
+                                <li className="mt-3">
+                                    <Link href={'javascript:;'}>
+                                        Print on Demand
+                                    </Link>
+                                </li>
+                                <li className="mt-3">
+                                    <Link href={'javascript:;'}>
+                                        Document Processing
+                                    </Link>
+                                </li>
+                            </nav> */}
                         </div>
                     </div>
 
@@ -186,7 +277,7 @@ export default function NewBrandFooter() {
                 <div className="copyright-sec">
                     <div className="container text-center mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
                         <p className="text-white w-full md:text-center text-sm sm:text-left">
-                            Copyright © 2026 <span className="powered-by-text"><Link href="https://www.pinebookwriting.com/" >Pine Book Writing Inc.</Link></span> | All Rights Reserved.
+                            Copyright © 2025 |
                             <Link
                                 href="/terms-and-conditions"
                                 rel="noopener noreferrer"
@@ -201,9 +292,9 @@ export default function NewBrandFooter() {
                                 className="text-white ml-1"
                                 target="_blank"
                             >
-                                Privacy Policy 
+                                Privacy Policy | {" "}
                             </Link>
-                            {/* Powered by <span className="powered-by-text"><Link href="https://www.pinebookwriting.com/" target="_blank">Pine Book Writing Inc.</Link></span> */}
+                            Powered by <span className="powered-by-text"><Link href="https://www.pinebookwriting.com/" target="_blank">Pine Book Writing Inc.</Link></span>
                         </p>
                     </div>
                 </div>
@@ -235,9 +326,6 @@ export default function NewBrandFooter() {
                 )}
             </div>
             {/* <WhatsAppChat /> */}
-
-                  <Script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=6ad75b0f-d085-4cae-9a7a-48abeb69b973"> </Script>
-
         </>
     );
 }

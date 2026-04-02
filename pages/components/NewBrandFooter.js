@@ -79,7 +79,7 @@ export default function NewBrandFooter() {
         { name: 'Book Formatting', href: '/book-formatting-writing' },
         { name: 'Book Self Publishing', href: '/book-self-publishing' },
         { name: 'Proofreading', href: '/proofreading-writing' },
-    ]
+    ];
 
     const servicesfourth = [
 

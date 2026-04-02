@@ -1091,7 +1091,7 @@ export default function Home() {
                 </p>
                 <div className="flex gap-6">
                   <button className="book-publishing-cta-btn-3 shadow-xl mt-10 cursor-pointer bg-white" onClick={handleOpenChat}><Link href={'javascript:;'}>Talk to an Expert</Link></button>
-                  <button className="book-publishing-cta-btn-2 shadow-xl mt-10 cursor-pointer bg-white"><Link href="tel:(866) 841-7463">(866) 841-7463</Link></button>
+                  <button className="book-publishing-cta-btn-2 shadow-xl mt-10 cursor-pointer bg-white"><Link href="tel:(888) 786-7135">(888) 786-7135</Link></button>
                 </div>
                 {/* <div className="flex justify-start items-center mt-8 gap-2 md:gap-x-8 client-logo-sec about-logos-sec">
                   {clientLogos.map((logo, index) => (
@@ -1683,7 +1683,7 @@ export default function Home() {
               Book Publishing Bundles
             </h2>
             <div className="w-24 h-1 bg-[#fff] mx-auto mt-4 rounded-full"></div>
-            <h4 class="text-xl font-poppins md:text-xl font-bold mt-4 text-white">Limited Time Offer - Save <span class="blink_me fw-bold text-2xl">50%</span> On Book Publishing Services</h4>
+            <h4 class="text-xl font-poppins md:text-xl font-bold mt-4 text-white">Limited Time Offer - Save <span class="blink_me fw-bold text-2xl">20%</span> On Book Publishing Services</h4>
 
 
             {/* Packages */}
@@ -1694,7 +1694,7 @@ export default function Home() {
                   Basic Package
                 </h3>
                 <h2 className="text-3xl font-bold text-[#15184c] mb-5">
-                  <del className="text-red italic">$700</del> | <span className="text-[#117d6b]">$560 USD</span>
+                  <del className="text-red italic">$700</del> | <span className="text-[#117d6b]">$349 USD</span>
                 </h2>
                 <ul className="text-gray-600 text-sm text-left space-y-2 mb-8 h-[300px] overflow-y-scroll overflow-x-hidden">
                   <h4 className="font-bold text-lg">Preparing Your Manuscript</h4>
@@ -1723,7 +1723,7 @@ export default function Home() {
                 <div className="mt-6 text-sm">
                   <p className="font-semibold text-gray-700">Need more info?</p>
                   <div className="flex justify-center gap-6 mt-2 text-[#117d6b] font-medium">
-                    <a href="tel:+1-866-841-7463" className="hover:text-[#15184c] transition">
+                    <a href="tel:+1-307-243-1331" className="hover:text-[#15184c] transition">
                       📞 Talk to Us
                     </a>
                     <a href="javascript:;" onClick={handleOpenChat} className="hover:text-[#15184c] transition">
@@ -1739,7 +1739,7 @@ export default function Home() {
                   Start Up Package
                 </h3>
                 <h2 className="text-3xl font-bold text-[#15184c] mb-5">
-                  <del className="text-red italic">$2,000</del> | <span className="text-[#117d6b]">$1,600 USD</span>
+                  <del className="text-red italic">$2,000</del> | <span className="text-[#117d6b]">$999 USD</span>
                 </h2>
                 <ul className="text-gray-600 text-sm text-left space-y-2 mb-8 h-[300px] overflow-y-scroll overflow-x-hidden">
                   <h4 className="font-bold text-lg">Preparing Your Manuscript</h4>
@@ -1774,7 +1774,7 @@ export default function Home() {
                 <div className="mt-6 text-sm">
                   <p className="font-semibold text-gray-700">Need more info?</p>
                   <div className="flex justify-center gap-6 mt-2 text-[#117d6b] font-medium">
-                    <a href="tel:+1-866-841-7463" className="hover:text-[#15184c] transition">
+                    <a href="tel:+1-307-243-1331" className="hover:text-[#15184c] transition">
                       📞 Talk to Us
                     </a>
                     <a href="javascript:;" onClick={handleOpenChat} className="hover:text-[#15184c] transition">
@@ -1790,7 +1790,7 @@ export default function Home() {
                   Standard Package
                 </h3>
                 <h2 className="text-3xl font-bold text-[#15184c] mb-5">
-                  <del className="text-red italic">$3,000</del> | <span className="text-[#117d6b]">$2,400 USD</span>
+                  <del className="text-red italic">$3,000</del> | <span className="text-[#117d6b]">$1,499 USD</span>
                 </h2>
                 <ul className="text-gray-600 text-sm text-left space-y-2 mb-8 h-[300px] overflow-y-scroll overflow-x-hidden">
                   <h4 className="font-bold text-lg">Preparing Your Manuscript</h4>
@@ -1828,7 +1828,7 @@ export default function Home() {
                 <div className="mt-6 text-sm">
                   <p className="font-semibold text-gray-700">Need more info?</p>
                   <div className="flex justify-center gap-6 mt-2 text-[#117d6b] font-medium">
-                    <a href="tel:+1-866-841-7463" className="hover:text-[#15184c] transition">
+                    <a href="tel:+1-307-243-1331" className="hover:text-[#15184c] transition">
                       📞 Talk to Us
                     </a>
                     <a href="javascript:;" onClick={handleOpenChat} className="hover:text-[#15184c] transition">
@@ -1892,7 +1892,7 @@ export default function Home() {
                   Expert Package
                 </h3>
                 <h2 className="text-3xl font-bold text-[#15184c] mb-5">
-                  <del className="text-red italic">$7,000</del> | <span className="text-[#117d6b]">$5,600 USD</span>
+                  <del className="text-red italic">$7,000</del> | <span className="text-[#117d6b]">$3,499 USD</span>
                 </h2>
                 <ul className="text-gray-600 text-sm text-left space-y-2 mb-8 h-[300px] overflow-y-scroll overflow-x-hidden">
                   <h4 className="font-bold text-lg">Preparing Your Manuscript</h4>
@@ -1935,7 +1935,7 @@ export default function Home() {
                 <div className="mt-6 text-sm">
                   <p className="font-semibold text-gray-700">Need more info?</p>
                   <div className="flex justify-center gap-6 mt-2 text-[#117d6b] font-medium">
-                    <a href="tel:+1-866-841-7463" className="hover:text-[#15184c] transition">
+                    <a href="tel:+1-307-243-1331" className="hover:text-[#15184c] transition">
                       📞 Talk to Us
                     </a>
                     <a href="javascript:;" onClick={handleOpenChat} className="hover:text-[#15184c] transition">
@@ -1951,7 +1951,7 @@ export default function Home() {
                   Premium Package
                 </h3>
                 <h2 className="text-3xl font-bold text-[#15184c] mb-5">
-                  <del className="text-red italic">$15,000</del> | <span className="text-[#117d6b]">$12,000 USD</span>
+                  <del className="text-red italic">$15,000</del> | <span className="text-[#117d6b]">$7,499 USD</span>
                 </h2>
                 <ul className="text-gray-600 text-sm text-left space-y-2 mb-8 h-[300px] overflow-y-scroll overflow-x-hidden">
                   <h4 className="font-bold text-lg">Preparing Your Manuscript</h4>
@@ -1998,7 +1998,7 @@ export default function Home() {
                 <div className="mt-6 text-sm">
                   <p className="font-semibold text-gray-700">Need more info?</p>
                   <div className="flex justify-center gap-6 mt-2 text-[#117d6b] font-medium">
-                    <a href="tel:+1-866-841-7463" className="hover:text-[#15184c] transition">
+                    <a href="tel:+1-307-243-1331" className="hover:text-[#15184c] transition">
                       📞 Talk to Us
                     </a>
                     <a href="javascript:;" onClick={handleOpenChat} className="hover:text-[#15184c] transition">
@@ -2014,7 +2014,7 @@ export default function Home() {
                   Enterprise Package
                 </h3>
                 <h2 className="text-3xl font-bold text-[#15184c] mb-5">
-                  <del className="text-red italic">$25,000</del> | <span className="text-[#117d6b]">$20,000 USD</span>
+                  <del className="text-red italic">$25,000</del> | <span className="text-[#117d6b]">$12,499 USD</span>
                 </h2>
                 <ul className="text-gray-600 text-sm text-left space-y-2 mb-8 h-[300px] overflow-y-scroll overflow-x-hidden">
                   <h4 className="font-bold text-lg">Preparing Your Manuscript</h4>
@@ -2070,7 +2070,7 @@ export default function Home() {
                 <div className="mt-6 text-sm">
                   <p className="font-semibold text-gray-700">Need more info?</p>
                   <div className="flex justify-center gap-6 mt-2 text-[#117d6b] font-medium">
-                    <a href="tel:+1-866-841-7463" className="hover:text-[#15184c] transition">
+                    <a href="tel:+1-307-243-1331" className="hover:text-[#15184c] transition">
                       📞 Talk to Us
                     </a>
                     <a href="javascript:;" onClick={handleOpenChat} className="hover:text-[#15184c] transition">
@@ -2144,43 +2144,18 @@ export default function Home() {
             {/* Service Boxes */}
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8 mt-16">
               {[
-                { img: "/brand-img/new-lp/1.webp", title: "Book Ghostwriting", url: "/ghostwriting-service" },
-                { img: "/brand-img/new-lp/9.webp", title: "Resume Writing", url: "/resume-writing" },
-                { img: "/brand-img/new-lp/2.webp", title: "Social Media Copywriting", url: "/social-media-copywriting" },
-                { img: "/brand-img/new-lp/10.webp", title: "Web Copywriting", url: "/web-copywriting" },
-                { img: "/brand-img/new-lp/3.webp", title: "SEO Content Writing", url: "/seo-content" },
-                { img: "/brand-img/new-lp/3.webp", title: "Blogs & Article Writing", url: "/blog-article-writing" },
-                { img: "/brand-img/new-lp/3.webp", title: "PR Writing", url: "/press-release-writing" },
-                { img: "/brand-img/new-lp/3.webp", title: "Script Writing", url: "/script-writing" },
-                { img: "/brand-img/new-lp/3.webp", title: "Wikipedia Writing", url: "/wikipedia-writing" },
-                { img: "/brand-img/new-lp/8.webp", title: "Product Description Writing", url: "/product-description" },
-                { img: "/brand-img/new-lp/8.webp", title: "Screen Writing", url: "/screen-writing" },
-                { img: "/brand-img/new-lp/8.webp", title: "Action Adventure Writing", url: "/action-adventure-writing" },
-                { img: "/brand-img/new-lp/8.webp", title: "Childrens Books", url: "/children-book-writing" },
-                { img: "/brand-img/new-lp/8.webp", title: "Fantasy Writing", url: "/fantasy-writing-services" },
-                { img: "/brand-img/new-lp/1.webp", title: "Horror Writing", url: "/horror-book-writing" },
-                { img: "/brand-img/new-lp/9.webp", title: "Sci-Fi Writing", url: "/sci-fi-writing" },
-                { img: "/brand-img/new-lp/2.webp", title: "Biography Writing", url: "/biography-writing" },
-                { img: "/brand-img/new-lp/10.webp", title: "Memoir Writing", url: "/memoir-writing" },
-                { img: "/brand-img/new-lp/3.webp", title: "Non Fiction Writing", url: "/non-fiction-writing" },
-                { img: "/brand-img/new-lp/3.webp", title: "Rhymes Writing", url: "/rhymes-writing" },
-                { img: "/brand-img/new-lp/3.webp", title: "Song Writing", url: "/song-writing" },
-                { img: "/brand-img/new-lp/3.webp", title: "Story Writing", url: "/story-writing" },
-                { img: "/brand-img/new-lp/3.webp", title: "Autobiography Writing", url: "/autobiography-writing" },
-                { img: "/brand-img/new-lp/8.webp", title: "Hip Hop Writing", url: "/hip-hop-writing" },
-                { img: "/brand-img/new-lp/8.webp", title: "Narrative Writing", url: "/narrative-writing" },
-                { img: "/brand-img/new-lp/8.webp", title: "Novel Writing", url: "/novel-writing" },
-                { img: "/brand-img/new-lp/8.webp", title: "Speech Writing Services", url: "/speech-writing-services" },
-                { img: "/brand-img/new-lp/8.webp", title: "Comedy Writing", url: "/comedy-writing" },
-                { img: "/brand-img/new-lp/1.webp", title: "Comic Book Writing", url: "/comic-book-writing" },
-                { img: "/brand-img/new-lp/9.webp", title: "Military Fiction Writing", url: "/military-fiction-writing" },
-                { img: "/brand-img/new-lp/2.webp", title: "Movie Writing", url: "/movie-writing" },
-                { img: "/brand-img/new-lp/10.webp", title: "Book Editing", url: "/book-editing" },
-                { img: "/brand-img/new-lp/3.webp", title: "Book Formatting", url: "/book-formatting-writing" },
-                { img: "/brand-img/new-lp/3.webp", title: "Book Self Publishing", url: "/book-self-publishing" },
-                { img: "/brand-img/new-lp/3.webp", title: "Proofreading", url: "/proofreading-writing" },
+                { img: "/brand-img/new-lp/1.webp", title: "Book Publishing", url: "/book-publishing" },
+                { img: "/brand-img/new-lp/9.webp", title: "Book Editing", url: "/book-editing" },
+                { img: "/brand-img/new-lp/2.webp", title: "Proofreading", url: "/proofreading" },
+                { img: "/brand-img/new-lp/10.webp", title: "Book Formatting", url: "/book-formatting" },
+                { img: "/brand-img/new-lp/3.webp", title: "Typesetting & Layout", url: "/typesetting-layout-adjustment" },
+                { img: "/brand-img/new-lp/3.webp", title: "Print On Demand", url: "/print-on-demand" },
+                { img: "/brand-img/new-lp/3.webp", title: "Document Processing", url: "/document-processing" },
+                { img: "/brand-img/new-lp/3.webp", title: "Audiobook", url: "/audio-book" },
+                { img: "/brand-img/new-lp/3.webp", title: "ISBN & Barcode", url: "/isbn-and-barcode" },
               ].map((service, index) => (
                 <div
+
                   key={index}
                   className="group bg-white rounded-2xl shadow-md hover:shadow-xl duration-500 hover:-translate-y-2 flex flex-col items-center justify-between p-6 border border-gray-100 hover:border-[#15184c]"
                 >

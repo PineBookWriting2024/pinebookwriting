@@ -84,6 +84,10 @@ export default function PortfolioSlider1() {
             id: 8,
             src: "/brand-img/Jean Bosco N. Ruhashya Full cover.png",
         },
+        {
+            id: 9,
+            src: "/brand-img/Doris.jpg",
+        },
     ];
 
     return (

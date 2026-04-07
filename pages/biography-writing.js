@@ -65,9 +65,9 @@ export default function BookEditing() {
                     <div className="basis-1/2 abt-txt m1-h p1 aos-init aos-animate" data-aos="fade-right" data-aos-duration="1000">
                         <h2 className="text-3xl font-bold uppercase font-poppins md:text-4xl">Best Biography Writing Services That Go Deeper</h2>
 
-                        <h2 className="text-2xl uppercase font-poppins md:text-3xl">
+                        <h3 className="mt-3 text-2xl font-semibold font-poppins md:text-2xl uppercase">
                             We Turn Real Lives into Meaningful Stories
-                        </h2>
+                        </h3>
 
                         <p className="pt-3 text-xl text-left font-poppins">
                             Writing about your own life isn’t easy. Knowing where to start, what to include and what to leave out. That’s where our professional biography writing services help. We listen to YOU first. Then we shape your experiences into a story. A story that flows in a natural way. </p>

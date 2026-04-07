@@ -44,7 +44,7 @@ export default function PressRelease() {
         <>
             <Head>
                 <title>Expert Press Release Writing Services | Pine Book Writing
-</title>
+                </title>
                 <link rel="canonical" href="https://www.pinebookwriting.com/press-release-writing" />
 
                 <meta
@@ -69,12 +69,12 @@ export default function PressRelease() {
                     <div className="basis-1/2 abt-txt m1-h p1 aos-init aos-animate" data-aos="fade-right" data-aos-duration="1000">
 
                         <h2 className="text-3xl font-bold uppercase font-poppins md:text-4xl">Hire a Professional Press Release Writing Service</h2>
-                        <h3 className="text-2xl uppercase font-poppins md:text-3xl">
+                        <h3 className="mt-3 text-2xl font-semibold font-poppins md:text-2xl uppercase">
                             Get Strategic Media Outreach
 
                         </h3>
                         <p className="pt-3 text-xl text-left font-poppins">
-                          Successful businesses and organizations always maintain a constant connection with their audience. They keep them informed about the company's different events, such as product launches, changes in policies, partnerships with others and many other things that the audience of a good company/organization must be aware of. That's exactly where Press Release comes into action. Not only that, but press releases also cause an increase in the website's traffic in an organic way.</p>
+                            Successful businesses and organizations always maintain a constant connection with their audience. They keep them informed about the company's different events, such as product launches, changes in policies, partnerships with others and many other things that the audience of a good company/organization must be aware of. That's exactly where Press Release comes into action. Not only that, but press releases also cause an increase in the website's traffic in an organic way.</p>
                         <p className="pt-3 text-xl text-left font-poppins">At Pine Book Writing, we have a dedicated team of Press Release writers who understand the worth of creating newsworthy content using a journalistic writing style. They work together with you, improvise your key message, and outline the news that fits exactly the way your audience understands. We do not just write a PR copy but also distribute your news/announcements on many popular media outlets based on your demand. Contact us to get a FREE quote today!</p>
                     </div>
                     <div className="flex justify-center text-center basis-1/2 abt-pic md:justify-center">
@@ -107,10 +107,10 @@ export default function PressRelease() {
 
                     <div className="px-4 text-center md:col-span-6">
                         <h2 className="font-poppins text-2xl text-[#98caa9] font-semibold md:text-3xl uppercase">
-                         Create Media Buzz With Our Powerful PR Writing Service
+                            Create Media Buzz With Our Powerful PR Writing Service
                         </h2>
                         <p className="py-4 text-base md:text-lg">
-                        Get in touch with our team and get expert assistance in writing effective press releases and posting them on well-known media outlets.
+                            Get in touch with our team and get expert assistance in writing effective press releases and posting them on well-known media outlets.
                         </p>
 
                         <div className="flex flex-col items-center justify-center gap-4 cta-btns sm:flex-row">
@@ -151,7 +151,7 @@ export default function PressRelease() {
                     <div className="mb-6 text-center">
                         <h3 className="text-2xl text-black font-poppins">Our Service Workflow</h3>
                         <h2 className="text-3xl font-bold text-black font-poppins md:text-4xl" data-aos="zoom-out-down">6-Step Process of Our Press Release Writing Services
-</h2>
+                        </h2>
                     </div>
 
                     <div className="grid gap-6 mb-6 md:grid-cols-3">
@@ -177,7 +177,7 @@ export default function PressRelease() {
                                 <span className="num-span"><b>03</b></span>
                                 <h2 className="text-2xl text-white font-poppins pro-h">PR Writing</h2>
                                 <p className="">Then, our PR writers start drafting your press release in a way that helps convey your key messages and attracts the attention of journalists.
-</p>
+                                </p>
                             </div>
                         </div>
 
@@ -215,38 +215,38 @@ export default function PressRelease() {
             </section>
 
             <section className="max-w-6xl px-4 py-16 mx-auto bg-white font-poppins">
-                 <h2 className="mb-12 text-xl font-medium text-center text-gray-700 md:text-2xl">
-    Our Offerings
-  </h2>
-  <h2 className="mb-12 text-xl font-medium text-center text-gray-700 md:text-2xl">
- What’s Included In Our Press Release Writing Services
-  </h2>
+                <h2 className="mb-12 text-xl font-medium text-center text-gray-700 md:text-2xl">
+                    Our Offerings
+                </h2>
+                <h2 className="mb-12 text-xl font-medium text-center text-gray-700 md:text-2xl">
+                    What’s Included In Our Press Release Writing Services
+                </h2>
 
-  <p className="mb-12 text-xl font-medium text-center text-gray-700 md:text-2xl">
-  Hire military PR writers for your next press release at <a class="text-black underline" href="https://www.pinebookwriting.com">Pine Book Writing</a>. We work together with our clients, combining research, creativity and storytelling expertise to write an impactful press release article.
-  </p>
+                <p className="mb-12 text-xl font-medium text-center text-gray-700 md:text-2xl">
+                    Hire military PR writers for your next press release at <a class="text-black underline" href="https://www.pinebookwriting.com">Pine Book Writing</a>. We work together with our clients, combining research, creativity and storytelling expertise to write an impactful press release article.
+                </p>
 
-  <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3">
-    {[
-     { icon: '🖋️', label: 'Structure & Formatting' },
-      { icon: '🧐', label: 'Research & Writing' },
-      { icon: '📄', label: 'Newsworthy Angle' },
-      { icon: '💼', label: 'Editorial Review' },
-      { icon: '⚙️', label: 'Platform-Specific Customization' },
-      { icon: '🎯', label: 'Multi-Platform Distribution' },         
-    ].map((service, index) => (
-      <div
-        key={index}
-        className="flex flex-col items-center justify-center h-32 p-4 text-center bg-[#f4f1ea] hover:bg-[#ebe8e0] transition-colors rounded-xl shadow-sm hover:shadow-md"
-      >
-        <div className="mb-2 text-3xl">{service.icon}</div>
-        <span className="text-[10px] font-bold uppercase tracking-widest text-gray-600">
-          {service.label}
-        </span>
-      </div>
-    ))}
-  </div>
-</section>
+                <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3">
+                    {[
+                        { icon: '🖋️', label: 'Structure & Formatting' },
+                        { icon: '🧐', label: 'Research & Writing' },
+                        { icon: '📄', label: 'Newsworthy Angle' },
+                        { icon: '💼', label: 'Editorial Review' },
+                        { icon: '⚙️', label: 'Platform-Specific Customization' },
+                        { icon: '🎯', label: 'Multi-Platform Distribution' },
+                    ].map((service, index) => (
+                        <div
+                            key={index}
+                            className="flex flex-col items-center justify-center h-32 p-4 text-center bg-[#f4f1ea] hover:bg-[#ebe8e0] transition-colors rounded-xl shadow-sm hover:shadow-md"
+                        >
+                            <div className="mb-2 text-3xl">{service.icon}</div>
+                            <span className="text-[10px] font-bold uppercase tracking-widest text-gray-600">
+                                {service.label}
+                            </span>
+                        </div>
+                    ))}
+                </div>
+            </section>
 
             <section className="overflow-hidden" >
                 <div className="relative left-0 px-12 py-10 mt-20 mb-8 brand-choose-us-section ms-auto md:left-52 md:px-20 " >

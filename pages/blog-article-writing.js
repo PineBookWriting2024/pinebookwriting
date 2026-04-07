@@ -12,7 +12,7 @@ import BrandAudioPlayer from "./components/BrandAudioPlayer";
 import NewBrandFooter from "./components/NewBrandFooter";
 import BrandTopBar from "./components/BrandTopBar";
 import { FaPhoneVolume } from "react-icons/fa";
-import CTAButton from './components/CTAButton';        
+import CTAButton from './components/CTAButton';
 
 
 export default function BlogWriting() {
@@ -52,7 +52,7 @@ export default function BlogWriting() {
                 />
                 <link rel="shortcut icon" href="/images/fav.webp" />
             </Head>
-            <BrandTopBar/>
+            <BrandTopBar />
             <BrandNavbar />
             <BrandPrimaryHeader
                 photo_banner={"/images/blog-article-writing/1.webp"}
@@ -66,20 +66,20 @@ export default function BlogWriting() {
             <div className="container max-w-screen-xl pt-0 mx-auto overflow-hidden md:py-20">
                 <div className="flex flex-col items-center justify-center px-8 py-10 md:flex-row lg:flex-row md:px-0 md:py-0">
                     <div className="basis-1/2 abt-txt m1-h p1 aos-init aos-animate" data-aos="fade-right" data-aos-duration="1000">
-                        
+
                         <h2 className="text-3xl font-bold uppercase font-poppins md:text-4xl">Professional Blog Writing Services That Actually Work
-</h2>
-                        <h3 className="text-2xl uppercase font-poppins md:text-3xl">
+                        </h2>
+                        <h3 className="mt-3 text-2xl font-semibold font-poppins md:text-2xl uppercase">
                             Content That Brings Results
 
                         </h3>
                         <p className="pt-3 text-xl text-left font-poppins">Not every blog writing service understands search intent. And honestly, that’s where most blogs fail. We focus on SEO blog writing services that are built around real keyword research, blog SEO optimization, and clear content structure.
-</p>
+                        </p>
 
                         <p className="pt-3 text-xl text-left font-poppins">Our professional blog writers create keyword-optimized blogs that are easy to read but still strong for search engines. We don’t stuff keywords. We place them naturally. Whether you need industry blog writing, content marketing blogs, or conversion-focused blogs, we write with purpose.
-</p>
- <p className="pt-3 text-xl text-left font-poppins">We also help with blog content planning and strategy. Because without direction, blogs become random posts that don’t bring traffic. If you’re looking to hire blog writers who understand SEO and reader behavior, you’re in the right place.
-</p>
+                        </p>
+                        <p className="pt-3 text-xl text-left font-poppins">We also help with blog content planning and strategy. Because without direction, blogs become random posts that don’t bring traffic. If you’re looking to hire blog writers who understand SEO and reader behavior, you’re in the right place.
+                        </p>
                     </div>
                     <div className="flex justify-center text-center basis-1/2 abt-pic md:justify-center">
                         <Image src={"/images/blog-article-writing/ghost-pic.webp"} width={470} height={300}
@@ -96,64 +96,64 @@ export default function BlogWriting() {
             </div>
 
 
-                <section
-                                                    className="relative overflow-visible text-white bg-center bg-no-repeat bg-cover ser-cta-banner py-14 md:py-0"
-                                                    style={{ backgroundImage: `url(/brand-img/bg-banner.png)` }}>
-                                                    <div className="relative grid items-center grid-cols-1 gap-4 mx-auto md:grid-cols-12 max-w-7xl ">
-                                    
-                                                        <div className="relative z-10 justify-center hidden md:col-span-3 md:flex md:justify-start">
-                                                            <Image
-                                                                src="/images/Autobiography-Writing/cta-book-12.webp"
-                                                                alt="Book 1"
-                                                                className="absolute l-book -top-20 md:-top-36"
-                                                                height={600}
-                                                                width={600}
-                                                            />
-                                                        </div>
-                                    
-                                                        <div className="px-4 text-center md:col-span-6">
-                                                            <h2 className="font-poppins text-2xl text-[#98caa9] font-semibold md:text-3xl uppercase">
-                                                                Let’s Build Blogs That Grow Traffic
-                                                            </h2>
-                                                            <p className="py-4 text-base md:text-lg">
-                                                                Start your SEO blog writing service today and work with blog content writers who know how to turn ideas into traffic and leads.
+            <section
+                className="relative overflow-visible text-white bg-center bg-no-repeat bg-cover ser-cta-banner py-14 md:py-0"
+                style={{ backgroundImage: `url(/brand-img/bg-banner.png)` }}>
+                <div className="relative grid items-center grid-cols-1 gap-4 mx-auto md:grid-cols-12 max-w-7xl ">
 
-                                                            </p>
-                                    
-                                                            <div className="flex flex-col items-center justify-center gap-4 cta-btns sm:flex-row">
-                                                                         <CTAButton />
-                                    
-                                    
-                                                                <a
-                                                                    href="tel:(866) 841-7463"
-                                                                    className="flex items-center gap-2 text-white"
-                                                                >
-                                                                    <FaPhoneVolume className="inline" /> (866) 841-7463
-                                                                </a>
-                                    
-                                                                <a
-                                                                    href={'javascript:;'}
-                                                                    className="bg-transparent text-[#fff] px-5 py-2 border border-white
+                    <div className="relative z-10 justify-center hidden md:col-span-3 md:flex md:justify-start">
+                        <Image
+                            src="/images/Autobiography-Writing/cta-book-12.webp"
+                            alt="Book 1"
+                            className="absolute l-book -top-20 md:-top-36"
+                            height={600}
+                            width={600}
+                        />
+                    </div>
+
+                    <div className="px-4 text-center md:col-span-6">
+                        <h2 className="font-poppins text-2xl text-[#98caa9] font-semibold md:text-3xl uppercase">
+                            Let’s Build Blogs That Grow Traffic
+                        </h2>
+                        <p className="py-4 text-base md:text-lg">
+                            Start your SEO blog writing service today and work with blog content writers who know how to turn ideas into traffic and leads.
+
+                        </p>
+
+                        <div className="flex flex-col items-center justify-center gap-4 cta-btns sm:flex-row">
+                            <CTAButton />
+
+
+                            <a
+                                href="tel:(866) 841-7463"
+                                className="flex items-center gap-2 text-white"
+                            >
+                                <FaPhoneVolume className="inline" /> (866) 841-7463
+                            </a>
+
+                            <a
+                                href={'javascript:;'}
+                                className="bg-transparent text-[#fff] px-5 py-2 border border-white
                                      rounded-full flex items-center gap-2 hover:bg-gray-200 hover:text-black cta-btn-1 transition" onClick={handleOpenChat}>
-                                                                    Live Chat
-                                                                </a>
-                                                            </div>
-                                                        </div>
-                                    
-                                                        <div className="justify-center hidden md:col-span-3 md:flex md:justify-end">
-                                                            <Image
-                                                                src="/brand-img/type.png"
-                                                                alt="Typewriter"
-                                                                className="max-h-[300px] w-auto"
-                                                                height={600}
-                                                                width={600}
-                                                            />
-                                                        </div>
-                                                    </div>
-                                                </section>
+                                Live Chat
+                            </a>
+                        </div>
+                    </div>
 
-             {/* inner process section start */}
-             <section className="relative flex justify-center pt-20 mx-auto mb-12 overflow-hidden text-center brand-process">
+                    <div className="justify-center hidden md:col-span-3 md:flex md:justify-end">
+                        <Image
+                            src="/brand-img/type.png"
+                            alt="Typewriter"
+                            className="max-h-[300px] w-auto"
+                            height={600}
+                            width={600}
+                        />
+                    </div>
+                </div>
+            </section>
+
+            {/* inner process section start */}
+            <section className="relative flex justify-center pt-20 mx-auto mb-12 overflow-hidden text-center brand-process">
                 <div className="max-w-screen-xl">
                     <div className="mb-6 text-center">
                         <h3 className="text-2xl text-black font-poppins">Our Service Workflow</h3>
@@ -171,57 +171,57 @@ export default function BlogWriting() {
                         </div>
 
                         <div className="flex flex-row" data-aos="fade-left">
-                        <div className="flex-col px-6 py-10 text-left brand-process-content">
-                        <span className="num-span"><b>02</b></span>
+                            <div className="flex-col px-6 py-10 text-left brand-process-content">
+                                <span className="num-span"><b>02</b></span>
                                 <h2 className="text-2xl text-white font-poppins pro-h">Keyword Research</h2>
                                 <p className="">Our team researches primary and secondary keywords, search intent, and competitors. We build a blog content strategy that makes sense for long-term growth.</p>
                             </div>
                         </div>
 
                         <div className="flex flex-row" data-aos="fade-left">
-                        <div className="flex-col px-6 py-10 text-left brand-process-content">
-                        <span className="num-span"><b>03</b></span>
+                            <div className="flex-col px-6 py-10 text-left brand-process-content">
+                                <span className="num-span"><b>03</b></span>
                                 <h2 className="text-2xl text-white font-poppins pro-h">Outline Creation
-</h2>
+                                </h2>
                                 <p className="">Before drafting, we create a structured outline. Headings, subheadings, keyword placement. Everything is planned so the blog flows naturally and ranks better.</p>
                             </div>
                         </div>
-                        
+
                     </div>
 
                     <div className="grid gap-6 mb-6 md:grid-cols-3" >
 
                         <div className="flex flex-row " data-aos="fade-left">
-                        <div className="flex-col px-6 py-10 text-left brand-process-content">
-                        <span className="num-span"><b>04</b></span>
+                            <div className="flex-col px-6 py-10 text-left brand-process-content">
+                                <span className="num-span"><b>04</b></span>
                                 <h2 className="text-2xl text-white font-poppins pro-h">Writing & Optimization</h2>
                                 <p className="">Our blog writers create SEO blog content that sounds human, not robotic. We focus on clarity, readability, and blog SEO optimization without overdoing anything.</p>
                             </div>
                         </div>
 
                         <div className="flex flex-row" data-aos="fade-left">
-                        <div className="flex-col px-6 py-10 text-left brand-process-content">
-                        <span className="num-span"><b>05</b></span>
+                            <div className="flex-col px-6 py-10 text-left brand-process-content">
+                                <span className="num-span"><b>05</b></span>
                                 <h2 className="text-2xl text-white font-poppins pro-h">Editing & Proofreading
-</h2>
+                                </h2>
                                 <p className="">Every blog article goes through editing for grammar, tone, and structure. Small errors can reduce trust, so we fix them carefully.</p>
                             </div>
                         </div>
 
                         <div className="flex flex-row" data-aos="fade-left">
-                        <div className="flex-col px-6 py-10 text-left brand-process-content">
-                        <span className="num-span"><b>06</b></span>
+                            <div className="flex-col px-6 py-10 text-left brand-process-content">
+                                <span className="num-span"><b>06</b></span>
                                 <h2 className="text-2xl text-white font-poppins pro-h">Review & Delivery</h2>
                                 <p className="">You receive the final blog post ready to publish. If revisions are needed, we adjust quickly. We keep the process simple and clear.</p>
                             </div>
                         </div>
-                        
+
                     </div>
 
                 </div>
             </section>
 
-             <section className="max-w-6xl px-4 py-16 mx-auto bg-white font-poppins">
+            <section className="max-w-6xl px-4 py-16 mx-auto bg-white font-poppins">
                 <h2 className="mb-4 text-xl font-bold text-center text-gray-700 md:text-2xl">
                     Our Offerings
                 </h2>
@@ -231,7 +231,7 @@ export default function BlogWriting() {
                 </h2>
 
                 <p className="mb-12 text-xl font-medium text-center text-gray-700 md:text-2xl">
-                   Our blog writing services packages are built to support traffic growth, SEO rankings, and brand authority through consistent, high-quality blog articles.
+                    Our blog writing services packages are built to support traffic growth, SEO rankings, and brand authority through consistent, high-quality blog articles.
 
                 </p>
 
@@ -271,7 +271,7 @@ export default function BlogWriting() {
                         <div className="basis-1/3 md:ml-20">
                             <h2 className="mt-10 text-2xl font-bold text-white uppercase font-poppins md:text-4xl md:mt-0" data-aos="zoom-in-left" data-aos-delay="100">Why Brands Choose Our Blog Writing Services</h2>
                             <p className="mt-2 text-white">There are many blog writers for hire online. But finding professional blog writers who understand SEO, structure, and conversion is not easy. We mix experience with research. No guesswork. No random topics. We focus on value first. Rankings follow.
-</p>
+                            </p>
                             <div className="flex flex-col gap-2 mt-6 md:flex-row md:gap-10">
                                 <ul>
                                     <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} /> Real keyword research </li>

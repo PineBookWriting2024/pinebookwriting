@@ -65,12 +65,12 @@ export default function BookEditing() {
                     <div className="basis-1/2 abt-txt m1-h p1 aos-init aos-animate" data-aos="fade-right" data-aos-duration="1000">
                         <h2 className="text-3xl font-bold uppercase font-poppins md:text-4xl">Novel Writing Service With Real Direction</h2>
 
-                        <h2 className="text-2xl uppercase font-poppins md:text-3xl">
-                           For Stories That Want To Breathe
-                        </h2>
+                        <h3 className="mt-3 text-2xl font-semibold font-poppins md:text-2xl uppercase">
+                            For Stories That Want To Breathe
+                        </h3>
 
                         <p className="pt-3 text-xl text-left font-poppins">
-                           Writing a novel is not only about filling pages. It’s about holding attention, building characters, and knowing when to slow down or push forward. Many people start strong, then get stuck halfway. That’s where our novel writing service helps. </p>
+                            Writing a novel is not only about filling pages. It’s about holding attention, building characters, and knowing when to slow down or push forward. Many people start strong, then get stuck halfway. That’s where our novel writing service helps. </p>
 
                         <p className="pt-3 text-xl text-left font-poppins">We work with writers who want to write a novel but need structure, guidance, or full support. From romance to general fiction novel writing, our professional novel writers focus on flow, character depth, and story logic. Some clients come with rough notes. Others with just an idea. Both are fine. We shape custom novel writing plans that grow naturally, chapter by chapter. No rushing. No forced drama. Just solid storytelling that feels readable and honest.</p>
                     </div>
@@ -104,7 +104,7 @@ export default function BookEditing() {
 
                     <div className="px-4 text-center md:col-span-6">
                         <h2 className="font-poppins text-2xl text-[#98caa9] font-semibold md:text-3xl uppercase">
-                           Let’s Turn That Story Into The Best-selling Novel!
+                            Let’s Turn That Story Into The Best-selling Novel!
                         </h2>
                         <p className="py-4 text-base md:text-lg">Feeling stuck or unsure where to begin? Talk to our novel writers for hire and see how your story can move forward, one clear step at a time.</p>
 
@@ -206,39 +206,39 @@ export default function BookEditing() {
                 </div>
             </section>
 
-                <section className="max-w-6xl px-4 py-16 mx-auto bg-white font-poppins">
-                 <h2 className="mb-12 text-xl font-medium text-center text-gray-700 md:text-2xl">
-    Our Offerings
-  </h2>
-  <h2 className="mb-12 text-xl font-medium text-center text-gray-700 md:text-2xl">
-What’s Included In Our Novel Writing Services
-  </h2>
+            <section className="max-w-6xl px-4 py-16 mx-auto bg-white font-poppins">
+                <h2 className="mb-12 text-xl font-medium text-center text-gray-700 md:text-2xl">
+                    Our Offerings
+                </h2>
+                <h2 className="mb-12 text-xl font-medium text-center text-gray-700 md:text-2xl">
+                    What’s Included In Our Novel Writing Services
+                </h2>
 
-  <p className="mb-12 text-xl font-medium text-center text-gray-700 md:text-2xl">
-We cover the full novel writing process, from idea shaping to final manuscript, with flexible options depending on genre, length, and how much help you want.
-  </p>
+                <p className="mb-12 text-xl font-medium text-center text-gray-700 md:text-2xl">
+                    We cover the full novel writing process, from idea shaping to final manuscript, with flexible options depending on genre, length, and how much help you want.
+                </p>
 
-  <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3">
-    {[
-     { icon: '🖋️', label: 'Fiction Novel Writing' },
-      { icon: '🧐', label: 'Romance Novel Writing' },
-      { icon: '📄', label: 'Novel Ghostwriting' },
-      { icon: '💼', label: 'Character Development' },
-      { icon: '⚙️', label: 'Manuscript Editing & Revisions' },
-      { icon: '🎯', label: 'Genre-Based Novel Writing' },         
-    ].map((service, index) => (
-      <div
-        key={index}
-        className="flex flex-col items-center justify-center h-32 p-4 text-center bg-[#f4f1ea] hover:bg-[#ebe8e0] transition-colors rounded-xl shadow-sm hover:shadow-md"
-      >
-        <div className="mb-2 text-3xl">{service.icon}</div>
-        <span className="text-[10px] font-bold uppercase tracking-widest text-gray-600">
-          {service.label}
-        </span>
-      </div>
-    ))}
-  </div>
-</section>
+                <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3">
+                    {[
+                        { icon: '🖋️', label: 'Fiction Novel Writing' },
+                        { icon: '🧐', label: 'Romance Novel Writing' },
+                        { icon: '📄', label: 'Novel Ghostwriting' },
+                        { icon: '💼', label: 'Character Development' },
+                        { icon: '⚙️', label: 'Manuscript Editing & Revisions' },
+                        { icon: '🎯', label: 'Genre-Based Novel Writing' },
+                    ].map((service, index) => (
+                        <div
+                            key={index}
+                            className="flex flex-col items-center justify-center h-32 p-4 text-center bg-[#f4f1ea] hover:bg-[#ebe8e0] transition-colors rounded-xl shadow-sm hover:shadow-md"
+                        >
+                            <div className="mb-2 text-3xl">{service.icon}</div>
+                            <span className="text-[10px] font-bold uppercase tracking-widest text-gray-600">
+                                {service.label}
+                            </span>
+                        </div>
+                    ))}
+                </div>
+            </section>
 
             <section className="overflow-hidden" >
                 <div className="relative left-0 px-12 py-10 mb-8 brand-choose-us-section ms-auto md:left-52 md:px-20 md:mt-16 " >

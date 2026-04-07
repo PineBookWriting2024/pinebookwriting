@@ -28,17 +28,17 @@ export default function BookEditing() {
 
     const faqData = [
         { question: "Do you write full fantasy novels or only parts?", answer: "Both. We handle full fantasy book writing, or help with outlines, chapters, or rewrites depending on what stage your project is at." },
-        
+
         { question: "Can you help with fantasy series planning?", answer: "Yes. Our fantasy series writing services help plan long arcs, character growth, and future books without locking you into rigid structures." },
-       
+
         { question: "Will the story sound like other fantasy books?", answer: "No. We avoid copying trends. Our modern fantasy writers focus on original voices, even when working within familiar fantasy themes." },
-       
+
         { question: "Do you offer ghostwriting for fantasy books?", answer: "Yes. We provide fantasy ghostwriters for hire who write under NDA, keeping your authorship and creative ownership fully protected." },
-        
+
         { question: "Is world building included?", answer: "Yes, but only when needed. Fantasy world building supports the story, not the other way around. We keep it balanced." },
-       
+
         { question: "Can I be involved during writing?", answer: "Absolutely. Fantasy writing works best with feedback. You stay involved during drafts, reviews, and revisions without feeling overwhelmed. " },
-            ];
+    ];
 
     return (
         <>
@@ -50,7 +50,7 @@ export default function BookEditing() {
                     content="Looking for fantasy writing services? We help turn ideas into engaging fantasy books, series and novels with strong characters and believable worlds."
                 />
                 <link rel="shortcut icon" href="/images/fav.webp" />
-                </Head>
+            </Head>
             <BrandTopBar />
             <BrandNavbar />
             <BrandPrimaryHeader
@@ -63,17 +63,17 @@ export default function BookEditing() {
             <div className="container max-w-screen-xl pt-0 mx-auto overflow-hidden md:py-20">
                 <div className="flex flex-col items-center justify-center px-8 py-10 md:flex-row lg:flex-row md:px-0 md:py-0">
                     <div className="basis-1/2 abt-txt m1-h p1 aos-init aos-animate" data-aos="fade-right" data-aos-duration="1000">
-                    <h2 className="text-3xl font-bold uppercase font-poppins md:text-4xl">Best Fantasy Writing Services That Go Beyond Tropes</h2>
+                        <h2 className="text-3xl font-bold uppercase font-poppins md:text-4xl">Best Fantasy Writing Services That Go Beyond Tropes</h2>
 
-                        <h2 className="text-2xl uppercase font-poppins md:text-3xl">
-                      Stories Built With Heart
-                        </h2>
-                       
+                        <h3 className="mt-3 text-2xl font-semibold font-poppins md:text-2xl uppercase">
+                            Stories Built With Heart
+                        </h3>
+
                         <p className="pt-3 text-xl text-left font-poppins">
-                        Fantasy is not just magic and battles. It is also people. Choices. Loss. Hope. At Pine Book Writing, our professional fantasy writers work with a focus on fantasy storytelling that feels human and real. Even inside unreal worlds. </p>
+                            Fantasy is not just magic and battles. It is also people. Choices. Loss. Hope. At Pine Book Writing, our professional fantasy writers work with a focus on fantasy storytelling that feels human and real. Even inside unreal worlds. </p>
 
                         <p className="pt-3 text-xl text-left font-poppins">When people sign up for our services, some clients come with maps and lore. Others just have a feeling or a character voice. Both are okay. We work on fantasy fiction writing that grows naturally, scene by scene. From epic fantasy novel writing to character-driven fantasy stories, we keep the writing clear, readable and emotionally grounded. World building matters? Yes, but only when it serves the story.</p>
-                         <p className="pt-3 text-xl text-left font-poppins">Whether you’re planning one book or a long fantasy series, you’re welcome at Pine Book Writing. We can help your shape your story without forcing trends or copying other fantasy or children story books.</p>
+                        <p className="pt-3 text-xl text-left font-poppins">Whether you’re planning one book or a long fantasy series, you’re welcome at Pine Book Writing. We can help your shape your story without forcing trends or copying other fantasy or children story books.</p>
                     </div>
                     <div className="flex justify-center text-center basis-1/2 abt-pic md:justify-center">
                         <Image src={"/images/Fantasy-Writing-Services/ghost-pic.webp"} width={470} height={300}
@@ -90,63 +90,63 @@ export default function BookEditing() {
             </div>
 
             <section className="relative overflow-visible text-white bg-center bg-no-repeat bg-cover ser-cta-banner py-14 md:py-0"
-                            style={{ backgroundImage: `url(/brand-img/bg-banner.png)` }}>
-                            <div className="relative grid items-center grid-cols-1 gap-6 mx-auto md:grid-cols-12 max-w-8xl">
+                style={{ backgroundImage: `url(/brand-img/bg-banner.png)` }}>
+                <div className="relative grid items-center grid-cols-1 gap-6 mx-auto md:grid-cols-12 max-w-8xl">
 
-  {/* Left Image */}
-  <div className="flex justify-center md:col-span-3 md:justify-start">
-    <Image
-      src="/images/Fantasy-Writing-Services/cta-book-12.webp"
-      alt="Book 1"
-      height={300}
-      width={300}
-      className="w-auto h-auto"
-    />
-  </div>
+                    {/* Left Image */}
+                    <div className="flex justify-center md:col-span-3 md:justify-start">
+                        <Image
+                            src="/images/Fantasy-Writing-Services/cta-book-12.webp"
+                            alt="Book 1"
+                            height={300}
+                            width={300}
+                            className="w-auto h-auto"
+                        />
+                    </div>
 
-  {/* Center Content */}
-  <div className="px-4 text-center md:col-span-6">
-    <h2 className="font-poppins text-2xl md:text-3xl text-[#98caa9] font-semibold uppercase">
-     Let’s Build Your Fantasy World Together
-    </h2>
+                    {/* Center Content */}
+                    <div className="px-4 text-center md:col-span-6">
+                        <h2 className="font-poppins text-2xl md:text-3xl text-[#98caa9] font-semibold uppercase">
+                            Let’s Build Your Fantasy World Together
+                        </h2>
 
-    <p className="py-4 text-base md:text-lg">
-      Have a fascinating story idea that won’t leave you alone? Don’t wait! Our top fantasy writers for hire can help you shape that into a real book, with structure, depth, and your voice still intact.
-    </p>
+                        <p className="py-4 text-base md:text-lg">
+                            Have a fascinating story idea that won’t leave you alone? Don’t wait! Our top fantasy writers for hire can help you shape that into a real book, with structure, depth, and your voice still intact.
+                        </p>
 
-    <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
-      <CTAButton />
+                        <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
+                            <CTAButton />
 
-      <a href="tel:(866) 841-7463" className="flex items-center gap-2 text-white">
-        <FaPhoneVolume /> (866) 841-7463
-      </a>
+                            <a href="tel:(866) 841-7463" className="flex items-center gap-2 text-white">
+                                <FaPhoneVolume /> (866) 841-7463
+                            </a>
 
-      <button
-        onClick={handleOpenChat}
-        className="px-5 py-2 text-white transition bg-transparent border border-white rounded-full hover:bg-gray-200 hover:text-black"
-      >
-        Live Chat
-      </button>
-    </div>
-  </div>
+                            <button
+                                onClick={handleOpenChat}
+                                className="px-5 py-2 text-white transition bg-transparent border border-white rounded-full hover:bg-gray-200 hover:text-black"
+                            >
+                                Live Chat
+                            </button>
+                        </div>
+                    </div>
 
-  {/* Right Image */}
-  <div className="flex justify-center md:col-span-3 md:justify-end">
-    <Image
-      src="/brand-img/type.png"
-      alt="Typewriter"
-      height={300}
-      width={300}
-      className="w-auto h-auto"
-    />
-  </div>
+                    {/* Right Image */}
+                    <div className="flex justify-center md:col-span-3 md:justify-end">
+                        <Image
+                            src="/brand-img/type.png"
+                            alt="Typewriter"
+                            height={300}
+                            width={300}
+                            className="w-auto h-auto"
+                        />
+                    </div>
 
-</div>
+                </div>
 
-                        </section>
+            </section>
 
             {/* inner process section start */}
-             <section className="relative flex justify-center pt-20 mx-auto mb-12 overflow-hidden text-center brand-process">
+            <section className="relative flex justify-center pt-20 mx-auto mb-12 overflow-hidden text-center brand-process">
                 <div className="max-w-screen-xl">
                     <div className="mb-6 text-center">
                         <h3 className="text-2xl text-black font-poppins">Our Service Workflow</h3>
@@ -164,102 +164,102 @@ export default function BookEditing() {
                         </div>
 
                         <div className="flex flex-row" data-aos="fade-left">
-                        <div className="flex-col px-6 py-10 text-left brand-process-content">
-                        <span className="num-span"><b>02</b></span>
+                            <div className="flex-col px-6 py-10 text-left brand-process-content">
+                                <span className="num-span"><b>02</b></span>
                                 <h2 className="text-2xl text-white font-poppins pro-h">World & Story Planning</h2>
                                 <p className="">We sketch the fantasy world building basics. Rules, limits, cultures, magic systems. Nothing too heavy. Just enough so the story stays consistent and believable.</p>
                             </div>
                         </div>
 
                         <div className="flex flex-row" data-aos="fade-left">
-                        <div className="flex-col px-6 py-10 text-left brand-process-content">
-                        <span className="num-span"><b>03</b></span>
+                            <div className="flex-col px-6 py-10 text-left brand-process-content">
+                                <span className="num-span"><b>03</b></span>
                                 <h2 className="text-2xl text-white font-poppins pro-h">Character Development</h2>
                                 <p className="">Strong fantasy books depend on people, not powers. We shape character-driven fantasy stories with clear motivations, flaws, and emotional arcs that evolve naturally across chapters.</p>
                             </div>
                         </div>
-                        
+
                     </div>
 
                     <div className="grid gap-6 mb-6 md:grid-cols-3" >
 
                         <div className="flex flex-row " data-aos="fade-left">
-                        <div className="flex-col px-6 py-10 text-left brand-process-content">
-                        <span className="num-span"><b>04</b></span>
+                            <div className="flex-col px-6 py-10 text-left brand-process-content">
+                                <span className="num-span"><b>04</b></span>
                                 <h2 className="text-2xl text-white font-poppins pro-h">Draft Writing</h2>
                                 <p className="">This is where writing begins. Our fantasy ghostwriters write clean scenes, strong pacing, and natural dialogue. The goal is flow, not showing off vocabulary.</p>
                             </div>
                         </div>
 
                         <div className="flex flex-row" data-aos="fade-left">
-                        <div className="flex-col px-6 py-10 text-left brand-process-content">
-                        <span className="num-span"><b>05</b></span>
+                            <div className="flex-col px-6 py-10 text-left brand-process-content">
+                                <span className="num-span"><b>05</b></span>
                                 <h2 className="text-2xl text-white font-poppins pro-h">Review & Refinement</h2>
                                 <p className="">You read. We adjust. Scenes may shift. Some parts get trimmed. That back-and-forth matters a lot in professional fantasy writing services, so we don’t rush it.</p>
                             </div>
                         </div>
 
                         <div className="flex flex-row" data-aos="fade-left">
-                        <div className="flex-col px-6 py-10 text-left brand-process-content">
-                        <span className="num-span"><b>06</b></span>
+                            <div className="flex-col px-6 py-10 text-left brand-process-content">
+                                <span className="num-span"><b>06</b></span>
                                 <h2 className="text-2xl text-white font-poppins pro-h">Final Polish</h2>
                                 <p className="">We edit for clarity, consistency, and tone. The final manuscript is prepared for publishing or pitching, especially for clients </p>
                             </div>
                         </div>
-                        
+
                     </div>
 
                 </div>
             </section>
 
-               <section className="max-w-6xl px-4 py-16 mx-auto bg-white font-poppins">
-                 <h2 className="mb-12 text-xl font-medium text-center text-gray-700 md:text-2xl">
-    Our Offerings
-  </h2>
-  <h2 className="mb-12 text-xl font-medium text-center text-gray-700 md:text-2xl">
-What’s Included In Our Fantasy Ghostwriting Services
-  </h2>
+            <section className="max-w-6xl px-4 py-16 mx-auto bg-white font-poppins">
+                <h2 className="mb-12 text-xl font-medium text-center text-gray-700 md:text-2xl">
+                    Our Offerings
+                </h2>
+                <h2 className="mb-12 text-xl font-medium text-center text-gray-700 md:text-2xl">
+                    What’s Included In Our Fantasy Ghostwriting Services
+                </h2>
 
-  <p className="mb-12 text-xl font-medium text-center text-gray-700 md:text-2xl">
-  <a 
-    href="https://pinebookwriting.com" 
-    target="_blank" 
-    rel="noopener noreferrer"
-    className="font-semibold text-blue-600 hover:underline"
-  >
-    Pine Book Writing
-  </a>{" "}
-  offers flexible fantasy writing support, whether you need full books, partial help, or long-term collaboration across multiple fantasy stories or series ideas.
-</p>
+                <p className="mb-12 text-xl font-medium text-center text-gray-700 md:text-2xl">
+                    <a
+                        href="https://pinebookwriting.com"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="font-semibold text-blue-600 hover:underline"
+                    >
+                        Pine Book Writing
+                    </a>{" "}
+                    offers flexible fantasy writing support, whether you need full books, partial help, or long-term collaboration across multiple fantasy stories or series ideas.
+                </p>
 
 
-  <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3">
-    {[
-     { icon: '🖋️', label: 'Urban Fantasy Writing' },
-      { icon: '🧐', label: 'High Fantasy Writing' },
-      { icon: '📄', label: 'Dark Fantasy Writing' },
-      { icon: '💼', label: 'Fantasy Series Development' },
-      { icon: '⚙️', label: 'World Building Support' },
-      { icon: '🎯', label: 'Character Arc Writing' },         
-    ].map((service, index) => (
-      <div
-        key={index}
-        className="flex flex-col items-center justify-center h-32 p-4 text-center bg-[#f4f1ea] hover:bg-[#ebe8e0] transition-colors rounded-xl shadow-sm hover:shadow-md"
-      >
-        <div className="mb-2 text-3xl">{service.icon}</div>
-        <span className="text-[10px] font-bold uppercase tracking-widest text-gray-600">
-          {service.label}
-        </span>
-      </div>
-    ))}
-  </div>
-</section>
-            
+                <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3">
+                    {[
+                        { icon: '🖋️', label: 'Urban Fantasy Writing' },
+                        { icon: '🧐', label: 'High Fantasy Writing' },
+                        { icon: '📄', label: 'Dark Fantasy Writing' },
+                        { icon: '💼', label: 'Fantasy Series Development' },
+                        { icon: '⚙️', label: 'World Building Support' },
+                        { icon: '🎯', label: 'Character Arc Writing' },
+                    ].map((service, index) => (
+                        <div
+                            key={index}
+                            className="flex flex-col items-center justify-center h-32 p-4 text-center bg-[#f4f1ea] hover:bg-[#ebe8e0] transition-colors rounded-xl shadow-sm hover:shadow-md"
+                        >
+                            <div className="mb-2 text-3xl">{service.icon}</div>
+                            <span className="text-[10px] font-bold uppercase tracking-widest text-gray-600">
+                                {service.label}
+                            </span>
+                        </div>
+                    ))}
+                </div>
+            </section>
+
             <section className="overflow-hidden" >
                 <div className="relative left-0 px-12 py-10 mb-8 brand-choose-us-section ms-auto md:left-52 md:px-20 md:mt-16 " >
                     <div className="flex flex-col items-center md:flex-row" data-aos="fade-right" data-aos-delay="0" data-aos-duration="500">
                         <div className="basis-1/3 brand-choose-us-vector">
-                        <Image src={"/images/Fantasy-Writing-Services/WhyChooseUs2.webp"} width={500} height={500}
+                            <Image src={"/images/Fantasy-Writing-Services/WhyChooseUs2.webp"} width={500} height={500}
                                 loading="lazy"
                                 alt="about img"
                                 className="brand-about-img"
@@ -333,7 +333,7 @@ What’s Included In Our Fantasy Ghostwriting Services
                     </div>
                 </div>
             </section>
-            
+
             {/* <BrandFooter /> */}
             <NewBrandFooter />
         </>

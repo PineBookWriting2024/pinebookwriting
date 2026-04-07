@@ -68,9 +68,9 @@ export default function ScriptWriting() {
                     <div className="basis-1/2 abt-txt m1-h p1 aos-init aos-animate" data-aos="fade-right" data-aos-duration="1000">
 
                         <h2 className="text-3xl font-bold uppercase font-poppins md:text-4xl">Professional Scriptwriting Services for Every Format</h2>
-                        <h2 className="text-2xl uppercase font-poppins md:text-3xl">
+                        <h3 className="mt-3 text-2xl font-semibold font-poppins md:text-2xl uppercase">
                             Cultivate Your Audio/Video Production
-                        </h2>
+                        </h3>
                         <p className="pt-3 text-xl text-left font-poppins">The purpose of writing a script is to capture your audience's attention, delight them with the idea you want to present, or convey anything entertainingly or engagingly. Whether you're creating a film, a TV show, an ad, or any video, a professionally written script is required.</p>
 
                         <p className="pt-3 text-xl text-left font-poppins">As a leading script writing services company, we believe creativity is everything when it comes to writing a script. Creativity helps convey a message or story exactly the way we desire. We create custom scripts for a variety of projects, from film and TV scripts to digital content, and ensure that your story is expressed in the most captivating way. Let Pine Book Writing produce a meaningful yet on-point script for your next video or audio that can entertain, inform, or inspire your audience!</p>

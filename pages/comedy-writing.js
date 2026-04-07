@@ -12,7 +12,7 @@ import BrandAudioPlayer from "./components/BrandAudioPlayer";
 import NewBrandFooter from "./components/NewBrandFooter";
 import BrandTopBar from "./components/BrandTopBar";
 import { FaPhoneVolume } from "react-icons/fa";
-import CTAButton from './components/CTAButton';  
+import CTAButton from './components/CTAButton';
 
 export default function BookEditing() {
     const handleOpenChat = () => {
@@ -27,17 +27,17 @@ export default function BookEditing() {
 
     const faqData = [
         { question: "What is Ghostwriting?", answer: "Ghostwriting is the name of hiring a professional writer to write your book. In return, the writer will gather all the relevant information, conduct in-depth research, and craft a manuscript that meets your vision." },
-        
+
         { question: "Is your ghostwriting ethical and authentic?", answer: "Absolutely, it is both ethical and authentic. Ghostwriting is extremely common, especially in the world of book writing. This service is considered the same as having any professional hired to perform a specific task. At Pine Book Writing, we serve our expertise in writing to put your creative ideas into a manuscript." },
-       
+
         { question: "Who will own the rights in Ghostwriting?", answer: "We are just your writing partner. We write it as a ghostwriting service, and you own it. As an author, you own all the rights and credits for the final product. Not only that, the royalties your book earns will also be yours." },
-       
+
         { question: "Can I hire you to write one chapter of my book and later write the other chapters?	", answer: "Yes, you can also hire us chapter by chapter. Here, we are confident that once you see our writing professionalism and expertise, you will definitely want to go toward the last chapter of your book. So, if you want to hire us for a single chapter, you are also welcome." },
-        
+
         { question: "How long will it take to write a book?", answer: "The completion time of the ghostwriting services entirely depends on the complexity, genre, and your book's length. However, we usually take 3 to 6 months on average. Moreover, the time also depends on how much material you provide and the research required on the particular topic." },
-       
+
         { question: "How much does ghostwriting a book cost?", answer: "The cost of ghostwriting also varies based on your book's length, genre, and complexity. You can view our packages here. Moreover, if you want to customize the any package according to your need, you can speak to our representative. " },
-            ];
+    ];
 
     return (
         <>
@@ -49,7 +49,7 @@ export default function BookEditing() {
                     content="Make your audience laugh with our comedy writing service. We craft comedy with wit, pace, and style that match your voice and audience’s taste."
                 />
                 <link rel="shortcut icon" href="/images/fav.webp" />
-                </Head>
+            </Head>
             <BrandTopBar />
             <BrandNavbar />
             <BrandPrimaryHeader
@@ -62,14 +62,14 @@ export default function BookEditing() {
             <div className="container max-w-screen-xl pt-0 mx-auto overflow-hidden md:py-20">
                 <div className="flex flex-col items-center justify-center px-8 py-10 md:flex-row lg:flex-row md:px-0 md:py-0">
                     <div className="basis-1/2 abt-txt m1-h p1 aos-init aos-animate" data-aos="fade-right" data-aos-duration="1000">
-                    <h2 className="text-3xl font-bold uppercase font-poppins md:text-4xl">Expert Comedy Writing Service for Any Style</h2>
+                        <h2 className="text-3xl font-bold uppercase font-poppins md:text-4xl">Expert Comedy Writing Service for Any Style</h2>
 
-                        <h2 className="text-2xl uppercase font-poppins md:text-3xl">
-                        Make Your Audience Laugh Naturally
-                        </h2>
-                       
+                        <h3 className="mt-3 text-2xl font-semibold font-poppins md:text-2xl uppercase">
+                            Make Your Audience Laugh Naturally
+                        </h3>
+
                         <p className="pt-3 text-xl text-left font-poppins">
-                        Want to write something funny? Why don’t you get professionals’ assistance? At Pine Book Writing, our comedy writing service is here to help you make people laugh with ingenious and original content.</p>
+                            Want to write something funny? Why don’t you get professionals’ assistance? At Pine Book Writing, our comedy writing service is here to help you make people laugh with ingenious and original content.</p>
 
                         <p className="pt-3 text-xl text-left font-poppins">Whether you require comedy writing services for your stand-up comedy, or for funny ad scripts and viral videos, we write jokes that match your requirements and, ultimately your audience’s taste. Want a dry, sarcastic, slapstick, or witty comedy writing style, we’ll match as our comedy writers are familiar with how to infuse rhythm and create structure behind great humor. Let’s bring your comedy idea to life. Through our comedy writing, your audience won’t just listen or read, they’ll actually laugh and remember it.</p>
                     </div>
@@ -88,62 +88,62 @@ export default function BookEditing() {
             </div>
 
 
-             <section className="relative overflow-visible text-white bg-center bg-no-repeat bg-cover ser-cta-banner py-14 md:py-0"
-                            style={{ backgroundImage: `url(/brand-img/bg-banner.png)` }}>
-                            <div className="relative grid items-center grid-cols-1 gap-4 mx-auto md:grid-cols-12 max-w-7xl ">
-            
-                                <div className="relative z-10 justify-center hidden md:col-span-3 md:flex md:justify-start">
-                                    <Image
-                                        src="/images/Comedy-Writing/cta-book-12.webp"
-                                        alt="Book 1"
-                                        className="absolute l-book -top-20 md:-top-36"
-                                        height={600}
-                                        width={600}
-                                    />
-                                </div>
-            
-                                <div className="px-4 text-center md:col-span-6">
-                                    <h2 className="font-poppins text-2xl text-[#98caa9] font-semibold md:text-3xl uppercase">
-                                        Ready to Make Laugh? Hire a Witty Comedy Writing Service!
-                                    </h2>
-                                    <p className="py-4 text-base md:text-lg">
-                                        Contact us today to meet amazing people, hilarious comedy writers, who can create content just for you audience and brand.
-                                    </p>
-            
-                                    <div className="flex flex-col items-center justify-center gap-4 cta-btns sm:flex-row">
-                                                 <CTAButton />
-            
-            
-                                        <a
-                                            href="tel:(866) 841-7463"
-                                            className="flex items-center gap-2 text-white"
-                                        >
-                                            <FaPhoneVolume className="inline" /> (866) 841-7463
-                                        </a>
-            
-                                          <a
-                                            href={'javascript:;'}
-                                            className="bg-transparent text-[#fff] px-5 py-2 border border-white
+            <section className="relative overflow-visible text-white bg-center bg-no-repeat bg-cover ser-cta-banner py-14 md:py-0"
+                style={{ backgroundImage: `url(/brand-img/bg-banner.png)` }}>
+                <div className="relative grid items-center grid-cols-1 gap-4 mx-auto md:grid-cols-12 max-w-7xl ">
+
+                    <div className="relative z-10 justify-center hidden md:col-span-3 md:flex md:justify-start">
+                        <Image
+                            src="/images/Comedy-Writing/cta-book-12.webp"
+                            alt="Book 1"
+                            className="absolute l-book -top-20 md:-top-36"
+                            height={600}
+                            width={600}
+                        />
+                    </div>
+
+                    <div className="px-4 text-center md:col-span-6">
+                        <h2 className="font-poppins text-2xl text-[#98caa9] font-semibold md:text-3xl uppercase">
+                            Ready to Make Laugh? Hire a Witty Comedy Writing Service!
+                        </h2>
+                        <p className="py-4 text-base md:text-lg">
+                            Contact us today to meet amazing people, hilarious comedy writers, who can create content just for you audience and brand.
+                        </p>
+
+                        <div className="flex flex-col items-center justify-center gap-4 cta-btns sm:flex-row">
+                            <CTAButton />
+
+
+                            <a
+                                href="tel:(866) 841-7463"
+                                className="flex items-center gap-2 text-white"
+                            >
+                                <FaPhoneVolume className="inline" /> (866) 841-7463
+                            </a>
+
+                            <a
+                                href={'javascript:;'}
+                                className="bg-transparent text-[#fff] px-5 py-2 border border-white
              rounded-full flex items-center gap-2 hover:bg-gray-200 hover:text-black cta-btn-1 transition" onClick={handleOpenChat}>
-                                            Live Chat
-                                        </a>
-                                    </div>
-                                </div>
-            
-                                <div className="justify-center hidden md:col-span-3 md:flex md:justify-end">
-                                    <Image
-                                        src="/brand-img/type.png"
-                                        alt="Typewriter"
-                                        className="max-h-[300px] w-auto"
-                                        height={600}
-                                        width={600}
-                                    />
-                                </div>
-                            </div>
-                        </section>
+                                Live Chat
+                            </a>
+                        </div>
+                    </div>
+
+                    <div className="justify-center hidden md:col-span-3 md:flex md:justify-end">
+                        <Image
+                            src="/brand-img/type.png"
+                            alt="Typewriter"
+                            className="max-h-[300px] w-auto"
+                            height={600}
+                            width={600}
+                        />
+                    </div>
+                </div>
+            </section>
 
             {/* inner process section start */}
-             <section className="relative flex justify-center pt-20 mx-auto mb-12 overflow-hidden text-center brand-process">
+            <section className="relative flex justify-center pt-20 mx-auto mb-12 overflow-hidden text-center brand-process">
                 <div className="max-w-screen-xl">
                     <div className="mb-6 text-center">
                         <h3 className="text-2xl text-black font-poppins">Our Service Workflow</h3>
@@ -161,59 +161,59 @@ export default function BookEditing() {
                         </div>
 
                         <div className="flex flex-row" data-aos="fade-left">
-                        <div className="flex-col px-6 py-10 text-left brand-process-content">
-                        <span className="num-span"><b>02</b></span>
+                            <div className="flex-col px-6 py-10 text-left brand-process-content">
+                                <span className="num-span"><b>02</b></span>
                                 <h2 className="text-2xl text-white font-poppins pro-h">Research & Outlining</h2>
                                 <p className="">Then, our team of professionals will conduct in-depth research, create a content outline, and send it to you for your approval.</p>
                             </div>
                         </div>
 
                         <div className="flex flex-row" data-aos="fade-left">
-                        <div className="flex-col px-6 py-10 text-left brand-process-content">
-                        <span className="num-span"><b>03</b></span>
+                            <div className="flex-col px-6 py-10 text-left brand-process-content">
+                                <span className="num-span"><b>03</b></span>
                                 <h2 className="text-2xl text-white font-poppins pro-h">Interview Session with Writer</h2>
                                 <p className="">After the outline approval, we arrange an interview session with our assigned writer so that you can discuss your vision, tone, and writing style.</p>
                             </div>
                         </div>
-                        
+
                     </div>
 
                     <div className="grid gap-6 mb-6 md:grid-cols-3" >
 
                         <div className="flex flex-row " data-aos="fade-left">
-                        <div className="flex-col px-6 py-10 text-left brand-process-content">
-                        <span className="num-span"><b>04</b></span>
+                            <div className="flex-col px-6 py-10 text-left brand-process-content">
+                                <span className="num-span"><b>04</b></span>
                                 <h2 className="text-2xl text-white font-poppins pro-h">Weekly Deliveries & Revisions</h2>
                                 <p className="">We provide deliveries weekly and welcome your feedback throughout the process. We also offer multiple revisions to ensure your complete satisfaction.</p>
                             </div>
                         </div>
 
                         <div className="flex flex-row" data-aos="fade-left">
-                        <div className="flex-col px-6 py-10 text-left brand-process-content">
-                        <span className="num-span"><b>05</b></span>
+                            <div className="flex-col px-6 py-10 text-left brand-process-content">
+                                <span className="num-span"><b>05</b></span>
                                 <h2 className="text-2xl text-white font-poppins pro-h">Formatting & Layout Adjustment</h2>
                                 <p className="">Once our ghostwriting work is finalized, we will format the manuscript according to your preferred style and make the necessary layout adjustments.</p>
                             </div>
                         </div>
 
                         <div className="flex flex-row" data-aos="fade-left">
-                        <div className="flex-col px-6 py-10 text-left brand-process-content">
-                        <span className="num-span"><b>06</b></span>
+                            <div className="flex-col px-6 py-10 text-left brand-process-content">
+                                <span className="num-span"><b>06</b></span>
                                 <h2 className="text-2xl text-white font-poppins pro-h">Final Delivery</h2>
                                 <p className="">In the last step, we will deliver the finalized and polished manuscript to you in your desired format and the time we've discussed.</p>
                             </div>
                         </div>
-                        
+
                     </div>
 
                 </div>
             </section>
-            
+
             <section className="overflow-hidden" >
                 <div className="relative left-0 px-12 py-10 mb-8 brand-choose-us-section ms-auto md:left-52 md:px-20 md:mt-16 " >
                     <div className="flex flex-col items-center md:flex-row" data-aos="fade-right" data-aos-delay="0" data-aos-duration="500">
                         <div className="basis-1/3 brand-choose-us-vector">
-                        <Image src={"/images/Comedy-Writing/WhyChooseUs2.webp"} width={500} height={500}
+                            <Image src={"/images/Comedy-Writing/WhyChooseUs2.webp"} width={500} height={500}
                                 loading="lazy"
                                 alt="about img"
                                 className="brand-about-img"
@@ -287,7 +287,7 @@ export default function BookEditing() {
                     </div>
                 </div>
             </section>
-            
+
             {/* <BrandFooter /> */}
             <NewBrandFooter />
         </>

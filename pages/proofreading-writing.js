@@ -65,12 +65,12 @@ export default function BookEditing() {
                     <div className="basis-1/2 abt-txt m1-h p1 aos-init aos-animate" data-aos="fade-right" data-aos-duration="1000">
                         <h2 className="text-3xl font-bold uppercase font-poppins md:text-4xl">Professional Book Proofreading Services - We Catch What Others Miss</h2>
 
-                        <h2 className="text-2xl uppercase font-poppins md:text-3xl">
-                         Clean Pages. Confident Publishing.
-                        </h2>
+                        <h3 className="mt-3 text-2xl font-semibold font-poppins md:text-2xl uppercase">
+                            Clean Pages. Confident Publishing.
+                        </h3>
 
                         <p className="pt-3 text-xl text-left font-poppins">
-                          You’ve written the book. Edited it. Revised it. Maybe twice. Still, small mistakes can hide in plain sight. A missing comma. A repeated word. A spelling slip that somehow survived.</p>
+                            You’ve written the book. Edited it. Revised it. Maybe twice. Still, small mistakes can hide in plain sight. A missing comma. A repeated word. A spelling slip that somehow survived.</p>
 
                         <p className="pt-3 text-xl text-left font-poppins">That’s where our book proofreading services step in. We provide line-by-line proofreading to make your manuscript polished and error-free. Our professional book proofreaders focus on grammar and punctuation correction, typo and consistency checks, and formatting details. This is not rewriting. It’s careful final manuscript review before publishing. Whether you need manuscript proofreading services for print or ebook, we help you publish with confidence. Because readers do notice small mistakes… even if writers sometimes don’t.</p>
                     </div>
@@ -88,7 +88,7 @@ export default function BookEditing() {
                 </p> */}
             </div>
 
-                 <section className="relative overflow-visible text-white bg-center bg-no-repeat bg-cover ser-cta-banner py-14 md:py-0"
+            <section className="relative overflow-visible text-white bg-center bg-no-repeat bg-cover ser-cta-banner py-14 md:py-0"
                 style={{ backgroundImage: `url(/brand-img/bg-banner.png)` }}>
                 <div className="relative grid items-center grid-cols-1 gap-4 mx-auto md:grid-cols-12 max-w-7xl ">
 
@@ -104,7 +104,7 @@ export default function BookEditing() {
 
                     <div className="px-4 text-center md:col-span-6">
                         <h2 className="font-poppins text-2xl text-[#98caa9] font-semibold md:text-3xl uppercase">
-                          Ready to Proofread Your Book Professionally?
+                            Ready to Proofread Your Book Professionally?
                         </h2>
                         <p className="py-4 text-base md:text-lg">Let our book proofreaders review your manuscript carefully and prepare it for print or digital release without overlooked errors.</p>
 
@@ -207,41 +207,41 @@ export default function BookEditing() {
                 </div>
             </section>
 
-             <section className="max-w-6xl px-4 py-16 mx-auto bg-white font-poppins">
-                 <h2 className="mb-12 text-xl font-medium text-center text-gray-700 md:text-2xl">
-    Our Offerings
-  </h2>
-  <h2 className="mb-12 text-xl font-medium text-center text-gray-700 md:text-2xl">
-What’s Included In Our Book Proofreading Services
-  </h2>
+            <section className="max-w-6xl px-4 py-16 mx-auto bg-white font-poppins">
+                <h2 className="mb-12 text-xl font-medium text-center text-gray-700 md:text-2xl">
+                    Our Offerings
+                </h2>
+                <h2 className="mb-12 text-xl font-medium text-center text-gray-700 md:text-2xl">
+                    What’s Included In Our Book Proofreading Services
+                </h2>
 
-  <p className="mb-12 text-xl font-medium text-center text-gray-700 md:text-2xl">
-Our proofreading services cover everything that helps us catch overlooked errors and polish your whole manuscript before its publication.
-  </p>
+                <p className="mb-12 text-xl font-medium text-center text-gray-700 md:text-2xl">
+                    Our proofreading services cover everything that helps us catch overlooked errors and polish your whole manuscript before its publication.
+                </p>
 
-  <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3">
-    {[
-     { icon: '🖋️', label: 'Line-by-Line Proofreading' },
-      { icon: '🧐', label: 'Grammar and Punctuation Correction' },
-      { icon: '📄', label: 'Typo and Consistency Checks' },
-      { icon: '💼', label: 'Print-Ready Proofreading' },
-      { icon: '⚙️', label: 'Final Manuscript Review' },
-      { icon: '🎯', label: 'Ebook Proofreading' },         
-    ].map((service, index) => (
-      <div
-        key={index}
-        className="flex flex-col items-center justify-center h-32 p-4 text-center bg-[#f4f1ea] hover:bg-[#ebe8e0] transition-colors rounded-xl shadow-sm hover:shadow-md"
-      >
-        <div className="mb-2 text-3xl">{service.icon}</div>
-        <span className="text-[10px] font-bold uppercase tracking-widest text-gray-600">
-          {service.label}
-        </span>
-      </div>
-    ))}
-  </div>
-</section>
+                <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3">
+                    {[
+                        { icon: '🖋️', label: 'Line-by-Line Proofreading' },
+                        { icon: '🧐', label: 'Grammar and Punctuation Correction' },
+                        { icon: '📄', label: 'Typo and Consistency Checks' },
+                        { icon: '💼', label: 'Print-Ready Proofreading' },
+                        { icon: '⚙️', label: 'Final Manuscript Review' },
+                        { icon: '🎯', label: 'Ebook Proofreading' },
+                    ].map((service, index) => (
+                        <div
+                            key={index}
+                            className="flex flex-col items-center justify-center h-32 p-4 text-center bg-[#f4f1ea] hover:bg-[#ebe8e0] transition-colors rounded-xl shadow-sm hover:shadow-md"
+                        >
+                            <div className="mb-2 text-3xl">{service.icon}</div>
+                            <span className="text-[10px] font-bold uppercase tracking-widest text-gray-600">
+                                {service.label}
+                            </span>
+                        </div>
+                    ))}
+                </div>
+            </section>
 
-             <section className="overflow-hidden" >
+            <section className="overflow-hidden" >
                 <div className="relative left-0 px-12 py-10 mb-8 brand-choose-us-section ms-auto md:left-52 md:px-20 md:mt-16 " >
                     <div className="flex flex-col items-center md:flex-row" data-aos="fade-right" data-aos-delay="0" data-aos-duration="500">
                         <div className="basis-1/3 brand-choose-us-vector">

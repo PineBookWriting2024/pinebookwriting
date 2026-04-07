@@ -68,9 +68,9 @@ export default function BookEditing() {
                         <h2 className="text-3xl font-bold uppercase font-poppins md:text-4xl">Professional Movie Writing - Write Something Really Watchable
                         </h2>
 
-                        <h2 className="text-2xl uppercase font-poppins md:text-3xl">
+                        <h3 className="mt-3 text-2xl font-semibold font-poppins md:text-2xl uppercase">
                             From Concept to Script
-                        </h2>
+                        </h3>
 
                         <p className="pt-3 text-xl text-left font-poppins">
                             Good movies always start with good writing. And Pine Book Writing really cares. Our professional movie writing team knows how to work on a small idea and make it a script that keeps people watching. So, we can help whether you’re planning to write a movie script from the very beginning or just fixing scenes.

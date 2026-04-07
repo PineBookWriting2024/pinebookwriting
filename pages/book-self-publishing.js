@@ -65,9 +65,9 @@ export default function BookEditing() {
                     <div className="basis-1/2 abt-txt m1-h p1 aos-init aos-animate" data-aos="fade-right" data-aos-duration="1000">
                         <h2 className="text-3xl font-bold uppercase font-poppins md:text-4xl">Book Self-Publishing Services That Actually Make Sense</h2>
 
-                        <h2 className="text-2xl uppercase font-poppins md:text-3xl">
+                        <h3 className="mt-3 text-2xl font-semibold font-poppins md:text-2xl uppercase">
                             Book Self-Publishing Services That Actually Make Sense
-                        </h2>
+                        </h3>
 
                         <p className="pt-3 text-xl text-left font-poppins">
                             Self publishing a book sounds exciting, but honestly, it can feel messy fast. Platforms, formats, pricing, ISBNs, uploads. It piles up. Our book self-publishing services are built for writers who want clarity. Not noise or mess. We help you self publish a book on trusted platforms like Amazon KDP, for print and ebook formats.  </p>

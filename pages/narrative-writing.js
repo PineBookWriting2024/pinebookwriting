@@ -65,15 +65,15 @@ export default function BookEditing() {
                     <div className="basis-1/2 abt-txt m1-h p1 aos-init aos-animate" data-aos="fade-right" data-aos-duration="1000">
                         <h2 className="text-3xl font-bold uppercase font-poppins md:text-4xl">Best Narrative Writers For Hire for Every Genre</h2>
 
-                        <h2 className="text-2xl uppercase font-poppins md:text-3xl">
-                          Your Story Deserves to Be Told
-                        </h2>
+                        <h3 className="mt-3 text-2xl font-semibold font-poppins md:text-2xl uppercase">
+                            Your Story Deserves to Be Told
+                        </h3>
 
                         <p className="pt-3 text-xl text-left font-poppins">
-                           Narrative writing works best when it follows how life actually unfolds. Not everything happens neatly, and that’s fine. Our narrative writing services help writers arrange experiences in a practical and sensible way. Without altering the actual meanings and events that happened in the story.</p>
+                            Narrative writing works best when it follows how life actually unfolds. Not everything happens neatly, and that’s fine. Our narrative writing services help writers arrange experiences in a practical and sensible way. Without altering the actual meanings and events that happened in the story.</p>
 
                         <p className="pt-3 text-xl text-left font-poppins">At <a href="https://www.pinebookwriting.com" className="hover:underline">Pine Book Writing</a>, we work with personal narratives, life events, and experience-based storytelling where emotion and clarity matter equally. Whether you require our services for linear, non-linear, descriptive, or viewpoint narratives, we’re available to serve. We help connect your life moments and thoughts into a steady narrative that reads naturally.</p>
-                         <p className="pt-3 text-xl text-left font-poppins">Our team of narrative writers is outstanding. They focus on structure, tone, and pacing while writing. And the result feels readable and true to the experience behind it.</p>
+                        <p className="pt-3 text-xl text-left font-poppins">Our team of narrative writers is outstanding. They focus on structure, tone, and pacing while writing. And the result feels readable and true to the experience behind it.</p>
                     </div>
                     <div className="flex justify-center text-center basis-1/2 abt-pic md:justify-center">
                         <Image src={"/images/Narrative-Writing/ghost-pic.webp"} width={470} height={300}
@@ -89,7 +89,7 @@ export default function BookEditing() {
                 </p> */}
             </div>
 
-                 <section className="relative overflow-visible text-white bg-center bg-no-repeat bg-cover ser-cta-banner py-14 md:py-0"
+            <section className="relative overflow-visible text-white bg-center bg-no-repeat bg-cover ser-cta-banner py-14 md:py-0"
                 style={{ backgroundImage: `url(/brand-img/bg-banner.png)` }}>
                 <div className="relative grid items-center grid-cols-1 gap-4 mx-auto md:grid-cols-12 max-w-7xl ">
 
@@ -105,7 +105,7 @@ export default function BookEditing() {
 
                     <div className="px-4 text-center md:col-span-6">
                         <h2 className="font-poppins text-2xl text-[#98caa9] font-semibold md:text-3xl uppercase">
-                           Ready To Shape Your Story Properly? Hire Expert Narrative Writing Services
+                            Ready To Shape Your Story Properly? Hire Expert Narrative Writing Services
                         </h2>
                         <p className="py-4 text-base md:text-lg">Does your story matter to you but feel hard to explain? We can help! Our expert writers will turn it into something readable, honest and complete. No pressure. Just real writing help. Get in touch!</p>
 
@@ -208,41 +208,41 @@ export default function BookEditing() {
                 </div>
             </section>
 
-             <section className="max-w-6xl px-4 py-16 mx-auto bg-white font-poppins">
-                 <h2 className="mb-12 text-xl font-medium text-center text-gray-700 md:text-2xl">
-    Our Offerings
-  </h2>
-  <h2 className="mb-12 text-xl font-medium text-center text-gray-700 md:text-2xl">
-What’s Included In Our Narrative Writing Services
-  </h2>
+            <section className="max-w-6xl px-4 py-16 mx-auto bg-white font-poppins">
+                <h2 className="mb-12 text-xl font-medium text-center text-gray-700 md:text-2xl">
+                    Our Offerings
+                </h2>
+                <h2 className="mb-12 text-xl font-medium text-center text-gray-700 md:text-2xl">
+                    What’s Included In Our Narrative Writing Services
+                </h2>
 
-  <p className="mb-12 text-xl font-medium text-center text-gray-700 md:text-2xl">
-As a comprehensive ghostwriting service company, we handle all aspects that help a writer/author be successful in their purpose. See what’s more we offer:
-  </p>
+                <p className="mb-12 text-xl font-medium text-center text-gray-700 md:text-2xl">
+                    As a comprehensive ghostwriting service company, we handle all aspects that help a writer/author be successful in their purpose. See what’s more we offer:
+                </p>
 
-  <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3">
-    {[
-     { icon: '🖋️', label: 'Personal Narrative Writing' },
-      { icon: '🧐', label: 'Narrative Ghostwriting' },
-      { icon: '📄', label: 'Life Story Narration' },
-      { icon: '💼', label: 'Chronological Life Narratives' },
-      { icon: '⚙️', label: 'Creative Nonfiction Writing' },
-      { icon: '🎯', label: 'Experience-Based Storytelling' },         
-    ].map((service, index) => (
-      <div
-        key={index}
-        className="flex flex-col items-center justify-center h-32 p-4 text-center bg-[#f4f1ea] hover:bg-[#ebe8e0] transition-colors rounded-xl shadow-sm hover:shadow-md"
-      >
-        <div className="mb-2 text-3xl">{service.icon}</div>
-        <span className="text-[10px] font-bold uppercase tracking-widest text-gray-600">
-          {service.label}
-        </span>
-      </div>
-    ))}
-  </div>
-</section>
+                <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3">
+                    {[
+                        { icon: '🖋️', label: 'Personal Narrative Writing' },
+                        { icon: '🧐', label: 'Narrative Ghostwriting' },
+                        { icon: '📄', label: 'Life Story Narration' },
+                        { icon: '💼', label: 'Chronological Life Narratives' },
+                        { icon: '⚙️', label: 'Creative Nonfiction Writing' },
+                        { icon: '🎯', label: 'Experience-Based Storytelling' },
+                    ].map((service, index) => (
+                        <div
+                            key={index}
+                            className="flex flex-col items-center justify-center h-32 p-4 text-center bg-[#f4f1ea] hover:bg-[#ebe8e0] transition-colors rounded-xl shadow-sm hover:shadow-md"
+                        >
+                            <div className="mb-2 text-3xl">{service.icon}</div>
+                            <span className="text-[10px] font-bold uppercase tracking-widest text-gray-600">
+                                {service.label}
+                            </span>
+                        </div>
+                    ))}
+                </div>
+            </section>
 
-             <section className="overflow-hidden" >
+            <section className="overflow-hidden" >
                 <div className="relative left-0 px-12 py-10 mb-8 brand-choose-us-section ms-auto md:left-52 md:px-20 md:mt-16 " >
                     <div className="flex flex-col items-center md:flex-row" data-aos="fade-right" data-aos-delay="0" data-aos-duration="500">
                         <div className="basis-1/3 brand-choose-us-vector">

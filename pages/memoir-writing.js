@@ -12,7 +12,7 @@ import BrandAudioPlayer from "./components/BrandAudioPlayer";
 import NewBrandFooter from "./components/NewBrandFooter";
 import BrandTopBar from "./components/BrandTopBar";
 import { FaPhoneVolume } from "react-icons/fa";
-import CTAButton from './components/CTAButton';        
+import CTAButton from './components/CTAButton';
 
 
 export default function BookEditing() {
@@ -28,17 +28,17 @@ export default function BookEditing() {
 
     const faqData = [
         { question: "Do I need to be a writer to use memoir writing services?", answer: "No. Most people aren’t writers. You just need memories. Our team of memoir writers help shape them into readable chapters." },
-        
+
         { question: "How does interview-based memoir writing work?", answer: "We talk. You share stories in calls or notes. We write from those conversations. It feels more natural than sitting alone staring at a screen." },
-       
+
         { question: "Will the memoir still sound like me?", answer: "Yes. That’s the point. A professional memoir writing service should protect your voice, not replace it." },
-       
+
         { question: "Can you help if my memories are scattered?	", answer: "Of course. Many clients come with mixed notes and feelings. Memoir manuscript development helps bring order without changing meaning." },
-        
+
         { question: "Is this service private and confidential?", answer: "Yes. Personal history writing stays private. We never share drafts or details without permission." },
-       
+
         { question: "How long does memoir book writing usually take?", answer: "It depends on length and depth. Some take weeks. Others take months. We don’t rush stories that matter." },
-            ];
+    ];
 
     return (
         <>
@@ -50,7 +50,7 @@ export default function BookEditing() {
                     content="Offering memoir writing services for personal stories, life events and family histories. We handle it all from interviews to your final draft,."
                 />
                 <link rel="shortcut icon" href="/images/fav.webp" />
-                </Head>
+            </Head>
             <BrandTopBar />
             <BrandNavbar />
             <BrandPrimaryHeader
@@ -63,18 +63,18 @@ export default function BookEditing() {
             <div className="container max-w-screen-xl pt-0 mx-auto overflow-hidden md:py-20">
                 <div className="flex flex-col items-center justify-center px-8 py-10 md:flex-row lg:flex-row md:px-0 md:py-0">
                     <div className="basis-1/2 abt-txt m1-h p1 aos-init aos-animate" data-aos="fade-right" data-aos-duration="1000">
-                    <h2 className="text-3xl font-bold uppercase font-poppins md:text-4xl">Best Memoir Writers For Hire</h2>
+                        <h2 className="text-3xl font-bold uppercase font-poppins md:text-4xl">Best Memoir Writers For Hire</h2>
 
-                        <h2 className="text-2xl uppercase font-poppins md:text-3xl">
-                        Life stories, written gently
-                        </h2>
-                       
+                        <h3 className="mt-3 text-2xl font-semibold font-poppins md:text-2xl uppercase">
+                            Life stories, written gently
+                        </h3>
+
                         <p className="pt-3 text-xl text-left font-poppins">
-                       Writing a memoir is not about fancy words or perfect grammar. (Obviously, we care about writing proficiency, style, and all that). But the memoir is about truth. About moments that shaped you. As a memoir writing company, we help people write a memoir that feels personal, not polished too much. </p>
+                            Writing a memoir is not about fancy words or perfect grammar. (Obviously, we care about writing proficiency, style, and all that). But the memoir is about truth. About moments that shaped you. As a memoir writing company, we help people write a memoir that feels personal, not polished too much. </p>
 
-                        <p className="pt-3 text-xl text-left font-poppins">Some clients know exactly what they want to say. Others feel lost. Both are completely normal. 
-Our memoir writers for hire listen first, then guide slowly. We use interview-based memoir writing so nothing feels forced. From personal memoir writing services to full memoir book writing, we keep your voice intact. No rushing. No pressure. Just real memories shaped into a clear, readable story. A story that feels lived, not written.
-</p>
+                        <p className="pt-3 text-xl text-left font-poppins">Some clients know exactly what they want to say. Others feel lost. Both are completely normal.
+                            Our memoir writers for hire listen first, then guide slowly. We use interview-based memoir writing so nothing feels forced. From personal memoir writing services to full memoir book writing, we keep your voice intact. No rushing. No pressure. Just real memories shaped into a clear, readable story. A story that feels lived, not written.
+                        </p>
                     </div>
                     <div className="flex justify-center text-center basis-1/2 abt-pic md:justify-center">
                         <Image src={"/images/Memoir-Writing/ghost-pic.webp"} width={470} height={300}
@@ -92,62 +92,62 @@ Our memoir writers for hire listen first, then guide slowly. We use interview-ba
 
 
             <section className="relative overflow-visible text-white bg-center bg-no-repeat bg-cover ser-cta-banner py-14 md:py-0"
-                                                style={{ backgroundImage: `url(/brand-img/bg-banner.png)` }}>
-                                                <div className="relative grid items-center grid-cols-1 gap-4 mx-auto md:grid-cols-12 max-w-7xl ">
-                                
-                                                    <div className="relative z-10 justify-center hidden md:col-span-3 md:flex md:justify-start">
-                                                        <Image
-                                                            src="/images/Memoir-Writing/cta-book-12.webp"
-                                                            alt="Book 1"
-                                                            className="absolute l-book -top-20 md:-top-36"
-                                                            height={600}
-                                                            width={600}
-                                                        />
-                                                    </div>
-                                
-                                                    <div className="px-4 text-center md:col-span-6">
-                                                        <h2 className="font-poppins text-2xl text-[#98caa9] font-semibold md:text-3xl uppercase">
-                                                           
-Let’s Help Preserve Your Voice for Generations!
+                style={{ backgroundImage: `url(/brand-img/bg-banner.png)` }}>
+                <div className="relative grid items-center grid-cols-1 gap-4 mx-auto md:grid-cols-12 max-w-7xl ">
 
-                                                        </h2>
-                                                        <p className="py-4 text-base md:text-lg">
-                                                           If you’re thinking of writing a memoir but don’t know where to start, our best memoir writing services can help you begin, calmly and clearly.
-                                                        </p>
-                                
-                                                        <div className="flex flex-col items-center justify-center gap-4 cta-btns sm:flex-row">
-                                                                        <CTAButton />
-                                
-                                
-                                                            <a
-                                                                href="tel:(866) 841-7463"
-                                                                className="flex items-center gap-2 text-white">
-                                                                <FaPhoneVolume className="inline" /> (866) 841-7463
-                                                            </a>
-                                
-                                                                <a
-                                                                href={'javascript:;'}
-                                                                className="bg-transparent text-[#fff] px-5 py-2 border border-white
+                    <div className="relative z-10 justify-center hidden md:col-span-3 md:flex md:justify-start">
+                        <Image
+                            src="/images/Memoir-Writing/cta-book-12.webp"
+                            alt="Book 1"
+                            className="absolute l-book -top-20 md:-top-36"
+                            height={600}
+                            width={600}
+                        />
+                    </div>
+
+                    <div className="px-4 text-center md:col-span-6">
+                        <h2 className="font-poppins text-2xl text-[#98caa9] font-semibold md:text-3xl uppercase">
+
+                            Let’s Help Preserve Your Voice for Generations!
+
+                        </h2>
+                        <p className="py-4 text-base md:text-lg">
+                            If you’re thinking of writing a memoir but don’t know where to start, our best memoir writing services can help you begin, calmly and clearly.
+                        </p>
+
+                        <div className="flex flex-col items-center justify-center gap-4 cta-btns sm:flex-row">
+                            <CTAButton />
+
+
+                            <a
+                                href="tel:(866) 841-7463"
+                                className="flex items-center gap-2 text-white">
+                                <FaPhoneVolume className="inline" /> (866) 841-7463
+                            </a>
+
+                            <a
+                                href={'javascript:;'}
+                                className="bg-transparent text-[#fff] px-5 py-2 border border-white
                                     rounded-full flex items-center gap-2 hover:bg-gray-200 hover:text-black cta-btn-1 transition" onClick={handleOpenChat}>
-                                                                Live Chat
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                
-                                                    <div className="justify-center hidden md:col-span-3 md:flex md:justify-end">
-                                                        <Image
-                                                            src="/brand-img/type.png"
-                                                            alt="Typewriter"
-                                                            className="max-h-[300px] w-auto"
-                                                            height={600}
-                                                            width={600}
-                                                        />
-                                                    </div>
-                                                </div>
-                                            </section>
+                                Live Chat
+                            </a>
+                        </div>
+                    </div>
+
+                    <div className="justify-center hidden md:col-span-3 md:flex md:justify-end">
+                        <Image
+                            src="/brand-img/type.png"
+                            alt="Typewriter"
+                            className="max-h-[300px] w-auto"
+                            height={600}
+                            width={600}
+                        />
+                    </div>
+                </div>
+            </section>
 
             {/* inner process section start */}
-             <section className="relative flex justify-center pt-20 mx-auto mb-12 overflow-hidden text-center brand-process">
+            <section className="relative flex justify-center pt-20 mx-auto mb-12 overflow-hidden text-center brand-process">
                 <div className="max-w-screen-xl">
                     <div className="mb-6 text-center">
                         <h3 className="text-2xl text-black font-poppins">Our Service Workflow</h3>
@@ -165,93 +165,93 @@ Let’s Help Preserve Your Voice for Generations!
                         </div>
 
                         <div className="flex flex-row" data-aos="fade-left">
-                        <div className="flex-col px-6 py-10 text-left brand-process-content">
-                        <span className="num-span"><b>02</b></span>
+                            <div className="flex-col px-6 py-10 text-left brand-process-content">
+                                <span className="num-span"><b>02</b></span>
                                 <h2 className="text-2xl text-white font-poppins pro-h">Story Mapping</h2>
                                 <p className="">life story memoir writing needs direction. We organize timelines, key events, and emotional beats, without over-structuring or making your life feel boxed in.</p>
                             </div>
                         </div>
 
                         <div className="flex flex-row" data-aos="fade-left">
-                        <div className="flex-col px-6 py-10 text-left brand-process-content">
-                        <span className="num-span"><b>03</b></span>
+                            <div className="flex-col px-6 py-10 text-left brand-process-content">
+                                <span className="num-span"><b>03</b></span>
                                 <h2 className="text-2xl text-white font-poppins pro-h">Draft Writing</h2>
                                 <p className="">This is where memoir book writing starts to take shape. We write slowly, chapter by chapter, keeping language natural and close to how you speak.</p>
                             </div>
                         </div>
-                        
+
                     </div>
 
                     <div className="grid gap-6 mb-6 md:grid-cols-3" >
 
                         <div className="flex flex-row " data-aos="fade-left">
-                        <div className="flex-col px-6 py-10 text-left brand-process-content">
-                        <span className="num-span"><b>04</b></span>
+                            <div className="flex-col px-6 py-10 text-left brand-process-content">
+                                <span className="num-span"><b>04</b></span>
                                 <h2 className="text-2xl text-white font-poppins pro-h">Review And Adjust</h2>
                                 <p className="">You read the draft. We revise based on your feelings, not just comments. Memoir manuscript development needs patience, and we give that time.</p>
                             </div>
                         </div>
 
                         <div className="flex flex-row" data-aos="fade-left">
-                        <div className="flex-col px-6 py-10 text-left brand-process-content">
-                        <span className="num-span"><b>05</b></span>
+                            <div className="flex-col px-6 py-10 text-left brand-process-content">
+                                <span className="num-span"><b>05</b></span>
                                 <h2 className="text-2xl text-white font-poppins pro-h">Editing And Flow</h2>
                                 <p className="">Our memoir editing and writing process checks clarity, pacing, and tone. The goal is simple. Make the story smooth, but still human.</p>
                             </div>
                         </div>
 
                         <div className="flex flex-row" data-aos="fade-left">
-                        <div className="flex-col px-6 py-10 text-left brand-process-content">
-                        <span className="num-span"><b>06</b></span>
+                            <div className="flex-col px-6 py-10 text-left brand-process-content">
+                                <span className="num-span"><b>06</b></span>
                                 <h2 className="text-2xl text-white font-poppins pro-h">Final Delivery</h2>
                                 <p className="">You receive a clean manuscript, ready for publishing or printing. Many memoir writers stop earlier. We don’t. We finish properly.</p>
                             </div>
                         </div>
-                        
+
                     </div>
 
                 </div>
             </section>
 
             <section className="max-w-6xl px-4 py-16 mx-auto bg-white font-poppins">
-                 <h2 className="mb-12 text-xl font-medium text-center text-gray-700 md:text-2xl">
-    Our Offerings
-  </h2>
-  <h2 className="mb-12 text-xl font-medium text-center text-gray-700 md:text-2xl">
-What’s Included In Our Memoir Writing Services
-  </h2>
+                <h2 className="mb-12 text-xl font-medium text-center text-gray-700 md:text-2xl">
+                    Our Offerings
+                </h2>
+                <h2 className="mb-12 text-xl font-medium text-center text-gray-700 md:text-2xl">
+                    What’s Included In Our Memoir Writing Services
+                </h2>
 
-  <p className="mb-12 text-xl font-medium text-center text-gray-700 md:text-2xl">
-Our memoir writing services cover everything from first talks to final drafts, keeping your personal history writing clear, honest, and respectful throughout the process.
-  </p>
+                <p className="mb-12 text-xl font-medium text-center text-gray-700 md:text-2xl">
+                    Our memoir writing services cover everything from first talks to final drafts, keeping your personal history writing clear, honest, and respectful throughout the process.
+                </p>
 
-  <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3">
-    {[
-     { icon: '🖋️', label: 'Personal Memoir Writing' },
-      { icon: '🧐', label: 'Memoir Ghostwriting Services' },
-      { icon: '📄', label: 'Interview-Based Memoir Writing ' },
-      { icon: '💼', label: 'Editing And Rewriting' },
-      { icon: '⚙️', label: 'Autobiography And Memoir Writing' },
-      { icon: '🎯', label: 'Life Story Book Writing' },         
-    ].map((service, index) => (
-      <div
-        key={index}
-        className="flex flex-col items-center justify-center h-32 p-4 text-center bg-[#f4f1ea] hover:bg-[#ebe8e0] transition-colors rounded-xl shadow-sm hover:shadow-md"
-      >
-        <div className="mb-2 text-3xl">{service.icon}</div>
-        <span className="text-[10px] font-bold uppercase tracking-widest text-gray-600">
-          {service.label}
-        </span>
-      </div>
-    ))}
-  </div>
-</section>
-            
+                <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3">
+                    {[
+                        { icon: '🖋️', label: 'Personal Memoir Writing' },
+                        { icon: '🧐', label: 'Memoir Ghostwriting Services' },
+                        { icon: '📄', label: 'Interview-Based Memoir Writing ' },
+                        { icon: '💼', label: 'Editing And Rewriting' },
+                        { icon: '⚙️', label: 'Autobiography And Memoir Writing' },
+                        { icon: '🎯', label: 'Life Story Book Writing' },
+                    ].map((service, index) => (
+                        <div
+                            key={index}
+                            className="flex flex-col items-center justify-center h-32 p-4 text-center bg-[#f4f1ea] hover:bg-[#ebe8e0] transition-colors rounded-xl shadow-sm hover:shadow-md"
+                        >
+                            <div className="mb-2 text-3xl">{service.icon}</div>
+                            <span className="text-[10px] font-bold uppercase tracking-widest text-gray-600">
+                                {service.label}
+                            </span>
+                        </div>
+                    ))}
+                </div>
+            </section>
+
             <section className="overflow-hidden" >
                 <div className="relative left-0 px-12 py-10 mb-8 brand-choose-us-section ms-auto md:left-52 md:px-20 md:mt-16 " >
                     <div className="flex flex-col items-center md:flex-row" data-aos="fade-right" data-aos-delay="0" data-aos-duration="500">
                         <div className="basis-1/3 brand-choose-us-vector">
-                        <Image src={"/images/Memoir-Writing/WhyChooseUs2.webp"} width={500} height={500}
+                            <Image src={"/images/Memoir-Writing/WhyChooseUs2.webp"} width={500} height={500}
                                 loading="lazy"
                                 alt="about img"
                                 className="brand-about-img"
@@ -325,7 +325,7 @@ Our memoir writing services cover everything from first talks to final drafts, k
                     </div>
                 </div>
             </section>
-            
+
             {/* <BrandFooter /> */}
             <NewBrandFooter />
         </>

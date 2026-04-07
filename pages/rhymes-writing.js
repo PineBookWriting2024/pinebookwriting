@@ -27,17 +27,17 @@ export default function BookEditing() {
 
     const faqData = [
         { question: "Do you write rhymes for children only?", answer: "No. We write children’s rhymes, educational verses, and lyrical rhymes for adults too. It really depends on what you need." },
-        
+
         { question: "Can I hire a rhyme writer for learning content?", answer: "Yes. Educational rhyme writing is one of our common requests. It helps kids remember ideas easily." },
-       
+
         { question: "Do you match a specific rhythm or style?", answer: "We do. You can share examples, or we can suggest a rhythm that fits your project best." },
-       
+
         { question: "How long does rhyme writing take?	", answer: "Short rhymes take less time. Bigger projects need more care. We’ll share timelines clearly before starting." },
-        
+
         { question: "Will the rhymes sound natural when read aloud?", answer: "That’s a big focus for us. We test rhymes by reading them out loud during editing." },
-       
+
         { question: "Can I request changes after delivery?", answer: "Yes, small edits are part of the process. We want the rhyme to feel right to you. " },
-            ];
+    ];
 
     return (
         <>
@@ -49,7 +49,7 @@ export default function BookEditing() {
                     content="Check out the best rhymes writing services here. Hire the best rhyme writing experts and get your rhyme project done with professional care and attention."
                 />
                 <link rel="shortcut icon" href="/images/fav.webp" />
-                </Head>
+            </Head>
             <BrandTopBar />
             <BrandNavbar />
             <BrandPrimaryHeader
@@ -62,14 +62,14 @@ export default function BookEditing() {
             <div className="container max-w-screen-xl pt-0 mx-auto overflow-hidden md:py-20">
                 <div className="flex flex-col items-center justify-center px-8 py-10 md:flex-row lg:flex-row md:px-0 md:py-0">
                     <div className="basis-1/2 abt-txt m1-h p1 aos-init aos-animate" data-aos="fade-right" data-aos-duration="1000">
-                    <h2 className="text-3xl font-bold uppercase font-poppins md:text-4xl">Best Rhyme Writers for Hire | Pine Book Writing</h2>
+                        <h2 className="text-3xl font-bold uppercase font-poppins md:text-4xl">Best Rhyme Writers for Hire | Pine Book Writing</h2>
 
-                        <h2 className="text-2xl uppercase font-poppins md:text-3xl">
-                      Words That Sound Right
-                        </h2>
-                       
+                        <h3 className="mt-3 text-2xl font-semibold font-poppins md:text-2xl uppercase">
+                            Words That Sound Right
+                        </h3>
+
                         <p className="pt-3 text-xl text-left font-poppins">
-                       Good rhymes are not about matching words at the end. They're about sound, timing and how the line feels when read out loud. It requires a dedicated skillset and our rhyme writers at <a href="https://www.pinebookwriting.com" className="hover:underline">Pine Book Writing</a> have expertise in it. They firmly know how to let words flow with a creative touch.</p>
+                            Good rhymes are not about matching words at the end. They're about sound, timing and how the line feels when read out loud. It requires a dedicated skillset and our rhyme writers at <a href="https://www.pinebookwriting.com" className="hover:underline">Pine Book Writing</a> have expertise in it. They firmly know how to let words flow with a creative touch.</p>
 
                         <p className="pt-3 text-xl text-left font-poppins">Whether you want to write rhymes for children's books, learning books, songs, or short poems, we take our time to understand and work on them accordingly.</p>
                         <p className="pt-3 text-xl text-left font-poppins">Looking to hire a rhyme writer who doesn't overdo it? This is your destination. Our team of professional rhyme writers keeps things clean yet readable. No heavy words. No awkward beats.</p>
@@ -104,7 +104,7 @@ export default function BookEditing() {
 
                     <div className="px-4 text-center md:col-span-6">
                         <h2 className="font-poppins text-2xl text-[#98caa9] font-semibold md:text-3xl uppercase">
-                           Let’s Write Rhymes That People Remember!
+                            Let’s Write Rhymes That People Remember!
                         </h2>
                         <p className="py-4 text-base md:text-lg">So, are you ready to hire a rhyme writer? Hire our rhyme writing services and create words that flow well, sound natural, and connect to your idea in the right way.</p>
 
@@ -140,7 +140,7 @@ export default function BookEditing() {
             </section>
 
             {/* inner process section start */}
-             <section className="relative flex justify-center pt-20 mx-auto mb-12 overflow-hidden text-center brand-process">
+            <section className="relative flex justify-center pt-20 mx-auto mb-12 overflow-hidden text-center brand-process">
                 <div className="max-w-screen-xl">
                     <div className="mb-6 text-center">
                         <h3 className="text-2xl text-black font-poppins">Our Service Workflow</h3>
@@ -158,93 +158,93 @@ export default function BookEditing() {
                         </div>
 
                         <div className="flex flex-row" data-aos="fade-left">
-                        <div className="flex-col px-6 py-10 text-left brand-process-content">
-                        <span className="num-span"><b>02</b></span>
+                            <div className="flex-col px-6 py-10 text-left brand-process-content">
+                                <span className="num-span"><b>02</b></span>
                                 <h2 className="text-2xl text-white font-poppins pro-h">Tone & Rhythm Choice</h2>
                                 <p className="">Before writing, we decide the rhythm. Fast, slow, playful, soft. Rhyme writing depends heavily on how it sounds. Not just how it reads.</p>
                             </div>
                         </div>
 
                         <div className="flex flex-row" data-aos="fade-left">
-                        <div className="flex-col px-6 py-10 text-left brand-process-content">
-                        <span className="num-span"><b>03</b></span>
+                            <div className="flex-col px-6 py-10 text-left brand-process-content">
+                                <span className="num-span"><b>03</b></span>
                                 <h2 className="text-2xl text-white font-poppins pro-h">First Draft Writing</h2>
                                 <p className="">Our rhyme writers begin writing lines with natural flow. No forcing words. If a line sounds odd, we fix it early, not later.</p>
                             </div>
                         </div>
-                        
+
                     </div>
 
                     <div className="grid gap-6 mb-6 md:grid-cols-3" >
 
                         <div className="flex flex-row " data-aos="fade-left">
-                        <div className="flex-col px-6 py-10 text-left brand-process-content">
-                        <span className="num-span"><b>04</b></span>
+                            <div className="flex-col px-6 py-10 text-left brand-process-content">
+                                <span className="num-span"><b>04</b></span>
                                 <h2 className="text-2xl text-white font-poppins pro-h">Read-Out-Testing</h2>
                                 <p className="">We read the rhymes out loud. This step matters. Rhyming verse writing should sound smooth when spoken, not just look good on paper.</p>
                             </div>
                         </div>
 
                         <div className="flex flex-row" data-aos="fade-left">
-                        <div className="flex-col px-6 py-10 text-left brand-process-content">
-                        <span className="num-span"><b>05</b></span>
+                            <div className="flex-col px-6 py-10 text-left brand-process-content">
+                                <span className="num-span"><b>05</b></span>
                                 <h2 className="text-2xl text-white font-poppins pro-h">Edits & Adjustments</h2>
                                 <p className="">You review the draft. We tweak words, beats, or endings. Creative rhyme composition always needs a little back and forth.</p>
                             </div>
                         </div>
 
                         <div className="flex flex-row" data-aos="fade-left">
-                        <div className="flex-col px-6 py-10 text-left brand-process-content">
-                        <span className="num-span"><b>06</b></span>
+                            <div className="flex-col px-6 py-10 text-left brand-process-content">
+                                <span className="num-span"><b>06</b></span>
                                 <h2 className="text-2xl text-white font-poppins pro-h">Final Delivery</h2>
                                 <p className="">You receive clean, ready-to-use rhymes. Perfect for books, lessons, songs, or short verses. Simple files. No confusion.</p>
                             </div>
                         </div>
-                        
+
                     </div>
 
                 </div>
             </section>
 
-             <section className="max-w-6xl px-4 py-16 mx-auto bg-white font-poppins">
-                 <h2 className="mb-12 text-xl font-medium text-center text-gray-700 md:text-2xl">
-    Our Offerings
-  </h2>
-  <h2 className="mb-12 text-xl font-medium text-center text-gray-700 md:text-2xl">
-What’s Included In Our Rhyme Writing Services
-  </h2>
+            <section className="max-w-6xl px-4 py-16 mx-auto bg-white font-poppins">
+                <h2 className="mb-12 text-xl font-medium text-center text-gray-700 md:text-2xl">
+                    Our Offerings
+                </h2>
+                <h2 className="mb-12 text-xl font-medium text-center text-gray-700 md:text-2xl">
+                    What’s Included In Our Rhyme Writing Services
+                </h2>
 
-  <p className="mb-12 text-xl font-medium text-center text-gray-700 md:text-2xl">
-We offer flexible rhyme writing services for your education or lyrical projects. We always keep the rhythm clear and the language easy to enjoy.
-  </p>
+                <p className="mb-12 text-xl font-medium text-center text-gray-700 md:text-2xl">
+                    We offer flexible rhyme writing services for your education or lyrical projects. We always keep the rhythm clear and the language easy to enjoy.
+                </p>
 
-  <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3">
-    {[
-     { icon: '🖋️', label: 'Children’s rhyme writing' },
-      { icon: '🧐', label: 'Educational rhyme writing' },
-      { icon: '📄', label: 'Lyrical rhyme writing ' },
-      { icon: '💼', label: 'Short verse writing' },
-      { icon: '⚙️', label: 'Poetic rhyme writing' },
-      { icon: '🎯', label: 'Rhythmic writing services' },         
-    ].map((service, index) => (
-      <div
-        key={index}
-        className="flex flex-col items-center justify-center h-32 p-4 text-center bg-[#f4f1ea] hover:bg-[#ebe8e0] transition-colors rounded-xl shadow-sm hover:shadow-md"
-      >
-        <div className="mb-2 text-3xl">{service.icon}</div>
-        <span className="text-[10px] font-bold uppercase tracking-widest text-gray-600">
-          {service.label}
-        </span>
-      </div>
-    ))}
-  </div>
-</section>
-            
+                <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3">
+                    {[
+                        { icon: '🖋️', label: 'Children’s rhyme writing' },
+                        { icon: '🧐', label: 'Educational rhyme writing' },
+                        { icon: '📄', label: 'Lyrical rhyme writing ' },
+                        { icon: '💼', label: 'Short verse writing' },
+                        { icon: '⚙️', label: 'Poetic rhyme writing' },
+                        { icon: '🎯', label: 'Rhythmic writing services' },
+                    ].map((service, index) => (
+                        <div
+                            key={index}
+                            className="flex flex-col items-center justify-center h-32 p-4 text-center bg-[#f4f1ea] hover:bg-[#ebe8e0] transition-colors rounded-xl shadow-sm hover:shadow-md"
+                        >
+                            <div className="mb-2 text-3xl">{service.icon}</div>
+                            <span className="text-[10px] font-bold uppercase tracking-widest text-gray-600">
+                                {service.label}
+                            </span>
+                        </div>
+                    ))}
+                </div>
+            </section>
+
             <section className="overflow-hidden" >
                 <div className="relative left-0 px-12 py-10 mb-8 brand-choose-us-section ms-auto md:left-52 md:px-20 md:mt-16 " >
                     <div className="flex flex-col items-center md:flex-row" data-aos="fade-right" data-aos-delay="0" data-aos-duration="500">
                         <div className="basis-1/3 brand-choose-us-vector">
-                        <Image src={"/images/Rhymes-Writing/WhyChooseUs2.webp"} width={500} height={500}
+                            <Image src={"/images/Rhymes-Writing/WhyChooseUs2.webp"} width={500} height={500}
                                 loading="lazy"
                                 alt="about img"
                                 className="brand-about-img"
@@ -318,7 +318,7 @@ We offer flexible rhyme writing services for your education or lyrical projects.
                     </div>
                 </div>
             </section>
-            
+
             {/* <BrandFooter /> */}
             <NewBrandFooter />
         </>

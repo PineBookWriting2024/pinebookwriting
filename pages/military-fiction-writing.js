@@ -35,9 +35,9 @@ export default function BookEditing() {
 
         { question: "Do I need to have full story details before hiring you?	", answer: "Not at all! If you don't have a full story, come with a basic idea or concept. Our fiction writers and researchers will handle the rest." },
 
-       {
-  question: "What types of military fiction do you write?",
-  answer: `
+        {
+            question: "What types of military fiction do you write?",
+            answer: `
   We write for all forms of military fiction novels. You can sign up for our services whether you want to write a:
 
   1. Historical war story.
@@ -46,8 +46,8 @@ export default function BookEditing() {
   4. Air combat story.
   5. Sea combat story.
   `
-}
-,   
+        }
+        ,
 
         { question: "How long does it take to complete a military fiction book?", answer: "Usually, it takes 3 to 6 months to completely write a book. But the exact timeline depends on different aspects like story length, complexity, and how much research it requires. " },
     ];
@@ -55,8 +55,8 @@ export default function BookEditing() {
     return (
         <>
             <Head>
-                <title>Hire the Best Military Fiction Writing Services 
-</title>
+                <title>Hire the Best Military Fiction Writing Services
+                </title>
                 <link rel="canonical" href="https://www.pinebookwriting.com/military-fiction-writing" />
                 <meta
                     name="description"
@@ -79,15 +79,15 @@ export default function BookEditing() {
                     <div className="basis-1/2 abt-txt m1-h p1 aos-init aos-animate" data-aos="fade-right" data-aos-duration="1000">
                         <h2 className="text-3xl font-bold uppercase font-poppins md:text-4xl">Professional Military Fiction Writing Services</h2>
 
-                        <h2 className="text-2xl uppercase font-poppins md:text-3xl">
-                           For Realistic War Stories
-                        </h2>
+                        <h3 className="mt-3 text-2xl font-semibold font-poppins md:text-2xl uppercase">
+                            For Realistic War Stories
+                        </h3>
 
                         <p className="pt-3 text-xl text-left font-poppins">
-                         With our best military writing services, you may write stories that are exciting, true to life, and full of emotions based on real or imagined events. We make sure your war fiction story is both real and interesting by focusing on structure, character development and authentic details.</p>
+                            With our best military writing services, you may write stories that are exciting, true to life, and full of emotions based on real or imagined events. We make sure your war fiction story is both real and interesting by focusing on structure, character development and authentic details.</p>
 
                         <p className="pt-3 text-xl text-left font-poppins">Our military fiction writers know how to write in the style and detail that your story needs, whether you're a veteran, an enthusiast, or a fiction writer working on the military historical fiction genre. We help with everything from coming up with ideas and making an outline to writing and editing the final draft. We work diligently to keep the bravery, emotion, and action in your story and make sure it appeals to many of your audience. </p>
-                         <p className="pt-3 text-xl text-left font-poppins">Why still thinking? Share your story idea, and get it into a perfectly written book!</p>
+                        <p className="pt-3 text-xl text-left font-poppins">Why still thinking? Share your story idea, and get it into a perfectly written book!</p>
                     </div>
                     <div className="flex justify-center text-center basis-1/2 abt-pic md:justify-center">
                         <Image src={"/images/Military-Fiction-Writing/ghost-pic.webp"} width={470} height={300}
@@ -119,11 +119,11 @@ export default function BookEditing() {
 
                     <div className="px-4 text-center md:col-span-6">
                         <h2 className="font-poppins text-2xl text-[#98caa9] font-semibold md:text-3xl uppercase">
-                          Ready to Convert Your War Story Into The Best-Selling?
+                            Ready to Convert Your War Story Into The Best-Selling?
 
                         </h2>
                         <p className="py-4 text-base md:text-lg">Hire expert military fiction writers and let them turn your military fiction story into the best-selling book.
-</p>
+                        </p>
 
                         <div className="flex flex-col items-center justify-center gap-4 cta-btns sm:flex-row">
                             <CTAButton />
@@ -162,7 +162,7 @@ export default function BookEditing() {
                     <div className="mb-6 text-center">
                         <h3 className="text-2xl text-black font-poppins">Our Service Workflow</h3>
                         <h2 className="text-3xl font-bold text-black font-poppins md:text-4xl" data-aos="zoom-out-down">6-Step Process of Our Military Fiction Book Writing
-</h2>
+                        </h2>
                     </div>
 
                     <div className="grid gap-6 mb-6 md:grid-cols-3">
@@ -224,40 +224,40 @@ export default function BookEditing() {
                 </div>
             </section>
 
-             <section className="max-w-6xl px-4 py-16 mx-auto bg-white font-poppins">
-                 <h2 className="mb-12 text-xl font-medium text-center text-gray-700 md:text-2xl">
-    Our Offerings
-  </h2>
-  <h2 className="mb-12 text-xl font-medium text-center text-gray-700 md:text-2xl">
-What’s Included In Our Military Fiction Writing Services
+            <section className="max-w-6xl px-4 py-16 mx-auto bg-white font-poppins">
+                <h2 className="mb-12 text-xl font-medium text-center text-gray-700 md:text-2xl">
+                    Our Offerings
+                </h2>
+                <h2 className="mb-12 text-xl font-medium text-center text-gray-700 md:text-2xl">
+                    What’s Included In Our Military Fiction Writing Services
 
-  </h2>
+                </h2>
 
-  <p className="mb-12 text-xl font-medium text-center text-gray-700 md:text-2xl">
-  Hire military fiction writers for your next military fiction book at <a className="text-black underline " href="https://www.pinebookwriting.com">Pine Book Writing</a>. We work together with our clients, combining research, creativity and storytelling expertise to write an impactful story.
-  </p>
+                <p className="mb-12 text-xl font-medium text-center text-gray-700 md:text-2xl">
+                    Hire military fiction writers for your next military fiction book at <a className="text-black underline " href="https://www.pinebookwriting.com">Pine Book Writing</a>. We work together with our clients, combining research, creativity and storytelling expertise to write an impactful story.
+                </p>
 
-  <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3">
-    {[
-     { icon: '🖋️', label: 'Concept Development ' },
-      { icon: '🧐', label: 'Historical & Tactical Research' },
-      { icon: '📄', label: 'Character & Plot Development    ' },
-      { icon: '💼', label: 'Manuscript Writing' },
-      { icon: '⚙️', label: 'Editing & Proofreading' },
-      { icon: '🎯', label: 'Formatting & Finalization' },         
-    ].map((service, index) => (
-      <div
-        key={index}
-        className="flex flex-col items-center justify-center h-32 p-4 text-center bg-[#f4f1ea] hover:bg-[#ebe8e0] transition-colors rounded-xl shadow-sm hover:shadow-md"
-      >
-        <div className="mb-2 text-3xl">{service.icon}</div>
-        <span className="text-[10px] font-bold uppercase tracking-widest text-gray-600">
-          {service.label}
-        </span>
-      </div>
-    ))}
-  </div>
-</section>
+                <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3">
+                    {[
+                        { icon: '🖋️', label: 'Concept Development ' },
+                        { icon: '🧐', label: 'Historical & Tactical Research' },
+                        { icon: '📄', label: 'Character & Plot Development    ' },
+                        { icon: '💼', label: 'Manuscript Writing' },
+                        { icon: '⚙️', label: 'Editing & Proofreading' },
+                        { icon: '🎯', label: 'Formatting & Finalization' },
+                    ].map((service, index) => (
+                        <div
+                            key={index}
+                            className="flex flex-col items-center justify-center h-32 p-4 text-center bg-[#f4f1ea] hover:bg-[#ebe8e0] transition-colors rounded-xl shadow-sm hover:shadow-md"
+                        >
+                            <div className="mb-2 text-3xl">{service.icon}</div>
+                            <span className="text-[10px] font-bold uppercase tracking-widest text-gray-600">
+                                {service.label}
+                            </span>
+                        </div>
+                    ))}
+                </div>
+            </section>
 
             <section className="overflow-hidden" >
                 <div className="relative left-0 px-12 py-10 mb-8 brand-choose-us-section ms-auto md:left-52 md:px-20 md:mt-16 " >

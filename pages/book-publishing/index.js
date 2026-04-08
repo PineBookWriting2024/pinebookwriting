@@ -2145,7 +2145,7 @@ export default function Home() {
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8 mt-16">
               {[
                 { img: "/brand-img/new-lp/1.webp", title: "Book Publishing", url: "/book-publishing" },
-                { img: "/brand-img/new-lp/9.webp", title: "Book Editing", url: "/book-editing" },
+                { img: "/brand-img/new-lp/9.webp", title: "Book Editing", url: "/Book-Editing" },
                 { img: "/brand-img/new-lp/2.webp", title: "Proofreading", url: "/proofreading" },
                 { img: "/brand-img/new-lp/10.webp", title: "Book Formatting", url: "/book-formatting" },
                 { img: "/brand-img/new-lp/3.webp", title: "Typesetting & Layout", url: "/typesetting-layout-adjustment" },

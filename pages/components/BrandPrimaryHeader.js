@@ -38,7 +38,7 @@ export default function BrandPrimaryHeader(props) {
         "/comic-book-writing",
         "/military-fiction-writing",
         "/movie-writing",
-        "/book-editing",
+        "/Book-Editing",
         "/book-formatting-writing",
         "/book-self-publishing",
         "/proofreading-writing",

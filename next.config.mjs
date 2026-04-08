@@ -19,6 +19,11 @@ const nextConfig = {
     { source: '/pricing', destination: '/packages', permanent: true, },
     { source: '/contact', destination: '/contact-us', permanent: true, },
     { source: '/term-and-condition', destination: '/terms-and-conditions', permanent: true, },
+    { source: '/book-editing-services', destination: '/book-editing', permanent: true, },
+    { source: '/book-editing-writing', destination: '/book-editing', permanent: true, },
+    { source: '/Book-Editing', destination: '/book-editing', permanent: true, },
+    { source: '/Book-Editing-Services', destination: '/book-editing', permanent: true, },
+    { source: '/Book-Editing-Writing', destination: '/book-editing', permanent: true, },
     // { source: '/Book-Services', destination: '/book-services', permanent: true, },
 
     // { source: '/blog', destination: '/', permanent: false, },

@@ -156,7 +156,7 @@ export default function BrandFooter() {
                             </div>
                             {/* <nav className="list-none mb-10 mt-5">
                                 <li>
-                                    <Link href="/Book-Editing" onClick={(e) => { e.preventDefault(); window.location.href = "/Book-Editing"; }}>
+                                    <Link href="/book-editing" onClick={(e) => { e.preventDefault(); window.location.href = "/book-editing"; }}>
                                         Book Editing
                                     </Link>
                                 </li>

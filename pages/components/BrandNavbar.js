@@ -22,7 +22,7 @@ export default function BrandNavbar() {
         { name: 'Comic Book Writing', href: '/comic-book-writing' },
         { name: 'Military Fiction Writing', href: '/military-fiction-writing' },
         { name: 'Movie Writing', href: '/movie-writing' },
-        { name: 'Book Editing', href: '/Book-Editing' },
+        { name: 'Book Editing', href: '/book-editing' },
         { name: 'Book Formatting', href: '/book-formatting-writing' },
         { name: 'Book Self Publishing', href: '/book-self-publishing' },
         { name: 'Proofreading', href: '/proofreading-writing' },

@@ -79,7 +79,7 @@ export default function ResumeWriting() {
 
                         <h2 className="text-3xl font-bold uppercase font-poppins md:text-4xl">Hire Career-Focused Resume Writing Service </h2>
 
-                        <h3 className="mb-2 text-2xl font-semibold font-poppins md:text-2xl uppercase">
+                        <h3 className="mb-2 text-2xl font-semibold uppercase font-poppins md:text-2xl">
                             Stand Out from the Crowd
                         </h3>
                         <div className="text-black">
@@ -133,7 +133,7 @@ export default function ResumeWriting() {
                         />
                     </div>
 
-                    <div className="px-4 text-center md:col-span-6">
+                    <div className="px-4 mt-6 mb-6 text-center md:col-span-6">
                         <h2 className="font-poppins text-2xl text-[#98caa9] font-semibold md:text-3xl uppercase">
                             Land More Job Interviews - Acquire Expert Resume Writing Service
                         </h2>

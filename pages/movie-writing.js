@@ -68,7 +68,7 @@ export default function BookEditing() {
                         <h2 className="text-3xl font-bold uppercase font-poppins md:text-4xl">Professional Movie Writing - Write Something Really Watchable
                         </h2>
 
-                        <h3 className="mt-3 text-2xl font-semibold font-poppins md:text-2xl uppercase">
+                        <h3 className="mt-3 text-2xl font-semibold uppercase font-poppins md:text-2xl">
                             From Concept to Script
                         </h3>
 
@@ -109,7 +109,7 @@ export default function BookEditing() {
                         />
                     </div>
 
-                    <div className="px-4 text-center md:col-span-6">
+                    <div className="px-4 mt-6 mb-6 text-center md:col-span-6">
                         <h2 className="font-poppins text-2xl text-[#98caa9] font-semibold md:text-3xl uppercase">
                             Ready to Write a Movie People Watch Untill End?
                         </h2>

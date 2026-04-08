@@ -85,7 +85,7 @@ export default function SocialMediaCopywriting() {
                     <div className="basis-1/2 abt-txt m1-h p1 aos-init aos-animate" data-aos="fade-right" data-aos-duration="1000">
 
                         <h2 className="text-3xl font-bold uppercase font-poppins md:text-4xl">A Reliable Social Media Copywriting Company USA</h2>
-                        <h3 className="mt-2 text-2xl font-semibold font-poppins md:text-2xl uppercase">
+                        <h3 className="mt-2 text-2xl font-semibold uppercase font-poppins md:text-2xl">
                             Bespoke Social Media Copy for Every Platform
                         </h3>
                         <p className="pt-3 text-xl text-left font-poppins">
@@ -136,7 +136,7 @@ export default function SocialMediaCopywriting() {
                         />
                     </div>
 
-                    <div className="px-4 text-center md:col-span-6">
+                    <div className="px-4 mt-6 mb-6 text-center md:col-span-6">
                         <h2 className="font-poppins text-2xl text-[#98caa9] font-semibold md:text-3xl uppercase">
                             Getting Only Likes, No Sales? We're Here to Help!
                         </h2>
@@ -180,7 +180,7 @@ export default function SocialMediaCopywriting() {
             <section className="relative flex justify-center pt-20 mx-auto mb-12 overflow-hidden text-center brand-process">
                 <div className="max-w-screen-xl">
                     <div className="mb-6 text-center">
-                        <h3 className="text-2xl text-black font-bold font-poppins">Our Service Workflow</h3>
+                        <h3 className="text-2xl font-bold text-black font-poppins">Our Service Workflow</h3>
                         <h2 className="text-3xl text-black font-poppins md:text-4xl" data-aos="zoom-out-down">6-Step Process of Our Social Media Copywriting Services</h2>
                     </div>
 

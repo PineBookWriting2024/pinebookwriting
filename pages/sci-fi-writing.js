@@ -65,7 +65,7 @@ export default function BookEditing() {
                     <div className="basis-1/2 abt-txt m1-h p1 aos-init aos-animate" data-aos="fade-right" data-aos-duration="1000">
                         <h2 className="text-3xl font-bold uppercase font-poppins md:text-4xl">Professional Sci-Fi Writing Services That Go Further</h2>
 
-                        <h3 className="mt-3 text-2xl font-semibold font-poppins md:text-2xl uppercase">
+                        <h3 className="mt-3 text-2xl font-semibold uppercase font-poppins md:text-2xl">
                             Stories Built Beyond Tech
                         </h3>
 
@@ -105,7 +105,7 @@ export default function BookEditing() {
                         />
                     </div>
 
-                    <div className="px-4 text-center md:col-span-6">
+                    <div className="px-4 mt-6 mb-6 text-center md:col-span-6">
                         <h2 className="font-poppins text-2xl text-[#98caa9] font-semibold md:text-3xl uppercase">
                             Let's Execute Your Sci-Fi Masterpiece Idea With Best Sci-Fi Writers!
                         </h2>

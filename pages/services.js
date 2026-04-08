@@ -150,7 +150,7 @@ export default function Services() {
                                     <Link href="/fiction-page">Read More</Link>
                                 </span>
                                 <div className="service-card-img">
-                                    <Image src={"/brand-img/fiction-9.png"} width={250} height={200}></Image>
+                                    <Image src={"/brand-img/service-img3.png"} width={250} height={200}></Image>
                                 </div>
                             </div>
                         </div>
@@ -164,7 +164,7 @@ export default function Services() {
                                     <Link href="/non-fiction-writing">Read More</Link>
                                 </span>
                                 <div className="service-card-img">
-                                    <Image src={"/brand-img/non-fiction-7.png"} width={270} height={200}></Image>
+                                    <Image src={"/brand-img/service-img2.png"} width={270} height={200}></Image>
                                 </div>
                             </div>
                             <div className="relative brand-service-card-content basis-1/2">

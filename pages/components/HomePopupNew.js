@@ -91,8 +91,8 @@ export default function PopupBundle({ isOpen, onClose, service }) {
     return (
         <>
             {isOpen && (
-                <section className="btm-form dark-form-bg flex-col md:flex-row fixed inset-0 bg-black bg-opacity-50 z-50 flex justify-center items-center w-auto">
-                    <div className="home-popup-modal-wrapper relative my-20">
+                <section className="fixed inset-0 z-50 flex flex-col items-center justify-center w-auto bg-black bg-opacity-50 btm-form dark-form-bg md:flex-row">
+                    <div className="relative my-20 mx-w-6xl home-popup-modal-wrapper">
                         <Image
                             className="text-center form-off-badge"
                             src={"/images/form-badge.png"}
@@ -100,14 +100,14 @@ export default function PopupBundle({ isOpen, onClose, service }) {
                             height={100}
                             loading="lazy"
                         ></Image>
-                        <div className="form-mid-wrap bg-gray-200 connect-form-border mb-12 relative transparent-connect-form-border">
-                            <div className="flex flex-col md:flex-row items-center justify-start gap-10 relative mx-0 md:mx-10 px-3">
-                                <button type="button" onClick={onClose} className="home-close-btn-modal ml-4 bg-gray-300 hover:bg-gray-400 text-black py-2 px-4 rounded">
+                        <div className="relative mb-12 bg-gray-200 form-mid-wrap connect-form-border transparent-connect-form-border">
+                            <div className="relative flex flex-col items-center justify-start gap-10 px-3 mx-0 md:flex-row md:mx-10">
+                                <button type="button" onClick={onClose} className="px-4 py-2 ml-4 text-black bg-gray-300 rounded home-close-btn-modal hover:bg-gray-400">
                                     <svg width="100px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M6.99486 7.00636C6.60433 7.39689 6.60433 8.03005 6.99486 8.42058L10.58 12.0057L6.99486 15.5909C6.60433 15.9814 6.60433 16.6146 6.99486 17.0051C7.38538 17.3956 8.01855 17.3956 8.40907 17.0051L11.9942 13.4199L15.5794 17.0051C15.9699 17.3956 16.6031 17.3956 16.9936 17.0051C17.3841 16.6146 17.3841 15.9814 16.9936 15.5909L13.4084 12.0057L16.9936 8.42059C17.3841 8.03007 17.3841 7.3969 16.9936 7.00638C16.603 6.61585 15.9699 6.61585 15.5794 7.00638L11.9942 10.5915L8.40907 7.00636C8.01855 6.61584 7.38538 6.61584 6.99486 7.00636Z" fill="#0F0F0F"></path> </g></svg>
                                 </button>
                                 {/* <div className="text-center">
                                     <Image
-                                        className="text-center hidden md:block home-popup-img-bg"
+                                        className="hidden text-center md:block home-popup-img-bg"
                                         src={"/images/pop-img2.jpg"}
                                         width={690}
                                         height={200}
@@ -117,8 +117,8 @@ export default function PopupBundle({ isOpen, onClose, service }) {
 
                                 <form className="popup-form-wrapper" onSubmit={handleSubmit}>
                                     <div className="text-center">
-                                        <h2 className="font-poppins text-white text-2xl mt-2">Come Celebrate with Us!</h2>
-                                        <p className="font-poppins text-white text-2xl">Exclusive Offer: Expert Book Writing at <span className="text-blink">50% Off</span> – Your Story Deserves to be Heard!</p>
+                                        <h2 className="mt-2 text-2xl text-white font-poppins"> Celebrate with Us!</h2>
+                                        <p className="text-2xl text-white font-poppins">Exclusive Offer: Expert Book Writing at <span className="text-blink">50% Off</span> – Your Story Deserves to be Heard!</p>
                                     </div>
 
                                     <div className="py-5">
@@ -129,7 +129,7 @@ export default function PopupBundle({ isOpen, onClose, service }) {
                                                 onChange={handleChange}
                                                 value={fulName}
                                                 required
-                                                className="pl-4 pr-4 py-2 border rounded-lg w-full home-connect-form-input"
+                                                className="w-full py-2 pl-4 pr-4 border rounded-lg home-connect-form-input"
                                                 placeholder="Enter your Name"
                                             />
                                         </div>
@@ -141,11 +141,11 @@ export default function PopupBundle({ isOpen, onClose, service }) {
                                                 onChange={handleChange}
                                                 value={phoneNumber}
                                                 required
-                                                className="pl-4 pr-4 py-2 border rounded-lg w-full home-connect-form-input"
+                                                className="w-full py-2 pl-4 pr-4 border rounded-lg home-connect-form-input"
                                                 placeholder="Enter your Number"
                                             />
                                             {phoneError && (
-                                                <p className="text-red-500 text-sm mt-1">{phoneError}</p>
+                                                <p className="mt-1 text-sm text-red-500">{phoneError}</p>
                                             )}
                                         </div>
 
@@ -156,7 +156,7 @@ export default function PopupBundle({ isOpen, onClose, service }) {
                                                 value={service}
                                                 readOnly
                                                 required
-                                                className="pl-4 pr-4 py-2 border rounded-lg w-full home-connect-form-input hidden"
+                                                className="hidden w-full py-2 pl-4 pr-4 border rounded-lg home-connect-form-input"
                                                 placeholder="Enter your Number"
                                             />
                                         </div>
@@ -168,12 +168,12 @@ export default function PopupBundle({ isOpen, onClose, service }) {
                                                 onChange={handleChange}
                                                 value={email}
                                                 required
-                                                className="pl-4 pr-4 py-2 border rounded-lg w-full home-connect-form-input"
+                                                className="w-full py-2 pl-4 pr-4 border rounded-lg home-connect-form-input"
                                                 placeholder="Enter your Email"
                                             />
                                         </div>
                                         {/* <div className="relative mb-3">
-                                            <select name="budget" value={budget} onChange={handleChange} className="text-grey-400 pl-4 pr-4 py-2 border rounded-lg w-full home-connect-form-input">
+                                            <select name="budget" value={budget} onChange={handleChange} className="w-full py-2 pl-4 pr-4 border rounded-lg text-grey-400 home-connect-form-input">
                                                 <option value="">Select Budget Range</option>
                                                 {budgetOptions.map(option => (
                                                     <option key={option} value={option}>{option}</option>
@@ -188,13 +188,11 @@ export default function PopupBundle({ isOpen, onClose, service }) {
                                                 required
                                                 placeholder="Enter your Message"
                                                 name="message"
-                                                className="resize-none pl-4 pr-4 py-2 border rounded-lg w-full home-connect-form-input"
+                                                className="w-full py-2 pl-4 pr-4 border rounded-lg resize-none home-connect-form-input"
                                                 rows={2}
                                             ></textarea>
                                             <div
-                                                className="absolute inset-y-0 left-0 pl-3 pt-3 
-                                flex items-start  
-                                pointer-events-none"
+                                                className="absolute inset-y-0 left-0 flex items-start pt-3 pl-3 pointer-events-none"
                                             ></div>
                                         </div>
                                         {showSuccess && (
@@ -202,7 +200,7 @@ export default function PopupBundle({ isOpen, onClose, service }) {
                                                 Form submitted Successfully!
                                             </p>
                                         )}
-                                        <button className="md:p-4 p-2 w-full bg-green-500 uppercase text-white rounded font-poppins submit-btn " type="submit">
+                                        <button className="w-full p-2 text-white uppercase bg-green-500 rounded md:p-4 font-poppins submit-btn " type="submit">
                                         Activate Your Discount Coupon
                                         </button>
                                     </div>

@@ -200,14 +200,14 @@ import Link from 'next/link';
 const BrandTesti = () => {
   return (
     <div>
-      <section className='sec-test max-w-screen-xl mx-auto py-20'>
-      <div className='testimonials-wrap grid grid-cols-1 md:grid-cols-3 gap-10'>
+      <section className='max-w-screen-xl py-20 mx-auto sec-test'>
+      <div className='grid grid-cols-1 gap-10 testimonials-wrap md:grid-cols-3'>
        
         {videoClient.map((videoClient) => (
-            <Link href={videoClient.src} className="glightbox block">
+            <Link href={videoClient.src} className="block glightbox">
             <div className='' key={videoClient.id}>
-                <h3 className=" text-xl text-black" >{videoClient.clientname}</h3>
-                {/* <video height={400} width={400} controls loading="lazy" className="brand-story py-4">
+                <h3 className="text-xl text-black " >{videoClient.clientname}</h3>
+                {/* <video height={400} width={400} controls loading="lazy" className="py-4 brand-story">
                     <source src={videoClient.src} type={videoClient.type} />
                 </video> */}
                 <iframe className='py-4 client-testi-video' height={225} width={400} src={videoClient.src} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

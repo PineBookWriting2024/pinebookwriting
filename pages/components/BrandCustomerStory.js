@@ -52,9 +52,9 @@ export default function BrandCustomerStory() {
 
     return (
         <>
-            <section className="story-sec brand-story-sec pt-28 relative">
+            <section className="relative story-sec brand-story-sec pt-28">
                 <div className="container mx-auto text-center m1-h">
-                    <h3 className="mb-8 text-black text-3xl md:text-4xl font-poppins font-bold">
+                    <h3 className="mb-8 text-3xl font-bold text-black md:text-4xl font-poppins">
                         Our Success Stories
                     </h3>
                     <p className="text-black">

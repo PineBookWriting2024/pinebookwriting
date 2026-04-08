@@ -141,7 +141,7 @@ const { openModal } = usePopupcta();
                             <h3 className="mb-4 text-2xl text-white font-poppins md:text-3xl aos-init aos-animate"> <span className="px-2 py-0 text-2xl">Pine Book Writing</span></h3>
                             <FadeIn>
                                 <h1 className="text-3xl font-bold text-white uppercase font-poppins md:text-2xl">
-                                   Best Book Writing Company in USA & Worldwide
+                                   
                                 </h1>
                             </FadeIn>
                             {/* <WavyText text="DO YOU HAVE A MANUSCRIPT READY TO BE PUBLISHED?" replay={true} style={{ color: 'white' }} className="text-3xl font-bold text-white font-poppins md:text-5xl" /> */}

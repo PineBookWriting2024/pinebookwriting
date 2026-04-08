@@ -23,9 +23,9 @@ export default function Story() {
     ];
 
     return (
-        <section className="story-sec md:py-20 py-10">
+        <section className="py-10 story-sec md:py-20">
             <div className="container mx-auto text-center m1-h">
-                <h3 className="mb-4 text-white text-4xl md:text-5xl font-poppins mt-5">
+                <h3 className="mt-5 mb-4 text-4xl text-white md:text-5xl font-poppins">
                     Our Success Stories
                 </h3>
                 <p className="text-black">
@@ -35,7 +35,7 @@ export default function Story() {
                 </p>
             </div>
 
-            <section className="testimonials pt-8">
+            <section className="pt-8 testimonials">
                 <div className="container mx-auto relative w-[80%]">
                     <Swiper
                         effect={"coverflow"}

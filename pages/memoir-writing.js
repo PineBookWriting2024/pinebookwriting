@@ -65,7 +65,7 @@ export default function BookEditing() {
                     <div className="basis-1/2 abt-txt m1-h p1 aos-init aos-animate" data-aos="fade-right" data-aos-duration="1000">
                         <h2 className="text-3xl font-bold uppercase font-poppins md:text-4xl">Best Memoir Writers For Hire</h2>
 
-                        <h3 className="mt-3 text-2xl font-semibold uppercase font-poppins md:text-2xl">
+                        <h3 className="mt-3 text-xl font-semibold uppercase font-poppins md:text-xl">
                             Life stories, written gently
                         </h3>
 

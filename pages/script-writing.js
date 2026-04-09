@@ -68,7 +68,7 @@ export default function ScriptWriting() {
                     <div className="basis-1/2 abt-txt m1-h p1 aos-init aos-animate" data-aos="fade-right" data-aos-duration="1000">
 
                         <h2 className="text-3xl font-bold uppercase font-poppins md:text-4xl">Professional Scriptwriting Services for Every Format</h2>
-                        <h3 className="mt-3 text-2xl font-semibold uppercase font-poppins md:text-2xl">
+                        <h3 className="mt-3 text-xl font-semibold uppercase font-poppins md:text-xl">
                             Cultivate Your Audio/Video Production
                         </h3>
                         <p className="pt-3 text-xl text-left font-poppins">The purpose of writing a script is to capture your audience's attention, delight them with the idea you want to present, or convey anything entertainingly or engagingly. Whether you're creating a film, a TV show, an ad, or any video, a professionally written script is required.</p>

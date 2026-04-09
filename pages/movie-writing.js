@@ -68,7 +68,7 @@ export default function BookEditing() {
                         <h2 className="text-3xl font-bold uppercase font-poppins md:text-4xl">Professional Movie Writing - Write Something Really Watchable
                         </h2>
 
-                        <h3 className="mt-3 text-2xl font-semibold uppercase font-poppins md:text-2xl">
+                        <h3 className="mt-3 text-xl font-semibold uppercase font-poppins md:text-xl">
                             From Concept to Script
                         </h3>
 

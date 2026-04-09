@@ -69,7 +69,7 @@ export default function BlogWriting() {
 
                         <h2 className="text-3xl font-bold uppercase font-poppins md:text-4xl">Professional Blog Writing Services That Actually Work
                         </h2>
-                        <h3 className="mt-3 text-2xl font-semibold uppercase font-poppins md:text-2xl">
+                        <h3 className="mt-3 text-xl font-semibold uppercase font-poppins md:text-xl">
                             Content That Brings Results
 
                         </h3>

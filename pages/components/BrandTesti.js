@@ -1,238 +1,274 @@
 import React from 'react'
 import Link from 'next/link';
 
-  // Object
-  const videoClient = [
-    {   
-        id:1,
+// Object
+const videoClient = [
+    {
+        id: 1,
         src: "https://www.youtube.com/embed/xUTyiqPY6Oo",
         type: "video/mp4",
         BookTitle: "Love And Laughter",
         Consultant: "Damon Peters",
         ProjectManager: "Amara Johnson & Ryan Peters",
-        clientname : "Lesvi Ferrel"
+        clientname: "Lesvi Ferrel"
     },
 
-    {   
-        id:2,
+    {
+        id: 2,
         src: "https://www.youtube.com/embed/QMirTma0Wf4",
         type: "video/mp4",
         BookTitle: "Rising 2 B’Come",
         Consultant: "Damon Peters",
         ProjectManager: "Amara Johnson & Melissa",
-        clientname : "Stacey L. Joiner"
+        clientname: "Stacey L. Joiner"
     },
-    {   
-        id:3,
+    {
+        id: 3,
         src: "https://www.youtube.com/embed/Tv3_r0EMVH4",
         type: "video/mp4",
         BookTitle: "Stewart, BC History",
         Consultant: "Damon Peters",
         ProjectManager: "Amara Johnson & Ryan Peters",
-        clientname : "Robert A. Eckess"
+        clientname: "Robert A. Eckess"
     },
     {
-        id:4,
+        id: 4,
         src: "https://www.youtube.com/embed/fX2J8iMy4z4",
         type: "video/mp4",
         BookTitle: "Free Yourself From Pain",
         Consultant: "Damon Peters",
         ProjectManager: "Ryan Peters",
-        clientname : "Lesvi Ferrel"
+        clientname: "Lesvi Ferrel"
     },
     {
-        id:5,
+        id: 5,
         src: "https://www.youtube.com/embed/gWW43Tfa8gA",
         type: "video/mp4",
         BookTitle: "The 2023 Elections in Nigeria: Actors, Intrigues, and Winners",
         Consultant: "Damon Peters",
         ProjectManager: "Lia Sinclair & Ryan Peters",
-        clientname : "Edward Agbai"
+        clientname: "Edward Agbai"
     },
     {
-        id:6,
+        id: 6,
         src: "https://www.youtube.com/embed/6T96-bq6_g8",
         type: "video/mp4",
         BookTitle: "Thorns are More Deadly",
         Consultant: "Steve Hayes",
         ProjectManager: "Lia Sinclair & Ryan Peters",
-        clientname : "Katie Loftis"
+        clientname: "Katie Loftis"
     },
     {
-        id:7,
+        id: 7,
         src: "https://www.youtube.com/embed/pPa-W6unmv0",
         type: "video/mp4",
         BookTitle: "Who will Love me?",
         Consultant: "Damon Peters",
         ProjectManager: "Amara Johnson & Ryan Peters",
-        clientname : "John B. Micheal"
+        clientname: "John B. Micheal"
     },
     {
-        id:8,
+        id: 8,
         src: "https://www.youtube.com/embed/7X_BkleuUsA",
         type: "video/mp4",
         BookTitle: " I am a BOY | i am a GIRL",
         Consultant: "Damon Peters",
         ProjectManager: "Ryan Peters",
-        clientname : "Pamela Harry"
+        clientname: "Pamela Harry"
     },
     {
-        id:9,
+        id: 9,
         src: "https://www.youtube.com/embed/mGLHZO-DjRg",
         type: "video/mp4",
         BookTitle: "The Well of Hopes: Bloodlines",
         Consultant: "Damon Peters",
         ProjectManager: "Lia Sinclair & Ryan Peters",
-        clientname : "Angel Raices"
+        clientname: "Angel Raices"
     },
     {
-        id:10,
+        id: 10,
         src: "https://www.youtube.com/embed/P91rheXIDzk",
         type: "video/mp4",
         BookTitle: "Fate: The Alpha King and HisFate: The Alpha King and His Unexpected Mate",
         Consultant: "Damon Peters",
         ProjectManager: "Samantha Lewis & Ryan Peters",
-        clientname : "Ashlee Griffin"
+        clientname: "Ashlee Griffin"
     },
     {
-        id:11,
+        id: 11,
         src: "https://www.youtube.com/embed/IsRZv2mR4u0",
         type: "video/mp4",
         BookTitle: "Vetting the Book of Enoch",
         Consultant: "Damon Peters",
         ProjectManager: "Lia Sinclair",
-        clientname : "Christopher Allen"
+        clientname: "Christopher Allen"
     },
     {
-        id:12,
+        id: 12,
         src: "https://www.youtube.com/embed/Jwr-u5HQ9Fg?si=PEZvbrKNR1Y0xUH4",
         type: "video/mp4",
         BookTitle: "There's no middle ground, You will either RUN TO or RUN FROM this book",
         Consultant: "Damon Peters",
         ProjectManager: "Lia Sinclair",
-        clientname : "John Bowman"
-       
+        clientname: "John Bowman"
+
     },
     {
-        id:13,
+        id: 13,
         src: "https://www.youtube.com/embed/p3dCJ_KdqHk?si=il3lcE_7bLVJDGmp",
         type: "video/mp4",
         BookTitle: "Ellas's Songs",
         Consultant: "Damon Peters",
         ProjectManager: "Amara Johnson & Lia Sinclair",
-        clientname : "David Van Fleet"
+        clientname: "David Van Fleet"
     },
     {
-        id:14,
+        id: 14,
         src: "https://www.youtube.com/embed/VsO2MhLTZPk",
         type: "video/mp4",
         BookTitle: "Go Ask Sabrina",
         Consultant: "Damon Peters",
         ProjectManager: "Lia Sinclair",
-        clientname : "Sabrina Biamby"
+        clientname: "Sabrina Biamby"
     },
     {
-        id:15,
+        id: 15,
         src: "https://www.youtube.com/embed/_a6emmDhe7c",
         type: "video/mp4",
         BookTitle: "The Other Side (Part 1 & Part 2)",
         Consultant: "Steve Hayes",
         ProjectManager: "Lia Sinclair",
-        clientname : "Unique Moore"
+        clientname: "Unique Moore"
     },
-         {
-        id:16,
+    {
+        id: 16,
         src: "https://www.youtube-nocookie.com/embed/Sae1noZeLvg",
         type: "video/mp4",
         BookTitle: "Orthomolecular biohacking: From Pauling to Panfili",
         Consultant: "Steve Hayes",
         ProjectManager: "Lia Sinclair ",
-        clientname : " Adolfo Professor Pamphili"
+        clientname: " Adolfo Professor Pamphili"
     },
-          {
-        id:17,
+    {
+        id: 17,
         src: "https://www.youtube-nocookie.com/embed/FJgKVI-sAIo",
         type: "video/mp4",
         BookTitle: "Shin Misaki: Future Dark Ages of World War IV",
         Consultant: "Steve Hayes",
         ProjectManager: "Rex Brown ",
-        clientname : " Theodore A Anderson"
+        clientname: " Theodore A Anderson"
     },
-           {
-        id:18,
+    {
+        id: 18,
         src: "https://www.youtube-nocookie.com/embed/S0F5k_mP9no ",
         type: "video/mp4",
         BookTitle: "The Tale Of A Phantom Trail",
         Consultant: "Steve Hayes",
         ProjectManager: "Rex Brown",
-        clientname : "Phyllis McGillivary"
+        clientname: "Phyllis McGillivary"
     },
-             {
-        id:19,
+    {
+        id: 19,
         src: "https://www.youtube-nocookie.com/embed/_muLcViAkZI",
         type: "video/mp4",
         BookTitle: "Forbidden: The Definitive Edition",
         Consultant: "Jenson Walker",
         ProjectManager: "Rex Brown",
-        clientname : "Tanna Marie Angers"
+        clientname: "Tanna Marie Angers"
     },
-                 {
-        id:20,
+    {
+        id: 20,
         src: "https://www.youtube-nocookie.com/embed/fKner3oan7Q",
         type: "video/mp4",
         BookTitle: "From Where Lions Speak",
         Consultant: "Steve Hayes",
         ProjectManager: "Rex Brown",
-        clientname : "Douglas P Andonian"
+        clientname: "Douglas P Andonian"
     },
-                     {
-        id:21,
+    {
+        id: 21,
         src: "https://www.youtube-nocookie.com/embed/77grNmvBBXU",
         type: "video/mp4",
         BookTitle: "Hebrew And Greek Insights Eight Biblical Words Explained",
         Consultant: "Steve Hayes",
         ProjectManager: "Rex Brown",
-        clientname : "Lezlie Ann Watson"
+        clientname: "Lezlie Ann Watson"
     },
-    
+    {
+        id: 22,
+        src: "https://www.youtube.com/embed/jBQ1vIbK2zQ?si=D7v7QuKO3WHW87Ta",
+        type: "video/mp4",
+        BookTitle: "Das Trevas Para Luz",
+        Consultant: "Steve Hayes",
+        ProjectManager: "Lia Sinclair",
+        clientname: "Miguel De Oliveira"
+    },
+    {
+        id: 23,
+        src: "https://www.youtube.com/embed/DEzkPXPfYRk?si=V7HdYP-l7XBwq6Yl",
+        type: "video/mp4",
+        BookTitle: "Remembering Dad: The First Year",
+        Consultant: "Steve Hayes",
+        ProjectManager: "Rex Brown",
+        clientname: "Adrea M. Witherspoon"
+    },
+    {
+        id: 24,
+        src: "https://www.youtube.com/embed/7FC8oT9eTPs?si=Yg6pZE18GtbexR3T",
+        type: "video/mp4",
+        BookTitle: "Fearless Friendships: Why Adults Struggle to Connect and How to Fix it",
+        Consultant: "Steve Hayes",
+        ProjectManager: "Emily Jones",
+        clientname: "Philip A. Grimes, PhD"
+    },
+    {
+        id: 25,
+        src: "https://www.youtube.com/embed/rOtE_fGt1p0?si=2-ahTZuT2qyJLthO",
+        type: "video/mp4",
+        BookTitle: "Sufficiency of God’s Promises: A Biblical Study Journal",
+        Consultant: "Steve Hayes",
+        ProjectManager: "Emily Jones",
+        clientname: "Vernell T. Walton"
+    },
+
 ]
 
 const BrandTesti = () => {
-  return (
-    <div>
-      <section className='max-w-screen-xl py-20 mx-auto sec-test'>
-      <div className='grid grid-cols-1 gap-10 testimonials-wrap md:grid-cols-3'>
-       
-        {videoClient.map((videoClient) => (
-            <Link href={videoClient.src} className="block glightbox">
-            <div className='' key={videoClient.id}>
-                <h3 className="text-xl text-black " >{videoClient.clientname}</h3>
-                {/* <video height={400} width={400} controls loading="lazy" className="py-4 brand-story">
+    return (
+        <div>
+            <section className='max-w-screen-xl py-20 mx-auto sec-test'>
+                <div className='grid grid-cols-1 gap-10 testimonials-wrap md:grid-cols-3'>
+
+                    {videoClient.map((videoClient) => (
+                        <Link href={videoClient.src} className="block glightbox">
+                            <div className='' key={videoClient.id}>
+                                <h3 className="text-xl text-black " >{videoClient.clientname}</h3>
+                                {/* <video height={400} width={400} controls loading="lazy" className="py-4 brand-story">
                     <source src={videoClient.src} type={videoClient.type} />
                 </video> */}
-                <iframe className='py-4 client-testi-video' height={225} width={400} src={videoClient.src} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                <iframe className='py-4 client-testi-video' height={225} width={400} src={videoClient.src} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-               <h4 className='text-black'> <span className='font-bold leading-normal'>Book Title:</span> {videoClient.BookTitle}</h4>
-               <h4 className='text-black'><span className='font-bold leading-normal '>Consultant:</span> {videoClient.Consultant}</h4>
-               <h4 className='text-black'><span className='font-bold leading-normal '>Project Manager: </span>{videoClient.ProjectManager}</h4>
-            </div>
-            </Link>
-        ))} 
+                                <h4 className='text-black'> <span className='font-bold leading-normal'>Book Title:</span> {videoClient.BookTitle}</h4>
+                                <h4 className='text-black'><span className='font-bold leading-normal '>Consultant:</span> {videoClient.Consultant}</h4>
+                                <h4 className='text-black'><span className='font-bold leading-normal '>Project Manager: </span>{videoClient.ProjectManager}</h4>
+                            </div>
+                        </Link>
+                    ))}
 
 
 
-        
+
+                </div>
+            </section>
+
+
         </div>
-        </section>
-
-      
-    </div>
 
 
 
 
 
-  )
+    )
 }
 
 export default BrandTesti

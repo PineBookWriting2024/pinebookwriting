@@ -9,22 +9,86 @@ import ContentfulImage from '../components/ui/ContentfulImage'
 import { client } from '../../lib/contentful/client'
 import { useRouter } from 'next/router'
 import BrandFooter from '../components/BrandFooter';
+import DateComponent from '../components/ui/DateComponent';
 
 const Post = ({ post, recentPosts }) => {
   const router = useRouter()
 
+
   return (
     <>
       <Head>
+
+        <title>{post?.fields?.metaTitle || post?.fields?.title}</title>
+        <meta
+          name="description"
+          content={post?.fields?.metaDescription || post?.fields?.excerpt || 'Read this blog post'}
+        />
+        {post?.fields?.canonicalUrl && (
+          <link rel="canonical" href={post.fields.canonicalUrl} key="canonical" />
+        )}
         <link rel="shortcut icon" href="/images/fav.png" />
-        <meta name="robots" content="noindex, nofollow" />
+        {/* <meta name="robots" content="noindex, nofollow" /> */}
+        {post?.fields?.blogSchema && (
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify(
+                typeof post.fields.blogSchema === "string"
+                  ? JSON.parse(post.fields.blogSchema) // parse only if it's a string
+                  : post.fields.blogSchema // if already object, just use it
+              ),
+            }}
+          />
+        )}
+
+        {post?.fields?.faqSchema && (
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify(
+                typeof post.fields.faqSchema === "string"
+                  ? JSON.parse(post.fields.faqSchema)
+                  : post.fields.faqSchema
+              ),
+            }}
+          />
+        )}
+
       </Head>
       <BrandNavbar />
-      <BrandPrimaryHeader
-        subtitle="Enhance Your Book's Readability With"
-        title="Blogs"
-        desc="Are you in search of expert book formatting services to get your manuscript formatted well? If so, then we're here to help. At Pine Book Publishing, we offer professional book formatting services to blow life into your book. Our expert team of book formatters will work together with you to give your book a professional and polished look. Get a free quote now!"
-      />
+
+      {/* Header Banner */}
+      <section
+        className="relative bg-cover bg-center bg-no-repeat py-32"
+        style={{
+          backgroundColor: `#2e3845`,
+        }}
+      >
+        <div className="container max-w-screen-xl mx-auto">
+          <div className="row">
+            <div className="col-12 text-center px-5">
+              <h1 className="text-2xl md:text-4xl font-bold text-white font-poppins drop-shadow-lg pt-20">
+                {post?.fields?.title}
+              </h1>
+              {post?.fields?.date && (
+                <p className="text-sm text-white mb-3 pt-3">
+                  {new Date(post.fields.date).toLocaleDateString('en-US', {
+                    year: 'numeric',
+                    month: 'long',
+                    day: 'numeric',
+                  })}
+                </p>
+              )}
+              {post?.fields?.author?.fields?.name && (
+                <span className="ml-2 text-white font-bold text-xl"> By {post.fields.author.fields.name}</span>
+              )}
+            </div>
+          </div>
+        </div>
+      </section>
+
+
       <section className='overflow-hidden'>
         <div className='max-w-screen-xl mx-auto px-4 my-20 relative py-22 flex flex-col lg:flex-row'>
           {/* Main Post Column */}
@@ -55,11 +119,10 @@ const Post = ({ post, recentPosts }) => {
                             height={recentPost.fields.coverImage.fields.file.details.image.height}
                             className='w-24 h-16 object-cover mr-4 rounded-lg'
                           />
-                          <h2 className='font-bold'>
+                          <h4 className='font-bold'>
                             {recentPost.fields.title}
-                          </h2>
+                          </h4>
                         </div>
-                        <p className='mt-3'>{recentPost.fields.excerpt}</p>
                       </a>
                     </li>
                   ))
@@ -80,15 +143,13 @@ const Post = ({ post, recentPosts }) => {
 export const getStaticProps = async ({ params }) => {
   const { slug } = params
 
-  // Fetch current post
   const postResponse = await client.getEntries({
-    content_type: 'post',
+    content_type: 'blog',
     'fields.slug': slug
   })
 
-  // Fetch recent posts
   const recentPostsResponse = await client.getEntries({
-    content_type: 'post',
+    content_type: 'blog',
     select: 'fields.title,fields.slug,fields.coverImage,fields.excerpt',
     limit: 5,
     order: '-sys.createdAt'
@@ -107,13 +168,13 @@ export const getStaticProps = async ({ params }) => {
     props: {
       post: postResponse?.items?.[0],
       recentPosts: recentPostsResponse.items,
-      revalidate: 60
-    }
+    },
+    revalidate: 60
   }
 }
 
 export const getStaticPaths = async () => {
-  const response = await client.getEntries({ content_type: 'post' })
+  const response = await client.getEntries({ content_type: 'blog' })
   const paths = response.items.map(item => ({
     params: { slug: item.fields.slug }
   }))

@@ -196,7 +196,7 @@ const videoClient = [
     },
     {
         id: 22,
-        src: "https://www.youtube.com/embed/jBQ1vIbK2zQ?si=D7v7QuKO3WHW87Ta",
+        src: "https://www.youtube.com/embed/jBQ1vIbK2zQ?si=DdvEu-V0Q_rG_FgS",
         type: "video/mp4",
         BookTitle: "Das Trevas Para Luz",
         Consultant: "Steve Hayes",
@@ -254,20 +254,9 @@ const BrandTesti = () => {
                             </div>
                         </Link>
                     ))}
-
-
-
-
                 </div>
             </section>
-
-
         </div>
-
-
-
-
-
     )
 }
 

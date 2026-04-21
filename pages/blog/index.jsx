@@ -5,11 +5,11 @@ import BrandPrimaryHeader from '../components/BrandPrimaryHeader'
 import BrandNavbar from '../components/BrandNavbar'
 import NewBrandFooter from '../components/NewBrandFooter';
 
-const Posts = ({ posts }) => {
+const Posts = ({ posts = [] }) => {
   return (
     <>
       <Head>
-        <title>Blogs | Pine Book Publishing</title>
+        <title>Blogs | Pine Book Writing</title>
         <meta
           name="description"
           content="Everything about Pine Book Publishing—your partner in crafting, editing, and publishing your story. Experience seamless service from manuscript to bookshelf."
@@ -19,17 +19,22 @@ const Posts = ({ posts }) => {
       </Head>
       <BrandNavbar />
       <BrandPrimaryHeader
-        subtitle="Enhance Your Book's Readability With"
-        title="Blogs"
-        desc="Are you in search of expert book formatting services to get your manuscript formatted well? If so, then we're here to help. At Pine Book Publishing, we offer professional book formatting services to blow life into your book. Our expert team of book formatters will work together with you to give your book a professional and polished look. Get a free quote now!"
+        photo_banner={"/brand-img/banner-img.webp"}
+        subtitle=""
+        title="Our Blog - Helpful Writing Tips, Guides & Ideas"
+        desc="Explore Pine Book Writing's blog page and find honest writing advice, writing tips, how well-known authors are thriving, and the latest writing trends written by industry experts. This section is for every writer, whether you're a content writer, business writer, or aspiring book writer. There's something here for everyone."
       />
       <section className='overflow-hidden'>
         <div className='max-w-screen-xl mx-auto px-4 my-20 relative py-22'>
-          <ul className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 sm:gap-10'>
-            {posts.map((post, i) => (
-              <PostCard key={post.fields.slug} post={post} />
-            ))}
-          </ul>
+          {posts.length > 0 ? (
+            <ul className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 sm:gap-10'>
+              {posts.map((post) => (
+                <PostCard key={post?.sys?.id || post?.fields?.slug} post={post} />
+              ))}
+            </ul>
+          ) : (
+            <p className='text-center text-gray-600'>No blog posts available right now.</p>
+          )}
         </div>
       </section>
 
@@ -39,12 +44,31 @@ const Posts = ({ posts }) => {
   )
 }
 
-export const getStaticProps = async () => {
-  const response = await client.getEntries({ content_type: 'post' })
 
-  return {
-    props: {
-      posts: response.items,
+export const getStaticProps = async () => {
+  try {
+    const response = await client.getEntries({ content_type: 'blog' })
+    const posts = [...(response?.items || [])]
+      .filter((item) => item?.fields?.slug && item?.fields?.title)
+      .sort((a, b) => {
+        const aDate = new Date(a?.fields?.date || a?.sys?.createdAt || 0).getTime()
+        const bDate = new Date(b?.fields?.date || b?.sys?.createdAt || 0).getTime()
+        return bDate - aDate
+      })
+
+    return {
+      props: {
+        posts,
+      },
+      revalidate: 60
+    }
+  } catch (error) {
+    console.error('Failed to fetch blog posts:', error)
+
+    return {
+      props: {
+        posts: [],
+      },
       revalidate: 60
     }
   }

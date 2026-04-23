@@ -11,8 +11,22 @@ import { useRouter } from 'next/router'
 import BrandFooter from '../components/BrandFooter';
 import DateComponent from '../components/ui/DateComponent';
 
+const safeParseSchema = (schemaValue) => {
+  if (!schemaValue) return null
+  if (typeof schemaValue !== 'string') return schemaValue
+
+  try {
+    return JSON.parse(schemaValue)
+  } catch (error) {
+    console.error('Invalid JSON-LD schema in blog entry:', error)
+    return null
+  }
+}
+
 const Post = ({ post, recentPosts }) => {
   const router = useRouter()
+  const blogSchema = safeParseSchema(post?.fields?.blogSchema)
+  const faqSchema = safeParseSchema(post?.fields?.faqSchema)
 
 
   return (
@@ -29,28 +43,20 @@ const Post = ({ post, recentPosts }) => {
         )}
         <link rel="shortcut icon" href="/images/fav.png" />
         {/* <meta name="robots" content="noindex, nofollow" /> */}
-        {post?.fields?.blogSchema && (
+        {blogSchema && (
           <script
             type="application/ld+json"
             dangerouslySetInnerHTML={{
-              __html: JSON.stringify(
-                typeof post.fields.blogSchema === "string"
-                  ? JSON.parse(post.fields.blogSchema) // parse only if it's a string
-                  : post.fields.blogSchema // if already object, just use it
-              ),
+              __html: JSON.stringify(blogSchema),
             }}
           />
         )}
 
-        {post?.fields?.faqSchema && (
+        {faqSchema && (
           <script
             type="application/ld+json"
             dangerouslySetInnerHTML={{
-              __html: JSON.stringify(
-                typeof post.fields.faqSchema === "string"
-                  ? JSON.parse(post.fields.faqSchema)
-                  : post.fields.faqSchema
-              ),
+              __html: JSON.stringify(faqSchema),
             }}
           />
         )}
@@ -112,13 +118,17 @@ const Post = ({ post, recentPosts }) => {
                     <li key={recentPost.sys.id} className='mb-4 '>
                       <a href={`/blog/${recentPost.fields.slug}`} className='text-black hover:underline'>
                         <div className='flex items-center'>
-                          <ContentfulImage
-                            alt={`Cover Image for ${recentPost.fields.title}`}
-                            src={recentPost.fields.coverImage.fields.file.url}
-                            width={recentPost.fields.coverImage.fields.file.details.image.width}
-                            height={recentPost.fields.coverImage.fields.file.details.image.height}
-                            className='w-24 h-16 object-cover mr-4 rounded-lg'
-                          />
+                          {recentPost?.fields?.coverImage?.fields?.file?.url ? (
+                            <ContentfulImage
+                              alt={`Cover Image for ${recentPost.fields.title}`}
+                              src={recentPost.fields.coverImage.fields.file.url}
+                              width={recentPost?.fields?.coverImage?.fields?.file?.details?.image?.width || 96}
+                              height={recentPost?.fields?.coverImage?.fields?.file?.details?.image?.height || 64}
+                              className='w-24 h-16 object-cover mr-4 rounded-lg'
+                            />
+                          ) : (
+                            <div className='w-24 h-16 mr-4 rounded-lg bg-gray-200 shrink-0' />
+                          )}
                           <h4 className='font-bold'>
                             {recentPost.fields.title}
                           </h4>
@@ -143,33 +153,49 @@ const Post = ({ post, recentPosts }) => {
 export const getStaticProps = async ({ params }) => {
   const { slug } = params
 
-  const postResponse = await client.getEntries({
-    content_type: 'blog',
-    'fields.slug': slug
-  })
+  try {
+    const postResponse = await client.getEntries({
+      content_type: 'blog',
+      'fields.slug': slug
+    })
 
-  const recentPostsResponse = await client.getEntries({
-    content_type: 'blog',
-    select: 'fields.title,fields.slug,fields.coverImage,fields.excerpt',
-    limit: 5,
-    order: '-sys.createdAt'
-  })
+    const recentPostsResponse = await client.getEntries({
+      content_type: 'blog',
+      select: 'fields.title,fields.slug,fields.coverImage,fields.excerpt',
+      limit: 6,
+      order: '-sys.createdAt'
+    })
 
-  if (!postResponse?.items?.length) {
+    if (!postResponse?.items?.length) {
+      return {
+        redirect: {
+          destination: '/blog',
+          permanent: false
+        }
+      }
+    }
+
+    const recentPosts = (recentPostsResponse?.items || [])
+      .filter((item) => item?.fields?.slug && item?.fields?.title)
+      .filter((item) => item?.fields?.slug !== slug)
+      .slice(0, 5)
+
+    return {
+      props: {
+        post: postResponse?.items?.[0],
+        recentPosts,
+      },
+      revalidate: 60
+    }
+  } catch (error) {
+    console.error(`Failed to fetch blog static props for slug "${slug}":`, error)
     return {
       redirect: {
         destination: '/blog',
         permanent: false
-      }
+      },
+      revalidate: 60
     }
-  }
-
-  return {
-    props: {
-      post: postResponse?.items?.[0],
-      recentPosts: recentPostsResponse.items,
-    },
-    revalidate: 60
   }
 }
 

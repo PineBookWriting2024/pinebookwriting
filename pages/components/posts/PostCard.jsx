@@ -7,17 +7,24 @@ import { client } from '../../../lib/contentful/client'
 
 export default function PostCard ({ post }) {
   const { title, slug, excerpt, coverImage, author, date } = post.fields
+  const coverUrl = coverImage?.fields?.file?.url
+  const coverWidth = coverImage?.fields?.file?.details?.image?.width || 1200
+  const coverHeight = coverImage?.fields?.file?.details?.image?.height || 630
 
   return (
     <li className='rounded-md overflow-hidden shadow-md'>
       <Link href={`/blog/${slug}`} aria-label={title}>
         <div className='mb-2'>
-          <ContentfulImage
-            alt={`Cover Image for ${title}`}
-            src={coverImage.fields.file.url}
-            width={coverImage.fields.file.details.image.width}
-            height={coverImage.fields.file.details.image.height}
-          />
+          {coverUrl ? (
+            <ContentfulImage
+              alt={`Cover Image for ${title}`}
+              src={coverUrl}
+              width={coverWidth}
+              height={coverHeight}
+            />
+          ) : (
+            <div className='w-full aspect-[16/9] bg-gray-200' />
+          )}
         </div>
         <div className='p-4'>
          

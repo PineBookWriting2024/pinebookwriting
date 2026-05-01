@@ -570,21 +570,21 @@ export default function Bookcover() {
           <div className="max-w-3xl p-8 mx-auto mt-6 font-sans bg-white border border-gray-200 shadow-sm rounded-2xl">
 
 
-          <div className="mb-6">
-            <label className="block text-base font-semibold tracking-tight text-gray-900">
-              Do you have any additional comments or special instructions for your book cover design? <span className="text-red-600">*</span>
-            </label>
-            <p className="mt-2 text-sm leading-relaxed text-gray-500">
-              Please share any specific details, preferences, or requirements you'd like our designers to know.
-            </p>
-          </div>
+            <div className="mb-6">
+              <label className="block text-base font-semibold tracking-tight text-gray-900">
+                Do you have any additional comments or special instructions for your book cover design? <span className="text-red-600">*</span>
+              </label>
+              <p className="mt-2 text-sm leading-relaxed text-gray-500">
+                Please share any specific details, preferences, or requirements you'd like our designers to know.
+              </p>
+            </div>
 
 
             <div className="relative mt-4">
               <textarea
                 rows="3"
                 name="colorScheme"
-                placeholder="blue, white, black, etc."
+                placeholder="write comments..."
                 className='border border-gray-300 focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 text-sm text-gray-900 bg-gray-50 rounded-lg'
                 required
               ></textarea>

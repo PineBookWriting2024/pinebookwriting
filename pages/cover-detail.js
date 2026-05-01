@@ -386,309 +386,308 @@ export default function Bookcover() {
             </div>
 
           </div>
-        <h1 className="max-w-3xl px-6 py-4 mx-auto mt-8 text-2xl font-bold text-center text-gray-900 uppercase font-poppins bg-none">
+          <h1 className="max-w-3xl px-6 py-4 mx-auto mt-8 text-2xl font-bold text-center text-gray-900 uppercase font-poppins bg-none">
 
-          Design Questions
-        </h1>
+            Design Questions
+          </h1>
 
-        <h4 className="max-w-3xl px-6 py-4 mx-auto text-2xl text-center text-gray-900 uppercase font-poppins bg-none">
+          <h4 className="max-w-3xl px-6 py-4 mx-auto text-2xl text-center text-gray-900 uppercase font-poppins bg-none">
 
-          Please answer these questions for better design understanding:
-        </h4>
+            Please answer these questions for better design understanding:
+          </h4>
 
-        <div className="max-w-3xl p-6 mx-auto mt-4 bg-white border border-gray-200 rounded-lg shadow-sm">
-
-
-          <label className="block mb-2 text-base font-normal text-gray-900">
-            1. Your Cover Ideas
-            <span className="text-red-600">*</span>
-          </label>
-
-          <p className="mb-6 text-sm text-gray-500">
-            Select a cover style that best matches your vision for the book. You can also share reference images if needed.
-          </p>
+          <div className="max-w-3xl p-6 mx-auto mt-4 bg-white border border-gray-200 rounded-lg shadow-sm">
 
 
-          <div className="grid grid-cols-2 gap-4 sm:grid-cols-3">
-
-
-            <label className="cursor-pointer group">
-              <input type="radio" name="coverIdea" value="cover1" className="sr-only peer" required />
-
-              <div className="flex items-center justify-center w-full text-lg font-semibold transition-colors border border-gray-300 rounded-lg h-60 group-hover:border-blue-500 peer-checked:border-blue-600 peer-checked:shadow-md">
-                <img
-                  src="/brand-img/cover-detail/1.png"
-                  className="w-full h-60 rounded-lg object-contain bg-gray-50"
-                  alt=""
-                />
-
-              </div>
+            <label className="block mb-2 text-base font-normal text-gray-900">
+              1. Your Cover Ideas
+              <span className="text-red-600">*</span>
             </label>
 
-            <label className="cursor-pointer group">
-              <input type="radio" name="coverIdea" value="cover2" className="sr-only peer" required />
-
-              <div className="flex items-center justify-center w-full text-lg font-semibold transition-colors border border-gray-300 rounded-lg h-60 group-hover:border-blue-500 peer-checked:border-blue-600 peer-checked:shadow-md">
-                <img
-                  src="/brand-img/cover-detail/2.jpg"
-                  className="w-full h-60 rounded-lg object-contain bg-gray-50"
-                  alt=""
-                />
-
-              </div>
-            </label>
-            <label className="cursor-pointer group">
-              <input type="radio" name="coverIdea" value="cover3" className="sr-only peer" required />
-
-              <div className="flex items-center justify-center w-full text-lg font-semibold transition-colors border border-gray-300 rounded-lg h-60 group-hover:border-blue-500 peer-checked:border-blue-600 peer-checked:shadow-md">
-                <img
-                  src="/brand-img/cover-detail/3.png"
-                  className="w-full h-60 rounded-lg object-contain bg-gray-50"
-                  alt=""
-                />
-
-              </div>
-            </label>
-            <label className="cursor-pointer group">
-              <input type="radio" name="coverIdea" value="cover4" className="sr-only peer" required />
-
-              <div className="flex items-center justify-center w-full text-lg font-semibold transition-colors border border-gray-300 rounded-lg h-60 group-hover:border-blue-500 peer-checked:border-blue-600 peer-checked:shadow-md">
-                <img
-                  src="/brand-img/cover-detail/4.jpg"
-                  className="w-full h-60 rounded-lg object-contain bg-gray-50"
-                  alt=""
-                />
-
-              </div>
-            </label>
-            <label className="cursor-pointer group">
-              <input type="radio" name="coverIdea" value="cover5" className="sr-only peer" required />
-
-              <div className="flex items-center justify-center w-full text-lg font-semibold transition-colors border border-gray-300 rounded-lg h-60 group-hover:border-blue-500 peer-checked:border-blue-600 peer-checked:shadow-md">
-                <img
-                  src="/brand-img/cover-detail/5.jpg"
-                  className="w-full h-60 rounded-lg object-contain bg-gray-50"
-                  alt=""
-                />
-
-              </div>
-            </label>
-
-            <label className="cursor-pointer group">
-              <input type="radio" name="coverIdea" value="cover6" className="sr-only peer" required />
-
-              <div className="flex items-center justify-center w-full text-lg font-semibold transition-colors border border-gray-300 rounded-lg h-60 group-hover:border-blue-500 peer-checked:border-blue-600 peer-checked:shadow-md">
-                <img
-                  src="/brand-img/cover-detail/6.png"
-                  className="w-full h-60 rounded-lg object-contain bg-gray-50"
-                  alt=""
-                />
-
-              </div>
-            </label>
-
-            <label className="cursor-pointer group">
-              <input type="radio" name="coverIdea" value="cover7" className="sr-only peer" required />
-
-              <div className="flex items-center justify-center w-full text-lg font-semibold transition-colors border border-gray-300 rounded-lg h-60 group-hover:border-blue-500 peer-checked:border-blue-600 peer-checked:shadow-md">
-                <img
-                  src="/brand-img/cover-detail/7.png"
-                  className="w-full h-60 rounded-lg object-contain bg-gray-50"
-                  alt=""
-                />
-
-              </div>
-            </label>
-
-            <label className="cursor-pointer group">
-              <input type="radio" name="coverIdea" value="cover8" className="sr-only peer" required />
-
-              <div className="flex items-center justify-center w-full text-lg font-semibold transition-colors border border-gray-300 rounded-lg h-60 group-hover:border-blue-500 peer-checked:border-blue-600 peer-checked:shadow-md">
-                <img
-                  src="/brand-img/cover-detail/8.png"
-                  className="w-full h-60 rounded-lg object-contain bg-gray-50"
-                  alt=""
-                />
-
-              </div>
-            </label>
-
-            <label className="cursor-pointer group">
-              <input type="radio" name="coverIdea" value="cover9" className="sr-only peer" required />
-
-              <div className="flex items-center justify-center w-full text-lg font-semibold transition-colors border border-gray-300 rounded-lg h-60 group-hover:border-blue-500 peer-checked:border-blue-600 peer-checked:shadow-md">
-                <img
-                  src="/brand-img/cover-detail/9.png"
-                  className="w-full h-60 rounded-lg object-contain bg-gray-50"
-                  alt=""
-                />
-
-              </div>
-            </label>
-
-            <label className="cursor-pointer group">
-              <input type="radio" name="coverIdea" value="cover10" className="sr-only peer" required />
-
-              <div className="flex items-center justify-center w-full text-lg font-semibold transition-colors border border-gray-300 rounded-lg h-60 group-hover:border-blue-500 peer-checked:border-blue-600 peer-checked:shadow-md">
-                <img
-                  src="/brand-img/cover-detail/10.png"
-                  className="w-full h-60 rounded-lg object-contain bg-gray-50"
-                  alt=""
-                />
-
-              </div>
-            </label>
-
-          </div>
-        </div>
-
-        <div className="max-w-3xl p-6 mx-auto mt-6 font-sans bg-white border border-gray-200 rounded-lg shadow-sm">
-
-          <label className="block mb-2 text-base font-semibold text-gray-900">
-            2. Cover Images <span className="text-red-600">*</span>
-          </label>
-
-          <p className="mb-6 text-sm text-gray-500">
-            Upload any existing artwork or photos that should be included in the design.
-          </p>
-
-
-          <div className="relative">
-            <input
-              type="file"
-              accept="image/*"
-              multiple
-              name="coverImages"
-              className='w-full text-sm text-gray-500 transition-colors duration-200 rounded-lg cursor-pointer file:mr-4 file:py-2 file:px-4 file:rounded-lg file:border-0 file:text-sm file:font-semibold file:bg-blue-600 file:text-white hover:file:bg-blue-700'
-            />
-          </div>
-
-
-        </div>
-
-
-        <div className="max-w-3xl p-8 mx-auto mt-6 font-sans bg-white border border-gray-200 shadow-sm rounded-2xl">
-
-
-          <div className="mb-6">
-            <label className="block text-base font-semibold tracking-tight text-gray-900">
-              1. Do you have a Color Scheme in mind? <span className="text-red-600">*</span>
-            </label>
-            <p className="mt-2 text-sm leading-relaxed text-gray-500">
-              If yes, what major colors do you want us to use and what not? Please mention below:
+            <p className="mb-6 text-sm text-gray-500">
+              Select a cover style that best matches your vision for the book. You can also share reference images if needed.
             </p>
-          </div>
 
 
-          <div className="relative mt-4">
-            <textarea
-              rows="3"
-              name="colorScheme"
-              placeholder="blue, white, black, etc."
-              className='border border-gray-300 focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 text-sm text-gray-900 bg-gray-50 rounded-lg'
-              required
-            ></textarea>
+            <div className="grid grid-cols-2 gap-4 sm:grid-cols-3">
 
 
-          </div>
+              <label className="cursor-pointer group">
+                <input type="radio" name="coverIdea" value="cover1" className="sr-only peer" required />
 
-        </div>
+                <div className="flex items-center justify-center w-full text-lg font-semibold transition-colors border border-gray-300 rounded-lg h-60 group-hover:border-blue-500 peer-checked:border-blue-600 peer-checked:shadow-md">
+                  <img
+                    src="/brand-img/cover-detail/1.png"
+                    className="w-full h-60 rounded-lg object-contain bg-gray-50"
+                    alt=""
+                  />
 
-        <div className="max-w-3xl p-8 mx-auto mt-6 font-sans bg-white border border-gray-200 shadow-sm rounded-2xl">
-
-          <div className="mb-6">
-            <label className="block text-base font-semibold tracking-tight text-gray-900">
-              What overall style you would want to have in the book cover? <span className="text-red-600">*</span>
-            </label>
-            <p className="mt-1 text-sm text-gray-500">
-              Please select the visual direction for your artwork.
-            </p>
-          </div>
-
-          <div className="space-y-4">
-
-            {[
-              { label: "Drawn", desc: "Hand-crafted illustrations, sketches, or line art.", color: "bg-red-500" },
-              { label: "Painted", desc: "Digital or oil-style brush strokes, rich textures.", color: "bg-orange-500" },
-              { label: "Photographic Quality", desc: "Realistic, high-fidelity, or stock-photo based.", color: "bg-blue-500" },
-              { label: "Artist Discretion", desc: "Let our experts choose the best style for your genre.", color: "bg-purple-500" }
-            ].map((item) => (
-              <label key={item.label} className="flex items-center space-x-4 cursor-pointer group">
-
-                <input
-                  type="radio"
-                  name="coverStyle"
-                  value={item.label}
-                  className="w-5 h-5 text-blue-500 border-gray-300 focus:ring-blue-500 accent-blue-600"
-                  required
-                />
-
-
-                <div className="flex flex-col">
-                  <span className="text-sm font-medium text-gray-800">
-                    <span className="font-bold">{item.label}:</span> {item.desc}
-                  </span>
                 </div>
               </label>
-            ))}
+
+              <label className="cursor-pointer group">
+                <input type="radio" name="coverIdea" value="cover2" className="sr-only peer" required />
+
+                <div className="flex items-center justify-center w-full text-lg font-semibold transition-colors border border-gray-300 rounded-lg h-60 group-hover:border-blue-500 peer-checked:border-blue-600 peer-checked:shadow-md">
+                  <img
+                    src="/brand-img/cover-detail/2.jpg"
+                    className="w-full h-60 rounded-lg object-contain bg-gray-50"
+                    alt=""
+                  />
+
+                </div>
+              </label>
+              <label className="cursor-pointer group">
+                <input type="radio" name="coverIdea" value="cover3" className="sr-only peer" required />
+
+                <div className="flex items-center justify-center w-full text-lg font-semibold transition-colors border border-gray-300 rounded-lg h-60 group-hover:border-blue-500 peer-checked:border-blue-600 peer-checked:shadow-md">
+                  <img
+                    src="/brand-img/cover-detail/3.png"
+                    className="w-full h-60 rounded-lg object-contain bg-gray-50"
+                    alt=""
+                  />
+
+                </div>
+              </label>
+              <label className="cursor-pointer group">
+                <input type="radio" name="coverIdea" value="cover4" className="sr-only peer" required />
+
+                <div className="flex items-center justify-center w-full text-lg font-semibold transition-colors border border-gray-300 rounded-lg h-60 group-hover:border-blue-500 peer-checked:border-blue-600 peer-checked:shadow-md">
+                  <img
+                    src="/brand-img/cover-detail/4.jpg"
+                    className="w-full h-60 rounded-lg object-contain bg-gray-50"
+                    alt=""
+                  />
+
+                </div>
+              </label>
+              <label className="cursor-pointer group">
+                <input type="radio" name="coverIdea" value="cover5" className="sr-only peer" required />
+
+                <div className="flex items-center justify-center w-full text-lg font-semibold transition-colors border border-gray-300 rounded-lg h-60 group-hover:border-blue-500 peer-checked:border-blue-600 peer-checked:shadow-md">
+                  <img
+                    src="/brand-img/cover-detail/5.jpg"
+                    className="w-full h-60 rounded-lg object-contain bg-gray-50"
+                    alt=""
+                  />
+
+                </div>
+              </label>
+
+              <label className="cursor-pointer group">
+                <input type="radio" name="coverIdea" value="cover6" className="sr-only peer" required />
+
+                <div className="flex items-center justify-center w-full text-lg font-semibold transition-colors border border-gray-300 rounded-lg h-60 group-hover:border-blue-500 peer-checked:border-blue-600 peer-checked:shadow-md">
+                  <img
+                    src="/brand-img/cover-detail/6.png"
+                    className="w-full h-60 rounded-lg object-contain bg-gray-50"
+                    alt=""
+                  />
+
+                </div>
+              </label>
+
+              <label className="cursor-pointer group">
+                <input type="radio" name="coverIdea" value="cover7" className="sr-only peer" required />
+
+                <div className="flex items-center justify-center w-full text-lg font-semibold transition-colors border border-gray-300 rounded-lg h-60 group-hover:border-blue-500 peer-checked:border-blue-600 peer-checked:shadow-md">
+                  <img
+                    src="/brand-img/cover-detail/7.png"
+                    className="w-full h-60 rounded-lg object-contain bg-gray-50"
+                    alt=""
+                  />
+
+                </div>
+              </label>
+
+              <label className="cursor-pointer group">
+                <input type="radio" name="coverIdea" value="cover8" className="sr-only peer" required />
+
+                <div className="flex items-center justify-center w-full text-lg font-semibold transition-colors border border-gray-300 rounded-lg h-60 group-hover:border-blue-500 peer-checked:border-blue-600 peer-checked:shadow-md">
+                  <img
+                    src="/brand-img/cover-detail/8.png"
+                    className="w-full h-60 rounded-lg object-contain bg-gray-50"
+                    alt=""
+                  />
+
+                </div>
+              </label>
+
+              <label className="cursor-pointer group">
+                <input type="radio" name="coverIdea" value="cover9" className="sr-only peer" required />
+
+                <div className="flex items-center justify-center w-full text-lg font-semibold transition-colors border border-gray-300 rounded-lg h-60 group-hover:border-blue-500 peer-checked:border-blue-600 peer-checked:shadow-md">
+                  <img
+                    src="/brand-img/cover-detail/9.png"
+                    className="w-full h-60 rounded-lg object-contain bg-gray-50"
+                    alt=""
+                  />
+
+                </div>
+              </label>
+
+              <label className="cursor-pointer group">
+                <input type="radio" name="coverIdea" value="cover10" className="sr-only peer" required />
+
+                <div className="flex items-center justify-center w-full text-lg font-semibold transition-colors border border-gray-300 rounded-lg h-60 group-hover:border-blue-500 peer-checked:border-blue-600 peer-checked:shadow-md">
+                  <img
+                    src="/brand-img/cover-detail/10.png"
+                    className="w-full h-60 rounded-lg object-contain bg-gray-50"
+                    alt=""
+                  />
+
+                </div>
+              </label>
+
+            </div>
+          </div>
+
+          <div className="max-w-3xl p-6 mx-auto mt-6 font-sans bg-white border border-gray-200 rounded-lg shadow-sm">
+
+            <label className="block mb-2 text-base font-semibold text-gray-900">
+              2. Cover Images <span className="text-red-600">*</span>
+            </label>
+
+            <p className="mb-6 text-sm text-gray-500">
+              Upload any existing artwork or photos that should be included in the design.
+            </p>
+
+
+            <div className="relative">
+              <input
+                type="file"
+                accept="image/*"
+                multiple
+                name="coverImages"
+                className='w-full text-sm text-gray-500 transition-colors duration-200 rounded-lg cursor-pointer file:mr-4 file:py-2 file:px-4 file:rounded-lg file:border-0 file:text-sm file:font-semibold file:bg-blue-600 file:text-white hover:file:bg-blue-700'
+              />
+            </div>
+
 
           </div>
 
-          <p className="mt-6 text-[11px] italic text-gray-400">
-            Select one option to proceed with your brief.
-          </p>
-        </div>
 
-        <div className="max-w-3xl p-8 mx-auto mt-6 font-sans bg-white border border-gray-200 shadow-sm rounded-2xl">
+          <div className="max-w-3xl p-8 mx-auto mt-6 font-sans bg-white border border-gray-200 shadow-sm rounded-2xl">
 
 
-          <div className="mb-4">
+          <div className="mb-6">
             <label className="block text-base font-semibold tracking-tight text-gray-900">
-              Your Author Photo <span className="text-red-600">*</span>
+              Do you have any additional comments or special instructions for your book cover design? <span className="text-red-600">*</span>
             </label>
-            <p className="mt-1 text-sm text-gray-500">
-              Please attach a high-resolution photo for the back cover or "About the Author" section.
+            <p className="mt-2 text-sm leading-relaxed text-gray-500">
+              Please share any specific details, preferences, or requirements you'd like our designers to know.
             </p>
           </div>
 
 
-          <div className="relative">
-            <input
-              type="file"
-              accept="image/*"
-              name="authorPhoto"
-              className='w-full text-sm text-gray-500 transition-colors duration-200 rounded-lg cursor-pointer file:mr-4 file:py-2 file:px-4 file:rounded-lg file:border-0 file:text-sm file:font-semibold file:bg-blue-600 file:text-white hover:file:bg-blue-700'
-              required
-            />
-          </div>
-        </div>
-
-        <div className="max-w-3xl px-4 mx-auto mt-8 mb-10">
-          <div className="flex items-center space-x-4">
+            <div className="relative mt-4">
+              <textarea
+                rows="3"
+                name="colorScheme"
+                placeholder="blue, white, black, etc."
+                className='border border-gray-300 focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 text-sm text-gray-900 bg-gray-50 rounded-lg'
+                required
+              ></textarea>
 
 
-            <button
-              type="submit"
-              disabled={isSubmitting}
-              className="px-6 py-3 rounded-lg text-[#e8e9eb] font-medium bg-[#335c36] hover:bg-[#e2e8f0] transition-colors"
-            >
-              {isSubmitting ? 'Submitting...' : 'Submit'}
-            </button>
-
-
-            <button
-              type="reset"
-              disabled={isSubmitting}
-              className="px-6 py-3 rounded-lg text-[#2a3b52] font-medium bg-[#f0f3f7] hover:bg-[#e2e8f0] transition-colors"
-            >
-              Clear form
-            </button>
+            </div>
 
           </div>
-          {submitMessage ? (
-            <p className="mt-4 text-sm text-gray-700">{submitMessage}</p>
-          ) : null}
-        </div>
+
+          <div className="max-w-3xl p-8 mx-auto mt-6 font-sans bg-white border border-gray-200 shadow-sm rounded-2xl">
+
+            <div className="mb-6">
+              <label className="block text-base font-semibold tracking-tight text-gray-900">
+                What overall style you would want to have in the book cover? <span className="text-red-600">*</span>
+              </label>
+              <p className="mt-1 text-sm text-gray-500">
+                Please select the visual direction for your artwork.
+              </p>
+            </div>
+
+            <div className="space-y-4">
+
+              {[
+                { label: "Illustrated", desc: "Hand-crafted illustrations, sketches, or line art.", color: "bg-red-500" },
+                { label: "Photographic Quality", desc: "Realistic, high-fidelity, or stock-photo based.", color: "bg-blue-500" },
+                { label: "Artist Discretion", desc: "Let our experts choose the best style for your genre.", color: "bg-purple-500" }
+              ].map((item) => (
+                <label key={item.label} className="flex items-center space-x-4 cursor-pointer group">
+
+                  <input
+                    type="radio"
+                    name="coverStyle"
+                    value={item.label}
+                    className="w-5 h-5 text-blue-500 border-gray-300 focus:ring-blue-500 accent-blue-600"
+                    required
+                  />
+
+
+                  <div className="flex flex-col">
+                    <span className="text-sm font-medium text-gray-800">
+                      <span className="font-bold">{item.label}:</span> {item.desc}
+                    </span>
+                  </div>
+                </label>
+              ))}
+
+            </div>
+
+            <p className="mt-6 text-[11px] italic text-gray-400">
+              Select one option to proceed with your brief.
+            </p>
+          </div>
+
+          <div className="max-w-3xl p-8 mx-auto mt-6 font-sans bg-white border border-gray-200 shadow-sm rounded-2xl">
+
+
+            <div className="mb-4">
+              <label className="block text-base font-semibold tracking-tight text-gray-900">
+                Your Author Photo <span className="text-red-600">*</span>
+              </label>
+              <p className="mt-1 text-sm text-gray-500">
+                Please attach a high-resolution photo for the back cover or "About the Author" section.
+              </p>
+            </div>
+
+
+            <div className="relative">
+              <input
+                type="file"
+                accept="image/*"
+                name="authorPhoto"
+                className='w-full text-sm text-gray-500 transition-colors duration-200 rounded-lg cursor-pointer file:mr-4 file:py-2 file:px-4 file:rounded-lg file:border-0 file:text-sm file:font-semibold file:bg-blue-600 file:text-white hover:file:bg-blue-700'
+                required
+              />
+            </div>
+          </div>
+
+          <div className="max-w-3xl px-4 mx-auto mt-8 mb-10">
+            <div className="flex items-center space-x-4">
+
+
+              <button
+                type="submit"
+                disabled={isSubmitting}
+                className="px-6 py-3 rounded-lg text-[#e8e9eb] font-medium bg-[#335c36] hover:bg-[#e2e8f0] transition-colors"
+              >
+                {isSubmitting ? 'Submitting...' : 'Submit'}
+              </button>
+
+
+              <button
+                type="reset"
+                disabled={isSubmitting}
+                className="px-6 py-3 rounded-lg text-[#2a3b52] font-medium bg-[#f0f3f7] hover:bg-[#e2e8f0] transition-colors"
+              >
+                Clear form
+              </button>
+
+            </div>
+            {submitMessage ? (
+              <p className="mt-4 text-sm text-gray-700">{submitMessage}</p>
+            ) : null}
+          </div>
         </form>
 
         {showSuccessModal ? (

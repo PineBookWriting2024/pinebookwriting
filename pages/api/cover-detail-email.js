@@ -1,5 +1,4 @@
 import nodemailer from "nodemailer";
-import path from "path";
 
 const escapeHtml = (unsafe = "") =>
   String(unsafe)
@@ -52,22 +51,19 @@ export default async function handler(req, res) {
     });
 
     const coverIdeaMap = {
-      cover1: "/brand-img/cover-detail/1.png",
-      cover2: "/brand-img/cover-detail/2.jpg",
-      cover3: "/brand-img/cover-detail/3.png",
-      cover4: "/brand-img/cover-detail/4.jpg",
-      cover5: "/brand-img/cover-detail/5.jpg",
-      cover6: "/brand-img/cover-detail/6.png",
-      cover7: "/brand-img/cover-detail/7.png",
-      cover8: "/brand-img/cover-detail/8.png",
-      cover9: "/brand-img/cover-detail/9.png",
-      cover10: "/brand-img/cover-detail/10.png",
+      cover1: "https://www.pinebookwriting.com/brand-img/cover-detail/1.png",
+      cover2: "https://www.pinebookwriting.com/brand-img/cover-detail/2.jpg",
+      cover3: "https://www.pinebookwriting.com/brand-img/cover-detail/3.png",
+      cover4: "https://www.pinebookwriting.com/brand-img/cover-detail/4.jpg",
+      cover5: "https://www.pinebookwriting.com/brand-img/cover-detail/5.jpg",
+      cover6: "https://www.pinebookwriting.com/brand-img/cover-detail/6.png",
+      cover7: "https://www.pinebookwriting.com/brand-img/cover-detail/7.png",
+      cover8: "https://www.pinebookwriting.com/brand-img/cover-detail/8.png",
+      cover9: "https://www.pinebookwriting.com/brand-img/cover-detail/9.png",
+      cover10: "https://www.pinebookwriting.com/brand-img/cover-detail/10.png",
     };
 
-    const selectedCoverIdeaPath = coverIdeaMap[coverIdea] || "";
-    const selectedCoverIdeaAbsPath = selectedCoverIdeaPath
-      ? path.join(process.cwd(), "public", selectedCoverIdeaPath.replace(/^\//, ""))
-      : "";
+    const selectedCoverIdeaUrl = coverIdeaMap[coverIdea] || "";
 
     const coverImageNames = Array.isArray(coverImages)
       ? coverImages.map((f) => f?.filename).filter(Boolean)
@@ -161,8 +157,8 @@ export default async function handler(req, res) {
               <tr style="background:#f8f9fa;">
                 <td style="padding:12px 8px; font-weight:600; border-bottom:1px solid #e9ecef;">Selected Cover Idea Preview</td>
                 <td style="padding:12px 8px; border-bottom:1px solid #e9ecef;">
-                  ${selectedCoverIdeaPath
-                    ? `<img src="cid:selected-cover-idea" alt="Selected Cover Idea" style="max-width:220px; border-radius:6px; border:1px solid #ddd;" />`
+                  ${selectedCoverIdeaUrl
+                    ? `<img src="${escapeHtml(selectedCoverIdeaUrl)}" alt="Selected Cover Idea" style="max-width:220px; border-radius:6px; border:1px solid #ddd;" />`
                     : "N/A"}
                 </td>
               </tr>
@@ -191,14 +187,6 @@ export default async function handler(req, res) {
     `;
 
     const attachments = [];
-
-    if (selectedCoverIdeaAbsPath) {
-      attachments.push({
-        filename: `selected-${coverIdea || "cover-idea"}`,
-        path: selectedCoverIdeaAbsPath,
-        cid: "selected-cover-idea",
-      });
-    }
 
     if (Array.isArray(coverImages)) {
       coverImages.forEach((file, idx) => {

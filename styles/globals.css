@@ -4215,3 +4215,8 @@ h2 {
 .prose p {
   padding-bottom: 14px;
 }
+
+.prose ul,
+.prose ol {
+  margin-left: 23px
+}

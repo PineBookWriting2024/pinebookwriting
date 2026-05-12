@@ -152,12 +152,35 @@ const Post = ({ post, recentPosts }) => {
 
 export const getStaticProps = async ({ params }) => {
   const { slug } = params
+  const normalizedRequestedSlug = decodeURIComponent(String(slug || ''))
+    .trim()
+    .toLowerCase()
 
   try {
-    const postResponse = await client.getEntries({
+    let postResponse = await client.getEntries({
       content_type: 'blog',
       'fields.slug': slug
     })
+
+    // Fallback for case/encoding mismatch in newly uploaded entries.
+    if (!postResponse?.items?.length) {
+      const allPostsResponse = await client.getEntries({
+        content_type: 'blog',
+        limit: 1000
+      })
+
+      const matchedPost = (allPostsResponse?.items || []).find((item) => {
+        const itemSlug = String(item?.fields?.slug || '').trim().toLowerCase()
+        return itemSlug === normalizedRequestedSlug
+      })
+
+      if (matchedPost?.sys?.id) {
+        postResponse = await client.getEntries({
+          content_type: 'blog',
+          'sys.id': matchedPost.sys.id,
+        })
+      }
+    }
 
     const recentPostsResponse = await client.getEntries({
       content_type: 'blog',

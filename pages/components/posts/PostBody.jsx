@@ -1,8 +1,15 @@
 import RichText from '../RichText'
-import { client } from '../../../lib/contentful/client'
 
 const PostBody = ({ post }) => {
-  const { content } = post.fields
+  const content = post?.fields?.content
+
+  if (!content) {
+    return (
+      <div className='mx-auto prose'>
+        <p>Content is not available for this post yet.</p>
+      </div>
+    )
+  }
 
   return (
     <div className='mx-auto prose'>
@@ -11,14 +18,4 @@ const PostBody = ({ post }) => {
   )
 }
 
-export const getStaticProps = async () => {
-  const response = await client.getEntries({ content_type: 'blog' })
-
-  return {
-    props: {
-      post: response?.items?.[0],
-      revalidate: 60
-    }
-  }
-}
 export default PostBody

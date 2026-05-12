@@ -200,14 +200,24 @@ export const getStaticProps = async ({ params }) => {
 }
 
 export const getStaticPaths = async () => {
-  const response = await client.getEntries({ content_type: 'blog' })
-  const paths = response.items.map(item => ({
-    params: { slug: item.fields.slug }
-  }))
+  try {
+    const response = await client.getEntries({ content_type: 'blog' })
+    const paths = (response?.items || [])
+      .filter((item) => item?.fields?.slug)
+      .map((item) => ({
+        params: { slug: item.fields.slug }
+      }))
 
-  return {
-    paths,
-    fallback: true
+    return {
+      paths,
+      fallback: 'blocking'
+    }
+  } catch (error) {
+    console.error('Failed to fetch blog static paths:', error)
+    return {
+      paths: [],
+      fallback: 'blocking'
+    }
   }
 }
 

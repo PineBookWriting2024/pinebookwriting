@@ -23,6 +23,9 @@ const safeParseSchema = (schemaValue) => {
   }
 }
 
+const normalizeCanonicalUrl = (url = '') =>
+  String(url).replace(/^https:\/\/www\.pinebookwriting\.com/i, 'https://pinebookwriting.com')
+
 const Post = ({ post, recentPosts }) => {
   const router = useRouter()
   const blogSchema = safeParseSchema(post?.fields?.blogSchema)
@@ -39,7 +42,7 @@ const Post = ({ post, recentPosts }) => {
           content={post?.fields?.metaDescription || post?.fields?.excerpt || 'Read this blog post'}
         />
         {post?.fields?.canonicalUrl && (
-          <link rel="canonical" href={post.fields.canonicalUrl} key="canonical" />
+          <link rel="canonical" href={normalizeCanonicalUrl(post.fields.canonicalUrl)} key="canonical" />
         )}
         <link rel="shortcut icon" href="/images/fav.png" />
         {/* <meta name="robots" content="noindex, nofollow" /> */}

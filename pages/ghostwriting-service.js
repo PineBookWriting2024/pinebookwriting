@@ -32,7 +32,7 @@ export default function GhostwritingServices() {
     <>
       <Head>
         <title>Affordable Ghostwriting Services - Pine Book Writing</title>
-        <link rel="canonical" href="https://www.pinebookwriting.com/ghostwriting-service" />
+        <link rel="canonical" href="https://pinebookwriting.com/ghostwriting-service" />
         <meta
           name="description"
           content="Want freedom from long sitting for outlining, writing, editing, and all the necessary tasks to write a perfect book? Hire our expert ghostwriting services."
@@ -134,7 +134,7 @@ export default function GhostwritingServices() {
               Hire Affordable Ghostwriting Services Start Your First or Next Book
             </h2>
             <p className="py-4 text-base md:text-lg">
-              Let our professional book writers pen your ideas and help you create a book that could become a best-seller! Explore our flexible ghostwriting  <a className="text-green-300" href="https://www.pinebookwriting.com/packages">packages</a>  </p>
+              Let our professional book writers pen your ideas and help you create a book that could become a best-seller! Explore our flexible ghostwriting  <a className="text-green-300" href="https://pinebookwriting.com/packages">packages</a>  </p>
 
             <div className="flex flex-col items-center justify-center gap-4 cta-btns sm:flex-row">
               <CTAButton />
@@ -449,7 +449,7 @@ export default function GhostwritingServices() {
               <p className="mt-2 text-white">
                 At{" "}
                 <a
-                  href="https://www.pinebookwriting.com"
+                  href="https://pinebookwriting.com"
                   style={{
                     fontWeight: "bold", textDecoration: "underline"
                   }}

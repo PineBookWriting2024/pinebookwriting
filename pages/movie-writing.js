@@ -44,7 +44,7 @@ export default function BookEditing() {
         <>
             <Head>
                 <title>Best Movie Writing Services | Script Writers for Hire</title>
-                <link rel="canonical" href="https://www.pinebookwriting.com/movie-writing" />
+                <link rel="canonical" href="https://pinebookwriting.com/movie-writing" />
                 <meta
                     name="description"
                     content="Get expert movie writing services and create a perfect movie script. Hire skilled writers for your short or full length movie script at Pine Book Writing.
@@ -225,7 +225,7 @@ export default function BookEditing() {
                 </h2>
 
                 <p className="mb-12 text-xl font-medium text-center text-gray-700 md:text-2xl">
-                    Our <a href="https://www.pinebookwriting.com/movie-script-writing-services" className="text-black underline hover:underline">movie  writing services</a> at Pine Book Writing cover everything from concept to final script. We handle story development, dialogues, and screenplay formatting to make your film script truly production-ready.
+                    Our <a href="https://pinebookwriting.com/movie-script-writing-services" className="text-black underline hover:underline">movie  writing services</a> at Pine Book Writing cover everything from concept to final script. We handle story development, dialogues, and screenplay formatting to make your film script truly production-ready.
                 </p>
 
                 <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3">

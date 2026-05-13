@@ -18,7 +18,7 @@ export default function Contact() {
                 <meta
                     name="description" content="Our team of experts are ready to assist you with all your queries. Contact us now and get all your questions answered in no time. "
                 />
-                <link rel="canonical" href="https://www.pinebookwriting.com/contact-us" />
+                <link rel="canonical" href="https://pinebookwriting.com/contact-us" />
 
                 <link rel="shortcut icon" href="/images/fav.webp" />
             </Head>

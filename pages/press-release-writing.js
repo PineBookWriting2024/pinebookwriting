@@ -45,7 +45,7 @@ export default function PressRelease() {
             <Head>
                 <title>Expert Press Release Writing Services | Pine Book Writing
                 </title>
-                <link rel="canonical" href="https://www.pinebookwriting.com/press-release-writing" />
+                <link rel="canonical" href="https://pinebookwriting.com/press-release-writing" />
 
                 <meta
                     name="description"
@@ -223,7 +223,7 @@ export default function PressRelease() {
                 </h2>
 
                 <p className="mb-12 text-xl font-medium text-center text-gray-700 md:text-2xl">
-                    Hire military PR writers for your next press release at <a class="text-black underline" href="https://www.pinebookwriting.com">Pine Book Writing</a>. We work together with our clients, combining research, creativity and storytelling expertise to write an impactful press release article.
+                    Hire military PR writers for your next press release at <a class="text-black underline" href="https://pinebookwriting.com">Pine Book Writing</a>. We work together with our clients, combining research, creativity and storytelling expertise to write an impactful press release article.
                 </p>
 
                 <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3">

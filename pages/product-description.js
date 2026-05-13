@@ -43,7 +43,7 @@ export default function ProductDescription() {
         <>
             <Head>
                 <title>Product Description | Pine Book Writing</title>
-                <link rel="canonical" href="https://www.pinebookwriting.com/product-description" />
+                <link rel="canonical" href="https://pinebookwriting.com/product-description" />
 
                 <meta
                     name="description"

@@ -44,7 +44,7 @@ export default function WebCopywriting() {
         <>
             <Head>
                 <title>Expert web copywriting services | Pine Book Writing</title>
-                <link rel="canonical" href="https://www.pinebookwriting.com/web-copywriting" />
+                <link rel="canonical" href="https://pinebookwriting.com/web-copywriting" />
 
                 <meta
                     name="description"
@@ -75,7 +75,7 @@ export default function WebCopywriting() {
                         <p className="pt-3 text-xl text-left font-poppins">
                             We have a team of competent web copywriters, each of whom has extensive experience in creating{" "}
                             <a
-                                href="https://www.pinebookwriting.com/seo-content"
+                                href="https://pinebookwriting.com/seo-content"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="text-black underline hover:text-black"
@@ -269,7 +269,7 @@ export default function WebCopywriting() {
                         </div>
                         <div className="basis-1/3 md:ml-20">
                             <h2 className="mt-10 text-2xl font-bold text-white uppercase font-poppins md:text-4xl md:mt-0" data-aos="zoom-in-left" data-aos-delay="100">Why Choose Our Web Copywriting Agency in USA?</h2>
-                            <p className="mt-2 text-white">At <a href="https://www.pinebookwriting.com" target="_blank" class="font-bold" rel="noopener noreferrer">Pine Book Writing</a>, our web copywriting services go beyond just writing words. We study your audience, industry, and competitors, and write something that sets you apart. We mix creativity and strategy in our writing to create something that helps you connect with your audience the right way.</p>
+                            <p className="mt-2 text-white">At <a href="https://pinebookwriting.com" target="_blank" class="font-bold" rel="noopener noreferrer">Pine Book Writing</a>, our web copywriting services go beyond just writing words. We study your audience, industry, and competitors, and write something that sets you apart. We mix creativity and strategy in our writing to create something that helps you connect with your audience the right way.</p>
                             <div className="flex flex-col gap-2 mt-6 md:flex-row md:gap-10">
                                 <ul>
                                     <li className="flex items-center gap-3 mb-2 text-sm font-poppins"><Image src={"/images/check-mark.png"} className="icon" width={13} height={13} />Skilled Copywriters </li>

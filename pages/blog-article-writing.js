@@ -44,7 +44,7 @@ export default function BlogWriting() {
         <>
             <Head>
                 <title>Blog Writing Services | SEO Blog Writers for Hire</title>
-                <link rel="canonical" href="https://www.pinebookwriting.com/blog-article-writing" />
+                <link rel="canonical" href="https://pinebookwriting.com/blog-article-writing" />
                 <meta
                     name="description"
                     content="Get professional blog writing services that drive traffic and leads. Our SEO blog writing service delivers keyword-optimized, engaging blog articles that fit your industry and audience.

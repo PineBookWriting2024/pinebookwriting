@@ -40,7 +40,7 @@ export default function Services() {
         },
         {
             question: "Can I choose only one service instead of a full package?",
-            answer: <>Although we offer <a href="https://www.pinebookwriting.com/packages" className="underline">affordable book writing packages</a>. But yes, you can choose. Some clients only need writing, others editing, some just refinement. You don’t have to buy everything. We keep services flexible. Not forced bundles.</>
+            answer: <>Although we offer <a href="https://pinebookwriting.com/packages" className="underline">affordable book writing packages</a>. But yes, you can choose. Some clients only need writing, others editing, some just refinement. You don’t have to buy everything. We keep services flexible. Not forced bundles.</>
         },
         {
             question: "How do revisions work across different writing services?",
@@ -52,7 +52,7 @@ export default function Services() {
         <>
             <Head>
                 <title>Exceptional Book writing services | Pine Book Writing</title>
-                <link rel="canonical" href="https://www.pinebookwriting.com/services" />
+                <link rel="canonical" href="https://pinebookwriting.com/services" />
 
                 <meta
                     name="description"
@@ -81,7 +81,7 @@ export default function Services() {
                         <p className="pt-3 text-xl text-left font-poppins">
                             Writing a book often starts with excitement. But then confusion hits. And that’s normal. Our book writing services are designed to support writers and authors at every stage of the journey. We work with fiction and non-fiction, short or long projects, and first-time or experienced authors. Here, you’ll collaborate with experienced project managers and experienced book writers who listen carefully before executing your vision. </p>
 
-                        <p className="pt-3 text-xl text-left font-poppins">We don't just help with writing. But with Planning. Drafting. <a href="https://www.pinebookwriting.com/book-editing" className="underline">Editing</a> and Revisions. We work without rushing or forcing ideas. Every manuscript is shaped around your unique voice and handled with care. We believe in simple processes, honest guidance and writing that genuinely connects with readers.
+                        <p className="pt-3 text-xl text-left font-poppins">We don't just help with writing. But with Planning. Drafting. <a href="https://pinebookwriting.com/book-editing" className="underline">Editing</a> and Revisions. We work without rushing or forcing ideas. Every manuscript is shaped around your unique voice and handled with care. We believe in simple processes, honest guidance and writing that genuinely connects with readers.
                         </p>
                     </div>
                     <div className="flex justify-center text-center basis-1/2 abt-pic md:justify-center">

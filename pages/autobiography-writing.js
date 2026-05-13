@@ -45,7 +45,7 @@ export default function BookEditing() {
         <>
             <Head>
                 <title>Best Autobiography Writing Services | Pine Book Writing</title>
-                <link rel="canonical" href="https://www.pinebookwriting.com/autobiography-writing" />
+                <link rel="canonical" href="https://pinebookwriting.com/autobiography-writing" />
                 <meta
                     name="description"
                     content="Looking for the best autobiography writing services? We have highly competent ghostwriters at Pine Book Writing to help you write your personal life story"
@@ -111,7 +111,7 @@ export default function BookEditing() {
                             You Don’t Have To Write It Alone - Let’s Help!
                         </h2>
                         <p className="py-4 text-base md:text-lg">
-                            Writing feels overwhelming? That’s normal. Just hire the best autobiography writing services at <a href="https://www.pinebookwriting.com" className="text-[#98caa9] underline">Pine Book Writing</a>. Our autobiography writers guide you through the process and handle all the hard parts. Let’s get connected!
+                            Writing feels overwhelming? That’s normal. Just hire the best autobiography writing services at <a href="https://pinebookwriting.com" className="text-[#98caa9] underline">Pine Book Writing</a>. Our autobiography writers guide you through the process and handle all the hard parts. Let’s get connected!
                         </p>
 
                         <div className="flex flex-col items-center justify-center gap-4 cta-btns sm:flex-row">

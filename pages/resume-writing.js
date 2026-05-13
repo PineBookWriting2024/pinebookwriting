@@ -44,7 +44,7 @@ export default function ResumeWriting() {
         <>
             <Head>
                 <title>Expert Resume Writing Services | Pine Book Writing </title>
-                <link rel="canonical" href="https://www.pinebookwriting.com/resume-writing" />
+                <link rel="canonical" href="https://pinebookwriting.com/resume-writing" />
 
 
                 <meta
@@ -86,7 +86,7 @@ export default function ResumeWriting() {
                             <p className="mb-4 leading-relaxed">
                                 Your resume creates the very first impression on employers. It’s an influential tool that can open your doors to many career opportunities. Resume writing requires dedicated expertise and attention to detail. That’s where our professional resume writing services come in. At{" "}
                                 <a
-                                    href="https://www.pinebookwriting.com/"
+                                    href="https://pinebookwriting.com/"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="font-semibold underline transition underline-offset-4 hover:text-gray-900"

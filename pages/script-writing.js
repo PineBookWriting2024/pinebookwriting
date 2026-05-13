@@ -45,7 +45,7 @@ export default function ScriptWriting() {
         <>
             <Head>
                 <title>Expert Script Writing Services With Pine Book Writing</title>
-                <link rel="canonical" href="https://www.pinebookwriting.com/script-writing" />
+                <link rel="canonical" href="https://pinebookwriting.com/script-writing" />
 
                 <meta
                     name="description"

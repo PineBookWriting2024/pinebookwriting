@@ -46,7 +46,7 @@ export default function Wikipedia() {
         <>
             <Head>
                 <title>Wikipedia writing services | Wikipedia writers for hire</title>
-                <link rel="canonical" href="https://www.pinebookwriting.com/wikipedia-writing" />
+                <link rel="canonical" href="https://pinebookwriting.com/wikipedia-writing" />
 
                 <meta
                     name="description"

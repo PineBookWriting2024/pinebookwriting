@@ -300,7 +300,7 @@ export default function Home({ isOpen, onClose }) {
         <>
             <Head>
                 <title>Expert Book Publishing Services | Pine Book Writing</title>
-                <link rel="canonical" href="https://www.pinebookwriting.com/book-services" />
+                <link rel="canonical" href="https://pinebookwriting.com/book-services" />
                 <meta
                     name="description"
                     content="Discover the art of book publishing with our Expert Book Publishing Services. Our expert team guides you through the process, from editing to distribution."

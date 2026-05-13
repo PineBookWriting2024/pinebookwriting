@@ -27,7 +27,7 @@ export default function Home() {
                 <meta name="description" content="Looking for a trusted book writing company? Pine Book Writing offers expert writers for different genres that include fiction, non-fiction, memoir, and others."
                 />
                 <link rel="shortcut icon" href="/images/fav.webp" />
-                <link rel="canonical" href="https://www.pinebookwriting.com/" />
+                <link rel="canonical" href="https://pinebookwriting.com/" />
                 <meta name="google-site-verification" content="ze4i-BWHkh7f9iANJUJfoWbXrFcmFC9r2fCsoz1KZA8" />
                 {/* <meta name="google-site-verification" content="ze4i-BWHkh7f9iANJUJfoWbXrFcmFC9r2fCsoz1KZA8" /> */}
                 {/* Google tag Manager Script */}

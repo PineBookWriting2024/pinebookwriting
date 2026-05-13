@@ -77,7 +77,7 @@ export default function Bundle({ isOpen, onClose, service }) {
         <>
             <Head>
                 <title>Bundles the Company | Pine Book Writing</title>
-                <link rel="canonical" href="https://www.pinebookwriting.com/packages" />
+                <link rel="canonical" href="https://pinebookwriting.com/packages" />
 
                 <meta
                     name="description"

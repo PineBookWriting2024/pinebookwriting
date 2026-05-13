@@ -44,7 +44,7 @@ export default function BookEditing() {
         <>
             <Head>
                 <title>Professional Novel Writing Services | Pine Book Writing</title>
-                <link rel="canonical" href="https://www.pinebookwriting.com/novel-writing" />
+                <link rel="canonical" href="https://pinebookwriting.com/novel-writing" />
                 <meta
                     name="description"
                     content="Looking for novel writing services? Our team of experts helps authors shape ideas, write strong stories, and complete novels ready for publishing."
@@ -197,7 +197,7 @@ export default function BookEditing() {
                             <div className="flex-col px-6 py-10 text-left brand-process-content">
                                 <span className="num-span"><b>06</b></span>
                                 <h2 className="text-2xl text-white font-poppins pro-h">Editing & Delivery</h2>
-                                <p className="">We polish the manuscript, fix clarity issues, and prepare a clean file. Ready for the next steps. Confidential novel <a href="https://www.pinebookwriting.com/ghostwriting-service" class="text-blue-400 hover:underline" target="_blank" rel="noopener noreferrer">ghostwriting </a>is always respected.</p>
+                                <p className="">We polish the manuscript, fix clarity issues, and prepare a clean file. Ready for the next steps. Confidential novel <a href="https://pinebookwriting.com/ghostwriting-service" class="text-blue-400 hover:underline" target="_blank" rel="noopener noreferrer">ghostwriting </a>is always respected.</p>
                             </div>
                         </div>
 

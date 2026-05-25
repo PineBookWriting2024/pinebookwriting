@@ -18,6 +18,7 @@ import BrandSister from "./components/BrandSister";
 import BrandBannerVideo from "./components/BrandBannerVideo";
 import NewBrandFooter from "./components/NewBrandFooter";
 import HomeBookSlider from "./components/HomeBookSlider";
+import BrandCaseStudies from "./components/BrandCaseStudies";
 
 export default function Home() {
     return (
@@ -81,6 +82,7 @@ Let’s Handle It!
             {/* <BrandProcess /> */}
             <BrandChooseUs />
             <BrandTestimonial />
+            <BrandCaseStudies />
             <BrandLogo />
 
 

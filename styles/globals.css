@@ -4292,15 +4292,23 @@ h2 {
 }
 
 .cs-hero-image {
-  flex: 1;
+  flex: 1.1;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .cs-hero-image img {
   max-width: 100%;
+  width: 520px;
   height: auto;
-  border-radius: 8px;
+  filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.35));
+}
+
+@media (max-width: 991px) {
+  .cs-hero-image img {
+    width: 380px;
+  }
 }
 
 /* Primary Button */
@@ -4601,6 +4609,32 @@ h2 {
   color: #d1d5db;
 }
 
+.cs-solution-bullets {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.cs-solution-bullets li {
+  position: relative;
+  padding-left: 18px;
+  font-size: 14px;
+  line-height: 1.65;
+  color: #d1d5db;
+  margin-bottom: 6px;
+}
+
+.cs-solution-bullets li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 9px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--cs-accent);
+}
+
 .cs-center-btn {
   text-align: center;
   margin-top: 40px;
@@ -4639,6 +4673,25 @@ h2 {
 
 .cs-result-text {
   flex: 1;
+}
+
+.cs-result-block {
+  margin-top: 22px;
+  padding-top: 22px;
+  border-top: 1px solid #e3e3df;
+}
+
+.cs-result-block:first-of-type {
+  margin-top: 8px;
+  padding-top: 0;
+  border-top: none;
+}
+
+.cs-result-subhead {
+  font-size: 18px;
+  font-weight: 700;
+  color: #0c1830;
+  margin: 0 0 12px;
 }
 
 .cs-check-list {
@@ -4715,4 +4768,19 @@ h2 {
   font-size: 18px;
   font-weight: 700;
   color: #111827;
+}
+
+.cs-review-link {
+  display: inline-block;
+  margin-top: 12px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #1AA49F;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.cs-review-link:hover {
+  color: #AC9974;
+  text-decoration: underline;
 }

@@ -126,7 +126,15 @@ export default function CaseStudyDetail({ data }) {
                             <div className="cs-solution-card" key={idx}>
                                 <div className="cs-solution-icon">{item.icon}</div>
                                 <h3 className="cs-solution-title">{item.title}</h3>
-                                <p className="cs-solution-desc">{item.description}</p>
+                                {item.bullets ? (
+                                    <ul className="cs-solution-bullets">
+                                        {item.bullets.map((b, bIdx) => (
+                                            <li key={bIdx}>{b}</li>
+                                        ))}
+                                    </ul>
+                                ) : (
+                                    <p className="cs-solution-desc">{item.description}</p>
+                                )}
                             </div>
                         ))}
                     </div>
@@ -154,24 +162,45 @@ export default function CaseStudyDetail({ data }) {
                             </span>
                             {data.result.heading.afterAccent}
                         </h2>
-                        {data.result.paragraphs.map((p, idx) => (
-                            <p
-                                key={idx}
-                                className="cs-paragraph"
-                                dangerouslySetInnerHTML={{ __html: p }}
-                            />
-                        ))}
-                        <p className="cs-paragraph">
-                            <strong>The project delivered:</strong>
-                        </p>
-                        <ul className="cs-check-list">
-                            {data.result.bullets.map((b, idx) => (
-                                <li key={idx}>
-                                    <FontAwesomeIcon icon={faCheck} width={14} />
-                                    <span>{b}</span>
-                                </li>
-                            ))}
-                        </ul>
+                        {data.result.sections ? (
+                            data.result.sections.map((sec, sIdx) => (
+                                <div className="cs-result-block" key={sIdx}>
+                                    <h3 className="cs-result-subhead">{sec.title}</h3>
+                                    {sec.paragraphs.map((p, pIdx) => (
+                                        <p
+                                            key={pIdx}
+                                            className="cs-paragraph"
+                                            dangerouslySetInnerHTML={{ __html: p }}
+                                        />
+                                    ))}
+                                </div>
+                            ))
+                        ) : (
+                            <>
+                                {data.result.paragraphs.map((p, idx) => (
+                                    <p
+                                        key={idx}
+                                        className="cs-paragraph"
+                                        dangerouslySetInnerHTML={{ __html: p }}
+                                    />
+                                ))}
+                                {data.result.bullets && (
+                                    <>
+                                        <p className="cs-paragraph">
+                                            <strong>The project delivered:</strong>
+                                        </p>
+                                        <ul className="cs-check-list">
+                                            {data.result.bullets.map((b, idx) => (
+                                                <li key={idx}>
+                                                    <FontAwesomeIcon icon={faCheck} width={14} />
+                                                    <span>{b}</span>
+                                                </li>
+                                            ))}
+                                        </ul>
+                                    </>
+                                )}
+                            </>
+                        )}
                         <button onClick={handleOpenChat} className="cs-btn-primary">
                             <span>Publish Your Book With Us</span>
                             <FontAwesomeIcon icon={faArrowRight} width={14} />
@@ -194,6 +223,16 @@ export default function CaseStudyDetail({ data }) {
                                 {data.review.firstName}{" "}
                                 <span className="cs-h2-accent">{data.review.lastName}</span>
                             </p>
+                            {data.review.link && (
+                                <a
+                                    href={data.review.link}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="cs-review-link"
+                                >
+                                    {data.review.linkLabel || "Read full review"} →
+                                </a>
+                            )}
                         </div>
                     </div>
                 </div>

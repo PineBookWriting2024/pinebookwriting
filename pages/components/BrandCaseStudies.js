@@ -4,30 +4,18 @@ import Link from "next/link";
 export default function BrandCaseStudies() {
     const caseStudies = [
         {
-            bgImage:
-                "https://digitalscribblers.com/wp-content/uploads/2026/03/Divid-L-Mock-01-1.webp",
-            bookImage:
-                "https://digitalscribblers.com/wp-content/uploads/2026/03/Divid-L-Mock-01-1.webp",
-            title: "A Soldier’s Memoir",
+            bgImage: "/brand-img/Avis Deskey  Header Image 01.jpg",
+            bookImage: "/brand-img/Avis Deskey Book Mockup 01.png",
+            title: "Stellar Leadership",
             description:
-                "A firsthand war memoir, professionally edited, designed, and published.",
-            link: "/case-studies/david-l-ramey-memoir",
-        },
-        {
-            bgImage:
-                "https://digitalscribblers.com/wp-content/uploads/2026/03/Book-mockup-front-4.webp",
-            bookImage:
-                "https://digitalscribblers.com/wp-content/uploads/2026/03/Book-mockup-front-4.webp",
-            title: "From Transylvania To Pennsylvania",
-            description:
-                "A raw manuscript turned into a fully published novel in just 40 business days.",
-            link: "/case-studies/earl-scott-fiction-book",
+                "A professionally published business leadership book supported by strategic branding and audience engagement campaigns.",
+            link: "/case-studies/avis-dickey-leadership",
         },
     ];
 
     return (
-        <section className="brand-case-studies-section overflow-hidden">
-            <div className="relative max-w-screen-xl px-4 mx-auto my-10 md:my-20 py-10">
+        <section className="overflow-hidden brand-case-studies-section">
+            <div className="relative max-w-screen-xl px-4 py-10 mx-auto my-10 md:my-20">
                 <div className="mb-4 text-center">
                     <h2 className="text-4xl font-bold text-black font-poppins">
                         Case <span className="case-studies-accent">Studies</span>

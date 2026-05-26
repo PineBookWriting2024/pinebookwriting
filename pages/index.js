@@ -83,7 +83,7 @@ Let’s Handle It!
             {/* <BrandProcess /> */}
             <BrandChooseUs />
             <BrandTestimonial />
-            <BrandCaseStudies />
+            {/* <BrandCaseStudies /> */}
             <BrandLogo />
 
 

@@ -57,7 +57,7 @@ export default function BookEditing() {
             <Head>
                 <title>Hire the Best Military Fiction Writing Services
                 </title>
-                <link rel="canonical" href="https://www.pinebookwriting.com/military-fiction-writing" />
+                <link rel="canonical" href="https://pinebookwriting.com/military-fiction-writing" />
                 <meta
                     name="description"
                     content="Write your war stories using professional military fiction writing services by Pine Book Writing. Infuse emotions into your coming military fiction book."
@@ -79,7 +79,7 @@ export default function BookEditing() {
                     <div className="basis-1/2 abt-txt m1-h p1 aos-init aos-animate" data-aos="fade-right" data-aos-duration="1000">
                         <h2 className="text-3xl font-bold uppercase font-poppins md:text-4xl">Professional Military Fiction Writing Services</h2>
 
-                        <h3 className="mt-3 text-2xl font-semibold uppercase font-poppins md:text-2xl">
+                        <h3 className="mt-3 text-xl font-semibold uppercase font-poppins md:text-xl">
                             For Realistic War Stories
                         </h3>
 
@@ -234,7 +234,7 @@ export default function BookEditing() {
                 </h2>
 
                 <p className="mb-12 text-xl font-medium text-center text-gray-700 md:text-2xl">
-                    Hire military fiction writers for your next military fiction book at <a className="text-black underline " href="https://www.pinebookwriting.com">Pine Book Writing</a>. We work together with our clients, combining research, creativity and storytelling expertise to write an impactful story.
+                    Hire military fiction writers for your next military fiction book at <a className="text-black underline " href="https://pinebookwriting.com">Pine Book Writing</a>. We work together with our clients, combining research, creativity and storytelling expertise to write an impactful story.
                 </p>
 
                 <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3">

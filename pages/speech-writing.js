@@ -44,7 +44,7 @@ export default function BookEditing() {
         <>
             <Head>
                 <title>Bespoke Speech Writing Services | Pine Book Writing</title>
-                <link rel="canonical" href="https://www.pinebookwriting.com/speech-writing" />
+                <link rel="canonical" href="https://pinebookwriting.com/speech-writing" />
                 <meta
                     name="description"
                     content="Looking for trusted speech writing services? Join us to craft a clear, powerful speech for your personal or professional purpose. Write with confidentiality."
@@ -65,7 +65,7 @@ export default function BookEditing() {
                     <div className="basis-1/2 abt-txt m1-h p1 aos-init aos-animate" data-aos="fade-right" data-aos-duration="1000">
                         <h2 className="text-3xl font-bold uppercase font-poppins md:text-4xl">Professional Speech Writing Services That Sound Like You</h2>
 
-                        <h3 className="mt-3 text-2xl font-semibold uppercase font-poppins md:text-2xl">
+                        <h3 className="mt-3 text-xl font-semibold uppercase font-poppins md:text-xl">
                             Real Words. Real Impact.
                         </h3>
 

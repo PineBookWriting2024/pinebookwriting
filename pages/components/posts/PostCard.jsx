@@ -2,33 +2,62 @@ import Link from 'next/link'
 // import Avatar from '../ui/Avatar'
 import ContentfulImage from '../ui/ContentfulImage'
 import DateComponent from '../ui/DateComponent'
+import { client } from '../../../lib/contentful/client'
 
 
 export default function PostCard ({ post }) {
   if (!post?.fields) return null
   const { title, slug, excerpt, coverImage, author, date } = post.fields
+  const coverUrl = coverImage?.fields?.file?.url
+  const coverWidth = coverImage?.fields?.file?.details?.image?.width || 1200
+  const coverHeight = coverImage?.fields?.file?.details?.image?.height || 630
 
   return (
     <li className='rounded-md overflow-hidden shadow-md'>
       <Link href={`/blog/${slug}`} aria-label={title}>
         <div className='mb-2'>
-          <ContentfulImage
-            alt={`Cover Image for ${title}`}
-            src={coverImage.fields.file.url}
-            width={coverImage.fields.file.details.image.width}
-            height={coverImage.fields.file.details.image.height}
-          />
+          {coverUrl ? (
+            <ContentfulImage
+              alt={`Cover Image for ${title}`}
+              src={coverUrl}
+              width={coverWidth}
+              height={coverHeight}
+            />
+          ) : (
+            <div className='w-full aspect-[16/9] bg-gray-200' />
+          )}
         </div>
         <div className='p-4'>
-          <div className='text-sm mb-4 text-gray-400'>
+         
+          <h3 className='text-md mb-1 leading-snug font-bold'>{title}</h3>
+          <div className='text-sm mb-1 mt-3 text-gray-400'>
             <DateComponent dateString={date} />
           </div>
-          <h3 className='text-xl mb-1 leading-snug font-bold'>{title}</h3>
-          <p className='text-base mb-4'>{excerpt}</p>
+          <p className="text-base mb-4 line-clamp-3">{excerpt}</p>
+          <Link href={`/blog/${slug}`} aria-label={title} className='text-green-700'>Read More</Link>
           {/* <Avatar name={author.fields.name} picture={author.fields.picture} /> */}
         </div>
       </Link>
     </li>
   )
 }
+
+export const getStaticProps = async () => {
+  try {
+    const response = await client.getEntries({ content_type: 'blog' })
+    return {
+      props: {
+        post: response?.items?.[0] || null,
+      },
+      revalidate: 60,
+    }
+  } catch (error) {
+    console.error('PostCard getStaticProps failed:', error)
+    return {
+      props: { post: null },
+      revalidate: 60,
+    }
+  }
+}
+
 

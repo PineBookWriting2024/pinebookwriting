@@ -45,7 +45,7 @@ export default function BookEditing() {
         <>
             <Head>
                 <title>professional songwriting services | Pine Book Writing</title>
-                <link rel="canonical" href="https://www.pinebookwriting.com/song-writing" />
+                <link rel="canonical" href="https://pinebookwriting.com/song-writing" />
                 <meta
                     name="description"
                     content="Want to write a song? Our custom songwriting services at Pine Book Writing offer custom lyrics, melody-ready writing, and experienced songwriters for hire."
@@ -66,7 +66,7 @@ export default function BookEditing() {
                     <div className="basis-1/2 abt-txt m1-h p1 aos-init aos-animate" data-aos="fade-right" data-aos-duration="1000">
                         <h2 className="text-3xl font-bold uppercase font-poppins md:text-4xl">Offering Professional Songwriting Services</h2>
 
-                        <h3 className="mt-3 text-2xl font-semibold uppercase font-poppins md:text-2xl">
+                        <h3 className="mt-3 text-xl font-semibold uppercase font-poppins md:text-xl">
                             With Real Emotions, Real Words
                         </h3>
 

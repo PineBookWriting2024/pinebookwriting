@@ -43,7 +43,7 @@ export default function BookEditing() {
         <>
             <Head>
                 <title>Creative Rhymes Writing Services | Pine Book Writing</title>
-                <link rel="canonical" href="https://www.pinebookwriting.com/rhymes-writing" />
+                <link rel="canonical" href="https://pinebookwriting.com/rhymes-writing" />
                 <meta
                     name="description"
                     content="Check out the best rhymes writing services here. Hire the best rhyme writing experts and get your rhyme project done with professional care and attention."
@@ -64,12 +64,12 @@ export default function BookEditing() {
                     <div className="basis-1/2 abt-txt m1-h p1 aos-init aos-animate" data-aos="fade-right" data-aos-duration="1000">
                         <h2 className="text-3xl font-bold uppercase font-poppins md:text-4xl">Best Rhyme Writers for Hire | Pine Book Writing</h2>
 
-                        <h3 className="mt-3 text-2xl font-semibold uppercase font-poppins md:text-2xl">
+                        <h3 className="mt-3 text-xl font-semibold uppercase font-poppins md:text-xl">
                             Words That Sound Right
                         </h3>
 
                         <p className="pt-3 text-xl text-left font-poppins">
-                            Good rhymes are not about matching words at the end. They're about sound, timing and how the line feels when read out loud. It requires a dedicated skillset and our rhyme writers at <a href="https://www.pinebookwriting.com" className="hover:underline">Pine Book Writing</a> have expertise in it. They firmly know how to let words flow with a creative touch.</p>
+                            Good rhymes are not about matching words at the end. They're about sound, timing and how the line feels when read out loud. It requires a dedicated skillset and our rhyme writers at <a href="https://pinebookwriting.com" className="hover:underline">Pine Book Writing</a> have expertise in it. They firmly know how to let words flow with a creative touch.</p>
 
                         <p className="pt-3 text-xl text-left font-poppins">Whether you want to write rhymes for children's books, learning books, songs, or short poems, we take our time to understand and work on them accordingly.</p>
                         <p className="pt-3 text-xl text-left font-poppins">Looking to hire a rhyme writer who doesn't overdo it? This is your destination. Our team of professional rhyme writers keeps things clean yet readable. No heavy words. No awkward beats.</p>

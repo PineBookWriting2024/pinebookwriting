@@ -61,7 +61,7 @@ export default function SocialMediaCopywriting() {
         <>
             <Head>
                 <title>Social Media Copywriting Services | Pine Book Writing</title>
-                <link rel="canonical" href="https://www.pinebookwriting.com/social-media-copywriting" />
+                <link rel="canonical" href="https://pinebookwriting.com/social-media-copywriting" />
 
                 <meta
                     name="description"
@@ -91,7 +91,7 @@ export default function SocialMediaCopywriting() {
                         <p className="pt-3 text-xl text-left font-poppins">
                             Social media is a crucial tool for your business if you want to get and retain your potential audience. To create a post, you need to hire social media copywriting services to help you build an emotional and friendly connection with your audience and accomplish your marketing objectives. That’s where{" "}
                             <a
-                                href="https://www.pinebookwriting.com/"
+                                href="https://pinebookwriting.com/"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="underline transition underline-offset-2 hover:text-blue-700"

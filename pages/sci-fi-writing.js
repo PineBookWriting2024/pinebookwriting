@@ -44,7 +44,7 @@ export default function BookEditing() {
         <>
             <Head>
                 <title>Sci-Fi Writing | Pine Book Writing</title>
-                <link rel="canonical" href="https://www.pinebookwriting.com/sci-fi-writing" />
+                <link rel="canonical" href="https://pinebookwriting.com/sci-fi-writing" />
                 <meta
                     name="description"
                     content="Looking for the best sci-fi writing services? Pine Book Writing helps you create science fiction stories, novels, and futuristic fiction with expert support."
@@ -65,14 +65,14 @@ export default function BookEditing() {
                     <div className="basis-1/2 abt-txt m1-h p1 aos-init aos-animate" data-aos="fade-right" data-aos-duration="1000">
                         <h2 className="text-3xl font-bold uppercase font-poppins md:text-4xl">Professional Sci-Fi Writing Services That Go Further</h2>
 
-                        <h3 className="mt-3 text-2xl font-semibold uppercase font-poppins md:text-2xl">
+                        <h3 className="mt-3 text-xl font-semibold uppercase font-poppins md:text-xl">
                             Stories Built Beyond Tech
                         </h3>
 
                         <p className="pt-3 text-xl text-left font-poppins">
                             Good sci fi writing is not only about space, robots, or futuristic technology. It’s about people. Choices. Fear of change. Hope too. Our science fiction writing services focus on stories that feel grounded, even when the setting is far ahead of today. </p>
 
-                        <p className="pt-3 text-xl text-left font-poppins">At <a href="https://www.pinebookwriting.com" className=" hover:underline">Pine Book Writing</a>, we work with authors who have half ideas, messy notes, or just a question like “what if?”. Some seek  <a href="" className=" hover:underline">sci-fi story writing</a>, while others need full science fiction novel writing. Both are welcome. Our best science fiction writers take time with sci-fi world building, character-driven science fiction, and clean storytelling. No overloading, no forced science talk. Just a story that makes sense and stays with the reader after the last page.</p>
+                        <p className="pt-3 text-xl text-left font-poppins">At <a href="https://pinebookwriting.com" className=" hover:underline">Pine Book Writing</a>, we work with authors who have half ideas, messy notes, or just a question like “what if?”. Some seek  <a href="" className=" hover:underline">sci-fi story writing</a>, while others need full science fiction novel writing. Both are welcome. Our best science fiction writers take time with sci-fi world building, character-driven science fiction, and clean storytelling. No overloading, no forced science talk. Just a story that makes sense and stays with the reader after the last page.</p>
 
                         <p className="pt-3 text-xl text-left font-poppins">We have an extensive team of writers to provide all-inclusive book writing services to first time and seasoned authors so that they can fulfil their literary dream. Don’t just wait. Contact us right away!</p>
                     </div>

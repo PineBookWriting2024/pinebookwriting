@@ -44,7 +44,7 @@ export default function About() {
         <>
             <Head>
                 <title>About Our Company | Pine Book Writing</title>
-                                <link rel="canonical" href="https://www.pinebookwriting.com/about" />
+                                <link rel="canonical" href="https://pinebookwriting.com/about" />
 
                 <meta
                     name="description"

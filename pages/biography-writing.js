@@ -44,7 +44,7 @@ export default function BookEditing() {
         <>
             <Head>
                 <title>Best Biography Writing Services | Biography Writers for hire</title>
-                <link rel="canonical" href="https://www.pinebookwriting.com/biography-writing" />
+                <link rel="canonical" href="https://pinebookwriting.com/biography-writing" />
                 <meta
                     name="description"
                     content="We offer expert biography writing services to help people write their life stories in a well-formatted and professional book. Let's discuss your work now!"
@@ -65,14 +65,14 @@ export default function BookEditing() {
                     <div className="basis-1/2 abt-txt m1-h p1 aos-init aos-animate" data-aos="fade-right" data-aos-duration="1000">
                         <h2 className="text-3xl font-bold uppercase font-poppins md:text-4xl">Best Biography Writing Services That Go Deeper</h2>
 
-                        <h3 className="mt-3 text-2xl font-semibold uppercase font-poppins md:text-2xl">
+                        <h3 className="mt-3 text-xl font-semibold uppercase font-poppins md:text-xl">
                             We Turn Real Lives into Meaningful Stories
                         </h3>
 
                         <p className="pt-3 text-xl text-left font-poppins">
                             Writing about your own life isn’t easy. Knowing where to start, what to include and what to leave out. That’s where our professional biography writing services help. We listen to YOU first. Then we shape your experiences into a story. A story that flows in a natural way. </p>
 
-                        <p className="pt-3 text-xl text-left font-poppins">At  <a href="https://www.pinebookwriting.com" className="hover:underline">Pine Book Writing</a>, our biography writers work with different people. Be they entrepreneurs, executives, public figures or everyday people who want their stories written with care.</p>
+                        <p className="pt-3 text-xl text-left font-poppins">At  <a href="https://pinebookwriting.com" className="hover:underline">Pine Book Writing</a>, our biography writers work with different people. Be they entrepreneurs, executives, public figures or everyday people who want their stories written with care.</p>
 
                         <p className="pt-3 text-xl text-left font-poppins">Some of our clients want a full biography book writing project. Others look for <a href="/memoir-writing" className="hover:underline">memoir writing services</a> that focus on a specific phase, memory, or turning point in life. Both are welcome here.</p>
 

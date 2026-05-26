@@ -47,7 +47,7 @@ export default function SeoCopywriting() {
                 </title>
                 <link
                     rel="canonical"
-                    href="https://www.pinebookwriting.com/seo-content"
+                    href="https://pinebookwriting.com/seo-content"
                     key="canonical"
                 />
 
@@ -71,14 +71,14 @@ export default function SeoCopywriting() {
                     <div className="basis-1/2 abt-txt m1-h p1 aos-init aos-animate" data-aos="fade-right" data-aos-duration="1000">
 
                         <h2 className="text-3xl font-bold uppercase font-poppins md:text-4xl">Professional SEO Content Writing Services </h2>
-                        <h3 className="mt-3 text-2xl font-semibold uppercase font-poppins md:text-2xl">
+                        <h3 className="mt-3 text-xl font-semibold uppercase font-poppins md:text-xl">
                             Uplift Your Search Engine Ranking
                         </h3>
                         <p className="pt-3 text-xl text-left font-poppins">
-                            Search engine optimization does not mean that you should be overly stuffing your content with keywords and waiting for it to be ranked. Instead, it’s about understanding search intent and writing with purpose. When you follow search engine guidelines for writing, <a href="https://www.pinebookwriting.com/book-editing" className="text-black underline hover:underline">editing</a> and <a href="https://www.pinebookwriting.com/book-formatting-writing" className="text-black underline hover:underline">formatting</a>, your content has a greater chance of appearing higher in search results.
+                            Search engine optimization does not mean that you should be overly stuffing your content with keywords and waiting for it to be ranked. Instead, it’s about understanding search intent and writing with purpose. When you follow search engine guidelines for writing, <a href="https://pinebookwriting.com/book-editing" className="text-black underline hover:underline">editing</a> and <a href="https://pinebookwriting.com/book-formatting-writing" className="text-black underline hover:underline">formatting</a>, your content has a greater chance of appearing higher in search results.
                         </p>
 
-                        <p className="pt-3 text-xl text-left font-poppins">At <a href="https://www.pinebookwriting.com/" className="text-black underline hover:underline">Pine Book Writing</a>, our expertise covers multiple sectors. SEO website content writing. Blog posts. Guest posting. Product descriptions. Book descriptions and others. Our team of professional SEO writers do in-depth research, find relevant yet high-volume keywords, and write content with your audience in mind. This strategic approach helps your website and content rank higher.</p>
+                        <p className="pt-3 text-xl text-left font-poppins">At <a href="https://pinebookwriting.com/" className="text-black underline hover:underline">Pine Book Writing</a>, our expertise covers multiple sectors. SEO website content writing. Blog posts. Guest posting. Product descriptions. Book descriptions and others. Our team of professional SEO writers do in-depth research, find relevant yet high-volume keywords, and write content with your audience in mind. This strategic approach helps your website and content rank higher.</p>
                     </div>
                     <div className="flex justify-center text-center basis-1/2 abt-pic md:justify-center">
                         <Image src={"/images/Seo-content/ghost-pic.webp"} width={470} height={300}

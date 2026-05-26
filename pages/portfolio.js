@@ -42,7 +42,7 @@ export default function Portfolio() {
         <>
             <Head>
                 <title>Our Portfolio | Pine Book Writing</title>
-                    <link rel="canonical" href="https://www.pinebookwriting.com/portfolio" />
+                    <link rel="canonical" href="https://pinebookwriting.com/portfolio" />
                 <meta
                     name="description"
                     content="Thinking about the quality of the work you will get from Pine Book Writing? Have a look at our portfolio to ensure successful results."

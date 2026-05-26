@@ -1,15 +1,10 @@
 import "../styles/globals.css";
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import localFont from 'next/font/local';
 import { Poppins } from 'next/font/google';
 import Script from 'next/script';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import HomePopupNew from "./components/HomePopupNew";
-import PopupBundle from "./components/PopupBundle";
-
-
-import PopupModal from './components/PopupModal';
 import { PopupProvider } from '../context/PopupContext';
 
 /* Preline Variants */
@@ -33,19 +28,6 @@ const poppins = Poppins({
 
 
 export default function App({ Component, pageProps }) {
-
-  const [isModalOpen, setModalOpen] = useState(true);
-  const closeModal = () => {
-    setModalOpen(false);
-  };
-  const [selectedService, setSelectedService] = useState('');
-
-  
-
-  const openModal = (service) => {
-    setSelectedService(service);
-    setModalOpen(true);
-  };
 
   useEffect(() => {
     window.dataLayer = window.dataLayer || [];
@@ -79,16 +61,12 @@ export default function App({ Component, pageProps }) {
   }, []);
 
 
-  
+
 
 
   return (
     <main className={`${poppins.variable}`}>
       <PopupProvider>
-
-        <HomePopupNew />
-        {/* <PopupBundle isOpen={isModalOpen} onClose={closeModal} service={selectedService} /> */}
-        <PopupModal />
         <Component {...pageProps} />
       </PopupProvider>
 
@@ -137,7 +115,7 @@ export default function App({ Component, pageProps }) {
 
 
 
- <script
+      <script
         dangerouslySetInnerHTML={{
           __html: `_linkedin_partner_id = "8533857";
 window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
@@ -146,7 +124,7 @@ window._linkedin_data_partner_ids.push(_linkedin_partner_id);`,
       />
 
 
- <script
+      <script
         dangerouslySetInnerHTML={{
           __html: `(function(l) {
 if (!l){window.lintrk = function(a,b){window.lintrk.q.push([a,b])};
@@ -159,11 +137,11 @@ s.parentNode.insertBefore(b, s);})(window.lintrk);`,
         }}
       />
 
-     <noscript>
-      <img height="1" width="1" style={{ display: "none" }} 
-        alt=""
-        className="linkedin-pixel"
-      src="https://px.ads.linkedin.com/collect/?pid=8533857&fmt=gif" />
+      <noscript>
+        <img height="1" width="1" style={{ display: "none" }}
+          alt=""
+          className="linkedin-pixel"
+          src="https://px.ads.linkedin.com/collect/?pid=8533857&fmt=gif" />
       </noscript>
 
 

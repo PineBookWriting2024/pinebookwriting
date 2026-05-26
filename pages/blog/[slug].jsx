@@ -9,22 +9,95 @@ import ContentfulImage from '../components/ui/ContentfulImage'
 import { client } from '../../lib/contentful/client'
 import { useRouter } from 'next/router'
 import BrandFooter from '../components/BrandFooter';
+import DateComponent from '../components/ui/DateComponent';
+
+const safeParseSchema = (schemaValue) => {
+  if (!schemaValue) return null
+  if (typeof schemaValue !== 'string') return schemaValue
+
+  try {
+    return JSON.parse(schemaValue)
+  } catch (error) {
+    console.error('Invalid JSON-LD schema in blog entry:', error)
+    return null
+  }
+}
+
+const normalizeCanonicalUrl = (url = '') =>
+  String(url).replace(/^https:\/\/www\.pinebookwriting\.com/i, 'https://pinebookwriting.com')
 
 const Post = ({ post, recentPosts }) => {
   const router = useRouter()
+  const blogSchema = safeParseSchema(post?.fields?.blogSchema)
+  const faqSchema = safeParseSchema(post?.fields?.faqSchema)
+
 
   return (
     <>
       <Head>
+
+        <title>{post?.fields?.metaTitle || post?.fields?.title}</title>
+        <meta
+          name="description"
+          content={post?.fields?.metaDescription || post?.fields?.excerpt || 'Read this blog post'}
+        />
+        {post?.fields?.canonicalUrl && (
+          <link rel="canonical" href={normalizeCanonicalUrl(post.fields.canonicalUrl)} key="canonical" />
+        )}
         <link rel="shortcut icon" href="/images/fav.png" />
-        <meta name="robots" content="noindex, nofollow" />
+        {/* <meta name="robots" content="noindex, nofollow" /> */}
+        {blogSchema && (
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify(blogSchema),
+            }}
+          />
+        )}
+
+        {faqSchema && (
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify(faqSchema),
+            }}
+          />
+        )}
+
       </Head>
       <BrandNavbar />
-      <BrandPrimaryHeader
-        subtitle="Enhance Your Book's Readability With"
-        title="Blogs"
-        desc="Are you in search of expert book formatting services to get your manuscript formatted well? If so, then we're here to help. At Pine Book Publishing, we offer professional book formatting services to blow life into your book. Our expert team of book formatters will work together with you to give your book a professional and polished look. Get a free quote now!"
-      />
+
+      {/* Header Banner */}
+      <section
+        className="relative bg-cover bg-center bg-no-repeat py-32"
+        style={{
+          backgroundColor: `#2e3845`,
+        }}
+      >
+        <div className="container max-w-screen-xl mx-auto">
+          <div className="row">
+            <div className="col-12 text-center px-5">
+              <h1 className="text-2xl md:text-4xl font-bold text-white font-poppins drop-shadow-lg pt-20">
+                {post?.fields?.title}
+              </h1>
+              {post?.fields?.date && (
+                <p className="text-sm text-white mb-3 pt-3">
+                  {new Date(post.fields.date).toLocaleDateString('en-US', {
+                    year: 'numeric',
+                    month: 'long',
+                    day: 'numeric',
+                  })}
+                </p>
+              )}
+              {post?.fields?.author?.fields?.name && (
+                <span className="ml-2 text-white font-bold text-xl"> By {post.fields.author.fields.name}</span>
+              )}
+            </div>
+          </div>
+        </div>
+      </section>
+
+
       <section className='overflow-hidden'>
         <div className='max-w-screen-xl mx-auto px-4 my-20 relative py-22 flex flex-col lg:flex-row'>
           {/* Main Post Column */}
@@ -48,18 +121,21 @@ const Post = ({ post, recentPosts }) => {
                     <li key={recentPost.sys.id} className='mb-4 '>
                       <a href={`/blog/${recentPost.fields.slug}`} className='text-black hover:underline'>
                         <div className='flex items-center'>
-                          <ContentfulImage
-                            alt={`Cover Image for ${recentPost.fields.title}`}
-                            src={recentPost.fields.coverImage.fields.file.url}
-                            width={recentPost.fields.coverImage.fields.file.details.image.width}
-                            height={recentPost.fields.coverImage.fields.file.details.image.height}
-                            className='w-24 h-16 object-cover mr-4 rounded-lg'
-                          />
-                          <h2 className='font-bold'>
+                          {recentPost?.fields?.coverImage?.fields?.file?.url ? (
+                            <ContentfulImage
+                              alt={`Cover Image for ${recentPost.fields.title}`}
+                              src={recentPost.fields.coverImage.fields.file.url}
+                              width={recentPost?.fields?.coverImage?.fields?.file?.details?.image?.width || 96}
+                              height={recentPost?.fields?.coverImage?.fields?.file?.details?.image?.height || 64}
+                              className='w-24 h-16 object-cover mr-4 rounded-lg'
+                            />
+                          ) : (
+                            <div className='w-24 h-16 mr-4 rounded-lg bg-gray-200 shrink-0' />
+                          )}
+                          <h4 className='font-bold'>
                             {recentPost.fields.title}
-                          </h2>
+                          </h4>
                         </div>
-                        <p className='mt-3'>{recentPost.fields.excerpt}</p>
                       </a>
                     </li>
                   ))
@@ -79,48 +155,95 @@ const Post = ({ post, recentPosts }) => {
 
 export const getStaticProps = async ({ params }) => {
   const { slug } = params
+  const normalizedRequestedSlug = decodeURIComponent(String(slug || ''))
+    .trim()
+    .toLowerCase()
 
-  // Fetch current post
-  const postResponse = await client.getEntries({
-    content_type: 'post',
-    'fields.slug': slug
-  })
+  try {
+    let postResponse = await client.getEntries({
+      content_type: 'blog',
+      'fields.slug': slug
+    })
 
-  // Fetch recent posts
-  const recentPostsResponse = await client.getEntries({
-    content_type: 'post',
-    select: 'fields.title,fields.slug,fields.coverImage,fields.excerpt',
-    limit: 5,
-    order: '-sys.createdAt'
-  })
+    // Fallback for case/encoding mismatch in newly uploaded entries.
+    if (!postResponse?.items?.length) {
+      const allPostsResponse = await client.getEntries({
+        content_type: 'blog',
+        limit: 1000
+      })
 
-  if (!postResponse?.items?.length) {
+      const matchedPost = (allPostsResponse?.items || []).find((item) => {
+        const itemSlug = String(item?.fields?.slug || '').trim().toLowerCase()
+        return itemSlug === normalizedRequestedSlug
+      })
+
+      if (matchedPost?.sys?.id) {
+        postResponse = await client.getEntries({
+          content_type: 'blog',
+          'sys.id': matchedPost.sys.id,
+        })
+      }
+    }
+
+    const recentPostsResponse = await client.getEntries({
+      content_type: 'blog',
+      select: 'fields.title,fields.slug,fields.coverImage,fields.excerpt',
+      limit: 6,
+      order: '-sys.createdAt'
+    })
+
+    if (!postResponse?.items?.length) {
+      return {
+        redirect: {
+          destination: '/blog',
+          permanent: false
+        }
+      }
+    }
+
+    const recentPosts = (recentPostsResponse?.items || [])
+      .filter((item) => item?.fields?.slug && item?.fields?.title)
+      .filter((item) => item?.fields?.slug !== slug)
+      .slice(0, 5)
+
+    return {
+      props: {
+        post: postResponse?.items?.[0],
+        recentPosts,
+      },
+      revalidate: 60
+    }
+  } catch (error) {
+    console.error(`Failed to fetch blog static props for slug "${slug}":`, error)
     return {
       redirect: {
         destination: '/blog',
         permanent: false
-      }
-    }
-  }
-
-  return {
-    props: {
-      post: postResponse?.items?.[0],
-      recentPosts: recentPostsResponse.items,
+      },
       revalidate: 60
     }
   }
 }
 
 export const getStaticPaths = async () => {
-  const response = await client.getEntries({ content_type: 'post' })
-  const paths = response.items.map(item => ({
-    params: { slug: item.fields.slug }
-  }))
+  try {
+    const response = await client.getEntries({ content_type: 'blog' })
+    const paths = (response?.items || [])
+      .filter((item) => item?.fields?.slug)
+      .map((item) => ({
+        params: { slug: item.fields.slug }
+      }))
 
-  return {
-    paths,
-    fallback: true
+    return {
+      paths,
+      fallback: 'blocking'
+    }
+  } catch (error) {
+    console.error('Failed to fetch blog static paths:', error)
+    return {
+      paths: [],
+      fallback: 'blocking'
+    }
   }
 }
 

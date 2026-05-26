@@ -44,7 +44,7 @@ export default function BookEditing() {
         <>
             <Head>
                 <title>Expert Book Self-Publishing Services | Pine Book Writing</title>
-                <link rel="canonical" href="https://www.pinebookwriting.com/book-self-publishing" />
+                <link rel="canonical" href="https://pinebookwriting.com/book-self-publishing" />
                 <meta
                     name="description"
                     content="Want assistance in book publishing? Pine Book Writing offers top book self-publishing services to new and experienced authors willing to present their work perfectly."
@@ -65,7 +65,7 @@ export default function BookEditing() {
                     <div className="basis-1/2 abt-txt m1-h p1 aos-init aos-animate" data-aos="fade-right" data-aos-duration="1000">
                         <h2 className="text-3xl font-bold uppercase font-poppins md:text-4xl">Book Self-Publishing Services That Actually Make Sense</h2>
 
-                        <h3 className="mt-3 text-2xl font-semibold uppercase font-poppins md:text-2xl">
+                        <h3 className="mt-3 text-xl font-semibold uppercase font-poppins md:text-xl">
                             Book Self-Publishing Services That Actually Make Sense
                         </h3>
 

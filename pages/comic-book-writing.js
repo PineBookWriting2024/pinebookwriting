@@ -44,7 +44,7 @@ export default function BookEditing() {
         <>
             <Head>
                 <title>Hire Comic Book Writing Services | Pine Book Writing</title>
-                <link rel="canonical" href="https://www.pinebookwriting.com/comic-book-writing" />
+                <link rel="canonical" href="https://pinebookwriting.com/comic-book-writing" />
                 <meta
                     name="description"
                     content="Looking for a comic book script writer? Our comic book writing services are here to help turn your ideas into clear scripts ready for artists and editors."
@@ -65,14 +65,14 @@ export default function BookEditing() {
                     <div className="basis-1/2 abt-txt m1-h p1 aos-init aos-animate" data-aos="fade-right" data-aos-duration="1000">
                         <h2 className="text-3xl font-bold uppercase font-poppins md:text-4xl">Professional Comic Book Writing Services That  Truly Work</h2>
 
-                        <h3 className="mt-3 text-2xl font-semibold uppercase font-poppins md:text-2xl">
+                        <h3 className="mt-3 text-xl font-semibold uppercase font-poppins md:text-xl">
                             Stories Built For Panels, Pacing, and Visual Flow
                         </h3>
 
                         <p className="pt-3 text-xl text-left font-poppins">
                             Comic book writing is different from traditional storytelling. You don’t just tell a story, you show it piece by piece. We focus on comic storytelling that fits panels, pacing, and visual flow. Whether you’re writing comic book ideas from scratch or fixing an old comic story, we can help make it readable and exciting. </p>
 
-                        <p className="pt-3 text-xl text-left font-poppins">Our team at <a href="https://www.pinebookwriting.com" className="hover:underline">Pine Book Writing</a>, includes experienced comic book script writers who understand dialogue, timing and scene breaks. We think about artists too. So nothing feels confusing on the page. From short comics to full series, our professional comic book writing services support creators at every stage. </p>
+                        <p className="pt-3 text-xl text-left font-poppins">Our team at <a href="https://pinebookwriting.com" className="hover:underline">Pine Book Writing</a>, includes experienced comic book script writers who understand dialogue, timing and scene breaks. We think about artists too. So nothing feels confusing on the page. From short comics to full series, our professional comic book writing services support creators at every stage. </p>
                         <p className="pt-3 text-xl text-left font-poppins">Some clients come with rough notes. Others bring half-finished scripts. Both are fine for us because we do not only deal in comic books, but comprehensive writing services for almost all book genres. We shape things slowly, until the story feels right and clear.</p>
                     </div>
                     <div className="flex justify-center text-center basis-1/2 abt-pic md:justify-center">

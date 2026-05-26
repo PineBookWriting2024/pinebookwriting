@@ -44,7 +44,7 @@ export default function BookEditing() {
         <>
             <Head>
                 <title>Professional Horror Writing Services | Pine Book Writing</title>
-                <link rel="canonical" href="https://www.pinebookwriting.com/horror-book-writing" />
+                <link rel="canonical" href="https://pinebookwriting.com/horror-book-writing" />
                 <meta
                     name="description"
                     content="Writing a horror story?  Hire Expert horror writing services  to create character-driven horror fiction that stays with readers long after the final page."
@@ -65,16 +65,16 @@ export default function BookEditing() {
                     <div className="basis-1/2 abt-txt m1-h p1 aos-init aos-animate" data-aos="fade-right" data-aos-duration="1000">
                         <h2 className="text-3xl font-bold uppercase font-poppins md:text-4xl">Create Dark Tales With Our Horror Writing Services </h2>
 
-                        <h3 className="mt-3 text-2xl font-semibold uppercase font-poppins md:text-2xl">
+                        <h3 className="mt-3 text-xl font-semibold uppercase font-poppins md:text-xl">
                             Stories That Crawl Under Skin
                         </h3>
 
                         <p className="pt-3 text-xl text-left font-poppins">
                             Horror is not just blood or monsters. It’s stressful. Silence. A feeling that something is wrong but you can’t explain why. Our horror fiction writing focuses on mood, pacing and characters who feel human, even when things turn ugly.</p>
 
-                        <p className="pt-3 text-xl text-left font-poppins">Whether you’re writing a horror novel, working on horror story writing, or developing a supernatural concept, our team at <a href="https://www.pinebookwriting.com" className="hover:underline">Pine Book Writing</a> helps shape your idea without relying on tired clichés. Some clients arrive with half an idea; others have already started horror book writing and feel stuck. Both are welcome.</p>
+                        <p className="pt-3 text-xl text-left font-poppins">Whether you’re writing a horror novel, working on horror story writing, or developing a supernatural concept, our team at <a href="https://pinebookwriting.com" className="hover:underline">Pine Book Writing</a> helps shape your idea without relying on tired clichés. Some clients arrive with half an idea; others have already started horror book writing and feel stuck. Both are welcome.</p>
 
-                        <p className="pt-3 text-xl text-left font-poppins">We write character-driven horror stories where fear builds naturally. From psychological dread to supernatural horror fiction, we keep it grounded. That’s what makes the scare work. So why wait? Sign up for the best <a href="https://www.pinebookwriting.com/ghostwriting-service" className="hover:underline">ghostwriting services today!</a></p>
+                        <p className="pt-3 text-xl text-left font-poppins">We write character-driven horror stories where fear builds naturally. From psychological dread to supernatural horror fiction, we keep it grounded. That’s what makes the scare work. So why wait? Sign up for the best <a href="https://pinebookwriting.com/ghostwriting-service" className="hover:underline">ghostwriting services today!</a></p>
                     </div>
                     <div className="flex justify-center text-center basis-1/2 abt-pic md:justify-center">
                         <Image src={"/images/Horror-Writing/ghost-pic.webp"} width={470} height={300}

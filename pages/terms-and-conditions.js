@@ -16,7 +16,7 @@ export default function Privacy() {
                 <title>Terms and Conditions | Pine Book Writing</title>
                 <meta name="description" content="Read our terms and conditions to understand the rules and guidelines for using Pine Book Writing's services. Your use of our website constitutes your agreement to these terms."
                 />
-                <link rel="canonical" href="https://www.pinebookwriting.com/terms-and-conditions" />
+                <link rel="canonical" href="https://pinebookwriting.com/terms-and-conditions" />
                 <link rel="shortcut icon" href="/images/fav.webp" />
             </Head>
             <BrandNavbar />
@@ -132,7 +132,7 @@ export default function Privacy() {
                     <p className="pt-2">You can opt out of receiving SMS messages at any time. To do so, simply reply "STOP" to any SMS message you receive. Alternatively, you can contact us directly to request removal from our messaging list. </p>
 
                     <li className="font-poppins text-2xl font-bold">Help:</li>
-                    <p className="pt-2">If you are experiencing any issues, you can reply with the keyword HELP. Or, you can get help directly from us at <a href="https://www.pinebookwriting.com/" className="text-blue-500" target="_blank">https://www.pinebookwriting.com/</a>  </p>
+                    <p className="pt-2">If you are experiencing any issues, you can reply with the keyword HELP. Or, you can get help directly from us at <a href="https://pinebookwriting.com/" className="text-blue-500" target="_blank">https://pinebookwriting.com/</a>  </p>
 
                     <p className="text-xl font-poppins">Additional Options: </p>
                     <p>If you do not wish to receive SMS messages, you can choose not to check the SMS consent box on our forms.</p>

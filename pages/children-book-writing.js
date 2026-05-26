@@ -43,7 +43,7 @@ export default function BookEditing() {
         <>
             <Head>
                 <title>Best Children Book Writing Services | Pine Book Writing</title>
-                <link rel="canonical" href="https://www.pinebookwriting.com/children-book-writing" />
+                <link rel="canonical" href="https://pinebookwriting.com/children-book-writing" />
                 <meta
                     name="description"
                     content="Looking to write children’s books? Our children's book writing service helps turn simple ideas into age-appropriate stories that kids enjoy and parents trust."
@@ -64,7 +64,7 @@ export default function BookEditing() {
                     <div className="basis-1/2 abt-txt m1-h p1 aos-init aos-animate" data-aos="fade-right" data-aos-duration="1000">
                         <h2 className="text-3xl font-bold uppercase font-poppins md:text-4xl">Offering Children's Book Ghostwriting Services</h2>
 
-                        <h3 className="mt-3 text-2xl font-semibold uppercase font-poppins md:text-2xl">
+                        <h3 className="mt-3 text-xl font-semibold uppercase font-poppins md:text-xl">
                             Stories That Kids Actually Enjoy
                         </h3>
 

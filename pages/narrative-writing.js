@@ -44,7 +44,7 @@ export default function BookEditing() {
         <>
             <Head>
                 <title>Narrative Writing Services | Narrative Writers For Hire</title>
-                <link rel="canonical" href="https://www.pinebookwriting.com/narrative-writing" />
+                <link rel="canonical" href="https://pinebookwriting.com/narrative-writing" />
                 <meta
                     name="description"
                     content="Bring your own narrative and acquire the best narrative writing services. We offer expert narrative writing help with having top-class writers on board."
@@ -65,14 +65,14 @@ export default function BookEditing() {
                     <div className="basis-1/2 abt-txt m1-h p1 aos-init aos-animate" data-aos="fade-right" data-aos-duration="1000">
                         <h2 className="text-3xl font-bold uppercase font-poppins md:text-4xl">Best Narrative Writers For Hire for Every Genre</h2>
 
-                        <h3 className="mt-3 text-2xl font-semibold uppercase font-poppins md:text-2xl">
+                        <h3 className="mt-3 text-xl font-semibold uppercase font-poppins md:text-xl">
                             Your Story Deserves to Be Told
                         </h3>
 
                         <p className="pt-3 text-xl text-left font-poppins">
                             Narrative writing works best when it follows how life actually unfolds. Not everything happens neatly, and that’s fine. Our narrative writing services help writers arrange experiences in a practical and sensible way. Without altering the actual meanings and events that happened in the story.</p>
 
-                        <p className="pt-3 text-xl text-left font-poppins">At <a href="https://www.pinebookwriting.com" className="hover:underline">Pine Book Writing</a>, we work with personal narratives, life events, and experience-based storytelling where emotion and clarity matter equally. Whether you require our services for linear, non-linear, descriptive, or viewpoint narratives, we’re available to serve. We help connect your life moments and thoughts into a steady narrative that reads naturally.</p>
+                        <p className="pt-3 text-xl text-left font-poppins">At <a href="https://pinebookwriting.com" className="hover:underline">Pine Book Writing</a>, we work with personal narratives, life events, and experience-based storytelling where emotion and clarity matter equally. Whether you require our services for linear, non-linear, descriptive, or viewpoint narratives, we’re available to serve. We help connect your life moments and thoughts into a steady narrative that reads naturally.</p>
                         <p className="pt-3 text-xl text-left font-poppins">Our team of narrative writers is outstanding. They focus on structure, tone, and pacing while writing. And the result feels readable and true to the experience behind it.</p>
                     </div>
                     <div className="flex justify-center text-center basis-1/2 abt-pic md:justify-center">

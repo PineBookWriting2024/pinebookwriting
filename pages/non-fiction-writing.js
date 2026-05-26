@@ -44,7 +44,7 @@ export default function BookEditing() {
         <>
             <Head>
                 <title>Best Non-Fiction Writers for Hire | Pine Book Writing</title>
-                <link rel="canonical" href="https://www.pinebookwriting.com/non-fiction-writing" />
+                <link rel="canonical" href="https://pinebookwriting.com/non-fiction-writing" />
                 <meta
                     name="description"
                     content="We're offering exceptional non-fiction writing services with leading writers capable of writing your ideas with perfection and creating a non-fiction book."
@@ -65,7 +65,7 @@ export default function BookEditing() {
                     <div className="basis-1/2 abt-txt m1-h p1 aos-init aos-animate" data-aos="fade-right" data-aos-duration="1000">
                         <h2 className="text-3xl font-bold uppercase font-poppins md:text-4xl">All-Inclusive Creative Non-Fiction Writing Services</h2>
 
-                        <h3 className="mt-3 text-2xl font-semibold uppercase font-poppins md:text-2xl">
+                        <h3 className="mt-3 text-xl font-semibold uppercase font-poppins md:text-xl">
                             Share Your Wisdom With Clarity
                         </h3>
 

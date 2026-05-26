@@ -44,7 +44,7 @@ export default function BookEditing() {
         <>
             <Head>
                 <title>Hip Hop Writing Services | Hip Hop Ghostwriter for Hire</title>
-                <link rel="canonical" href="https://www.pinebookwriting.com/hip-hop-writing" />
+                <link rel="canonical" href="https://pinebookwriting.com/hip-hop-writing" />
                 <meta
                     name="description"
                     content="Our hip hop writing services offer ghostwriting support to new and old hip-hop artists. Our team of hip hop writers handles all aspects of bringing lyrics to life."
@@ -65,7 +65,7 @@ export default function BookEditing() {
                     <div className="basis-1/2 abt-txt m1-h p1 aos-init aos-animate" data-aos="fade-right" data-aos-duration="1000">
                         <h2 className="text-3xl font-bold uppercase font-poppins md:text-4xl">Hip Hop Writing Service With Real Bars</h2>
 
-                        <h3 className="mt-3 text-2xl font-semibold uppercase font-poppins md:text-2xl">
+                        <h3 className="mt-3 text-xl font-semibold uppercase font-poppins md:text-xl">
                             Lyrics That Match Your Flow
                         </h3>
 

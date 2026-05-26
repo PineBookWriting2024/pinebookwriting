@@ -10,6 +10,8 @@ export default function CaseStudyDetail({ data }) {
         }
     };
 
+    if (!data) return null;
+
     const accent = data.accentColor || "#1AA49F";
     const altAccent = data.altAccentColor || "#AC9974";
 

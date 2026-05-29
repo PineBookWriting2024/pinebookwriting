@@ -20,6 +20,7 @@ import NewBrandFooter from "./components/NewBrandFooter";
 import HomeBookSlider from "./components/HomeBookSlider";
 import BrandCaseStudies from "./components/BrandCaseStudies";
 import HomePopupMemorable from "./components/HomePopupMemorable";
+import BrandVideoShowcase from "./components/BrandVideoShowcase";
 
 export default function Home() {
     return (
@@ -83,6 +84,7 @@ Let’s Handle It!
             {/* <BrandProcess /> */}
             <BrandChooseUs />
             <BrandTestimonial />
+            <BrandVideoShowcase />
             {/* <BrandCaseStudies /> */}
             <BrandLogo />
 
@@ -96,5 +98,6 @@ Let’s Handle It!
         </>
     );
 }
+
 
 

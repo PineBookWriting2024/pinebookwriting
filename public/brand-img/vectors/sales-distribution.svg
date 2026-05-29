@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 420" role="img" aria-label="Sales and distribution">
+  <defs>
+    <linearGradient id="g3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ecfeff"/>
+      <stop offset="100%" stop-color="#dbeafe"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="420" rx="24" fill="url(#g3)"/>
+  <rect x="90" y="110" width="220" height="180" rx="14" fill="#fff" stroke="#cbd5e1" stroke-width="4"/>
+  <path d="M120 170h160M120 205h120M120 240h95" stroke="#94a3b8" stroke-width="10" stroke-linecap="round"/>
+  <rect x="360" y="150" width="190" height="120" rx="14" fill="#fff" stroke="#cbd5e1" stroke-width="4"/>
+  <rect x="390" y="176" width="74" height="58" rx="8" fill="#14b8a6"/>
+  <rect x="472" y="176" width="48" height="58" rx="8" fill="#0ea5a4"/>
+  <circle cx="408" cy="288" r="18" fill="#0f172a"/>
+  <circle cx="512" cy="288" r="18" fill="#0f172a"/>
+  <path d="M315 200h40" stroke="#0f172a" stroke-width="8" stroke-linecap="round"/>
+  <path d="M340 185l20 15-20 15" fill="none" stroke="#0f172a" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

@@ -6,7 +6,7 @@ export default function BrandCaseStudies() {
         {
             bgImage: "/brand-img/Avis Deskey  Header Image 01.jpg",
             bookImage: "/brand-img/Avis Deskey Book Mockup 01.png",
-            title: "Stellar Leadership",
+            title: "Stellar Leadership: Igniting Excellence Beyond the C-Suite",
             description:
                 "A professionally published business leadership book supported by strategic branding and audience engagement campaigns.",
             link: "/case-studies/avis-dickey-leadership",

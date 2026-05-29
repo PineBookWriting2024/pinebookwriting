@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 420" role="img" aria-label="Press release campaign">
+  <defs>
+    <linearGradient id="g4" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f0f9ff"/>
+      <stop offset="100%" stop-color="#ede9fe"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="420" rx="24" fill="url(#g4)"/>
+  <rect x="110" y="80" width="240" height="260" rx="14" fill="#fff" stroke="#cbd5e1" stroke-width="4"/>
+  <rect x="140" y="118" width="110" height="16" rx="8" fill="#0ea5a4"/>
+  <path d="M140 156h180M140 184h180M140 212h150M140 240h170" stroke="#94a3b8" stroke-width="10" stroke-linecap="round"/>
+  <path d="M420 130l94 42v74l-94 42-94-42v-74l94-42z" fill="#0f172a"/>
+  <path d="M360 181l60 42 60-42" fill="none" stroke="#fff" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M420 223v65" stroke="#fff" stroke-width="8" stroke-linecap="round"/>
+</svg>

@@ -121,20 +121,38 @@ export default function CaseStudyDetail({ data }) {
                         </h2>
                         <p className="cs-paragraph">{data.solutions.intro}</p>
                     </div>
-                    <div className="cs-solutions-grid">
+                    <div className="cs-solutions-list">
                         {data.solutions.items.map((item, idx) => (
-                            <div className="cs-solution-card" key={idx}>
-                                <div className="cs-solution-icon">{item.icon}</div>
-                                <h3 className="cs-solution-title">{item.title}</h3>
-                                {item.bullets ? (
-                                    <ul className="cs-solution-bullets">
-                                        {item.bullets.map((b, bIdx) => (
-                                            <li key={bIdx}>{b}</li>
-                                        ))}
-                                    </ul>
-                                ) : (
-                                    <p className="cs-solution-desc">{item.description}</p>
+                            <div
+                                className={`cs-solution-row ${idx < 2 ? "no-media" : ""} ${idx >= 2 && (idx - 2) % 2 === 1 ? "is-reverse" : ""}`}
+                                key={idx}
+                            >
+                                {idx >= 2 && (
+                                    <div className="cs-solution-media">
+                                        {item.pdf ? (
+                                            <iframe
+                                                src={item.pdf}
+                                                title={`${item.title} PDF`}
+                                                className="cs-solution-pdf"
+                                            />
+                                        ) : (
+                                            <img src={item.image || data.hero.image} alt={item.title} />
+                                        )}
+                                    </div>
                                 )}
+                                <div className="cs-solution-card">
+                                    {idx >= 2 && <div className="cs-solution-icon">{item.icon}</div>}
+                                    <h3 className="cs-solution-title">{item.title}</h3>
+                                    {item.bullets ? (
+                                        <ul className={`cs-solution-bullets ${idx < 2 ? "is-tile" : ""}`}>
+                                            {item.bullets.map((b, bIdx) => (
+                                                <li key={bIdx}>{b}</li>
+                                            ))}
+                                        </ul>
+                                    ) : (
+                                        <p className="cs-solution-desc">{item.description}</p>
+                                    )}
+                                </div>
                             </div>
                         ))}
                     </div>
@@ -240,3 +258,4 @@ export default function CaseStudyDetail({ data }) {
         </section>
     );
 }
+

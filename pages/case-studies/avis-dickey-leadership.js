@@ -125,7 +125,9 @@ const caseData = {
             {
                 icon: "▶",
                 title: "Influencer Marketing",
-                image: "/brand-img/vectors/influencer-marketing.svg",
+                image: "/brand-img/marketing-influencer.png",
+                mediaClass: "is-compact-media",
+                mediaLink: "https://www.linkedin.com/feed/update/urn:li:activity:7428148989247754240",
                 description:
                     "Branded promotional reels, influencer-driven engagement content, and leadership-focused messaging modernized the promotional strategy — strengthening audience familiarity with Dr. Avis D. Dickey and Stellar Leadership while building a more recognizable digital brand presence.",
             },
@@ -202,6 +204,10 @@ export default function AvisDickeyLeadership() {
         </>
     );
 }
+
+
+
+
 
 
 

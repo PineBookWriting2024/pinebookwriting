@@ -128,13 +128,17 @@ export default function CaseStudyDetail({ data }) {
                                 key={idx}
                             >
                                 {idx >= 2 && (
-                                    <div className="cs-solution-media">
+                                    <div className={`cs-solution-media ${item.mediaClass || ""}`.trim()}>
                                         {item.pdf ? (
                                             <iframe
                                                 src={item.pdf}
                                                 title={`${item.title} PDF`}
                                                 className="cs-solution-pdf"
                                             />
+                                        ) : item.mediaLink ? (
+                                            <a href={item.mediaLink} target="_blank" rel="noopener noreferrer">
+                                                <img src={item.image || data.hero.image} alt={item.title} />
+                                            </a>
                                         ) : (
                                             <img src={item.image || data.hero.image} alt={item.title} />
                                         )}
@@ -258,4 +262,6 @@ export default function CaseStudyDetail({ data }) {
         </section>
     );
 }
+
+
 

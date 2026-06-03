@@ -2,7 +2,7 @@ import React from "react";
 
 export default function BrandVideoShowcase() {
     return (
-        <section className="py-12 bg-white md:py-16">
+        <section className="bg-white">
             <div className="max-w-screen-xl px-4 mx-auto">
                 <div className="max-w-3xl mx-auto text-center">
                     <h2 className="text-3xl font-bold text-black md:text-4xl font-poppins">

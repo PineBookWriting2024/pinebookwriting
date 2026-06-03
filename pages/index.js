@@ -19,7 +19,6 @@ import BrandBannerVideo from "./components/BrandBannerVideo";
 import NewBrandFooter from "./components/NewBrandFooter";
 import HomeBookSlider from "./components/HomeBookSlider";
 import BrandCaseStudies from "./components/BrandCaseStudies";
-import HomePopupMemorable from "./components/HomePopupMemorable";
 import BrandVideoShowcase from "./components/BrandVideoShowcase";
 
 export default function Home() {
@@ -49,7 +48,6 @@ export default function Home() {
             </Head>
 
             <BrandTopBar />
-            <HomePopupMemorable />
             <BrandNavbar />
 
             <BrandBannerVideo Component={BrandHero} />

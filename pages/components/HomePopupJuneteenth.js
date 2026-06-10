@@ -88,8 +88,8 @@ export default function HomePopupJuneteenth() {
   return (
     <>
       {isOpen && (
-        <section className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 p-3 md:p-6">
-          <div className="relative w-full max-w-6xl overflow-hidden rounded-[24px] bg-[#e8e8ee] shadow-2xl">
+        <section className="fixed inset-0 z-50 flex items-center justify-center overflow-y-auto bg-black/60 p-3 md:p-6">
+          <div className="relative my-auto w-full max-w-5xl overflow-hidden rounded-[24px] bg-[#e8e8ee] shadow-2xl">
             <button
               type="button"
               onClick={() => setIsOpen(false)}
@@ -111,24 +111,20 @@ export default function HomePopupJuneteenth() {
               </svg>
             </button>
 
-            <div className="grid grid-cols-1 md:grid-cols-[1.05fr_1fr]">
-              <div className="relative min-h-[260px] md:min-h-[500px]">
+            <div className="grid grid-cols-1 md:grid-cols-[540px_1fr]">
+              <div className="relative aspect-[841/1124] w-full bg-[#eef3ee] md:aspect-auto md:h-[600px]">
                 <Image
                   src="/brand-img/June_Teenth_Event_Banner.jpg"
                   alt="Juneteenth popup banner"
                   fill
-                  className="object-cover"
+                  className="object-cover object-center"
                   priority
                 />
-                <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent p-5 md:p-8">
-                  <h3 className="max-w-[420px] font-poppins text-3xl font-bold leading-tight text-white md:text-[56px]">
-                    <span className="popup-typewriter">Get 20% OFF</span>
-                  </h3>
+                <div className="absolute inset-x-0 bottom-0 flex justify-start bg-gradient-to-t from-black/60 to-transparent p-5 md:p-6">
                   <button
                     type="button"
-                    className="mt-5 inline-flex items-center rounded-md bg-[#0f1438] px-6 py-3 font-poppins text-sm font-semibold uppercase text-white transition hover:bg-[#1b235e]"
+                    className="inline-flex items-center rounded-md bg-[#0f1438] px-6 py-3 font-poppins text-sm font-semibold uppercase text-white transition hover:bg-[#1b235e]"
                   >
-
                     Explore Now
                   </button>
                 </div>

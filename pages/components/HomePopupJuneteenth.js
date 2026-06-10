@@ -122,7 +122,7 @@ export default function HomePopupJuneteenth() {
                 />
                 <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent p-5 md:p-8">
                   <h3 className="max-w-[420px] font-poppins text-3xl font-bold leading-tight text-white md:text-[56px]">
-                    <span className="popup-typewriter">Get 50% OFF</span>
+                    <span className="popup-typewriter">Get 20% OFF</span>
                   </h3>
                   <button
                     type="button"
@@ -147,10 +147,10 @@ export default function HomePopupJuneteenth() {
                         textWrap: "balance",
                       }}
                     >
-                      Don't Miss a 50% Discount on Juneteenth!
+                      Don't Miss a 20% Discount on Juneteenth!
                     </h2>
                     <p className="mt-3 font-poppins text-sm leading-6 text-[#3b4155] md:text-[15px]">
-                      Want to have your manuscript written or polished? Pine Book Writing is offering an exclusive 50% discount this Juneteenth on all of our ghostwriting and editing packages.</p>               </div>
+                      Want to have your manuscript written or polished? Pine Book Writing is offering an exclusive 20% discount this Juneteenth on all of our ghostwriting and editing packages.</p>               </div>
 
                   <div className="space-y-3">
                     <input
@@ -217,7 +217,7 @@ export default function HomePopupJuneteenth() {
                       type="submit"
                       disabled={isSubmitting}
                     >
-                      {isSubmitting ? "Submitting..." : "Activate Your 50% Discount"}
+                      {isSubmitting ? "Submitting..." : "Activate Your 20% Discount"}
                     </button>
                   </div>
                 </form>

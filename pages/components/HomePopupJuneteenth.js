@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import useHubspotForm from "/hooks/hubspot";
 
-export default function HomePopupMemorable() {
+export default function HomePopupJuneteenth() {
   const router = useRouter();
   const pathname = usePathname();
   const { submitMainContactForm } = useHubspotForm();

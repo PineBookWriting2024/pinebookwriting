@@ -20,6 +20,7 @@ import NewBrandFooter from "./components/NewBrandFooter";
 import HomeBookSlider from "./components/HomeBookSlider";
 import BrandCaseStudies from "./components/BrandCaseStudies";
 import BrandVideoShowcase from "./components/BrandVideoShowcase";
+import HomePopupJuneteenth from "./components/HomePopupJuneteenth";
 
 export default function Home() {
     return (
@@ -46,6 +47,8 @@ export default function Home() {
                     }}
                 />
             </Head>
+
+            <HomePopupJuneteenth />
 
             <BrandTopBar />
             <BrandNavbar />

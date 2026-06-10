@@ -1,8 +1,40 @@
-import React from "react";
+"use client";
+import React, { useEffect, useRef } from "react";
 
 export default function BrandVideoShowcase() {
+    const sectionRef = useRef(null);
+    const video1Ref = useRef(null);
+    const video2Ref = useRef(null);
+
+    useEffect(() => {
+        const section = sectionRef.current;
+        if (!section) return;
+
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+                const videos = [video1Ref.current, video2Ref.current];
+                if (entry.isIntersecting) {
+                    videos.forEach((video) => {
+                        if (video) {
+                            const playPromise = video.play();
+                            if (playPromise !== undefined) {
+                                playPromise.catch(() => {});
+                            }
+                        }
+                    });
+                } else {
+                    videos.forEach((video) => video && video.pause());
+                }
+            },
+            { threshold: 0.5 }
+        );
+
+        observer.observe(section);
+        return () => observer.disconnect();
+    }, []);
+
     return (
-        <section className="bg-white">
+        <section ref={sectionRef} className="bg-white">
             <div className="max-w-screen-xl px-4 mx-auto">
                 <div className="max-w-3xl mx-auto text-center">
                     <h2 className="text-3xl font-bold text-black md:text-4xl font-poppins">
@@ -15,8 +47,11 @@ export default function BrandVideoShowcase() {
 
                 <div className="grid grid-cols-1 gap-6 mt-8 md:grid-cols-2 md:mt-10">
                     <video
+                        ref={video1Ref}
                         className="w-full h-full rounded-xl shadow-sm"
                         controls
+                        muted
+                        playsInline
                         preload="metadata"
                     >
                         <source src="/brand-img/videos/video-board-1.mp4" type="video/mp4" />
@@ -24,8 +59,11 @@ export default function BrandVideoShowcase() {
                     </video>
 
                     <video
+                        ref={video2Ref}
                         className="w-full h-full rounded-xl shadow-sm"
                         controls
+                        muted
+                        playsInline
                         preload="metadata"
                     >
                         <source src="/brand-img/videos/video-board-2.mp4" type="video/mp4" />

@@ -86,7 +86,7 @@ Let’s Handle It!
             <BrandChooseUs />
             <BrandTestimonial />
             <BrandVideoShowcase />
-            <BrandCaseStudies />
+            {/* <BrandCaseStudies /> */}
             <BrandLogo />
 
 

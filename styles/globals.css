@@ -4568,6 +4568,10 @@ h2 {
   grid-template-columns: 1fr;
 }
 
+.cs-solution-row.cs-row-mb {
+  margin-bottom: 48px;
+}
+
 .cs-solution-row.no-media .cs-solution-card {
   background: transparent;
   color: #1f2937;
@@ -4604,6 +4608,16 @@ h2 {
   min-height: 220px;
   object-fit: cover;
   display: block;
+  border-radius: 14px;
+}
+
+.cs-solution-media video {
+  width: 100%;
+  height: 100%;
+  min-height: 220px;
+  object-fit: contain;
+  display: block;
+  border-radius: 14px;
 }
 
 .cs-solution-pdf {

@@ -104,7 +104,8 @@ const caseData = {
             {
                 icon: "▤",
                 title: "NYC Times Square Campaign",
-                image: "/brand-img/Avis-Deskey-nyc-time.png",
+                video: "/brand-img/videos/avis-billboard.webm",
+                rowClass: "cs-row-mb",
                 description:
                     "As part of the executive branding strategy, Pine Book Writing launched a Times Square billboard campaign for Dr. Avis D. Dickey on January 14, 2026. The campaign positioned Stellar Leadership: Igniting Excellence Beyond the C- Suite within one of the world’s most recognizable advertising locations, helping elevate the visibility and professional positioning of both the book and the author. The campaign included branded billboard placements, professionally designed promotional creatives, campaign videos, and leadership - focused advertising assets developed to strengthen public recognition, audience engagement, and overall brand authority. Rather than functioning as a standalone promotion, the Times Square campaign was strategically integrated into the broader publishing and branding initiative.",
             },

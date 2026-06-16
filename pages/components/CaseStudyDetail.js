@@ -1,7 +1,49 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight, faCheck } from "@fortawesome/free-solid-svg-icons";
+
+function CsScrollVideo({ src, title }) {
+    const videoRef = useRef(null);
+
+    useEffect(() => {
+        const video = videoRef.current;
+        if (!video) return;
+
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+                if (entry.isIntersecting) {
+                    const playPromise = video.play();
+                    if (playPromise !== undefined) playPromise.catch(() => {});
+                } else {
+                    video.pause();
+                }
+            },
+            { threshold: 0.5 }
+        );
+
+        observer.observe(video);
+        return () => observer.disconnect();
+    }, []);
+
+    const isWebm = src.endsWith(".webm");
+    const mp4Fallback = isWebm ? src.replace(/\.webm$/, ".mp4") : src;
+
+    return (
+        <video
+            ref={videoRef}
+            className="w-full h-full rounded-xl"
+            muted
+            playsInline
+            loop
+            preload="metadata"
+        >
+            {isWebm && <source src={src} type="video/webm" />}
+            <source src={mp4Fallback} type="video/mp4" />
+            Your browser does not support the video tag.
+        </video>
+    );
+}
 
 export default function CaseStudyDetail({ data }) {
     const handleOpenChat = () => {
@@ -124,7 +166,7 @@ export default function CaseStudyDetail({ data }) {
                     <div className="cs-solutions-list">
                         {data.solutions.items.map((item, idx) => (
                             <div
-                                className={`cs-solution-row ${idx < 2 ? "no-media" : ""} ${idx >= 2 && (idx - 2) % 2 === 1 ? "is-reverse" : ""}`}
+                                className={`cs-solution-row ${idx < 2 ? "no-media" : ""} ${idx >= 2 && (idx - 2) % 2 === 1 ? "is-reverse" : ""} ${item.rowClass || ""}`.trim()}
                                 key={idx}
                             >
                                 {idx >= 2 && (
@@ -135,6 +177,8 @@ export default function CaseStudyDetail({ data }) {
                                                 title={`${item.title} PDF`}
                                                 className="cs-solution-pdf"
                                             />
+                                        ) : item.video ? (
+                                            <CsScrollVideo src={item.video} title={item.title} />
                                         ) : item.mediaLink ? (
                                             <a href={item.mediaLink} target="_blank" rel="noopener noreferrer">
                                                 <img src={item.image || data.hero.image} alt={item.title} />

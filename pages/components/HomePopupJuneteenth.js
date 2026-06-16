@@ -89,7 +89,7 @@ export default function HomePopupJuneteenth() {
     <>
       {isOpen && (
         <section className="fixed inset-0 z-50 flex items-center justify-center overflow-y-auto bg-black/60 p-3 md:p-6">
-          <div className="relative my-auto w-full max-w-5xl overflow-hidden rounded-[24px] bg-[#e8e8ee] shadow-2xl">
+          <div className="relative my-auto w-full max-w-[1040px] overflow-hidden rounded-[24px] bg-[#e8e8ee] shadow-2xl">
             <button
               type="button"
               onClick={() => setIsOpen(false)}
@@ -111,8 +111,8 @@ export default function HomePopupJuneteenth() {
               </svg>
             </button>
 
-            <div className="grid grid-cols-1 md:grid-cols-[540px_1fr]">
-              <div className="relative aspect-[841/1124] w-full bg-[#eef3ee] md:aspect-auto md:h-[600px]">
+            <div className="grid grid-cols-1 md:grid-cols-[479px_1fr]">
+              <div className="relative aspect-[841/1124] w-full bg-[#eef3ee]">
                 <Image
                   src="/brand-img/June_Teenth_Event_Banner.jpg"
                   alt="Juneteenth popup banner"

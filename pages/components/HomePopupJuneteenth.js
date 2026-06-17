@@ -5,6 +5,11 @@ import Image from "next/image";
 import Link from "next/link";
 import useHubspotForm from "/hooks/hubspot";
 
+const JUNETEENTH_OFFER_END = new Date("2026-06-20T00:00:00-07:00").getTime();
+
+const getRemainingOfferSeconds = () =>
+  Math.max(0, Math.floor((JUNETEENTH_OFFER_END - Date.now()) / 1000));
+
 export default function HomePopupJuneteenth() {
   const router = useRouter();
   const pathname = usePathname();
@@ -19,7 +24,21 @@ export default function HomePopupJuneteenth() {
   const [phoneError, setPhoneError] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isOpen, setIsOpen] = useState(true);
+  const [countdownSeconds, setCountdownSeconds] = useState(getRemainingOfferSeconds);
 
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCountdownSeconds(getRemainingOfferSeconds());
+    }, 1000);
+
+    return () => clearInterval(timer);
+  }, []);
+
+  const countdownParts = [
+    Math.floor(countdownSeconds / 3600),
+    Math.floor((countdownSeconds % 3600) / 60),
+    countdownSeconds % 60,
+  ].map((part) => String(part).padStart(2, "0"));
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -84,6 +103,7 @@ export default function HomePopupJuneteenth() {
   };
 
   if (pathname === "/thank-you") return null;
+  if (countdownSeconds <= 0) return null;
 
   return (
     <>
@@ -111,8 +131,8 @@ export default function HomePopupJuneteenth() {
               </svg>
             </button>
 
-            <div className="grid grid-cols-1 md:grid-cols-[479px_1fr]">
-              <div className="relative aspect-[841/1124] w-full bg-[#eef3ee]">
+            <div className="grid grid-cols-1 md:grid-cols-[479px_1fr] md:items-stretch">
+              <div className="relative aspect-[841/1124] w-full bg-[#eef3ee] md:aspect-auto md:h-full">
                 <Image
                   src="/brand-img/June_Teenth_Event_Banner.jpg"
                   alt="Juneteenth popup banner"
@@ -146,7 +166,20 @@ export default function HomePopupJuneteenth() {
                       Don't Miss a 20% Discount on Juneteenth!
                     </h2>
                     <p className="mt-3 font-poppins text-sm leading-6 text-[#3b4155] md:text-[15px]">
-                      Want to have your manuscript written or polished? Pine Book Writing is offering an exclusive 20% discount this Juneteenth on all of our ghostwriting and editing packages.</p>               </div>
+                      Want to have your manuscript written or polished? Pine Book Writing is offering an exclusive 20% discount this Juneteenth on all of our ghostwriting and editing packages.</p>
+                    <div className="juneteenth-countdown mt-4" aria-label="Limited time offer countdown">
+                      <p className="juneteenth-countdown-title">LIMITED TIME <span>OFFER</span></p>
+                      <div className="juneteenth-countdown-time" aria-live="polite">
+                        {countdownParts.map((part, index) => (
+                          <div className="juneteenth-time-group" key={index}>
+                            <span className="juneteenth-time-box">{part[0]}</span>
+                            <span className="juneteenth-time-box">{part[1]}</span>
+                            {index < countdownParts.length - 1 && <span className="juneteenth-time-separator">:</span>}
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
 
                   <div className="space-y-3">
                     <input
@@ -225,6 +258,95 @@ export default function HomePopupJuneteenth() {
       <style jsx>{`
         .popup-close-btn {
           right: 16px;
+        }
+
+        .juneteenth-countdown {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          gap: 6px;
+          width: 100%;
+          max-width: 497px;
+          border-radius: 10px;
+          background: #111638;
+          padding: 13px 16px 12px;
+          color: #ffffff;
+        }
+
+        .juneteenth-countdown-title {
+          margin: 0;
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: 19px;
+          font-weight: 900;
+          line-height: 1;
+          letter-spacing: 0;
+        }
+
+        .juneteenth-countdown-title span {
+          font-weight: 900;
+        }
+
+        .juneteenth-countdown-time {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 3px;
+        }
+
+        .juneteenth-time-group {
+          display: flex;
+          align-items: center;
+          gap: 1px;
+        }
+
+        .juneteenth-time-box {
+          display: inline-flex;
+          height: 35px;
+          width: 22px;
+          align-items: center;
+          justify-content: center;
+          border-radius: 4px;
+          background: #ffc22f;
+          color: #050505;
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: 31px;
+          font-weight: 900;
+          line-height: 1;
+          box-shadow: inset 0 -12px 0 rgba(143, 99, 0, 0.26);
+        }
+
+        .juneteenth-time-separator {
+          display: inline-flex;
+          width: 11px;
+          justify-content: center;
+          color: #ffffff;
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: 31px;
+          font-weight: 900;
+          line-height: 1;
+        }
+
+        @media (max-width: 420px) {
+          .juneteenth-countdown {
+            width: 100%;
+            padding-inline: 10px;
+          }
+
+          .juneteenth-countdown-title {
+            font-size: 17px;
+          }
+
+          .juneteenth-time-box {
+            height: 31px;
+            width: 20px;
+            font-size: 27px;
+          }
+
+          .juneteenth-time-separator {
+            width: 9px;
+            font-size: 27px;
+          }
         }
 
         .popup-typewriter {

@@ -24,6 +24,7 @@ import HomePopupJuneteenth from "./components/HomePopupJuneteenth";
 import ExclusiveBookSigningParallax from "./components/ExclusiveBookSigningParallax";
 
 export default function Home() {
+
     return (
         <>
             <Head>

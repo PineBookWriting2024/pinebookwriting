@@ -1,18 +1,17 @@
 "use client";
-import { usePathname, useRouter } from "next/navigation";
+// import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import Image from "next/image";
-import Link from "next/link";
 import useHubspotForm from "/hooks/hubspot";
 
-const JUNETEENTH_OFFER_END = new Date("2026-06-20T00:00:00-07:00").getTime();
+// const JUNETEENTH_OFFER_END = new Date("2026-06-30T23:59:59-07:00").getTime();
 
-const getRemainingOfferSeconds = () =>
-  Math.max(0, Math.floor((JUNETEENTH_OFFER_END - Date.now()) / 1000));
+// const getRemainingOfferSeconds = () =>
+//   Math.max(0, Math.floor((JUNETEENTH_OFFER_END - Date.now()) / 1000));
 
 export default function HomePopupJuneteenth() {
-  const router = useRouter();
-  const pathname = usePathname();
+  // const router = useRouter();
+  // const pathname = router.pathname;
   const { submitMainContactForm } = useHubspotForm();
   const [form, setForm] = useState({
     fullName: "",
@@ -24,21 +23,25 @@ export default function HomePopupJuneteenth() {
   const [phoneError, setPhoneError] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isOpen, setIsOpen] = useState(true);
-  const [countdownSeconds, setCountdownSeconds] = useState(getRemainingOfferSeconds);
+  // const [isMounted, setIsMounted] = useState(false);
+  // const [countdownSeconds, setCountdownSeconds] = useState(0);
 
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setCountdownSeconds(getRemainingOfferSeconds());
-    }, 1000);
+  // useEffect(() => {
+  //   setIsMounted(true);
+  //   setCountdownSeconds(getRemainingOfferSeconds());
 
-    return () => clearInterval(timer);
-  }, []);
+  //   const timer = setInterval(() => {
+  //     setCountdownSeconds(getRemainingOfferSeconds());
+  //   }, 1000);
 
-  const countdownParts = [
-    Math.floor(countdownSeconds / 3600),
-    Math.floor((countdownSeconds % 3600) / 60),
-    countdownSeconds % 60,
-  ].map((part) => String(part).padStart(2, "0"));
+  //   return () => clearInterval(timer);
+  // }, []);
+
+  // const countdownParts = [
+  //   Math.floor(countdownSeconds / 3600),
+  //   Math.floor((countdownSeconds % 3600) / 60),
+  //   countdownSeconds % 60,
+  // ].map((part) => String(part).padStart(2, "0"));
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -102,8 +105,8 @@ export default function HomePopupJuneteenth() {
     }
   };
 
-  if (pathname === "/thank-you") return null;
-  if (countdownSeconds <= 0) return null;
+  // if (!isMounted || pathname === "/thank-you") return null;
+  // if (countdownSeconds <= 0) return null;
 
   return (
     <>
@@ -134,20 +137,20 @@ export default function HomePopupJuneteenth() {
             <div className="grid grid-cols-1 md:grid-cols-[479px_1fr] md:items-stretch">
               <div className="relative aspect-[841/1124] w-full bg-[#eef3ee] md:aspect-auto md:h-full">
                 <Image
-                  src="/brand-img/June_Teenth_Event_Banner.jpg"
+                  src="/brand-img/independence-day-event-banner.jpg"
                   alt="Juneteenth popup banner"
                   fill
                   className="object-cover object-center"
                   priority
                 />
-                <div className="absolute inset-x-0 bottom-0 flex justify-start bg-gradient-to-t from-black/60 to-transparent p-5 md:p-6">
+                {/* <div className="absolute inset-x-0 bottom-0 flex justify-start bg-gradient-to-t from-black/60 to-transparent p-5 md:p-6">
                   <button
                     type="button"
                     className="inline-flex items-center rounded-md bg-[#0f1438] px-6 py-3 font-poppins text-sm font-semibold uppercase text-white transition hover:bg-[#1b235e]"
                   >
                     Explore Now
                   </button>
-                </div>
+                </div> */}
               </div>
 
               <div className="relative bg-[#f3f4f8] p-5 md:p-8">
@@ -156,18 +159,19 @@ export default function HomePopupJuneteenth() {
                 <form onSubmit={handleSubmit}>
                   <div className="mb-6 text-left">
                     <h2
-                      className="text-2xl font-extrabold leading-tight text-[#10163d] md:text-[34px]"
+                      className="text-2xl font-extrabold leading-tight text-[#10163d] md:text-[38px]"
                       style={{
                         fontFamily: "'Merriweather', serif",
                         letterSpacing: "0.2px",
                         textWrap: "balance",
                       }}
                     >
-                      Don't Miss a 20% Discount on Juneteenth!
+                      Don't Miss a 20% Discount This Independence Day!
                     </h2>
                     <p className="mt-3 font-poppins text-sm leading-6 text-[#3b4155] md:text-[15px]">
-                      Want to have your manuscript written or polished? Pine Book Writing is offering an exclusive 20% discount this Juneteenth on all of our ghostwriting and editing packages.</p>
-                    <div className="juneteenth-countdown mt-4" aria-label="Limited time offer countdown">
+                      Ready to bring your book idea to life? Pine Book Writing is celebrating Independence Day with an exclusive 20% discount on all our ghostwriting and editing services.<br></br>
+Whether you're starting your manuscript or polishing your final draft, our team is here to help you publish with confidence. Take advantage of this limited-time offer and make your publishing goals a reality this July 4th.</p>
+                    {/* <div className="juneteenth-countdown mt-4" aria-label="Limited time offer countdown">
                       <p className="juneteenth-countdown-title">LIMITED TIME <span>OFFER</span></p>
                       <div className="juneteenth-countdown-time" aria-live="polite">
                         {countdownParts.map((part, index) => (
@@ -178,7 +182,7 @@ export default function HomePopupJuneteenth() {
                           </div>
                         ))}
                       </div>
-                    </div>
+                    </div> */}
                   </div>
 
                   <div className="space-y-3">

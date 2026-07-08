@@ -170,7 +170,7 @@ export default function HomePopupJuneteenth() {
                     </h2>
                     <p className="mt-3 font-poppins text-sm leading-6 text-[#3b4155] md:text-[15px]">
                       Ready to bring your book idea to life? Pine Book Writing is celebrating Independence Day with an exclusive 20% discount on all our ghostwriting and editing services.<br></br>
-Whether you're starting your manuscript or polishing your final draft, our team is here to help you publish with confidence. Take advantage of this limited-time offer and make your publishing goals a reality this July 4th.</p>
+                      Whether you're starting your manuscript or polishing your final draft, our team is here to help you publish with confidence. Take advantage of this limited-time offer and make your publishing goals a reality this July 4th.</p>
                     {/* <div className="juneteenth-countdown mt-4" aria-label="Limited time offer countdown">
                       <p className="juneteenth-countdown-title">LIMITED TIME <span>OFFER</span></p>
                       <div className="juneteenth-countdown-time" aria-live="polite">

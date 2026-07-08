@@ -46,7 +46,7 @@ export default async function handler(req, res) {
       secure: true,
       auth: {
         user: "pinebookwriting@gmail.com",
-        pass: "owwwkmrznsnddjtm",
+        pass: "bqastuelflumgjql",
       },
     });
 
@@ -71,14 +71,14 @@ export default async function handler(req, res) {
     const authorPhotoName = authorPhoto?.filename || "";
     const coverImagesPreviewHtml = Array.isArray(coverImages)
       ? coverImages
-          .map((file, idx) =>
-            file?.filename
-              ? `<div style="display:inline-block; margin:6px;">
+        .map((file, idx) =>
+          file?.filename
+            ? `<div style="display:inline-block; margin:6px;">
                    <img src="cid:cover-image-${idx + 1}" alt="${escapeHtml(file.filename)}" style="max-width:140px; max-height:180px; border:1px solid #ddd; border-radius:6px;" />
                  </div>`
-              : ""
-          )
-          .join("")
+            : ""
+        )
+        .join("")
       : "";
 
     const adminHtmlContent = `
@@ -158,8 +158,8 @@ export default async function handler(req, res) {
                 <td style="padding:12px 8px; font-weight:600; border-bottom:1px solid #e9ecef;">Selected Cover Idea Preview</td>
                 <td style="padding:12px 8px; border-bottom:1px solid #e9ecef;">
                   ${selectedCoverIdeaUrl
-                    ? `<img src="${escapeHtml(selectedCoverIdeaUrl)}" alt="Selected Cover Idea" style="max-width:220px; border-radius:6px; border:1px solid #ddd;" />`
-                    : "N/A"}
+        ? `<img src="${escapeHtml(selectedCoverIdeaUrl)}" alt="Selected Cover Idea" style="max-width:220px; border-radius:6px; border:1px solid #ddd;" />`
+        : "N/A"}
                 </td>
               </tr>
               <tr>

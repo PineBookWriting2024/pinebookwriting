@@ -29,7 +29,7 @@ export default async function handler(req, res) {
       secure: true,
       auth: {
         user: "pinebookwriting@gmail.com",
-        pass: "owwwkmrznsnddjtm",
+        pass: "bqastuelflumgjql",
       },
     });
 

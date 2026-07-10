@@ -378,7 +378,7 @@ export default function BrandHero() {
                                 </div> */}
                                 <div class="text-start" bis_skin_checked="1">
                                     <h4 class="font-poppins text-white text-2xl md:text-3xl font-bold christmas-banner-title">Avail Discount</h4>
-                                    <h5 class="font-poppins text-white text-sm mb-3">Holiday Season Sale: Expert Book Publishing at <span class="text-blink">50% Off</span> – <br></br>
+                                    <h5 class="font-poppins text-white text-sm mb-3">Holiday Season Sale: Expert Book Writing at <span class="text-blink">50% Off</span> – <br></br>
                                         Your Story Deserves to be Heard!</h5></div>
                                 <div className="">
                                     <div className="relative w-full col-span-2">

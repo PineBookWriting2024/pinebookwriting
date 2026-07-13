@@ -33,7 +33,7 @@ export default function App({ Component, pageProps }) {
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
-    gtag('config', 'G-9X52J8V8NK');
+    gtag('config', 'G-362MG93QNS');
   }, []);
 
   useEffect(() => {
@@ -70,13 +70,12 @@ export default function App({ Component, pageProps }) {
         <Component {...pageProps} />
       </PopupProvider>
 
-      <Script
+      {/* <Script
         src="https://www.googletagmanager.com/gtag/js?id=G-9X52J8V8NK"
         strategy="afterInteractive"
-      />
+      /> */}
 
-      <Script src="https://www.googletagmanager.com/gtag/js?id=G-362MG93QNS">
-      </Script>
+      <Script src="https://www.googletagmanager.com/gtag/js?id=G-362MG93QNS" strategy="afterInteractive" />
 
       {/* <Script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=6ad75b0f-d085-4cae-9a7a-48abeb69b973"> </Script> */}
       <script

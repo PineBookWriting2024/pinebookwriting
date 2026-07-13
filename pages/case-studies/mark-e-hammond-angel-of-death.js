@@ -187,13 +187,15 @@ export default function MarkEHammondAngelOfDeath() {
                 />
             </Head>
 
-            <BrandTopBar />
-            <BrandNavbar />
+            <div className="case-studies-listing-page">
+                <BrandTopBar />
+                <BrandNavbar />
 
-            <CaseStudyDetail data={caseData} />
+                <CaseStudyDetail data={caseData} />
 
-            <BrandContact />
-            <NewBrandFooter />
+                <BrandContact />
+                <NewBrandFooter />
+            </div>
         </>
     );
 }

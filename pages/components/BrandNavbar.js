@@ -95,8 +95,8 @@ export default function BrandNavbar() {
     return (
         <>
             <header id="navbar" className="absolute left-0 z-20 flex items-center justify-between bg-transparent top-10 md:pb-4">
-                <div className='flex items-center justify-between w-full max-w-screen-xl mx-auto'>
-                    <div>
+                <div className='brand-navbar-inner flex items-center justify-between w-full max-w-screen-xl mx-auto'>
+                    <div className="brand-navbar-logo-slot">
                         <Link href="/" onClick={(e) => { e.preventDefault(); window.location.href = "/"; }} className="text-xl font-bold text-white">
                             <Image className='logo' src={'/images/writing-logo.png'} width={200} height={80} alt="brand logo" loading="lazy" />
                         </Link>
@@ -118,7 +118,7 @@ export default function BrandNavbar() {
                         </button>
                     </div>
                     <nav className={`${isOpen ? 'block' : 'hidden'} absolute flex flex-col bg-gray-900 text-center items-center self-end py-8 mt-2 space-y-6 font-semibold w-full mb-8 top-20 md:top-0 right-0 left-0 md:space-y-0 md:flex md:flex-row md:relative md:bg-transparent md:space-x-4 md:mt-0 md:py-0 md:w-auto md:block`}>
-                        <ul className="items-center space-x-4 md:flex">
+                        <ul className="brand-navbar-list items-center space-x-4 md:flex">
                             <li className='mb-3 md:mb-0'><Link href="/" onClick={(e) => { e.preventDefault(); window.location.href = "/"; }} className="text-white hover:text-gray-300">Home</Link></li>
                             <li className='mb-3 md:mb-0'><Link href="/about" onClick={(e) => { e.preventDefault(); window.location.href = "about"; }} className="text-white hover:text-gray-300">About Us</Link></li>
                             <li className="relative mb-3 md:mb-0 services-nav-item" ref={dropdownRef}>
@@ -195,6 +195,7 @@ export default function BrandNavbar() {
                             <li className='mb-3 md:mb-0'><Link href="/testimonials" onClick={(e) => { e.preventDefault(); window.location.href = "testimonials"; }} className="text-white hover:text-gray-300">Testimonials</Link></li>
                             <li className='mb-3 md:mb-0'><Link href="/packages" onClick={(e) => { e.preventDefault(); window.location.href = "packages"; }} className="text-white hover:text-gray-300">Packages</Link></li>
                             <li className='mb-3 md:mb-0'><Link href="/portfolio" onClick={(e) => { e.preventDefault(); window.location.href = "portfolio"; }} className="text-white hover:text-gray-300">Portfolio</Link></li>
+                            <li className='mb-3 md:mb-0'><Link href="/case-studies" onClick={(e) => { e.preventDefault(); window.location.href = "/case-studies"; }} className="text-white hover:text-gray-300">Case Studies</Link></li>
                             <li className='mb-3 md:mb-0'><Link href="/blog" onClick={(e) => { e.preventDefault(); window.location.href = "/blog"; }} className="text-white hover:text-gray-300">Blog</Link></li>
                             <li className='mb-3 md:mb-0'><Link href="/contact-us" onClick={(e) => { e.preventDefault(); window.location.href = "contact-us"; }} className="text-white hover:text-gray-300">Contact</Link></li>
                             <li><Link href={'javascript:;'} className="px-4 py-2 text-sm text-white bg-blue-500 rounded hover:bg-blue-600 brand-nav-btn font-poppins" onClick={handleOpenChat}>Talk to an Expert</Link></li>

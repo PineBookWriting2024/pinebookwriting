@@ -6,6 +6,7 @@ import Script from 'next/script';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { PopupProvider } from '../context/PopupContext';
+import PopupModal from './components/PopupModal';
 
 /* Preline Variants */
 import 'preline/variants.css';
@@ -68,6 +69,7 @@ export default function App({ Component, pageProps }) {
     <main className={`${poppins.variable}`}>
       <PopupProvider>
         <Component {...pageProps} />
+        <PopupModal />
       </PopupProvider>
 
       {/* <Script

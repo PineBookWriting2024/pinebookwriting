@@ -62,7 +62,7 @@ export default function BrandPrimaryHeader(props) {
                             </div>
                             {shouldShowQuoteButton && (
                                 <button
-                                    onClick={openModal}
+                                    onClick={() => openModal("Free Quote")}
                                     style={{
                                         backgroundColor: "#000",
                                         color: "#fff",

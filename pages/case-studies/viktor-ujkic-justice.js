@@ -170,7 +170,7 @@ export default function ViktorUjkicJustice() {
                 />
             </Head>
 
-            <div className="case-studies-listing-page">
+            <div className="case-study-detail-page">
                 <BrandTopBar />
                 <BrandNavbar />
 

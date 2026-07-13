@@ -195,7 +195,7 @@ export default function AvisDickeyLeadership() {
                 />
             </Head>
 
-            <div className="case-studies-listing-page">
+            <div className="case-study-detail-page">
                 <BrandTopBar />
                 <BrandNavbar />
 

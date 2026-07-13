@@ -4596,7 +4596,8 @@ h2 {
   line-height: 0.7;
 }
 
-.case-study-tile-title:hover {
+.case-study-tile-title:hover,
+.case-study-tile-locked .case-study-tile-title {
   width: fit-content;
   min-width: 0;
   padding: 10px 17px;
@@ -4604,7 +4605,8 @@ h2 {
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
 }
 
-.case-study-tile-title:hover .case-study-tile-actions {
+.case-study-tile-title:hover .case-study-tile-actions,
+.case-study-tile-locked .case-study-tile-actions {
   max-height: 42px;
   margin-top: 16px;
   opacity: 1;
@@ -4656,7 +4658,8 @@ h2 {
     font-size: 11px;
   }
 
-  .case-study-tile-title:hover {
+  .case-study-tile-title:hover,
+  .case-study-tile-locked .case-study-tile-title {
     width: fit-content;
     min-width: 0;
     padding: 8px 12px;
@@ -4676,7 +4679,8 @@ h2 {
     font-size: 17px;
   }
 
-  .case-study-tile-title:hover .case-study-tile-actions {
+  .case-study-tile-title:hover .case-study-tile-actions,
+  .case-study-tile-locked .case-study-tile-actions {
     margin-top: 12px;
   }
 

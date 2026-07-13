@@ -27,6 +27,7 @@ function CsScrollVideo({ src, title }) {
     }, []);
 
     const isWebm = src.endsWith(".webm");
+    const isMov = src.endsWith(".mov");
     const mp4Fallback = isWebm ? src.replace(/\.webm$/, ".mp4") : src;
 
     return (
@@ -39,7 +40,7 @@ function CsScrollVideo({ src, title }) {
             preload="metadata"
         >
             {isWebm && <source src={src} type="video/webm" />}
-            <source src={mp4Fallback} type="video/mp4" />
+            <source src={mp4Fallback} type={isMov ? "video/quicktime" : "video/mp4"} />
             Your browser does not support the video tag.
         </video>
     );
@@ -60,7 +61,10 @@ export default function CaseStudyDetail({ data }) {
     return (
         <section className="cs-detail-wrapper" style={{ "--cs-accent": accent, "--cs-alt-accent": altAccent }}>
             {/* HERO */}
-            <div className="cs-hero">
+            <div
+                className="cs-hero"
+                style={data.hero.background ? { background: data.hero.background } : undefined}
+            >
                 <div className="max-w-screen-xl px-4 mx-auto cs-hero-inner">
                     <div className="cs-hero-text">
                         <h1 className="cs-hero-title">
@@ -102,10 +106,16 @@ export default function CaseStudyDetail({ data }) {
                         <img src={data.author.image} alt={data.author.name} />
                     </div>
                     <div className="cs-about-text">
-                        <span className="cs-eyebrow">About the author</span>
+                        <span className="cs-eyebrow">{data.author.eyebrow || "About the author"}</span>
                         <h2 className="cs-h2">
-                            {data.author.firstName}{" "}
-                            <span className="cs-h2-accent">{data.author.lastName}</span>
+                            {data.author.heading ? (
+                                data.author.heading
+                            ) : (
+                                <>
+                                    {data.author.firstName}{" "}
+                                    <span className="cs-h2-accent">{data.author.lastName}</span>
+                                </>
+                            )}
                         </h2>
                         <p
                             className="cs-paragraph"
@@ -164,9 +174,16 @@ export default function CaseStudyDetail({ data }) {
                         <p className="cs-paragraph">{data.solutions.intro}</p>
                     </div>
                     <div className="cs-solutions-list">
-                        {data.solutions.items.map((item, idx) => (
+                        {data.solutions.items.map((item, idx) => {
+                            const reverseLayout =
+                                idx >= 2 &&
+                                (typeof item.reverseLayout === "boolean"
+                                    ? item.reverseLayout
+                                    : (idx - 2) % 2 === 1);
+
+                            return (
                             <div
-                                className={`cs-solution-row ${idx < 2 ? "no-media" : ""} ${idx >= 2 && (idx - 2) % 2 === 1 ? "is-reverse" : ""} ${item.rowClass || ""}`.trim()}
+                                className={`cs-solution-row ${idx < 2 ? "no-media" : ""} ${reverseLayout ? "is-reverse" : ""} ${item.rowClass || ""}`.trim()}
                                 key={idx}
                             >
                                 {idx >= 2 && (
@@ -179,6 +196,16 @@ export default function CaseStudyDetail({ data }) {
                                             />
                                         ) : item.video ? (
                                             <CsScrollVideo src={item.video} title={item.title} />
+                                        ) : item.images ? (
+                                            <div className="cs-solution-image-pair">
+                                                {item.images.map((image, imageIdx) => (
+                                                    <img
+                                                        key={`${item.title}-${imageIdx}`}
+                                                        src={image}
+                                                        alt={item.title}
+                                                    />
+                                                ))}
+                                            </div>
                                         ) : item.mediaLink ? (
                                             <a href={item.mediaLink} target="_blank" rel="noopener noreferrer">
                                                 <img src={item.image || data.hero.image} alt={item.title} />
@@ -202,7 +229,8 @@ export default function CaseStudyDetail({ data }) {
                                     )}
                                 </div>
                             </div>
-                        ))}
+                            );
+                        })}
                     </div>
                     <div className="cs-center-btn">
                         <button onClick={handleOpenChat} className="cs-btn-primary">
@@ -215,94 +243,160 @@ export default function CaseStudyDetail({ data }) {
 
             {/* THE RESULT */}
             <div className="cs-section cs-result">
-                <div className="max-w-screen-xl px-4 mx-auto cs-result-inner">
-                    <div className="cs-result-image">
-                        <img src={data.result.image} alt="" />
+                {data.result.sectionedLayout ? (
+                    <div className="max-w-screen-xl px-4 mx-auto cs-result-sectioned">
+                        {data.result.sections.map((sec, sIdx) => (
+                            <div
+                                className={`cs-result-row ${sec.imagePosition === "right" ? "is-image-right" : ""}`.trim()}
+                                key={sIdx}
+                            >
+                                {sec.image && (
+                                    <div className="cs-result-row-media">
+                                        <img
+                                            src={sec.image}
+                                            alt={sec.imageAlt || ""}
+                                            className={sec.imageClass || ""}
+                                        />
+                                    </div>
+                                )}
+                                <div className="cs-result-row-content">
+                                    {sIdx === 0 && (
+                                        <>
+                                            <span className="cs-eyebrow">The Result</span>
+                                            <h2 className="cs-h2">
+                                                {data.result.heading.beforeAccent}
+                                                <span className="cs-h2-accent">
+                                                    {data.result.heading.accent}
+                                                </span>
+                                                {data.result.heading.afterAccent}
+                                            </h2>
+                                        </>
+                                    )}
+                                    <div className={`cs-result-block ${sIdx === 0 ? "is-first-sectioned" : ""}`.trim()}>
+                                        <h3 className="cs-result-subhead">{sec.title}</h3>
+                                        {sec.paragraphs.map((p, pIdx) => (
+                                            <p
+                                                key={pIdx}
+                                                className="cs-paragraph"
+                                                dangerouslySetInnerHTML={{ __html: p }}
+                                            />
+                                        ))}
+                                    </div>
+                                    {sIdx === data.result.sections.length - 1 && (
+                                        <button onClick={handleOpenChat} className="cs-btn-primary">
+                                            <span>Publish Your Book With Us</span>
+                                            <FontAwesomeIcon icon={faArrowRight} width={14} />
+                                        </button>
+                                    )}
+                                </div>
+                            </div>
+                        ))}
                     </div>
-                    <div className="cs-result-text">
-                        <span className="cs-eyebrow">The Result</span>
-                        <h2 className="cs-h2">
-                            {data.result.heading.beforeAccent}
-                            <span className="cs-h2-accent">
-                                {data.result.heading.accent}
-                            </span>
-                            {data.result.heading.afterAccent}
-                        </h2>
-                        {data.result.sections ? (
-                            data.result.sections.map((sec, sIdx) => (
-                                <div className="cs-result-block" key={sIdx}>
-                                    <h3 className="cs-result-subhead">{sec.title}</h3>
-                                    {sec.paragraphs.map((p, pIdx) => (
+                ) : (
+                    <div className="max-w-screen-xl px-4 mx-auto cs-result-inner">
+                        <div className={`cs-result-image ${data.result.images ? "is-stacked" : ""}`.trim()}>
+                            {(data.result.images || [{ src: data.result.image, alt: "" }]).map((image, idx) => {
+                                const imageSrc = typeof image === "string" ? image : image.src;
+                                const imageAlt = typeof image === "string" ? "" : image.alt || "";
+                                const imageClass = typeof image === "string" ? "" : image.className || "";
+
+                                return (
+                                    <img
+                                        key={`${imageSrc}-${idx}`}
+                                        src={imageSrc}
+                                        alt={imageAlt}
+                                        className={imageClass}
+                                    />
+                                );
+                            })}
+                        </div>
+                        <div className="cs-result-text">
+                            <span className="cs-eyebrow">The Result</span>
+                            <h2 className="cs-h2">
+                                {data.result.heading.beforeAccent}
+                                <span className="cs-h2-accent">
+                                    {data.result.heading.accent}
+                                </span>
+                                {data.result.heading.afterAccent}
+                            </h2>
+                            {data.result.sections ? (
+                                data.result.sections.map((sec, sIdx) => (
+                                    <div className="cs-result-block" key={sIdx}>
+                                        <h3 className="cs-result-subhead">{sec.title}</h3>
+                                        {sec.paragraphs.map((p, pIdx) => (
+                                            <p
+                                                key={pIdx}
+                                                className="cs-paragraph"
+                                                dangerouslySetInnerHTML={{ __html: p }}
+                                            />
+                                        ))}
+                                    </div>
+                                ))
+                            ) : (
+                                <>
+                                    {data.result.paragraphs.map((p, idx) => (
                                         <p
-                                            key={pIdx}
+                                            key={idx}
                                             className="cs-paragraph"
                                             dangerouslySetInnerHTML={{ __html: p }}
                                         />
                                     ))}
-                                </div>
-                            ))
-                        ) : (
-                            <>
-                                {data.result.paragraphs.map((p, idx) => (
-                                    <p
-                                        key={idx}
-                                        className="cs-paragraph"
-                                        dangerouslySetInnerHTML={{ __html: p }}
-                                    />
-                                ))}
-                                {data.result.bullets && (
-                                    <>
-                                        <p className="cs-paragraph">
-                                            <strong>The project delivered:</strong>
-                                        </p>
-                                        <ul className="cs-check-list">
-                                            {data.result.bullets.map((b, idx) => (
-                                                <li key={idx}>
-                                                    <FontAwesomeIcon icon={faCheck} width={14} />
-                                                    <span>{b}</span>
-                                                </li>
-                                            ))}
-                                        </ul>
-                                    </>
-                                )}
-                            </>
-                        )}
-                        <button onClick={handleOpenChat} className="cs-btn-primary">
-                            <span>Publish Your Book With Us</span>
-                            <FontAwesomeIcon icon={faArrowRight} width={14} />
-                        </button>
+                                    {data.result.bullets && (
+                                        <>
+                                            <p className="cs-paragraph">
+                                                <strong>The project delivered:</strong>
+                                            </p>
+                                            <ul className="cs-check-list">
+                                                {data.result.bullets.map((b, idx) => (
+                                                    <li key={idx}>
+                                                        <FontAwesomeIcon icon={faCheck} width={14} />
+                                                        <span>{b}</span>
+                                                    </li>
+                                                ))}
+                                            </ul>
+                                        </>
+                                    )}
+                                </>
+                            )}
+                            <button onClick={handleOpenChat} className="cs-btn-primary">
+                                <span>Publish Your Book With Us</span>
+                                <FontAwesomeIcon icon={faArrowRight} width={14} />
+                            </button>
+                        </div>
                     </div>
-                </div>
+                )}
             </div>
 
             {/* AUTHOR'S REVIEW */}
-            <div className="cs-section cs-review">
-                <div className="max-w-screen-xl px-4 mx-auto cs-review-inner">
-                    <h2 className="cs-h2 cs-h2-center">Author’s Review</h2>
-                    <div className="cs-review-card">
-                        <div className="cs-review-image">
-                            <img src={data.review.image} alt={data.review.name} />
-                        </div>
-                        <div className="cs-review-content">
-                            <p className="cs-review-quote">“{data.review.quote}”</p>
-                            <p className="cs-review-name">
-                                {data.review.firstName}{" "}
-                                <span className="cs-h2-accent">{data.review.lastName}</span>
-                            </p>
-                            {data.review.link && (
-                                <a
-                                    href={data.review.link}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="cs-review-link"
-                                >
-                                    {data.review.linkLabel || "Read full review"} →
-                                </a>
-                            )}
+            {data.review && (
+                <div className="cs-section cs-review">
+                    <div className="max-w-screen-xl px-4 mx-auto cs-review-inner">
+                        <h2 className="cs-h2 cs-h2-center">Author’s Review</h2>
+                        <div className="cs-review-card">
+                            <div className="cs-review-image">
+                                <img src={data.review.image} alt={data.review.name} />
+                            </div>
+                            <div className="cs-review-content">
+                                <p className="cs-review-quote">“{data.review.quote}”</p>
+                                <p className="cs-review-name">
+                                    {data.review.firstName}{" "}
+                                    <span className="cs-h2-accent">{data.review.lastName}</span>
+                                </p>
+                                {data.review.link && (
+                                    <a
+                                        href={data.review.link}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="cs-review-link"
+                                    >
+                                        {data.review.linkLabel || "Read full review"} →
+                                    </a>
+                                )}
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            )}
         </section>
     );
 }

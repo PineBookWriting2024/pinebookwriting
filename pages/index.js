@@ -1,11 +1,9 @@
 import React from "react";
 import Head from "next/head";
 import BrandTopBar from "./components/BrandTopBar";
-import BrandFooter from "./components/BrandFooter";
 import BrandAbout from "./components/BrandAbout";
 import BrandNavbar from "./components/BrandNavbar";
 import BrandHero from "./components/BrandHero";
-import BrandHeroFriday from "./components/BrandHeroFriday";
 import BrandBannerLogo from "./components/BrandBannerLogo";
 import BrandCTA from "./components/BrandCTA";
 import BrandServices from "./components/BrandServices";
@@ -14,7 +12,6 @@ import BrandTestimonial from "./components/BrandTestimonial";
 import BrandFaqs from "./components/BrandFaqs";
 import BrandContact from "./components/BrandContactForm";
 import BrandLogo from "./components/BrandLogo";
-import BrandSister from "./components/BrandSister";
 import BrandBannerVideo from "./components/BrandBannerVideo";
 import NewBrandFooter from "./components/NewBrandFooter";
 import HomeBookSlider from "./components/HomeBookSlider";
@@ -89,7 +86,7 @@ Let’s Handle It!
             <BrandTestimonial />
             <BrandVideoShowcase />
             <ExclusiveBookSigningParallax />
-            {/* <BrandCaseStudies /> */}
+            <BrandCaseStudies />
             <BrandLogo />
 
 

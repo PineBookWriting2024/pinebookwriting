@@ -3,23 +3,16 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight, faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Link from "next/link";
-import dynamic from 'next/dynamic';
 import {
     Autoplay,
     Pagination,
     Navigation,
-    EffectCoverflow,
 } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/autoplay";
 import 'glightbox/dist/css/glightbox.min.css';
-
-const GLightbox = dynamic(
-    () => import('glightbox').then((glightboxModule) => glightboxModule.default),
-    { ssr: false }
-);
 
 export default function HomeBookSlider() {
     const swiperRef2 = useRef(null);
@@ -31,12 +24,16 @@ export default function HomeBookSlider() {
             if (lightboxRef.current) {
                 lightboxRef.current.destroy();
             }
-            import('glightbox').then((GLightboxModule) => {
-                const GLightbox = GLightboxModule.default;
-                lightboxRef.current = GLightbox({
-                    selector: '.glightbox5'
+            import('glightbox')
+                .then((GLightboxModule) => {
+                    const GLightbox = GLightboxModule.default;
+                    lightboxRef.current = GLightbox({
+                        selector: '.glightbox5'
+                    });
+                })
+                .catch((error) => {
+                    console.warn("GLightbox could not be loaded.", error);
                 });
-            });
         }
 
         return () => {

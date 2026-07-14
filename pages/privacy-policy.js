@@ -5,7 +5,7 @@ import Header from "./components/header";
 import Head from "next/head";
 import BrandNavbar from "./components/BrandNavbar";
 import NewBrandFooter from "./components/NewBrandFooter";
-    
+
 
 export default function Privacy() {
 
@@ -26,7 +26,7 @@ export default function Privacy() {
 
             <BrandPrimaryHeader
                 photo_banner={"brand-img/port-banner.jpg"}
-                title="Privacy Policy"/>
+                title="Privacy Policy" />
 
             <div className="container privacy-policy mx-auto w-full px-10 md:px-32 pt-14 mb-20 width-container">
                 <p>
@@ -88,6 +88,9 @@ export default function Privacy() {
                 </h2>
                 <p>
                     4.1 We may need to gather personal data about you in order to process your order, including your billing address, phone number, name, and email address. Only our third-party credit card provider handles the credit card data. At the appropriate time, we will give our customer any additional pertinent information.
+                </p>
+                <p>
+                    4.2 Security Deposit Refund Policy: Any security deposit paid to Pine Book Writing is eligible for a refund only if a written refund request is submitted within three (3) months from the date of payment and all applicable terms and conditions have been met. After the three-month period has elapsed, the security deposit will be considered non-refundable under our strict company policy. By making the payment, the client acknowledges and agrees to this policy.
                 </p>
                 <h2 className="font-poppins">
                     5. IP Address and Cookies

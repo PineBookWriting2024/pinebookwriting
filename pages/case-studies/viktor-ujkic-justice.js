@@ -14,6 +14,8 @@ const caseData = {
     hero: {
         beforeAccent: "From a Debut Crime Thriller to a Compelling Author Brand",
         afterAccent: "",
+        background:
+            "radial-gradient(circle at 69% 31%, rgba(238, 192, 88, 0.28) 0%, rgba(238, 192, 88, 0.12) 21%, rgba(238, 192, 88, 0) 40%), linear-gradient(135deg, #071121 0%, #0D1D36 44%, #142A4C 100%)",
         subtext:
             "Pine Book Writing partnered with Viktor Ujkic to transform Justice Died at Dawn into a professionally published crime thriller through strategic publishing, professional book development, audience-building initiatives, and long-term brand positioning designed to introduce a new voice to the crime and legal thriller genre.",
         image: `${ASSETS}/Viktor Ujkic Book Mockup 01.png`,
@@ -168,13 +170,15 @@ export default function ViktorUjkicJustice() {
                 />
             </Head>
 
-            <BrandTopBar />
-            <BrandNavbar />
+            <div className="case-study-detail-page">
+                <BrandTopBar />
+                <BrandNavbar />
 
-            <CaseStudyDetail data={caseData} />
+                <CaseStudyDetail data={caseData} />
 
-            <BrandContact />
-            <NewBrandFooter />
+                <BrandContact />
+                <NewBrandFooter />
+            </div>
         </>
     );
 }

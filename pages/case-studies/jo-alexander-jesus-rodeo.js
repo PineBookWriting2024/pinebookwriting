@@ -187,13 +187,15 @@ export default function JoAlexanderJesusRodeo() {
                 />
             </Head>
 
-            <BrandTopBar />
-            <BrandNavbar />
+            <div className="case-study-detail-page">
+                <BrandTopBar />
+                <BrandNavbar />
 
-            <CaseStudyDetail data={caseData} />
+                <CaseStudyDetail data={caseData} />
 
-            <BrandContact />
-            <NewBrandFooter />
+                <BrandContact />
+                <NewBrandFooter />
+            </div>
         </>
     );
 }

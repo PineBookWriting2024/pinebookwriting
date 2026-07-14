@@ -3,7 +3,7 @@ import { usePopupcta } from '../../context/PopupContext';
 import { useState } from 'react';
 
 const PopupModal = () => {
-  const { isPopupOpen, closeModal} = usePopupcta();
+  const { isPopupOpen, closeModal, popupService } = usePopupcta();
   const [form, setForm] = useState({
     fulName: '',
     phoneNumber: '',
@@ -116,7 +116,7 @@ const PopupModal = () => {
                                                 <input
                                                     type="text"
                                                     name="service"
-                                                    value={form.service}
+                                                    value={popupService}
                                                     readOnly
                                                     required
                                                     className="hidden w-full py-2 pl-4 pr-4 border rounded-lg home-connect-form-input"

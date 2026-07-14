@@ -148,7 +148,7 @@ export default function BrandHero() {
                             {/* <FadeIn> */}
                             <p className="pt-4 text-xl text-white">
                                 Are you in search of a team of writing experts or a full-scale book writing company? Pine Book Writing has an extensive team of award-winning book writers (all genres), copywriters, research writers and SEO writers that can offer all writing solutions under one umbrella. We don’t just write, but also guide. </p><button
-                                    onClick={openModal}
+                                    onClick={() => openModal("Free Quote")}
                                     style={{
                                         backgroundColor: "#000",
                                         color: "#fff",

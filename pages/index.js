@@ -15,7 +15,7 @@ import BrandLogo from "./components/BrandLogo";
 import BrandBannerVideo from "./components/BrandBannerVideo";
 import NewBrandFooter from "./components/NewBrandFooter";
 import HomeBookSlider from "./components/HomeBookSlider";
-import BrandCaseStudies from "./components/BrandCaseStudies";
+import HomeCaseStudiesCarousel from "./components/HomeCaseStudiesCarousel";
 import BrandVideoShowcase from "./components/BrandVideoShowcase";
 // import HomePopupJuneteenth from "./components/HomePopupJuneteenth";
 import ExclusiveBookSigningParallax from "./components/ExclusiveBookSigningParallax";
@@ -86,7 +86,7 @@ Let’s Handle It!
             <BrandTestimonial />
             <BrandVideoShowcase />
             <ExclusiveBookSigningParallax />
-            <BrandCaseStudies />
+            <HomeCaseStudiesCarousel />
             <BrandLogo />
 
 

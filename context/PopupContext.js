@@ -9,8 +9,11 @@ export const PopupProvider = ({ children }) => {
 
   const [popupService, setPopupService] = useState("");
 
-  const openModal = (service) => {
-    setPopupService(service);
+  const openModal = (service = "") => {
+    const safeService =
+      typeof service === "string" ? service : "";
+
+    setPopupService(safeService);
     setIsPopupOpen(true);
   };
 

@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 
 export default function BrandCaseStudies() {
+    const [lockedTiles, setLockedTiles] = useState({});
+
     const caseStudies = [
         {
             bgImage: "/brand-img/Avis Deskey  Header Image 01.jpg",
@@ -71,8 +73,10 @@ export default function BrandCaseStudies() {
                     {caseStudies.map((cs, idx) => (
                         <div
                             key={idx}
-                            className={`case-study-tile ${idx === 0 ? "case-study-tile-featured" : ""} ${idx === 1 ? "case-study-tile-tall" : ""}`}
+                            className={`case-study-tile ${idx === 0 ? "case-study-tile-featured" : ""} ${idx === 1 ? "case-study-tile-tall" : ""} ${lockedTiles[idx] ? "case-study-tile-locked" : ""}`}
                             style={{ "--case-card-bg": cs.themeBg }}
+                            onMouseEnter={() => setLockedTiles((prev) => ({ ...prev, [idx]: true }))}
+                            onTouchStart={() => setLockedTiles((prev) => ({ ...prev, [idx]: true }))}
                         >
                             <span className="case-study-tile-title">
                                 <span className="case-study-tile-heading">{cs.title}</span>

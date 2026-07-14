@@ -75,10 +75,15 @@ export default function BrandCaseStudies() {
                             key={idx}
                             className={`case-study-tile ${idx === 0 ? "case-study-tile-featured" : ""} ${idx === 1 ? "case-study-tile-tall" : ""} ${lockedTiles[idx] ? "case-study-tile-locked" : ""}`}
                             style={{ "--case-card-bg": cs.themeBg }}
-                            onMouseEnter={() => setLockedTiles((prev) => ({ ...prev, [idx]: true }))}
-                            onTouchStart={() => setLockedTiles((prev) => ({ ...prev, [idx]: true }))}
                         >
-                            <span className="case-study-tile-title">
+                            <span
+                                className="case-study-tile-title"
+                                onMouseEnter={() => setLockedTiles((prev) => ({ ...prev, [idx]: true }))}
+                                onTouchStart={(event) => {
+                                    event.stopPropagation();
+                                    setLockedTiles((prev) => ({ ...prev, [idx]: !prev[idx] }));
+                                }}
+                            >
                                 <span className="case-study-tile-heading">{cs.title}</span>
                                 <span className="case-study-tile-actions">
                                     <a href={cs.bookLink} target="_blank" rel="noreferrer">

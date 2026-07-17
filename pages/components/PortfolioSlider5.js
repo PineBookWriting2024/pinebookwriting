@@ -36,7 +36,7 @@ export default function PortfolioSlider5() {
     return (
         <section className="portfolio-video-trailers">
             <div className="portfolio-video-trailers__inner">
-                <h2>Video Trailers</h2>
+                <h2>Book Video Trailer</h2>
 
                 <div className="portfolio-video-trailers__carousel">
                     <button

@@ -382,7 +382,8 @@ export default function Home() {
       title: "Are You Ready For Us?",
       author: 'by: J. Grace',
       category: 'Published Books',
-      url: 'https://a.co/d/6Y9etUb'
+      url: 'https://a.co/d/6Y9etUb',
+      imageClass: 'book-cover-image--wrap'
     },
     {
       id: 17,
@@ -1348,7 +1349,7 @@ export default function Home() {
                       data-gallery="portfolio-books"
                       data-glightbox={`title: ${book.title}; description: ${book.author || ""}`}
                     >
-                      <img src={book.src} alt={`Book ${book.id}`} className="object-contain" />
+                      <img src={book.src} alt={`Book ${book.id}`} className={`object-contain ${book.imageClass || ""}`} />
                     </a>
                     <div className="content">
                       <h4 className="text-size-custom">{book.title}</h4>

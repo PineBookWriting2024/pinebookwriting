@@ -240,12 +240,12 @@ export default function BrandFooterBook() {
                                     </Link>
                                 </li>
                                 <li className="mt-3">
-                                    <Link href={'javascript:;'}>
+                                    <Link href="#">
                                         Book Formatting
                                     </Link>
                                 </li>
                                 <li className="mt-3">
-                                    <Link href={'javascript:;'}>
+                                    <Link href="#">
                                         Typesetting & Layout
                                     </Link>
                                 </li>
@@ -255,17 +255,17 @@ export default function BrandFooterBook() {
                                     </Link>
                                 </li>
                                 <li className="mt-3">
-                                    <Link href={'javascript:;'}>
+                                    <Link href="#">
                                         Audio Book
                                     </Link>
                                 </li>
                                 <li className="mt-3">
-                                    <Link href={'javascript:;'}>
+                                    <Link href="#">
                                         Print on Demand
                                     </Link>
                                 </li>
                                 <li className="mt-3">
-                                    <Link href={'javascript:;'}>
+                                    <Link href="#">
                                         Document Processing
                                     </Link>
                                 </li>

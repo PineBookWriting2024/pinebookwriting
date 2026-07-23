@@ -75,8 +75,14 @@ export default function BrandNavbar() {
         };
     }, []);
 
-    const handleOpenChat = () => {
-        window.zE && window.zE('webWidget', 'open');
+    const handleOpenChat = (event) => {
+        event?.preventDefault();
+        if (typeof window.zE === 'function') {
+            window.zE('webWidget', 'show');
+            window.zE('webWidget', 'open');
+        } else if (typeof window.$zopim === 'function') {
+            window.$zopim(() => window.$zopim.livechat.window.show());
+        }
     };
 
     useEffect(() => {
@@ -198,7 +204,7 @@ export default function BrandNavbar() {
                             <li className='mb-3 md:mb-0'><Link href="/case-studies" onClick={(e) => { e.preventDefault(); window.location.href = "/case-studies"; }} className="text-white hover:text-gray-300">Case Studies</Link></li>
                             <li className='mb-3 md:mb-0'><Link href="/blog" onClick={(e) => { e.preventDefault(); window.location.href = "/blog"; }} className="text-white hover:text-gray-300">Blog</Link></li>
                             <li className='mb-3 md:mb-0'><Link href="/contact-us" onClick={(e) => { e.preventDefault(); window.location.href = "contact-us"; }} className="text-white hover:text-gray-300">Contact</Link></li>
-                            <li><Link href={'javascript:;'} className="px-4 py-2 text-sm text-white bg-blue-500 rounded hover:bg-blue-600 brand-nav-btn font-poppins" onClick={handleOpenChat}>Talk to an Expert</Link></li>
+                            <li><button type="button" className="px-4 py-2 text-sm text-white bg-blue-500 rounded hover:bg-blue-600 brand-nav-btn font-poppins" onClick={handleOpenChat}>Talk to an Expert</button></li>
                         </ul>
                     </nav>
                 </div>

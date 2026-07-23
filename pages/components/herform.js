@@ -153,7 +153,7 @@ export default function HeroForm() {
           </div> */}
           <div className="flex justify-start items-center mt-8 gap-2 md:gap-x-8 client-logo-sec">
             {clientLogos.map((logo, index) => (
-              <Link key={index} href={'javascript:;'}>
+              <Link key={index} href="#">
                 <Image
                   alt={logo.alt}
                   src={logo.src}

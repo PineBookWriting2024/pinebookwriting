@@ -16,8 +16,14 @@ import CTAButton from './components/CTAButton';
 
 
 export default function BookEditing() {
-    const handleOpenChat = () => {
-        window.zE && window.zE('webWidget', 'open');
+    const handleOpenChat = (event) => {
+        event?.preventDefault();
+        if (typeof window.zE === 'function') {
+            window.zE('webWidget', 'show');
+            window.zE('webWidget', 'open');
+        } else if (typeof window.$zopim === 'function') {
+            window.$zopim(() => window.$zopim.livechat.window.show());
+        }
     };
 
     const [openFAQ, setOpenFAQ] = useState(0);
@@ -274,7 +280,7 @@ What’s Included In Our Book Editing Services
                             </div>
                             {/* <BrandAudioPlayer src="/brand-img/why-choose-us-voice.wav" /> */}
                             <div>
-                                <button className="mt-10 shadow-xl cursor-pointer brand-nav-btn-1 brand-nav-btn btn-f" onClick={handleOpenChat}><Link href={'javascript:;'}>Speak to our Consultant</Link></button>
+                                <button type="button" className="mt-10 shadow-xl cursor-pointer brand-nav-btn-1 brand-nav-btn btn-f" onClick={handleOpenChat}>Speak to our Consultant</button>
                                 <button className="mt-10 ml-0 shadow-xl cursor-pointer brand-nav-btn-1 brand-nav-btn btn-f md:ml-3"><Link href="tel:+18668417463">Call Now</Link></button>
                             </div>
                         </div>

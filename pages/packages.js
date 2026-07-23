@@ -57,8 +57,14 @@ export default function Bundle({ isOpen, onClose, service }) {
         setModalOpen(false);
     };
 
-    const handleOpenChat = () => {
-        window.zE && window.zE('webWidget', 'open');
+    const handleOpenChat = (event) => {
+        event?.preventDefault();
+        if (typeof window.zE === 'function') {
+            window.zE('webWidget', 'show');
+            window.zE('webWidget', 'open');
+        } else if (typeof window.$zopim === 'function') {
+            window.$zopim(() => window.$zopim.livechat.window.show());
+        }
     };
 
 

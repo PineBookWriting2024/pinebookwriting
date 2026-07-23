@@ -24,9 +24,15 @@ export default function GhostwritingServices() {
     { question: "How much does ghostwriting a book cost?", answer: "The cost of our book ghostwriting services varies based on your book’s length, genre, and complexity. You can view our ghostwriting packages or request a ghostwriter cost estimate from our representative to customize the plan according to your needs." },
   ];
 
-  const handleOpenChat = () => {
-    window.zE && window.zE('webWidget', 'open');
-  };
+  const handleOpenChat = (event) => {
+    event?.preventDefault();
+    if (typeof window.zE === 'function') {
+        window.zE('webWidget', 'show');
+        window.zE('webWidget', 'open');
+    } else if (typeof window.$zopim === 'function') {
+        window.$zopim(() => window.$zopim.livechat.window.show());
+    }
+    };
 
   return (
     <>
@@ -148,7 +154,7 @@ export default function GhostwritingServices() {
               </a>
 
               <a
-                href={'javascript:;'}
+                href="#"
                 className="bg-transparent text-[#fff] px-5 py-2 border border-white
  rounded-full flex items-center gap-2 hover:bg-gray-200 hover:text-black cta-btn-1 transition" onClick={handleOpenChat}>
                 Live Chat
@@ -474,7 +480,7 @@ export default function GhostwritingServices() {
               </div>
 
               <div>
-                <button className="mt-10 shadow-xl cursor-pointer brand-nav-btn-1 brand-nav-btn btn-f" onClick={handleOpenChat}><Link href={'javascript:;'}>Speak to our Consultant</Link></button>
+                <button type="button" className="mt-10 shadow-xl cursor-pointer brand-nav-btn-1 brand-nav-btn btn-f" onClick={handleOpenChat}>Speak to our Consultant</button>
                 <button className="mt-10 ml-0 shadow-xl cursor-pointer brand-nav-btn-1 brand-nav-btn btn-f md:ml-3"><Link href="tel:+18668417463">Call Now</Link></button>
               </div>
             </div>

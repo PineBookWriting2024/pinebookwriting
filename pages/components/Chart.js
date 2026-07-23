@@ -20,8 +20,14 @@ export default function Chart() {
         setModalOpen(false);
     };
 
-    const handleOpenChat = () => {
-        window.zE && window.zE('webWidget', 'open');
+    const handleOpenChat = (event) => {
+        event?.preventDefault();
+        if (typeof window.zE === 'function') {
+            window.zE('webWidget', 'show');
+            window.zE('webWidget', 'open');
+        } else if (typeof window.$zopim === 'function') {
+            window.$zopim(() => window.$zopim.livechat.window.show());
+        }
     };
 
 
@@ -173,7 +179,7 @@ export default function Chart() {
                                         <td className="md:w-auto w-24">
                                             <a
                                                 // data-src="#popup-layout"
-                                                // href="javascript:;"
+                                                // href="#"
                                                 onClick={() => openModal('Beginners')}
                                                 className="cursor-pointer md:min-w-26 w-40 text-black bg-white focus:outline-none font-medium rounded-full text-sm px-2 py-2.5 me-2 mb-2 md:px-5"
                                                 data-source="Beginners Bundles"
@@ -184,7 +190,7 @@ export default function Chart() {
                                         <td className="md:w-auto w-24">
                                             <a
                                                 // data-src="#popup-layout"
-                                                // href="javascript:;"
+                                                // href="#"
                                                 onClick={() => openModal('Standard')}
                                                 className="cursor-pointer md:min-w-26 w-40 text-black bg-white focus:outline-none font-medium rounded-full text-sm px-2 py-2.5 me-2 mb-2 md:px-5"
                                                 data-source="Beginners Bundles"
@@ -195,7 +201,7 @@ export default function Chart() {
                                         <td className="md:w-auto w-24">
                                             <a
                                                 // data-src="#popup-layout"
-                                                // href="javascript:;"
+                                                // href="#"
                                                 onClick={() => openModal('Expert')}
                                                 className="cursor-pointer md:min-w-26 w-40 text-black bg-white focus:outline-none font-medium rounded-full text-sm px-2 py-2.5 me-2 mb-2 md:px-5"
                                                 data-source="Beginners Bundles"
@@ -206,7 +212,7 @@ export default function Chart() {
                                         <td className="md:w-auto w-24 border-bottom-right-radius-table">
                                             <a
                                                 // data-src="#popup-layout"
-                                                // href="javascript:;"
+                                                // href="#"
                                                 onClick={() => openModal('Enterprise')}
                                                 className="cursor-pointer md:min-w-26 w-40 text-black bg-white focus:outline-none font-medium rounded-full text-sm px-2 py-2.5 me-2 mb-2 md:px-5"
                                                 data-source="Beginners Bundles"
@@ -571,7 +577,7 @@ export default function Chart() {
                                         <td className="md:w-auto w-24">
                                             <a
                                                 // data-src="#popup-layout"
-                                                // href="javascript:;"
+                                                // href="#"
                                                 onClick={() => openModal('Beginners')}
                                                 className="cursor-pointer md:min-w-26 w-40 text-black bg-white focus:outline-none font-medium rounded-full text-sm px-2 py-2.5 me-2 mb-2 md:px-5"
                                                 data-source="Beginners Bundles"
@@ -582,7 +588,7 @@ export default function Chart() {
                                         <td className="md:w-auto w-24">
                                             <a
                                                 // data-src="#popup-layout"
-                                                // href="javascript:;"
+                                                // href="#"
                                                 onClick={() => openModal('Standard')}
                                                 className="cursor-pointer md:min-w-26 w-40 text-black bg-white focus:outline-none font-medium rounded-full text-sm px-2 py-2.5 me-2 mb-2 md:px-5"
                                                 data-source="Beginners Bundles"
@@ -593,7 +599,7 @@ export default function Chart() {
                                         <td className="md:w-auto w-24">
                                             <a
                                                 // data-src="#popup-layout"
-                                                // href="javascript:;"
+                                                // href="#"
                                                 onClick={() => openModal('Expert')}
                                                 className="cursor-pointer md:min-w-26 w-40 text-black bg-white focus:outline-none font-medium rounded-full text-sm px-2 py-2.5 me-2 mb-2 md:px-5"
                                                 data-source="Beginners Bundles"
@@ -604,7 +610,7 @@ export default function Chart() {
                                         <td className="md:w-auto w-24">
                                             <a
                                                 // data-src="#popup-layout"
-                                                // href="javascript:;"
+                                                // href="#"
                                                 onClick={() => openModal('Enterprise')}
                                                 className="cursor-pointer md:min-w-26 w-40 text-black bg-white focus:outline-none font-medium rounded-full text-sm px-2 py-2.5 me-2 mb-2 md:px-5"
                                                 data-source="Beginners Bundles"

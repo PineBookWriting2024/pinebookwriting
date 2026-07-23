@@ -13,9 +13,15 @@ import Footer from "../components/Footer";
 import BrandContact from "../components/BrandContactForm";
 import Script from "next/script";
 
-const handleOpenChat = () => {
-  window.zE && window.zE('webWidget', 'open');
-};
+const handleOpenChat = (event) => {
+  event?.preventDefault();
+  if (typeof window.zE === 'function') {
+      window.zE('webWidget', 'show');
+      window.zE('webWidget', 'open');
+  } else if (typeof window.$zopim === 'function') {
+      window.$zopim(() => window.$zopim.livechat.window.show());
+  }
+    };
 
 const steps = [
   { title: "Sign Up", imgTop: "/images/p-img-top.webp", imgBottom: "/images/p-img-bottom.webp", img: "/images/p-img.webp", img1: "/images/p-img1.webp", icon: "/images/Sign-Up.png" },
@@ -566,7 +572,7 @@ export default function Home() {
 
                 <div className="flex gap-6" bis_skin_checked="1">
                   <button className="book-publishing-cta-btn-3 shadow-xl mt-10 cursor-pointer bg-white">
-                    <a href="javascript:;">Talk to an Expert</a></button>
+                    <a href="#">Talk to an Expert</a></button>
                   <button className="book-publishing-cta-btn-2 shadow-xl mt-10 cursor-pointer bg-white">
                     <a href="tel:8668417463">(866) 841-7463</a></button>
                 </div>
@@ -1421,7 +1427,7 @@ export default function Home() {
               <p className="text-white mt-7">At Pine Book Writing, we take pride in having an industry-leading team of ghostwriters who have immense expertise in various genres. Contact us to book a consultation call!
               </p>
               <div className="flex gap-6 md:justify-start justify-center">
-                <button className="package-get-started-btn text-md mt-5" onClick={handleOpenChat}><Link href={'javascript:;'}>Talk to an Expert</Link></button>
+                <button type="button" className="package-get-started-btn text-md mt-5" onClick={handleOpenChat}>Talk to an Expert</button>
                 <button className="package-get-started-btn text-md mt-5"><Link href="tel:(866) 841-7463">(866) 841-7463</Link></button>
               </div>
             </div>

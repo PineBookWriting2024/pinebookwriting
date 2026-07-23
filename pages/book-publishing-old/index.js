@@ -18,9 +18,15 @@ import PortfolioSlider2LP from "../components/PortfolioSlider2LP";
 import PortfolioSlider3LP from "../components/PortfolioSlider3LP";
 
 
-const handleOpenChat = () => {
-  window.zE && window.zE('webWidget', 'open');
-};
+const handleOpenChat = (event) => {
+  event?.preventDefault();
+  if (typeof window.zE === 'function') {
+      window.zE('webWidget', 'show');
+      window.zE('webWidget', 'open');
+  } else if (typeof window.$zopim === 'function') {
+      window.$zopim(() => window.$zopim.livechat.window.show());
+  }
+    };
 
 const steps = [
   { title: "Editing", imgTop: "/images/p-img-top.webp", imgBottom: "/images/p-img-bottom.webp", img: "/images/p-img.webp", img1: "/images/p-img1.webp", icon: "/images/Editing.png" },
@@ -827,7 +833,7 @@ export default function Home() {
               <p className="text-white mt-7">Ready to share your fascinating story with your potential audience? Contact Pine Book Writing and get a free quote now!
               </p>
               <div className="flex gap-6 md:justify-start justify-center">
-                <button className="package-get-started-btn text-md mt-5" onClick={() => openModal('Basic')}><Link href={'javascript:;'}>Talk to an Expert</Link></button>
+                <button className="package-get-started-btn text-md mt-5" onClick={() => openModal('Basic')}><Link href="#">Talk to an Expert</Link></button>
                 <button className="package-get-started-btn text-md mt-5" ><Link href="tel:(866) 841-7463">(866) 841-7463</Link></button>
 
               </div>

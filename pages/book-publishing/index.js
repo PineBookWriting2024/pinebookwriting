@@ -40,9 +40,15 @@ import LanguageSelectorDropdown from "../components/LanguageSelectorDropdown";
 import NewBrandFooter from "../components/NewBrandFooter";
 
 export default function Home() {
-  const handleOpenChat = () => {
-    window.zE && window.zE('webWidget', 'open');
-  };
+  const handleOpenChat = (event) => {
+    event?.preventDefault();
+    if (typeof window.zE === 'function') {
+        window.zE('webWidget', 'show');
+        window.zE('webWidget', 'open');
+    } else if (typeof window.$zopim === 'function') {
+        window.$zopim(() => window.$zopim.livechat.window.show());
+    }
+    };
 
   const counterRef = useRef(null);
   const contentRef = useRef(null);
@@ -899,7 +905,7 @@ export default function Home() {
               </button>
 
               <button className="btn-a items-center bg-gray-800 md:py-2 py-4 px-3 focus:outline-none hover:bg-gray-700" onClick={handleOpenChat}>
-                <Link className="" href={'javascript:;'}>Talk to an Expert</Link>
+                <Link className="" href="#">Talk to an Expert</Link>
               </button>
               <LanguageSelectorDropdown />
             </div>
@@ -1091,7 +1097,7 @@ export default function Home() {
                   We have a qualified team of professionals who will work hand in hand with you from the moment you decide to publish your book to the moment your book is known to the world.
                 </p>
                 <div className="flex gap-6">
-                  <button className="book-publishing-cta-btn-3 shadow-xl mt-10 cursor-pointer bg-white" onClick={handleOpenChat}><Link href={'javascript:;'}>Talk to an Expert</Link></button>
+                  <button type="button" className="book-publishing-cta-btn-3 shadow-xl mt-10 cursor-pointer bg-white" onClick={handleOpenChat}>Talk to an Expert</button>
                   <button className="book-publishing-cta-btn-2 shadow-xl mt-10 cursor-pointer bg-white"><Link href="tel:(888) 786-7135">(888) 786-7135</Link></button>
                 </div>
                 {/* <div className="flex justify-start items-center mt-8 gap-2 md:gap-x-8 client-logo-sec about-logos-sec">
@@ -1727,7 +1733,7 @@ export default function Home() {
                     <a href="tel:+1-307-243-1331" className="hover:text-[#15184c] transition">
                       📞 Talk to Us
                     </a>
-                    <a href="javascript:;" onClick={handleOpenChat} className="hover:text-[#15184c] transition">
+                    <a href="#" onClick={handleOpenChat} className="hover:text-[#15184c] transition">
                       💬 Chat With Us
                     </a>
                   </div>
@@ -1778,7 +1784,7 @@ export default function Home() {
                     <a href="tel:+1-307-243-1331" className="hover:text-[#15184c] transition">
                       📞 Talk to Us
                     </a>
-                    <a href="javascript:;" onClick={handleOpenChat} className="hover:text-[#15184c] transition">
+                    <a href="#" onClick={handleOpenChat} className="hover:text-[#15184c] transition">
                       💬 Chat With Us
                     </a>
                   </div>
@@ -1832,7 +1838,7 @@ export default function Home() {
                     <a href="tel:+1-307-243-1331" className="hover:text-[#15184c] transition">
                       📞 Talk to Us
                     </a>
-                    <a href="javascript:;" onClick={handleOpenChat} className="hover:text-[#15184c] transition">
+                    <a href="#" onClick={handleOpenChat} className="hover:text-[#15184c] transition">
                       💬 Chat With Us
                     </a>
                   </div>
@@ -1939,7 +1945,7 @@ export default function Home() {
                     <a href="tel:+1-307-243-1331" className="hover:text-[#15184c] transition">
                       📞 Talk to Us
                     </a>
-                    <a href="javascript:;" onClick={handleOpenChat} className="hover:text-[#15184c] transition">
+                    <a href="#" onClick={handleOpenChat} className="hover:text-[#15184c] transition">
                       💬 Chat With Us
                     </a>
                   </div>
@@ -2002,7 +2008,7 @@ export default function Home() {
                     <a href="tel:+1-307-243-1331" className="hover:text-[#15184c] transition">
                       📞 Talk to Us
                     </a>
-                    <a href="javascript:;" onClick={handleOpenChat} className="hover:text-[#15184c] transition">
+                    <a href="#" onClick={handleOpenChat} className="hover:text-[#15184c] transition">
                       💬 Chat With Us
                     </a>
                   </div>
@@ -2074,7 +2080,7 @@ export default function Home() {
                     <a href="tel:+1-307-243-1331" className="hover:text-[#15184c] transition">
                       📞 Talk to Us
                     </a>
-                    <a href="javascript:;" onClick={handleOpenChat} className="hover:text-[#15184c] transition">
+                    <a href="#" onClick={handleOpenChat} className="hover:text-[#15184c] transition">
                       💬 Chat With Us
                     </a>
                   </div>

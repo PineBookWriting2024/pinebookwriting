@@ -5958,6 +5958,10 @@ h2 {
   transition: transform .35s ease, opacity .35s ease;
 }
 
+.portfolio-video-trailers__card--active {
+  transform: scale(1.16);
+}
+
 .portfolio-video-trailers__video {
   aspect-ratio: 16 / 9;
   background: #050505;
@@ -5988,7 +5992,7 @@ h2 {
 .portfolio-video-trailers .swiper-slide-active {
   opacity: 1;
   pointer-events: auto;
-  transform: scale(1.16);
+  transform: scale(1);
   visibility: visible;
   z-index: 5;
 }
@@ -6059,6 +6063,10 @@ h2 {
   .portfolio-video-trailers .swiper-slide,
   .portfolio-video-trailers .swiper-slide-active {
     transform: scale(1);
+  }
+
+  .portfolio-video-trailers__card--active {
+    transform: scale(1.06);
   }
 
   .portfolio-video-trailers__nav {

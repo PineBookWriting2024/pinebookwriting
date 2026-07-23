@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useRef, useState } from "react";
 import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { EffectCoverflow, Navigation, Pagination } from "swiper/modules";
@@ -24,14 +24,6 @@ export default function PortfolioSlider5() {
         { id: 9, src: "https://www.youtube.com/embed/dk9nFbw5K1o" },
         { id: 10, src: "https://www.youtube.com/embed/mrufdG3C8ts" },
     ];
-
-    useEffect(() => {
-        const autoSlideTimer = setInterval(() => {
-            swiperRef.current?.slideNext();
-        }, 6500);
-
-        return () => clearInterval(autoSlideTimer);
-    }, []);
 
     return (
         <section className="portfolio-video-trailers">
@@ -81,7 +73,13 @@ export default function PortfolioSlider5() {
                     >
                         {videoSlides.map((video, index) => (
                             <SwiperSlide key={video.id}>
-                                <div className="portfolio-video-trailers__card">
+                                <div
+                                    className={`portfolio-video-trailers__card${
+                                        activeVideoIndex === index
+                                            ? " portfolio-video-trailers__card--active"
+                                            : ""
+                                    }`}
+                                >
                                     <iframe
                                         className="portfolio-video-trailers__video"
                                         src={`${video.src}?rel=0&playsinline=1${activeVideoIndex === index ? "&autoplay=1&mute=1" : ""}`}

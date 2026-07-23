@@ -76,7 +76,6 @@ import "swiper/css/pagination";
 import "swiper/css/autoplay";
 import { faArrowRight, faArrowLeft, faPlusCircle, faCheckCircle, faMinusCircle } from "@fortawesome/free-solid-svg-icons";
 import { library } from "@fortawesome/fontawesome-svg-core";
-import Script from 'next/script';
 
 library.add(faArrowLeft, faArrowRight);
 
@@ -1020,7 +1019,6 @@ export default function Home({ isOpen, onClose }) {
                 </div>
             </footer>
 
-            <Script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=6ad75b0f-d085-4cae-9a7a-48abeb69b973"> </Script>
 
 
             <ServicesBook_Popup isOpen={isModalOpen} onClose={closeModal} />

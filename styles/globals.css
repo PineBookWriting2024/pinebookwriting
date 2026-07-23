@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+iframe#launcher,
+iframe#webWidget,
+iframe#webWidgetContextualHelp {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  z-index: 2147483647 !important;
+}
+
 @import 'preline/variants.css';
 
 
@@ -1411,6 +1420,11 @@ button.brand-nav-btn-1 {
 }
 
 @media (min-width: 768px) {
+  h2.ad-gwbox {
+    font-size: 26px !important;
+    text-align: center;
+    line-height: 37px;
+}
   header#navbar {
     width: 100%;
     min-height: 118px;
@@ -1436,7 +1450,7 @@ button.brand-nav-btn-1 {
   }
 
   header#navbar .logo {
-    width: clamp(210px, 15vw, 290px);
+    width: 100%;
     height: auto;
     display: block;
   }
@@ -1504,7 +1518,7 @@ button.brand-nav-btn-1 {
   }
 
   header#navbar .logo {
-    width: 210px;
+    width: 100%;
   }
 
   header#navbar .brand-navbar-list {
@@ -4334,7 +4348,7 @@ h2 {
 
 .case-studies-listing-page header#navbar .logo,
 .case-study-detail-page header#navbar .logo {
-  width: clamp(210px, 15vw, 290px);
+  width: 100%;
   height: auto;
 }
 
@@ -4393,7 +4407,7 @@ h2 {
 @media (min-width: 768px) and (max-width: 1180px) {
   .case-studies-listing-page header#navbar .logo,
   .case-study-detail-page header#navbar .logo {
-    width: 210px;
+    width: 100%;
   }
 
   .case-studies-listing-page header#navbar .brand-navbar-logo-slot,

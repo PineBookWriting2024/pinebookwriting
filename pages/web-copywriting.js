@@ -130,7 +130,7 @@ export default function WebCopywriting() {
                         </p>
 
 
-                        <div className="flex flex-col items-center justify-center gap-4 cta-btns sm:flex-row">
+                        <div className="flex my-2 flex-col items-center justify-center gap-4 cta-btns sm:flex-row">
                             <CTAButton />
 
 

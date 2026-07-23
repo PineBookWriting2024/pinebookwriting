@@ -5,7 +5,6 @@ import { faArrowRight, faArrowLeft, faPlusCircle, faCheckCircle, faMinusCircle, 
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebook, faInstagram, faLinkedin, faThreads, faTwitter, faXTwitter, faYoutube } from "@fortawesome/free-brands-svg-icons";
-import Script from 'next/script';
 
 export default function BrandFooter() {
     const [isVisible, setIsVisible] = useState(false);
@@ -252,8 +251,6 @@ export default function BrandFooter() {
                     </button>
                 )}
             </div>
-                  <Script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=6ad75b0f-d085-4cae-9a7a-48abeb69b973"> </Script>
-
         </>
     );
 }

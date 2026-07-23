@@ -313,7 +313,7 @@ export default function GhostwritingServices() {
                   <span className="inline-block mb-4 text-4xl font-extrabold text-blue-300/50 num-span">
                     {step.id}
                   </span>
-                  <h2 className="text-2xl font-bold leading-tight text-white font-poppins pro-h">
+                  <h2 className="text-2xl font-bold leading-tight text-white font-poppins pro-h ad-gwbox">
                     {step.title}
                   </h2>
                 </div>

@@ -50,54 +50,10 @@ export default function App({ Component, pageProps }) {
 
 
 
-  useEffect(() => {
-    const openZendeskChat = () => {
-      if (typeof window.$zopim === 'function') {
-        window.$zopim(() => {
-          window.$zopim.livechat.window.show();
-        });
-        return true;
-      }
 
-      if (typeof window.zE === 'function') {
-        window.zE('webWidget', 'show');
-        window.zE('webWidget', 'open');
-        return true;
-      }
 
-      return false;
-    };
 
-    const handleChatClick = (event) => {
-      const trigger = event.target instanceof Element
-        ? event.target.closest('a, button')
-        : null;
-      if (!trigger) return;
 
-      const label = trigger.textContent?.trim() || '';
-      if (!/(talk to (an|our) expert|speak to (our )?consultant|live chat)/i.test(label)) {
-        return;
-      }
-
-      event.preventDefault();
-      // Some writing CTAs also have React popup handlers. Keep those from
-      // opening over Zendesk when the CTA is intended to start live chat.
-      event.stopPropagation();
-
-      if (openZendeskChat()) return;
-
-      let attempts = 0;
-      const retry = window.setInterval(() => {
-        attempts += 1;
-        if (openZendeskChat() || attempts >= 20) {
-          window.clearInterval(retry);
-        }
-      }, 250);
-    };
-
-    document.addEventListener('click', handleChatClick, true);
-    return () => document.removeEventListener('click', handleChatClick, true);
-  }, []);
   return (
     <main className={`${poppins.variable}`}>
       <PopupProvider>
@@ -112,11 +68,6 @@ export default function App({ Component, pageProps }) {
 
       <Script src="https://www.googletagmanager.com/gtag/js?id=G-362MG93QNS" strategy="afterInteractive" />
 
-      <Script
-        id="ze-snippet"
-        src="https://static.zdassets.com/ekr/snippet.js?key=6ad75b0f-d085-4cae-9a7a-48abeb69b973"
-        strategy="afterInteractive"
-      />
       <script
         dangerouslySetInnerHTML={{
           __html: `
@@ -161,6 +112,7 @@ window._linkedin_data_partner_ids.push(_linkedin_partner_id);`,
         }}
       />
 
+          <script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=6ad75b0f-d085-4cae-9a7a-48abeb69b973"> </script>
 
       <script
         dangerouslySetInnerHTML={{
@@ -181,8 +133,6 @@ s.parentNode.insertBefore(b, s);})(window.lintrk);`,
           className="linkedin-pixel"
           src="https://px.ads.linkedin.com/collect/?pid=8533857&fmt=gif" />
       </noscript>
-
-
       <script
         dangerouslySetInnerHTML={{
           __html: `

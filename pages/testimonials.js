@@ -48,7 +48,7 @@ export default function Services() {
             />
             <BrandBannerLogo />
             <BrandCustomerStory />
-            <BrandTestimonial />
+            
             <BrandCTA
                 title="Achieve Your Writing Dreams Now!"
                 desc="Need help getting your book published? Let our team of experts guide you. Contact us today and take the first step towards becoming a published author."

@@ -5,17 +5,40 @@ import Image from "next/image";
 export default function BrandCTA(props) {
     const handleOpenChat = (event) => {
         event?.preventDefault();
-        if (typeof window.zE === 'function') {
+        if (typeof window.openZendeskChat === 'function') {
+            window.openZendeskChat();
+            return;
+        }
+
+        const openChat = () => {
+            if (typeof window.zE === 'function') {
             window.zE('webWidget', 'show');
             window.zE('webWidget', 'open');
-        } else if (typeof window.$zopim === 'function') {
-            window.$zopim(() => window.$zopim.livechat.window.show());
-        }
+                return true;
+            }
+
+            if (typeof window.$zopim === 'function') {
+                window.$zopim(() => window.$zopim.livechat.window.show());
+                return true;
+            }
+
+            return false;
+        };
+
+        if (openChat()) return;
+
+        let attempts = 0;
+        const retry = window.setInterval(() => {
+            attempts += 1;
+            if (openChat() || attempts >= 20) {
+                window.clearInterval(retry);
+            }
+        }, 250);
     };
 
     return (
         <>
-            <section className="brand-cta-section max-w-screen-xl mx-auto px-6 md:px-20 my-20 relative py-16">
+            <section className="brand-cta-section max-w-screen-xl mx-auto px-6 md:px-20 my-20 relative py-24">
                 <div className="flex items-center flex-col md:flex-row">
                     <div className="basis-1/3 brand-cta-vector">
                         <Image src={"/brand-img/cta-book.png"} width={400} height={200} className="brand-cta-book aos-init aos-animate" data-aos="fade-right" data-aos-duration="1000"></Image>

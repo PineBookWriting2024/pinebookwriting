@@ -2120,11 +2120,11 @@ button.home-close-btn-modal-new svg {
 
 .fixed-top {
   position: fixed !important;
-  transition: .3s ease-in;
   background-color: #127271;
   width: 100% !important;
   top: 0 !important;
   padding: 1rem !important;
+  z-index: 999 !important;
 }
 
 .fixed-top .brand-nav-btn {
@@ -4129,7 +4129,7 @@ section.sec404 {
   header#navbar.fixed-top,
   .case-studies-listing-page header#navbar.fixed-top,
   .case-study-detail-page header#navbar.fixed-top {
-    position: sticky !important;
+    position: fixed !important;
     top: 0 !important;
     padding: 8px 18px !important;
   }

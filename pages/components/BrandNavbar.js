@@ -57,24 +57,6 @@ export default function BrandNavbar() {
         setServiceDropdown(false);
     };
 
-    useEffect(() => {
-        const handleScroll = () => {
-            const navbar = document.getElementById('navbar');
-            if (navbar) {
-                if (window.pageYOffset > navbar.offsetTop) {
-                    navbar.classList.add('fixed-top');
-                } else {
-                    navbar.classList.remove('fixed-top');
-                }
-            }
-        };
-
-        window.addEventListener('scroll', handleScroll);
-        return () => {
-            window.removeEventListener('scroll', handleScroll);
-        };
-    }, []);
-
     const handleOpenChat = () => {
         window.zE && window.zE('webWidget', 'open');
     };
@@ -105,7 +87,7 @@ export default function BrandNavbar() {
 
     return (
         <>
-            <header id="navbar" className={`absolute left-0 z-20 flex items-center justify-between bg-transparent top-10 md:pb-4 ${isOpen ? 'brand-navbar-open' : ''}`}>
+            <header id="navbar" className={`fixed-top left-0 z-20 flex items-center justify-between ${isOpen ? 'brand-navbar-open' : ''}`}>
                 <div className='brand-navbar-inner flex items-center justify-between w-full max-w-screen-xl mx-auto'>
                     <div className="brand-navbar-logo-slot">
                         <Link href="/" onClick={(e) => { e.preventDefault(); window.location.href = "/"; }} className="text-xl font-bold text-white">

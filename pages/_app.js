@@ -27,94 +27,12 @@ const poppins = Poppins({
   weight: ['400', '500', '600'],
 });
 
-const showReadyZendeskChat = () => {
-  if (
-    typeof window !== 'undefined' &&
-    typeof window.$zopim !== 'undefined' &&
-    window.$zopim.livechat?.window
-  ) {
-    window.$zopim.livechat.window.show();
-    return true;
-  }
-
-  return false;
-};
-
 export default function App({ Component, pageProps }) {
-  const openZendeskChat = () => {
-    if (typeof window === 'undefined') return false;
-
-    const requestOpen = () => {
-      if (typeof window.zE === 'function') {
-        window.zE('webWidget', 'show');
-        window.zE('webWidget', 'open');
-        return true;
-      }
-
-      return showReadyZendeskChat();
-    };
-
-    requestOpen();
-
-    // Keep the button request alive while Zendesk finishes initializing.
-    window.clearInterval(window.__zendeskOpenTimer);
-    let attempts = 0;
-    window.__zendeskOpenTimer = window.setInterval(() => {
-      attempts += 1;
-      requestOpen();
-
-      if (attempts >= 24) {
-        window.clearInterval(window.__zendeskOpenTimer);
-        delete window.__zendeskOpenTimer;
-      }
-    }, 500);
-
-    return true;
-  };
-
   useEffect(() => {
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
     gtag('config', 'G-362MG93QNS');
-  }, []);
-
-  useEffect(() => {
-    window.openZendeskChat = openZendeskChat;
-
-    const handleZendeskTrigger = (event) => {
-      const trigger = event.target.closest?.('[data-zendesk-chat]');
-      if (!trigger) return;
-
-      event.preventDefault();
-      openZendeskChat();
-    };
-
-    document.addEventListener('pointerdown', handleZendeskTrigger, true);
-
-    if (window.innerWidth < 768) {
-      return () => {
-        document.removeEventListener('pointerdown', handleZendeskTrigger, true);
-        window.clearInterval(window.__zendeskOpenTimer);
-        delete window.__zendeskOpenTimer;
-        delete window.openZendeskChat;
-      };
-    }
-
-    // Match the working publishing site for desktop page-load behavior.
-    const checkZendesk = window.setInterval(() => {
-      if (showReadyZendeskChat()) {
-        window.clearInterval(checkZendesk);
-      }
-    }, 1000);
-
-    return () => {
-      document.removeEventListener('pointerdown', handleZendeskTrigger, true);
-      window.clearInterval(checkZendesk);
-      window.clearInterval(window.__zendeskOpenTimer);
-      delete window.__zendeskOpenTimer;
-      delete window.openZendeskChat;
-    };
   }, []);
 
   useEffect(() => {
@@ -128,6 +46,19 @@ export default function App({ Component, pageProps }) {
     });
   }, []);
 
+  useEffect(() => {
+    const isMobile = window.innerWidth < 768;
+    if (isMobile) return;
+
+    const checkZendesk = setInterval(() => {
+      if (typeof window.$zopim !== "undefined" && window.$zopim.livechat) {
+        window.$zopim.livechat.window.show();
+        clearInterval(checkZendesk);
+      }
+    }, 1000);
+
+    return () => clearInterval(checkZendesk);
+  }, []);
 
 
 
@@ -141,23 +72,6 @@ export default function App({ Component, pageProps }) {
         <PopupModal />
       </PopupProvider>
 
-      <Script
-        id="zendesk-settings"
-        strategy="beforeInteractive"
-        dangerouslySetInnerHTML={{
-          __html: `
-            window.zESettings = {
-              webWidget: {
-                chat: { suppress: false },
-                contactForm: { suppress: false },
-                launcher: {
-                  chatLabel: { '*': 'Live Chat' }
-                }
-              }
-            };
-          `,
-        }}
-      />
       <Script
         id="ze-snippet"
         src="https://static.zdassets.com/ekr/snippet.js?key=6ad75b0f-d085-4cae-9a7a-48abeb69b973"

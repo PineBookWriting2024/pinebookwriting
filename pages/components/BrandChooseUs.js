@@ -4,19 +4,8 @@ import Image from "next/image";
 import BrandAudioPlayer from "./BrandAudioPlayer";
 
 export default function BrandChooseUs() {
-    const handleOpenChat = (event) => {
-        event?.preventDefault();
-        if (typeof window.openZendeskChat === 'function') {
-            window.openZendeskChat();
-            return;
-        }
-
-        if (typeof window.zE === 'function') {
-            window.zE('webWidget', 'show');
-            window.zE('webWidget', 'open');
-        } else if (typeof window.$zopim === 'function') {
-            window.$zopim(() => window.$zopim.livechat.window.show());
-        }
+    const handleOpenChat = () => {
+        window.zE && window.zE('webWidget', 'open');
     };
 
     return (

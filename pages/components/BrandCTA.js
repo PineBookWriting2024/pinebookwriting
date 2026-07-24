@@ -3,37 +3,8 @@ import Link from "next/link";
 import Image from "next/image";
 
 export default function BrandCTA(props) {
-    const handleOpenChat = (event) => {
-        event?.preventDefault();
-        if (typeof window.openZendeskChat === 'function') {
-            window.openZendeskChat();
-            return;
-        }
-
-        const openChat = () => {
-            if (typeof window.zE === 'function') {
-            window.zE('webWidget', 'show');
-            window.zE('webWidget', 'open');
-                return true;
-            }
-
-            if (typeof window.$zopim === 'function') {
-                window.$zopim(() => window.$zopim.livechat.window.show());
-                return true;
-            }
-
-            return false;
-        };
-
-        if (openChat()) return;
-
-        let attempts = 0;
-        const retry = window.setInterval(() => {
-            attempts += 1;
-            if (openChat() || attempts >= 20) {
-                window.clearInterval(retry);
-            }
-        }, 250);
+    const handleOpenChat = () => {
+        window.zE && window.zE('webWidget', 'open');
     };
 
     return (
@@ -47,7 +18,7 @@ export default function BrandCTA(props) {
                         <h2 className="text-black font-poppins text-3xl md:text-4xl aos-init aos-animate font-bold" data-aos="flip-down">{props.title}</h2>
                         <p className="text-black mt-10">{props.desc}</p>
                         <div>
-                            <button type="button" data-zendesk-chat className="relative z-30 pointer-events-auto brand-nav-btn shadow-xl mt-10 cursor-pointer btn-g" onMouseDown={handleOpenChat} onTouchStart={handleOpenChat} onClick={handleOpenChat}>{props.btntext}</button>
+                            <button type="button" className="brand-nav-btn shadow-xl mt-10 cursor-pointer btn-g" onClick={handleOpenChat}>{props.btntext}</button>
                             <button className="brand-nav-btn shadow-xl mt-10 cursor-pointer btn-g ml-3"><Link href="tel:+18668417463">Call Now</Link></button>
                         </div>
                     </div>

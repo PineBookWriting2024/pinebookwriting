@@ -6,6 +6,7 @@ export default function BrandNavbar() {
     const [isOpen, setIsOpen] = useState(false);
     const [serviceDropdown, setServiceDropdown] = useState(false);
     const dropdownRef = useRef(null);
+    const zendeskRetryRef = useRef(null);
 
     const servicesRig = [
         { name: 'Memoir Writing', href: '/memoir-writing' },
@@ -57,9 +58,40 @@ export default function BrandNavbar() {
         setServiceDropdown(false);
     };
 
-    const handleOpenChat = () => {
-        window.zE && window.zE('webWidget', 'open');
+    const handleOpenChat = (event) => {
+        event?.preventDefault();
+
+        const openZendesk = () => {
+            if (typeof window.zE === 'function') {
+                window.zE('webWidget', 'show');
+                window.zE('webWidget', 'open');
+                return true;
+            }
+
+            if (typeof window.$zopim === 'function') {
+                window.$zopim(() => window.$zopim.livechat.window.show());
+                return true;
+            }
+
+            return false;
+        };
+
+        if (openZendesk()) return;
+
+        window.clearInterval(zendeskRetryRef.current);
+        let attempts = 0;
+        zendeskRetryRef.current = window.setInterval(() => {
+            attempts += 1;
+            if (openZendesk() || attempts >= 20) {
+                window.clearInterval(zendeskRetryRef.current);
+                zendeskRetryRef.current = null;
+            }
+        }, 250);
     };
+
+    useEffect(() => () => {
+        window.clearInterval(zendeskRetryRef.current);
+    }, []);
 
     useEffect(() => {
         const handleClickOutside = (event) => {

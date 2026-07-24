@@ -33,6 +33,8 @@ export default function Home() {
                 <meta name="google-site-verification" content="ze4i-BWHkh7f9iANJUJfoWbXrFcmFC9r2fCsoz1KZA8" />
                 {/* <meta name="google-site-verification" content="ze4i-BWHkh7f9iANJUJfoWbXrFcmFC9r2fCsoz1KZA8" /> */}
                 {/* Google tag Manager Script */}
+                <Script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=6ad75b0f-d085-4cae-9a7a-48abeb69b973"> </Script>
+
                 <script async src="https://www.googletagmanager.com/gtag/js?id=G-9X52J8V8NK"></script>
                 <script
                     dangerouslySetInnerHTML={{

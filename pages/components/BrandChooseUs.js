@@ -6,6 +6,11 @@ import BrandAudioPlayer from "./BrandAudioPlayer";
 export default function BrandChooseUs() {
     const handleOpenChat = (event) => {
         event?.preventDefault();
+        if (typeof window.openZendeskChat === 'function') {
+            window.openZendeskChat();
+            return;
+        }
+
         if (typeof window.zE === 'function') {
             window.zE('webWidget', 'show');
             window.zE('webWidget', 'open');

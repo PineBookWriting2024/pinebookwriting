@@ -2,15 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-iframe#launcher,
-iframe#webWidget,
-iframe#webWidgetContextualHelp {
-  display: block !important;
-  visibility: visible !important;
-  opacity: 1 !important;
-  z-index: 2147483647 !important;
-}
-
 @import 'preline/variants.css';
 
 

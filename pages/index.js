@@ -21,20 +21,6 @@ import BrandVideoShowcase from "./components/BrandVideoShowcase";
 import ExclusiveBookSigningParallax from "./components/ExclusiveBookSigningParallax";
 
 export default function Home() {
-  useEffect(() => {
-    const isMobile = window.innerWidth < 768;
-    if (isMobile) return;
-
-    const checkZendesk = setInterval(() => {
-      if (typeof window.$zopim !== "undefined" && window.$zopim.livechat) {
-        window.$zopim.livechat.window.show();
-        clearInterval(checkZendesk);
-      }
-    }, 1000);
-
-    return () => clearInterval(checkZendesk);
-  }, []);
-
     return (
         <>
             <Head>
@@ -45,23 +31,7 @@ export default function Home() {
                 <link rel="canonical" href="https://pinebookwriting.com/" />
                 <meta name="google-site-verification" content="ze4i-BWHkh7f9iANJUJfoWbXrFcmFC9r2fCsoz1KZA8" />
                 {/* <meta name="google-site-verification" content="ze4i-BWHkh7f9iANJUJfoWbXrFcmFC9r2fCsoz1KZA8" /> */}
-                {/* Google tag Manager Script */}
-                <script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=6ad75b0f-d085-4cae-9a7a-48abeb69b973"> </script>
-
-                <script async src="https://www.googletagmanager.com/gtag/js?id=G-9X52J8V8NK"></script>
-                <script
-                    dangerouslySetInnerHTML={{
-                        __html: `
-                    window.dataLayer = window.dataLayer || [];
-                    function gtag(){dataLayer.push(arguments);}
-                    gtag('js', new Date());
-
-                    gtag('config', 'G-9X52J8V8NK');
-              `,
-                    }}
-                />
             </Head>
-
             {/* <HomePopupJuneteenth /> */}
 
             <BrandTopBar />

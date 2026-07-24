@@ -47,7 +47,7 @@ export default function BrandCTA(props) {
                         <h2 className="text-black font-poppins text-3xl md:text-4xl aos-init aos-animate font-bold" data-aos="flip-down">{props.title}</h2>
                         <p className="text-black mt-10">{props.desc}</p>
                         <div>
-                            <button type="button" className="brand-nav-btn shadow-xl mt-10 cursor-pointer btn-g" onClick={handleOpenChat}>{props.btntext}</button>
+                            <button type="button" data-zendesk-chat className="relative z-30 pointer-events-auto brand-nav-btn shadow-xl mt-10 cursor-pointer btn-g" onMouseDown={handleOpenChat} onTouchStart={handleOpenChat} onClick={handleOpenChat}>{props.btntext}</button>
                             <button className="brand-nav-btn shadow-xl mt-10 cursor-pointer btn-g ml-3"><Link href="tel:+18668417463">Call Now</Link></button>
                         </div>
                     </div>

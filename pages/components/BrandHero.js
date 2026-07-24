@@ -192,30 +192,30 @@ export default function BrandHero() {
                                 </svg>
                             </button>
                             <div className="flex justify-between text-white text-[18px] mt-5">
-                                <div class="bg-[#d2d2d298] rounded-2xl shadow-xl p-4 w-full mx-auto">
+                                <div className="bg-[#d2d2d298] rounded-2xl shadow-xl p-4 w-full mx-auto">
 
-                                    <ul class="grid grid-cols-2 gap-x-16 gap-y-3 text-white font-semibold text-lg justify-center">
+                                    <ul className="grid grid-cols-2 gap-x-16 gap-y-3 text-white font-semibold text-lg justify-center">
 
-                                        <li class="flex items-center text-gray-900 gap-2 text-sm">
-                                            <span class="text-gray-800 text-xl">✔</span>
+                                        <li className="flex items-center text-gray-900 gap-2 text-sm">
+                                            <span className="text-gray-800 text-xl">✔</span>
                                             Skilled Writers
                                         </li>
 
 
 
-                                        <li class="flex items-center text-gray-900 gap-2 text-sm">
-                                            <span class="text-gray-800 text-xl">✔</span>
+                                        <li className="flex items-center text-gray-900 gap-2 text-sm">
+                                            <span className="text-gray-800 text-xl">✔</span>
                                             Expert Assistance
                                         </li>
 
-                                        <li class="flex items-center gap-2 text-gray-900  whitespace-nowrap text-sm">
-                                            <span class="text-gray-800 text-xl">✔</span>
+                                        <li className="flex items-center gap-2 text-gray-900  whitespace-nowrap text-sm">
+                                            <span className="text-gray-800 text-xl">✔</span>
                                             Quality-Control Deliveries
                                         </li>
 
 
-                                        <li class="flex items-center gap-2 text-gray-900 text-sm">
-                                            <span class="text-gray-800 text-xl">✔</span>
+                                        <li className="flex items-center gap-2 text-gray-900 text-sm">
+                                            <span className="text-gray-800 text-xl">✔</span>
                                             Multiple Revisions
                                         </li>
 
@@ -249,8 +249,8 @@ export default function BrandHero() {
                                     }}
                                 >
                                     {clientLogos.map((logo, index) => (
-                                        <SwiperSlide>
-                                            <Link key={index} href={logo.href} target="_blank">
+                                        <SwiperSlide key={index}>
+                                            <Link href={logo.href} target="_blank">
                                                 <Image
                                                     alt={logo.alt}
                                                     src={logo.src}
@@ -376,14 +376,14 @@ export default function BrandHero() {
                                         Your Story Deserves to be Heard!
                                     </h5>
                                 </div> */}
-                                <div class="text-start" bis_skin_checked="1">
-                                    <h4 class="font-poppins text-white text-2xl md:text-3xl font-bold christmas-banner-title">Avail Discount</h4>
-                                    <h5 class="font-poppins text-white text-sm mb-3">Holiday Season Sale: Expert Book Writing at <span class="text-blink">50% Off</span> – <br></br>
+                                <div className="text-start">
+                                    <h4 className="font-poppins text-white text-2xl md:text-3xl font-bold christmas-banner-title">Avail Discount</h4>
+                                    <h5 className="font-poppins text-white text-sm mb-3">Holiday Season Sale: Expert Book Writing at <span className="text-blink">50% Off</span> – <br></br>
                                         Your Story Deserves to be Heard!</h5></div>
                                 <div className="">
                                     <div className="relative w-full col-span-2">
                                         <form className="flex flex-col items-start justify-start gap-3" onSubmit={handleSubmit}>
-                                            <div class="grid gap-3 md:grid-cols-2 w-full">
+                                            <div className="grid gap-3 md:grid-cols-2 w-full">
                                                 <div className="relative w-full">
                                                     <input
                                                         type="text"
@@ -432,11 +432,11 @@ export default function BrandHero() {
                                                     name="message"
                                                 ></textarea>
                                             </div>
-                                            <div class="flex items-start mb-2">
-                                                <div class="flex items-center h-5">
-                                                    <input id="remember" type="checkbox" value="" class="w-4 h-4 border border-gray-300 rounded-sm bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800" required />
+                                            <div className="flex items-start mb-2">
+                                                <div className="flex items-center h-5">
+                                                    <input id="remember" type="checkbox" value="" className="w-4 h-4 border border-gray-300 rounded-sm bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800" required />
                                                 </div>
-                                                <label for="remember" class="ms-2 text-sm font-medium text-white dark:text-gray-300">By checking this box, I consent to received text messages related to Follow Up Messages and Appointment Reminders from Pine Book Writing and Publishing. you can reply "STOP" at any time to opt-out. Message and data rates may apply. Message Frequency may vary, text Help to <Link href="tel:(866) 841-7463" className="text-blue-400">(866) 841-7463</Link>  for assistance. For more information, please refer to our  <Link href="privacy-policy" className="text-blue-400" target="_blank">PRIVACY POLICY</Link> and SMS <Link href="terms-and-conditions" className="text-blue-400" target="_blank"> TERMS and CONDITIONS </Link> on our website</label>
+                                                <label htmlFor="remember" className="ms-2 text-sm font-medium text-white dark:text-gray-300">By checking this box, I consent to received text messages related to Follow Up Messages and Appointment Reminders from Pine Book Writing and Publishing. you can reply "STOP" at any time to opt-out. Message and data rates may apply. Message Frequency may vary, text Help to <Link href="tel:(866) 841-7463" className="text-blue-400">(866) 841-7463</Link>  for assistance. For more information, please refer to our  <Link href="privacy-policy" className="text-blue-400" target="_blank">PRIVACY POLICY</Link> and SMS <Link href="terms-and-conditions" className="text-blue-400" target="_blank"> TERMS and CONDITIONS </Link> on our website</label>
                                             </div>
                                             {showSuccess && (
                                                 <p className="px-1 py-1 text-green-700">

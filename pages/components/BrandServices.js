@@ -284,7 +284,6 @@ export default function BrandServices() {
                         // effect={"coverflow"}
                         // grabCursor={true}
                         // centeredSlides={true}
-                        Autoplay={true}
                         slidesPerView={1}
                         loop={true}
                         className="mySwiper"

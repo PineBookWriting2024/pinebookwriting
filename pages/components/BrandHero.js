@@ -136,8 +136,8 @@ export default function BrandHero() {
             <div className="relative w-full" style={{ zIndex: 1 }}>
                 {/* <SnowFall /> */}
                 <div className="container max-w-screen-xl mx-4 pt-14 md:mx-auto tablet-margin-banner brand-hero-section">
-                    <div className="grid justify-between grid-cols-1 text-left sm:gap-8 md:grid-cols-2 md:items-center md:gap-8 md:py-30">
-                        <div className="mb-4">
+                    <div className="brand-hero-grid grid justify-between grid-cols-1 text-left sm:gap-8 md:grid-cols-2 md:items-center md:gap-8 md:py-30">
+                        <div className="brand-hero-copy mb-4">
                             <h3 className="mb-4 text-2xl text-white font-poppins md:text-3xl aos-init aos-animate"> <span className="px-2 py-0 text-2xl">Pine Book Writing</span></h3>
                             <FadeIn>
                                 <h1 className="text-3xl font-bold text-white uppercase font-poppins md:text-2xl">
@@ -350,8 +350,8 @@ export default function BrandHero() {
                         </div> */}
 
 
-                        <div>
-                            <div className="relative w-full px-8 py-8 bg-gray-400 bg-opacity-50 border-gray-100 md:px-7 md:py-7 rounded-2xl bg-clip-padding backdrop-filter backdrop-blur-sm">
+                        <div className="brand-hero-form-column">
+                            <div className="brand-hero-form-card relative w-full px-8 py-8 bg-gray-400 bg-opacity-50 border-gray-100 md:px-7 md:py-7 rounded-2xl bg-clip-padding backdrop-filter backdrop-blur-sm">
                                 {/* <Image
                                     className="text-center header-form-off-badge"
                                     src={"/brand-img/christmas-tag.png"}

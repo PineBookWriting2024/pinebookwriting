@@ -4111,6 +4111,285 @@ section.sec404 {
 
 }
 
+/* Shared mobile layout: navigation, hero forms and case studies */
+@media (max-width: 767px) {
+  header#navbar,
+  .case-studies-listing-page header#navbar,
+  .case-study-detail-page header#navbar {
+    position: relative !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100%;
+    min-height: 64px;
+    padding: 8px 18px !important;
+    background: #127271 !important;
+    z-index: 999 !important;
+  }
+
+  header#navbar.fixed-top,
+  .case-studies-listing-page header#navbar.fixed-top,
+  .case-study-detail-page header#navbar.fixed-top {
+    position: sticky !important;
+    top: 0 !important;
+    padding: 8px 18px !important;
+  }
+
+  header#navbar .brand-navbar-inner,
+  .case-studies-listing-page header#navbar .brand-navbar-inner,
+  .case-study-detail-page header#navbar .brand-navbar-inner {
+    width: 100% !important;
+    max-width: none !important;
+    gap: 12px;
+  }
+
+  header#navbar .brand-navbar-logo-slot,
+  .case-studies-listing-page header#navbar .brand-navbar-logo-slot,
+  .case-study-detail-page header#navbar .brand-navbar-logo-slot {
+    flex: 0 1 132px;
+    width: 132px;
+  }
+
+  header#navbar .logo,
+  .case-studies-listing-page header#navbar .logo,
+  .case-study-detail-page header#navbar .logo {
+    width: 132px;
+    height: auto;
+  }
+
+  header#navbar nav.brand-mobile-nav {
+    position: fixed !important;
+    inset: 0 !important;
+    width: 100% !important;
+    height: 100dvh;
+    min-height: 100vh;
+    margin: 0 !important;
+    padding: 88px 20px 28px !important;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    background: #0f172a !important;
+    z-index: 1000;
+  }
+
+  header#navbar.brand-navbar-open {
+    position: fixed !important;
+    background: transparent !important;
+  }
+
+  header#navbar.brand-navbar-open .brand-navbar-logo-slot,
+  header#navbar.brand-navbar-open .md\:hidden {
+    position: relative;
+    z-index: 1001;
+  }
+
+  header#navbar nav.brand-mobile-nav .brand-navbar-list {
+    width: min(100%, 360px);
+    margin: 0 auto !important;
+    padding: 0;
+  }
+
+  header#navbar nav.brand-mobile-nav .brand-navbar-list > li {
+    margin: 0 0 13px !important;
+  }
+
+  header#navbar nav.brand-mobile-nav .brand-nav-btn {
+    width: min(100%, 250px) !important;
+    max-width: 250px;
+    min-height: 44px;
+    margin: 3px auto 0;
+  }
+
+  .brand-main-banner-video,
+  .brand-hero-bg-img,
+  .brand-hero-section {
+    height: auto !important;
+    min-height: 0 !important;
+  }
+
+  .brand-hero-section {
+    width: 100%;
+    max-width: none;
+    margin: 0 !important;
+    padding: 34px 18px 48px !important;
+  }
+
+  .brand-hero-grid {
+    width: 100%;
+    gap: 26px;
+  }
+
+  .brand-hero-copy {
+    min-width: 0;
+  }
+
+  .brand-hero-copy p {
+    font-size: 16px;
+    line-height: 1.65;
+  }
+
+  .brand-hero-copy ul {
+    grid-template-columns: 1fr !important;
+    gap: 8px !important;
+  }
+
+  .brand-hero-form-column,
+  .brand-hero-form-card {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .brand-hero-form-card {
+    padding: 22px 18px !important;
+    margin: 0;
+  }
+
+  .brand-hero-form-card input,
+  .brand-hero-form-card textarea {
+    min-height: 44px;
+    text-indent: 0;
+  }
+
+  .brand-hero-form-card textarea {
+    min-height: 92px;
+    resize: vertical;
+  }
+
+  .brand-hero-form-card label {
+    font-size: 11px !important;
+    line-height: 1.45;
+    overflow-wrap: anywhere;
+  }
+
+  #fixed-social {
+    top: auto;
+    bottom: 12px;
+    left: 8px;
+    height: auto;
+    max-height: none;
+    justify-content: flex-start;
+    z-index: 40;
+  }
+
+  #fixed-social a {
+    width: 30px;
+    height: 30px;
+    line-height: 29px;
+  }
+
+  #fixed-social a span {
+    display: none;
+  }
+
+  .case-studies-listing-page .nav-top-bar,
+  .case-study-detail-page .nav-top-bar {
+    display: none;
+  }
+
+  .case-studies-listing-page .brand-case-studies-section {
+    padding-top: 32px;
+  }
+
+  .cs-hero {
+    padding: 48px 0 42px;
+  }
+
+  .cs-hero-inner {
+    gap: 28px;
+  }
+
+  .cs-hero-title {
+    font-size: clamp(29px, 9vw, 38px);
+    overflow-wrap: anywhere;
+  }
+
+  .cs-hero-sub,
+  .cs-paragraph {
+    font-size: 15px;
+  }
+
+  .cs-hero-image img {
+    width: min(100%, 330px);
+  }
+
+  .cs-section {
+    padding: 46px 0;
+    overflow: hidden;
+  }
+
+  .cs-h2 {
+    font-size: 27px;
+    overflow-wrap: anywhere;
+  }
+
+  .cs-about-inner,
+  .cs-challenge-inner,
+  .cs-result-inner {
+    gap: 28px;
+  }
+
+  .cs-feature-row {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+  }
+
+  .cs-feature {
+    min-width: 0;
+    padding: 14px 8px;
+  }
+
+  .cs-solution-row,
+  .cs-solution-row.cs-row-mb {
+    margin-bottom: 30px;
+  }
+
+  .cs-solution-media,
+  .cs-solution-media.is-dual-mobile-media {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .cs-solution-image-pair {
+    gap: 10px;
+    padding: 12px 0;
+  }
+
+  .cs-solution-media .cs-solution-image-pair img {
+    transform: none;
+  }
+
+  .cs-solution-media .cs-solution-image-pair img:first-child,
+  .cs-solution-media .cs-solution-image-pair img:last-child {
+    margin: 0;
+  }
+
+  .cs-solution-media img,
+  .cs-solution-media video {
+    min-height: 0;
+    height: auto;
+    max-width: 100%;
+  }
+
+  .cs-solution-pdf {
+    min-height: 420px;
+  }
+
+  .cs-result-image.is-stacked .cs-result-supporting-image {
+    transform: none;
+  }
+
+  .cs-review-card {
+    width: 100%;
+    padding: 22px 18px;
+  }
+
+  .cs-review-image {
+    width: min(100%, 190px);
+  }
+
+  .cs-review-quote {
+    font-size: 15px;
+  }
+}
+
 
 a.inline.cta-btn-1 {
   border: 1px solid #fff !important;
@@ -4987,15 +5266,16 @@ h2 {
   }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 767px) {
   .home-case-carousel-section {
     padding: 46px 12px;
   }
 
   .home-case-carousel {
     display: grid;
-    grid-template-columns: 42px 1fr 42px;
+    grid-template-columns: 42px minmax(0, 1fr) 42px;
     gap: 8px;
+    justify-items: center;
   }
 
   .home-case-visible-cards {
@@ -5003,10 +5283,18 @@ h2 {
     grid-row: 1;
     grid-template-columns: 1fr;
     width: min(100%, 290px);
+    margin: 0 auto;
+    justify-self: center;
   }
 
   .home-case-slide-panel[data-position="side"] {
     display: none;
+  }
+
+  .home-case-slide-panel[data-position="center"] {
+    width: 100%;
+    margin: 0 auto;
+    transform: none;
   }
 
   .home-case-carousel-btn {
@@ -5017,12 +5305,14 @@ h2 {
 
   .home-case-carousel-btn-prev {
     grid-column: 1;
-    margin-left: 8px;
+    margin-left: 0;
+    justify-self: start;
   }
 
   .home-case-carousel-btn-next {
     grid-column: 3;
-    margin-right: 8px;
+    margin-right: 0;
+    justify-self: end;
   }
 
   .home-case-slide-content {
@@ -6086,5 +6376,162 @@ h2 {
 
   .portfolio-video-trailers__nav--next {
     right: 10px;
+  }
+}
+
+/* Keep these final so legacy page-level rules cannot override mobile sizing. */
+@media (max-width: 767px) {
+  header#navbar,
+  .case-studies-listing-page header#navbar,
+  .case-study-detail-page header#navbar {
+    position: relative !important;
+    top: 0 !important;
+    min-height: 64px;
+    padding: 8px 18px !important;
+    background: #127271 !important;
+  }
+
+  header#navbar.brand-navbar-open {
+    position: fixed !important;
+    background: transparent !important;
+  }
+
+  header#navbar .brand-navbar-logo-slot,
+  .case-studies-listing-page header#navbar .brand-navbar-logo-slot,
+  .case-study-detail-page header#navbar .brand-navbar-logo-slot {
+    flex: 0 0 132px !important;
+    width: 132px !important;
+  }
+
+  header#navbar .logo,
+  .case-studies-listing-page header#navbar .logo,
+  .case-study-detail-page header#navbar .logo {
+    width: 132px !important;
+    max-width: 132px !important;
+  }
+
+  header#navbar nav.brand-mobile-nav {
+    position: fixed !important;
+    inset: 0 !important;
+    width: 100% !important;
+    height: 100dvh;
+    margin: 0 !important;
+    padding: 88px 20px 28px !important;
+    overflow-y: auto;
+    background: #0f172a !important;
+    z-index: 1000;
+  }
+
+  .case-study-detail-page .nav-top-bar,
+  .case-studies-listing-page .nav-top-bar {
+    display: none;
+  }
+
+  .cs-detail-wrapper,
+  .cs-detail-wrapper * {
+    box-sizing: border-box;
+  }
+
+  .cs-hero {
+    padding: 48px 0 42px;
+  }
+
+  .cs-hero-inner,
+  .cs-chips-inner,
+  .cs-about-inner,
+  .cs-challenge-inner,
+  .cs-solutions-head,
+  .cs-solutions-list,
+  .cs-result-inner,
+  .cs-review-card {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  .cs-hero-inner {
+    width: calc(100vw - 32px);
+    max-width: calc(100vw - 32px);
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  .cs-hero-text,
+  .cs-hero-image,
+  .cs-about-text,
+  .cs-challenge-text,
+  .cs-challenge-image,
+  .cs-solution-row,
+  .cs-solution-media,
+  .cs-solution-card,
+  .cs-result-text,
+  .cs-result-image,
+  .cs-review-content {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  .cs-hero-text,
+  .cs-hero-image {
+    flex: none;
+  }
+
+  .cs-hero-title {
+    font-size: clamp(29px, 9vw, 38px);
+    overflow-wrap: anywhere;
+    white-space: normal;
+    max-width: 100%;
+  }
+
+  .cs-hero-sub {
+    width: 100%;
+    max-width: 100%;
+    white-space: normal;
+    overflow-wrap: anywhere;
+  }
+
+  .cs-hero-image {
+    overflow: hidden;
+  }
+
+  .cs-hero-image img {
+    width: min(100%, 330px);
+    max-width: 100%;
+  }
+
+  .cs-section {
+    padding: 46px 0;
+    overflow: hidden;
+  }
+
+  .cs-solution-media.is-dual-mobile-media {
+    overflow: hidden;
+  }
+
+  .cs-solution-media .cs-solution-image-pair img {
+    transform: none;
+    margin: 0;
+  }
+
+  .cs-result-image.is-stacked .cs-result-supporting-image {
+    transform: none;
+  }
+
+  .brand-hero-section,
+  .brand-hero-grid,
+  .brand-hero-copy,
+  .brand-hero-form-column {
+    width: calc(100vw - 36px) !important;
+    max-width: calc(100vw - 36px) !important;
+    min-width: 0;
+  }
+
+  .brand-hero-copy p,
+  .brand-hero-form-card {
+    width: 100%;
+    max-width: 100%;
+    white-space: normal;
+    overflow-wrap: anywhere;
   }
 }

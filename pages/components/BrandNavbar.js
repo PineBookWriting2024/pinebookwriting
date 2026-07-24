@@ -92,9 +92,20 @@ export default function BrandNavbar() {
         };
     }, []);
 
+    useEffect(() => {
+        if (!isOpen) return undefined;
+
+        const previousOverflow = document.body.style.overflow;
+        document.body.style.overflow = 'hidden';
+
+        return () => {
+            document.body.style.overflow = previousOverflow;
+        };
+    }, [isOpen]);
+
     return (
         <>
-            <header id="navbar" className="absolute left-0 z-20 flex items-center justify-between bg-transparent top-10 md:pb-4">
+            <header id="navbar" className={`absolute left-0 z-20 flex items-center justify-between bg-transparent top-10 md:pb-4 ${isOpen ? 'brand-navbar-open' : ''}`}>
                 <div className='brand-navbar-inner flex items-center justify-between w-full max-w-screen-xl mx-auto'>
                     <div className="brand-navbar-logo-slot">
                         <Link href="/" onClick={(e) => { e.preventDefault(); window.location.href = "/"; }} className="text-xl font-bold text-white">
@@ -117,7 +128,7 @@ export default function BrandNavbar() {
                             </svg>
                         </button>
                     </div>
-                    <nav className={`${isOpen ? 'block' : 'hidden'} absolute flex flex-col bg-gray-900 text-center items-center self-end py-8 mt-2 space-y-6 font-semibold w-full mb-8 top-20 md:top-0 right-0 left-0 md:space-y-0 md:flex md:flex-row md:relative md:bg-transparent md:space-x-4 md:mt-0 md:py-0 md:w-auto md:block`}>
+                    <nav className={`brand-mobile-nav ${isOpen ? 'block' : 'hidden'} absolute flex flex-col bg-gray-900 text-center items-center self-end py-8 mt-2 space-y-6 font-semibold w-full mb-8 top-20 md:top-0 right-0 left-0 md:space-y-0 md:flex md:flex-row md:relative md:bg-transparent md:space-x-4 md:mt-0 md:py-0 md:w-auto md:block`}>
                         <ul className="brand-navbar-list items-center space-x-4 md:flex">
                             <li className='mb-3 md:mb-0'><Link href="/" onClick={(e) => { e.preventDefault(); window.location.href = "/"; }} className="text-white hover:text-gray-300">Home</Link></li>
                             <li className='mb-3 md:mb-0'><Link href="/about" onClick={(e) => { e.preventDefault(); window.location.href = "about"; }} className="text-white hover:text-gray-300">About Us</Link></li>

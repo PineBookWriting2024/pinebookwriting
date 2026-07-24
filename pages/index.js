@@ -21,6 +21,19 @@ import BrandVideoShowcase from "./components/BrandVideoShowcase";
 import ExclusiveBookSigningParallax from "./components/ExclusiveBookSigningParallax";
 
 export default function Home() {
+  useEffect(() => {
+    const isMobile = window.innerWidth < 768;
+    if (isMobile) return;
+
+    const checkZendesk = setInterval(() => {
+      if (typeof window.$zopim !== "undefined" && window.$zopim.livechat) {
+        window.$zopim.livechat.window.show();
+        clearInterval(checkZendesk);
+      }
+    }, 1000);
+
+    return () => clearInterval(checkZendesk);
+  }, []);
 
     return (
         <>

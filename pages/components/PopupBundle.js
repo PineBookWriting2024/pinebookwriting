@@ -118,7 +118,7 @@ export default function PopupBundle({ isOpen, onClose, service }) {
                                 <form className="popup-form-wrapper" onSubmit={handleSubmit}>
                                     <div className="text-center">
                                         <h2 className="mt-2 text-2xl text-white font-poppins"> Celebrate with Us!</h2>
-                                        <p className="text-2xl text-white font-poppins">Exclusive Offer: Expert Book Writing at <span className="text-blink">50% Off</span> – Your Story Deserves to be Heard!</p>
+                                        <p className="text-2xl text-white font-poppins">Exclusive Offer: Expert Book Writing at</p>
                                     </div>
 
                                     <div className="py-5">

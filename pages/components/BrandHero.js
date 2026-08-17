@@ -377,9 +377,8 @@ export default function BrandHero() {
                                     </h5>
                                 </div> */}
                                 <div className="text-start">
-                                    <h4 className="font-poppins text-white text-2xl md:text-3xl font-bold christmas-banner-title">Avail Discount</h4>
-                                    <h5 className="font-poppins text-white text-sm mb-3">Holiday Season Sale: Expert Book Writing at <span className="text-blink">50% Off</span> – <br></br>
-                                        Your Story Deserves to be Heard!</h5></div>
+                                    <h4 className="font-poppins text-white text-2xl md:text-3xl font-bold christmas-banner-title">Let’s Talk About Your Project!</h4>
+                                    <h5 className="font-poppins text-white text-sm mb-3">Have a book idea? finished your manuscript? or have questions about publishing? Tell us a little about your project and what you need help with. Our team will get in touch and guide you through the next steps.</h5></div>
                                 <div className="">
                                     <div className="relative w-full col-span-2">
                                         <form className="flex flex-col items-start justify-start gap-3" onSubmit={handleSubmit}>

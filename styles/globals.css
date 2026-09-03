@@ -1415,7 +1415,8 @@ button.brand-nav-btn-1 {
     font-size: 26px !important;
     text-align: center;
     line-height: 37px;
-}
+  }
+
   header#navbar {
     width: 100%;
     min-height: 118px;
@@ -1463,13 +1464,13 @@ button.brand-nav-btn-1 {
     flex-wrap: nowrap;
   }
 
-  header#navbar .brand-navbar-list > li {
+  header#navbar .brand-navbar-list>li {
     margin-left: 0 !important;
     flex: 0 0 auto;
   }
 
-  header#navbar .brand-navbar-list > li > a,
-  header#navbar .services-nav-item > div > a {
+  header#navbar .brand-navbar-list>li>a,
+  header#navbar .services-nav-item>div>a {
     font-size: clamp(15px, 0.92vw, 18px);
     line-height: 1.15;
     white-space: nowrap;
@@ -1516,8 +1517,8 @@ button.brand-nav-btn-1 {
     gap: 11px;
   }
 
-  header#navbar .brand-navbar-list > li > a,
-  header#navbar .services-nav-item > div > a {
+  header#navbar .brand-navbar-list>li>a,
+  header#navbar .services-nav-item>div>a {
     font-size: 16px;
   }
 
@@ -2124,7 +2125,7 @@ button.home-close-btn-modal-new svg {
   width: 100% !important;
   top: 0 !important;
   padding: 1rem !important;
-  z-index: 999 !important;
+  z-index: 20 !important;
 }
 
 .fixed-top .brand-nav-btn {
@@ -4113,6 +4114,7 @@ section.sec404 {
 
 /* Shared mobile layout: navigation, hero forms and case studies */
 @media (max-width: 767px) {
+
   header#navbar,
   .case-studies-listing-page header#navbar,
   .case-study-detail-page header#navbar {
@@ -4187,7 +4189,7 @@ section.sec404 {
     padding: 0;
   }
 
-  header#navbar nav.brand-mobile-nav .brand-navbar-list > li {
+  header#navbar nav.brand-mobile-nav .brand-navbar-list>li {
     margin: 0 0 13px !important;
   }
 
@@ -4638,15 +4640,15 @@ h2 {
   margin-left: 0 !important;
 }
 
-.case-studies-listing-page header#navbar .brand-navbar-list > li,
-.case-study-detail-page header#navbar .brand-navbar-list > li {
+.case-studies-listing-page header#navbar .brand-navbar-list>li,
+.case-study-detail-page header#navbar .brand-navbar-list>li {
   margin-left: 0 !important;
 }
 
-.case-studies-listing-page header#navbar .brand-navbar-list > li > a,
-.case-studies-listing-page header#navbar .services-nav-item > div > a,
-.case-study-detail-page header#navbar .brand-navbar-list > li > a,
-.case-study-detail-page header#navbar .services-nav-item > div > a {
+.case-studies-listing-page header#navbar .brand-navbar-list>li>a,
+.case-studies-listing-page header#navbar .services-nav-item>div>a,
+.case-study-detail-page header#navbar .brand-navbar-list>li>a,
+.case-study-detail-page header#navbar .services-nav-item>div>a {
   font-size: clamp(15px, 0.92vw, 18px);
   line-height: 1.12;
   white-space: nowrap;
@@ -4675,6 +4677,7 @@ h2 {
 }
 
 @media (min-width: 768px) and (max-width: 1180px) {
+
   .case-studies-listing-page header#navbar .logo,
   .case-study-detail-page header#navbar .logo {
     width: 100%;
@@ -4690,10 +4693,10 @@ h2 {
     gap: 12px;
   }
 
-  .case-studies-listing-page header#navbar .brand-navbar-list > li > a,
-  .case-studies-listing-page header#navbar .services-nav-item > div > a,
-  .case-study-detail-page header#navbar .brand-navbar-list > li > a,
-  .case-study-detail-page header#navbar .services-nav-item > div > a {
+  .case-studies-listing-page header#navbar .brand-navbar-list>li>a,
+  .case-studies-listing-page header#navbar .services-nav-item>div>a,
+  .case-study-detail-page header#navbar .brand-navbar-list>li>a,
+  .case-study-detail-page header#navbar .services-nav-item>div>a {
     font-size: 16px;
   }
 
@@ -6381,6 +6384,7 @@ h2 {
 
 /* Keep these final so legacy page-level rules cannot override mobile sizing. */
 @media (max-width: 767px) {
+
   header#navbar,
   .case-studies-listing-page header#navbar,
   .case-study-detail-page header#navbar {

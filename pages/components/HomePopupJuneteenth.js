@@ -1,17 +1,16 @@
 "use client";
-// import { useRouter } from "next/router";
+import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import useHubspotForm from "/hooks/hubspot";
 
-// const JUNETEENTH_OFFER_END = new Date("2026-06-30T23:59:59-07:00").getTime();
-
-// const getRemainingOfferSeconds = () =>
-//   Math.max(0, Math.floor((JUNETEENTH_OFFER_END - Date.now()) / 1000));
+const JUNETEENTH_OFFER_END = new Date("2026-09-07T23:59:59-07:00").getTime();
+const getRemainingOfferSeconds = () =>
+  Math.max(0, Math.floor((JUNETEENTH_OFFER_END - Date.now()) / 1000));
 
 export default function HomePopupJuneteenth() {
-  // const router = useRouter();
-  // const pathname = router.pathname;
+  const router = useRouter();
+  const pathname = router.pathname;
   const { submitMainContactForm } = useHubspotForm();
   const [form, setForm] = useState({
     fullName: "",
@@ -23,25 +22,26 @@ export default function HomePopupJuneteenth() {
   const [phoneError, setPhoneError] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isOpen, setIsOpen] = useState(true);
-  // const [isMounted, setIsMounted] = useState(false);
-  // const [countdownSeconds, setCountdownSeconds] = useState(0);
+  const [isMounted, setIsMounted] = useState(false);
+  const [countdownSeconds, setCountdownSeconds] = useState(0);
 
-  // useEffect(() => {
-  //   setIsMounted(true);
-  //   setCountdownSeconds(getRemainingOfferSeconds());
+  useEffect(() => {
+    setIsMounted(true);
+    setCountdownSeconds(getRemainingOfferSeconds());
 
-  //   const timer = setInterval(() => {
-  //     setCountdownSeconds(getRemainingOfferSeconds());
-  //   }, 1000);
+    const timer = setInterval(() => {
+      setCountdownSeconds(getRemainingOfferSeconds());
+    }, 1000);
 
-  //   return () => clearInterval(timer);
-  // }, []);
+    return () => clearInterval(timer);
+  }, []);
 
-  // const countdownParts = [
-  //   Math.floor(countdownSeconds / 3600),
-  //   Math.floor((countdownSeconds % 3600) / 60),
-  //   countdownSeconds % 60,
-  // ].map((part) => String(part).padStart(2, "0"));
+  const countdownParts = [
+    Math.floor(countdownSeconds / 86400),
+    Math.floor((countdownSeconds % 86400) / 3600),
+    Math.floor((countdownSeconds % 3600) / 60),
+    countdownSeconds % 60,
+  ].map((part) => String(part).padStart(2, "0"));
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -105,8 +105,8 @@ export default function HomePopupJuneteenth() {
     }
   };
 
-  // if (!isMounted || pathname === "/thank-you") return null;
-  // if (countdownSeconds <= 0) return null;
+  if (!isMounted || pathname === "/thank-you") return null;
+  if (countdownSeconds <= 0) return null;
 
   return (
     <>
@@ -137,7 +137,7 @@ export default function HomePopupJuneteenth() {
             <div className="grid grid-cols-1 md:grid-cols-[479px_1fr] md:items-stretch">
               <div className="relative aspect-[841/1124] w-full bg-[#eef3ee] md:aspect-auto md:h-full">
                 <Image
-                  src="/brand-img/independence-day-event-banner.jpg"
+                  src="/images/LABOR-DAY.png"
                   alt="Juneteenth popup banner"
                   fill
                   className="object-cover object-center"
@@ -166,12 +166,14 @@ export default function HomePopupJuneteenth() {
                         textWrap: "balance",
                       }}
                     >
-                      Don't Miss a 20% Discount This Independence Day!
+                      Don't Miss a 30% Discount on Labor Day!
                     </h2>
                     <p className="mt-3 font-poppins text-sm leading-6 text-[#3b4155] md:text-[15px]">
-                      Ready to bring your book idea to life? Pine Book Writing is celebrating Independence Day with an exclusive 20% discount on all our ghostwriting and editing services.<br></br>
-                      Whether you're starting your manuscript or polishing your final draft, our team is here to help you publish with confidence. Take advantage of this limited-time offer and make your publishing goals a reality this July 4th.</p>
-                    {/* <div className="juneteenth-countdown mt-4" aria-label="Limited time offer countdown">
+                      Have a book idea or an unfinished draft? This Labor Day, save 30% on all our book writing services and get the professional support you need to move forward. Let our team help shape your ideas, develop your story, and turn your vision into a completed manuscript.
+
+
+                    </p>
+                    <div className="juneteenth-countdown mt-4" aria-label="Limited time offer countdown">
                       <p className="juneteenth-countdown-title">LIMITED TIME <span>OFFER</span></p>
                       <div className="juneteenth-countdown-time" aria-live="polite">
                         {countdownParts.map((part, index) => (
@@ -182,7 +184,7 @@ export default function HomePopupJuneteenth() {
                           </div>
                         ))}
                       </div>
-                    </div> */}
+                    </div>
                   </div>
 
                   <div className="space-y-3">
@@ -250,7 +252,7 @@ export default function HomePopupJuneteenth() {
                       type="submit"
                       disabled={isSubmitting}
                     >
-                      {isSubmitting ? "Submitting..." : "Activate Your 20% Discount"}
+                      {isSubmitting ? "Submitting..." : "Activate Your 30% Discount"}
                     </button>
                   </div>
                 </form>

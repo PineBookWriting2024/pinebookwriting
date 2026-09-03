@@ -17,7 +17,7 @@ import NewBrandFooter from "./components/NewBrandFooter";
 import HomeBookSlider from "./components/HomeBookSlider";
 import HomeCaseStudiesCarousel from "./components/HomeCaseStudiesCarousel";
 import BrandVideoShowcase from "./components/BrandVideoShowcase";
-// import HomePopupJuneteenth from "./components/HomePopupJuneteenth";
+import HomePopupJuneteenth from "./components/HomePopupJuneteenth";
 import ExclusiveBookSigningParallax from "./components/ExclusiveBookSigningParallax";
 
 export default function Home() {
@@ -32,7 +32,7 @@ export default function Home() {
                 <meta name="google-site-verification" content="ze4i-BWHkh7f9iANJUJfoWbXrFcmFC9r2fCsoz1KZA8" />
                 {/* <meta name="google-site-verification" content="ze4i-BWHkh7f9iANJUJfoWbXrFcmFC9r2fCsoz1KZA8" /> */}
             </Head>
-            {/* <HomePopupJuneteenth /> */}
+            <HomePopupJuneteenth />
 
             <BrandTopBar />
             <BrandNavbar />

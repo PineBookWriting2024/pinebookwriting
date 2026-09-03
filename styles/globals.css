@@ -3590,7 +3590,7 @@ html {
     position: relative;
     top: 0;
     background: #127271;
-    z-index: 99;
+    z-index: 9;
   }
 
   iframe.py- {
@@ -4125,7 +4125,7 @@ section.sec404 {
     min-height: 64px;
     padding: 8px 18px !important;
     background: #127271 !important;
-    z-index: 999 !important;
+    z-index: 9 !important;
   }
 
   header#navbar.fixed-top,

@@ -135,12 +135,12 @@ export default function HomePopupJuneteenth() {
             </button>
 
             <div className="grid grid-cols-1 md:grid-cols-[479px_1fr] md:items-stretch">
-              <div className="relative aspect-[841/1124] w-full bg-[#eef3ee] md:aspect-auto md:h-full">
+              <div className="hide-image-mob relative aspect-[841/1124] w-full bg-[#eef3ee] md:aspect-auto md:h-full">
                 <Image
                   src="/images/LABOR-DAY.png"
                   alt="Juneteenth popup banner"
                   fill
-                  className="object-cover object-center"
+                  className="object-cover object-center "
                   priority
                 />
                 {/* <div className="absolute inset-x-0 bottom-0 flex justify-start bg-gradient-to-t from-black/60 to-transparent p-5 md:p-6">

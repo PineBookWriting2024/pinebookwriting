@@ -43,12 +43,12 @@ export default function Home() {
   const handleOpenChat = (event) => {
     event?.preventDefault();
     if (typeof window.zE === 'function') {
-        window.zE('webWidget', 'show');
-        window.zE('webWidget', 'open');
+      window.zE('webWidget', 'show');
+      window.zE('webWidget', 'open');
     } else if (typeof window.$zopim === 'function') {
-        window.$zopim(() => window.$zopim.livechat.window.show());
+      window.$zopim(() => window.$zopim.livechat.window.show());
     }
-    };
+  };
 
   const counterRef = useRef(null);
   const contentRef = useRef(null);
@@ -1690,7 +1690,7 @@ export default function Home() {
               Book Publishing Bundles
             </h2>
             <div className="w-24 h-1 bg-[#fff] mx-auto mt-4 rounded-full"></div>
-            <h4 class="text-xl font-poppins md:text-xl font-bold mt-4 text-white">Limited Time Offer - Save <span class="blink_me fw-bold text-2xl">20%</span> On Book Publishing Services</h4>
+            <h4 class="text-xl font-poppins md:text-xl font-bold mt-4 text-white">Limited Time Offer - Save <span class="blink_me fw-bold text-2xl">50%</span> On Book Publishing Services</h4>
 
 
             {/* Packages */}

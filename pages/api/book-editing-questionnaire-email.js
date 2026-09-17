@@ -19,7 +19,7 @@ export default async function handler(req, res) {
     const transporter = createQuestionnaireTransport();
     const result = await transporter.sendMail({
       from: `"Pine Book Writing" <${questionnaireSender}>`,
-      to: questionnaireRecipient,
+      to: [questionnaireRecipient, 'lia@pinebookwriting.com'],
       replyTo: values.contactEmail,
       subject: `Book Editing Questionnaire - ${values.authorName.replace(/[\r\n]/g, ' ')} - ${values.bookTitle.replace(/[\r\n]/g, ' ')}`,
       text, html,

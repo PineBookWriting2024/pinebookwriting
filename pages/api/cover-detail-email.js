@@ -1,4 +1,4 @@
-import nodemailer from "nodemailer";
+import { createQuestionnaireTransport } from "../../lib/questionnaireMailer";
 
 const escapeHtml = (unsafe = "") =>
   String(unsafe)
@@ -40,15 +40,7 @@ export default async function handler(req, res) {
   }
 
   try {
-    const transporter = nodemailer.createTransport({
-      host: "smtp.gmail.com",
-      port: 465,
-      secure: true,
-      auth: {
-        user: "pinebookwriting@gmail.com",
-        pass: "bqastuelflumgjql",
-      },
-    });
+    const transporter = createQuestionnaireTransport();
 
     const coverIdeaMap = {
       cover1: "https://www.pinebookwriting.com/brand-img/cover-detail/1.png",

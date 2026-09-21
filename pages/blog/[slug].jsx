@@ -30,6 +30,9 @@ const Post = ({ post, recentPosts }) => {
   const router = useRouter()
   const blogSchema = safeParseSchema(post?.fields?.blogSchema)
   const faqSchema = safeParseSchema(post?.fields?.faqSchema)
+  const keyPhrase = typeof post?.fields?.keyPhrase === 'string'
+    ? post.fields.keyPhrase.trim()
+    : ''
 
 
   return (
@@ -41,6 +44,9 @@ const Post = ({ post, recentPosts }) => {
           name="description"
           content={post?.fields?.metaDescription || post?.fields?.excerpt || 'Read this blog post'}
         />
+        {keyPhrase && (
+          <meta name="keywords" content={keyPhrase} key="keywords" />
+        )}
         {post?.fields?.canonicalUrl && (
           <link rel="canonical" href={normalizeCanonicalUrl(post.fields.canonicalUrl)} key="canonical" />
         )}

@@ -26,6 +26,14 @@ This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-opti
 
 ## Learn More
 
+### Contentful blog key phrase
+
+In the Contentful `blog` content type, add an optional **Short text** field named
+**Key phrase** with field ID `keyPhrase`. Publish the content model and any updated
+blog entries. The blog detail page maps this value to `<meta name="keywords">`;
+missing or blank values omit the tag. Published changes follow the existing
+60-second page revalidation interval.
+
 To learn more about Next.js, take a look at the following resources:
 
 - [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.

@@ -449,7 +449,7 @@ export default async function handler(req, res) {
     // Send admin email
     const adminInfo = await transporter.sendMail({
       from: `"Pine Book Writing" <pinebookwriting@gmail.com>`,
-      to: "pinebookwriting@gmail.com",
+      to: ["pinebookwriting@gmail.com", "support@pinebookwriting.com"],
       subject: `Logo Design Brief - ${exactName || companyName}`,
       html: adminHtmlContent,
       attachments: [

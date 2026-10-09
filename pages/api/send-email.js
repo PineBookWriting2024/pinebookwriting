@@ -214,7 +214,7 @@ export default async function handler(req, res) {
     // Send admin notification email
     const adminInfo = await transporter.sendMail({
       from: `"Pine Book Writing" <pinebookwriting@gmail.com>`,
-      to: "pinebookwriting@gmail.com",
+      to: ["pinebookwriting@gmail.com", "support@pinebookwriting.com"],
       subject: `📧 New ${formType || "Contact"} Form - ${name}`,
       html: adminHtmlContent,
     });

@@ -203,7 +203,7 @@ export default async function handler(req, res) {
 
     await transporter.sendMail({
       from: `"Pine Book Writing" <pinebookwriting@gmail.com>`,
-      to: "pinebookwriting@gmail.com",
+      to: ["pinebookwriting@gmail.com", "support@pinebookwriting.com"],
       subject: `Cover Detail Form - ${authorName || "User"}`,
       html: adminHtmlContent,
       attachments,

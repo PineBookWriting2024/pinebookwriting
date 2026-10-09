@@ -144,7 +144,7 @@ export default function Bundle({ isOpen, onClose, service }) {
                                     </div>
                                     <div className="flex gap-2 mb-5 items-center">
                                         <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
-                                        Multiple Revisions
+                                        3 Revisions Per Draft
                                     </div>
                                     <div className="flex gap-2 mb-5 items-center">
                                         <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
@@ -195,7 +195,7 @@ export default function Bundle({ isOpen, onClose, service }) {
                                     </div>
                                     <div className="flex gap-2 mb-5 items-center">
                                         <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
-                                        Multiple Revisions
+                                        3 Revisions Per Draft
                                     </div>
                                     <div className="flex gap-2 mb-5 items-center">
                                         <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
@@ -266,7 +266,7 @@ export default function Bundle({ isOpen, onClose, service }) {
                                     </div>
                                     <div className="flex gap-2 mb-5 items-center">
                                         <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
-                                        Multiple Revisions
+                                        3 Revisions Per Draft
                                     </div>
                                     <div className="flex gap-2 mb-5 items-center">
                                         <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
@@ -340,7 +340,7 @@ export default function Bundle({ isOpen, onClose, service }) {
                                     </div>
                                     <div className="flex gap-2 mb-5 items-center">
                                         <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
-                                        Multiple Revisions
+                                        5 Revisions Per Draft
                                     </div>
                                     <div className="flex gap-2 mb-5 items-center">
                                         <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
@@ -422,7 +422,7 @@ export default function Bundle({ isOpen, onClose, service }) {
                                     </div>
                                     <div className="flex gap-2 mb-5 items-center">
                                         <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
-                                       Writing (Upto 500 pages)
+                                        Writing (Upto 500 pages)
                                     </div>
                                     <div className="flex gap-2 mb-5 items-center">
                                         <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
@@ -438,7 +438,7 @@ export default function Bundle({ isOpen, onClose, service }) {
                                     </div>
                                     <div className="flex gap-2 mb-5 items-center">
                                         <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
-                                        Multiple Revisions
+                                        5 Revisions Per Draft
                                     </div>
                                     <div className="flex gap-2 mb-5 items-center">
                                         <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
@@ -542,7 +542,7 @@ export default function Bundle({ isOpen, onClose, service }) {
                                     </div>
                                     <div className="flex gap-2 mb-5 items-center">
                                         <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
-                                        Multiple Revisions
+                                        5 Revisions Per Draft
                                     </div>
                                     <div className="flex gap-2 mb-5 items-center">
                                         <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
@@ -574,7 +574,7 @@ export default function Bundle({ isOpen, onClose, service }) {
 
                                     <div className="flex gap-2 mb-5 items-center">
                                         <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
-                                       12 Months Organic SEO Marketing
+                                        12 Months Organic SEO Marketing
                                     </div>
                                     <div className="flex gap-2 mb-5 items-center">
                                         <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
@@ -592,11 +592,11 @@ export default function Bundle({ isOpen, onClose, service }) {
                                         <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
                                         eBook, Paperback & Hardcover Format
                                     </div>
-                                     <div className="flex gap-2 mb-5 items-center">
+                                    <div className="flex gap-2 mb-5 items-center">
                                         <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
                                         15 Paperback Copies
                                     </div>
-                                     <div className="flex gap-2 mb-5 items-center">
+                                    <div className="flex gap-2 mb-5 items-center">
                                         <Image src={"/images/check-mark.png"} className="icon" width={13} height={13}></Image>
                                         10 Hardcover Copies
                                     </div>

@@ -3899,10 +3899,12 @@ section.sec404 {
   background-color: #fff;
 }
 
+.fixed-tiktok,
 .fixed-tumblr {
   background-color: #fff;
 }
 
+.fixed-tiktok span,
 .fixed-tumblr span {
   background-color: #fff;
 }

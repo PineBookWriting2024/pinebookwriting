@@ -4,6 +4,43 @@ import Link from 'next/link';
 // Object
 const videoClient = [
     {
+        id: 29,
+        src: "https://www.youtube.com/embed/Gbrq3D1BhZU?si=X1mjDveXtD2O9YXI",
+        type: "video/mp4",
+        BookTitle: "SAMI C. SAMSON",
+        Consultant: "Jake Calloway",
+        ProjectManager: "Rex Brown",
+        clientname: "Terri J' O Black"
+    },
+    {
+        id: 28,
+        src: "https://www.youtube.com/embed/K77H8XpFhto?si=FgnhHSJai3xkHKlH", // Add Rod Lowe's video link here.
+        type: "video/mp4",
+        BookTitle: "My 2 Cents",
+        Consultant: "Ryan Peters",
+        ProjectManager: "Rex Brown",
+        clientname: "Rod Lowe"
+    },
+    {
+        id: 27,
+        src: "https://www.youtube.com/embed/vxy-UEV8kSc?si=z_gX5wta9BbmgQYG",
+        type: "video/mp4",
+        BookTitle: "The Heroes Are Dead: Crimson Spear",
+        Consultant: "Jenson Walker",
+        ProjectManager: "Ryan Peters",
+        clientname: "Jared Chontow"
+    },
+    {
+        id: 26,
+        src: "https://www.youtube.com/embed/OUBcuBH6hc4?si=Gzn4wU2nUZhnXJfp",
+        type: "video/mp4",
+        BookTitle: "Life Lessons",
+        Consultant: "Jenson Walker",
+        ProjectManager: "Rex Brown",
+        clientname: "Joanne Miller"
+    },
+
+    {
         id: 1,
         src: "https://www.youtube.com/embed/xUTyiqPY6Oo",
         type: "video/mp4",

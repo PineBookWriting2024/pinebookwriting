@@ -4,7 +4,7 @@ import Image from "next/image";
 import { faArrowRight, faArrowLeft, faPlusCircle, faCheckCircle, faMinusCircle, faPhone, faEnvelope, faLocationArrow, faLocation, faMapLocation } from "@fortawesome/free-solid-svg-icons";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFacebook, faInstagram, faLinkedin, faThreads, faTwitter, faXTwitter, faYoutube } from "@fortawesome/free-brands-svg-icons";
+import { faFacebook, faTiktok, faInstagram, faLinkedin, faThreads, faTwitter, faXTwitter, faYoutube } from "@fortawesome/free-brands-svg-icons";
 
 
 export default function NewBrandFooter() {
@@ -188,6 +188,9 @@ export default function NewBrandFooter() {
                             <Link href="https://www.instagram.com/pinebookwriting/" target="_blank">
                                 <FontAwesomeIcon icon={faInstagram} className="me-3" />
                             </Link>
+                            <Link href="https://www.tiktok.com/@pinebookwriting" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+                                <FontAwesomeIcon icon={faTiktok} className="me-3" />
+                            </Link>
                             <Link href="https://x.com/pinebookwriting" target="_blank">
                                 <FontAwesomeIcon icon={faXTwitter} className="me-3" />
                             </Link>
@@ -262,6 +265,9 @@ export default function NewBrandFooter() {
             </div>
 
             <div id="fixed-social">
+                <div>
+                    <a href="https://www.tiktok.com/@pinebookwriting" className="fixed-tiktok" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><FontAwesomeIcon icon={faTiktok} color="#000000" width={20} /><span>TikTok</span></a>
+                </div>
                 <div>
                     <a href="https://www.facebook.com/pinebookwriting0" class="fixed-facebook" target="_blank"><FontAwesomeIcon icon={faFacebook} color="#316FF6" width={20} /> <span>Facebook</span></a>
                 </div>

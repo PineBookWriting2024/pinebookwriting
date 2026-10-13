@@ -16,7 +16,7 @@ import ServicesBook_Popup from "../components/ServicesBook_Popup";
 import LazyYouTube from "../components/LazyYouTube";
 import SnowFall from "../components/SnowFall"; // Import the SnowFall component
 
-import { faFacebook, faInstagram, faLinkedin, faThreads, faTwitter, faXTwitter, faYoutube } from "@fortawesome/free-brands-svg-icons";
+import { faFacebook, faTiktok, faInstagram, faLinkedin, faThreads, faTwitter, faXTwitter, faYoutube } from "@fortawesome/free-brands-svg-icons";
 
 
 const clientLogos = [
@@ -977,6 +977,9 @@ export default function Home({ isOpen, onClose }) {
                                 {/* <Link href=""><FontAwesomeIcon icon={faLinkedin} className="me-3" /></Link> */}
                                 <Link href="https://www.instagram.com/pinebookwriting/" target="_blank">
                                     <FontAwesomeIcon icon={faInstagram} className="me-3" />
+                                </Link>
+                                <Link href="https://www.tiktok.com/@pinebookwriting" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+                                    <FontAwesomeIcon icon={faTiktok} className="me-3" />
                                 </Link>
                                 <Link href="https://x.com/pinebookwriting" target="_blank">
                                     <FontAwesomeIcon icon={faXTwitter} className="me-3" />

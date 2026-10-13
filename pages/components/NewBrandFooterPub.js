@@ -4,7 +4,7 @@ import Image from "next/image";
 import { faArrowRight, faArrowLeft, faPlusCircle, faCheckCircle, faMinusCircle, faPhone, faEnvelope, faLocationArrow, faLocation, faMapLocation } from "@fortawesome/free-solid-svg-icons";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFacebook, faInstagram, faLinkedin, faThreads, faTwitter, faXTwitter, faYoutube } from "@fortawesome/free-brands-svg-icons";
+import { faFacebook, faTiktok, faInstagram, faLinkedin, faThreads, faTwitter, faXTwitter, faYoutube } from "@fortawesome/free-brands-svg-icons";
 
 export default function NewBrandFooter() {
     const [isVisible, setIsVisible] = useState(false);
@@ -166,6 +166,9 @@ export default function NewBrandFooter() {
                                 </Link> */}
                                 <Link href="https://www.instagram.com/pinebookwriting/" target="_blank">
                                     <FontAwesomeIcon icon={faInstagram} className="me-3" />
+                                </Link>
+                                <Link href="https://www.tiktok.com/@pinebookwriting" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+                                    <FontAwesomeIcon icon={faTiktok} className="me-3" />
                                 </Link>
                                 <Link href="https://x.com/pinebookwriting" target="_blank">
                                     <FontAwesomeIcon icon={faXTwitter} className="me-3" />

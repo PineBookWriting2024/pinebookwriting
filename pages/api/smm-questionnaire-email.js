@@ -1,4 +1,4 @@
-import nodemailer from "nodemailer";
+import { createQuestionnaireTransport, questionnaireSender, questionnaireRecipient } from "../../lib/questionnaireMailer";
 
 const escapeHtml = (unsafe = "") =>
   String(unsafe)
@@ -32,6 +32,7 @@ export default async function handler(req, res) {
     briefDescription,
     paidAdvertisement,
 
+    publishingStage,
     WritingStage,
     primaryGoal,
     socialMedia,
@@ -63,15 +64,7 @@ export default async function handler(req, res) {
   }
 
   try {
-    const transporter = nodemailer.createTransport({
-      host: "smtp.gmail.com",
-      port: 465,
-      secure: true,
-      auth: {
-        user: "pinebookwriting@gmail.com",
-        pass: "bqastuelflumgjql",
-      },
-    });
+    const transporter = createQuestionnaireTransport();
 
     // Admin email
     const adminHtmlContent = `
@@ -121,7 +114,7 @@ export default async function handler(req, res) {
 
               <tr style="background:#f8f9fa;">
                 <td style="padding:12px 8px; font-weight:600; border-bottom:1px solid #e9ecef;">Writing Stage</td>
-                <td style="padding:12px 8px; border-bottom:1px solid #e9ecef;">${escapeHtml(listOrNA(WritingStage))}</td>
+                <td style="padding:12px 8px; border-bottom:1px solid #e9ecef;">${escapeHtml(listOrNA(publishingStage ?? WritingStage))}</td>
               </tr>
               <tr>
                 <td style="padding:12px 8px; font-weight:600; border-bottom:1px solid #e9ecef;">Primary Goal</td>
@@ -306,32 +299,39 @@ export default async function handler(req, res) {
 
     // Send admin
     const adminInfo = await transporter.sendMail({
-      from: `"Pine Book Writing" <pinebookwriting@gmail.com>`,
-      to: ["pinebookwriting@gmail.com", "support@pinebookwriting.com"],
+      from: `"Pine Book Writing" <${questionnaireSender}>`,
+      to: [questionnaireRecipient, "support@pinebookwriting.com"],
+      replyTo: email,
       subject: `SMM Questionnaire - ${authorName || "User"}`,
       html: adminHtmlContent,
     });
 
-    // Send user
-    const userMailInfo = await transporter.sendMail({
-      from: `"Pine Book Writing" <pinebookwriting@gmail.com>`,
-      to: email,
-      subject: `We received your SMM Questionnaire`,
-      html: userHtmlContent,
-    });
+    if (!adminInfo.accepted?.length) throw new Error("SMTP did not accept the questionnaire recipient");
+
+    // Confirmation failure must not reject a questionnaire already delivered to the team.
+    let userMailInfo;
+    try {
+      userMailInfo = await transporter.sendMail({
+        from: `"Pine Book Writing" <${questionnaireSender}>`,
+        to: email,
+        subject: `We received your SMM Questionnaire`,
+        html: userHtmlContent,
+      });
+    } catch (error) {
+      console.error("SMM confirmation email failed:", error.code || "SMTP_ERROR");
+    }
 
     return res.status(200).json({
       success: true,
-      message: "SMM questionnaire emails sent successfully",
+      message: "Your SMM questionnaire has been sent to our team.",
       adminMessageId: adminInfo.messageId,
-      userMessageId: userMailInfo.messageId,
+      userMessageId: userMailInfo?.messageId,
     });
   } catch (error) {
-    console.error("❌ Error sending SMM questionnaire email:", error);
+    console.error("SMM questionnaire email failed:", error.code || "SMTP_ERROR");
     return res.status(500).json({
       success: false,
-      message: "Failed to send email",
-      error: error.message,
+      message: "We could not send your questionnaire. Your answers are still here. Please try again.",
     });
   }
 }

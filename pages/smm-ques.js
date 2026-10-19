@@ -10,6 +10,7 @@ export default function Smm() {
 
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [showSuccess, setShowSuccess] = useState(false);
+    const [submitError, setSubmitError] = useState("");
 
     // Location info (same as your other form)
     const [userInfo, setUserInfo] = useState({
@@ -134,7 +135,8 @@ export default function Smm() {
                 }),
             });
 
-            const result = await response.json();
+            const result = await response.json().catch(() => ({ success: false, message: "We could not submit your questionnaire. Please try again." }));
+            if (!response.ok) return { success: false, message: result.message };
             if (!result?.success) console.error("Email sending failed:", result?.message || result);
             return result;
         } catch (error) {
@@ -145,6 +147,8 @@ export default function Smm() {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
+        if (isSubmitting) return;
+        setSubmitError("");
 
         if (form.number?.length < 9) {
             setPhoneError("Phone number must be at least 9 digits");
@@ -162,11 +166,11 @@ export default function Smm() {
                     setShowSuccess(false);
                 }, 4000);
             } else {
-                alert("There was an error submitting your form. Please try again.");
+                setSubmitError(emailResult?.message || "We could not submit your questionnaire. Please try again.");
             }
         } catch (error) {
             console.error("Form submission error:", error);
-            alert("There was an error submitting your form. Please try again.");
+            setSubmitError("We could not submit your questionnaire. Your answers are still here. Please try again.");
         } finally {
             setIsSubmitting(false);
         }
@@ -598,6 +602,7 @@ export default function Smm() {
 
                     <div class="w-full pb-4">
                         <button disabled={isSubmitting} class="p-4 py-2 text-white uppercase header-submit-btn rounded-xl shadow-xl text-xl" type="submit"> {isSubmitting ? "Submitting..." : "Submit"}</button>
+                        {submitError ? <p role="alert" className="text-red-600 mt-3">{submitError}</p> : null}
                         {showSuccess ? <p className="text-green-600 mt-3">Submitted successfully.</p> : null}
                     </div>
                 </form>

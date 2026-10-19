@@ -308,7 +308,7 @@ export default async function handler(req, res) {
     // Send admin
     const adminInfo = await transporter.sendMail({
       from: `"Pine Book Writing" <pinebookwriting@gmail.com>`,
-      to: ["pinebookwriting@gmail.com", "support@pinebookwriting.com"],
+      to: "support@pinebookwriting.com",
       replyTo: email,
       subject: `SMM Questionnaire - ${authorName || "User"}`,
       html: adminHtmlContent,

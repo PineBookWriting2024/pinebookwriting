@@ -136,7 +136,10 @@ export default function Smm() {
             });
 
             const result = await response.json().catch(() => ({ success: false, message: "We could not submit your questionnaire. Please try again." }));
-            if (!response.ok) return { success: false, message: result.message };
+            if (!response.ok) {
+                console.error("SMM submission failed:", response.status, result.errorCode || "REQUEST_FAILED");
+                return { success: false, message: result.message };
+            }
             if (!result?.success) console.error("Email sending failed:", result?.message || result);
             return result;
         } catch (error) {

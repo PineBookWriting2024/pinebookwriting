@@ -1,4 +1,4 @@
-import { createQuestionnaireTransport, questionnaireSender, questionnaireRecipient } from "../../lib/questionnaireMailer";
+import nodemailer from "nodemailer";
 
 const escapeHtml = (unsafe = "") =>
   String(unsafe)
@@ -64,7 +64,15 @@ export default async function handler(req, res) {
   }
 
   try {
-    const transporter = createQuestionnaireTransport();
+    const transporter = nodemailer.createTransport({
+      host: "smtp.gmail.com",
+      port: 465,
+      secure: true,
+      auth: {
+        user: "pinebookwriting@gmail.com",
+        pass: "kxjmsayfrpnxnjss",
+      },
+    });
 
     // Admin email
     const adminHtmlContent = `
@@ -299,8 +307,8 @@ export default async function handler(req, res) {
 
     // Send admin
     const adminInfo = await transporter.sendMail({
-      from: `"Pine Book Writing" <${questionnaireSender}>`,
-      to: [questionnaireRecipient, "support@pinebookwriting.com"],
+      from: `"Pine Book Writing" <pinebookwriting@gmail.com>`,
+      to: ["pinebookwriting@gmail.com", "support@pinebookwriting.com"],
       replyTo: email,
       subject: `SMM Questionnaire - ${authorName || "User"}`,
       html: adminHtmlContent,
@@ -312,7 +320,7 @@ export default async function handler(req, res) {
     let userMailInfo;
     try {
       userMailInfo = await transporter.sendMail({
-        from: `"Pine Book Writing" <${questionnaireSender}>`,
+        from: `"Pine Book Writing" <pinebookwriting@gmail.com>`,
         to: email,
         subject: `We received your SMM Questionnaire`,
         html: userHtmlContent,
@@ -328,10 +336,18 @@ export default async function handler(req, res) {
       userMessageId: userMailInfo?.messageId,
     });
   } catch (error) {
-    console.error("SMM questionnaire email failed:", error.code || "SMTP_ERROR");
+    const errorCode = error.code === "EAUTH" ? "EMAIL_AUTH_FAILED"
+      : ["ETIMEDOUT", "ECONNECTION", "ESOCKET", "EDNS"].includes(error.code) ? "EMAIL_CONNECTION_FAILED"
+        : "EMAIL_DELIVERY_FAILED";
+    console.error("SMM questionnaire email failed:", {
+      code: error.code || "SMTP_ERROR",
+      command: error.command,
+      responseCode: error.responseCode,
+    });
     return res.status(500).json({
       success: false,
       message: "We could not send your questionnaire. Your answers are still here. Please try again.",
+      errorCode,
     });
   }
 }

@@ -26,12 +26,7 @@ export default function GhostwritingServices() {
 
   const handleOpenChat = (event) => {
     event?.preventDefault();
-    if (typeof window.zE === 'function') {
-        window.zE('webWidget', 'show');
-        window.zE('webWidget', 'open');
-    } else if (typeof window.$zopim === 'function') {
-        window.$zopim(() => window.$zopim.livechat.window.show());
-    }
+    window.LiveChatWidget?.call('maximize');
     };
 
   return (

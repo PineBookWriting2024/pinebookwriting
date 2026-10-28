@@ -46,16 +46,6 @@ export default function App({ Component, pageProps }) {
     });
   }, []);
 
-  useEffect(() => {
-    const checkZendesk = setInterval(() => {
-      if (typeof window.$zopim !== "undefined" && window.$zopim.livechat) {
-        window.$zopim.livechat.window.show();
-        clearInterval(checkZendesk);
-      }
-    }, 1000);
-
-    return () => clearInterval(checkZendesk);
-  }, []);
 
 
 
@@ -69,28 +59,7 @@ export default function App({ Component, pageProps }) {
         <PopupModal />
       </PopupProvider>
 
-      <Script
-        id="zendesk-settings"
-        strategy="beforeInteractive"
-        dangerouslySetInnerHTML={{
-          __html: `
-            window.zESettings = {
-              webWidget: {
-                chat: { suppress: false },
-                contactForm: { suppress: false },
-                launcher: {
-                  chatLabel: { '*': 'Live Chat' }
-                }
-              }
-            };
-          `,
-        }}
-      />
-      <Script
-        id="ze-snippet"
-        src="https://static.zdassets.com/ekr/snippet.js?key=6ad75b0f-d085-4cae-9a7a-48abeb69b973"
-        strategy="afterInteractive"
-      />
+
 
       <Script
         id="tiktok-pixel"

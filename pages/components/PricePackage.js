@@ -42,7 +42,7 @@ const PricePackage = () => {
 
     const handleOpenChat = (event) => {
     event?.preventDefault();
-    window.LiveChatWidget?.call('maximize');
+    window.Tawk_API?.maximize?.();
     };
 
     return (

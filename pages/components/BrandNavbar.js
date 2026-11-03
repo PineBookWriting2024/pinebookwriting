@@ -60,7 +60,7 @@ export default function BrandNavbar() {
     const handleOpenChat = (event) => {
         event?.preventDefault();
 
-        window.LiveChatWidget?.call('maximize');
+        window.Tawk_API?.maximize?.();
     };
 
 

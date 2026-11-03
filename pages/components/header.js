@@ -7,7 +7,7 @@ import Popup from "./popup";
 export default function Header() {
 
     // const handleOpenChat = () => {
-    //     window.LiveChatWidget?.call('maximize');
+    //     window.Tawk_API?.maximize?.();
     // };
         const [isModalOpen, setModalOpen] = useState(false);
         const [selectedService, setSelectedService] = useState('');

@@ -15,7 +15,7 @@ import Script from "next/script";
 
 const handleOpenChat = (event) => {
   event?.preventDefault();
-  window.LiveChatWidget?.call('maximize');
+  window.Tawk_API?.maximize?.();
     };
 
 const steps = [

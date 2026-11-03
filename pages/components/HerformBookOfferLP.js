@@ -263,7 +263,7 @@ export default function HeroFormBookOfferLP({ onOpenModal }) {
 
   const handleOpenChat = (event) => {
     event?.preventDefault();
-    window.LiveChatWidget?.call('maximize');
+    window.Tawk_API?.maximize?.();
   };
 
   // Get user location info

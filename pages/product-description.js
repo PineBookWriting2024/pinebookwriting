@@ -23,7 +23,7 @@ export default function ProductDescription() {
     };
     const handleOpenChat = (event) => {
         event?.preventDefault();
-        window.LiveChatWidget?.call('maximize');
+        window.Tawk_API?.maximize?.();
     };
 
     const faqData = [

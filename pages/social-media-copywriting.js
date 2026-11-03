@@ -19,7 +19,7 @@ export default function SocialMediaCopywriting() {
 
     const handleOpenChat = (event) => {
         event?.preventDefault();
-        window.LiveChatWidget?.call('maximize');
+        window.Tawk_API?.maximize?.();
     };
 
     const [openFAQ, setOpenFAQ] = useState(0);

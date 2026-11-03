@@ -20,7 +20,7 @@ import PortfolioSlider3LP from "../components/PortfolioSlider3LP";
 
 const handleOpenChat = (event) => {
   event?.preventDefault();
-  window.LiveChatWidget?.call('maximize');
+  window.Tawk_API?.maximize?.();
     };
 
 const steps = [

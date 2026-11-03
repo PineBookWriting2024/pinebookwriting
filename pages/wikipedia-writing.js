@@ -19,7 +19,7 @@ import CTAButton from './components/CTAButton';
 
 const handleOpenChat = (event) => {
     event?.preventDefault();
-    window.LiveChatWidget?.call('maximize');
+    window.Tawk_API?.maximize?.();
     };
 
 export default function Wikipedia() {

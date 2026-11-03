@@ -42,7 +42,7 @@ import NewBrandFooter from "../components/NewBrandFooter";
 export default function Home() {
   const handleOpenChat = (event) => {
     event?.preventDefault();
-    window.LiveChatWidget?.call('maximize');
+    window.Tawk_API?.maximize?.();
   };
 
   const counterRef = useRef(null);

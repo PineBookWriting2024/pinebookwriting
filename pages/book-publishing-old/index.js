@@ -20,7 +20,7 @@ import PortfolioSlider3LP from "../components/PortfolioSlider3LP";
 
 const handleOpenChat = (event) => {
   event?.preventDefault();
-  window.Tawk_API?.maximize?.();
+  window.$zoho?.salesiq?.floatwindow?.visible?.("show");
     };
 
 const steps = [

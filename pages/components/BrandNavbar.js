@@ -60,7 +60,7 @@ export default function BrandNavbar() {
     const handleOpenChat = (event) => {
         event?.preventDefault();
 
-        window.Tawk_API?.maximize?.();
+        window.$zoho?.salesiq?.floatwindow?.visible?.("show");
     };
 
 

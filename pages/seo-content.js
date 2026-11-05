@@ -18,7 +18,7 @@ import CTAButton from './components/CTAButton';
 export default function SeoCopywriting() {
     const handleOpenChat = (event) => {
         event?.preventDefault();
-        window.Tawk_API?.maximize?.();
+        window.$zoho?.salesiq?.floatwindow?.visible?.("show");
     };
 
     const [openFAQ, setOpenFAQ] = useState(0);

@@ -48,8 +48,8 @@ function CsScrollVideo({ src, title }) {
 
 export default function CaseStudyDetail({ data }) {
     const handleOpenChat = () => {
-        if (typeof window !== "undefined" && window.Tawk_API?.maximize) {
-            window.Tawk_API.maximize();
+        if (typeof window !== "undefined" && window.$zoho?.salesiq?.floatwindow?.visible) {
+            window.$zoho.salesiq.floatwindow.visible("show");
         }
     };
 

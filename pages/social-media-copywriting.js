@@ -19,7 +19,7 @@ export default function SocialMediaCopywriting() {
 
     const handleOpenChat = (event) => {
         event?.preventDefault();
-        window.Tawk_API?.maximize?.();
+        window.$zoho?.salesiq?.floatwindow?.visible?.("show");
     };
 
     const [openFAQ, setOpenFAQ] = useState(0);

@@ -19,7 +19,7 @@ import CTAButton from './components/CTAButton';
 
 const handleOpenChat = (event) => {
     event?.preventDefault();
-    window.Tawk_API?.maximize?.();
+    window.$zoho?.salesiq?.floatwindow?.visible?.("show");
     };
 
 export default function Wikipedia() {

@@ -7,7 +7,7 @@ import Popup from "./popup";
 export default function Header() {
 
     // const handleOpenChat = () => {
-    //     window.Tawk_API?.maximize?.();
+    //     window.$zoho?.salesiq?.floatwindow?.visible?.("show");
     // };
         const [isModalOpen, setModalOpen] = useState(false);
         const [selectedService, setSelectedService] = useState('');

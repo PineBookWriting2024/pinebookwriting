@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function BrandCTA(props) {
     const handleOpenChat = () => {
-        window.Tawk_API?.maximize?.();
+        window.$zoho?.salesiq?.floatwindow?.visible?.("show");
     };
 
     return (

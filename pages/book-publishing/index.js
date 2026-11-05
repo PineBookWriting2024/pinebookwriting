@@ -42,7 +42,7 @@ import NewBrandFooter from "../components/NewBrandFooter";
 export default function Home() {
   const handleOpenChat = (event) => {
     event?.preventDefault();
-    window.Tawk_API?.maximize?.();
+    window.$zoho?.salesiq?.floatwindow?.visible?.("show");
   };
 
   const counterRef = useRef(null);

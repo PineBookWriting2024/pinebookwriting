@@ -5,7 +5,7 @@ import BrandAudioPlayer from "./BrandAudioPlayer";
 
 export default function BrandChooseUs() {
     const handleOpenChat = () => {
-        window.Tawk_API?.maximize?.();
+        window.$zoho?.salesiq?.floatwindow?.visible?.("show");
     };
 
     return (

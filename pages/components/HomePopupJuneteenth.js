@@ -1,12 +1,11 @@
 "use client";
 import { useRouter } from "next/router";
-import { useEffect, useState } from "react";
-import Image from "next/image";
+import { Fragment, useEffect, useState } from "react";
 import useHubspotForm from "/hooks/hubspot";
 
-const JUNETEENTH_OFFER_END = new Date("2026-09-07T23:59:59-07:00").getTime();
+const THANKSGIVING_OFFER_END = new Date("2026-11-27T00:00:00-08:00").getTime();
 const getRemainingOfferSeconds = () =>
-  Math.max(0, Math.floor((JUNETEENTH_OFFER_END - Date.now()) / 1000));
+  Math.max(0, Math.floor((THANKSGIVING_OFFER_END - Date.now()) / 1000));
 
 export default function HomePopupJuneteenth() {
   const router = useRouter();
@@ -111,278 +110,123 @@ export default function HomePopupJuneteenth() {
   return (
     <>
       {isOpen && (
-        <section className="fixed inset-0 z-50 flex items-center justify-center overflow-y-auto bg-black/60 p-3 md:p-6">
-          <div className="relative my-auto w-full max-w-[1040px] overflow-hidden rounded-[24px] bg-[#e8e8ee] shadow-2xl">
-            <button
-              type="button"
-              onClick={() => setIsOpen(false)}
-              aria-label="Close modal"
-              className="popup-close-btn absolute top-4 z-20 flex h-9 w-9 items-center justify-center rounded-full bg-[#10163d] text-white transition hover:opacity-90"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2.5"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className="h-5 w-5"
-              >
-                <line x1="18" y1="6" x2="6" y2="18" />
-                <line x1="6" y1="6" x2="18" y2="18" />
-              </svg>
-            </button>
-
-            <div className="grid grid-cols-1 md:grid-cols-[479px_1fr] md:items-stretch">
-              <div className="hide-image-mob relative aspect-[841/1124] w-full bg-[#eef3ee] md:aspect-auto md:h-full">
-                <Image
-                  src="/images/LABOR-DAY.png"
-                  alt="Juneteenth popup banner"
-                  fill
-                  className="object-cover object-center "
-                  priority
-                />
-                {/* <div className="absolute inset-x-0 bottom-0 flex justify-start bg-gradient-to-t from-black/60 to-transparent p-5 md:p-6">
-                  <button
-                    type="button"
-                    className="inline-flex items-center rounded-md bg-[#0f1438] px-6 py-3 font-poppins text-sm font-semibold uppercase text-white transition hover:bg-[#1b235e]"
-                  >
-                    Explore Now
-                  </button>
-                </div> */}
-              </div>
-
-              <div className="relative bg-[#f3f4f8] p-5 md:p-8">
-                <div className="absolute right-0 top-0 h-20 w-20 bg-gradient-to-bl from-[#f39a1f] to-[#df3369] [clip-path:polygon(100%_0,0_0,100%_100%)]" />
-
-                <form onSubmit={handleSubmit}>
-                  <div className="mb-6 text-left">
-                    <h2
-                      className="text-2xl font-extrabold leading-tight text-[#10163d] md:text-[38px]"
-                      style={{
-                        fontFamily: "'Merriweather', serif",
-                        letterSpacing: "0.2px",
-                        textWrap: "balance",
-                      }}
-                    >
-                      Don't Miss a 30% Discount on Labor Day!
-                    </h2>
-                    <p className="mt-3 font-poppins text-sm leading-6 text-[#3b4155] md:text-[15px]">
-                      Have a book idea or an unfinished draft? This Labor Day, save 30% on all our book writing services and get the professional support you need to move forward. Let our team help shape your ideas, develop your story, and turn your vision into a completed manuscript.
-
-
-                    </p>
-                    <div className="juneteenth-countdown mt-4" aria-label="Limited time offer countdown">
-                      <p className="juneteenth-countdown-title">LIMITED TIME <span>OFFER</span></p>
-                      <div className="juneteenth-countdown-time" aria-live="polite">
-                        {countdownParts.map((part, index) => (
-                          <div className="juneteenth-time-group" key={index}>
-                            <span className="juneteenth-time-box">{part[0]}</span>
-                            <span className="juneteenth-time-box">{part[1]}</span>
-                            {index < countdownParts.length - 1 && <span className="juneteenth-time-separator">:</span>}
-                          </div>
-                        ))}
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="space-y-3">
-                    <input
-                      type="text"
-                      name="fullName"
-                      onChange={handleChange}
-                      value={form.fullName}
-                      required
-                      className="h-12 w-full rounded-lg border border-[#ced3ea] bg-white px-4 font-poppins text-sm text-[#0f1535] outline-none focus:border-[#2c9384]"
-                      placeholder="Enter your Name"
-                    />
-
-                    <input
-                      type="text"
-                      name="phoneNumber"
-                      onChange={handleChange}
-                      value={form.phoneNumber}
-                      required
-                      className="h-12 w-full rounded-lg border border-[#ced3ea] bg-white px-4 font-poppins text-sm text-[#0f1535] outline-none focus:border-[#2c9384]"
-                      placeholder="Enter your Phone"
-                    />
-                    {phoneError && <p className="text-sm text-red-500">{phoneError}</p>}
-
-                    <input
-                      type="text"
-                      name="email"
-                      onChange={handleChange}
-                      value={form.email}
-                      required
-                      className="h-12 w-full rounded-lg border border-[#ced3ea] bg-white px-4 font-poppins text-sm text-[#0f1535] outline-none focus:border-[#2c9384]"
-                      placeholder="Enter your Email"
-                    />
-
-                    <textarea
-                      onChange={handleChange}
-                      value={form.message}
-                      required
-                      placeholder="Enter your Message"
-                      name="message"
-                      className="min-h-[88px] w-full resize-none rounded-lg border border-[#ced3ea] bg-white px-4 py-3 font-poppins text-sm text-[#0f1535] outline-none focus:border-[#2c9384]"
-                      rows={3}
-                    />
-
-                    {/* <div className="flex items-start">
-                      <div className="flex h-5 items-center">
-                        <input
-                          id="popup-consent"
-                          type="checkbox"
-                          className="h-4 w-4 rounded-sm border border-gray-300 bg-gray-50"
-                          required
-                        />
-                      </div>
-                      <label htmlFor="popup-consent" className="ms-2 text-xs font-medium text-[#3b4155]">
-                        By checking this box, I consent to received text messages related to Follow Up Messages and Appointment Reminders from Pine Book Writing and Publishing. you can reply "STOP" at any time to opt-out. Message and data rates may apply. Message Frequency may vary, text Help to <Link href="tel:(866) 841-7469" className="text-blue-600">(866) 841-7469</Link> for assistance. For more information, please refer to our <Link href="privacy-policy" className="text-blue-600" target="_blank">PRIVACY POLICY</Link> and SMS <Link href="terms-and-conditions" className="text-blue-600" target="_blank"> TERMS and CONDITIONS </Link> on our website.
-                      </label>
-                    </div> */}
-
-                    {showSuccess && (
-                      <p className="px-1 py-2 text-green-700">Form submitted Successfully!</p>
-                    )}
-
-                    <button
-                      className="w-full rounded-lg bg-[#10163d] p-3 font-poppins text-sm font-semibold uppercase tracking-wide text-white transition hover:bg-[#17205a] disabled:cursor-not-allowed disabled:opacity-50"
-                      type="submit"
-                      disabled={isSubmitting}
-                    >
-                      {isSubmitting ? "Submitting..." : "Activate Your 30% Discount"}
-                    </button>
-                  </div>
-                </form>
+        <section className="hnlp-overlay" role="dialog" aria-modal="true" aria-labelledby="hnlp-title">
+          <div className="hnlp-modal">
+            <div className="hnlp-form-column">
+            <div className="hnlp-content">
+              <h2 id="hnlp-title">Have a Book Idea You've Been Meaning to Write? Save 30% This <span className="hnlp-title-highlight">Thanksgiving!</span></h2>
+              <p className="hnlp-copy">If writing your book has been on your mind for a while, here's a little reason to get started. We're offering <strong>30% OFF</strong> our book writing services this Thanksgiving. Whether you have an idea, a few notes, or a story that needs help taking shape, we're here to help you put it into words and turn it into a book.</p>
+            <div className="hnlp-countdown" role="timer" aria-live="off" aria-label="Limited time offer countdown">
+              <span className="hnlp-countdown-label">OFFER ENDS</span>
+              <div className="hnlp-countdown-digits">
+                {[["days", "Days"], ["hours", "Hours"], ["minutes", "Mins"], ["seconds", "Secs"]].map(([key, label], index) => (
+                  <Fragment key={key}>
+                    {index > 0 && <span className="hnlp-countdown-colon" aria-hidden="true">:</span>}
+                    <span className="hnlp-countdown-unit"><strong>{countdownParts[["days", "hours", "minutes", "seconds"].indexOf(key)]}</strong><small>{label}</small></span>
+                  </Fragment>
+                ))}
               </div>
             </div>
+              <form className="hnlp-form" onSubmit={handleSubmit}>
+                <label className="hnlp-field">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="7" r="4" /><path d="M3 22v-2a9 7 0 0 1 18 0v2Z" /></svg>
+                  <input aria-label="Full Name" name="fullName" value={form.fullName} onChange={handleChange} placeholder="Full Name*" required />
+                </label>
+                <label className="hnlp-field">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="1" /><path d="m2 5 10 8L22 5" /></svg>
+                  <input aria-label="Email Address" type="text" name="email" value={form.email} onChange={handleChange} placeholder="Email Address*" required />
+                </label>
+                <div className="hnlp-phone">
+                  <input type="text" className="hnlp-phone-input" aria-label="Phone Number" name="phoneNumber" value={form.phoneNumber} onChange={handleChange} placeholder="Phone Number" required />
+                  {phoneError && <p className="hnlp-error" role="alert">{phoneError}</p>}
+                </div>
+                <label className="hnlp-field hnlp-message">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5C9 2 5 2 2 4v17c3-2 7-2 10 0 3-2 7-2 10 0V4c-3-2-7-2-10 1Zm0 0v16" /></svg>
+                  <textarea aria-label="Manuscript / Project Details" name="message" value={form.message} onChange={handleChange} placeholder="Manuscript / Project Details*" rows={3} required />
+                </label>
+                <button className="hnlp-submit" type="submit" disabled={isSubmitting}>{isSubmitting ? "Submitting..." : "CLAIM MY 30% DISCOUNT"} <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m9 5 7 7-7 7M3 12h13" /></svg></button>
+                {showSuccess && (
+                  <div className="hnlp-success" role="status" aria-live="polite"><strong>Thank you!</strong> Your request has been submitted successfully.</div>
+                )}
+              </form>
+            </div>
+            </div>
+            <div className="hnlp-art"><img src="/brand-img/THANKSGIVING.png" width="468" height="666" alt="Thanksgiving special: get 30% off publishing" fetchPriority="high" /></div>
+            <button type="button" className="hnlp-close" onClick={() => setIsOpen(false)} aria-label="Close popup"><span /><span /></button>
           </div>
+          <button type="button" className="hnlp-mobile-close" onClick={() => setIsOpen(false)} aria-label="Close popup">&times;</button>
         </section>
       )}
       <style jsx>{`
-        .popup-close-btn {
-          right: 16px;
+        .hnlp-overlay { position: fixed; inset: 0; z-index: 2147483647; display: flex; align-items: center; justify-content: center; padding: 24px; overflow-y: auto; background: rgba(7, 16, 29, .72); backdrop-filter: blur(7px); }
+        .hnlp-modal { position: relative; isolation: isolate; container-type: inline-size; display: grid; grid-template-columns: 1.1fr 1fr; width: min(1100px, 100%); margin: auto; border-radius: 24px; background: #dcfff2; box-shadow: 0 22px 70px #07101d66; }
+        .hnlp-form-column { min-width: 0; padding: 28px; background: linear-gradient(135deg, #126b60, #1e5958); border-radius: 24px 0 0 24px; }
+        .hnlp-art { display: flex; align-items: center; min-width: 0; overflow: hidden; border-radius: 0 24px 24px 0; }
+        .hnlp-art img { display: block; width: 100%; height: auto; }
+        .hnlp-countdown { position: relative; margin: 0 0 20px; padding: 12px; border-radius: 10px; background: #ffffff; text-align: center; color: #000000; }
+        .hnlp-countdown-label { display: block; margin-bottom: .35cqw; font: 700 .8cqw/1.2 Arial, sans-serif; letter-spacing: .12em; }
+        .hnlp-countdown-digits { display: flex; align-items: center; justify-content: center; gap: .6cqw; }
+        .hnlp-countdown-unit { display: flex; flex-direction: column; align-items: center; min-width: 3.5cqw; padding: .3cqw .5cqw; border: 1px solid #299081; border-radius: .5cqw; background: #ffffff; box-shadow: 0 2px 6px #0f113d22; }
+        .hnlp-countdown-unit strong { color: #000000; font: 700 1.8cqw/1.05 'Courier New', monospace; font-variant-numeric: tabular-nums; }
+        .hnlp-countdown-unit small { margin-top: .15cqw; color: #000000; font: 700 .6cqw/1.2 Arial, sans-serif; text-transform: uppercase; letter-spacing: .06em; }
+        .hnlp-countdown-colon { font: 700 1.7cqw/1 monospace; }
+        .hnlp-content { position: relative; color: #ffffff; text-align: center; }
+        .hnlp-content h2 { margin: 0 0 1cqw; font: 400 2.5cqw/1.12 Georgia, 'Times New Roman', serif; letter-spacing: -.03cqw; color: #ffffff; text-wrap: balance; }
+        .hnlp-title-highlight { padding: 0 .15em; border-radius: .12em; background: linear-gradient(115deg, #299081, #1a8273 40%, #147d6e 85%); color: #ffffff; white-space: nowrap; box-decoration-break: clone; -webkit-box-decoration-break: clone; }
+        .hnlp-copy { margin: 0 0 1.3cqw; color: #edf7f4; font: 400 1.1cqw/1.5 Arial, sans-serif; }
+        .hnlp-copy strong { display: inline-block; padding: 2px 6px; border-radius: 4px; background: #ffe18a; color: #10163d; font-weight: 800; animation: hnlp-discount-blink 1.2s ease-in-out infinite; }
+        @keyframes hnlp-discount-blink {
+          0%, 100% { background: #ffe18a; color: #10163d; box-shadow: 0 0 0 transparent; }
+          50% { background: #ffffff; color: #126b60; box-shadow: 0 0 10px #ffe18a99; }
         }
-
-        .juneteenth-countdown {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: center;
-          gap: 6px;
-          width: 100%;
-          max-width: 497px;
-          border-radius: 10px;
-          background: #111638;
-          padding: 13px 16px 12px;
-          color: #ffffff;
+        @media (prefers-reduced-motion: reduce) {
+          .hnlp-copy strong { animation: none; }
         }
-
-        .juneteenth-countdown-title {
-          margin: 0;
-          font-family: Arial, Helvetica, sans-serif;
-          font-size: 19px;
-          font-weight: 900;
-          line-height: 1;
-          letter-spacing: 0;
-        }
-
-        .juneteenth-countdown-title span {
-          font-weight: 900;
-        }
-
-        .juneteenth-countdown-time {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          gap: 3px;
-        }
-
-        .juneteenth-time-group {
-          display: flex;
-          align-items: center;
-          gap: 1px;
-        }
-
-        .juneteenth-time-box {
-          display: inline-flex;
-          height: 35px;
-          width: 22px;
-          align-items: center;
-          justify-content: center;
-          border-radius: 4px;
-          background: #ffc22f;
-          color: #050505;
-          font-family: Arial, Helvetica, sans-serif;
-          font-size: 31px;
-          font-weight: 900;
-          line-height: 1;
-          box-shadow: inset 0 -12px 0 rgba(143, 99, 0, 0.26);
-        }
-
-        .juneteenth-time-separator {
-          display: inline-flex;
-          width: 11px;
-          justify-content: center;
-          color: #ffffff;
-          font-family: Arial, Helvetica, sans-serif;
-          font-size: 31px;
-          font-weight: 900;
-          line-height: 1;
-        }
-
-        @media (max-width: 420px) {
-          .juneteenth-countdown {
-            width: 100%;
-            padding-inline: 10px;
-          }
-
-          .juneteenth-countdown-title {
-            font-size: 17px;
-          }
-
-          .juneteenth-time-box {
-            height: 31px;
-            width: 20px;
-            font-size: 27px;
-          }
-
-          .juneteenth-time-separator {
-            width: 9px;
-            font-size: 27px;
-          }
-        }
-
-        .popup-typewriter {
-          display: inline-block;
-          overflow: hidden;
-          white-space: nowrap;
-          border-right: 2px solid #ffffff;
-          width: 0;
-          animation: typing 2.4s steps(11, end) infinite, blink 0.8s step-end infinite;
-        }
-
-        @keyframes typing {
-          0% {
-            width: 0;
-          }
-          45% {
-            width: 11ch;
-          }
-          70% {
-            width: 11ch;
-          }
-          100% {
-            width: 0;
-          }
-        }
-
-        @keyframes blink {
-          30% {
-            border-color: transparent;
-          }
+        .hnlp-form { display: flex; flex-direction: column; gap: .85cqw; }
+        .hnlp-field { display: flex; align-items: center; gap: 1.5cqw; width: 100%; height: 3.9cqw; margin: 0; padding: 0 1.75cqw; border: 1px solid #fff; border-radius: 1cqw; background: linear-gradient(115deg, #f7f7f7, #f4f4f4); box-shadow: 0 5px 10px #0f113d18; box-sizing: border-box; }
+        .hnlp-field svg { flex: 0 0 2.2cqw; width: 2.2cqw; height: 2.2cqw; fill: none; stroke: #585858; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
+        .hnlp-field input, .hnlp-field textarea { width: 100%; min-width: 0; height: 100%; padding: 0; border: 0; outline: 0; border-radius: 0; background: transparent; color: #444; font: 400 1.55cqw/1.4 Arial, sans-serif; box-shadow: none; }
+        .hnlp-field input::placeholder, .hnlp-field textarea::placeholder { font-size: 1.2cqw; opacity: 1; color: #555; }
+        .hnlp-field:focus-within, .hnlp-phone:focus-within { outline: 3px solid #63b5a7; outline-offset: 2px; }
+        .hnlp-message { height: 10cqw; padding-top: 1cqw; padding-bottom: .5cqw; align-items: flex-start; }
+        .hnlp-message textarea { resize: vertical; min-height: 100%; max-height: 10cqw; }
+        .hnlp-phone { position: relative; border-radius: 1cqw; }
+        .hnlp-phone-input { box-sizing: border-box; width: 100%; height: 3.9cqw; padding: 0 1.75cqw; border: 1px solid #fff; border-radius: 1cqw; background: #f5f5f5; color: #444; font: 400 1.2cqw Arial, sans-serif; }
+        .hnlp-error { position: absolute; z-index: 2; top: 100%; left: 0; margin: 0; padding: 3px 7px; border-radius: 4px; background: #fff1e7; color: #9b1b0e; font: 12px/1.3 Arial, sans-serif; }
+        .hnlp-submit { display: flex; justify-content: center; align-items: center; gap: .65cqw; margin: .35cqw -.35cqw 0; min-height: 4.7cqw; border: .13cqw solid #63b5a7; border-radius: 1.35cqw; background: linear-gradient(115deg, #299081, #1a8273 40%, #147d6e 85%); box-shadow: inset 0 2px 2px #59ac9d, 0 7px 14px #07101d44; color: #ffffff; font: 700 2.08cqw/1 Arial, sans-serif; cursor: pointer; }
+        .hnlp-submit svg { flex: 0 0 auto; width: 1em; height: 1em; fill: none; stroke: currentColor; stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }
+        .hnlp-submit:hover { filter: brightness(1.06); }
+        .hnlp-submit:disabled { opacity: .65; cursor: wait; }
+        .hnlp-success { position: static; margin-top: 4px; padding: 12px; border: 1px solid #63b5a7; border-radius: 8px; background: #edf7f4; color: #0f113d; font: 14px/1.4 Arial, sans-serif; box-shadow: 0 4px 18px #0f113d44; }
+        .hnlp-close { position: absolute; right: -.1%; top: -1.2%; z-index: 5; width: 40px; height: 40px; border: 0; border-radius: 50%; background: #fff; box-shadow: 0 3px 7px #0f113d33; cursor: pointer; }
+        .hnlp-close span { position: absolute; left: 27%; top: 48%; width: 46%; height: 2px; border-radius: 2px; background: #121212; transform: rotate(45deg); }
+        .hnlp-close span:last-child { transform: rotate(-45deg); }
+        .hnlp-mobile-close { display: none; }
+        button:focus-visible { outline: 3px solid #63b5a7; outline-offset: 4px; }
+        @media (max-width: 700px) {
+          .hnlp-phone-input { height: 54px; padding: 0 14px; border-radius: 10px; font-size: 16px; }
+          .hnlp-overlay { padding: 16px 12px; align-items: flex-start; }
+          .hnlp-modal { width: min(460px, 100%); grid-template-columns: 1fr; border-radius: 22px; overflow: hidden; }
+          .hnlp-form-column { padding: 28px 20px 24px; border-radius: 0; }
+          .hnlp-art { border-radius: 0; }
+          .hnlp-countdown-label { font-size: 10px; margin-bottom: 5px; }
+          .hnlp-countdown-digits { gap: 6px; }
+          .hnlp-countdown-unit { min-width: 42px; padding: 4px 7px; border-radius: 5px; }
+          .hnlp-countdown-unit strong { font-size: 22px; }
+          .hnlp-countdown-unit small { font-size: 8px; }
+          .hnlp-countdown-colon { font-size: 18px; }
+          .hnlp-content h2 { margin-bottom: 16px; font-size: 8.8cqw; letter-spacing: -.1cqw; }
+          .hnlp-copy { margin-bottom: 22px; font-size: 3.8cqw; }
+          .hnlp-form { gap: 12px; }
+          .hnlp-field { height: 54px; padding: 0 14px; gap: 12px; border-radius: 10px; }
+          .hnlp-field svg { flex-basis: 24px; width: 24px; height: 24px; }
+          .hnlp-field input, .hnlp-field textarea { font-size: 16px; }
+          .hnlp-message { height: 150px; padding-top: 14px; padding-bottom: 8px; }
+          .hnlp-message textarea { max-height: 180px; }
+          .hnlp-submit { margin: 4px 0 0; min-height: 57px; gap: 7px; border-width: 1px; border-radius: 13px; font-size: 4.25cqw; }
+          .hnlp-leaves { display: none; }
+          .hnlp-close { display: none; }
+          .hnlp-mobile-close { display: block; position: fixed; z-index: 6; right: max(18px, calc((100vw - 460px) / 2 + 8px)); top: 16px; width: 44px; height: 44px; padding: 0; border: 0; border-radius: 50%; background: #fff; color: #111; font: 36px/1 Arial, sans-serif; box-shadow: 0 3px 7px #0f113d33; cursor: pointer; }
         }
       `}</style>
     </>
